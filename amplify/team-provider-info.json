@@ -1,0 +1,14 @@
+{
+    "dev": {
+        "awscloudformation": {
+            "AuthRoleName": "home-united-dev-20191014084005-authRole",
+            "UnauthRoleArn": "arn:aws:iam::789601465373:role/home-united-dev-20191014084005-unauthRole",
+            "AuthRoleArn": "arn:aws:iam::789601465373:role/home-united-dev-20191014084005-authRole",
+            "Region": "eu-central-1",
+            "DeploymentBucketName": "home-united-dev-20191014084005-deployment",
+            "UnauthRoleName": "home-united-dev-20191014084005-unauthRole",
+            "StackName": "home-united-dev-20191014084005",
+            "StackId": "arn:aws:cloudformation:eu-central-1:789601465373:stack/home-united-dev-20191014084005/7397c710-ee4d-11e9-99af-0649507b8a60"
+        }
+    }
+}

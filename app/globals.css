@@ -1,0 +1,134 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* scroll-behavior: smooth; */
+}
+
+body {
+  max-width: 1920px;
+  margin: 0 auto;
+  background-color: black;
+  color: white;
+}
+
+.home-bg-size {
+  background-size: 100% 815px;
+
+  /* Media query for screens with a maximum width of 1280px */
+  @media (max-width: 1279px) {
+    background-size: 100% 500px;
+  }
+
+  /* Media query for screens with a maximum width of 640px */
+  @media (max-width: 439px) {
+    background-size: 100% 712px;
+  }
+}
+
+.scan-bg-size {
+  background-size: 100% 100%;
+
+  @media (max-width: 1023px) {
+    background-size: 100% 730px;
+  }
+
+  @media (max-width: 768px) {
+    background-size: 100% 518px;
+  }
+
+  @media (max-width: 439px) {
+    background-size: 100% 304px;
+  }
+}
+
+.z--1 {
+  z-index: -1;
+}
+
+.custom-col-1 {
+  grid-column: span 1;
+}
+
+.custom-col-2 {
+  grid-column: span 3;
+}
+
+.max-width {
+  @apply max-w-[1440px] mx-auto;
+}
+
+.padding-x {
+  @apply sm:px-16 px-6;
+}
+
+.padding-y {
+  @apply py-4;
+}
+
+.flex-center {
+  @apply flex items-center justify-center;
+}
+
+.flex-between {
+  @apply flex justify-between items-center;
+}
+
+.custom-btn {
+  @apply flex flex-row relative justify-center items-center py-3 px-6 outline-none;
+}
+
+.outlined_btn {
+  @apply flex-center bg-transparent text-primary border-2 border-primary hover:text-white hover:bg-primary px-[30px] py-3 uppercase font-helvetica font-medium text-[16px] leading-[16px];
+}
+
+.filled_btn {
+  @apply bg-transparent text-black border-2 border-black hover:scale-[1.03] md:h-[60px] h-[36px] uppercase font-[400] md:text-[16px] text-[12px] md:leading-[20px] leading-[16px] w-full max-w-[194px];
+}
+
+.filled_btn_white {
+  @apply bg-white text-black border-2 border-white hover:scale-[1.03] px-[30px] py-3 uppercase font-helvetica font-medium text-base w-full max-w-[194px];
+}
+
+.filled_btn_blue {
+  @apply text-[#06D7F9] border-2 border-[#06D7F9] hover:scale-[1.03] px-[30px] py-3 uppercase font-helvetica font-medium text-base w-full max-w-[194px];
+}
+
+.filled_btn_primary {
+  @apply bg-primary text-white border-2 border-primary hover:scale-[1.03] px-[30px] py-3 uppercase font-helvetica font-medium text-base w-full max-w-[194px];
+}
+
+.word {
+  display: inline-block;
+}
+
+.letter {
+  display: inline-block;
+  position: relative;
+  float: left;
+  transform: translateZ(25px);
+  transform-origin: 50% 50% 25px;
+}
+
+.letter.out {
+  transform: rotateX(90deg);
+  transition: transform 0.32s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+}
+
+.letter.behind {
+  transform: rotateX(-90deg);
+}
+
+.letter.in {
+  transform: rotateX(0deg);
+  transition: transform 0.38s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.group-menu-href {
+  position: relative;
+  z-index: 1;
+}
