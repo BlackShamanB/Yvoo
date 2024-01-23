@@ -4,7 +4,7 @@ var wordArray = [];
 var currentWord = 0;
 
 const initRotateText = () => {
-    var words = document.getElementsByClassName("word");
+  words = document.getElementsByClassName("word");
   words[currentWord].style.opacity = 1;
   if (count > 0) return;
   for (var i = 0; i < words.length; i++) {
