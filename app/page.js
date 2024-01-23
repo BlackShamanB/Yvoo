@@ -8,17 +8,14 @@ import Scan from "@/components/Home/scan";
 import Search from "@/components/Home/search";
 import ModalRequest from "@/components/ModalRequest";
 import { useState, useEffect } from "react";
-import {initParallax} from "@/components/lib/parallax"
-import {initRotateText} from "@/components/lib/rotateText"
+import initParallax from "@/components/lib/parallax"
+import initRotateText from "@/components/lib/rotateText"
 import LocomotiveScroll from "locomotive-scroll";
 
 export default function Home() {
   const [openModalRequest, setOpenModalRequest] = useState(false);
   useEffect(() => {
-    const scroll = new LocomotiveScroll({
-      el: document.querySelector("[data-scroll-container]"),
-      lerp: 0,
-    });
+    const scroll = new LocomotiveScroll();
     initParallax();
     initRotateText();
   }, []);

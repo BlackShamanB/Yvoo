@@ -1,4 +1,4 @@
-export const initParallax = () => {
+const initParallax = () => {
     let elements = document.querySelectorAll('.mouse-parallax');
     elements.forEach(el => {
         window.addEventListener('mousemove', function(e) { 
@@ -8,3 +8,5 @@ export const initParallax = () => {
         }); 
     })   
 }
+
+export default initParallax

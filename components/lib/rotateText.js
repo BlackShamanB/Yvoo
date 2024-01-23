@@ -1,9 +1,10 @@
-var words = document.getElementsByClassName("word");
+var words = null;
 var count = 0;
 var wordArray = [];
 var currentWord = 0;
 
-export const initRotateText = () => {
+const initRotateText = () => {
+    var words = document.getElementsByClassName("word");
   words[currentWord].style.opacity = 1;
   if (count > 0) return;
   for (var i = 0; i < words.length; i++) {
@@ -55,3 +56,5 @@ const splitLetters = (word) => {
   wordArray.push(letters);
   count++;
 };
+
+export default initRotateText;
