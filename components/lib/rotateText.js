@@ -5,27 +5,33 @@ var currentWord = 0;
 
 const initRotateText = () => {
   words = document.getElementsByClassName("word");
-  words[currentWord].style.opacity = 1;
+  // words[currentWord].style.opacity = 1;
   if (count > 0) return;
   for (var i = 0; i < words.length; i++) {
     splitLetters(words[i]);
   }
-  for (let i = 0; i < words.length; i++) {
-    setTimeout(() => {
-      changeWord();
-    }, 1000);
-  }
+  wordArray = wordArray.flat()
+  console.log(wordArray)
+  changeWord()
+  // for (let i = 0; i < words.length; i++) {
+  //   setTimeout(() => {
+  //     changeWord();
+  //   }, wordArray[i].length * 380);
+  // }
 };
 
 const changeWord = () => {
-  var cw = wordArray[currentWord];
-  var nw =
-    currentWord == words.length - 1 ? wordArray[0] : wordArray[currentWord + 1];
-
-  for (var i = 0; i < nw.length; i++) {
-    nw[i].className = "letter behind";
-    nw[0].parentElement.style.opacity = 1;
-    animateLetterIn(nw, i);
+  var cw = wordArray;
+  console.log(cw)
+  // if (!cw) return;
+  // var nw =
+  //   currentWord == words.length - 1 ? wordArray[0] : wordArray[currentWord + 1];
+  // console.log(cw);
+  for (var i = 0; i < cw.length; i++) {
+    console.log(cw[0].parentElement)
+    cw[i].className = "letter behind";
+    cw[i].parentElement.style.opacity = 1;
+    animateLetterIn(cw, i);
   }
 
   currentWord = currentWord + 1;

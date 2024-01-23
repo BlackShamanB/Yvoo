@@ -103,6 +103,7 @@ body {
 }
 
 .word {
+  opacity: 0;
   display: inline-block;
 }
 
