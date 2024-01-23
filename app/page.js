@@ -10,15 +10,22 @@ import ModalRequest from "@/components/ModalRequest";
 import React, { useState, useEffect, useRef } from "react";
 import initParallax from "@/components/lib/parallax";
 import initRotateText from "@/components/lib/rotateText";
-// import { Scroll } from 'react-locomotive-scroll'
 
 export default function Home() {
   const [openModalRequest, setOpenModalRequest] = useState(false);
   const containerRef = useRef(null);
+  
   useEffect(() => {
-    // const { scroll } = Scroll()
     initParallax();
     initRotateText();
+    
+    import('locomotive-scroll').then((locomotiveModule) => {
+      const LocomotiveScroll = locomotiveModule.default;
+      new LocomotiveScroll({
+        el: containerRef.current,
+      });
+    });
+
   }, []);
   const handleModal = () => {
     setOpenModalRequest((prev) => !prev);
