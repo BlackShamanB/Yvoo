@@ -7,15 +7,18 @@ import Sales from "@/components/Home/sales";
 import Scan from "@/components/Home/scan";
 import Search from "@/components/Home/search";
 import ModalRequest from "@/components/ModalRequest";
-import { useState, useEffect } from "react";
-import initParallax from "@/components/lib/parallax"
-import initRotateText from "@/components/lib/rotateText"
-// import LocomotiveScroll from "locomotive-scroll";
+import { useState, useEffect, useRef } from "react";
+import initParallax from "@/components/lib/parallax";
+import initRotateText from "@/components/lib/rotateText";
+import LocomotiveScroll from "react-locomotive-scroll";
 
 export default function Home() {
   const [openModalRequest, setOpenModalRequest] = useState(false);
   useEffect(() => {
-    // const scroll = new LocomotiveScroll();
+    const containerRef = useRef(null);
+    const scroll = new LocomotiveScroll({
+      el: containerRef.current
+    });
     initParallax();
     initRotateText();
   }, []);
@@ -24,7 +27,7 @@ export default function Home() {
   };
 
   return (
-    <main className="w-full" data-scroll-container>
+    <main className="w-full" ref={containerRef} data-scroll-container>
       <Hero />
       <Discover />
       <Search handleModal={handleModal} />
