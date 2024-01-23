@@ -7,18 +7,16 @@ import Sales from "@/components/Home/sales";
 import Scan from "@/components/Home/scan";
 import Search from "@/components/Home/search";
 import ModalRequest from "@/components/ModalRequest";
-import { useState, useEffect, useRef } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import initParallax from "@/components/lib/parallax";
 import initRotateText from "@/components/lib/rotateText";
-import LocomotiveScroll from "react-locomotive-scroll";
+// import { Scroll } from 'react-locomotive-scroll'
 
 export default function Home() {
   const [openModalRequest, setOpenModalRequest] = useState(false);
+  const containerRef = useRef(null);
   useEffect(() => {
-    const containerRef = useRef(null);
-    const scroll = new LocomotiveScroll({
-      el: containerRef.current
-    });
+    // const { scroll } = Scroll()
     initParallax();
     initRotateText();
   }, []);
