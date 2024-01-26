@@ -83,7 +83,7 @@ body {
 }
 
 .outlined_btn {
-  @apply flex-center bg-transparent text-primary border-2 border-primary hover:text-white hover:bg-primary px-[30px] py-3 uppercase font-helvetica font-medium text-[16px] leading-[16px];
+  @apply flex-center bg-transparent text-primary border-2 border-primary hover:text-white hover:bg-primary md:px-[30px] px-[13px] py-3 uppercase font-helvetica font-medium md:text-[16px] text-[12px] leading-[16px];
 }
 
 .filled_btn {

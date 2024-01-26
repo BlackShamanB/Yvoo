@@ -52,7 +52,7 @@ const Header = () => {
   ];
 
   return (
-    <div className="w-full flex-between p-6 !pl-[40px] lg2:pr-[80px] gap-4 items-center h-[94px] font-medium bg-[black]">
+    <div className="w-full flex lg2:justify-between items-center p-6 !pl-[40px] lg2:pr-[80px] lg2:gap-4 gap-[24px] items-center h-[94px] font-medium bg-[black]">
       <div className="lg2:hidden scale-150">
         <Image
           onClick={toggleMenu}
@@ -69,7 +69,7 @@ const Header = () => {
           width={118}
           height={34}
           alt="logo"
-          className="cursor-pointer min-w-[88px]"
+          className="cursor-pointer min-w-[88px] md:max-w-[118px] max-w-[78px]"
         />
       </Link>
 
@@ -135,12 +135,15 @@ const Header = () => {
                 </li>
               );
             })}
+            <li className="flex flex-row items-center gap-3 uppercase text-[#53D3AA] text-[16px] mt-[auto]">
+              watch instructions<Image src="/icons/watch_instructions.svg" width={48} height={48} alt="logo" className="inline"/>
+            </li>
           </ul>
         </>
       )}
-      <div className="flex-center gap-[36px]">
+      <div className="flex-center gap-[36px] 2lg:ml-[0] ml-[auto]">
         <button
-          className="!hidden xs:!block outlined_btn"
+          className="outlined_btn"
           onClick={handleModal}
         >
           Request demo

@@ -11,7 +11,7 @@ function Discover() {
         width={116}
         height={139}
         alt="triangle"
-        className="hidden md:block absolute top-[269px] left-[15%] mouse-parallax 2xl:max-w-[116px] max-w-[63px]"
+        className="absolute sm:top-[269px] top-[688px] left-[15%] mouse-parallax 2xl:max-w-[116px] max-w-[63px]"
         priority
       />
       <Image
@@ -19,7 +19,7 @@ function Discover() {
         width={101}
         height={113}
         alt="triangle"
-        className="hidden md:block absolute top-[548px] left-[10%] mouse-parallax md:max-w-[101px] max-w-[101px]"
+        className="absolute sm:top-[548px] top-[812px] sm:left-[10%] left-[5%] mouse-parallax md:max-w-[101px] max-w-[63px]"
         priority
       />
       <Image
@@ -27,10 +27,10 @@ function Discover() {
         width={180}
         height={170}
         alt="triangle"
-        className="hidden md:block absolute 2xl:top-[790px] top-[97%] left-[40%] mouse-parallax md:max-w-[180px] max-w-[127px] z-[1]"
+        className="absolute 2xl:top-[790px] top-[97%] left-[40%] mouse-parallax md:max-w-[180px] max-w-[127px] z-[1]"
         priority
       />
-      <div className="3xl:max-w-[1516px] 2xl:max-w-[1116px] md:max-w-[598px] mx-[auto] relative grid grid-cols-1 2xl:grid-cols-2 w-full mb-[100px] lg:mt-[232px] md:mt-[400px] mt-[787px] md:mb-[120px] lg:mb-[166px] 2xl:mb-[254px]" priority data-scroll data-scroll-speed="0.1">
+      <div className="3xl:max-w-[1516px] 2xl:max-w-[1116px] md:max-w-[598px] mx-[auto] relative grid grid-cols-1 2xl:grid-cols-2 w-full mb-[100px] lg:mt-[232px] md:mt-[400px] sm:mt-[262px] mt-[787px] md:mb-[120px] lg:mb-[166px] 2xl:mb-[254px]" priority data-scroll data-scroll-speed="0.1">
         <div className="pl-[20px] customxs:pl-[50px] pr-[20px] customxs:pr-[65px] 2xl:pt-[190px] md:pt-[0] mt-[0] md:mt-0">
           <div className="relative">
             <Image
@@ -42,7 +42,7 @@ function Discover() {
               className="object-cover 3xl:max-w-[539px] md:max-w-[390px] max-w-[220px] 2xl:ml-[auto] mx-[auto] md:mb-[12px] mb-[8px]"
             />
 
-            <h1 className="md:leading-[30px] leading-[14px] md:text-[21px] text-[14px] font-[700] font-machina 2xl:max-w-[310px] md:max-w-[390px] max-w-[220px] 2xl:w-[310px] md:w-[390px] 3xl:mr-[57px] float-right">
+            <h1 className="md:leading-[30px] leading-[14px] md:text-[21px] text-[14px] font-[700] font-machina 2xl:max-w-[310px] md:max-w-[390px] max-w-[220px] 2xl:w-[310px] md:w-[390px] 3xl:mr-[57px] md:float-right md:mx-[0] mx-[auto] text-right">
               Discover, Connect, Excel.
             </h1>
           </div>
