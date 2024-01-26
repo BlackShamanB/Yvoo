@@ -6,7 +6,7 @@ function Order({ handleModal }) {
         Don't miss out on this game-changing solution. Book a demo today and
         experience a new level of efficiency and reliability.
       </p>
-      <button className="filled_btn_white !max-w-[214px]" onClick={handleModal}>
+      <button className="filled_btn !max-w-[214px]" onClick={handleModal}>
         Order ScanPro+
       </button>
     </div>

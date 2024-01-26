@@ -25,10 +25,10 @@ const Footer = () => {
   };
 
   return (
-    <footer className="bg-[#131D2A] text-white lg:px-[78px] pt-[93px] pb-[92px] px-6 flex-center md:flex-between flex-wrap gap-0 md:gap-[85px] flex-col-reverse md:flex-row">
+    <footer className="bg-[#131D2A] text-white -mt-[1px] lg:pl-[100px] lg:pr-[54px] pt-[93px] pb-[92px] 2xl:px-6 md:pl-[85px] md:pr-[85px] flex 2xl:items-center 2xl:justify-centerr md:flex-between flex-wrap 2xl:gap-[135px] gap-[60px] flex-col 2xl:flex-row">
       <Image src="logo.svg" width={122} height={36} alt="logo" />
       <div className="flex-1 flex-center md:justify-between gap-8 flex-wrap">
-        <div className="flex items-center gap-[85px] flex-wrap">
+        <div className="flex items-center gap-[84px] flex-wrap">
           <ul className="flex flex-col gap-3 leading-[20px]">
             {firstLinks.map((link) => {
               return (
@@ -63,10 +63,30 @@ const Footer = () => {
               );
             })}
           </ul>
-          <ul className="flex flex-col gap-3 uppercase text-[#53D3AA]">watch instructions</ul>
+          <ul className="flex flex-col gap-3 uppercase text-[#53D3AA] hidden 2xl:block">
+            watch instructions<Image src="/icons/watch_instructions.svg" width={48} height={48} alt="logo" className="inline"/>
+          </ul>
         </div>
         <div
-          className="flex items-center gap-[10px] cursor-pointer"
+          className="flex items-center gap-[10px] cursor-pointer hidden 2xl:block"
+          onClick={handleModal}
+        >
+          <Image
+            src="/icons/card-icon.svg"
+            width={31}
+            height={23}
+            alt="menu"
+            className="cursor-pointer"
+          />
+          <h2 className="font-normal text-primary">Request demo</h2>
+        </div>
+      </div>
+      <div className="flex-1 flex-center md:justify-between gap-8 flex-wrap 2xl:hidden">
+        <ul className="flex flex-col gap-3 uppercase text-[#53D3AA] block 2xl:hidden">
+          watch instructions
+        </ul>
+        <div
+          className="flex items-center gap-[10px] cursor-pointer block 2xl:hidden"
           onClick={handleModal}
         >
           <Image

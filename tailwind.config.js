@@ -63,6 +63,12 @@ module.exports = {
         discoverConnectExcelmd: "url(../public/images/discover-connect-excelmd.webp)",
         discoverConnectExcel: "url(../public/images/discover-connect-excel.webp)",
         bgFooter: "url(../public/images/bg-footer.png)",
+        solution2Bgmd: "url(../public/images/solution2Bgmd.png)",
+        solution2Bg: "url(../public/images/solution2Bg.png)",
+
+        solutionBg3xl: "url(../public/images/solutionBg3xl.webp)",
+        solutionBgmd: "url(../public/images/solutionBgmd.webp)",
+        solutionBg: "url(../public/images/solutionBg.webp)",
         // discoverConnectExcelsm: "url(../public/images/discover-connectexcel.webp)",
       },
       screens: {

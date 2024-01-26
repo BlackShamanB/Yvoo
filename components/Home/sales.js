@@ -37,7 +37,7 @@ function Sales({ handleModal }) {
             </h1>
             <div className="flex flex-col gap-[24px] 3xl:ml-[154px] 2xl:ml-[0]">
               <p className="font-[700] text-[18px] text-black 2xl:text-[24px] leading-[22px] 2xl:leading-[26px] max-w-[327px] 2xl:max-w-[327px]">
-                Unlock Your Supplier Potential and Maximize Your Business Growth{" "}
+                Unlock Your Supplier Potential and Maximize <br></br>Your Business Growth{" "}
               </p>
               <button className="filled_btn" onClick={handleModal}>
                 Request demo

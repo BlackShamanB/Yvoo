@@ -36,7 +36,7 @@ function Auditor() {
         className="hidden md:block absolute ml-[-50px] mt-[203px] h-[812px] z-1" priority
       />
       <div className="3xl:max-w-[1516px] 2xl:max-w-[1116px] md:max-w-[598px] mx-[auto]" priority data-scroll data-scroll-speed="0.1">
-        <div className="relative grid grid-cols-1 2xl:grid-cols-2 w-full h-auto px-[41px]">
+        <div className="relative grid grid-cols-1 2xl:grid-cols-2 w-full h-auto lg:px-[41px]">
           <div className="w-full bg-right bg-no-repeat">
             <Image
               src="/images/auditorBg.webp"

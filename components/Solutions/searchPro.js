@@ -4,11 +4,21 @@ function SearchPro() {
   return (
     <div
       id="searchpro"
-      className="w-full flex justify-between flex-wrap md:gap-[32px] px-[20px] customxs:px-[50px] lg:px-[176px] 2xl:px-[202px] py-[64px] md:py-[82px] 2xl:py-[104px] bg-white"
+      className="w-full flex justify-between flex-wrap md:gap-[32px] px-[20px] customxs:px-[50px] lg:px-[176px] 2xl:px-[202px] py-[64px] md:py-[82px] 2xl:py-[104px] bg-mint"
     >
+      <div className="relative w-full max-w-[746px] h-[652px] mt-[34px] md:mt-none">
+        <Image
+          src="/images/mobile_phone.png"
+          alt="mobile"
+          // fill
+          width={746}
+          height={797}
+          className="object-contain"
+        />
+      </div>
       <div className="[&>*]:text-black w-full md:max-w-[530px] 2xl:max-w-[735px]">
         <h1 className="mb-6 max-w-[514px] font-machina font-[800] uppercase text-[30px] md:text-[36px] 2xl:text-[50px] leading-[30px] md:leading-[36px] 2xl:leading-[50px]">
-          YVOO <b className="text-primaryOrange">Search</b>
+          YVOO <b className="text-white">Search</b>
           Pro+
         </h1>
         <h2 className="mb-8 max-w-[298px] font-[700] text-[28px] leading-[24px]">
@@ -36,14 +46,6 @@ function SearchPro() {
           suppliers worldwide, providing you with an extensive list of qualified
           options in a matter of seconds.
         </p>
-      </div>
-      <div className="relative w-full max-w-[362px] h-[652px] mt-[34px] md:mt-none">
-        <Image
-          src="/images/mobile-image.png"
-          alt="mobile"
-          fill
-          className="object-contain"
-        />
       </div>
     </div>
   );

@@ -27,7 +27,7 @@ function Discover() {
         width={180}
         height={170}
         alt="triangle"
-        className="hidden md:block absolute 2xl:top-[790px] top-[1319px] left-[40%] mouse-parallax md:max-w-[180px] max-w-[127px] z-[1]"
+        className="hidden md:block absolute 2xl:top-[790px] top-[97%] left-[40%] mouse-parallax md:max-w-[180px] max-w-[127px] z-[1]"
         priority
       />
       <div className="3xl:max-w-[1516px] 2xl:max-w-[1116px] md:max-w-[598px] mx-[auto] relative grid grid-cols-1 2xl:grid-cols-2 w-full mb-[100px] lg:mt-[232px] md:mt-[400px] mt-[787px] md:mb-[120px] lg:mb-[166px] 2xl:mb-[254px]" priority data-scroll data-scroll-speed="0.1">

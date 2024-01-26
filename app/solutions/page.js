@@ -4,6 +4,7 @@ import { useState } from "react";
 
 import ModalRequest from "@/components/ModalRequest";
 import Experience from "@/components/Solutions/experience";
+import BuyerSupplier from "@/components/Solutions/buyerSupplier";
 import Hero from "@/components/Solutions/hero";
 import HowItWorks from "@/components/Solutions/howItWorks";
 import Info from "@/components/Solutions/info";
@@ -24,11 +25,6 @@ export default function Solutions() {
   return (
     <main className="w-full">
       <div className="flex flex-col">
-        <div className="bg-[#06D7F9] px-[20px] customxs:px-[50px] lg:px-[176px] 2xl:px-[202px] py-[36px]">
-          <h1 className="uppercase text-black font-machina font-[800] text-[30px] md:text-[40px] 2xl:text-[60px] leading-[30px] md:leading-[40px] 2xl:leading-[60px]">
-            Solutions
-          </h1>
-        </div>
         <Hero />
         <Experience />
         <Results handleModal={handleModal} />
@@ -39,6 +35,7 @@ export default function Solutions() {
         <ScanPro />
         <HowItWorks />
         <Order handleModal={handleModal} />
+        <BuyerSupplier/>
       </div>
       <ModalRequest onClose={handleModal} visible={openModalRequest} />
     </main>

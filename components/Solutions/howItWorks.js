@@ -4,11 +4,11 @@ function HowItWorks() {
   return (
     <div className="relative w-full px-[20px] customxs:px-[50px] lg:px-[176px] 2xl:px-[202px] py-[64px] bg-white">
       <Image
-        src="/icons/how-it-works.svg"
-        width={127}
-        height={125}
-        alt="how-it-works"
-        className="absolute -top-[56px] left-[34%]"
+        src="/images/solution_triagle.png"
+        width={116}
+        height={139}
+        alt="solution_triagle"
+        className="absolute top-[27%] left-[34%]"
       />
       <h2 className="mb-[30px] md:mb-[34px] text-black font-[700] text-[24px] leading-[24px]">
         Benefits that Await You:{" "}

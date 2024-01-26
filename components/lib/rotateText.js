@@ -11,7 +11,6 @@ const initRotateText = () => {
     splitLetters(words[i]);
   }
   wordArray = wordArray.flat()
-  console.log(wordArray)
   changeWord()
   // for (let i = 0; i < words.length; i++) {
   //   setTimeout(() => {
@@ -22,13 +21,11 @@ const initRotateText = () => {
 
 const changeWord = () => {
   var cw = wordArray;
-  console.log(cw)
   // if (!cw) return;
   // var nw =
   //   currentWord == words.length - 1 ? wordArray[0] : wordArray[currentWord + 1];
   // console.log(cw);
   for (var i = 0; i < cw.length; i++) {
-    console.log(cw[0].parentElement)
     cw[i].className = "letter behind";
     cw[i].parentElement.style.opacity = 1;
     animateLetterIn(cw, i);

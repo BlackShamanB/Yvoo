@@ -2,7 +2,7 @@ import Image from "next/image";
 
 function Experience() {
   return (
-    <div className="relative w-full flex-center px-[20px] customxs:px-[50px] lg:px-[176px] 2xl:px-[202px] py-[46px] md:py-[60px] 2xl:py-[96px] bg-[#414141]">
+    <div className="relative w-full flex-center px-[20px] customxs:px-[50px] lg:px-[176px] 2xl:px-[202px] py-[46px] md:py-[60px] 2xl:py-[96px] bg-[#131D2A]">
       <Image
         src="/icons/experience-icon.svg"
         width={127}

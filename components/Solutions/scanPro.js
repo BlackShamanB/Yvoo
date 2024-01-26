@@ -4,7 +4,7 @@ function ScanPro() {
   return (
     <div
       id="scanpro"
-      className="relative w-full h-[620px] flex justify-between flex-wrap md:gap-[32px] px-[20px] customxs:px-[50px] lg:px-[176px] 2xl:px-[202px] py-[127px] md:py-[141px] 2xl:py-[120px] bg-worldBgsm xs:bg-worldBgmd md:bg-worldBg"
+      className="relative w-full flex justify-between flex-wrap md:gap-[32px] px-[20px] customxs:px-[50px] lg:px-[176px] 2xl:px-[202px] py-[127px] md:py-[141px] 3xl:pt-[140px] 3xl:pb-[342px] bg-solution2Bg md:bg-solution2Bgmd bg-bottom"
     >
       <Image
         src="/icons/location-pin-icon.svg"
@@ -15,6 +15,7 @@ function ScanPro() {
         style={{ width: "200px", height: "240px" }}
         className="absolute -top-[10%] right-0 xs:-top-[44px] xs:right-[6%] md:-top-[50px] md:right-[22%] 2xl:right-[42%]"
       />
+      <div className="w-100"></div>
       <div className="w-full max-w-[584px]">
         <h1 className="mb-6 max-w-[214px] font-machina font-[800] uppercase text-[30px] md:text-[36px] 2xl:text-[50px] leading-[30px] md:leading-[36px] 2xl:leading-[50px]">
           YVOO <b className="text-[#53D3AA]">Scan</b>

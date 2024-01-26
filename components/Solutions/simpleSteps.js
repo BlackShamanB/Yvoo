@@ -1,7 +1,7 @@
 function SimpleSteps({ handleModal }) {
   return (
     <div className="w-full px-[20px] customxs:px-[50px] lg:px-[176px] 2xl:px-[202px] py-[106px] md:py-[66px] 2xl:py-[100px]">
-      <h1 className="mb-[30px] md:mb-[45px] font-machina font-[800] uppercase text-[30px] 2xl:text-[40px] leading-[30px] 2xl:leading-[40px] max-w-full sm:max-w-[600px] md:max-w-[308px] 2xl:max-w-[460px]">
+      <h1 className="mb-[30px] md:mb-[45px] text-[#06D7F9] font-machina font-[800] uppercase text-[30px] 2xl:text-[40px] leading-[30px] 2xl:leading-[40px] max-w-full sm:max-w-[600px] md:max-w-[308px] 2xl:max-w-[460px]">
         Two Simple Steps to Success:
       </h1>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-[32px] mb-[30px] md:mb-[77px]">
@@ -30,12 +30,12 @@ function SimpleSteps({ handleModal }) {
           </p>
         </div>
       </div>
-      <div className="flex items-center flex-wrap gap-[48px]">
+      <div className="flex flex-col items-center flex-wrap gap-[42px]">
         <h2 className="font-[700] text-[24px] leading-[28px]">
           Don't miss out on the future of supplier sourcing.
         </h2>
         <button
-          className="filled_btn_primary !w-fit !max-w-none !text-black"
+          className="blue_btn !max-w-[403px]"
           onClick={handleModal}
         >
           book a demo & sign up at Searchpro+

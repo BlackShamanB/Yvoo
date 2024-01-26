@@ -14,6 +14,7 @@ Amplify.configure(awsconfig);
 const Header = () => {
   const [active, setActive] = useState(false);
   const [openModalRequest, setOpenModalRequest] = useState(false);
+  const [activeLink, setActiveLink] = useState(false);
 
   const toggleMenu = () => {
     setActive(!active);
@@ -26,6 +27,19 @@ const Header = () => {
   const handleModal = () => {
     setOpenModalRequest((prev) => !prev);
   };
+
+  const handleLinkClick = (link) => {
+    console.log(link)
+    setActiveLink(link); // Обновляем состояние при клике на ссылку
+  }
+
+  // let pathName = window.location.pathname
+
+  // const setPathName = () => {
+  //   console.log(window.location.pathname)
+  //   pathName = window.location.pathname
+  //   console.log(document.querySelector(`[href="${window.location.pathname}"]`))
+  // }
 
   const links = [
     { name: "Home", link: "/" },
@@ -40,51 +54,46 @@ const Header = () => {
 
   return (
     <div className="w-full flex-between p-6 !pl-[40px] lg2:pr-[80px] gap-4 items-center h-[94px] font-medium bg-[black]">
-      <div className="flex-center gap-[24px]">
-        <div className="lg2:hidden scale-150">
-          <Image
-            onClick={toggleMenu}
-            src="/icons/hamburger.svg"
-            width={26}
-            height={30}
-            alt="menu"
-            className="cursor-pointer min-w-[26px]"
-          />
-        </div>
-        <Link href={"/"}>
-          <Image
-            src="/logo.svg"
-            width={118}
-            height={34}
-            alt="logo"
-            className="cursor-pointer min-w-[88px]"
-          />
-        </Link>
-
-        {!active && (
-          <ul
-            className={`lg2:flex items-center gap-8 p-6 ${
-              active ? "block" : "hidden"
-            }`}
-          >
-            {links.map((link) => {
-              return (
-                <div
-                  key={link.name}
-                  className="relative inline-block text-white"
-                >
-                  <Link href={link.link} legacyBehavior>
-                    <a onClick={closeMenu} className="group">
-                      <div className="relative z-[1]">{link.name}</div>
-                      <span className="absolute z-[0] bottom-[6px] w-full h-1 bg-[#2ECC71] bottom-0 left-0 transform scale-x-0 transition-transform origin-bottom-right duration-350 ease-out group-hover:origin-bottom-left group-hover:scale-x-100"></span>
-                    </a>
-                  </Link>
-                </div>
-              );
-            })}
-          </ul>
-        )}
+      <div className="lg2:hidden scale-150">
+        <Image
+          onClick={toggleMenu}
+          src="/icons/hamburger.svg"
+          width={26}
+          height={30}
+          alt="menu"
+          className="cursor-pointer min-w-[26px]"
+        />
       </div>
+      <Link href={"/"}>
+        <Image
+          src="/logo.svg"
+          width={118}
+          height={34}
+          alt="logo"
+          className="cursor-pointer min-w-[88px]"
+        />
+      </Link>
+
+      {!active && (
+        <ul
+          className={`lg2:flex items-center gap-8 p-6 ${
+            active ? "block" : "hidden"
+          }`}
+        >
+          {links.map((link) => {
+            return (
+              <div key={link.name} className="relative inline-block text-white">
+                <Link href={link.link} legacyBehavior>
+                  <a onClick={() => {closeMenu; handleLinkClick(link.link)}} className="group">
+                    <div className="relative z-[1] text-[16px]">{link.name}</div>
+                    <span className={`absolute z-[0] bottom-[6px] w-full h-1 bg-[#2ECC71] bottom-0 left-0 transform scale-x-0 transition-transform origin-bottom-right duration-350 ease-out group-hover:origin-bottom-left group-hover:scale-x-100 ${activeLink == link.link ? 'origin-bottom-left scale-x-50' : ''}`}></span>
+                  </a>
+                </Link>
+              </div>
+            );
+          })}
+        </ul>
+      )}
       {active && (
         <>
           <ul
@@ -114,8 +123,14 @@ const Header = () => {
             {links.map((link) => {
               return (
                 <li key={link.name} className="relative max-w-[max-content]">
-                  <Link href={link.link} onClick={closeMenu} className="group block max-w-[max-content]">
-                    <div className="relative z-[1] max-w-[max-content]">{link.name}</div>
+                  <Link
+                    href={link.link}
+                    onClick={closeMenu}
+                    className="group block max-w-[max-content]"
+                  >
+                    <div className="relative z-[1] max-w-[max-content]">
+                      {link.name}
+                    </div>
                     <span className="absolute z-[0] bottom-[6px] w-full h-1 bg-[#2ECC71] bottom-0 left-0 transform scale-x-0 transition-transform origin-bottom-right duration-350 ease-out group-hover:origin-bottom-left group-hover:scale-x-100"></span>
                   </Link>
                 </li>
