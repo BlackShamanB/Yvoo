@@ -52,7 +52,7 @@ const Header = () => {
   ];
 
   return (
-    <div className="w-full flex lg2:justify-between items-center p-6 !pl-[40px] lg2:pr-[80px] lg2:gap-4 gap-[24px] items-center h-[94px] font-medium bg-[black]">
+    <div className="w-full flex lg2:justify-between items-center p-6 !pl-[40px] lg2:pr-[80px] items-center h-[94px] font-medium bg-[black]">
       <div className="lg2:hidden scale-150">
         <Image
           onClick={toggleMenu}
@@ -75,7 +75,7 @@ const Header = () => {
 
       {!active && (
         <ul
-          className={`lg2:flex items-center gap-8 p-6 ${
+          className={`lg2:flex items-center gap-8 p-6 3xl:ml-[420px] 2xl:ml-[181px] ml-[0] ${
             active ? "block" : "hidden"
           }`}
         >
