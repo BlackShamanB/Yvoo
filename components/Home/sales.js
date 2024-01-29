@@ -22,7 +22,7 @@ function Sales({ handleModal }) {
               // transform: "translateZ(-1px)",
             }
           }
-          className="relative grid grid-cols-1 2xl:grid-cols-2 bg-white md:py-0 md:flex-center flex-col h-fit 3xl:h-[1187px] 2xl:h-[1125px] md:h-[1422px] md:px-[0] px-[41px]"
+          className="relative grid grid-cols-1 2xl:grid-cols-2 bg-white md:py-0 md:flex-center flex-col h-fit 3xl:h-[1187px] 2xl:h-[1125px] md:h-[1422px] md:px-[0] px-[41px] md:overflow-visible overflow-hidden"
         >
           <div className="flex flex-wrap md:flex-nowrap items-center md:items-start md:flex-col md:gap-[24px] gap-[12px] md:mt-[128px] mt-[144px] 3xl:mb-[568px] 2xl:mb-[356px]">
             <Image
@@ -32,6 +32,13 @@ function Sales({ handleModal }) {
               alt="triangle"
               className="absolute top-[82px] 2xl:left-[43%] md:left-[67%] mouse-parallax md:block hidden"
             />
+            <Image
+              src="/icons/icon-line.svg"
+              width={584}
+              height={106}
+              alt="triangle"
+              className="absolute 2xl:top-[52%] 2xl:top-[53%] md:top-[37%] top-[25%] 3xl:left-[-22%] md:left-[-81%] left-[59%] mouse-parallax"
+            />
             <h1 className="uppercase 3xl:ml-[154px] 2xl:ml-[0] font-machina font-[800] text-[40px] text-[#00D1EF] 2xl:text-[50px] leading-[30px] md:leading-[40px] 2xl:leading-[50px] max-w-[318px] 2xl:max-w-[472px]">
               YVOO Sales<b className="text-black">Pro+</b>
             </h1>
@@ -39,7 +46,7 @@ function Sales({ handleModal }) {
               <p className="font-[700] text-[18px] text-black 2xl:text-[24px] leading-[22px] 2xl:leading-[26px] max-w-[327px] 2xl:max-w-[327px]">
                 Unlock Your Supplier Potential and Maximize <br></br>Your Business Growth{" "}
               </p>
-              <button className="filled_btn" onClick={handleModal}>
+              <button className="filled_btn 2xl:mt-[24px]" onClick={handleModal}>
                 Request demo
               </button>
             </div>
