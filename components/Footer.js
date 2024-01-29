@@ -67,6 +67,7 @@ const Footer = () => {
             watch instructions<Image src="/icons/watch_instructions.svg" width={48} height={48} alt="logo" className="inline"/>
           </ul>
         </div>
+      </div>
         <div
           className="flex items-center gap-[10px] cursor-pointer hidden 2xl:flex"
           onClick={handleModal}
@@ -80,13 +81,12 @@ const Footer = () => {
           />
           <h2 className="font-normal text-primary">Request demo</h2>
         </div>
-      </div>
-      <div className="flex-1 md:flex-center justify-between gap-8 flex-wrap 2xl:hidden">
+      <div className="flex flex-1 md:flex-center justify-between gap-8 flex-wrap 2xl:hidden">
         <ul className="flex md:flex-center items-center gap-3 uppercase text-[#53D3AA] block 2xl:hidden md:md-[0] mb-[20px]">
           watch instructions<Image src="/icons/watch_instructions.svg" width={48} height={48} alt="logo" className="inline"/>
         </ul>
         <div
-          className="flex items-center gap-[10px] cursor-pointer block 2xl:hidden"
+          className="flex items-center gap-[10px] cursor-pointer block 2xl:hidden md:md-[0] mb-[20px]"
           onClick={handleModal}
         >
           <Image
