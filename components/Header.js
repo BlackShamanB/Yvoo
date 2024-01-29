@@ -53,12 +53,12 @@ const Header = () => {
 
   return (
     <div className="w-full flex lg2:justify-between items-center p-6 !pl-[40px] lg2:pr-[80px] items-center h-[94px] font-medium bg-[black]">
-      <div className="lg2:hidden scale-150">
+      <div className="lg2:hidden mr-[32px]">
         <Image
           onClick={toggleMenu}
           src="/icons/hamburger.svg"
-          width={26}
-          height={30}
+          width={44}
+          height={34}
           alt="menu"
           className="cursor-pointer min-w-[26px]"
         />
