@@ -5,8 +5,9 @@ function Sales({ handleModal }) {
   return (
     <div
       id="sales"
-      style={{ transformStyle: "preserve-3d" }}
-      className="relative grid w-full w-full bg-white bg-local bg-contain bg-no-repeat bg-bottom z-29" >
+      // style={{ transformStyle: "preserve-3d" }}
+      className="relative grid w-full w-full bg-white bg-local bg-contain bg-no-repeat bg-bottom z-29"
+    >
       {/* <Image
         src="/icons/yvoo-sales-icon.svg"
         width={124}
@@ -14,7 +15,12 @@ function Sales({ handleModal }) {
         alt="yvoo-sales"
         className="absolute -top-[40px] right-[40%]" priority
       /> */}
-      <div className="3xl:max-w-[1516px] 2xl:max-w-[1116px] md:max-w-[598px] mx-[auto]" data-scroll priority data-scroll-speed="0.1">
+      <div
+        className="3xl:max-w-[1516px] 2xl:max-w-[1116px] md:max-w-[598px] mx-[auto]"
+        data-scroll
+        priority
+        data-scroll-speed="0.1"
+      >
         <div
           style={
             {
@@ -24,29 +30,33 @@ function Sales({ handleModal }) {
           }
           className="relative grid grid-cols-1 2xl:grid-cols-2 bg-white md:py-0 md:flex-center flex-col h-fit 3xl:h-[1187px] 2xl:h-[1125px] md:h-[1422px] md:px-[0] px-[41px] md:overflow-visible overflow-hidden"
         >
-          <div className="flex flex-wrap md:flex-nowrap items-center md:items-start md:flex-col md:gap-[24px] gap-[12px] md:mt-[128px] mt-[144px] 3xl:mb-[568px] 2xl:mb-[356px]">
+          <div className="flex flex-wrap md:flex-nowrap items-center md:items-start md:flex-col md:gap-[20px] gap-[12px] 3xl:mt-[172px] 2xl:mt-[165px] md:mt-[153px] mt-[144px] 3xl:mb-[568px] 2xl:mb-[356px]">
             <Image
               src="/icons/squares-2.png"
               width={96}
               height={106}
               alt="triangle"
-              className="absolute top-[82px] 2xl:left-[43%] md:left-[67%] mouse-parallax md:block hidden"
+              className="absolute top-[82px] 3xl:left-[42%] 2xl:left-[39.4%] md:left-[67%] mouse-parallax md:block hidden"
             />
             <Image
               src="/icons/icon-line.svg"
               width={584}
               height={106}
               alt="triangle"
-              className="absolute 2xl:top-[52%] 2xl:top-[53%] md:top-[37%] top-[25%] 3xl:left-[-22%] md:left-[-81%] left-[59%] mouse-parallax"
+              className="absolute 2xl:top-[57%] 2xl:top-[53%] md:top-[37%] top-[25%] 3xl:left-[-22%] md:left-[-81%] left-[59%] mouse-parallax z-[1]"
             />
-            <h1 className="uppercase 3xl:ml-[154px] 2xl:ml-[0] font-machina font-[800] text-[40px] text-[#00D1EF] 2xl:text-[50px] leading-[30px] md:leading-[40px] 2xl:leading-[50px] max-w-[318px] 2xl:max-w-[472px]">
+            <h1 className="uppercase 3xl:ml-[154px] 2xl:ml-[0] font-machina font-[800] text-[40px] text-[#00D1EF] 2xl:text-[50px] leading-[30px] md:leading-[44px] 2xl:leading-[54px] max-w-[318px] 2xl:max-w-[472px]">
               YVOO Sales<b className="text-black">Pro+</b>
             </h1>
-            <div className="flex flex-col gap-[24px] 3xl:ml-[154px] 2xl:ml-[0]">
-              <p className="font-[700] text-[18px] text-black 2xl:text-[24px] leading-[22px] 2xl:leading-[26px] max-w-[327px] 2xl:max-w-[327px]">
-                Unlock Your Supplier Potential and Maximize <br></br>Your Business Growth{" "}
+            <div className="flex flex-col gap-[18px] 3xl:ml-[154px] 2xl:ml-[0]">
+              <p className="font-[700] 2xl:text-[24px] text-[20px] text-black 2xl:leading-[30px] leading-[26px] max-w-[327px] 2xl:max-w-[327px]">
+                Unlock Your Supplier Potential and Maximize Your
+                Business Growth{" "}
               </p>
-              <button className="filled_btn 2xl:mt-[24px]" onClick={handleModal}>
+              <button
+                className="filled_btn 2xl:mt-[24px] md:mt-[10px]"
+                onClick={handleModal}
+              >
                 Request demo
               </button>
             </div>
@@ -55,7 +65,7 @@ function Sales({ handleModal }) {
               width={748}
               height={523}
               alt="yvoo-sales"
-              className="3xl:ml-[auto] 2xl:ml-[-115px] mt-[24px] 3xl:min-w-[748px] 2xl:min-w-[660px] md:min-w-[538px] 2xl:max-w-[660px] md:max-w-[538px] 2xl:ml-[0] md:ml-[-62px] ml-[-41px]"
+              className="2xl:absolute relative 2xl:left-[-92px] 2xl:bottom-[120px] 3xl:ml-[90px] 2xl:ml-[-22px] md:ml-[-62px] ml-[-41px] 2xl:mt-[24px] md:mt-[18px] mt-[0] 3xl:min-w-[748px] 2xl:min-w-[660px] md:min-w-[538px] 2xl:max-w-[660px] md:max-w-[538px]"
             />
           </div>
           <div
@@ -66,21 +76,21 @@ function Sales({ handleModal }) {
             }}
             className="bg-white md:py-0 md:flex-center flex-col h-auto md:h-[918px] 2xl:h-[1187px] 3xl:pl-[84px] 2xl:pl-[54px]"
           >
+            <Image
+              style={{ zIndex: 0, transform: "translateZ(10px)" }}
+              src="/icons/brain-3.svg"
+              width={111}
+              height={120}
+              alt="yvoo-search"
+              className="z-10 3xl:ml-[-15px] 2xl:ml-[-20px] md:ml-[-31px] md:max-w-[111px] max-w-[74px] 2xl:mt-[152px] md:mt-[-72px] 2xl:mb-[37px] mb-[32px]"
+            />
             <div
               style={{
                 position: "relative",
                 transform: "translateZ(10px)",
               }}
-              className="text-black mb-[140px] md:mb-0 2xl:mt-[120px] md:mt-[-71px] max-w-[584px] flex flex-col gap-4 font-[400] leading-[19px] [&>p]:text-[14px] [&>p]:customxs:text-[16px]"
+              className="text-black mb-[140px] md:mb-0 2xl:mt-[0] max-w-[674px] flex flex-col 3xl:gap-4 2xl:gap-[17px] md:gap-[20px] font-[400] leading-[20px] [&>p]:text-[14px] [&>p]:customxs:text-[16px]"
             >
-              <Image
-                style={{ zIndex: 0, transform: "translateZ(10px)" }}
-                src="/icons/brain-3.svg"
-                width={111}
-                height={120}
-                alt="yvoo-search"
-                className="z-10 2xl:ml-[0] md:ml-[-31px] md:max-w-[111px] max-w-[74px]"
-              />
               <p>
                 At YVOO, we understand the challenges suppliers face in finding
                 new opportunities, expanding their network, and increasing their
@@ -89,8 +99,10 @@ function Sales({ handleModal }) {
                 search and audits, empowering you to thrive in the ever-evolving
                 business landscape.
               </p>
-              <p>Benefits for Suppliers:</p>
-              <ul className="pl-[20px] list-disc list-outside">
+              <p className="!2xl:text-[24px] !text-[20px] font-[500] 2xl:leading-[20px]">
+                Benefits for Suppliers:
+              </p>
+              <ul className="pl-[25px] 3xl:mt-[10px] 2xl:mt-[6px] 3xl:mb-[0px] 2xl:mb-[3px] list-disc list-outside">
                 <li>
                   Reach a global audience of potential buyers and clients.{" "}
                 </li>

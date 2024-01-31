@@ -4,14 +4,13 @@ import { Link as ReactScrollLink } from "react-scroll";
 
 function Discover() {
   return (
-    <div
-      className="relative grid w-full flex justify-center 2xl:bg-discoverConnectExcel2xl md:bg-discoverConnectExcelmd bg-discoverConnectExcel bg-no-repeat md:bg-contain bg-[size:100%] md:bg-[position:0_0] bg-[position:0_23%]" >
+    <div className="relative grid w-full flex justify-center 2xl:bg-discoverConnectExcel2xl md:bg-discoverConnectExcelmd bg-discoverConnectExcel bg-no-repeat 3xl:bg-contain 2xl:bg-auto bg-[size:100%] 3xl:bg-[position:0_0] 2xl:bg-[position:-240px_2px] bg-[position:0_0]">
       <Image
         src="/icons/greenTriangle-1.png"
         width={116}
         height={139}
         alt="triangle"
-        className="absolute sm:top-[269px] top-[688px] left-[15%] mouse-parallax 2xl:max-w-[116px] max-w-[63px]"
+        className="absolute 2xl:top-[269px] top-[22%] 3xl:left-[15%] 2xl:left-[7%] md:left-[16%] mouse-parallax 2xl:max-w-[116px] max-w-[63px]"
         priority
       />
       <Image
@@ -19,7 +18,7 @@ function Discover() {
         width={101}
         height={113}
         alt="triangle"
-        className="absolute sm:top-[548px] top-[812px] sm:left-[10%] left-[5%] mouse-parallax md:max-w-[101px] max-w-[63px]"
+        className="absolute 2xl:top-[548px] top-[35.6%] 2xl:left-[11%] left-[13%] mouse-parallax md:max-w-[101px] max-w-[63px]"
         priority
       />
       <Image
@@ -27,11 +26,16 @@ function Discover() {
         width={180}
         height={170}
         alt="triangle"
-        className="absolute 2xl:top-[790px] top-[97%] left-[40%] mouse-parallax md:max-w-[180px] max-w-[127px] z-[1]"
+        className="absolute 2xl:top-[790px] md:top-[96.4%] 3xl:left-[40%] 2xl:left-[36.6%] md:left-[52.6%] mouse-parallax md:max-w-[180px] max-w-[127px] z-[1]"
         priority
       />
-      <div className="3xl:max-w-[1516px] 2xl:max-w-[1116px] md:max-w-[598px] mx-[auto] relative grid grid-cols-1 2xl:grid-cols-2 w-full mb-[100px] lg:mt-[232px] md:mt-[400px] sm:mt-[262px] mt-[787px] md:mb-[120px] lg:mb-[166px] 2xl:mb-[254px]" priority data-scroll data-scroll-speed="0.1">
-        <div className="pl-[20px] customxs:pl-[50px] pr-[20px] customxs:pr-[65px] 2xl:pt-[190px] md:pt-[0] mt-[0] md:mt-0">
+      <div
+        className="3xl:max-w-[1516px] 2xl:max-w-[1116px] md:max-w-[598px] mx-[auto] relative grid grid-cols-1 2xl:grid-cols-2 w-full mb-[100px] 3xl:mt-[232px] 2xl:mt-[200px] md:mt-[400px] sm:mt-[262px] mt-[787px] 3xl:mb-[254px] 2xl:mb-[166px] md:mb-[120px] lg:mb-[166px] "
+        priority
+        data-scroll
+        data-scroll-speed="0.1"
+      >
+        <div className="2xl:pl-[150px] pl-[20px] pr-[20px] 2xl:pr-[65px] 2xl:pt-[190px] md:pt-[0] mt-[0] md:mt-0">
           <div className="relative">
             <Image
               src="/logo.svg"
@@ -39,27 +43,27 @@ function Discover() {
               height="155"
               alt="discover"
               objectPosition="center"
-              className="object-cover 3xl:max-w-[539px] md:max-w-[390px] max-w-[220px] 2xl:ml-[auto] mx-[auto] md:mb-[12px] mb-[8px]"
+              className="object-cover 3xl:max-w-[539px] md:max-w-[390px] max-w-[220px] 3xl:ml-[auto] 2xl:ml-[-37px] mx-[auto] md:mb-[12px] mb-[8px]"
             />
 
-            <h1 className="md:leading-[30px] leading-[14px] md:text-[21px] text-[14px] font-[700] font-machina 2xl:max-w-[310px] md:max-w-[390px] max-w-[220px] 2xl:w-[310px] md:w-[390px] 3xl:mr-[57px] md:float-right md:mx-[0] mx-[auto] text-right">
+            <h1 className="md:leading-[26px] leading-[14px] md:text-[21px] text-[14px] font-[700] 2xl:max-w-[310px] md:max-w-[390px] max-w-[220px] 2xl:w-[310px] md:w-[390px] 3xl:mr-[57px] md:float-right md:mx-[0] mx-[auto] text-right 3xl:mt-[0] md:mt-[1px] 3xl:mr-[0] 2xl:mr-[-11px] md:mr-[84px]">
               Discover, Connect, Excel.
             </h1>
           </div>
         </div>
 
-        <div className="px-[20px] 2xl:px-[50px] md:px-[0] 2xl:mt-[0] md:mt-[119px] mt-[106px] md:3xl:pl-[84px] 2xl:pl-[54px] my-auto flex flex-col gap-[20px] font-[400] leading-[20px] text-base max-w-[809px]">
+        <div className="px-[20px] 3xl:pr-[0] md:px-[0] 2xl:mt-[0] md:mt-[119px] mt-[106px] md:3xl:pl-[84px] 2xl:pl-[54px] my-auto flex flex-col gap-[20px] font-[400] leading-[20px] text-base max-w-[809px] font-inter">
           <p>
             Step into the future of industrial B2B procurement with YVOO
-            SourcerPro+. Our powerful platform is specifically designed to meet
-            the sourcing needs of businesses in various<pre></pre>
+            SourcerPo+. Our powerful platform is specifically designed to meet
+            the sourcing needs of businesses in various{" "}
             <Link className="cursor-pointer underline" href={"/industries"}>
               industries
-            </Link>{" "}
-            now. Whether you&apos;re searching for reliable suppliers or looking
-            to expand your network,&nbsp;B2BSourcerPro+ is your go-to solution.
+            </Link>
+            . Whether you're searching for reliable suppliers or looking to
+            expand your network, B2BSourcerPro+ is your go-to solution.
           </p>
-          <h2 className="font-[800] text-[24px]">
+          <h2 className="font-[500] text-[24px]">
             {" "}
             Why Choose YVOO B2BSourcerPro+?{" "}
           </h2>
@@ -73,21 +77,20 @@ function Discover() {
             >
               capabilities
             </Link>
-            , you can swiftly identify and evaluate&nbsp;vendors worldwide,
-            saving you time and effort.
+            , you can swiftly identify and evaluate vendors worldwide, saving
+            you time and effort.
           </p>
           <p>
             On-Site Supplier Readiness Check: Gain peace of mind with our
-            comprehensive on-site supplier&nbsp;assessments. We go beyond
+            comprehensive on-site supplier assessments. We go beyond
             surface-level information by conducting thorough evaluations to
             predict supplier readiness and ensure a remarkable audit success
             rate.
           </p>
           <p>
             Seamless Connection: Connect directly with suppliers and establish
-            fruitful business relationships.&nbsp;YVOO SourcerPro+ facilitates
-            smooth communication and collaboration,
-            enabling&nbsp;successful&nbsp;
+            fruitful business relationships. YVOO SourcerPro+ facilitates smooth
+            communication and collaboration, enabling successful
             <ReactScrollLink
               activeClass="active"
               to="search"
@@ -103,15 +106,14 @@ function Discover() {
           </p>
           <p>
             Unleash Your Potential: With YVOO SourcerPro+, excel in your
-            procurement efforts. Our platform&nbsp;empowersyou to optimize your
-            supply chain, drive efficiency, and achieve your
-            business&nbsp;goals.
+            procurement efforts. Our platform empowers you to optimize your
+            supply chain, drive efficiency, and achieve your business goals.
           </p>
           <p>
             Join YVOO SourcerPro+ today and experience the game-changing
-            benefits of our industrial&nbsp;supplier platform. Discover,
-            connect, and excel like never before with our AI-powered&nbsp;search
-            capabilities and on-site supplier readiness check.
+            benefits of our industrial supplier platform. Discover, connect, and
+            excel like never before with our AI-powered search capabilities and
+            on-site supplier readiness check.
           </p>
         </div>
       </div>

@@ -10,6 +10,7 @@ module.exports = {
       fontFamily: {
         helvetica: ["var(--font-helveticaNeue)"],
         machina: ["var(--font-neueMachina)"],
+        inter: ["var(--font-inter)"]
       },
       colors: {
         primary: "#06D6F8",
@@ -33,10 +34,11 @@ module.exports = {
         salesBg2xl: "url(../public/images/salesBg2xl.webp)",
         salesBgmd: "url(../public/images/salesBgmd.webp)",
         salesBgsm: "url(../public/images/salesBgsm.webp)",
-        auditorBg: "url(../public/images/auditorBg.webp)",
+        auditorBg3xl: "url(../public/images/auditorBg3xl.webp)",
         auditorBg2xl: "url(../public/images/auditorBg2xl.webp)",
         auditorBgmd: "url(../public/images/auditorBgmd.webp)",
-        auditorBgsm: "url(../public/images/auditorBgsm.webp)",
+        // auditorBgsm: "url(../public/images/auditorBgsm.webp)",
+        auditorBg: "url(../public/images/auditorBg.webp)",
         consultingBg: "url(../public/images/consultingBg.webp)",
         consultingBg2xl: "url(../public/images/consultingBg2xl.webp)",
         consultingBgmd: "url(../public/images/consultingBgmd.webp)",

@@ -5,7 +5,7 @@ function Search({ handleModal }) {
   return (
     <div
       id="search"
-      className="relative grid w-full bg-local bg-contain bg-bottom absolute -bottom-[1px] inset-0 bg-mint" >
+      className="relative grid w-full bg-local bg-contain bg-bottom absolute inset-0 bg-mint" >
       <div className="3xl:max-w-[1516px] 2xl:max-w-[1116px] md:max-w-[598px] mx-[auto]" data-scroll data-scroll-speed="0.1">
         <div className="relative grid grid-cols-1 2xl:grid-cols-2 w-full bg-no-repeat bg-bottom z-30">
           <Image
@@ -14,14 +14,14 @@ function Search({ handleModal }) {
             width={900}
             height={654}
             alt="yvoo-search"
-            className="absolute 2xl:bottom-[0px] md:bottom-[unset] md:top-[186px] top-[211px] 3xl:left-[0] 2xl:left-[-114px] md:left-[-61px] z-10 3xl:max-w-[900px] 2xl:max-w-[774px] md:max-w-[659px] max-w-[89%]"
+            className="absolute 2xl:bottom-[0px] md:bottom-[unset] 2xl:top-[unset] md:top-[186px] top-[211px] 3xl:left-[0] 2xl:left-[-114px] md:left-[-61px] z-10 3xl:max-w-[900px] 2xl:max-w-[774px] md:max-w-[659px] max-w-[89%]"
           />
           <Image
             src="/icons/squares-1.png"
             width={80}
             height={90}
             alt="triangle"
-            className="absolute -top-[59px] 2xl:left-[28%] mouse-parallax 2xl:block hidden"
+            className="absolute -top-[59px] 3xl:left-[22%] 2xl:left-[20.5%] mouse-parallax 2xl:block hidden"
           />
 
           <div
@@ -32,12 +32,12 @@ function Search({ handleModal }) {
             }}
             className="md:flex-center flex-col"
           >
-            <div className="md:relative z-30 flex flex-wrap flex-col items-start 2xl:gap-[24px] md:gap-[16px] gap-[12px] 2xl:mt-[112px] md:mt-[120px] mt-[100px] 3xl:mb-[442px] 2xl:mb-[350px] 2xl:leading-[50px] md:px-[0] px-[41px]">
+            <div className="md:relative z-30 flex flex-wrap flex-col items-start 2xl:gap-[30px] md:gap-[20px] gap-[12px] 3xl:mt-[106px] 2xl:mt-[120px] mt-[115px] 3xl:mb-[442px] 2xl:mb-[350px] 2xl:leading-[50px] md:px-[0] px-[41px]">
               <h1 className="uppercase font-machina font-[800] 2xl:text-[50px] md:text-[40px] text-[30px] 2xl:leading-[54px] md:leading-[44px] leading-[34px] max-w-[318px] 2xl:max-w-[438px] 3xl:ml-[145px] 2xl:ml-[0]">
                 YVOO Search<b className="text-black">Pro+</b>
               </h1>
               <div className="flex flex-col 2xl:gap-[42px] md:gap-[28px] gap-[24px] 2xl:max-w-[438px] 3xl:ml-[145px] 2xl:ml-[0]">
-                <p className="font-[700] text-[18px] text-black 2xl:text-[24px] leading-[22px] 2xl:leading-[30px] max-w-[222px] 2xl:max-w-[260px]">
+                <p className="font-[700] text-black 2xl:text-[24px] text-[20px] 2xl:leading-[30px] leading-[26px] 2xl:max-w-[260px] max-w-[293px]">
                   Discover Quality Suppliers Effortlessly
                 </p>
 
@@ -47,14 +47,14 @@ function Search({ handleModal }) {
               </div>
             </div>
           </div>
-          <div className="md:px-[0] px-[41px] 3xl:pr-[202px] 2xl:pr-[33px] text-black z-30 md:mb-[140px] mb-[100px] 2xl:mb-0 md:mb-[120px] 2xl:mt-[96px] md:mt-[238px] mt-[113px] flex flex-col gap-4 font-[400] [&>p]:text-[14px] [&>p]:customxs:text-[16px] leading-[19px] 3xl:pl-[84px] 2xl:pl-[54px]">
+          <div className="md:px-[0] px-[41px] 3xl:pr-[0px] text-black z-30 md:mb-[120px] mb-[100px] 2xl:mb-0 md:mb-[120px] 2xl:mt-[96px] md:mt-[238px] mt-[113px] flex flex-col 2xl:gap-[20px] gap-[21px] font-[400] [&>p]:text-[14px] [&>p]:customxs:text-[16px] leading-[20px] 3xl:pl-[84px] 2xl:pl-[54px]">
             <Image
               style={{ zIndex: 0, transform: "translateZ(10px)" }}
               src="/icons/brain-1.svg"
               width={97}
               height={112}
               alt="yvoo-search"
-              className="z-10 2lg:max-w-[96px] md:max-w-[97px] max-w-[69px]"
+              className="z-10 2lg:max-w-[96px] md:max-w-[97px] max-w-[69px] mb-[8px]"
             />
             <p>
               In today's fast-paced business world, finding reliable suppliers

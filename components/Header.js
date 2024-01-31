@@ -52,8 +52,8 @@ const Header = () => {
   ];
 
   return (
-    <div className="w-full flex lg2:justify-between items-center p-6 !pl-[40px] lg2:pr-[80px] items-center h-[94px] font-medium bg-[black]">
-      <div className="lg2:hidden mr-[32px]">
+    <div className="w-full flex lg2:justify-between items-center pt-[21px] pb-[21px] lg2:pl-[48px] md:pl-[24px] lg2:pr-[48px] md:pr-[24px] items-center h-[86px] font-medium bg-[black]">
+      <div className="lg2:hidden 2xl:mr-[32px] md:mr-[24px]">
         <Image
           onClick={toggleMenu}
           src="/icons/hamburger.svg"
@@ -69,13 +69,13 @@ const Header = () => {
           width={118}
           height={34}
           alt="logo"
-          className="cursor-pointer min-w-[88px] md:max-w-[118px] max-w-[78px]"
+          className="relative -top-[4px] cursor-pointer min-w-[88px] md:max-w-[118px] max-w-[78px]"
         />
       </Link>
 
       {!active && (
         <ul
-          className={`lg2:flex items-center gap-8 p-6 3xl:ml-[420px] 2xl:ml-[181px] ml-[0] ${
+          className={`lg2:flex items-center gap-[30px] p-6 3xl:ml-[396px] 2xl:ml-[158px] ml-[0] font-inter ${
             active ? "block" : "hidden"
           }`}
         >
@@ -84,8 +84,8 @@ const Header = () => {
               <div key={link.name} className="relative inline-block text-white">
                 <Link href={link.link} legacyBehavior>
                   <a onClick={() => {closeMenu; handleLinkClick(link.link)}} className="group">
-                    <div className="relative z-[1] text-[16px]">{link.name}</div>
-                    <span className={`absolute z-[0] bottom-[6px] w-full h-1 bg-[#2ECC71] bottom-0 left-0 transform scale-x-0 transition-transform origin-bottom-right duration-350 ease-out group-hover:origin-bottom-left group-hover:scale-x-100 ${activeLink == link.link ? '!origin-bottom-left scale-x-50' : ''}`}></span>
+                    <div className="relative z-[1] text-[16px] leading-[44px]">{link.name}</div>
+                    <span className={`absolute z-[0] bottom-[16px] w-full h-1 bg-[#2ECC71] bottom-0 left-0 transform scale-x-0 transition-transform origin-bottom-right duration-350 ease-out group-hover:origin-bottom-left group-hover:scale-x-100 ${activeLink == link.link ? '!origin-bottom-left scale-x-50' : ''}`}></span>
                   </a>
                 </Link>
               </div>

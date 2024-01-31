@@ -87,25 +87,25 @@ body {
 }
 
 .filled_btn {
-  @apply bg-transparent text-black border-2 border-black hover:scale-[1.03] md:h-[60px] h-[36px] uppercase font-[400] md:text-[16px] text-[12px] md:leading-[20px] leading-[16px] w-full max-w-[194px];
+  @apply bg-transparent text-black border-2 border-black hover:scale-[1.03] md:h-[60px] h-[36px] uppercase font-[400] md:text-[16px] text-[12px] md:leading-[20px] leading-[16px] w-full max-w-[255px];
 }
 .white_btn {
-  @apply bg-transparent text-white border-2 border-white hover:scale-[1.03] md:h-[60px] h-[36px] uppercase font-[400] md:text-[16px] text-[12px] md:leading-[20px] leading-[16px] w-full max-w-[194px];
+  @apply bg-transparent text-white border-2 border-white hover:scale-[1.03] md:h-[60px] h-[36px] uppercase font-[400] md:text-[16px] text-[12px] md:leading-[20px] leading-[16px] w-full max-w-[255px];
 }
 .blue_btn {
-  @apply bg-transparent text-[#06D7F9] border-2 border-[#06D7F9] hover:scale-[1.03] md:h-[60px] h-[36px] uppercase font-[400] md:text-[16px] text-[12px] md:leading-[20px] leading-[16px] w-full max-w-[194px];
+  @apply bg-transparent text-[#06D7F9] border-2 border-[#06D7F9] hover:scale-[1.03] md:h-[60px] h-[36px] uppercase font-[400] md:text-[16px] text-[12px] md:leading-[20px] leading-[16px] w-full max-w-[255px];
 }
 
 .filled_btn_white {
-  @apply bg-white text-black border-2 border-white hover:scale-[1.03] px-[30px] py-3 uppercase font-helvetica font-medium text-base w-full max-w-[194px];
+  @apply bg-white text-black border-2 border-white hover:scale-[1.03] px-[30px] py-3 uppercase font-helvetica font-medium text-base w-full max-w-[255px];
 }
 
 .filled_btn_blue {
-  @apply text-[#06D7F9] border-2 border-[#06D7F9] hover:scale-[1.03] px-[30px] py-3 uppercase font-helvetica font-medium text-base w-full max-w-[194px];
+  @apply text-[#06D7F9] border-2 border-[#06D7F9] hover:scale-[1.03] px-[30px] py-[18px] uppercase font-helvetica font-medium text-base leading-[20px] w-full max-w-[255px];
 }
 
 .filled_btn_primary {
-  @apply bg-primary text-white border-2 border-primary hover:scale-[1.03] px-[30px] py-3 uppercase font-helvetica font-medium text-base w-full max-w-[194px];
+  @apply bg-primary text-white border-2 border-primary hover:scale-[1.03] px-[30px] py-3 uppercase font-helvetica font-medium text-base w-full max-w-[255px];
 }
 
 .word {
@@ -114,11 +114,24 @@ body {
 }
 
 .letter {
+  font-weight: 800;
   display: inline-block;
   position: relative;
   float: left;
   transform: translateZ(25px);
   transform-origin: 50% 50% 25px;
+  @media (min-width:320px) {
+    line-height: 54px;
+    font-size: 50px;
+  }
+  @media (min-width:768px) {
+    line-height: 44px;
+    font-size: 40px;
+  }
+  @media (min-width:1440px) {
+    line-height: 54px;
+    font-size: 50px;
+  }
 }
 
 .letter.out {

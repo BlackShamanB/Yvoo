@@ -11,7 +11,7 @@ function Auditor() {
         width={316}
         height={275}
         alt="triangle"
-        className="hidden md:block absolute -top-[193px] right-[8%] mouse-parallax 3xl:max-w-[316px] 2xl:max-w-[180px] md:max-w-[280px] max-w-[127px]" priority
+        className="hidden md:block absolute 3xl:top-[-193px] 2xl:top-[-139px] 3xl:right-[8.5%] 2xl:right-[131px] mouse-parallax 3xl:max-w-[316px] 2xl:max-w-[230px] md:max-w-[280px] max-w-[127px]" priority
       />
       <Image
         src="/icons/squares-3.png"
@@ -25,50 +25,50 @@ function Auditor() {
         width={280}
         height={204}
         alt="triangle"
-        className="hidden md:block absolute 2xl:top-[643px] top-[1037px] 3xl:right-[17%] 2xl:right-[9%] right-[17%] mouse-parallax" priority
+        className="hidden md:block absolute 3xl:top-[643px] 2xl:top-[85.7%] top-[1037px] 3xl:right-[17.5%] 2xl:right-[9.3%] right-[17%] mouse-parallax" priority
       />
       <Image
         src="/images/bg-footer.png"
         width={905}
-        height={812}
+        height={905}
         alt="yvoo-sales"
-        style={{ objectFit: "cover", mixBlendMode: "color-dodge" }}
-        className="hidden md:block absolute ml-[-50px] mt-[203px] h-[812px] z-1" priority
+        style={{ objectFit: "contain", mixBlendMode: "color-dodge" }}
+        className="hidden md:block absolute 3xl:ml-[-109px] 2xl:ml-[-87px] 2xl:mt-[203px] h-[812px] z-1" priority
       />
       <div className="3xl:max-w-[1516px] 2xl:max-w-[1116px] md:max-w-[598px] mx-[auto]" priority data-scroll data-scroll-speed="0.1">
-        <div className="relative grid grid-cols-1 2xl:grid-cols-2 w-full h-auto px-[41px]">
+        <div className="relative grid grid-cols-1 2xl:grid-cols-2 w-full h-auto"> 
           <div className="w-full bg-right bg-no-repeat">
             <Image
-              src="/images/auditorBg.webp"
+              src="/images/auditorBg3xl.webp"
               width={592}
               height={395}
               alt="yvoo-sales"
-              className="hidden md:block relative 2xl:ml-[auto] md:ml-[0] 2xl:mt-[126px] md:mt-[120px] 2xl:w-[592px] md:w-[476px]"
+              className="hidden md:block relative 3xl:ml-[154px] md:ml-[0] 2xl:mt-[126px] md:mt-[120px] 3xl:w-[592px] 2xl:w-[546px] md:w-[476px]"
             />
             <Image
               src="/icons/greenTriangle-3.png"
               width={116}
               height={139}
               alt="triangle"
-              className="hidden md:block absolute 2xl:top-[454px] md:top-[50px] top-[63px] 2xl:left-[42%] left-[17%] mouse-parallax 2xl:max-w-[116px] md:max-w-[102px] max-w-[42px]"
+              className="hidden 3xl:block 2xl:hidden absolute 2xl:top-[454px] md:top-[50px] top-[63px] 2xl:left-[40%] left-[17%] mouse-parallax 2xl:max-w-[116px] md:max-w-[102px] max-w-[42px]"
             />
             <div className="customxs:hidden absolute inset-0 bg-black opacity-40"></div>
           </div>
-          <div className="3xl:pl-[84px] 2xl:pl-[54px] w-full flex flex-col 2xl:pt-[126px] pt-[80px] pb-[53px] customxs:pb-[75px] md:pt-none md:pb-none">
-            <h1 className="mb-[24px] text-[#06D7F9] max-w-[182px] customxs:max-w-none font-machina font-[800] text-[30px] 2xl:text-[50px] md:text-[40px] leading-[30px] md:leading-[54px]">
+          <div className="3xl:pl-[84px] 2xl:pl-[54px] w-full flex flex-col 2xl:pt-[120px] pt-[80px] pb-[53px] customxs:pb-[75px] md:pt-none md:pb-none">
+            <h1 className="uppercase mb-[30px] text-[#06D7F9] max-w-[182px] customxs:max-w-none font-machina font-[800] text-[30px] 2xl:text-[50px] md:text-[40px] leading-[30px] md:leading-[54px]">
               Join the Team of
               <br /> YVOO auditors
             </h1>
-            <div className="max-w-[584px] flex flex-col gap-3 font-[400] leading-[20px] text-base">
+            <div className="max-w-[683px] flex flex-col gap-[20px] font-[400] leading-[20px] text-base">
               <p>
                 Looking for a flexible and rewarding career opportunity in
-                supplier readiness checks? YVOO is seeking motivated individuals
+                supplier readiness checks ? YVOO is seeking motivated individuals
                 to join our team of freelance agents. Conduct independent checks
                 and play a crucial role in ensuring the safety and integrity of
                 supply chains.
               </p>
               <p className="font-[700]">Why Become a YVOO Agent?</p>
-              <ul className="pl-[20px] list-disc list-outside">
+              <ul className="pl-[25px] list-disc list-outside">
                 <li>Set your own hours and work on your terms</li>
                 <li>Get paid fast with transparent terms</li>
                 <li>
@@ -88,7 +88,7 @@ function Auditor() {
               </p>
             </div>
             <Link href={"/auditors"}>
-              <button className="filled_btn_blue 2xl:mt-[48px] md:mt-[36px] mt-[24px]">
+              <button className="filled_btn_blue 2xl:mt-[48px] md:mt-[36px] mt-[24px] !max-w-[223px]">
                 Apply now
               </button>
             </Link>

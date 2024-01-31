@@ -25,7 +25,7 @@ const Footer = () => {
   };
 
   return (
-    <footer className="bg-[#131D2A] text-white -mt-[1px] lg:pl-[100px] lg:pr-[54px] pt-[93px] pb-[92px] md:pl-[85px] md:pr-[85px] flex 2xl:items-center 2xl:justify-centerr md:flex-between flex-wrap 2xl:gap-[135px] gap-[60px] flex-col 2xl:flex-row px-[41px]">
+    <footer className="bg-[#131D2A] text-white -mt-[1px] lg:pl-[100px] 3xl:pr-[54px] 2xl:pr-[49px] md:pr-[85px] pt-[79px] pb-[111px] md:pl-[85px] flex 2xl:items-center 2xl:justify-centerr md:flex-between flex-wrap 2xl:gap-[135px] gap-[60px] flex-col 2xl:flex-row px-[41px]">
       <Image src="logo.svg" width={122} height={36} alt="logo" />
       <div className="flex-1 md:flex-center md:justify-between gap-8 flex-wrap">
         <div className="flex items-center gap-[84px] flex-wrap">
@@ -63,8 +63,8 @@ const Footer = () => {
               );
             })}
           </ul>
-          <ul className="flex flex-col gap-3 uppercase text-[#53D3AA] hidden 2xl:block">
-            watch instructions<Image src="/icons/watch_instructions.svg" width={48} height={48} alt="logo" className="inline"/>
+          <ul className="flex flex-col uppercase text-[#53D3AA] hidden 2xl:block ml-[36px]">
+            watch instructions<Image src="/icons/watch_instructions.svg" width={48} height={48} alt="logo" className="inline ml-[10px]"/>
           </ul>
         </div>
       </div>
