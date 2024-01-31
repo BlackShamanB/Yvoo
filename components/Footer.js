@@ -25,10 +25,10 @@ const Footer = () => {
   };
 
   return (
-    <footer className="bg-[#131D2A] text-white -mt-[1px] lg:pl-[100px] 3xl:pr-[54px] 2xl:pr-[49px] md:pr-[85px] pt-[79px] pb-[111px] md:pl-[85px] flex 2xl:items-center 2xl:justify-centerr md:flex-between flex-wrap 2xl:gap-[135px] gap-[60px] flex-col 2xl:flex-row px-[41px]">
+    <footer className="bg-[#131D2A] text-white -mt-[1px] lg:pl-[100px] 3xl:pr-[54px] 2xl:pr-[49px] md:pr-[85px] 2xl:pt-[79px] pt-[60px] pb-[111px] md:pl-[85px] flex 2xl:items-center 2xl:justify-centerr md:flex-between flex-wrap 2xl:gap-[135px] gap-[60px] flex-col 2xl:flex-row px-[41px]">
       <Image src="logo.svg" width={122} height={36} alt="logo" />
       <div className="flex-1 md:flex-center md:justify-between gap-8 flex-wrap">
-        <div className="flex items-center gap-[84px] flex-wrap">
+        <div className="flex items-center 2xl:gap-[84px] md:gap-[113px] gap-[102px] flex-wrap">
           <ul className="flex flex-col gap-3 leading-[20px]">
             {firstLinks.map((link) => {
               return (
@@ -81,12 +81,12 @@ const Footer = () => {
           />
           <h2 className="font-normal text-primary">Request demo</h2>
         </div>
-      <div className="flex flex-1 md:flex-center justify-between gap-8 flex-wrap 2xl:hidden">
-        <ul className="flex md:flex-center items-center gap-3 uppercase text-[#53D3AA] block 2xl:hidden md:md-[0] mb-[20px]">
+      <div className="flex flex-1 md:flex-center justify-between gap-8 flex-wrap 2xl:hidden 2xl:mt-[0] md:mt-[-12px] mt-[-11px]">
+        <ul className="flex md:flex-center items-center gap-3 uppercase text-[#53D3AA] block 2xl:hidden md:md-[0] mb-[-12px]">
           watch instructions<Image src="/icons/watch_instructions.svg" width={48} height={48} alt="logo" className="inline"/>
         </ul>
         <div
-          className="flex items-center gap-[10px] cursor-pointer block 2xl:hidden md:md-[0] mb-[20px]"
+          className="flex items-center gap-[10px] cursor-pointer block 2xl:hidden 2xl:mb-[20px] md:mb-[-20px] mb-[20px]"
           onClick={handleModal}
         >
           <Image

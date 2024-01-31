@@ -64,6 +64,8 @@ module.exports = {
         discoverConnectExcel2xl: "url(../public/images/discover-connect-excel2xl.webp)",
         discoverConnectExcelmd: "url(../public/images/discover-connect-excelmd.webp)",
         discoverConnectExcel: "url(../public/images/discover-connect-excel.webp)",
+        bgFooter2xl: "url(../public/images/bg-footer2xl.png)",
+        bgFootermd: "url(../public/images/bg-footermd.png)",
         bgFooter: "url(../public/images/bg-footer.png)",
         solution2Bgmd: "url(../public/images/solution2Bgmd.png)",
         solution2Bg: "url(../public/images/solution2Bg.png)",

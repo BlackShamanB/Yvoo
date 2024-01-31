@@ -21,7 +21,7 @@ function Search({ handleModal }) {
             width={80}
             height={90}
             alt="triangle"
-            className="absolute -top-[59px] 3xl:left-[22%] 2xl:left-[20.5%] mouse-parallax 2xl:block hidden"
+            className="absolute 2xl:top-[-59px] top-[-111%] 3xl:left-[22%] 2xl:left-[20.5%] left-[82%] mouse-parallax 2xl:block md:hidden block md:max-w-[none] max-w-[45px] transform md:scale-y-[1] scale-y-[-1]"
           />
 
           <div
@@ -32,16 +32,16 @@ function Search({ handleModal }) {
             }}
             className="md:flex-center flex-col"
           >
-            <div className="md:relative z-30 flex flex-wrap flex-col items-start 2xl:gap-[30px] md:gap-[20px] gap-[12px] 3xl:mt-[106px] 2xl:mt-[120px] mt-[115px] 3xl:mb-[442px] 2xl:mb-[350px] 2xl:leading-[50px] md:px-[0] px-[41px]">
+            <div className="md:relative z-30 flex flex-wrap flex-col items-start 2xl:gap-[30px] md:gap-[20px] gap-[12px] 3xl:mt-[106px] 2xl:mt-[107px] md:mt-[115px] mt-[98px] 3xl:mb-[442px] 2xl:mb-[350px] 2xl:leading-[50px] md:px-[0] px-[41px]">
               <h1 className="uppercase font-machina font-[800] 2xl:text-[50px] md:text-[40px] text-[30px] 2xl:leading-[54px] md:leading-[44px] leading-[34px] max-w-[318px] 2xl:max-w-[438px] 3xl:ml-[145px] 2xl:ml-[0]">
                 YVOO Search<b className="text-black">Pro+</b>
               </h1>
               <div className="flex flex-col 2xl:gap-[42px] md:gap-[28px] gap-[24px] 2xl:max-w-[438px] 3xl:ml-[145px] 2xl:ml-[0]">
-                <p className="font-[700] text-black 2xl:text-[24px] text-[20px] 2xl:leading-[30px] leading-[26px] 2xl:max-w-[260px] max-w-[293px]">
+                <p className="font-[700] text-black 2xl:text-[24px] md:text-[20px] text-[16px] 2xl:leading-[30px] md:leading-[26px] leading-[20px] 2xl:max-w-[260px] max-w-[293px]">
                   Discover Quality Suppliers Effortlessly
                 </p>
 
-                <button className="filled_btn " onClick={handleModal}>
+                <button className="filled_btn" onClick={handleModal}>
                   Request demo
                 </button>
               </div>

@@ -52,15 +52,15 @@ const Header = () => {
   ];
 
   return (
-    <div className="w-full flex lg2:justify-between items-center pt-[21px] pb-[21px] lg2:pl-[48px] md:pl-[24px] lg2:pr-[48px] md:pr-[24px] items-center h-[86px] font-medium bg-[black]">
-      <div className="lg2:hidden 2xl:mr-[32px] md:mr-[24px]">
+    <div className="w-full flex lg2:justify-between items-center md:pt-[21px] md:pb-[21px] lg2:pl-[48px] md:pl-[24px] pl-[4px] lg2:pr-[48px] md:pr-[24px] pr-[12px] items-center md:h-[86px] h-[58px] font-medium bg-[black]">
+      <div className="lg2:hidden 2xl:mr-[32px] md:mr-[33px]">
         <Image
           onClick={toggleMenu}
           src="/icons/hamburger.svg"
           width={44}
           height={34}
           alt="menu"
-          className="cursor-pointer min-w-[26px]"
+          className="cursor-pointer min-w-[26px] max-w-[34px] h-[34px]"
         />
       </div>
       <Link href={"/"}>
@@ -69,7 +69,7 @@ const Header = () => {
           width={118}
           height={34}
           alt="logo"
-          className="relative -top-[4px] cursor-pointer min-w-[88px] md:max-w-[118px] max-w-[78px]"
+          className="relative -top-[4px] cursor-pointer min-w-[88px] md:max-w-[118px] max-w-[78px] md:ml-[0] ml-[2px]"
         />
       </Link>
 

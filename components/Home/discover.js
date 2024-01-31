@@ -4,13 +4,13 @@ import { Link as ReactScrollLink } from "react-scroll";
 
 function Discover() {
   return (
-    <div className="relative grid w-full flex justify-center 2xl:bg-discoverConnectExcel2xl md:bg-discoverConnectExcelmd bg-discoverConnectExcel bg-no-repeat 3xl:bg-contain 2xl:bg-auto bg-[size:100%] 3xl:bg-[position:0_0] 2xl:bg-[position:-240px_2px] bg-[position:0_0]">
+    <div className="relative grid w-full flex justify-center 2xl:bg-discoverConnectExcel2xl md:bg-discoverConnectExcelmd bg-discoverConnectExcel bg-no-repeat 3xl:bg-contain 2xl:bg-auto bg-[size:100%] 3xl:bg-[position:0_0] 2xl:bg-[position:-240px_2px] md:bg-[position:0_0%] bg-[position:0_19%]">
       <Image
         src="/icons/greenTriangle-1.png"
         width={116}
         height={139}
         alt="triangle"
-        className="absolute 2xl:top-[269px] top-[22%] 3xl:left-[15%] 2xl:left-[7%] md:left-[16%] mouse-parallax 2xl:max-w-[116px] max-w-[63px]"
+        className="absolute 2xl:top-[269px] md:top-[22%] top-[34%] 3xl:left-[15%] 2xl:left-[7%] md:left-[16%] left-[11%] mouse-parallax 2xl:max-w-[116px] max-w-[63px]"
         priority
       />
       <Image
@@ -18,7 +18,7 @@ function Discover() {
         width={101}
         height={113}
         alt="triangle"
-        className="absolute 2xl:top-[548px] top-[35.6%] 2xl:left-[11%] left-[13%] mouse-parallax md:max-w-[101px] max-w-[63px]"
+        className="absolute 2xl:top-[548px] md:top-[35.6%] top-[41.1%] 2xl:left-[11%] md:left-[13%] left-[6%] mouse-parallax md:max-w-[101px] max-w-[63px]"
         priority
       />
       <Image
@@ -26,11 +26,11 @@ function Discover() {
         width={180}
         height={170}
         alt="triangle"
-        className="absolute 2xl:top-[790px] md:top-[96.4%] 3xl:left-[40%] 2xl:left-[36.6%] md:left-[52.6%] mouse-parallax md:max-w-[180px] max-w-[127px] z-[1]"
+        className="absolute 2xl:top-[790px] md:top-[96.4%] top-[98.3%] 3xl:left-[40%] 2xl:left-[36.6%] md:left-[52.6%] left-[53%] mouse-parallax md:max-w-[180px] max-w-[127px] z-[1]"
         priority
       />
       <div
-        className="3xl:max-w-[1516px] 2xl:max-w-[1116px] md:max-w-[598px] mx-[auto] relative grid grid-cols-1 2xl:grid-cols-2 w-full mb-[100px] 3xl:mt-[232px] 2xl:mt-[200px] md:mt-[400px] sm:mt-[262px] mt-[787px] 3xl:mb-[254px] 2xl:mb-[166px] md:mb-[120px] lg:mb-[166px] "
+        className="3xl:max-w-[1516px] 2xl:max-w-[1116px] md:max-w-[598px] mx-[auto] relative grid grid-cols-1 2xl:grid-cols-2 w-full mb-[100px] 3xl:mt-[232px] 2xl:mt-[200px] md:mt-[400px] sm:mt-[262px] mt-[787px] 3xl:mb-[254px] 2xl:mb-[162px] md:mb-[115px] lg:mb-[166px] "
         priority
         data-scroll
         data-scroll-speed="0.1"
@@ -46,13 +46,13 @@ function Discover() {
               className="object-cover 3xl:max-w-[539px] md:max-w-[390px] max-w-[220px] 3xl:ml-[auto] 2xl:ml-[-37px] mx-[auto] md:mb-[12px] mb-[8px]"
             />
 
-            <h1 className="md:leading-[26px] leading-[14px] md:text-[21px] text-[14px] font-[700] 2xl:max-w-[310px] md:max-w-[390px] max-w-[220px] 2xl:w-[310px] md:w-[390px] 3xl:mr-[57px] md:float-right md:mx-[0] mx-[auto] text-right 3xl:mt-[0] md:mt-[1px] 3xl:mr-[0] 2xl:mr-[-11px] md:mr-[84px]">
+            <h1 className="md:leading-[26px] leading-[14px] md:text-[21px] text-[12px] font-[700] 2xl:max-w-[310px] md:max-w-[390px] max-w-[220px] 2xl:w-[310px] md:w-[390px] 3xl:mr-[57px] md:float-right md:mx-[0] mx-[auto] text-right 3xl:mt-[0] md:mt-[1px] 3xl:mr-[0] 2xl:mr-[-11px] md:mr-[84px]">
               Discover, Connect, Excel.
             </h1>
           </div>
         </div>
 
-        <div className="px-[20px] 3xl:pr-[0] md:px-[0] 2xl:mt-[0] md:mt-[119px] mt-[106px] md:3xl:pl-[84px] 2xl:pl-[54px] my-auto flex flex-col gap-[20px] font-[400] leading-[20px] text-base max-w-[809px] font-inter">
+        <div className="3xl:pr-[0] md:px-[0] px-[40px] 2xl:mt-[0] md:mt-[119px] mt-[106px] md:3xl:pl-[84px] 2xl:pl-[54px] my-auto flex flex-col gap-[20px] font-[400] leading-[20px] md:text-[16px] text-[14px] leading-[20px] max-w-[809px] font-inter">
           <p>
             Step into the future of industrial B2B procurement with YVOO
             SourcerPo+. Our powerful platform is specifically designed to meet
@@ -63,7 +63,7 @@ function Discover() {
             . Whether you're searching for reliable suppliers or looking to
             expand your network, B2BSourcerPro+ is your go-to solution.
           </p>
-          <h2 className="font-[500] text-[24px]">
+          <h2 className="font-[500] md:text-[24px] text-[16px] md:leading-[24px] leading-[20px]">
             {" "}
             Why Choose YVOO B2BSourcerPro+?{" "}
           </h2>

@@ -13,7 +13,7 @@ function Scan({ handleModal }) {
               transform: "translateZ(-10px)",
               transformStyle: "preserve-3d",
             }}
-            className="text-black py-[55px] md:py-0 md:flex-center flex-col h-auto 3xl:h-[975px] 2xl:h-[858px] md:h-[1234px]"
+            className="text-black md:pt-[0] md:pb-[0] pt-[97px] pb-[59px] md:flex-center flex-col h-auto 3xl:h-[975px] 2xl:h-[858px] md:h-[1234px]"
           >
             <div
               style={{
@@ -22,11 +22,11 @@ function Scan({ handleModal }) {
               }}
               className="flex flex-wrap md:items-start flex-col 2xl:gap-[24px] md:gap-[16px] 2xl:mt-[136px] md:mt-[115px] 2xl:mb-[420px] md:mb-[20px] md:px-[0] px-[41px] 2xl:hidden block"
             >
-              <h1 className="uppercase font-machina font-[800] text-[40px] text-white 2xl:text-[50px] leading-[30px] md:leading-[44px] 2xl:leading-[50px] max-w-[318px] 2xl:max-w-[340px] mb-[3px]">
-                YVOO Scan<b className="text-black">Pro+</b>
+              <h1 className="uppercase font-machina font-[800] text-white 2xl:text-[50px] md:text-[40px] text-[30px] md:leading-[44px] leading-[34px] 2xl:leading-[50px] max-w-[318px] 2xl:max-w-[340px] md:mb-[3px] mb-[15px]">
+                YVOO<br></br>Scan<b className="text-black">Pro+</b>
               </h1>
-              <div className="flex flex-col 2xl:gap-[48px] md:gap-[28px] md:items-start mb-[60px]">
-                <p className="font-[700] 2xl:text-[24px] text-[20px] text-black 2xl:leading-[26px] leading-[26px] max-w-[222px] md:max-w-[327px] 2xl:max-w-[340px] 2xl:mb-[24px]">
+              <div className="flex flex-col 2xl:gap-[48px] md:gap-[28px] gap-[24px] md:items-start mb-[60px]">
+                <p className="font-[700] 2xl:text-[24px] md:text-[20px] text-[16px] text-black 2xl:leading-[26px] md:leading-[26px] leading-[20px] md:max-w-[327px] 2xl:max-w-[340px] md:max-w-[222px] 2xl:mb-[24px]">
                   Unleash Supplier Readiness for Unprecedented Audit Success{" "}
                 </p>
                 <button className="filled_btn" onClick={handleModal}>
@@ -47,9 +47,9 @@ function Scan({ handleModal }) {
                 width={115}
                 height={108}
                 alt="yvoo-search"
-                className="md:max-w-[115px] max-w-[85px] z-10 3xl:ml-[-32px] 2xl:ml-[-33px] 3xl:mb-[7px] 2xl:mb-[6px] 2xl:relative absolute md:right-[0] right-[37px] 2xl:top-[0] md:top-[-62px] top-[-29px]"
+                className="md:max-w-[115px] max-w-[85px] z-10 3xl:ml-[-32px] 2xl:ml-[-33px] 3xl:mb-[7px] 2xl:mb-[4px] 2xl:relative absolute md:right-[0] right-[37px] 2xl:top-[0] md:top-[-62px] top-[-29px]"
               />
-              <h2 className="text-black font-[700] 2xl:text-[24px] md:text-[20px] text-[16px] 2xl:leading-[30px] md:leading-[26px] leading-[20px] 3xl:mb-[21px] 2xl:mb-[28px] mb-[8px] md:pr-[150px] pr-[85px]">
+              <h2 className="text-black font-[700] 2xl:text-[24px] md:text-[20px] text-[16px] 2xl:leading-[30px] md:leading-[26px] leading-[20px] 3xl:mb-[21px] 2xl:mb-[22px] md:mb-[8px] mb-[-4px] md:pr-[150px] pr-[85px]">
                 Unlock Your Supplier Potential, Maximize Audit Success!
               </h2>
               <p>
@@ -127,14 +127,14 @@ function Scan({ handleModal }) {
               width={875}
               height={493}
               alt="yvoo-search"
-              className="absolute 2xl:bottom-[-155px] 2xl:bottom-[-59px] bottom-[-40px] z-10 3xl:max-w-[875px] 2xl:max-w-[666px] md:max-w-[622px] max-w-[319px] 3xl:w-[875px] 2xl:w-[666px] md:w-[622px] 2xl:right-[unset] md:right-[-85px] right-[0]"
+              className="absolute 3xl:bottom-[-155px] 2xl:bottom-[-59px] bottom-[-40px] z-10 3xl:max-w-[875px] 2xl:max-w-[666px] md:max-w-[622px] max-w-[319px] 3xl:w-[875px] 2xl:w-[666px] md:w-[622px] 2xl:right-[unset] md:right-[-85px] right-[0]"
             />
             <Image
               src="/icons/greenTriangle-2.png"
               width={116}
               height={139}
               alt="triangle"
-              className="absolute 2xl:top-[38%] top-[-1290px] 2xl:right-[-15%] right-[-7%] mouse-parallax 3xl:block 2xl:hidden block md:max-w-[116px] max-w-[63px]"
+              className="absolute 2xl:top-[38%] md:top-[-1290px] top-[-1141px] 2xl:right-[-15%] md:right-[-7%] right-[12%] mouse-parallax 3xl:block 2xl:hidden block md:max-w-[116px] max-w-[63px]"
             />
           </div>
         </div>

@@ -11,55 +11,70 @@ function Auditor() {
         width={316}
         height={275}
         alt="triangle"
-        className="hidden md:block absolute 3xl:top-[-193px] 2xl:top-[-139px] 3xl:right-[8.5%] 2xl:right-[131px] mouse-parallax 3xl:max-w-[316px] 2xl:max-w-[230px] md:max-w-[280px] max-w-[127px]" priority
+        className="md:block absolute 3xl:top-[-193px] 2xl:top-[-139px] md:top-[-11.5%] top-[-9%] 3xl:right-[8.5%] 2xl:right-[131px] md:right-[7%] right-[6%] mouse-parallax 3xl:max-w-[316px] 2xl:max-w-[230px] md:max-w-[230px] max-w-[162px]" priority
       />
       <Image
         src="/icons/squares-3.png"
         width={145}
         height={140}
         alt="triangle"
-        className="hidden md:block absolute 2xl:top-[151px] md:top-[328px] right-[0%] mouse-parallax" priority
+        className="md:block absolute 2xl:top-[151px] md:top-[27.3%] top-[20.9%] 2xl:right-[0%] md:right-[3.7%] right-[2%] 2xl:max-w-[unset] md:max-w-[110px] max-w-[70px] mouse-parallax" priority
       />
       <Image
         src="/icons/message-icon.png"
         width={280}
         height={204}
         alt="triangle"
-        className="hidden md:block absolute 3xl:top-[643px] 2xl:top-[85.7%] top-[1037px] 3xl:right-[17.5%] 2xl:right-[9.3%] right-[17%] mouse-parallax" priority
+        className="md:block absolute 3xl:top-[643px] 2xl:top-[85.7%] md:top-[91%] top-[95.4%] 3xl:right-[17.5%] 2xl:right-[9.3%] md:right-[6%] right-[0%] 2xl:max-w-[unset] md:max-w-[220px] max-w-[147px] mouse-parallax" priority
+      />
+      <Image
+        src="/images/bg-footer2xl.png"
+        width={905}
+        height={905}
+        alt="yvoo-sales"
+        style={{ mixBlendMode: "color-dodge" }}
+        className="hidden 2xl:block 2xl:object-contain absolute 3xl:ml-[-109px] 2xl:ml-[-109px] 2xl:mt-[203px] h-[812px] z-1" priority
+      />
+      <Image
+        src="/images/bg-footermd.png"
+        width={905}
+        height={905}
+        alt="yvoo-sales"
+        style={{ mixBlendMode: "color-dodge" }}
+        className="2xl:hidden md:block hidden  absolute mt-[58px] h-[649px] w-[378px] z-1" priority
       />
       <Image
         src="/images/bg-footer.png"
         width={905}
         height={905}
         alt="yvoo-sales"
-        style={{ objectFit: "contain", mixBlendMode: "color-dodge" }}
-        className="hidden md:block absolute 3xl:ml-[-109px] 2xl:ml-[-87px] 2xl:mt-[203px] h-[812px] z-1" priority
+        style={{ mixBlendMode: "color-dodge" }}
+        className="md:hidden block 2xl:object-contain md:block absolute 3xl:ml-[-109px] 2xl:ml-[-109px] 2xl:mt-[203px] h-[328px] w-[176px] mt-[65px] z-1" priority
       />
-      <div className="3xl:max-w-[1516px] 2xl:max-w-[1116px] md:max-w-[598px] mx-[auto]" priority data-scroll data-scroll-speed="0.1">
-        <div className="relative grid grid-cols-1 2xl:grid-cols-2 w-full h-auto"> 
+      <div className="3xl:max-w-[1516px] 2xl:max-w-[1116px] md:max-w-[598px] mx-[auto] md:px-[0] px-[41px]" priority data-scroll data-scroll-speed="0.1">
+        <div className="relative grid grid-cols-1 2xl:grid-cols-2 w-full h-auto md:pt-[0] pt-[101px]"> 
           <div className="w-full bg-right bg-no-repeat">
             <Image
               src="/images/auditorBg3xl.webp"
               width={592}
               height={395}
               alt="yvoo-sales"
-              className="hidden md:block relative 3xl:ml-[154px] md:ml-[0] 2xl:mt-[126px] md:mt-[120px] 3xl:w-[592px] 2xl:w-[546px] md:w-[476px]"
+              className="md:block relative 3xl:ml-[154px] md:ml-[0] ml-[0] 2xl:mt-[126px] md:mt-[120px] 3xl:w-[592px] 2xl:w-[546px] md:w-[476px] w-[221px]"
             />
             <Image
               src="/icons/greenTriangle-3.png"
               width={116}
               height={139}
               alt="triangle"
-              className="hidden 3xl:block 2xl:hidden absolute 2xl:top-[454px] md:top-[50px] top-[63px] 2xl:left-[40%] left-[17%] mouse-parallax 2xl:max-w-[116px] md:max-w-[102px] max-w-[42px]"
+              className="3xl:block 2xl:hidden block absolute 2xl:top-[454px] md:top-[50px] top-[63px] 2xl:left-[40%] md:left-[7%] left-[9%] mouse-parallax 2xl:max-w-[116px] md:max-w-[102px] max-w-[42px]"
             />
-            <div className="customxs:hidden absolute inset-0 bg-black opacity-40"></div>
+            {/* <div className="customxs:hidden absolute inset-0 bg-black opacity-40"></div> */}
           </div>
-          <div className="3xl:pl-[84px] 2xl:pl-[54px] w-full flex flex-col 2xl:pt-[120px] pt-[80px] pb-[53px] customxs:pb-[75px] md:pt-none md:pb-none">
-            <h1 className="uppercase mb-[30px] text-[#06D7F9] max-w-[182px] customxs:max-w-none font-machina font-[800] text-[30px] 2xl:text-[50px] md:text-[40px] leading-[30px] md:leading-[54px]">
-              Join the Team of
-              <br /> YVOO auditors
+          <div className="3xl:pl-[84px] 2xl:pl-[54px] w-full flex flex-col 2xl:pt-[120px] md:pt-[75px] pt-[47px] 2xl:pb-[75px] md:pb-[60px] pb-[40px]">
+            <h1 className="uppercase 2xl:mb-[30px] mb-[18px] text-[#06D7F9] font-machina font-[800] 2xl:text-[50px] md:text-[40px] text-[30px] 2xl:leading-[54px] md:leading-[44px] leading-[34px] 2xl:max-w-[unset] md:max-w-[504px] max-w-[unset]">
+              Join the Team of YVOO auditors
             </h1>
-            <div className="max-w-[683px] flex flex-col gap-[20px] font-[400] leading-[20px] text-base">
+            <div className="max-w-[683px] flex flex-col gap-[20px] font-[400] md:text-[16px] text-[14px] leading-[20px]">
               <p>
                 Looking for a flexible and rewarding career opportunity in
                 supplier readiness checks ? YVOO is seeking motivated individuals
@@ -67,8 +82,8 @@ function Auditor() {
                 and play a crucial role in ensuring the safety and integrity of
                 supply chains.
               </p>
-              <p className="font-[700]">Why Become a YVOO Agent?</p>
-              <ul className="pl-[25px] list-disc list-outside">
+              <p className="font-[700] md:text-[16px] text-[14px]">Why Become a YVOO Agent?</p>
+              <ul className="md:pl-[25px] pl-[21px] list-disc list-outside">
                 <li>Set your own hours and work on your terms</li>
                 <li>Get paid fast with transparent terms</li>
                 <li>
@@ -88,7 +103,7 @@ function Auditor() {
               </p>
             </div>
             <Link href={"/auditors"}>
-              <button className="filled_btn_blue 2xl:mt-[48px] md:mt-[36px] mt-[24px] !max-w-[223px]">
+              <button className="filled_btn_blue 2xl:mt-[48px] md:mt-[36px] mt-[24px] md:max-w-[223px] max-w-[136px]">
                 Apply now
               </button>
             </Link>

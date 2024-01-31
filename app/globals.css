@@ -83,11 +83,11 @@ body {
 }
 
 .outlined_btn {
-  @apply flex-center bg-transparent text-primary border-2 border-primary hover:text-white hover:bg-primary md:px-[30px] px-[13px] py-3 uppercase font-helvetica font-medium md:text-[16px] text-[12px] leading-[16px];
+  @apply flex-center bg-transparent text-primary border-2 border-primary hover:text-white hover:bg-primary md:px-[30px] px-[10px] md:py-3 py-[8px] uppercase font-helvetica font-medium md:text-[16px] text-[12px] leading-[16px];
 }
 
 .filled_btn {
-  @apply bg-transparent text-black border-2 border-black hover:scale-[1.03] md:h-[60px] h-[36px] uppercase font-[400] md:text-[16px] text-[12px] md:leading-[20px] leading-[16px] w-full max-w-[255px];
+  @apply bg-transparent text-black border-2 border-black hover:scale-[1.03] md:h-[60px] h-[36px] uppercase font-[400] md:text-[16px] text-[12px] md:leading-[20px] leading-[16px] w-full md:max-w-[255px] max-w-[159px];
 }
 .white_btn {
   @apply bg-transparent text-white border-2 border-white hover:scale-[1.03] md:h-[60px] h-[36px] uppercase font-[400] md:text-[16px] text-[12px] md:leading-[20px] leading-[16px] w-full max-w-[255px];
@@ -101,7 +101,7 @@ body {
 }
 
 .filled_btn_blue {
-  @apply text-[#06D7F9] border-2 border-[#06D7F9] hover:scale-[1.03] px-[30px] py-[18px] uppercase font-helvetica font-medium text-base leading-[20px] w-full max-w-[255px];
+  @apply text-[#06D7F9] border-2 border-[#06D7F9] hover:scale-[1.03] px-[30px] md:py-[18px] py-[8px] uppercase font-helvetica font-medium md:text-base text-[12px] md:leading-[20px] leading-[16px] w-full md:max-w-[255px] max-w-[136px];
 }
 
 .filled_btn_primary {
@@ -121,8 +121,8 @@ body {
   transform: translateZ(25px);
   transform-origin: 50% 50% 25px;
   @media (min-width:320px) {
-    line-height: 54px;
-    font-size: 50px;
+    line-height: 34px;
+    font-size: 30px;
   }
   @media (min-width:768px) {
     line-height: 44px;
