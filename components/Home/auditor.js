@@ -51,7 +51,7 @@ function Auditor() {
         style={{ mixBlendMode: "color-dodge" }}
         className="md:hidden block 2xl:object-contain md:block absolute 3xl:ml-[-109px] 2xl:ml-[-109px] 2xl:mt-[203px] h-[328px] w-[176px] mt-[65px] z-1" priority
       />
-      <div className="3xl:max-w-[1516px] 2xl:max-w-[1116px] md:max-w-[598px] mx-[auto] md:px-[0] px-[41px]" priority data-scroll data-scroll-speed="0.1">
+      <div className="3xl:max-w-[1516px] 2xl:max-w-[1116px] md:max-w-[598px] mx-[auto] md:px-[0] px-[41px]" priority data-scroll data-scroll-speed="0.3">
         <div className="relative grid grid-cols-1 2xl:grid-cols-2 w-full h-auto md:pt-[0] pt-[101px]"> 
           <div className="w-full bg-right bg-no-repeat">
             <Image

@@ -6,7 +6,7 @@ function Search({ handleModal }) {
     <div
       id="search"
       className="relative grid w-full bg-local bg-contain bg-bottom absolute inset-0 bg-mint" >
-      <div className="3xl:max-w-[1516px] 2xl:max-w-[1116px] md:max-w-[598px] mx-[auto]" data-scroll data-scroll-speed="0.1">
+      <div className="3xl:max-w-[1516px] 2xl:max-w-[1116px] md:max-w-[598px] mx-[auto]" data-scroll data-scroll-speed="0.3">
         <div className="relative grid grid-cols-1 2xl:grid-cols-2 w-full bg-no-repeat bg-bottom z-30">
           <Image
             style={{ zIndex: 0 }}

@@ -19,7 +19,7 @@ function Sales({ handleModal }) {
         className="3xl:max-w-[1516px] 2xl:max-w-[1116px] md:max-w-[598px] mx-[auto]"
         data-scroll
         priority
-        data-scroll-speed="0.1"
+        data-scroll-speed="0.3"
       >
         <div
           style={

@@ -33,7 +33,7 @@ function Discover() {
         className="3xl:max-w-[1516px] 2xl:max-w-[1116px] md:max-w-[598px] mx-[auto] relative grid grid-cols-1 2xl:grid-cols-2 w-full mb-[100px] 3xl:mt-[232px] 2xl:mt-[200px] md:mt-[400px] sm:mt-[262px] mt-[787px] 3xl:mb-[254px] 2xl:mb-[162px] md:mb-[115px] lg:mb-[166px] "
         priority
         data-scroll
-        data-scroll-speed="0.1"
+        data-scroll-speed="0.3"
       >
         <div className="2xl:pl-[150px] pl-[20px] pr-[20px] 2xl:pr-[65px] 2xl:pt-[190px] md:pt-[0] mt-[0] md:mt-0">
           <div className="relative">
