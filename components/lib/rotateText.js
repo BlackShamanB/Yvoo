@@ -1,46 +1,31 @@
-var words = null;
+let sentences = null;
+// var words = null;
 var count = 0;
 var wordArray = [];
 var currentWord = 0;
-
-const initRotateText = () => {
-  words = document.getElementsByClassName("word");
-  // words[currentWord].style.opacity = 1;
+const initRotateSentences = () => {
   if (count > 0) return;
+  sentences = document.querySelectorAll(".words");
+  // console.log(sentences)
+  sentences.forEach((el, id) => {
+    initRotateText(el, id);
+  });
+};
+
+const initRotateText = (sent, idSent) => {
+  console.log(sent);
+  let words = sent.getElementsByClassName("word");
+  // words[currentWord].style.opacity = 1;
   for (var i = 0; i < words.length; i++) {
-    splitLetters(words[i]);
+    // console.log(words[i].innerHTML)
+    splitLetters(words[i], idSent);
   }
-  wordArray = wordArray.flat()
-  changeWord()
-  // for (let i = 0; i < words.length; i++) {
-  //   setTimeout(() => {
-  //     changeWord();
-  //   }, wordArray[i].length * 380);
-  // }
+  console.log(wordArray)
+  wordArray[idSent] = wordArray[idSent].flat();
+  changeWord(idSent);
 };
 
-const changeWord = () => {
-  var cw = wordArray;
-  // if (!cw) return;
-  // var nw =
-  //   currentWord == words.length - 1 ? wordArray[0] : wordArray[currentWord + 1];
-  // console.log(cw);
-  for (var i = 0; i < cw.length; i++) {
-    cw[i].className = "letter behind";
-    cw[i].parentElement.style.opacity = 1;
-    animateLetterIn(cw, i);
-  }
-
-  currentWord = currentWord + 1;
-};
-
-const animateLetterIn = (nw, i) => {
-  setTimeout(() => {
-    nw[i].className = "letter in";
-  }, 340 + i * 80);
-};
-
-const splitLetters = (word) => {
+const splitLetters = (word, indexWord) => {
   var content = word.innerHTML;
   word.innerHTML = "";
   var letters = [];
@@ -56,8 +41,27 @@ const splitLetters = (word) => {
     word.appendChild(letter);
     letters.push(letter);
   }
-  wordArray.push(letters);
+  console.log(wordArray)
+  wordArray[indexWord] ??= []
+  wordArray[indexWord].push(letters);
   count++;
 };
 
-export default initRotateText;
+const changeWord = (idSent) => {
+  var cw = wordArray[idSent];
+  for (var i = 0; i < cw.length; i++) {
+    cw[i].className = "letter behind";
+    cw[i].parentElement.style.opacity = 1;
+    animateLetterIn(cw, i);
+  }
+
+  currentWord = currentWord + 1;
+};
+
+const animateLetterIn = (nw, i) => {
+  setTimeout(() => {
+    nw[i].className = "letter in";
+  }, 340 + i * 80);
+};
+
+export default initRotateSentences;
