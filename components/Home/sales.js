@@ -18,8 +18,8 @@ function Sales({ handleModal }) {
       <div
         className="3xl:max-w-[1516px] 2xl:max-w-[1116px] md:max-w-[598px] mx-[auto]"
         data-scroll
-        priority
         data-scroll-speed="0.3"
+        priority
       >
         <div
           style={
@@ -30,13 +30,18 @@ function Sales({ handleModal }) {
           }
           className="relative grid grid-cols-1 2xl:grid-cols-2 bg-white md:py-0 md:flex-center flex-col h-fit 3xl:h-[1187px] 2xl:h-[1125px] md:h-[1422px] md:px-[0] px-[41px] md:overflow-visible overflow-hidden"
         >
-          <div className="flex flex-wrap md:flex-nowrap items-center md:items-start md:flex-col 3xl:gap-[20px] 2xl:gap-[31px] md:gap-[20px] gap-[12px] 3xl:mt-[172px] 2xl:mt-[165px] md:mt-[153px] mt-[139px] 3xl:mb-[568px] 2xl:mb-[356px]">
+          <div
+            className="flex flex-wrap md:flex-nowrap items-center md:items-start md:flex-col 3xl:gap-[20px] 2xl:gap-[31px] md:gap-[20px] gap-[12px] 3xl:mt-[172px] 2xl:mt-[165px] md:mt-[153px] mt-[139px] 3xl:mb-[568px] 2xl:mb-[356px]"
+
+          >
             <Image
               src="/icons/squares-2.png"
               width={96}
               height={106}
               alt="triangle"
               className="absolute 2xl:top-[82px] top-[83px] 3xl:left-[42%] 2xl:left-[39.4%] md:left-[65.6%] mouse-parallax md:block hidden"
+              data-scroll
+              data-scroll-speed="-0.15"
             />
             <Image
               src="/icons/icon-line.svg"
@@ -50,8 +55,7 @@ function Sales({ handleModal }) {
             </h1>
             <div className="flex flex-col md:gap-[18px] gap-[25px] 3xl:ml-[154px] 2xl:ml-[0]">
               <p className="font-[700] 2xl:text-[24px] md:text-[20px] text-[16px] text-black 2xl:leading-[30px] md:leading-[26px] leading-[20px] max-w-[327px] 2xl:max-w-[327px]">
-                Unlock Your Supplier Potential and Maximize Your
-                Business Growth{" "}
+                Unlock Your Supplier Potential and Maximize Your Business Growth{" "}
               </p>
               <button
                 className="filled_btn 2xl:mt-[24px] md:mt-[10px]"
@@ -66,6 +70,7 @@ function Sales({ handleModal }) {
               height={523}
               alt="yvoo-sales"
               className="2xl:absolute relative 2xl:left-[-92px] 2xl:bottom-[120px] 3xl:ml-[90px] 2xl:ml-[-22px] md:ml-[-62px] ml-[-41px] 2xl:mt-[24px] md:mt-[18px] mt-[24px] 3xl:min-w-[748px] 2xl:min-w-[660px] md:min-w-[538px] 2xl:max-w-[660px] md:max-w-[538px] max-w-[262px]"
+
             />
           </div>
           <div
@@ -83,13 +88,16 @@ function Sales({ handleModal }) {
               height={120}
               alt="yvoo-search"
               className="z-10 3xl:ml-[-15px] 2xl:ml-[-20px] md:ml-[-31px] md:max-w-[111px] max-w-[74px] 2xl:mt-[152px] md:mt-[-72px] mt-[-51px] 2xl:mb-[37px] mb-[32px]"
-            />
+              data-scroll
+              data-scroll-speed="0.2"/>
             <div
               style={{
                 position: "relative",
                 transform: "translateZ(10px)",
               }}
               className="text-black md:mb-0 mb-[100px] 2xl:mt-[0] max-w-[674px] flex flex-col 3xl:gap-4 2xl:gap-[17px] md:gap-[20px] gap-[19px] font-[400] leading-[20px] [&>p]:text-[14px] [&>p]:md:text-[16px]"
+              data-scroll
+              data-scroll-speed="0.4"
             >
               <p>
                 At YVOO, we understand the challenges suppliers face in finding
@@ -127,7 +135,7 @@ function Sales({ handleModal }) {
                 Join YVOO SalesPro+ and experience a safe and secure platform
                 that prioritizes your data security. Connect with potential
                 customers with confidence, knowing that your information is
-                protected.{" "}<br></br>
+                protected. <br></br>
                 <Link className="cursor-pointer underline" href={"/supplier"}>
                   Register now to get started.
                 </Link>

@@ -39,7 +39,7 @@ const Footer = () => {
                   <Link href={link.link} legacyBehavior>
                     <a className="group">
                       {link.name}
-                      <span className="absolute w-full h-1 bg-white bottom-0 left-0 transform scale-x-0 transition-transform origin-bottom-right duration-350 ease-out group-hover:origin-bottom-left group-hover:scale-x-100"></span>
+                      {/* <span className="absolute w-full h-1 bg-white bottom-0 left-0 transform scale-x-0 transition-transform origin-bottom-right duration-350 ease-out group-hover:origin-bottom-left group-hover:scale-x-100"></span> */}
                     </a>
                   </Link>
                 </div>
@@ -56,7 +56,7 @@ const Footer = () => {
                   <Link href={link.link} legacyBehavior>
                     <a className="group">
                       {link.name}
-                      <span className="absolute w-full h-1 bg-white bottom-0 left-0 transform scale-x-0 transition-transform origin-bottom-right duration-350 ease-out group-hover:origin-bottom-left group-hover:scale-x-100"></span>
+                      {/* <span className="absolute w-full h-1 bg-white bottom-0 left-0 transform scale-x-0 transition-transform origin-bottom-right duration-350 ease-out group-hover:origin-bottom-left group-hover:scale-x-100"></span> */}
                     </a>
                   </Link>
                 </div>

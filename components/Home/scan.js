@@ -4,8 +4,13 @@ function Scan({ handleModal }) {
   return (
     <div
       id="scan"
-      className="relative grid w-full w-full bg-[#06D7F9] bg-local bg-contain 3xl:bg-[length:100%_975px] 2xl:bg-[length:100%_858px] bg-no-repeat bg-bottom z-30" >
-      <div className="3xl:max-w-[1516px] 2xl:max-w-[1116px] md:max-w-[598px] mx-[auto]" data-scroll data-scroll-speed="0.3">
+      className="relative grid w-full w-full bg-[#06D7F9] bg-local bg-contain 3xl:bg-[length:100%_975px] 2xl:bg-[length:100%_858px] bg-no-repeat bg-bottom z-30"
+    >
+      <div
+        className="3xl:max-w-[1516px] 2xl:max-w-[1116px] md:max-w-[598px] mx-[auto]"
+        data-scroll
+        data-scroll-speed="0.3"
+      >
         <div className="relative grid grid-cols-1 2xl:grid-cols-2 md:grid-cols-1">
           <div
             style={{
@@ -40,6 +45,8 @@ function Scan({ handleModal }) {
                 transform: "translateZ(10px)",
               }}
               className="mb-[140px] md:mb-0 3xl:ml-[154px] 2xl:mt-[138px] md:mt-[0] max-w-[674px] flex flex-col 2xl:gap-[19px] gap-[20px] font-[400] leading-[20px] [&>p]:text-[14px] [&>p]:customxs:text-[16px] md:px-[0] px-[41px]"
+              data-scroll
+              data-scroll-speed="0.5"
             >
               <Image
                 style={{ zIndex: 0, transform: "translateZ(10px)" }}
@@ -101,6 +108,8 @@ function Scan({ handleModal }) {
               transformStyle: "preserve-3d",
             }}
             className="3xl:pl-[84px] 2xl:pl-[54px] md:flex-center flex-col h-fit"
+            data-scroll
+            data-scroll-speed="0.3"
           >
             <div
               style={{
@@ -108,6 +117,8 @@ function Scan({ handleModal }) {
                 transform: "translateZ(10px)",
               }}
               className="flex flex-wrap items-center md:items-start md:flex-nowrap md:flex-col gap-[24px] md:mt-[132px] 3xl:mb-[420px] 2xl:mb-[398px] 2xl:block hidden"
+              data-scroll
+              data-scroll-speed="-0.1"
             >
               <h1 className="uppercase font-machina font-[800] text-[40px] text-white 2xl:text-[50px] leading-[30px] md:leading-[40px] 2xl:leading-[52px] max-w-[318px] 2xl:max-w-[340px] mb-[32px]">
                 YVOO Scan<b className="text-black">Pro+</b>

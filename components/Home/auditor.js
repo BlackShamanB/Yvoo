@@ -4,28 +4,36 @@ import React from "react";
 //bg-bgFooter bg-no-repeat bg-contain
 function Auditor() {
   return (
-    <div
-      className="relative grid w-full w-full bg-[#131D2A]" >
+    <div className="relative grid w-full w-full bg-[#131D2A]">
       <Image
         src="/icons/arch-2.png"
         width={316}
         height={275}
         alt="triangle"
-        className="md:block absolute 3xl:top-[-193px] 2xl:top-[-139px] md:top-[-11.5%] top-[-9%] 3xl:right-[8.5%] 2xl:right-[131px] md:right-[7%] right-[6%] mouse-parallax 3xl:max-w-[316px] 2xl:max-w-[230px] md:max-w-[230px] max-w-[162px]" priority
+        className="md:block absolute 3xl:top-[-193px] 2xl:top-[-139px] md:top-[-11.5%] top-[-9%] 3xl:right-[8.5%] 2xl:right-[131px] md:right-[7%] right-[6%] mouse-parallax 3xl:max-w-[316px] 2xl:max-w-[230px] md:max-w-[230px] max-w-[162px]"
+        priority
+        data-scroll
+        data-scroll-speed="0.2"
       />
       <Image
         src="/icons/squares-3.png"
         width={145}
         height={140}
         alt="triangle"
-        className="md:block absolute 2xl:top-[151px] md:top-[27.3%] top-[20.9%] 2xl:right-[0%] md:right-[3.7%] right-[2%] 2xl:max-w-[unset] md:max-w-[110px] max-w-[70px] mouse-parallax" priority
+        className="md:block absolute 2xl:top-[151px] md:top-[27.3%] top-[20.9%] 2xl:right-[0%] md:right-[3.7%] right-[2%] 2xl:max-w-[unset] md:max-w-[110px] max-w-[70px] mouse-parallax"
+        priority
+        data-scroll
+        data-scroll-speed="0.4"
       />
       <Image
         src="/icons/message-icon.png"
         width={280}
         height={204}
         alt="triangle"
-        className="md:block absolute 3xl:top-[643px] 2xl:top-[85.7%] md:top-[91%] top-[95.4%] 3xl:right-[17.5%] 2xl:right-[9.3%] md:right-[6%] right-[0%] 2xl:max-w-[unset] md:max-w-[220px] max-w-[147px] mouse-parallax" priority
+        className="md:block absolute 3xl:top-[643px] 2xl:top-[85.7%] md:top-[91%] top-[95.4%] 3xl:right-[17.5%] 2xl:right-[9.3%] md:right-[6%] right-[0%] 2xl:max-w-[unset] md:max-w-[220px] max-w-[147px] mouse-parallax"
+        priority
+        data-scroll
+        data-scroll-speed="-0.1"
       />
       <Image
         src="/images/bg-footer2xl.png"
@@ -33,7 +41,8 @@ function Auditor() {
         height={905}
         alt="yvoo-sales"
         style={{ mixBlendMode: "color-dodge" }}
-        className="hidden 2xl:block 2xl:object-contain absolute 3xl:ml-[-109px] 2xl:ml-[-109px] 2xl:mt-[203px] h-[812px] z-1" priority
+        className="hidden 2xl:block 2xl:object-contain absolute 3xl:ml-[-109px] 2xl:ml-[-109px] 2xl:mt-[203px] h-[812px] z-1"
+        priority
       />
       <Image
         src="/images/bg-footermd.png"
@@ -41,7 +50,8 @@ function Auditor() {
         height={905}
         alt="yvoo-sales"
         style={{ mixBlendMode: "color-dodge" }}
-        className="2xl:hidden md:block hidden  absolute mt-[58px] h-[649px] w-[378px] z-1" priority
+        className="2xl:hidden md:block hidden  absolute mt-[58px] h-[649px] w-[378px] z-1"
+        priority
       />
       <Image
         src="/images/bg-footer.png"
@@ -49,10 +59,16 @@ function Auditor() {
         height={905}
         alt="yvoo-sales"
         style={{ mixBlendMode: "color-dodge" }}
-        className="md:hidden block 2xl:object-contain md:block absolute 3xl:ml-[-109px] 2xl:ml-[-109px] 2xl:mt-[203px] h-[328px] w-[176px] mt-[65px] z-1" priority
+        className="md:hidden block 2xl:object-contain md:block absolute 3xl:ml-[-109px] 2xl:ml-[-109px] 2xl:mt-[203px] h-[328px] w-[176px] mt-[65px] z-1"
+        priority
       />
-      <div className="3xl:max-w-[1516px] 2xl:max-w-[1116px] md:max-w-[598px] mx-[auto] md:px-[0] px-[41px]" priority data-scroll data-scroll-speed="0.3">
-        <div className="relative grid grid-cols-1 2xl:grid-cols-2 w-full h-auto md:pt-[0] pt-[101px]"> 
+      <div
+        className="3xl:max-w-[1516px] 2xl:max-w-[1116px] md:max-w-[598px] mx-[auto] md:px-[0] px-[41px]"
+        priority
+        data-scroll
+        data-scroll-speed="0.3"
+      >
+        <div className="relative grid grid-cols-1 2xl:grid-cols-2 w-full h-auto md:pt-[0] pt-[101px]">
           <div className="w-full bg-right bg-no-repeat">
             <Image
               src="/images/auditorBg3xl.webp"
@@ -67,22 +83,28 @@ function Auditor() {
               height={139}
               alt="triangle"
               className="3xl:block 2xl:hidden block absolute 2xl:top-[454px] md:top-[50px] top-[63px] 2xl:left-[40%] md:left-[7%] left-[9%] mouse-parallax 2xl:max-w-[116px] md:max-w-[102px] max-w-[42px]"
-            />
+            
+        data-scroll
+        data-scroll-speed="0.2"/>
             {/* <div className="customxs:hidden absolute inset-0 bg-black opacity-40"></div> */}
           </div>
-          <div className="3xl:pl-[84px] 2xl:pl-[54px] w-full flex flex-col 2xl:pt-[120px] md:pt-[75px] pt-[47px] 2xl:pb-[75px] md:pb-[60px] pb-[40px]">
+          <div className="3xl:pl-[84px] 2xl:pl-[54px] w-full flex flex-col 2xl:pt-[120px] md:pt-[75px] pt-[47px] 2xl:pb-[75px] md:pb-[60px] pb-[40px]"
+        data-scroll
+        data-scroll-speed="0.1">
             <h1 className="uppercase 2xl:mb-[30px] mb-[18px] text-[#06D7F9] font-machina font-[800] 2xl:text-[50px] md:text-[40px] text-[30px] 2xl:leading-[54px] md:leading-[44px] leading-[34px] 2xl:max-w-[unset] md:max-w-[504px] max-w-[unset]">
               Join the Team of YVOO auditors
             </h1>
             <div className="max-w-[683px] flex flex-col gap-[20px] font-[400] md:text-[16px] text-[14px] leading-[20px]">
               <p>
                 Looking for a flexible and rewarding career opportunity in
-                supplier readiness checks ? YVOO is seeking motivated individuals
-                to join our team of freelance agents. Conduct independent checks
-                and play a crucial role in ensuring the safety and integrity of
-                supply chains.
+                supplier readiness checks ? YVOO is seeking motivated
+                individuals to join our team of freelance agents. Conduct
+                independent checks and play a crucial role in ensuring the
+                safety and integrity of supply chains.
               </p>
-              <p className="font-[700] md:text-[16px] text-[14px]">Why Become a YVOO Agent?</p>
+              <p className="font-[700] md:text-[16px] text-[14px]">
+                Why Become a YVOO Agent?
+              </p>
               <ul className="md:pl-[25px] pl-[21px] list-disc list-outside">
                 <li>Set your own hours and work on your terms</li>
                 <li>Get paid fast with transparent terms</li>
