@@ -34,7 +34,7 @@ const Footer = () => {
               return (
                 <div
                   key={link.link}
-                  className="relative inline-block text-white"
+                  className="relative inline-block text-white pseudo-text-effect" data-after={link.name}
                 >
                   <Link href={link.link} legacyBehavior>
                     <a className="group">
@@ -51,7 +51,7 @@ const Footer = () => {
               return (
                 <div
                   key={link.link}
-                  className="relative inline-block text-white"
+                  className="relative inline-block text-white pseudo-text-effect" data-after={link.name}
                 >
                   <Link href={link.link} legacyBehavior>
                     <a className="group">

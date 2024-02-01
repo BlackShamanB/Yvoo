@@ -168,3 +168,30 @@ body {
   transition: opacity 0.5s ease, transform 0.5s ease; /* Добавление плавного перехода */
   /* Другие стили, которые вы хотите применить */
 }
+
+.pseudo-text-effect {
+  position: relative;
+  padding: 0;
+  overflow: hidden;
+  transition: transform 0.5s;
+  display: block;
+}
+.pseudo-text-effect::after {
+  content: attr(data-after);
+  display: inline-block;
+  transform: translateY(100%);
+  position: absolute;
+  left: 0;
+  transition: inherit;
+}
+.pseudo-text-effect > a {
+  display: inline-block;
+  transform: translateY(0%);
+  transition: inherit;
+}
+.pseudo-text-effect:hover > a {
+  transform: translateY(-100%);
+}
+.pseudo-text-effect:hover::after {
+  transform: translateY(0%);
+}

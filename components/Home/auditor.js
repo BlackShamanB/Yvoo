@@ -40,7 +40,7 @@ function Auditor() {
         width={905}
         height={905}
         alt="yvoo-sales"
-        style={{ mixBlendMode: "color-dodge" }}
+        style={{ mixBlendMode: "screen" }}
         className="hidden 2xl:block 2xl:object-contain absolute 3xl:ml-[-109px] 2xl:ml-[-109px] 2xl:mt-[203px] h-[812px] z-1"
         priority
       />
@@ -49,7 +49,7 @@ function Auditor() {
         width={905}
         height={905}
         alt="yvoo-sales"
-        style={{ mixBlendMode: "color-dodge" }}
+        style={{ mixBlendMode: "screen" }}
         className="2xl:hidden md:block hidden  absolute mt-[58px] h-[649px] w-[378px] z-1"
         priority
       />
@@ -58,7 +58,7 @@ function Auditor() {
         width={905}
         height={905}
         alt="yvoo-sales"
-        style={{ mixBlendMode: "color-dodge" }}
+        style={{ mixBlendMode: "screen" }}
         className="md:hidden block 2xl:object-contain md:block absolute 3xl:ml-[-109px] 2xl:ml-[-109px] 2xl:mt-[203px] h-[328px] w-[176px] mt-[65px] z-1"
         priority
       />
