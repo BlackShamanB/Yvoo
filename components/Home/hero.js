@@ -63,7 +63,7 @@ function Hero() {
             offset={0}
             duration={500}
           >
-            <div className="2xl:max-h-[179px] md:max-h-[200px] max-h-[172px] 2xl:h-[179px] md:h-[200px] h-[172px] flex-1 3xl:px-[30px] px-[30px] 3xl:pt-[30px] pt-[30px] pb-[18px] bg-[#53D3AA] basis-[300px] hover:scale-[1.02] cursor-pointer">
+            <div className="2xl:max-h-[179px] md:max-h-[200px] max-h-[172px] 2xl:h-[179px] md:h-[200px] h-[172px] flex-1 3xl:px-[30px] px-[30px] 3xl:pt-[30px] pt-[30px] pb-[18px] bg-[#53D3AA] basis-[300px] cursor-pointer hoverLink">
               <h2 className="mb-[4px] uppercase font-machina md:text-[24px] text-[20px] md:leading-[26px] leading-[24px] font-[800] max-w-[172px]">
                 YVOO Search<b className="text-black">Pro+</b>
               </h2>
@@ -81,7 +81,7 @@ function Hero() {
             offset={0}
             duration={500}
           >
-            <div className="2xl:max-h-[179px] md:max-h-[200px] max-h-[172px] 2xl:h-[179px] md:h-[200px] h-[172px] flex-1 3xl:px-[30px] px-[30px] 3xl:pt-[30px] pt-[30px] pb-[18px] bg-[#06D7F9] basis-[300px] hover:scale-[1.02] cursor-pointer">
+            <div className="2xl:max-h-[179px] md:max-h-[200px] max-h-[172px] 2xl:h-[179px] md:h-[200px] h-[172px] flex-1 3xl:px-[30px] px-[30px] 3xl:pt-[30px] pt-[30px] pb-[18px] bg-[#06D7F9] basis-[300px] cursor-pointer hoverLink">
               <h2 className="mb-[4px] uppercase font-machina md:text-[24px] text-[20px] md:leading-[26px] leading-[24px] font-[800] max-w-[172px]">
                 YVOO Scan<b className="text-black">Pro+</b>
               </h2>
@@ -99,7 +99,7 @@ function Hero() {
             offset={0}
             duration={500}
           >
-            <div className="2xl:max-h-[179px] md:max-h-[200px] max-h-[172px] 2xl:h-[179px] md:h-[200px] h-[172px] flex-1 3xl:px-[30px] px-[30px] 3xl:pt-[30px] pt-[30px] pb-[18px] bg-[#FFFFFF] basis-[300px] hover:scale-[1.02] cursor-pointer">
+            <div className="2xl:max-h-[179px] md:max-h-[200px] max-h-[172px] 2xl:h-[179px] md:h-[200px] h-[172px] flex-1 3xl:px-[30px] px-[30px] 3xl:pt-[30px] pt-[30px] pb-[18px] bg-[#FFFFFF] basis-[300px] cursor-pointer hoverLink">
               <h2 className="mb-[4px] uppercase font-machina md:text-[24px] text-[20px] md:leading-[26px] leading-[24px] font-[800] max-w-[172px] text-[#06D7F9]">
                 YVOO Sales<b className="text-black">Pro+</b>
               </h2>
@@ -111,7 +111,7 @@ function Hero() {
           <Link href={"/auditors"}
             className="relative 2xl:top-[40px] md:top-[260px] top-[40px]">
             <div
-              className="min-h-[163px] 2xl:max-h-[179px] md:max-h-[200px] max-h-[172px] 2xl:h-[179px] md:h-[200px] h-[172px] flex-1 3xl:px-[30px] px-[30px] 3xl:pt-[30px] pt-[30px] pb-[18px] bg-[#131D2A] basis-[300px] hover:scale-[1.02] cursor-pointer"
+              className="min-h-[163px] 2xl:max-h-[179px] md:max-h-[200px] max-h-[172px] 2xl:h-[179px] md:h-[200px] h-[172px] flex-1 3xl:px-[30px] px-[30px] 3xl:pt-[30px] pt-[30px] pb-[18px] bg-[#131D2A] basis-[300px] cursor-pointer hoverLink"
               onClick={() => {
                 window.open("https://scanpro.yvoo.io/register", "_blank");
               }}

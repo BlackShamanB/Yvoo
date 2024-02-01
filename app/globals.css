@@ -108,6 +108,15 @@ body {
   @apply bg-primary text-white border-2 border-primary hover:scale-[1.03] px-[30px] py-3 uppercase font-helvetica font-medium text-base w-full max-w-[255px];
 }
 
+.hoverLink:hover {
+  position: absolute;
+  margin-top: -10px;
+  margin-left: -10px;
+  width: calc(100% + 20px);
+  padding: 40px;
+  @apply 2xl:max-h-[199px] md:max-h-[220px] max-h-[192px] 2xl:h-[199px] md:h-[220px] h-[192px]
+}
+
 .word {
   opacity: 0;
   display: inline-block;
