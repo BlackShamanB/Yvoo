@@ -78,6 +78,10 @@ body {
   @apply flex justify-between items-center;
 }
 
+.flex-start {
+  @apply flex justify-between items-start;
+}
+
 .custom-btn {
   @apply flex flex-row relative justify-center items-center py-3 px-6 outline-none;
 }

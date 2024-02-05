@@ -2,7 +2,7 @@ import Image from "next/image";
 
 function Info() {
   return (
-    <div className="relative grid grid-cols-1 md:grid-rows-2 md:grid-cols-2 w-full gap-[20px] px-[20px] customxs:px-[50px] lg:px-[176px] 2xl:px-[202px] py-[48px] md:py-[64px] 3xl:py-[120px] bg-[#F6F6F6]">
+    <div className="relative grid grid-cols-1 md:grid-rows-2 md:grid-cols-2 w-full gap-x-[170px] gap-y-[60px] px-[20px] md:px-[50px] lg:px-[176px] 2xl:px-[202px] py-[48px] md:py-[64px] 3xl:py-[120px] bg-[#F6F6F6]">
       <Image
         src="/icons/search-pro-icon.svg"
         width={127}
@@ -10,11 +10,11 @@ function Info() {
         alt="search-pro"
         className="hidden md:block absolute -top-[40px] right-[16%]"
       />
-      <div className="[&>*]:text-black flex flex-col gap-[20px]">
-        <h2 className="font-[700] text-[24px] leading-[24px]">
+      <div className="[&>*]:text-black flex flex-col gap-[24px]">
+        <h2 className="font-[700] text-[24px] leading-[30px]">
           Tailor-Made Recommendations:
         </h2>
-        <p className="font-[400] text-[14px] customxs:text-[16px] leading-[17px] customxs:leading-[19px] mb-6">
+        <p className="font-[400] text-[14px] md:text-[16px] leading-[17px] md:leading-[20px]">
           No more sifting through irrelevant choices. YVOO SearchPro+
           understands your company's specific needs and delivers a curated list
           of suppliers that meet your criteria. Save time and effort with a
@@ -22,11 +22,11 @@ function Info() {
           your requirements.
         </p>
       </div>
-      <div className="[&>*]:text-black flex flex-col gap-[20px]">
-        <h2 className="font-[700] text-[24px] leading-[24px]">
+      <div className="[&>*]:text-black flex flex-col gap-[24px]">
+        <h2 className="font-[700] text-[24px] leading-[30px]">
           Boost Efficiency and Save Time:{" "}
         </h2>
-        <p className="font-[400] text-[14px] customxs:text-[16px] leading-[17px] customxs:leading-[19px] mb-6">
+        <p className="font-[400] text-[14px] md:text-[16px] leading-[17px] md:leading-[20px]">
           YVOO SearchPro+ is your team's secret weapon for increased
           productivity. By eliminating manual searches, you can save hundreds of
           hours that can be better spent on strategic initiatives. Let our
@@ -34,11 +34,11 @@ function Info() {
           business forward.{" "}
         </p>
       </div>
-      <div className="[&>*]:text-black flex flex-col gap-[20px]">
-        <h2 className="font-[700] text-[24px] leading-[24px]">
+      <div className="[&>*]:text-black flex flex-col gap-[24px]">
+        <h2 className="font-[700] text-[24px] leading-[30px]">
           Make Informed Decisions:{" "}
         </h2>
-        <p className="font-[400] text-[14px] customxs:text-[16px] leading-[17px] customxs:leading-[19px] mb-6">
+        <p className="font-[400] text-[14px] md:text-[16px] leading-[17px] md:leading-[20px]">
           Evaluating suppliers is made simple with YVOO SearchPro+'s powerful
           features. Conduct fit-gap analysis to assess how well suppliers align
           with your business needs. Access detailed scorecards and feature
@@ -46,11 +46,11 @@ function Info() {
           decisions with confidence.
         </p>
       </div>
-      <div className="[&>*]:text-black flex flex-col gap-[20px]">
-        <h2 className="font-[700] text-[24px] leading-[24px]">
+      <div className="[&>*]:text-black flex flex-col gap-[24px]">
+        <h2 className="font-[700] text-[24px] leading-[30px]">
           Mitigate Financial Risks:{" "}
         </h2>
-        <p className="font-[400] text-[14px] customxs:text-[16px] leading-[17px] customxs:leading-[19px] mb-6">
+        <p className="font-[400] text-[14px] md:text-[16px] leading-[17px] md:leading-[20px]">
           Selecting the wrong supplier can lead to significant financial losses.
           YVOO SearchPro+ minimizes this risk by providing reliable and
           up-to-date supplier data. Our dynamic information ensures that you

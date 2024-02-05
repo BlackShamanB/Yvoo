@@ -1,34 +1,57 @@
 import Image from "next/image";
+import React, { useState, useEffect, useRef } from "react";
 
 function BuyerSupplier({ handleModal }) {
+  const [isHoveredBuyer, setIsHoveredBuyer] = useState(false);
+  const [isHoveredSupplier, setIsHoveredSupplier] = useState(false);
+  const handleMouseEnterBuyer = () => {
+    setIsHoveredBuyer(true);
+  };
+
+  const handleMouseLeaveBuyer = () => {
+    setIsHoveredBuyer(false);
+  };
+  const handleMouseEnterSupplier = () => {
+    setIsHoveredSupplier(true);
+  };
+
+  const handleMouseLeaveSupplier = () => {
+    setIsHoveredSupplier(false);
+  };
   return (
-    <div className="grid grid-cols-1 customsm:grid-cols-2 w-full bg-[#131D2A]">
-      <div className="xs:pl-[20px] py-[55px] customsm:py-[164px] 2xl:py-[142px] flex justify-end">
-        <div className="flex-between gap-[80px]">
-          <div className="flex flex-col gap-[14px]">
-            <h1 className="font-machina uppercase font-[800] text-[30px] md:text-[40px] 2xl:text-[50px] leading-[30px] md:leading-[40px] 2xl:leading-[50px]">
+    <div className="relative grid grid-cols-1 md:grid-cols-2 w-full bg-[#131D2A]">
+      <div
+        className="pl-[247px] py-[55px] md:py-[164px] 2xl:py-[217px] flex ml-[48px] bg-black mt-[54px]"
+        onMouseEnter={handleMouseEnterBuyer}
+        onMouseLeave={handleMouseLeaveBuyer}
+        // style={{ background: isHoveredBuyer ? "blue" : "red" }}
+      >
+        <div className="flex-start gap-[34px] mb-[20px] cursor-pointer">
+          <div className="flex flex-col gap-[32px] text-center">
+            <h1 className="font-machina text-[#FFF] uppercase font-[800] text-[30px] md:text-[40px] 2xl:text-[60px] leading-[30px] md:leading-[40px] 2xl:leading-[64px]"
+            style={{ color: isHoveredBuyer ? "#06D7F9" : "#FFF" }}
+            >
               Buyer
             </h1>
-            <h2 className="font-[700] text-[18px] md:text-[24px] leading-[18px] md:leading-[24px]">
-              We are your Uber for
-              <br /> procurement.
+            <h2 className="font-[700] text-[18px] md:text-[24px] leading-[18px] md:leading-[30px]">
+              We are your Uber for procurement.
             </h2>
             <button
-              className="filled_btn_primary !bg-[#53D3AA] !border-[#53D3AA] mt-[30px]"
+              className="filled_btn_primary !bg-[#06D7F9] !text-[black] !border-[#06D7F9] mt-[17px] ml-[92px] !max-w-[224px] !text-[16px] !leading-[20px] !py-[18px]"
               onClick={handleModal}
             >
-              Book a demo
+              View rates
             </button>
           </div>
-          <div className="relative flex justify-center items-center ">
+          <div className="relative flex justify-center items-center mt-[9px]">
             <div
-              className="h-[132px] w-[66px] bg-[#131D2A] rounded-bl-full rounded-tl-full flex-center hover:scale-[1.04] cursor-pointer"
+              className="flex-center hover:scale-[1.04] cursor-pointer"
               onClick={() => {
                 window.open("https://searchpro.yvoo.io", "_blank");
               }}
             >
               <Image
-                src="/icons/buyer-icon.svg"
+                src="/icons/arrow-blue.svg"
                 width={58}
                 height={30}
                 alt="left arrow"
@@ -36,15 +59,19 @@ function BuyerSupplier({ handleModal }) {
                 onClick={() => {
                   window.open("https://searchpro.yvoo.io", "_blank");
                 }}
+                style={{display: isHoveredBuyer ? 'block' : 'none'}}
               />
             </div>
           </div>
         </div>
       </div>
-      <div className="xs:pr-[20px] bg-[#131D2A] py-[55px] md:py-[164px] 2xl:py-[142px] flex">
+      <div className="xs:pr-[20px] bg-[#131D2A] py-[55px] md:py-[164px] 2xl:py-[142px] flex cursor-pointer"
+        onMouseEnter={handleMouseEnterSupplier}
+        onMouseLeave={handleMouseLeaveSupplier}>
         <div className="flex-between flex-row-reverse gap-[80px]">
           <div className="flex flex-col items-end gap-[14px]">
-            <h1 className="font-machina uppercase font-[800] text-[30px] md:text-[40px] 2xl:text-[50px] leading-[30px] md:leading-[40px] 2xl:leading-[50px]">
+            <h1 className="font-machina uppercase font-[800] text-[30px] md:text-[40px] 2xl:text-[60px] leading-[30px] md:leading-[40px] 2xl:leading-[64px]"
+                style={{color: isHoveredSupplier ? "#53D3AA" : "#FFF"}}>
               Supplier
             </h1>
             <h2 className="font-[700] text-[18px] md:text-[24px] leading-[18px] md:leading-[24px]">
@@ -79,6 +106,16 @@ function BuyerSupplier({ handleModal }) {
           </div>
         </div>
       </div>
+              <Image
+                src={isHoveredSupplier ? '/icons/supplier.svg' : "/icons/buyer.svg"}
+                width={244}
+                height={260}
+                alt={isHoveredSupplier ? 'supplier' : "buyer"}
+                className="absolute left-[44%] top-[33%]"
+                onClick={() => {
+                  window.open("https://searchpro.yvoo.io", "_blank");
+                }}
+              />
     </div>
   );
 }
