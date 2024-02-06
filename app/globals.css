@@ -96,6 +96,10 @@ body {
 .white_btn {
   @apply bg-transparent text-white border-2 border-white hover:scale-[1.03] md:h-[60px] h-[36px] uppercase font-[400] md:text-[16px] text-[12px] md:leading-[20px] leading-[16px] w-full max-w-[255px];
 }
+
+.mint_btn {
+  @apply bg-transparent text-mint border-2 border-mint hover:scale-[1.03] md:h-[60px] h-[36px] uppercase font-[400] md:text-[16px] text-[12px] md:leading-[20px] leading-[16px] w-full max-w-[255px];
+}
 .blue_btn {
   @apply bg-transparent text-[#06D7F9] border-2 border-[#06D7F9] hover:scale-[1.03] md:h-[60px] h-[36px] uppercase font-[400] md:text-[16px] text-[12px] md:leading-[20px] leading-[16px] w-full max-w-[255px];
 }

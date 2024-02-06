@@ -24,7 +24,7 @@ export default function Solutions() {
 
   return (
     <main className="w-full">
-      <div className="flex flex-col">
+      <div className="flex flex-col overflow-hidden">
         <Hero />
         <Experience />
         <Results handleModal={handleModal} />

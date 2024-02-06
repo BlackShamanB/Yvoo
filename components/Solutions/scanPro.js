@@ -6,7 +6,7 @@ function ScanPro() {
       id="scanpro"
       className="relative w-full flex justify-between flex-wrap md:gap-[32px] px-[20px] customxs:px-[50px] lg:px-[176px] 2xl:px-[202px] py-[127px] md:py-[141px] 3xl:pt-[179px] 3xl:pb-[319px] bg-solution2Bg md:bg-solution2Bgmd bg-bottom"
     >
-      <Image
+      {/* <Image
         src="/icons/location-pin-icon.svg"
         width={0}
         height={0}
@@ -14,6 +14,20 @@ function ScanPro() {
         sizes="100vw"
         style={{ width: "200px", height: "240px" }}
         className="absolute -top-[10%] right-0 xs:-top-[44px] xs:right-[6%] md:-top-[50px] md:right-[22%] 2xl:right-[42%]"
+      /> */}
+      <Image
+        src="/icons/icon-line.svg"
+        width={584}
+        height={106}
+        alt="triangle"
+        className="absolute 2xl:top-[-18%] 2xl:top-[53%] md:top-[39.5%] top-[23.9%] 3xl:left-[78%] md:left-[-78%] left-[57%] mouse-parallax z-[1]"
+      />
+      <Image
+        src="/icons/ellipse.svg"
+        width={584}
+        height={106}
+        alt="triangle"
+        className="absolute 2xl:top-[19%] 2xl:top-[53%] md:top-[39.5%] top-[23.9%] 3xl:left-[88.4%] md:left-[-78%] left-[57%] max-w-[220px] mouse-parallax z-[1]"
       />
       <div className="w-100"></div>
       <div className="w-full max-w-[673px]">

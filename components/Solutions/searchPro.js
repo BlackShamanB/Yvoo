@@ -15,6 +15,17 @@ function SearchPro() {
           height={797}
           className="object-contain"
         />
+        <div className="absolute w-275px text-[16px] leading-[20px] font-[500] py-[20px] pl-[30px] pr-[26px] bg-[#000] right-[-20px] top-[88px] uppercase rounded-t-[30px] rounded-r-[30px]">
+          watch instructions
+          <Image
+            src="/icons/watch-triangle.svg"
+            alt="mobile"
+            // fill
+            width={18}
+            height={18}
+            className="object-contain inline-block ml-[18px]"
+          />
+        </div>
       </div>
       <div className="[&>*]:text-black w-full md:max-w-[530px] 2xl:max-w-[735px] 3xl:pl-[63px] 3xl:pt-[79px]">
         <h1 className="mb-[30px] max-w-[514px] font-machina font-[800] uppercase text-[30px] md:text-[36px] 2xl:text-[50px] leading-[30px] md:leading-[36px] 2xl:leading-[50px]">

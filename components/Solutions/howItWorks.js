@@ -8,7 +8,7 @@ function HowItWorks() {
         width={116}
         height={139}
         alt="solution_triagle"
-        className="absolute top-[27%] left-[34%]"
+        className="absolute top-[35%] left-[33%]"
       />
       <h2 className="mb-[30px] md:mb-[42px] text-black font-[700] text-[32px] leading-[36px]">
         Benefits that Await You:{" "}

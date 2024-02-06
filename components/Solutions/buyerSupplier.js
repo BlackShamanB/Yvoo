@@ -19,7 +19,7 @@ function BuyerSupplier({ handleModal }) {
     setIsHoveredSupplier(false);
   };
   return (
-    <div className="relative grid grid-cols-1 md:grid-cols-2 w-full bg-[#131D2A]">
+    <div className="relative grid grid-cols-1 md:grid-cols-2 w-full bg-[#131D2A] pb-[69px]">
       <div
         className="pl-[247px] py-[55px] md:py-[164px] 2xl:py-[217px] flex ml-[48px] bg-black mt-[54px]"
         onMouseEnter={handleMouseEnterBuyer}
@@ -59,48 +59,48 @@ function BuyerSupplier({ handleModal }) {
                 onClick={() => {
                   window.open("https://searchpro.yvoo.io", "_blank");
                 }}
-                style={{display: isHoveredBuyer ? 'block' : 'none'}}
+                style={{display: isHoveredSupplier ? 'none' : 'block'}}
               />
             </div>
           </div>
         </div>
       </div>
-      <div className="xs:pr-[20px] bg-[#131D2A] py-[55px] md:py-[164px] 2xl:py-[142px] flex cursor-pointer"
+      <div className="xs:pr-[20px] bg-[#131D2A] py-[55px] md:py-[164px] 2xl:py-[236px] flex cursor-pointer mt-[38px] pl-[160px]"
         onMouseEnter={handleMouseEnterSupplier}
         onMouseLeave={handleMouseLeaveSupplier}>
-        <div className="flex-between flex-row-reverse gap-[80px]">
-          <div className="flex flex-col items-end gap-[14px]">
+        <div className="flex-start flex-row-reverse gap-[80px]">
+          <div className="flex flex-col items-center gap-[33px]">
             <h1 className="font-machina uppercase font-[800] text-[30px] md:text-[40px] 2xl:text-[60px] leading-[30px] md:leading-[40px] 2xl:leading-[64px]"
                 style={{color: isHoveredSupplier ? "#53D3AA" : "#FFF"}}>
               Supplier
             </h1>
-            <h2 className="font-[700] text-[18px] md:text-[24px] leading-[18px] md:leading-[24px]">
-              Way to your
-              <br /> excellence
+            <h2 className="font-[700] text-[18px] md:text-[24px] leading-[18px] md:leading-[30px]">
+              Way to your excellence
             </h2>
             <button
-              className="filled_btn_primary mt-[30px]"
+              className="mint_btn mt-[15px] !max-w-[224px] !py-[18px] !text-[16px] !leading-[20px] text-[#FFF]"
               onClick={handleModal}
             >
-              Book a demo
+              View rates
             </button>
           </div>
-          <div className="relative flex justify-center items-center">
+          <div className="relative flex justify-center items-start">
             <div
-              className="h-[132px] w-[66px] bg-transparent rounded-br-full rounded-tr-full flex-center hover:scale-[1.04] cursor-pointer"
+              className="w-[66px] bg-transparent rounded-br-full rounded-tr-full flex-center hover:scale-[1.04] cursor-pointer"
               onClick={() => {
                 window.open("https://searchpro.yvoo.io", "_blank");
               }}
             >
               <Image
-                src="/icons/supplier-icon.svg"
-                width={58}
-                height={30}
+                src="/icons/right-arrow.svg"
+                width={108}
+                height={108}
                 alt="left arrow"
                 className="ml-[43px]"
                 onClick={() => {
                   window.open("https://searchpro.yvoo.io", "_blank");
                 }}
+                style={{display: isHoveredSupplier ? 'block' : 'none'}}
               />
             </div>
           </div>
@@ -111,7 +111,7 @@ function BuyerSupplier({ handleModal }) {
                 width={244}
                 height={260}
                 alt={isHoveredSupplier ? 'supplier' : "buyer"}
-                className="absolute left-[44%] top-[33%]"
+                className="absolute left-[43.7%] top-[30%]"
                 onClick={() => {
                   window.open("https://searchpro.yvoo.io", "_blank");
                 }}

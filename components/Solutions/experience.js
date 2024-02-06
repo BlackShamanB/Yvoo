@@ -3,13 +3,13 @@ import Image from "next/image";
 function Experience() {
   return (
     <div className="relative w-full flex-center px-[20px] customxs:px-[50px] lg:px-[176px] 2xl:px-[204px] py-[46px] md:py-[60px] 2xl:py-[124px] bg-[#131D2A]">
-      <Image
+      {/* <Image
         src="/icons/experience-icon.svg"
         width={127}
         height={125}
         alt="experience"
         className="hidden md:block absolute -top-[38px] right-[24%]"
-      />
+      /> */}
       <div className="w-full">
         <h1 className="text-[32px] leading-[32px] font-[700] text-[#00D1EF] mb-[36px] 2xl:mb-[43px]">
           Experience the Difference:
