@@ -2,8 +2,8 @@ import Image from "next/image";
 
 function Stats() {
   return (
-    <div className="w-full flex-center flex-col px-[20px] customxs:px-[50px] lg:px-[176px] 2xl:px-[202px] pb-[46px] md:pb-[66px] 3xl:pb-[200px] pt-[46px] md:pt-[66px] 3xl:pt-[291px] bg-[#131D2A] -mt-[1px]">
-      <div className="grid grid-cols-1 customxs:grid-cols-3 gap-[61px] mb-[50px] md:mb-[62px] 2xl:mb-[96px]">
+    <div className="w-full flex-center flex-col px-[20px] customxs:px-[50px] lg:px-[176px] 2xl:px-[181px] 3xl:px-[202px] pb-[46px] md:pb-[66px] 2xl:pb-[199px] 3xl:pb-[200px] pt-[46px] md:pt-[66px] 2xl:pt-[68px] 3xl:pt-[291px] bg-[#131D2A] -mt-[1px]">
+      <div className="grid grid-cols-1 customxs:grid-cols-3 gap-[61px] mb-[50px] md:mb-[62px] 2xl:mb-[100px] 3xl:mb-[96px]">
         <div className="[&>p]:text-[#06D7F9] flex items-center gap-[12px] flex-wrap">
           <p className="font-machina font-[800] text-[40px] leading-[40px] md:text-[50px] md:leading-[50px]">
             10X

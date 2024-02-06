@@ -21,7 +21,7 @@ function BuyerSupplier({ handleModal }) {
   return (
     <div className="relative grid grid-cols-1 md:grid-cols-2 w-full bg-[#131D2A] pb-[69px]">
       <div
-        className="pl-[247px] py-[55px] md:py-[164px] 2xl:py-[217px] flex ml-[48px] bg-black mt-[54px]"
+        className="3xl:pl-[247px] pl-[126px] py-[55px] md:py-[164px] 2xl:py-[217px] flex ml-[48px] bg-black 3xl:mt-[54px] 2xl:mt-[58px]"
         onMouseEnter={handleMouseEnterBuyer}
         onMouseLeave={handleMouseLeaveBuyer}
         // style={{ background: isHoveredBuyer ? "blue" : "red" }}
@@ -55,7 +55,7 @@ function BuyerSupplier({ handleModal }) {
                 width={58}
                 height={30}
                 alt="left arrow"
-                className="mr-[43px]"
+                className="relative mr-[43px] 3xl:max-w-[unset] 2xl:max-w-[44px] 3xl:top-[0] 2xl:top-[3px] 3xl:right-[unset] 2xl:right-[79px]"
                 onClick={() => {
                   window.open("https://searchpro.yvoo.io", "_blank");
                 }}
@@ -65,7 +65,7 @@ function BuyerSupplier({ handleModal }) {
           </div>
         </div>
       </div>
-      <div className="xs:pr-[20px] bg-[#131D2A] py-[55px] md:py-[164px] 2xl:py-[236px] flex cursor-pointer mt-[38px] pl-[160px]"
+      <div className="xs:pr-[20px] bg-[#131D2A] py-[55px] md:py-[164px] 2xl:py-[236px] flex cursor-pointer mt-[38px] 3xl:pl-[160px] 2xl:pl-[41px]"
         onMouseEnter={handleMouseEnterSupplier}
         onMouseLeave={handleMouseLeaveSupplier}>
         <div className="flex-start flex-row-reverse gap-[80px]">
@@ -111,7 +111,7 @@ function BuyerSupplier({ handleModal }) {
                 width={244}
                 height={260}
                 alt={isHoveredSupplier ? 'supplier' : "buyer"}
-                className="absolute left-[43.7%] top-[30%]"
+                className="absolute 3xl:left-[43.7%] left-[42.7%] 3xl:top-[30%] 2xl:top-[33%] 3xl:max-w-[unset] 2xl:max-w-[203px]"
                 onClick={() => {
                   window.open("https://searchpro.yvoo.io", "_blank");
                 }}

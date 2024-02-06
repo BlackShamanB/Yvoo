@@ -8,7 +8,7 @@ function Results({ handleModal }) {
         width={96}
         height={106}
         alt="triangle"
-        className="absolute 2xl:top-[15%] top-[83px] 3xl:left-[21.5%] 2xl:left-[39.4%] md:left-[65.6%] mouse-parallax md:block hidden"
+        className="absolute 3xl:top-[15%] 2xl:top-[10%] top-[83px] 3xl:left-[21.5%] 2xl:left-[20.4%] md:left-[65.6%] mouse-parallax md:block hidden"
         data-scroll
         data-scroll-speed="-0.15"
       />
@@ -17,14 +17,14 @@ function Results({ handleModal }) {
         width={584}
         height={106}
         alt="triangle"
-        className="absolute 2xl:top-[65%] 2xl:top-[53%] md:top-[39.5%] top-[23.9%] 3xl:left-[-6.5%] md:left-[-78%] left-[57%] mouse-parallax z-[1]"
+        className="absolute 3xl:top-[65%] 3xl:top-[53%] 2xl:top-[48%] md:top-[39.5%] top-[23.9%] 3xl:left-[-6.5%] 2xl:left-[-15%] md:left-[-78%] left-[57%] mouse-parallax z-[1]"
       />
       <Image
         src="/icons/arch-1.png"
         width={285}
         height={290}
         alt="triangle"
-        className="absolute 2xl:top-[85%] md:top-[96.4%] top-[98.3%] 3xl:left-[76.3%] 2xl:left-[36.6%] md:left-[52.6%] left-[53%] mouse-parallax md:max-w-[247px] max-w-[127px] z-[1]"
+        className="absolute 3xl:top-[85%] 2xl:top-[78%] top-[98.3%] 2xl:left-[76.3%] md:left-[52.6%] left-[53%] mouse-parallax 3xl:max-w-[247px] 2xl:max-w-[180px] max-w-[127px] z-[1]"
         priority
         data-scroll data-scroll-speed="0.5"
       />
@@ -36,11 +36,11 @@ function Results({ handleModal }) {
             width={592}
             height={476}
             alt="yvoo-search"
-            className="2xl:bottom-[-149px] bottom-[-40px] z-10 3xl:max-w-[592px] 2xl:max-w-[666px] md:max-w-[622px] max-w-[319px] 3xl:w-[592px] 2xl:w-[666px] md:w-[622px] 2xl:right-[unset] md:right-[-85px] float-right"
+            className="relative 3xl:top-[0px] 2xl:top-[130px] 3xl:left-[0] 2xl:left-[38px] z-10 3xl:max-w-[592px] 2xl:max-w-[432px] md:max-w-[622px] max-w-[319px] 3xl:w-[592px] 2xl:w-[666px] md:w-[622px] float-right"
           />
         </div>
         <div className="3xl:pl-[84px] 2xl:pl-[54px] w-full bg-[#131D2A]">
-          <div className="my-[70px] md:my-[37px] flex flex-col">
+          <div className="3xl:mt-[37px] 3xl:mb-[37px] 2xl:mt-[167px] 2xl:mb-[81px] flex flex-col">
             <h1 className="text-[#06D7F9] font-machina font-[800] uppercase text-[50px] 2xl:text-[50px] leading-[30px] 2xl:leading-[54px] max-w-full sm:max-w-[600px] md:max-w-[308px] 2xl:max-w-[650px]">
               Results that speak for themselves
             </h1>
@@ -48,7 +48,7 @@ function Results({ handleModal }) {
               Don't settle for outdated practices. Embrace the future of
               sourcing with YVOO SourcerPro+
             </h1>
-            <p className="text-white font-[400] text-[16px] leading-[16px] mt-[26px]">
+            <p className="text-white font-[400] text-[16px] leading-[20px] mt-[25px]">
               Book a demo now and unlock the full potential of your procurement
               process.
             </p>
