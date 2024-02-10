@@ -2,7 +2,7 @@ import Image from "next/image";
 
 function Experience() {
   return (
-    <div className="relative w-full flex-center 3xl:px-[204px] 2xl:px-[162px] py-[46px] md:py-[60px] 2xl:py-[124px] bg-[#131D2A]">
+    <div className="relative w-full flex-center 3xl:px-[204px] 2xl:px-[162px] md:px-[85px] py-[46px] md:py-[120px] 2xl:py-[121px] bg-[#131D2A]">
       {/* <Image
         src="/icons/experience-icon.svg"
         width={127}
@@ -11,10 +11,10 @@ function Experience() {
         className="hidden md:block absolute -top-[38px] right-[24%]"
       /> */}
       <div className="w-full">
-        <h1 className="text-[32px] leading-[32px] font-[700] text-[#00D1EF] mb-[36px] 3xl:mb-[43px] 2xl:mb-[46px] 3xl:max-w-[none] 2xl:max-w-[345px]">
+        <h1 className="2xl:text-[32px] text-[28px] 2xl:leading-[36px] leading-[32px] font-[700] text-[#00D1EF] 3xl:mb-[43px] 2xl:mb-[46px] mb-[30px] 3xl:max-w-[none] md:max-w-[345px]">
           Experience the Difference:
         </h1>
-        <div className="font-[400] text-[14px] md:text-[16px] leading-[17px] md:leading-[20px] [&>p]:md:max-w-[306px] [&>p]:2xl:max-w-[400px] gap-[38px] 3xl:gap-[162px] grid grid-cols-1 md:grid-cols-3">
+        <div className="font-[400] text-[14px] md:text-[16px] leading-[17px] md:leading-[20px] [&>p]:2xl:max-w-[306px] [&>p]:2xl:max-w-[400px] gap-[30px] 2xl:gap-[38px] 3xl:gap-[162px] grid grid-cols-1 2xl:grid-cols-3">
           <p>
             Unprecedented Speed: Make sourcing decisions at an
             unparalleled pace. With{" "}
@@ -25,7 +25,7 @@ function Experience() {
           <p>
             Flawless Audits: Achieve an unmatched audit success rate with
             every new supplier.{" "}
-            <span className="underline">YVOO SearchPro+</span> ensures strict
+            <span className="underline">YVOO ScanPro+</span> ensures strict
             compliance with your requirements and quality standards,
             safeguarding your business against risks and maintaining superior
             supplier performance.

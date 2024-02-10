@@ -98,7 +98,7 @@ body {
 }
 
 .mint_btn {
-  @apply bg-transparent text-mint border-2 border-mint hover:scale-[1.03] md:h-[60px] h-[36px] uppercase font-[400] md:text-[16px] text-[12px] md:leading-[20px] leading-[16px] w-full max-w-[255px];
+  @apply bg-transparent text-mint hover:bg-mint hover:text-black border-2 border-mint hover:scale-[1.03] md:h-[60px] h-[36px] uppercase font-[400] md:text-[16px] text-[12px] md:leading-[20px] leading-[16px] w-full max-w-[255px];
 }
 .blue_btn {
   @apply bg-transparent text-[#06D7F9] border-2 border-[#06D7F9] hover:scale-[1.03] md:h-[60px] h-[36px] uppercase font-[400] md:text-[16px] text-[12px] md:leading-[20px] leading-[16px] w-full max-w-[255px];
@@ -113,7 +113,7 @@ body {
 }
 
 .filled_btn_primary {
-  @apply bg-primary text-white border-2 border-primary hover:scale-[1.03] px-[30px] py-3 uppercase font-helvetica font-medium text-base w-full max-w-[255px];
+  @apply hover:bg-primary text-white border-2 border-primary hover:scale-[1.03] px-[30px] py-3 uppercase font-helvetica font-medium text-base w-full max-w-[255px];
 }
 
 .hoverLink:hover {

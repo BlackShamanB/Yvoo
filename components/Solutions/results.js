@@ -28,31 +28,31 @@ function Results({ handleModal }) {
         priority
         data-scroll data-scroll-speed="0.5"
       />
-      <div className="3xl:max-w-[1516px] 2xl:max-w-[1116px] md:max-w-[598px] mx-[auto] is-inview grid grid-cols-1 md:grid-cols-2 w-full">
-        <div className="px-[20px] customxs:px-[50px] 3xl:px-[12px] w-full">
+      <div className="3xl:max-w-[1516px] 2xl:max-w-[1116px] md:max-w-[598px] mx-[auto] is-inview grid grid-cols-1 2xl:grid-cols-2 w-full">
+        <div className="px-[20px] md:px-[61px] 2xl:px-[50px] 3xl:px-[12px] 2xl:pt-[0] md:pt-[101px] w-full">
           <Image
             // style={{ zIndex: 0, transform: "translateZ(10px)" }}
             src="/images/man3xl.webp"
             width={592}
             height={476}
             alt="yvoo-search"
-            className="relative 3xl:top-[0px] 2xl:top-[130px] 3xl:left-[0] 2xl:left-[38px] z-10 3xl:max-w-[592px] 2xl:max-w-[432px] md:max-w-[622px] max-w-[319px] 3xl:w-[592px] 2xl:w-[666px] md:w-[622px] float-right"
+            className="relative 3xl:top-[0px] 2xl:top-[130px] 3xl:left-[0] 2xl:left-[38px] z-10 3xl:max-w-[592px] 2xl:max-w-[432px] md:max-w-[415px] max-w-[319px] 3xl:w-[592px] 2xl:w-[666px] md:w-[415px] 2xl:float-right"
           />
         </div>
         <div className="3xl:pl-[84px] 2xl:pl-[54px] w-full bg-[#131D2A]">
-          <div className="3xl:mt-[37px] 3xl:mb-[37px] 2xl:mt-[167px] 2xl:mb-[81px] flex flex-col">
-            <h1 className="text-[#06D7F9] font-machina font-[800] uppercase text-[50px] 2xl:text-[50px] leading-[30px] 2xl:leading-[54px] max-w-full sm:max-w-[600px] md:max-w-[308px] 2xl:max-w-[650px]">
+          <div className="3xl:mt-[37px] 3xl:mb-[37px] 2xl:mt-[167px] 2xl:mb-[81px] 2xl:pt-[0] pt-[95px] flex flex-col">
+            <h1 className="text-[#06D7F9] font-machina font-[800] uppercase 2xl:text-[50px] text-[40px] 2xl:leading-[54px] leading-[44px] max-w-full md:max-w-[unset] 2xl:max-w-[650px]">
               Results that speak for themselves
             </h1>
-            <h1 className="font-[700] text-[24px] leading-[30px] text-white mt-[31px]">
+            <h1 className="font-[700] 2xl:text-[24px] text-[20px] 2xl:leading-[30px] leading-[26px] text-white 2xl:mt-[31px] mt-[21px]">
               Don't settle for outdated practices. Embrace the future of
               sourcing with YVOO SourcerPro+
             </h1>
-            <p className="text-white font-[400] text-[16px] leading-[20px] mt-[25px]">
+            <p className="text-white font-[400] text-[16px] leading-[20px] 2xl:mt-[25px] mt-[16px]">
               Book a demo now and unlock the full potential of your procurement
               process.
             </p>
-            <button className="white_btn mt-[43px]" onClick={handleModal}>
+            <button className="white_btn 2xl:mt-[43px] mt-[28px]" onClick={handleModal}>
               Request Demo
             </button>
           </div>

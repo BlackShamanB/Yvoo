@@ -2,42 +2,42 @@ import Image from "next/image";
 
 function Stats() {
   return (
-    <div className="w-full flex-center flex-col px-[20px] customxs:px-[50px] lg:px-[176px] 2xl:px-[181px] 3xl:px-[202px] pb-[46px] md:pb-[66px] 2xl:pb-[199px] 3xl:pb-[200px] pt-[46px] md:pt-[66px] 2xl:pt-[68px] 3xl:pt-[291px] bg-[#131D2A] -mt-[1px]">
-      <div className="grid grid-cols-1 customxs:grid-cols-3 gap-[61px] mb-[50px] md:mb-[62px] 2xl:mb-[100px] 3xl:mb-[96px]">
-        <div className="[&>p]:text-[#06D7F9] flex items-center gap-[12px] flex-wrap">
-          <p className="font-machina font-[800] text-[40px] leading-[40px] md:text-[50px] md:leading-[50px]">
+    <div className="w-full flex-center flex-col px-[20px] md:px-[43px] 2xl:px-[181px] 3xl:px-[202px] pb-[46px] md:pb-[100px] 2xl:pb-[199px] 3xl:pb-[200px] pt-[46px] md:pt-[188px] 2xl:pt-[68px] 3xl:pt-[291px] bg-[#131D2A] -mt-[1px]">
+      <div className="grid grid-cols-[181px_208px_233px] 2xl:grid-cols-3 2xl:gap-[61px] gap-[30px] mb-[50px] md:mb-[62px] 2xl:mb-[100px] 3xl:mb-[96px]">
+        <div className="[&>p]:text-[#06D7F9] flex items-center 2xl:gap-[12px] gap-[8px] 2xl:flex-wrap">
+          <p className="font-machina font-[800] 2xl:text-[50px] text-[30px] 2xl:leading-[50px] leading-[34px] ">
             10X
           </p>
-          <p className="font-[700] text-[16px] leading-[20px] max-w-[200px]">
+          <p className="font-[700] 2xl:text-[16px] text-[14px] leading-[20px] 2xl:max-w-[200px] max-w-[109px] 2xl:mt-[0] mt-[3px]">
             Faster Sourcing <br /> Decisions
           </p>
         </div>
-        <div className="[&>p]:text-[#06D7F9] flex items-center gap-[12px] flex-wrap">
-          <p className="font-machina font-[800] text-[40px] leading-[40px] md:text-[50px] md:leading-[50px]">
+        <div className="[&>p]:text-[#06D7F9] flex items-center 2xl:gap-[12px] gap-[8px] 2xl:flex-wrap">
+          <p className="font-machina font-[800] 2xl:text-[50px] text-[30px] 2xl:leading-[50px] leading-[34px]">
             100%
           </p>
-          <p className="font-[700] text-[16px] leading-[20px] max-w-[140px]">
-            Audit<br></br> Success Rate
+          <p className="font-[700] 2xl:text-[16px] text-[14px] leading-[20px] 2xl:max-w-[140px] max-w-[99px] 2xl:mt-[0] mt-[3px]">
+            Audit<br className="2xl:block hidden"></br> Success Rate
           </p>
         </div>
-        <div className="[&>p]:text-[#06D7F9] flex items-center gap-[12px] flex-wrap">
-          <p className="font-machina font-[800] text-[40px] leading-[40px] md:text-[50px] md:leading-[50px]">
+        <div className="[&>p]:text-[#06D7F9] flex items-center 2xl:gap-[12px] gap-[8px] 2xl:flex-wrap">
+          <p className="font-machina font-[800] 2xl:text-[50px] text-[30px] 2xl:leading-[50px] leading-[34px]">
             70%
           </p>
-          <p className="font-[700] text-[16px] leading-[20px] max-w-[177px]">
+          <p className="font-[700] 2xl:text-[16px] text-[14px] leading-[20px] 2xl:max-w-[177px] max-w-[147px] 2xl:mt-[0] mt-[3px]">
             Reduction in Supplier Qualification Costs
           </p>
         </div>
       </div>
       <div className="relative w-full flex justify-center">
         <Image
-          src="/images/stats-image-mobile.png"
+          src="/images/stats-image-mobile.svg"
           width={0}
           height={0}
           alt="stats-mobile"
           sizes="100vw"
-          style={{ width: "469px", height: "860px" }}
-          className="md:hidden"
+          style={{ width: "379px", height: "924px" }}
+          className="2xl:hidden"
         />
         <Image
           src="/images/stats-image.png"
@@ -46,7 +46,7 @@ function Stats() {
           alt="stats"
           sizes="100vw"
           style={{ width: "1076px", height: "475px" }}
-          className="hidden md:block"
+          className="hidden 2xl:block"
         />
       </div>
     </div>

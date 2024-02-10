@@ -7,6 +7,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+      gridTemplateColumns: {
+        '3-min': 'repeat(3, min-content)',
+      },
       fontFamily: {
         helvetica: ["var(--font-helveticaNeue)"],
         machina: ["var(--font-neueMachina)"],
@@ -67,6 +70,8 @@ module.exports = {
         bgFooter2xl: "url(../public/images/bg-footer2xl.png)",
         bgFootermd: "url(../public/images/bg-footermd.png)",
         bgFooter: "url(../public/images/bg-footer.png)",
+        solution2Bg3xl: "url(../public/images/solution2Bg3xl.png)",
+        solution2Bg2xl: "url(../public/images/solution2Bg2xl.webp)",
         solution2Bgmd: "url(../public/images/solution2Bgmd.png)",
         solution2Bg: "url(../public/images/solution2Bg.png)",
 

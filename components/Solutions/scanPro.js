@@ -5,10 +5,10 @@ function ScanPro() {
     <div
       id="scanpro"
       className="relative w-full flex justify-between flex-wrap md:gap-[32px] px-[20px] 
-      2xl:px-[202px] 
-      py-[127px] 
+      2xl:px-[202px] md:px-[85px]
+      md:pt-[420px] md:pb-[76px]
       2xl:pt-[183px] 2xl:pb-[298px] 
-      3xl:pt-[179px] 3xl:pb-[319px] bg-solution2Bg md:bg-solution2Bgmd bg-bottom"
+      3xl:pt-[179px] 3xl:pb-[319px] bg-solution2Bg md:bg-solution2Bgmd 2xl:bg-solution2Bg2xl 2xl:bg-left-bottom	 bg-no-repeat"
     >
       {/* <Image
         src="/icons/location-pin-icon.svg"
@@ -33,13 +33,13 @@ function ScanPro() {
         alt="triangle"
         className="absolute 3xl:top-[19%] 2xl:top-[8%] md:top-[39.5%] top-[23.9%] 2xl:left-[88.4%] md:left-[-78%] left-[57%] max-w-[220px] mouse-parallax z-[1]"
       />
-      <div className="w-100"></div>
+      {/* <div className="w-100"></div> */}
       <div className="w-full 3xl:max-w-[673px] 2xl:max-w-[463px]">
-        <h1 className="mb-[31px] max-w-[214px] font-machina font-[800] uppercase text-[30px] md:text-[36px] 2xl:text-[50px] leading-[30px] md:leading-[36px] 2xl:leading-[50px]">
+        <h1 className="2xl:mb-[31px] mb-[21px] max-w-[214px] font-machina font-[800] uppercase text-[30px] md:text-[40px] 2xl:text-[50px] leading-[30px] md:leading-[44px] 2xl:leading-[50px]">
           YVOO <b className="text-[#53D3AA]">Scan</b>
           Pro+
         </h1>
-        <h2 className="mb-[22px] max-w-[340px] font-[700] text-[24px] leading-[30px]">
+        <h2 className="2xl:mb-[22px] mb-[16px] max-w-[340px] font-[700] 2xl:text-[24px] text-[20px] 2xl:leading-[30px] leading-[26px]">
           Experience Effortless Supplier Readiness Checks{" "}
         </h2>
         <p className="font-[400] text-[16px] leading-[20px] mb-6 3xl:max-w-[584px]">
