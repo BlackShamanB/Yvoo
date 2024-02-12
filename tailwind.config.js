@@ -7,6 +7,13 @@ module.exports = {
   ],
   theme: {
     extend: {
+      width: {
+        'calc-100-plus-84': 'calc(100% + 84px)',
+        'calc-100-plus-37': 'calc(100% + 37px)',
+      },
+      maxWidth: {
+        'calc-100-plus-84': 'calc(100% + 84px)',
+      },
       gridTemplateColumns: {
         '3-min': 'repeat(3, min-content)',
       },

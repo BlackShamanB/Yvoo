@@ -5,10 +5,11 @@ function ScanPro() {
     <div
       id="scanpro"
       className="relative w-full flex justify-between flex-wrap md:gap-[32px] px-[20px] 
-      2xl:px-[202px] md:px-[85px]
+      2xl:px-[202px] md:px-[85px] px-[41px]
+      pt-[287px] pb-[76px]
       md:pt-[420px] md:pb-[76px]
       2xl:pt-[183px] 2xl:pb-[298px] 
-      3xl:pt-[179px] 3xl:pb-[319px] bg-solution2Bg md:bg-solution2Bgmd 2xl:bg-solution2Bg2xl 2xl:bg-left-bottom	 bg-no-repeat"
+      3xl:pt-[179px] 3xl:pb-[319px] bg-solution2Bg md:bg-solution2Bgmd 2xl:bg-solution2Bg2xl 2xl:bg-left-bottom bg-bottom bg-no-repeat"
     >
       {/* <Image
         src="/icons/location-pin-icon.svg"
@@ -35,14 +36,14 @@ function ScanPro() {
       />
       {/* <div className="w-100"></div> */}
       <div className="w-full 3xl:max-w-[673px] 2xl:max-w-[463px]">
-        <h1 className="2xl:mb-[31px] mb-[21px] max-w-[214px] font-machina font-[800] uppercase text-[30px] md:text-[40px] 2xl:text-[50px] leading-[30px] md:leading-[44px] 2xl:leading-[50px]">
-          YVOO <b className="text-[#53D3AA]">Scan</b>
+        <h1 className="2xl:mb-[31px] md:mb-[21px] mb-[15px] max-w-[214px] font-machina font-[800] uppercase text-[30px] md:text-[40px] 2xl:text-[50px] leading-[34px] md:leading-[44px] 2xl:leading-[50px]">
+          YVOO <b className="text-[#53D3AA] font-[800]">Scan</b>
           Pro+
         </h1>
-        <h2 className="2xl:mb-[22px] mb-[16px] max-w-[340px] font-[700] 2xl:text-[24px] text-[20px] 2xl:leading-[30px] leading-[26px]">
+        <h2 className="2xl:mb-[22px] md:mb-[16px] mb-[20px] max-w-[340px] font-[700] 2xl:text-[24px] md:text-[20px] text-[16px] 2xl:leading-[30px] md:leading-[26px] leading-[20px]">
           Experience Effortless Supplier Readiness Checks{" "}
         </h2>
-        <p className="font-[400] text-[16px] leading-[20px] mb-6 3xl:max-w-[584px]">
+        <p className="font-[400] md:text-[16px] text-[14px] leading-[20px] mb-6 3xl:max-w-[584px]">
           Effortlessly conduct supplier readiness checks without the hassles of
           travel and logistics. Say goodbye to wasted resources and hello to a
           streamlined process with ScanPro+. Our revolutionary solution
