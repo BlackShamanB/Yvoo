@@ -1,11 +1,16 @@
 function Hero() {
   return (
-    <div className="w-full px-[20px] customxs:px-[50px] lg:px-[176px] 2xl:px-[202px] py-[50px] md:py-[60px] 2xl:py-[106px]">
-      <h1 className="text-[#00D1EF] font-[700] text-[24px] md:text-[32px] leading-[24px] md:leading-[32px] mb-[14px] md:mb-[26px]">
+    <div className="w-full px-[20px] md:px-[50px] 3xl:px-[202px] 2xl:px-[162px] py-[50px] md:py-[60px] 2xl:pt-[118px] 3xl:pb-[198px] 2xl:pb-[138px] 3xl:bg-aboutBg3xl 2xl:bg-aboutBg2xl bg-no-repeat bg-right-top">
+      <div className="py-[36px] mb-[53px]">
+        <h1 className="text-[#00D1EF] uppercase font-machina font-[800] text-[30px] md:text-[40px] 2xl:text-[60px] leading-[30px] md:leading-[40px] 2xl:leading-[60px]">
+          About Us
+        </h1>
+      </div>
+      <h1 className="text-[#00D1EF] font-[700] text-[24px] 2xl:text-[32px] leading-[24px] 2xl:leading-[36px] mb-[14px] 2xl:mb-[42px]">
         Our Story
       </h1>
-      <div className="grid grid-cols-1 customxs:grid-cols-2 gap-[24px]">
-        <div className="font-[400] text-[16px] leading-[19px] flex flex-col gap-4 flex-1 basis-[500px]">
+      <div className="grid grid-cols-1 customxs:grid-cols-2 3xl:gap-[170px] 2xl:gap-[110px]">
+        <div className="font-[400] text-[16px] leading-[20px] flex flex-col gap-[20px] flex-1">
           <p>
             At YVOO, we know firsthand the struggles of managing large and
             complex procurement projects on a global scale. As a team of
@@ -23,7 +28,7 @@ function Hero() {
             teams discover and audit suppliers.
           </p>
         </div>
-        <div className="font-[400] text-[16px] leading-[19px] flex flex-col gap-4 flex-1 basis-[500px]">
+        <div className="font-[400] text-[16px] leading-[20px] flex flex-col gap-[20px] flex-1 basis-[500px]">
           <p>
             We set out on a journey to build a platform that would be
             user-friendly, smart, and highly reliable. We wanted to create a

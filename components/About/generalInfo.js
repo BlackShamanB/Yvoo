@@ -1,8 +1,16 @@
+import Image from "next/image";
 function GeneralInfo() {
   return (
-    <div className="flex flex-wrap md:flex-nowrap gap-[20px] w-full px-[20px] customxs:px-[50px] lg:px-[176px] 2xl:px-[202px] py-[36px] md:py-[52px] 2xl:py-[68px] pb-[76px] 2xl:pb-[122px] bg-[#414141]">
-      <div className="font-[400] text-[16px] leading-[19px] flex-1 basis-[500px]">
-        <h1 className="!text-[24px] !leading-[24px] md:!text-[32px] md:!leading-[32px] font-[700] text-[#00D1EF] mb-[26px]">
+    <div className="relative flex flex-wrap md:flex-nowrap 3xl:gap-[170px] gap-[110px] w-full px-[20px] 2xl:px-[162px] 3xl:px-[202px] py-[36px] md:py-[52px] 2xl:py-[103px] 3xl:py-[101px] 2xl:pb-[80px] pb-[76px] 2xl:pb-[100px] bg-[#131D2A]">
+      <Image
+        src="/icons/about_ellipse.svg"
+        width={369}
+        height={276}
+        alt="triangle"
+        className="absolute 2xl:top-[-35.5%] top-[18%] 2xl:left-[0%] left-[-62%] z-[1] 3xl:max-w-[265px] 2xl:max-w-[212px] max-h-[276px]"
+      />
+      <div className="font-[400] text-[16px] leading-[20px] flex-1 basis-[500px]">
+        <h1 className="!text-[24px] !leading-[24px] md:!text-[32px] md:!leading-[32px] font-[700] text-[#00D1EF] mb-[43px]">
           General Information
         </h1>
         <p>
@@ -22,8 +30,8 @@ function GeneralInfo() {
           </a>
         </p>
       </div>
-      <div className="font-[400] text-[16px] leading-[19px] flex-1 basis-[500px]">
-        <h1 className="!text-[24px] !leading-[24px] md:!text-[32px] md:!leading-[32px] font-[700] text-[#00D1EF] mb-[26px]">
+      <div className="font-[400] text-[16px] leading-[20px] flex-1 basis-[500px]">
+        <h1 className="!text-[24px] !leading-[24px] md:!text-[32px] md:!leading-[32px] font-[700] text-[#00D1EF] mb-[43px]">
           YVOO Technologies
         </h1>
         <p>

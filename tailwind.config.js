@@ -82,6 +82,9 @@ module.exports = {
         solution2Bgmd: "url(../public/images/solution2Bgmd.png)",
         solution2Bg: "url(../public/images/solution2Bg.png)",
 
+        aboutBg3xl: "url(../public/images/aboutBg3xl.png)",
+        aboutBg2xl: "url(../public/images/aboutBg2xl.png)",
+
         solutionBg3xl: "url(../public/images/solutionBg3xl.webp)",
         solutionBgmd: "url(../public/images/solutionBgmd.webp)",
         solutionBg: "url(../public/images/solutionBg.webp)",
