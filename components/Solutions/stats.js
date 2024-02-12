@@ -3,7 +3,7 @@ import Image from "next/image";
 function Stats() {
   return (
     <div className="w-full flex-center flex-col px-[20px] md:px-[43px] 2xl:px-[181px] 3xl:px-[202px] pb-[100px] md:pb-[100px] 2xl:pb-[199px] 3xl:pb-[200px] pt-[109px] md:pt-[188px] 2xl:pt-[68px] 3xl:pt-[291px] bg-[#131D2A] -mt-[1px]">
-      <div className="grid grid-cols-1 md:grid-cols-[181px_208px_233px] 2xl:grid-cols-3 2xl:gap-[61px] md:gap-[30px] gap-[40px] mb-[60px] md:mb-[62px] 2xl:mb-[100px] 3xl:mb-[96px]">
+      <div className="grid grid-cols-1 md:grid-cols-[181px_208px_233px] 2xl:grid-cols-3 2xl:gap-[61px] md:gap-[30px] gap-[40px] mb-[60px] md:mb-[62px] 2xl:mb-[100px] 3xl:mb-[96px]" data-scroll data-scroll-speed="0.3">
         <div className="[&>p]:text-[#06D7F9] flex items-center 2xl:gap-[12px] gap-[8px] 2xl:flex-wrap">
           <p className="font-machina font-[800] 2xl:text-[50px] text-[30px] 2xl:leading-[50px] leading-[34px] md:ml-[0] ml-[19px]">
             10X
@@ -29,7 +29,7 @@ function Stats() {
           </p>
         </div>
       </div>
-      <div className="relative w-full flex justify-center">
+      <div className="relative w-full flex justify-center" data-scroll data-scroll-speed="0.3">
         <Image
           src="/images/stats-image-mobile.svg"
           width={0}

@@ -22,6 +22,8 @@ function BuyerSupplier({ handleModal }) {
     <div className="relative grid grid-cols-1 2xl:grid-cols-2 w-full bg-[#131D2A] md:pb-[69px] pb-[37px]">
       <div
         className="2xl:pr-[13px] 3xl:pl-[0] 2xl:px-[0] px-[0] py-[95px] md:py-[133px] 2xl:py-[209px] flex 2xl:ml-[48px] 2xl:mr-[0] md:mx-[25px] mx-[11px] bg-black 3xl:mt-[54px] 2xl:mt-[58px] md:mt-[24px] mt-[12px] text-center"
+        data-scroll
+        data-scroll-speed="0.1"
         onMouseEnter={handleMouseEnterBuyer}
         onMouseLeave={handleMouseLeaveBuyer}
         // style={{ background: isHoveredBuyer ? "blue" : "red" }}
@@ -46,7 +48,7 @@ function BuyerSupplier({ handleModal }) {
           </div>
         </div>
       </div>
-      <div className="2xl:absolute relative 3xl:left-[38.3%] 2xl:left-[36.6%] 3xl:top-[30%] 2xl:top-[32%] 2xl:mt-[0] md:mt-[-110px] mt-[-71px] grid 2xl:grid-cols-3-min md:grid-cols-3 grid-cols-[1fr_1.1fr_1fr]">
+      <div className="2xl:absolute relative 3xl:left-[38.3%] 2xl:left-[36.6%] 3xl:top-[30%] 2xl:top-[32%] 2xl:mt-[0] md:mt-[-110px] mt-[-71px] grid 2xl:grid-cols-3-min md:grid-cols-3 grid-cols-[1fr_1.1fr_1fr] z-[1]">
         <div className="min-w-[60px] 2xl:mt-[0] md:mt-[80px] mt-[52px] 2xl:ml-[0] md:ml-[160px]">
           <div
             className="flex-center hover:scale-[1.04] cursor-pointer"
@@ -95,15 +97,17 @@ function BuyerSupplier({ handleModal }) {
               onClick={() => {
                 window.open("https://searchpro.yvoo.io", "_blank");
               }}
-              // style={{ display: isHoveredSupplier ? "block" : "none" }}
+              style={{ display: isHoveredSupplier ? "block" : "none" }}
             />
           </div>
         </div>
       </div>
       <div
-        className="bg-[#131D2A] py-[65px] md:py-[115px] 2xl:py-[229px] flex cursor-pointer 2xl:mt-[38px] mt-[0] 3xl:pr-[40px] 2xl:pr-[37px] 2xl:px-[0] text-center"
+        className="py-[65px] md:py-[115px] 2xl:py-[229px] flex cursor-pointer 2xl:mt-[38px] mt-[0] 3xl:pr-[40px] 2xl:pr-[37px] 2xl:px-[0] text-center"
         onMouseEnter={handleMouseEnterSupplier}
         onMouseLeave={handleMouseLeaveSupplier}
+        data-scroll
+        data-scroll-speed="-0.1"
       >
         <div className="flex-start flex-row-reverse gap-[80px] mx-auto">
           <div className="flex flex-col items-center 2xl:gap-[33px] gap-[0]">

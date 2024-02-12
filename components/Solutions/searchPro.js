@@ -6,7 +6,7 @@ function SearchPro() {
       id="searchpro"
       className="w-full flex justify-between flex-wrap 3xl:gap-[32px] gap-[0] px-[41px] md:px-[85px] 2xl:px-[48px] 3xl:px-[202px] pt-[97px] md:pt-[123px] 2xl:py-[0] 3xl:py-[18px] bg-mint"
     >
-      <div className="relative w-full 3xl:max-w-[726px] 2xl:max-w-[746px] 3xl:h-[728px] 3xl:mt-[34px] md:mt-none">
+      <div className="relative w-full 3xl:max-w-[726px] 2xl:max-w-[746px] 3xl:h-[728px] 3xl:mt-[34px] md:mt-none" data-scroll data-scroll-speed="0.1">
         <Image
           src="/images/mobile_phone.png"
           alt="mobile"
@@ -35,7 +35,7 @@ function SearchPro() {
           />
         </div>
       </div>
-      <div className="[&>*]:text-black w-full 3xl:max-w-[735px] 2xl:max-w-[598px] md:max-w-[unset] 3xl:pt-[79px] 2xl:pt-[94px] 3xl:pl-[63px] 3xl:pr-[0] 2xl:pr-[114px]">
+      <div className="[&>*]:text-black w-full 3xl:max-w-[735px] 2xl:max-w-[598px] md:max-w-[unset] 3xl:pt-[79px] 2xl:pt-[94px] 3xl:pl-[63px] 3xl:pr-[0] 2xl:pr-[114px]" data-scroll data-scroll-speed="0.25">
         <h1 className="2xl:mb-[30px] md:mb-[21px] mb-[15px] max-w-[514px] font-machina font-[800] uppercase text-[30px] md:text-[40px] 2xl:text-[50px] leading-[34px] md:leading-[44px] 2xl:leading-[50px] 3xl:ml-[0] 2xl:ml-[-19px]">
           YVOO <br></br><b className="text-white font-[800]">Search</b>
           Pro+

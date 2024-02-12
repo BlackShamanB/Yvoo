@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+// import { useState } from "react";
 
 import ModalRequest from "@/components/ModalRequest";
 import Experience from "@/components/Solutions/experience";
@@ -14,16 +14,30 @@ import ScanPro from "@/components/Solutions/scanPro";
 import SearchPro from "@/components/Solutions/searchPro";
 import SimpleSteps from "@/components/Solutions/simpleSteps";
 import Stats from "@/components/Solutions/stats";
+import React, { useState, useEffect, useRef } from "react";
 
 export default function Solutions() {
   const [openModalRequest, setOpenModalRequest] = useState(false);
+  const containerRef = useRef(null);
 
   const handleModal = () => {
     setOpenModalRequest((prev) => !prev);
   };
+  useEffect(() => {
+    // initParallax();
+    // initRotateSentences();
+    
+    import('locomotive-scroll').then((locomotiveModule) => {
+      const LocomotiveScroll = locomotiveModule.default;
+      new LocomotiveScroll({
+        el: containerRef.current,
+      });
+    });
+
+  }, []);
 
   return (
-    <main className="w-full">
+    <main className="w-full" ref={containerRef} data-scroll-container>
       <div className="flex flex-col overflow-hidden">
         <Hero />
         <Experience />

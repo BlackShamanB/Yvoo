@@ -25,17 +25,25 @@ function ScanPro() {
         width={584}
         height={106}
         alt="triangle"
-        className="absolute 3xl:top-[-18%] 2xl:top-[-28%] md:top-[39.5%] top-[23.9%] 3xl:left-[78%] 2xl:left-[75%] left-[57%] mouse-parallax z-[1]"
+        className="absolute 3xl:top-[-18%] 2xl:top-[-28%] md:top-[-56.9%] top-[-45%] 3xl:left-[78%] 2xl:left-[75%] md:left-[59%] left-[40%] md:max-w-[unset] max-w-[217px] mouse-parallax z-[1]"
+        data-scroll
+        data-scroll-speed="0.3"
       />
       <Image
         src="/icons/ellipse.svg"
         width={584}
         height={106}
         alt="triangle"
-        className="absolute 3xl:top-[19%] 2xl:top-[8%] md:top-[39.5%] top-[23.9%] 2xl:left-[88.4%] md:left-[-78%] left-[57%] max-w-[220px] mouse-parallax z-[1]"
+        className="absolute 3xl:top-[19%] 2xl:top-[8%] md:top-[39.5%] top-[-143%] 2xl:left-[88.4%] md:left-[-78%] left-[73%] md:max-w-[220px] max-w-[164px] mouse-parallax z-[1]"
+        data-scroll
+        data-scroll-speed="0.2"
       />
       {/* <div className="w-100"></div> */}
-      <div className="w-full 3xl:max-w-[673px] 2xl:max-w-[463px]">
+      <div
+        className="w-full 3xl:max-w-[673px] 2xl:max-w-[463px] ml-[auto]"
+        data-scroll
+        data-scroll-speed="0.15"
+      >
         <h1 className="2xl:mb-[31px] md:mb-[21px] mb-[15px] max-w-[214px] font-machina font-[800] uppercase text-[30px] md:text-[40px] 2xl:text-[50px] leading-[34px] md:leading-[44px] 2xl:leading-[50px]">
           YVOO <b className="text-[#53D3AA] font-[800]">Scan</b>
           Pro+

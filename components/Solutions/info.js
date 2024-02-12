@@ -10,7 +10,7 @@ function Info() {
         alt="search-pro"
         className="hidden md:block absolute -top-[40px] right-[16%]"
       /> */}
-      <div className="[&>*]:text-black flex flex-col 3xl:gap-[24px] 2xl:gap-[19px] md:gap-[16px] gap-[12px]">
+      <div className="[&>*]:text-black flex flex-col 3xl:gap-[24px] 2xl:gap-[19px] md:gap-[16px] gap-[12px]" data-scroll data-scroll-speed="0.15">
         <h2 className="font-[700] 2xl:text-[24px] md:text-[20px] text-[16px] 2xl:leading-[30px] md:leading-[26px] leading-[20px]">
           Tailor-Made Recommendations:
         </h2>
@@ -22,7 +22,7 @@ function Info() {
           your requirements.
         </p>
       </div>
-      <div className="[&>*]:text-black flex flex-col 3xl:gap-[24px] 2xl:gap-[19px] md:gap-[16px] gap-[12px]">
+      <div className="[&>*]:text-black flex flex-col 3xl:gap-[24px] 2xl:gap-[19px] md:gap-[16px] gap-[12px]" data-scroll data-scroll-speed="0.15">
         <h2 className="font-[700] 2xl:text-[24px] md:text-[20px] text-[16px] 2xl:leading-[30px] md:leading-[26px] leading-[20px]">
           Boost Efficiency and Save Time:{" "}
         </h2>
@@ -34,7 +34,7 @@ function Info() {
           business forward.{" "}
         </p>
       </div>
-      <div className="[&>*]:text-black flex flex-col 3xl:gap-[24px] 2xl:gap-[19px] md:gap-[16px] gap-[12px]">
+      <div className="[&>*]:text-black flex flex-col 3xl:gap-[24px] 2xl:gap-[19px] md:gap-[16px] gap-[12px]" data-scroll data-scroll-speed="0.12">
         <h2 className="font-[700] 2xl:text-[24px] md:text-[20px] text-[16px] 2xl:leading-[30px] md:leading-[26px] leading-[20px]">
           Make Informed Decisions:{" "}
         </h2>
@@ -46,7 +46,7 @@ function Info() {
           decisions with confidence.
         </p>
       </div>
-      <div className="[&>*]:text-black flex flex-col 3xl:gap-[24px] 2xl:gap-[19px] md:gap-[23px] gap-[12px]">
+      <div className="[&>*]:text-black flex flex-col 3xl:gap-[24px] 2xl:gap-[19px] md:gap-[23px] gap-[12px]" data-scroll data-scroll-speed="0.12">
         <h2 className="font-[700] 2xl:text-[24px] md:text-[20px] text-[16px] 2xl:leading-[30px] md:leading-[26px] leading-[20px]">
           Mitigate Financial Risks:{" "}
         </h2>
