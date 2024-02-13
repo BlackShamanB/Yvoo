@@ -10,13 +10,19 @@ function Team() {
           height={139}
           alt="triangle"
           className="absolute 3xl:top-[4.4%] 2xl:top-[4.6%] top-[2.7%] 3xl:left-[58.6%] 2xl:left-[66.5%] left-[70%] z-[1] 2xl:max-w-[116px] max-w-[67px] max-h-[276px]"
+          data-scroll
+          data-scroll-speed="0.3"
         />
-        <h1 className="text-black font-machina font-[800] uppercase text-[30px] 2xl:text-[50px] leading-[34px] 2xl:leading-[54px] mb-[63px] 2xl:mb-[104px] 3xl:mb-[113px]">
+        <h1 className="text-black font-machina font-[800] uppercase text-[30px] 2xl:text-[50px] leading-[34px] 2xl:leading-[54px] mb-[63px] 2xl:mb-[104px] 3xl:mb-[113px]"
+          data-scroll
+          data-scroll-speed="0.15">
           Our <br />
           Executive <br />
           Team
         </h1>{" "}
-        <div className="relative grid grid-cols-1 md:grid-cols-1 3xl:gap-[29px] 2xl:gap-[35px] gap-[24px]">
+        <div className="relative grid grid-cols-1 md:grid-cols-1 3xl:gap-[29px] 2xl:gap-[35px] gap-[24px]"
+          data-scroll
+          data-scroll-speed="0.2">
           <div className="absolute 2xl:border-[6px] border-[4px] border-mint w-[264px] 2xl:w-[403px] 3xl:w-[563px] h-[256px] 2xl:h-[391px] 3xl:h-[546px] z-[1] left-[14px] 2xl:left-[30px] top-[-31px] 2xl:top-[-38px] 3xl:top-[-47px]"></div>
           <div className="relative w-full max-w-[205px] 2xl:max-w-[318px] 3xl:max-w-[438px] h-[240px] 2xl:h-[402px] 3xl:h-[554px]">
             <Image
@@ -80,8 +86,12 @@ function Team() {
             height={196}
             alt="triangle"
             className="absolute 3xl:top-[20%] 2xl:top-[28%] top-[19%] 2xl:right-[0%] right-[0%] z-[1] 3xl:max-w-[426px] 2xl:max-w-[346px] max-w-[221px] max-h-[196px]"
+            data-scroll
+            data-scroll-speed="0.1"
           />
-          <div className="flex flex-col gap-4">
+          <div className="flex flex-col gap-4"
+          data-scroll
+          data-scroll-speed="-0.15">
             <h1 className="max-w-[560px] font-[700] 2xl:text-[24px] text-[16px] 2xl:leading-[30px] leading-[20px] text-black 2xl:mb-[270px] mb-[104px]">
               Expertise Meets Innovation: Combining Procurement Know-How with
               Digital Transformation and AI
