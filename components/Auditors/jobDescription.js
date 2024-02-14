@@ -2,16 +2,16 @@
 import Image from "next/image";
 function JobDescription() {
   return (
-    <div className="relative w-full px-[20px] customxs:px-[50px] lg:px-[176px] 2xl:px-[202px] pt-[50px] md:pt-[60px] 2xl:pt-[256px] pb-[185px] bg-[#131D2A]">
+    <div className="relative w-full px-[20px] lg:px-[176px] 2xl:px-[162px] 3xl:px-[202px] pt-[50px] md:pt-[60px] 2xl:pt-[258px] 3xl:pt-[256px] 3xl:pb-[185px] 2xl:pb-[178px] bg-[#131D2A]">
       <Image
         src="/icons/icon-line.svg"
         width={584}
         height={106}
         alt="triangle"
-        className="absolute 3xl:top-[65%] 3xl:top-[2%] 2xl:top-[48%] md:top-[37.5%] top-[18%] 3xl:left-[33.5%] 2xl:left-[-15%] md:left-[-45%] left-[-62%] mouse-parallax z-[1]"
+        className="absolute 3xl:max-w-[unset] 2xl:max-w-[458px] 3xl:top-[65%] 3xl:top-[2%] 2xl:top-[0%] md:top-[37.5%] top-[18%] 3xl:left-[33.5%] 2xl:left-[35%] md:left-[-45%] left-[-62%] mouse-parallax z-[1]"
       />
-      <div className="flex flex-wrap md:flex-nowrap gap-[30px] 2xl:gap-[170px]">
-        <div className="font-[400] text-[14px] md:text-[16px] flex flex-col gap-[22px] flex-1 basis-[500px] [&>p]:font-[400] [&>p]:text-[14px] md:[&>p]:text-[16px] [&>p]:leading-[20px] 3xl:max-w-[673px]">
+      <div className="flex flex-wrap md:flex-nowrap gap-[30px] 3xl:gap-[170px] 2xl:gap-[110px]">
+        <div className="font-[400] text-[14px] md:text-[16px] flex flex-col gap-[22px] flex-1 basis-[500px] [&>p]:font-[400] [&>p]:text-[14px] md:[&>p]:text-[16px] [&>p]:leading-[20px] 3xl:max-w-[673px] 2xl:max-w-[503px]">
           <h1 className="font-[700] text-[26px] md:text-[28px] 2xl:text-[32px] leading-[30px] md:leading-[32px] 2xl:leading-[36px] tracking-[-2px]">
             Job Description
           </h1>
