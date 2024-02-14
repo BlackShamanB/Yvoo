@@ -1,11 +1,18 @@
 "use client";
-
+import Image from "next/image";
 function JobDescription() {
   return (
-    <div className="w-full px-[20px] customxs:px-[50px] lg:px-[176px] 2xl:px-[202px] py-[50px] md:py-[60px] 2xl:py-[106px] bg-[#F6F6F6]">
-      <div className="flex flex-wrap md:flex-nowrap gap-[30px] 2xl:gap-[96px]">
-        <div className="font-[400] text-[16px] leading-[19px] flex flex-col gap-4 flex-1 basis-[500px] [&>p]:text-black">
-          <h1 className="text-black font-[700] text-[24px] md:text-[32px] leading-[24px] md:leading-[32px] mb-[14px] md:mb-[26px]">
+    <div className="relative w-full px-[20px] customxs:px-[50px] lg:px-[176px] 2xl:px-[202px] pt-[50px] md:pt-[60px] 2xl:pt-[256px] pb-[185px] bg-[#131D2A]">
+      <Image
+        src="/icons/icon-line.svg"
+        width={584}
+        height={106}
+        alt="triangle"
+        className="absolute 3xl:top-[65%] 3xl:top-[2%] 2xl:top-[48%] md:top-[37.5%] top-[18%] 3xl:left-[33.5%] 2xl:left-[-15%] md:left-[-45%] left-[-62%] mouse-parallax z-[1]"
+      />
+      <div className="flex flex-wrap md:flex-nowrap gap-[30px] 2xl:gap-[170px]">
+        <div className="font-[400] text-[14px] md:text-[16px] flex flex-col gap-[22px] flex-1 basis-[500px] [&>p]:font-[400] [&>p]:text-[14px] md:[&>p]:text-[16px] [&>p]:leading-[20px] 3xl:max-w-[673px]">
+          <h1 className="font-[700] text-[26px] md:text-[28px] 2xl:text-[32px] leading-[30px] md:leading-[32px] 2xl:leading-[36px] tracking-[-2px]">
             Job Description
           </h1>
           <p>
@@ -30,8 +37,8 @@ function JobDescription() {
           </p>
         </div>
 
-        <div className="font-[400] text-[16px] leading-[19px] flex flex-col gap-4 flex-1 basis-[500px] [&>p]:text-black">
-          <h1 className="text-black font-[700] text-[24px] md:text-[32px] leading-[24px] md:leading-[32px] mb-[14px] md:mb-[26px]">
+        <div className="font-[400] text-[14px] md:text-[16px] leading-[20px] flex flex-col gap-[22px] flex-1 basis-[500px]">
+          <h1 className="font-[700] text-[26px] md:text-[28px] 2xl:text-[32px] leading-[30px] md:leading-[32px] 2xl:leading-[36px] tracking-[-2px]">
             Skills Required
           </h1>
           <p>
@@ -46,7 +53,7 @@ function JobDescription() {
             in a flexible and rewarding way
           </p>
           <button
-            className="mt-[34px] filled_btn_primary !bg-black !border-black"
+            className="filled_btn_blue 2xl:mt-[26px] md:mt-[36px] mt-[24px] md:max-w-[223px] max-w-[136px]"
             onClick={() => {
               window.open("https://scanpro.yvoo.io", "_blank");
             }}
