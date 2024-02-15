@@ -2,20 +2,30 @@
 import Image from "next/image";
 function JobDescription() {
   return (
-    <div className="relative w-full px-[20px] lg:px-[176px] 2xl:px-[162px] 3xl:px-[202px] pt-[50px] md:pt-[60px] 2xl:pt-[258px] 3xl:pt-[256px] 3xl:pb-[185px] 2xl:pb-[178px] bg-[#131D2A]">
+    <div className="relative w-full px-[41px] md:px-[85px] 2xl:px-[162px] 3xl:px-[202px] pt-[140px] md:pt-[228px] 2xl:pt-[258px] 3xl:pt-[256px] 3xl:pb-[185px] 2xl:pb-[178px] md:pb-[132px] pb-[65px] bg-[#131D2A]">
       <Image
         src="/icons/icon-line.svg"
         width={584}
         height={106}
         alt="triangle"
-        className="absolute 3xl:max-w-[unset] 2xl:max-w-[458px] 3xl:top-[65%] 3xl:top-[2%] 2xl:top-[0%] md:top-[37.5%] top-[18%] 3xl:left-[33.5%] 2xl:left-[35%] md:left-[-45%] left-[-62%] mouse-parallax z-[1]"
+        className="absolute 3xl:max-w-[unset] 2xl:max-w-[458px] md:max-w-[320px] max-w-[142px] 3xl:top-[2%] 2xl:top-[0%] md:top-[-1.5%] top-[-1%] 3xl:left-[33.5%] 2xl:left-[35%] md:left-[0%] left-[-62%] mouse-parallax z-[1]"
+        data-scroll
+        data-scroll-speed="0.5"
       />
-      <div className="flex flex-wrap md:flex-nowrap gap-[30px] 3xl:gap-[170px] 2xl:gap-[110px]">
-        <div className="font-[400] text-[14px] md:text-[16px] flex flex-col gap-[22px] flex-1 basis-[500px] [&>p]:font-[400] [&>p]:text-[14px] md:[&>p]:text-[16px] [&>p]:leading-[20px] 3xl:max-w-[673px] 2xl:max-w-[503px]">
-          <h1 className="font-[700] text-[26px] md:text-[28px] 2xl:text-[32px] leading-[30px] md:leading-[32px] 2xl:leading-[36px] tracking-[-2px]">
+      <div className="flex flex-wrap 2xl:flex-nowrap 3xl:gap-[170px] 2xl:gap-[110px] md:gap-[62px] gap-[60px]">
+        <div className="font-[400] text-[14px] md:text-[16px] flex flex-col 2xl:gap-[22px] md:gap-[18px] flex-1 basis-[500px] [&>p]:font-[400] [&>p]:text-[14px] md:[&>p]:text-[16px] [&>p]:leading-[20px] 3xl:max-w-[673px] 2xl:max-w-[503px]">
+          <h1
+            className="font-[700] text-[26px] md:text-[28px] 2xl:text-[32px] leading-[30px] md:leading-[32px] 2xl:leading-[36px] md:tracking-[-2px] md:mb-[0] mb-[12px]"
+            data-scroll
+            data-scroll-speed="0.18"
+          >
             Job Description
           </h1>
-          <p>
+          <p
+            className="md:mb-[0] mb-[20px]"
+            data-scroll
+            data-scroll-speed="0.15"
+          >
             As a YVOO agent, you'll play a crucial role in ensuring that
             companies' external suppliers meet their quality standards. Your
             responsibilities will include planning and scheduling evaluations,
@@ -23,7 +33,11 @@ function JobDescription() {
             and producing detailed reports outlining their strengths and
             weaknesses.
           </p>
-          <p>
+          <p
+            className="md:mb-[0] mb-[20px]"
+            data-scroll
+            data-scroll-speed="0.12"
+          >
             During on-site audits conducted at the supplier's manufacturing
             locations, you'll closely examine processes, engage with personnel,
             and analyze work instructions, quality plans, and statistical
@@ -31,32 +45,46 @@ function JobDescription() {
             qualifies as an approved vendor or verify that current suppliers
             meet regulatory and other requirements.
           </p>
-          <p>
+          <p data-scroll data-scroll-speed="0.1">
             Our user-friendly ScanPro+ app will guide you through the entire
             process, making evaluations smooth and effortless.
           </p>
         </div>
 
-        <div className="font-[400] text-[14px] md:text-[16px] leading-[20px] flex flex-col gap-[22px] flex-1 basis-[500px]">
-          <h1 className="font-[700] text-[26px] md:text-[28px] 2xl:text-[32px] leading-[30px] md:leading-[32px] 2xl:leading-[36px] tracking-[-2px]">
+        <div className="font-[400] text-[14px] md:text-[16px] leading-[20px] flex flex-col 2xl:gap-[22px] md:gap-[18px] flex-1 basis-[500px] 2xl:max-w-[unset] max-w-[503px]">
+          <h1
+            className="font-[700] text-[26px] md:text-[28px] 2xl:text-[32px] leading-[30px] md:leading-[32px] 2xl:leading-[36px] md:tracking-[-2px] md:mb-[0] mb-[12px]"
+            data-scroll
+            data-scroll-speed="-0.1"
+          >
             Skills Required
           </h1>
-          <p>
+          <p
+            className="md:mb-[0] mb-[20px]"
+            data-scroll
+            data-scroll-speed="-0.12"
+          >
             While past auditing experience and professional certification are
             beneficial, they are not mandatory. YVOO agents must possess strong
             analytical abilities and be capable of assessing supplier
             performance against various criteria.
           </p>
-          <p>
+          <p
+            className="md:mb-[0] mb-[20px]"
+            data-scroll
+            data-scroll-speed="-0.15"
+          >
             Take the first step towards revolutionizing supplier audits with
             YVOO ScanPro+. Apply now to become an agent and start earning money
             in a flexible and rewarding way
           </p>
           <button
-            className="filled_btn_blue 2xl:mt-[26px] md:mt-[36px] mt-[24px] md:max-w-[223px] max-w-[136px]"
+            className="filled_btn_blue 2xl:mt-[26px] md:mt-[42px] mt-[40px] md:max-w-[223px] max-w-[136px]"
             onClick={() => {
               window.open("https://scanpro.yvoo.io", "_blank");
             }}
+            data-scroll
+            data-scroll-speed="-0.17"
           >
             Apply now
           </button>

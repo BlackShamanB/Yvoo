@@ -55,6 +55,7 @@ module.exports = {
         consultingBgsm: "url(../public/images/consultingBgsm.webp)",
         forAuditorsBg3xl: "url(../public/images/auditorsBg3xl.webp)",
         forAuditorsBg2xl: "url(../public/images/auditorsBg2xl.webp)",
+        forAuditorsBgmd: "url(../public/images/auditorsBgmd.webp)",
         forAuditorsBg: "url(../public/images/auditorsBg.webp)",
         supplierBg: "url(../public/images/supplierBg.webp)",
         supplierBg2xl: "url(../public/images/supplierBg2xl.webp)",
