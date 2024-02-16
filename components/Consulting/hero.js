@@ -1,41 +1,28 @@
 function Hero() {
   return (
     <div
-      // style={{ backgroundSize: "100% 100%" }}
-      className="relative px-[20px] customxs:px-[50px] lg:px-[176px] 2xl:px-[202px] w-full h-[712px] md2:h-[680px] 2xl:h-[780px] bg-center bg-cover bg-consultingBgsm customxs:bg-consultingBgmd md2:bg-consultingBg2xl 2xl:bg-consultingBg bg-no-repeat flex justify-center pt-[38px] md:pt-[68px] 2xl:pt-[93px] pb-[86px] md:pb-[140px] 2xl:pb-[240px] "
+      className="relative px-[41px] md:px-[20px] 2xl:px-[162px] 3xl:px-[202px] w-full h-[712px] md2:h-[680px] 2xl:h-[820px] bg-center bg-cover bg-consultingBg md:bg-consultingBgmd 2xl:bg-consultingBg2xl 3xl:bg-consultingBg3xl bg-no-repeat flex justify-center pt-[78px] md:pt-[156px] pb-[930px] md:pb-[1322px] 2xl:pb-[240px] "
     >
-      <div className="customxs:hidden absolute inset-0 bg-black opacity-50"></div>
-      <div className="w-full 3xl:max-w-[1514px] 2xl:max-w-[1116px] md:max-w-[598px] flex flex-col justify-center customxs:justify-start relative z-10">
-        <div className="flex flex-col gap-[25px]">
-          <h1 className="md2:hidden uppercase font-machina text-[30px] customxs:text-[40px] 2xl:text-[50px] font-[800] leading-[30px] customxs:leading-[40px] 2xl:leading-[50px] max-w-[330px] xl:max-w-[880px]">
+      <div className="absolute inset-0 bg-black opacity-50"></div>
+      <div className="w-full 3xl:max-w-[1514px] 2xl:max-w-[1116px] md:max-w-[598px] flex flex-col justify-start relative z-10">
+        <div className="flex flex-col 2xl:gap-[55px] md:gap-[44px] gap-[26px]">
+          <h1 className="uppercase font-machina text-[30px] md:text-[40px] 2xl:text-[50px] font-[800] leading-[34px] md:leading-[44px] 2xl:leading-[54px] max-w-[598px] xl:max-w-[880px]"
+        data-scroll
+        data-scroll-speed="0.15">
             Welcome to
             <br /> YVOO Technology,
-            <br />
-            your trusted partner in procurement consulting.
-          </h1>
-          <h1 className="hidden md2:block uppercase font-machina text-[30px] customxs:text-[40px] 2xl:text-[50px] font-[800] leading-[30px] customxs:leading-[40px] 2xl:leading-[50px] max-w-[330px] xl:max-w-[880px]">
-            Welcome to
-            <br /> YVOO Technology,
-            <br /> your trusted partner
-            <br /> in procurement
+            <br className="2xl:block hidden"/> your trusted partner
+            <br  className="2xl:block hidden"/> in procurement
             <br />
             consulting.
           </h1>
-          <div className="customxs:max-w-[325px] md:max-w-[325px] md2:hidden font-[700] text-[18px] leading-[18px] customxs:text-[24px] customxs:leading-[24px]">
+          <div className="max-w-[325px] md:max-w-[478px] font-[700] 2xl:text-[24px] md:text-[20px] text-[16px] 2xl:leading-[30px] md:leading-[24px] leading-[20px]"
+        data-scroll
+        data-scroll-speed="0.12">
             <p>
               We specialize in providing expert guidance and support to help
               businesses of all sizes optimize their procurement strategies,
               streamline their operations, and achieve significant cost savings.
-            </p>
-          </div>
-          <div className="hidden md2:flex font-[700] text-[18px] leading-[18px] customxs:text-[24px] customxs:leading-[24px]">
-            <p>
-              We specialize in providing expert
-              <br />
-              guidance and support to help businesses
-              <br /> of all sizes optimize their procurement
-              <br /> strategies, streamline their operations,
-              <br /> and achieve significant cost savings.
             </p>
           </div>
         </div>
