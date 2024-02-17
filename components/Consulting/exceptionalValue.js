@@ -2,7 +2,7 @@ import Image from "next/image";
 
 function ExceptionalValue() {
   return (
-    <div className="grid grid-cols-1 2xl:grid-cols-2 w-full">
+    <div className="grid grid-cols-1 2xl:grid-cols-2 w-full bg-white">
       <div className="relative pl-[41px] md:pl-[85px] 2xl:pl-[162px] 3xl:pl-[202px] 2xl:pb-[45px] w-full bg-white flex items-center">
         <Image
           src="/icons/arch-2.png"

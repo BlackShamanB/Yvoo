@@ -90,7 +90,7 @@ function Hero() {
   }, [serverError]);
 
   return (
-    <div className="supplier-bg-size px-[40px] 2xl:px-[162px] 3xl:px-[202px] w-full bg-top bg-left bg-contain bg-[length:100%_712px] bg-supplierBg 2xl:bg-supplierBg2xl 3xl:bg-supplierBg3xl bg-no-repeat flex justify-center pt-[78px] 2xl:pt-[156px] pb-[100px] md:pb-[144px] 2xl:pb-[150px]">
+    <div className="supplier-bg-size px-[40px] 2xl:px-[162px] 3xl:px-[202px] w-full bg-left-top bg-cover bg-[length:100%_712px] bg-supplierBg 2xl:bg-supplierBg2xl 3xl:bg-supplierBg3xl bg-no-repeat flex justify-center pt-[78px] 2xl:pt-[156px] pb-[100px] md:pb-[144px] 2xl:pb-[150px]">
       <div className="grid grid-cols-1 sm:grid-cols-2 w-full 3xl:gap-[169px] 2xl:gap-[109px] gap-[103px]">
         <div className="flex flex-col 2xl:gap-[55px] gap-[26px] break-words">
           <h1

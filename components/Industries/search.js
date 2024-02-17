@@ -5,35 +5,44 @@ function Search({ handleModal }) {
   return (
     <div
       id="search"
-      className="relative grid grid-cols-1 md:grid-cols-2 w-full"
+      className="relative grid grid-cols-1 md:grid-cols-2 w-full bg-mint"
     >
-      <div className="bg-searchBgsm xs:bg-searchBgmd md:bg-searchBg2xl 2xl:bg-searchBg bg-no-repeat bg-local bg-contain bg-bottom absolute -bottom-[1px] inset-0 z-20"></div>
+      {/* <div className="bg-searchBgsm xs:bg-searchBgmd md:bg-searchBg2xl 2xl:bg-searchBg bg-no-repeat bg-local bg-contain bg-bottom absolute -bottom-[1px] inset-0 z-20"></div> */}
+
       <Image
-        style={{ zIndex: 200 }}
-        src="/icons/yvoo-search-icon.svg"
-        alt="hero"
-        width={223}
-        height={134}
-        alt="yvoo-search"
-        className="hidden md:block absolute -top-[40px] right-[17%] 2xl:right-[19%] z-10"
+        src="/icons/arch-1.png"
+        width={180}
+        height={170}
+        alt="triangle"
+        className="absolute 2xl:top-[790px] md:top-[96.4%] top-[98.3%] 3xl:left-[40%] 2xl:left-[36.6%] md:left-[52.6%] left-[53%] mouse-parallax md:max-w-[180px] max-w-[127px] z-[1]"
+        priority
+        data-scroll data-scroll-speed="0.5"
       />
-      <div className="relative px-[20px] customxs:px-[50px] bg-white py-[55px] md:py-0 h-fit md:flex-center flex-col md:h-[810px] 2xl:h-[898px]">
-        <div className="flex flex-wrap md:flex-nowrap md:flex-col gap-[24px] md2:ml-[92px] 2xl:ml-[182px] md:mt-[128px] md:mb-[568px]">
-          <h1 className="hidden md:block uppercase font-machina text-black font-[800] text-[30px] md:text-[40px] 2xl:text-[50px] leading-[30px] md:leading-[40px] 2xl:leading-[50px]">
+      <div className="relative px-[20px] customxs:px-[50px] py-[55px] md:py-0 h-fit md:flex-center flex-col md:h-[810px] 2xl:h-[870px]">
+        <div className="flex flex-wrap md:flex-nowrap md:flex-col gap-[24px] md2:ml-[92px] 2xl:ml-[152px] md:mt-[210px] md:mb-[568px]">
+          <Image
+            style={{ }}
+            src="/images/discover.webp"
+            width={900}
+            height={654}
+            alt="yvoo-search"
+            className="absolute 2xl:top-[-355px] md:top-[186px] top-[211px] 3xl:right-[-294px] 2xl:right-[-114px] md:right-[-61px] 3xl:max-w-[900px] 2xl:max-w-[774px] md:max-w-[659px] max-w-[89%]"
+
+            // data-scroll
+            // data-scroll-speed="-0.01"
+          />
+          <h1 className="uppercase font-machina text-black font-[800] text-[30px] md:text-[40px] 2xl:text-[50px] leading-[34px] md:leading-[44px] 2xl:leading-[54px] z-[1]">
             Plant
             <br /> Engineering
             <br /> for Renewable
             <br /> Hydrogen
             <br /> Production
           </h1>
-          <h1 className="md:hidden uppercase max-w-[264px] customxs:max-w-[564px] font-machina text-black font-[800] text-[30px] md:text-[40px] 2xl:text-[50px] leading-[30px] md:leading-[40px] 2xl:leading-[50px]">
-            Plant Engineering for Renewable Hydrogen Production
-          </h1>
         </div>
       </div>
-      <div className="relative px-[20px] customxs:px-[50px] bg-primaryOrange py-[55px] md:py-0 md:flex-center flex-col h-auto customxs:h-[698px] md:h-[810px] 2xl:h-[898px]">
-        <div className="mb-[140px] md:mb-0 md2:ml-[44px] 2xl:ml-[52px] md:mt-[120px] max-w-[584px] flex flex-col gap-4 font-[400] leading-[19px] [&>p]:text-[14px] [&>p]:customxs:text-[16px]">
-          <p className="font-[700] text-[18px] leading-[18px] md:text-[24px] md:leading-[24px]">
+      <div className="relative px-[20px] customxs:px-[50px] py-[55px] md:py-0 md:flex-center flex-col h-auto customxs:h-[698px] md:h-[810px] 2xl:h-[870px]">
+        <div className="mb-[140px] md:mb-0 md2:ml-[44px] 2xl:ml-[35px] md:mt-[223px] max-w-[672px] flex flex-col gap-[20px] font-[400] leading-[20px] [&>p]:text-[14px] [&>p]:md:text-[16px] text-black">
+          <p className="font-[700] 2xl:!text-[24px] md:!text-[20px] !text-[16px] 2xl:!leading-[30px] !md:leading-[26px] !leading-[20px]">
             Maximize success and minimize risk
           </p>
           <p>
@@ -57,7 +66,7 @@ function Search({ handleModal }) {
             towards lower-carbon sources of energy
           </p>
           <button
-            className="filled_btn_white mt-[16px] z-50"
+            className="filled_btn mt-[30px] 2xl:!p-[18px_62px] !w-[max-content]"
             onClick={handleModal}
           >
             Apply now

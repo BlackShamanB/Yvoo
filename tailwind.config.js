@@ -64,8 +64,12 @@ module.exports = {
         supplierBgsm: "url(../public/images/supplierBgsm.webp)",
 
         supplier2Bg: "url(../public/images/supplier2Bg.webp)",
-        supplier2Bg3xl: "url(../public/images/supplier2Bg3xl.webp)",
         supplier2Bg2xl: "url(../public/images/supplier2Bg2xl.webp)",
+        supplier2Bg3xl: "url(../public/images/supplier2Bg3xl.webp)",
+
+        industriesBg: "url(../public/images/IndustriesBg.webp)",
+        industriesBg2xl: "url(../public/images/IndustriesBg2xl.webp)",
+        industriesBg3xl: "url(../public/images/IndustriesBg3xl.webp)",
 
         worldBg: "url(../public/images/earth.webp)",
         worldBg2xl: "url(../public/images/earth2xl.webp)",
