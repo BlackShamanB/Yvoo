@@ -11,8 +11,8 @@ function Hero() {
     phone: false,
     password: false,
     confirmPassword: false,
-  })
-  
+  });
+
   const handleFocus = (e) => {
     const { id } = e.target;
     setIsFocus({ ...focusData, [id]: true });
@@ -90,29 +90,43 @@ function Hero() {
   }, [serverError]);
 
   return (
-    <div className="supplier-bg-size px-[20px] 2xl:px-[162px] 3xl:px-[202px] w-full bg-top bg-center bg-[length:100%_712px] bg-cover bg-supplierBg 2xl:bg-supplierBg2xl 3xl:bg-supplierBg3xl bg-no-repeat flex justify-center pt-[58px] md:pt-[68px] 2xl:pt-[156px] pb-[68px] md:pb-[144px] 2xl:pb-[150px]">
-      <div className="grid grid-cols-1 sm:grid-cols-2 w-full 3xl:gap-[169px] gap-[109px]">
-        <div className="flex flex-col gap-[55px] break-words">
-          <h1 className="hidden md:block uppercase font-machina text-[30px] md:text-[30px] 2xl:text-[50px] leading-[34px] md:leading-[44px] 2xl:leading-[54px] font-[800] max-w-[530px]">
+    <div className="supplier-bg-size px-[40px] 2xl:px-[162px] 3xl:px-[202px] w-full bg-top bg-left bg-contain bg-[length:100%_712px] bg-supplierBg 2xl:bg-supplierBg2xl 3xl:bg-supplierBg3xl bg-no-repeat flex justify-center pt-[78px] 2xl:pt-[156px] pb-[100px] md:pb-[144px] 2xl:pb-[150px]">
+      <div className="grid grid-cols-1 sm:grid-cols-2 w-full 3xl:gap-[169px] 2xl:gap-[109px] gap-[103px]">
+        <div className="flex flex-col 2xl:gap-[55px] gap-[26px] break-words">
+          <h1
+            className="uppercase font-machina text-[30px] md:text-[30px] 2xl:text-[50px] leading-[34px] md:leading-[44px] 2xl:leading-[54px] font-[800] max-w-[530px]"
+            data-scroll
+            data-scroll-speed="0.1"
+          >
             Unlock New Sales
-            <br /> Opportunities with <b className="text-[#06D7F9]">YVOO SALES</b>PRO+
+            <br /> Opportunities with{" "}
+            <b className="text-[#06D7F9]">YVOO SALES</b>PRO+
           </h1>
-          <div className="hidden md:block font-[700] text-[16px] leading-[20px] 2xl:text-[24px] 2xl:leading-[30px]">
+          <div
+            className="font-[700] text-[16px] leading-[20px] 2xl:text-[24px] 2xl:leading-[30px]"
+            data-scroll
+            data-scroll-speed="0.15"
+          >
             <p>Empower Your Supplier Journey</p>
           </div>
         </div>
-        <form onSubmit={handleSubmit} className="pt-[7px]">
-          <div className="flex flex-col gap-[42px]">
+        <form
+          onSubmit={handleSubmit}
+          className="pt-[7px]"
+          data-scroll
+          data-scroll-speed="-0.05"
+        >
+          <div className="flex flex-col 2xl:gap-[42px] gap-[34px]">
             <div className="relative flex flex-col gap-3">
               <label
                 htmlFor="name"
                 className={`absolute ${
-                  focusData['name'] || formData['name']
+                  focusData["name"] || formData["name"]
                     ? "text-[14px] leading-[18px] font-[400] top-[-22px]"
                     : ""
                 } 
                 ${
-                  !focusData['name'] && !formData['name']
+                  !focusData["name"] && !formData["name"]
                     ? "md:text-[24px] text-[16px] md:leading-[30px] leading-[20px] text-[#FFFFFF50]"
                     : ""
                 }`}
@@ -131,7 +145,10 @@ function Hero() {
                 onChange={handleChange}
                 required
                 style={{
-                  'border-color': focusData['name'] || formData['name'] ? '#FFFFFF' : '#FFFFFF80'
+                  "border-color":
+                    focusData["name"] || formData["name"]
+                      ? "#FFFFFF"
+                      : "#FFFFFF80",
                 }}
               />
             </div>
@@ -139,12 +156,12 @@ function Hero() {
               <label
                 htmlFor="company"
                 className={`absolute ${
-                  focusData['company'] || formData['company']
+                  focusData["company"] || formData["company"]
                     ? "text-[14px] leading-[18px] font-[400] top-[-22px]"
                     : ""
                 } 
                 ${
-                  !focusData['company'] && !formData['company']
+                  !focusData["company"] && !formData["company"]
                     ? "md:text-[24px] text-[16px] md:leading-[30px] leading-[20px] text-[#FFFFFF50]"
                     : ""
                 }`}
@@ -163,7 +180,10 @@ function Hero() {
                 onChange={handleChange}
                 required
                 style={{
-                  'border-color': focusData['company'] || formData['company'] ? '#FFFFFF' : '#FFFFFF80'
+                  "border-color":
+                    focusData["company"] || formData["company"]
+                      ? "#FFFFFF"
+                      : "#FFFFFF80",
                 }}
               />
             </div>
@@ -171,12 +191,12 @@ function Hero() {
               <label
                 htmlFor="email"
                 className={`absolute ${
-                  focusData['email'] || formData['email']
+                  focusData["email"] || formData["email"]
                     ? "text-[14px] leading-[18px] font-[400] top-[-22px]"
                     : ""
                 } 
                 ${
-                  !focusData['email'] && !formData['email']
+                  !focusData["email"] && !formData["email"]
                     ? "md:text-[24px] text-[16px] md:leading-[30px] leading-[20px] text-[#FFFFFF50]"
                     : ""
                 }`}
@@ -195,7 +215,10 @@ function Hero() {
                 onChange={handleChange}
                 required
                 style={{
-                  'border-color': focusData['email'] || formData['email'] ? '#FFFFFF' : '#FFFFFF80'
+                  "border-color":
+                    focusData["email"] || formData["email"]
+                      ? "#FFFFFF"
+                      : "#FFFFFF80",
                 }}
               />
             </div>
@@ -235,12 +258,12 @@ function Hero() {
               <label
                 htmlFor="password"
                 className={`absolute ${
-                  focusData['password'] || formData['password']
+                  focusData["password"] || formData["password"]
                     ? "text-[14px] leading-[18px] font-[400] top-[-22px]"
                     : ""
                 } 
                 ${
-                  !focusData['password'] && !formData['password']
+                  !focusData["password"] && !formData["password"]
                     ? "md:text-[24px] text-[16px] md:leading-[30px] leading-[20px] text-[#FFFFFF50]"
                     : ""
                 }`}
@@ -258,7 +281,10 @@ function Hero() {
                 onChange={handleChange}
                 required
                 style={{
-                  'border-color': focusData['password'] || formData['password'] ? '#FFFFFF' : '#FFFFFF80'
+                  "border-color":
+                    focusData["password"] || formData["password"]
+                      ? "#FFFFFF"
+                      : "#FFFFFF80",
                 }}
               />
             </div>
@@ -266,12 +292,12 @@ function Hero() {
               <label
                 htmlFor="confirmPassword"
                 className={`absolute ${
-                  focusData['confirmPassword'] || formData['confirmPassword']
+                  focusData["confirmPassword"] || formData["confirmPassword"]
                     ? "text-[14px] leading-[18px] font-[400] top-[-22px]"
                     : ""
                 } 
                 ${
-                  !focusData['confirmPassword'] && !formData['confirmPassword']
+                  !focusData["confirmPassword"] && !formData["confirmPassword"]
                     ? "md:text-[24px] text-[16px] md:leading-[30px] leading-[20px] text-[#FFFFFF50]"
                     : ""
                 }`}
@@ -289,7 +315,10 @@ function Hero() {
                 onChange={handleChange}
                 required
                 style={{
-                  'border-color': focusData['confirmPassword'] || formData['confirmPassword'] ? '#FFFFFF' : '#FFFFFF80'
+                  "border-color":
+                    focusData["confirmPassword"] || formData["confirmPassword"]
+                      ? "#FFFFFF"
+                      : "#FFFFFF80",
                 }}
               />
             </div>
@@ -319,7 +348,7 @@ function Hero() {
             <button
               disabled={loading}
               type="submit"
-              className="filled_btn_primary !text-[#06D7F9] !leading-[20px] !p-[18px_62px] !w-[max-content]"
+              className="filled_btn_primary hover:!text-black !text-[#06D7F9] 2xl:!text-[16px] !text-[12px] 2xl:!leading-[20px] !leading-[16px] 2xl:!p-[18px_62px] !p-[8px_30px] !w-[max-content] 2xl:mt-[0] mt-[-10px]"
             >
               REGISTER
             </button>

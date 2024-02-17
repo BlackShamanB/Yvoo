@@ -1,22 +1,35 @@
 function Security() {
   return (
-    <div className="px-[20px] customxs:px-[50px] 2xl:px-[162px] 3xl:px-[202px] w-full md:bg-white pt-[54px] md:pt-[66px] 2xl:pt-[113px] pb-[54px] md:pb-[0px]">
+    <div className="px-[41px] 2xl:px-[162px] 3xl:px-[202px] w-full md:bg-white pt-[46px] md:pt-[66px] 2xl:pt-[113px] pb-[54px] md:pb-[0px] bg-[white]">
       <div className="w-full pb-[0px] md:pb-[116px] 3xl:pb-[195px]">
-        <div className="flex flex-wrap md:flex-nowrap 3xl:gap-[97px] gap-[67px]">
-          <div className="relative flex flex-col gap-[24px] md:gap-[55px] flex-1">
-            <div className="absolute bg-[#06D7F9] 3xl:w-[594px] w-[393px] h-[680px] top-[-114px] right-[0] z-[0]"></div>
-            <h1 className="font-machina uppercase text-black font-[700] text-[30px] md:text-[40px] 2xl:text-[50px] leading-[34px] md:leading-[44px] 2xl:leading-[54px] z-[1]">
+        <div className="flex flex-wrap md:flex-nowrap 3xl:gap-[97px] 2xl:gap-[67px] gap-[173px]">
+          <div className="relative flex flex-col gap-[26px] md:gap-[55px] flex-1">
+            <div
+              className="absolute bg-[#06D7F9] 3xl:w-[594px] 2xl:w-[393px] w-[262px] 2xl:h-[680px] h-[400px] 2xl:top-[-114px] 2xl:right-[0] right-[-41px] z-[0]"
+              data-scroll
+              data-scroll-speed="0.1"
+            ></div>
+            <h1
+              className="font-machina uppercase text-black font-[700] text-[30px] md:text-[40px] 2xl:text-[50px] leading-[34px] md:leading-[44px] 2xl:leading-[54px] z-[1] 2xl:mt-[0] mt-[78px]"
+              data-scroll
+              data-scroll-speed="0.15"
+            >
               Your Data
-              <br /> Security <br className="3xl:hidden block" /> is Our
+              <br /> Security <br className="3xl:hidden 2xl:block hidden" /> is
+              Our
               <br className="3xl:block hidden" /> Top Priority.
             </h1>
-            <p className="3xl:max-w-[585px] max-w-[432px] text-black font-[700] 2xl:text-[24px] md:text-[20px] text-[16px] 2xl:leading-[30px] md:leading-[26px] leading-[20px] z-[1]">
+            <p className="3xl:max-w-[585px] max-w-[432px] text-black font-[700] 2xl:text-[24px] md:text-[20px] text-[16px] 2xl:leading-[30px] md:leading-[26px] leading-[20px] z-[1]"
+          data-scroll
+          data-scroll-speed="0.2">
               Discover the Safe and Secure Way to Connect with Potential
               Customers on YVOO SALESPRO+
             </p>
           </div>
 
-          <div className="font-[400] text-[16px] leading-[20px] flex flex-col gap-[20px] flex-1 [&>p]:text-black pt-[7px] 3xl:max-w-[673px] max-w-[503px]">
+          <div className="font-[400] md:text-[16px] text-[14px] leading-[20px] flex flex-col gap-[20px] flex-1 [&>p]:text-black pt-[7px] 3xl:max-w-[673px] max-w-[503px]"
+          data-scroll
+          data-scroll-speed="-0.1">
             <p>
               At YVOO SALESPRO+ , we prioritize your safety and data security.
               We understand the importance of protecting your confidential
@@ -24,7 +37,7 @@ function Security() {
               your peace of mind when connecting with potential customers. Rest
               assured that your data is safe with us.
             </p>
-            <h1 className="text-black font-[700] text-[16px] leading-[20px]">
+            <h1 className="text-black font-[700] md:text-[16px] text-[14px] leading-[20px]">
               How YVOO SALESPRO+ &nbsp;Keeps You Safe:
             </h1>
             <ul className="text-black pl-[24px] list-disc list-outside flex flex-col gap-[20px]">
