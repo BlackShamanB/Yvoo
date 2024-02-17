@@ -90,8 +90,8 @@ function Hero() {
   }, [serverError]);
 
   return (
-    <div className="supplier-bg-size px-[20px] lg:px-[176px] 2xl:px-[202px] w-full bg-top bg-center bg-[length:100%_712px] bg-cover bg-supplierBg 2xl:bg-supplierBg2xl 3xl:bg-supplierBg3xl bg-no-repeat flex justify-center pt-[58px] md:pt-[68px] 2xl:pt-[156px] pb-[68px] md:pb-[144px] 2xl:pb-[150px]">
-      <div className="grid grid-cols-1 sm:grid-cols-2 w-full gap-[169px]">
+    <div className="supplier-bg-size px-[20px] 2xl:px-[162px] 3xl:px-[202px] w-full bg-top bg-center bg-[length:100%_712px] bg-cover bg-supplierBg 2xl:bg-supplierBg2xl 3xl:bg-supplierBg3xl bg-no-repeat flex justify-center pt-[58px] md:pt-[68px] 2xl:pt-[156px] pb-[68px] md:pb-[144px] 2xl:pb-[150px]">
+      <div className="grid grid-cols-1 sm:grid-cols-2 w-full 3xl:gap-[169px] gap-[109px]">
         <div className="flex flex-col gap-[55px] break-words">
           <h1 className="hidden md:block uppercase font-machina text-[30px] md:text-[30px] 2xl:text-[50px] leading-[34px] md:leading-[44px] 2xl:leading-[54px] font-[800] max-w-[530px]">
             Unlock New Sales

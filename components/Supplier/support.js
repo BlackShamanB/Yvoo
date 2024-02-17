@@ -1,6 +1,6 @@
 function Support() {
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 w-full gap-[168px] px-[20px] customxs:px-[50px] lg:px-[176px] 2xl:px-[202px] pt-[48px] md:pt-[64px] 2xl:pt-[66px] pb-[115px] bg-white relative top-[-1px]">
+    <div className="grid grid-cols-1 md:grid-cols-2 w-full 3xl:gap-[168px] gap-[110px] px-[20px] customxs:px-[50px] 2xl:px-[162px] 3xl:px-[202px] pt-[48px] md:pt-[64px] 2xl:pt-[66px] pb-[115px] bg-white relative top-[-1px]">
       <div className="[&>*]:text-black flex flex-col gap-[24px]">
         <h2 className="font-[700] 2xl:text-[24px] text-[16px] 2xl:leading-[30px] leading-[20px]">
           Contact Support for Further Assistance:

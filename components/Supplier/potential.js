@@ -1,12 +1,12 @@
 function Potential() {
   return (
-    <div className="flex flex-col gap-[30px] md:gap-[46px] 2xl:gap-[165px] w-full px-[20px] customxs:px-[50px] lg:px-[176px] 2xl:px-[202px] py-[40px] md:py-[44px] 2xl:py-[156px] pb-[54px] md:pb-[66px] 2xl:pb-[137px] bg-white">
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-[170px]">
+    <div className="flex flex-col gap-[30px] md:gap-[46px] 2xl:gap-[165px] w-full px-[20px] 2xl:px-[162px] 3xl:px-[202px] pt-[40px] md:pt-[44px] 2xl:pt-[156px] pb-[54px] md:pb-[139px] 2xl:pb-[137px] bg-white">
+      <div className="grid grid-cols-1 md:grid-cols-2 3xl:gap-[170px] gap-[110px]">
         <h1 className="font-machina uppercase text-[#06D7F9] font-[800] text-[30px] md:text-[30px] 2xl:text-[50px] leading-[34px] md:leading-[44px] 2xl:leading-[54px]">
           Unlock Your
-          <br /> Supplier Potential
-          <br /> and Maximize Your
-          <br /> Business Growth
+          <br className="3xl:block hidden"/> Supplier Potential
+          <br className="3xl:block hidden" /> and Maximize Your
+          <br className="3xl:block hidden" /> Business Growth
         </h1>
 
         <div className="flex flex-col gap-4 pt-[7px]">

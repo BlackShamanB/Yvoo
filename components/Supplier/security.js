@@ -1,22 +1,22 @@
 function Security() {
   return (
-    <div className="px-[20px] customxs:px-[50px] lg:px-[176px] 2xl:px-[202px] w-full md:bg-white pt-[54px] md:pt-[66px] 2xl:pt-[113px] pb-[54px] md:pb-[0px]">
-      <div className="w-full pb-[0px] md:pb-[165px] 2xl:pb-[195px]">
-        <div className="flex flex-wrap md:flex-nowrap gap-[97px]">
+    <div className="px-[20px] customxs:px-[50px] 2xl:px-[162px] 3xl:px-[202px] w-full md:bg-white pt-[54px] md:pt-[66px] 2xl:pt-[113px] pb-[54px] md:pb-[0px]">
+      <div className="w-full pb-[0px] md:pb-[116px] 3xl:pb-[195px]">
+        <div className="flex flex-wrap md:flex-nowrap 3xl:gap-[97px] gap-[67px]">
           <div className="relative flex flex-col gap-[24px] md:gap-[55px] flex-1">
-            <div className="absolute bg-[#06D7F9] w-[594px] h-[680px] top-[-114px] right-[0] z-[0]"></div>
+            <div className="absolute bg-[#06D7F9] 3xl:w-[594px] w-[393px] h-[680px] top-[-114px] right-[0] z-[0]"></div>
             <h1 className="font-machina uppercase text-black font-[700] text-[30px] md:text-[40px] 2xl:text-[50px] leading-[34px] md:leading-[44px] 2xl:leading-[54px] z-[1]">
               Your Data
-              <br /> Security is Our
-              <br /> Top Priority.
+              <br /> Security <br className="3xl:hidden block" /> is Our
+              <br className="3xl:block hidden" /> Top Priority.
             </h1>
-            <p className="max-w-[585px] text-black font-[700] 2xl:text-[24px] md:text-[20px] text-[16px] 2xl:leading-[30px] md:leading-[26px] leading-[20px] z-[1]">
+            <p className="3xl:max-w-[585px] max-w-[432px] text-black font-[700] 2xl:text-[24px] md:text-[20px] text-[16px] 2xl:leading-[30px] md:leading-[26px] leading-[20px] z-[1]">
               Discover the Safe and Secure Way to Connect with Potential
               Customers on YVOO SALESPRO+
             </p>
           </div>
 
-          <div className="font-[400] text-[16px] leading-[20px] flex flex-col gap-[20px] flex-1 [&>p]:text-black pt-[7px]  max-w-[673px]">
+          <div className="font-[400] text-[16px] leading-[20px] flex flex-col gap-[20px] flex-1 [&>p]:text-black pt-[7px] 3xl:max-w-[673px] max-w-[503px]">
             <p>
               At YVOO SALESPRO+ , we prioritize your safety and data security.
               We understand the importance of protecting your confidential
