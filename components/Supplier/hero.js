@@ -4,6 +4,24 @@ import { useEffect, useState } from "react";
 import { Auth } from "aws-amplify";
 
 function Hero() {
+  const [focusData, setIsFocus] = useState({
+    name: false,
+    company: false,
+    email: false,
+    phone: false,
+    password: false,
+    confirmPassword: false,
+  })
+  
+  const handleFocus = (e) => {
+    const { id } = e.target;
+    setIsFocus({ ...focusData, [id]: true });
+  };
+
+  const handleBlur = (e) => {
+    const { id } = e.target;
+    setIsFocus({ ...focusData, [id]: false });
+  };
   const [formData, setFormData] = useState({
     name: "",
     company: "",
@@ -36,7 +54,7 @@ function Hero() {
       attributes: {
         email: formData.email,
         name: formData.name,
-        "custom:mobile_phone": formData.phone,
+        // "custom:mobile_phone": formData.phone,
         "custom:company_name": formData.company,
         "custom:user_type": "yvoo-supplier",
       },
@@ -72,130 +90,207 @@ function Hero() {
   }, [serverError]);
 
   return (
-    <div className="supplier-bg-size px-[20px] customxs:px-[50px] lg:px-[176px] 2xl:px-[202px] w-full bg-top customxs:bg-center bg-[length:100%_712px] customxs:bg-cover h-auto md:h-[712px] md2:h-[677px] xl:h-[677px] 2xl:h-[781px] bg-supplierBgsm customxs:bg-supplierBgmd md2:bg-supplierBg2xl 2xl:bg-supplierBg bg-no-repeat flex justify-center pt-[58px] md:pt-[68px] 2xl:pt-[96px] pb-[68px] md:pb-[144px] 2xl:pb-[184px]">
-      <div className="grid grid-cols-1 sm:grid-cols-2 w-full gap-[40px]">
-        <div className="flex flex-col gap-[25px] break-words md:justify-center mt-[26px] md:mt-none">
-          <h1 className="hidden md:block uppercase font-machina text-[30px] md:text-[40px] font-[800] leading-[30px] md:leading-[40px] max-w-[880px]">
+    <div className="supplier-bg-size px-[20px] lg:px-[176px] 2xl:px-[202px] w-full bg-top bg-center bg-[length:100%_712px] bg-cover bg-supplierBg 2xl:bg-supplierBg2xl 3xl:bg-supplierBg3xl bg-no-repeat flex justify-center pt-[58px] md:pt-[68px] 2xl:pt-[156px] pb-[68px] md:pb-[144px] 2xl:pb-[150px]">
+      <div className="grid grid-cols-1 sm:grid-cols-2 w-full gap-[169px]">
+        <div className="flex flex-col gap-[55px] break-words">
+          <h1 className="hidden md:block uppercase font-machina text-[30px] md:text-[30px] 2xl:text-[50px] leading-[34px] md:leading-[44px] 2xl:leading-[54px] font-[800] max-w-[530px]">
             Unlock New Sales
-            <br /> Opportunities with
-            <br /> <b className="text-[#06D7F9]">YVOO SALES</b>PRO+
+            <br /> Opportunities with <b className="text-[#06D7F9]">YVOO SALES</b>PRO+
           </h1>
-          <h1 className="md:hidden uppercase font-machina text-[30px] md:text-[40px] font-[800] leading-[30px] md:leading-[40px] max-w-[880px]">
-            Unlock
-            <br /> New Sales Opportunities with
-            <br />
-            <b className="text-[#06D7F9]">YVOO SALES</b>PRO+
-          </h1>
-          <div className="hidden md:block font-[700] text-[18px] leading-[18px] md:text-[24px] md:leading-[24px]">
+          <div className="hidden md:block font-[700] text-[16px] leading-[20px] 2xl:text-[24px] 2xl:leading-[30px]">
             <p>Empower Your Supplier Journey</p>
           </div>
-          <div className="md:hidden font-[700] text-[18px] leading-[18px] md:text-[24px] md:leading-[24px]">
-            <p>
-              Empower Your
-              <br /> Supplier Journey
-            </p>
-          </div>
         </div>
-        <form onSubmit={handleSubmit}>
-          <div className="flex flex-col gap-[20px]">
-            <div className="flex flex-col gap-3">
+        <form onSubmit={handleSubmit} className="pt-[7px]">
+          <div className="flex flex-col gap-[42px]">
+            <div className="relative flex flex-col gap-3">
               <label
                 htmlFor="name"
-                className="font-[400] text-[14px] leading-[13px]"
+                className={`absolute ${
+                  focusData['name'] || formData['name']
+                    ? "text-[14px] leading-[18px] font-[400] top-[-22px]"
+                    : ""
+                } 
+                ${
+                  !focusData['name'] && !formData['name']
+                    ? "md:text-[24px] text-[16px] md:leading-[30px] leading-[20px] text-[#FFFFFF50]"
+                    : ""
+                }`}
+                style={{ transition: "0.2s ease all" }}
               >
-                Name <b className="text-[#FF490F]">*</b>
+                Full Name <b className="text-[#2ECC71]">*</b>
               </label>
               <input
                 type="text"
                 id="name"
-                className="border text-sm rounded-sm outline-none focus:border-[#06D7F9] block w-full p-2.5 bg-[#2D3C40] border-[#909090] placeholder-gray-400 text-white active:ring-[#06D7F9]"
-                placeholder="John"
+                className="border-b-[2px] md:text-[24px] text-[16px] md:leading-[30px] leading-[20px] rounded-sm outline-none focus:border-[#FFFFFF] block w-full p-[3px_3px_12px_0] bg-[transparent] border-[#FFFFFF80] placeholder-gray-400 text-white active:ring-[#06D7F9]"
+                placeholder=""
                 value={formData.name}
+                onFocus={handleFocus}
+                onBlur={handleBlur}
                 onChange={handleChange}
                 required
+                style={{
+                  'border-color': focusData['name'] || formData['name'] ? '#FFFFFF' : '#FFFFFF80'
+                }}
               />
             </div>
-            <div className="flex flex-col gap-3">
+            <div className="relative flex flex-col gap-3">
               <label
                 htmlFor="company"
-                className="font-[400] text-[14px] leading-[13px]"
+                className={`absolute ${
+                  focusData['company'] || formData['company']
+                    ? "text-[14px] leading-[18px] font-[400] top-[-22px]"
+                    : ""
+                } 
+                ${
+                  !focusData['company'] && !formData['company']
+                    ? "md:text-[24px] text-[16px] md:leading-[30px] leading-[20px] text-[#FFFFFF50]"
+                    : ""
+                }`}
+                style={{ transition: "0.2s ease all" }}
               >
-                Company <b className="text-[#FF490F]">*</b>
+                Company Name <b className="text-[#2ECC71]">*</b>
               </label>
               <input
                 type="text"
                 id="company"
-                className="border text-sm rounded-sm outline-none focus:border-[#06D7F9] block w-full p-2.5 bg-[#2D3C40] border-[#909090] placeholder-gray-400 text-white active:ring-[#06D7F9]"
-                placeholder="Yvoo"
+                className="border-b-[2px] md:text-[24px] text-[16px] md:leading-[30px] leading-[20px] rounded-sm outline-none focus:border-[#FFFFFF] block w-full p-[3px_3px_12px_0] bg-[transparent] border-[#FFFFFF80] placeholder-gray-400 text-white active:ring-[#06D7F9]"
+                placeholder=""
                 value={formData.company}
+                onFocus={handleFocus}
+                onBlur={handleBlur}
                 onChange={handleChange}
                 required
+                style={{
+                  'border-color': focusData['company'] || formData['company'] ? '#FFFFFF' : '#FFFFFF80'
+                }}
               />
             </div>
-            <div className="flex flex-col gap-3">
+            <div className="relative flex flex-col gap-3">
               <label
                 htmlFor="email"
-                className="font-[400] text-[14px] leading-[13px]"
+                className={`absolute ${
+                  focusData['email'] || formData['email']
+                    ? "text-[14px] leading-[18px] font-[400] top-[-22px]"
+                    : ""
+                } 
+                ${
+                  !focusData['email'] && !formData['email']
+                    ? "md:text-[24px] text-[16px] md:leading-[30px] leading-[20px] text-[#FFFFFF50]"
+                    : ""
+                }`}
+                style={{ transition: "0.2s ease all" }}
               >
-                Email <b className="text-[#FF490F]">*</b>
+                Email Address <b className="text-[#2ECC71]">*</b>
               </label>
               <input
                 type="email"
                 id="email"
-                className="border text-sm rounded-sm outline-none focus:border-[#06D7F9] block w-full p-2.5 bg-[#2D3C40] border-[#909090] placeholder-gray-400 text-white active:ring-[#06D7F9]"
-                placeholder="example@gmail.com"
+                className="border-b-[2px] md:text-[24px] text-[16px] md:leading-[30px] leading-[20px] rounded-sm outline-none focus:border-[#FFFFFF] block w-full p-[3px_3px_12px_0] bg-[transparent] border-[#FFFFFF80] placeholder-gray-400 text-white active:ring-[#06D7F9]"
+                placeholder=""
                 value={formData.email}
+                onFocus={handleFocus}
+                onBlur={handleBlur}
                 onChange={handleChange}
                 required
+                style={{
+                  'border-color': focusData['email'] || formData['email'] ? '#FFFFFF' : '#FFFFFF80'
+                }}
               />
             </div>
-            <div className="flex flex-col gap-3">
+            {/* <div className="relative flex flex-col gap-3">
               <label
                 htmlFor="phone"
-                className="font-[400] text-[14px] leading-[13px]"
+                className={`absolute ${
+                  focusData['phone'] || formData['phone']
+                    ? "text-[14px] leading-[18px] font-[400] top-[-22px]"
+                    : ""
+                } 
+                ${
+                  !focusData['phone'] && !formData['phone']
+                    ? "md:text-[24px] text-[16px] md:leading-[30px] leading-[20px] text-[#FFFFFF50]"
+                    : ""
+                }`}
+                style={{ transition: "0.2s ease all" }}
               >
-                Phone <b className="text-[#FF490F]">*</b>
+                Phone <b className="text-[#2ECC71]">*</b>
               </label>
               <input
                 type="phone"
                 id="phone"
-                className="border text-sm rounded-sm outline-none focus:border-[#06D7F9] block w-full p-2.5 bg-[#2D3C40] border-[#909090] placeholder-gray-400 text-white active:ring-[#06D7F9]"
+                className="border-b-[2px] md:text-[24px] text-[16px] md:leading-[30px] leading-[20px] rounded-sm outline-none focus:border-[#FFFFFF] block w-full p-[3px_3px_12px_0] bg-[transparent] border-[#FFFFFF80] placeholder-gray-400 text-white active:ring-[#06D7F9]"
                 placeholder=""
                 value={formData.phone}
+                onFocus={handleFocus}
+                onBlur={handleBlur}
                 onChange={handleChange}
                 required
+                style={{
+                  'border-color': focusData['phone'] || formData['phone'] ? '#FFFFFF' : '#FFFFFF80'
+                }}
               />
-            </div>
-            <div className="flex flex-col gap-3">
+            </div> */}
+            <div className="relative flex flex-col gap-3">
               <label
                 htmlFor="password"
-                className="font-[400] text-[14px] leading-[13px]"
+                className={`absolute ${
+                  focusData['password'] || formData['password']
+                    ? "text-[14px] leading-[18px] font-[400] top-[-22px]"
+                    : ""
+                } 
+                ${
+                  !focusData['password'] && !formData['password']
+                    ? "md:text-[24px] text-[16px] md:leading-[30px] leading-[20px] text-[#FFFFFF50]"
+                    : ""
+                }`}
+                style={{ transition: "0.2s ease all" }}
               >
-                Password <b className="text-[#FF490F]">*</b>
+                Password <b className="text-[#2ECC71]">*</b>
               </label>
               <input
                 type="password"
                 id="password"
-                className="border text-sm rounded-sm outline-none focus:border-[#06D7F9] block w-full p-2.5 bg-[#2D3C40] border-[#909090] placeholder-gray-400 text-white active:ring-[#06D7F9]"
+                className="border-b-[2px] md:text-[24px] text-[16px] md:leading-[30px] leading-[20px] rounded-sm outline-none focus:border-[#FFFFFF] block w-full p-[3px_3px_12px_0] bg-[transparent] border-[#FFFFFF80] placeholder-gray-400 text-white active:ring-[#06D7F9]"
                 value={formData.password}
+                onFocus={handleFocus}
+                onBlur={handleBlur}
                 onChange={handleChange}
                 required
+                style={{
+                  'border-color': focusData['password'] || formData['password'] ? '#FFFFFF' : '#FFFFFF80'
+                }}
               />
             </div>
-            <div className="flex flex-col gap-3">
+            <div className="relative flex flex-col gap-3">
               <label
                 htmlFor="confirmPassword"
-                className="font-[400] text-[14px] leading-[13px]"
+                className={`absolute ${
+                  focusData['confirmPassword'] || formData['confirmPassword']
+                    ? "text-[14px] leading-[18px] font-[400] top-[-22px]"
+                    : ""
+                } 
+                ${
+                  !focusData['confirmPassword'] && !formData['confirmPassword']
+                    ? "md:text-[24px] text-[16px] md:leading-[30px] leading-[20px] text-[#FFFFFF50]"
+                    : ""
+                }`}
+                style={{ transition: "0.2s ease all" }}
               >
-                Confirm Password <b className="text-[#FF490F]">*</b>
+                Confirm Password <b className="text-[#2ECC71]">*</b>
               </label>
               <input
                 type="password"
                 id="confirmPassword"
-                className="border text-sm rounded-sm outline-none focus:border-[#06D7F9] block w-full p-2.5 bg-[#2D3C40] border-[#909090] placeholder-gray-400 text-white active:ring-[#06D7F9]"
+                className="border-b-[2px] md:text-[24px] text-[16px] md:leading-[30px] leading-[20px] rounded-sm outline-none focus:border-[#FFFFFF] block w-full p-[3px_3px_12px_0] bg-[transparent] border-[#FFFFFF80] placeholder-gray-400 text-white active:ring-[#06D7F9]"
                 value={formData.confirmPassword}
+                onFocus={handleFocus}
+                onBlur={handleBlur}
                 onChange={handleChange}
                 required
+                style={{
+                  'border-color': focusData['confirmPassword'] || formData['confirmPassword'] ? '#FFFFFF' : '#FFFFFF80'
+                }}
               />
             </div>
             {serverError && (
@@ -224,7 +319,7 @@ function Hero() {
             <button
               disabled={loading}
               type="submit"
-              className="filled_btn_primary !text-black"
+              className="filled_btn_primary !text-[#06D7F9] !leading-[20px] !p-[18px_62px] !w-[max-content]"
             >
               REGISTER
             </button>

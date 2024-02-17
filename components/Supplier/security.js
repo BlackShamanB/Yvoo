@@ -1,26 +1,22 @@
 function Security() {
   return (
-    <div className="px-[20px] customxs:px-[50px] lg:px-[176px] 2xl:px-[202px] w-full bg-blueGrayFromTop customxs:bg-blueGrayFromTopcustomxs md:bg-blueGray pt-[54px] md:pt-[66px] 2xl:pt-[120px] pb-[54px] md:pb-[0px]">
-      <div className="w-full max-w-[1360px] pb-[0px] md:pb-[165px] 2xl:pb-[195px]">
-        <div className="flex flex-wrap md:flex-nowrap gap-[96px]">
-          <div className="flex flex-col gap-[24px] md:gap-[48px] flex-1 basis-[500px]">
-            <h1 className="font-machina uppercase text-black font-[700] text-[24px] customxs:text-[40px] leading-[24px] customxs:leading-[40px]">
+    <div className="px-[20px] customxs:px-[50px] lg:px-[176px] 2xl:px-[202px] w-full md:bg-white pt-[54px] md:pt-[66px] 2xl:pt-[113px] pb-[54px] md:pb-[0px]">
+      <div className="w-full pb-[0px] md:pb-[165px] 2xl:pb-[195px]">
+        <div className="flex flex-wrap md:flex-nowrap gap-[97px]">
+          <div className="relative flex flex-col gap-[24px] md:gap-[55px] flex-1">
+            <div className="absolute bg-[#06D7F9] w-[594px] h-[680px] top-[-114px] right-[0] z-[0]"></div>
+            <h1 className="font-machina uppercase text-black font-[700] text-[30px] md:text-[40px] 2xl:text-[50px] leading-[34px] md:leading-[44px] 2xl:leading-[54px] z-[1]">
               Your Data
               <br /> Security is Our
               <br /> Top Priority.
             </h1>
-            <p className="hidden md:block text-black font-[700] text-[18px] customxs:text-[24px] leading-[18px] customxs:leading-[24px]">
-              Discover the Safe and Secure Way to
-              <br /> Connect with Potential Customers on
-              <br /> YVOO SALESPRO+
-            </p>
-            <p className="max-w-[460px] md:hidden text-black font-[700] text-[18px] md:text-[24px] leading-[18px] md:leading-[24px]">
+            <p className="max-w-[585px] text-black font-[700] 2xl:text-[24px] md:text-[20px] text-[16px] 2xl:leading-[30px] md:leading-[26px] leading-[20px] z-[1]">
               Discover the Safe and Secure Way to Connect with Potential
               Customers on YVOO SALESPRO+
             </p>
           </div>
 
-          <div className="font-[400] text-[16px] leading-[19px] flex flex-col gap-4 flex-1 basis-[500px] [&>p]:text-black">
+          <div className="font-[400] text-[16px] leading-[20px] flex flex-col gap-[20px] flex-1 [&>p]:text-black pt-[7px]  max-w-[673px]">
             <p>
               At YVOO SALESPRO+ , we prioritize your safety and data security.
               We understand the importance of protecting your confidential
@@ -28,10 +24,10 @@ function Security() {
               your peace of mind when connecting with potential customers. Rest
               assured that your data is safe with us.
             </p>
-            <h1 className="text-black font-[700] text-[16px] leading-[16px]">
-              How YVOO SALESPRO+ Keeps You Safe:
+            <h1 className="text-black font-[700] text-[16px] leading-[20px]">
+              How YVOO SALESPRO+ &nbsp;Keeps You Safe:
             </h1>
-            <ul className="text-black pl-[20px] list-disc list-outside flex flex-col gap-[10px]">
+            <ul className="text-black pl-[24px] list-disc list-outside flex flex-col gap-[20px]">
               <li>
                 No Confidential Information Required: We respect your privacy.
                 YVOO SALESPRO+ will never ask you to provide information or any

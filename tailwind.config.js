@@ -58,9 +58,15 @@ module.exports = {
         forAuditorsBgmd: "url(../public/images/auditorsBgmd.webp)",
         forAuditorsBg: "url(../public/images/auditorsBg.webp)",
         supplierBg: "url(../public/images/supplierBg.webp)",
+        supplierBg3xl: "url(../public/images/supplierBg3xl.webp)",
         supplierBg2xl: "url(../public/images/supplierBg2xl.webp)",
         supplierBgmd: "url(../public/images/supplierBgmd.webp)",
         supplierBgsm: "url(../public/images/supplierBgsm.webp)",
+
+        supplier2Bg: "url(../public/images/supplier2Bg.webp)",
+        supplier2Bg3xl: "url(../public/images/supplier2Bg3xl.webp)",
+        supplier2Bg2xl: "url(../public/images/supplier2Bg2xl.webp)",
+
         worldBg: "url(../public/images/earth.webp)",
         worldBg2xl: "url(../public/images/earth2xl.webp)",
         worldBgmd: "url(../public/images/earthmd.webp)",
