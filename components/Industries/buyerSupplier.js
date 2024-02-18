@@ -19,9 +19,9 @@ function BuyerSupplier({ handleModal }) {
     setIsHoveredSupplier(false);
   };
   return (
-    <div className="relative grid grid-cols-1 2xl:grid-cols-2 w-full bg-[#131D2A] md:pb-[69px] pb-[37px]">
+    <div className="relative grid grid-cols-1 2xl:grid-cols-2 w-full bg-[#131D2A] md:pb-[58px] pb-[37px]">
     <div
-      className="2xl:pr-[13px] 3xl:pl-[0] 2xl:px-[0] px-[0] py-[95px] md:py-[133px] 2xl:py-[209px] flex 2xl:ml-[48px] 2xl:mr-[0] md:mx-[25px] mx-[11px] bg-black 3xl:mt-[54px] 2xl:mt-[58px] md:mt-[24px] mt-[12px] text-center"
+      className="2xl:pr-[13px] 3xl:pl-[0] 2xl:px-[0] px-[0] py-[95px] md:py-[133px] 2xl:py-[216px] 3xl:py-[209px] flex 2xl:ml-[48px] 2xl:mr-[0] md:mx-[25px] mx-[11px] bg-black 3xl:mt-[65px] 2xl:mt-[58px] md:mt-[24px] mt-[12px] text-center"
       data-scroll
       data-scroll-speed="0.1"
       onMouseEnter={handleMouseEnterBuyer}
@@ -48,7 +48,7 @@ function BuyerSupplier({ handleModal }) {
         </div>
       </div>
     </div>
-    <div className="2xl:absolute relative 3xl:left-[38.3%] 2xl:left-[36.6%] 3xl:top-[30%] 2xl:top-[32%] 2xl:mt-[0] md:mt-[-110px] mt-[-71px] grid 2xl:grid-cols-3-min md:grid-cols-3 grid-cols-[1fr_1.1fr_1fr] z-[1]">
+    <div className="2xl:absolute relative 3xl:left-[38.3%] 2xl:left-[36.6%] 3xl:top-[31%] 2xl:top-[32%] 2xl:mt-[10px] md:mt-[-110px] mt-[-71px] grid 2xl:grid-cols-3-min md:grid-cols-3 grid-cols-[1fr_1.1fr_1fr] z-[1]">
       <div className="min-w-[60px] 2xl:mt-[0] md:mt-[80px] mt-[52px] 2xl:ml-[0] md:ml-[160px]">
         <div
           className="flex-center hover:scale-[1.04] cursor-pointer"
@@ -93,7 +93,7 @@ function BuyerSupplier({ handleModal }) {
             width={108}
             height={108}
             alt="left arrow"
-            className="w-[60px] 2xl:ml-[43px] md:ml-[20px] ml-[-15px] 2xl:max-w-[44px] md:max-w-[unset] max-w-[34px] 3xl:mt-[33px] 2xl:mt-[22px]"
+            className="w-[60px] 2xl:ml-[31px] md:ml-[20px] ml-[-15px] 2xl:max-w-[44px] md:max-w-[unset] max-w-[34px] 3xl:mt-[33px] 2xl:mt-[22px]"
             onClick={() => {
               window.open("https://searchpro.yvoo.io", "_blank");
             }}
@@ -103,7 +103,7 @@ function BuyerSupplier({ handleModal }) {
       </div>
     </div>
     <div
-      className="py-[65px] md:py-[115px] 2xl:py-[229px] flex cursor-pointer 2xl:mt-[38px] mt-[0] 3xl:pr-[40px] 2xl:pr-[37px] 2xl:px-[0] text-center"
+      className="py-[65px] md:py-[115px] 2xl:py-[235px] flex cursor-pointer 2xl:mt-[38px] mt-[0] 3xl:pr-[40px] 2xl:pr-[37px] 2xl:px-[0] text-center"
       onMouseEnter={handleMouseEnterSupplier}
       onMouseLeave={handleMouseLeaveSupplier}
       data-scroll

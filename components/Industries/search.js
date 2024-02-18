@@ -14,19 +14,19 @@ function Search({ handleModal }) {
         width={180}
         height={170}
         alt="triangle"
-        className="absolute 2xl:top-[790px] md:top-[96.4%] top-[98.3%] 3xl:left-[40%] 2xl:left-[36.6%] md:left-[52.6%] left-[53%] mouse-parallax md:max-w-[180px] max-w-[127px] z-[1]"
+        className="absolute 2xl:top-[-6%] md:top-[0%] top-[0] 3xl:left-[61.5%] 2xl:left-[0] left-[0%] mouse-parallax md:max-w-[180px] max-w-[127px] z-[1]"
         priority
         data-scroll data-scroll-speed="0.5"
       />
-      <div className="relative px-[20px] customxs:px-[50px] py-[55px] md:py-0 h-fit md:flex-center flex-col md:h-[810px] 2xl:h-[870px]">
-        <div className="flex flex-wrap md:flex-nowrap md:flex-col gap-[24px] md2:ml-[92px] 2xl:ml-[152px] md:mt-[210px] md:mb-[568px]">
+      <div className="relative px-[20px] customxs:px-[50px] py-[55px] md:py-0 h-fit md:flex-center flex-col md:h-[810px] 2xl:h-[857px] 3xl:h-[870px]">
+        <div className="flex flex-wrap md:flex-nowrap md:flex-col gap-[24px] md2:ml-[92px] 2xl:ml-[112px] 3xl:ml-[152px] 2xl:mt-[157px] 3xl:mt-[210px] md:mb-[568px]">
           <Image
             style={{ }}
             src="/images/discover.webp"
-            width={900}
+            width={898}
             height={654}
             alt="yvoo-search"
-            className="absolute 2xl:top-[-355px] md:top-[186px] top-[211px] 3xl:right-[-294px] 2xl:right-[-114px] md:right-[-61px] 3xl:max-w-[900px] 2xl:max-w-[774px] md:max-w-[659px] max-w-[89%]"
+            className="absolute 3xl:top-[-355px] 2xl:top-[-27.8%] md:top-[186px] top-[211px] 3xl:right-[-294px] 2xl:right-[-30%] md:right-[-61px] 3xl:max-w-[898px] 2xl:max-w-[660px] md:max-w-[659px] max-w-[89%]"
 
             // data-scroll
             // data-scroll-speed="-0.01"
@@ -40,9 +40,9 @@ function Search({ handleModal }) {
           </h1>
         </div>
       </div>
-      <div className="relative px-[20px] customxs:px-[50px] py-[55px] md:py-0 md:flex-center flex-col h-auto customxs:h-[698px] md:h-[810px] 2xl:h-[870px]">
-        <div className="mb-[140px] md:mb-0 md2:ml-[44px] 2xl:ml-[35px] md:mt-[223px] max-w-[672px] flex flex-col gap-[20px] font-[400] leading-[20px] [&>p]:text-[14px] [&>p]:md:text-[16px] text-black">
-          <p className="font-[700] 2xl:!text-[24px] md:!text-[20px] !text-[16px] 2xl:!leading-[30px] !md:leading-[26px] !leading-[20px]">
+      <div className="relative px-[20px] customxs:px-[50px] py-[55px] md:py-0 md:flex-center flex-col h-auto customxs:h-[698px] md:h-[810px] 2xl:h-[857px] 3xl:h-[870px]">
+        <div className="mb-[140px] md:mb-0 ml-[5px] 3xl:ml-[35px] 2xl:mt-[169px] 3xl:mt-[223px] max-w-[503px] 3xl:max-w-[672px] flex flex-col gap-[20px] font-[400] leading-[20px] [&>p]:text-[14px] [&>p]:md:text-[16px] text-black">
+          <p className="font-[700] 2xl:!text-[24px] md:!text-[20px] !text-[16px] 2xl:!leading-[30px] !md:leading-[26px] !leading-[20px] mb-[4px] 3xl:mb-[0]">
             Maximize success and minimize risk
           </p>
           <p>
@@ -66,7 +66,7 @@ function Search({ handleModal }) {
             towards lower-carbon sources of energy
           </p>
           <button
-            className="filled_btn mt-[30px] 2xl:!p-[18px_62px] !w-[max-content]"
+            className="filled_btn 3xl:mt-[30px] mt-[27px] 2xl:!p-[18px_62px] !border-2 !w-[max-content]"
             onClick={handleModal}
           >
             Apply now
