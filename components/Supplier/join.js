@@ -22,7 +22,7 @@ function Join() {
         </p>
         <button
           type="submit"
-          className="filled_btn_primary hover:!text-black !text-[#06D7F9] 2xl:!p-[18px_62px] !p-[8px_30px] !w-[max-content] 2xl:!text-[16px] !text-[12px] 2xl:!leading-[20px] !leading-[16px]"
+          className="filled_btn_primary hover:!text-black !text-[#06D7F9] md:!p-[18px_62px] !p-[8px_30px] !w-[max-content] 2xl:!text-[16px] !text-[12px] 2xl:!leading-[20px] !leading-[16px]"
           onClick={() => {
             window.open("https://searchpro.yvoo.io", "_blank");
           }}
