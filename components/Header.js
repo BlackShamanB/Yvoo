@@ -84,7 +84,7 @@ const Header = () => {
               <div key={link.name} className="relative inline-block text-white">
                 <Link href={link.link} legacyBehavior>
                   <a onClick={() => {closeMenu; handleLinkClick(link.link)}} className="group">
-                    <div className="relative z-[1] text-[16px] leading-[44px]">{link.name}</div>
+                    <div className="relative z-[1] 2xl:text-[16px] text-[14px] leading-[44px]">{link.name}</div>
                     <span className={`absolute z-[0] bottom-[16px] w-full h-1 bg-[#2ECC71] bottom-0 left-0 transform scale-x-0 transition-transform origin-bottom-right duration-350 ease-out group-hover:origin-bottom-left group-hover:scale-x-100 ${activeLink == link.link ? '!origin-bottom-left scale-x-50' : ''}`}></span>
                   </a>
                 </Link>

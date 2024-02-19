@@ -9,7 +9,7 @@ function Offerings() {
           Offerings
         </h1>
       </div>
-      <div className="col-span-2 px-[20px] w-full bg-[#06D7F9] flex md:ml-[24px] ml-[12px] 3xl:w-[calc(100%_-_72px)] md:w-[calc(100%_-_24px)] w-[calc(100%_-_12px)] 2xl:h-[356px] md:h-[285px] h-[200px]">
+      <div className="col-span-2 px-[20px] bg-[#06D7F9] flex md:ml-[24px] ml-[12px] 3xl:w-[calc(100%_-_72px)] md:w-[calc(100%_-_24px)] w-[calc(100%_-_12px)] 2xl:h-[356px] md:h-[285px] h-[200px]">
         <div className="ml-[9px] md:ml-[41px] 2xl:ml-[94px] 3xl:ml-[134px] pr-[60px] md:pr-[30px] 2xl:pr-[120px] 3xl:pr-[136px] mt-[40px] md:mt-[167px] 3xl:mt-[197px] flex flex-col gap-4"
         data-scroll
         data-scroll-speed="0.1">

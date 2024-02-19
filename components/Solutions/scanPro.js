@@ -9,7 +9,7 @@ function ScanPro() {
       pt-[287px] pb-[76px]
       md:pt-[420px] md:pb-[76px]
       2xl:pt-[183px] 2xl:pb-[298px] 
-      3xl:pt-[179px] 3xl:pb-[319px] bg-solution2Bg md:bg-solution2Bgmd 2xl:bg-solution2Bg2xl 2xl:bg-left-bottom bg-bottom bg-no-repeat"
+      3xl:pt-[179px] 3xl:pb-[319px] bg-solution2Bg md:bg-solution2Bgmd md2:bg-solution2Bg2xl 2xl:bg-left-bottom bg-cover bg-no-repeat"
     >
       {/* <Image
         src="/icons/location-pin-icon.svg"

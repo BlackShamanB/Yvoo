@@ -6,7 +6,7 @@ import { format, parseISO } from "date-fns";
 const Card = ({ post }) => {
   const dateFormat = "LLL dd, yyyy";
   return (
-    <div className="hover:scale-[1.02] cursor-pointer relative max-w-[336px] md:max-w-[354px] 2xl:max-w-[432px] 3xl:max-w-[438px] h-[322px] md:h-[339px] 2xl:h-[414px] 3xl:h-[420px] bg-black text-white px-[20px] py-[26px] flex">
+    <div className="hover:scale-[1.02] cursor-pointer relative mx-[auto] min-w-[336px] 2xl:min-w-[unset] max-w-[336px] md:max-w-[354px] 2xl:max-w-[432px] 3xl:max-w-[438px] h-[322px] md:h-[339px] 2xl:h-[414px] 3xl:h-[420px] w-[100%] bg-black text-white px-[20px] py-[26px] flex">
       <Image
         quality={100}
         fill
