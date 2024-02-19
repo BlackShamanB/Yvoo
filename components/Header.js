@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useRef, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -14,8 +14,20 @@ Amplify.configure(awsconfig);
 const Header = () => {
   const [active, setActive] = useState(false);
   const [openModalRequest, setOpenModalRequest] = useState(false);
-  const [activeLink, setActiveLink] = useState('/');
-
+  const [activeLink, setActiveLink] = useState("/");
+  
+  const refY = useRef(null);
+  const refV = useRef(null);
+  const refG = useRef(null);
+  const refO = useRef(null);
+  const refEl = useRef(null);
+  useEffect(() => {
+    refY.current.classList.add('typing-char')
+    setTimeout(() => {refV.current.classList.add('typing-char')}, 100)
+    setTimeout(() => {refG.current.classList.add('typing-char')}, 200)
+    setTimeout(() => {refO.current.classList.add('typing-char')}, 300)
+    setTimeout(() => {refEl.current.classList.add('typing-char')}, 400)
+  });
   const toggleMenu = () => {
     setActive(!active);
   };
@@ -30,7 +42,7 @@ const Header = () => {
 
   const handleLinkClick = (link) => {
     setActiveLink(link); // Обновляем состояние при клике на ссылку
-  }
+  };
 
   // let pathName = window.location.pathname
 
@@ -63,14 +75,49 @@ const Header = () => {
           className="cursor-pointer min-w-[26px] max-w-[34px] h-[34px]"
         />
       </div>
-      <Link href={"/"}>
-        <Image
-          src="/logo.svg"
-          width={118}
-          height={34}
-          alt="logo"
-          className="relative -top-[4px] cursor-pointer min-w-[88px] md:max-w-[118px] max-w-[78px] md:ml-[0] ml-[2px]"
-        />
+      <Link href={"/"} className="pt-[10px] typing-effect">
+        <div>
+          <Image
+          ref={refY}
+            src="/icons/logo_y.svg"
+            width={23}
+            height={25}
+            alt="logo"
+            className="relative inline -top-[4px] cursor-pointer md:max-w-[118px] max-w-[78px] logo-char"
+          />
+          <Image
+          ref={refV}
+            src="/icons/logo_v.svg"
+            width={27}
+            height={25}
+            alt="logo_y"
+            className="relative inline -top-[4px] cursor-pointermd:max-w-[118px] max-w-[78px] logo-char"
+          />
+          <Image
+          ref={refG}
+            src="/icons/logo_g.svg"
+            width={26}
+            height={34}
+            alt="logo"
+            className="relative inline -top-[9px] cursor-pointer md:max-w-[118px] max-w-[78px] ml-[2px] logo-char"
+          />
+          <Image
+          ref={refO}
+            src="/icons/logo_o.svg"
+            width={26}
+            height={25}
+            alt="logo"
+            className="relative inline -top-[4px] cursor-pointer md:max-w-[118px] max-w-[78px] logo-char"
+          />
+          <Image
+          ref={refEl}
+            src="/icons/logo_el.svg"
+            width={11}
+            height={16}
+            alt="logo"
+            className="relative inline -top-[4px] cursor-pointer md:max-w-[118px] max-w-[78px] top-[-9px] ml-[4px] logo-char"
+          />
+        </div>
       </Link>
 
       {!active && (
@@ -83,9 +130,23 @@ const Header = () => {
             return (
               <div key={link.name} className="relative inline-block text-white">
                 <Link href={link.link} legacyBehavior>
-                  <a onClick={() => {closeMenu; handleLinkClick(link.link)}} className="group">
-                    <div className="relative z-[1] 2xl:text-[16px] text-[14px] leading-[44px]">{link.name}</div>
-                    <span className={`absolute z-[0] bottom-[16px] w-full h-1 bg-[#2ECC71] bottom-0 left-0 transform scale-x-0 transition-transform origin-bottom-right duration-350 ease-out group-hover:origin-bottom-left group-hover:scale-x-100 ${activeLink == link.link ? '!origin-bottom-left scale-x-50' : ''}`}></span>
+                  <a
+                    onClick={() => {
+                      closeMenu;
+                      handleLinkClick(link.link);
+                    }}
+                    className="group"
+                  >
+                    <div className="relative z-[1] 2xl:text-[16px] text-[14px] leading-[44px]">
+                      {link.name}
+                    </div>
+                    <span
+                      className={`absolute z-[0] bottom-[16px] w-full h-1 bg-[#2ECC71] bottom-0 left-0 transform scale-x-0 transition-transform origin-bottom-right duration-350 ease-out group-hover:origin-bottom-left group-hover:scale-x-100 ${
+                        activeLink == link.link
+                          ? "!origin-bottom-left scale-x-50"
+                          : ""
+                      }`}
+                    ></span>
                   </a>
                 </Link>
               </div>
@@ -136,16 +197,20 @@ const Header = () => {
               );
             })}
             <li className="flex flex-row items-center gap-3 uppercase text-[#53D3AA] text-[16px] mt-[auto]">
-              watch instructions<Image src="/icons/watch_instructions.svg" width={48} height={48} alt="logo" className="inline"/>
+              watch instructions
+              <Image
+                src="/icons/watch_instructions.svg"
+                width={48}
+                height={48}
+                alt="logo"
+                className="inline"
+              />
             </li>
           </ul>
         </>
       )}
       <div className="flex-center gap-[36px] 2lg:ml-[0] ml-[auto]">
-        <button
-          className="outlined_btn"
-          onClick={handleModal}
-        >
+        <button className="outlined_btn" onClick={handleModal}>
           Request demo
         </button>
       </div>

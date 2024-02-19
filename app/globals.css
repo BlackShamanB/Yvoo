@@ -205,7 +205,9 @@ body {
 }
 
 /* rotateText */
-
+.logo-char {
+  opacity: 0;
+}
 .typing-effect {
   display: inline-block;
   white-space: pre;
