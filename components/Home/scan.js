@@ -1,6 +1,8 @@
 import Image from "next/image";
-
+import React, { useState, useEffect, useRef } from "react";
+import TypingEffect from "../TypingEffect";
 function Scan({ handleModal }) {
+
   return (
     <div
       id="scan"
@@ -28,7 +30,12 @@ function Scan({ handleModal }) {
               className="flex flex-wrap md:items-start flex-col 2xl:gap-[24px] md:gap-[16px] 2xl:mt-[136px] md:mt-[115px] 2xl:mb-[420px] md:mb-[20px] md:px-[0] px-[41px] 2xl:hidden block"
             >
               <h1 className="uppercase font-machina font-[800] text-white 2xl:text-[50px] md:text-[40px] text-[30px] md:leading-[44px] leading-[34px] 2xl:leading-[50px] max-w-[318px] 2xl:max-w-[340px] md:mb-[3px] mb-[15px]">
-                YVOO<br></br>Scan<b className="text-black">Pro+</b>
+                <span className="words">
+                  <div className="word">YVOO</div>
+                  <br></br>
+                  <div className="word">Scan</div>
+                  <b className="text-black word">Pro+</b>
+                </span>
               </h1>
               <div className="flex flex-col 2xl:gap-[48px] md:gap-[28px] gap-[24px] md:items-start mb-[60px]">
                 <p className="font-[700] 2xl:text-[24px] md:text-[20px] text-[16px] text-black 2xl:leading-[26px] md:leading-[26px] leading-[20px] md:max-w-[327px] 2xl:max-w-[340px] md:max-w-[222px] 2xl:mb-[24px]">
@@ -121,7 +128,10 @@ function Scan({ handleModal }) {
               data-scroll-speed="-0.1"
             >
               <h1 className="uppercase font-machina font-[800] text-[40px] text-white 2xl:text-[50px] leading-[30px] md:leading-[40px] 2xl:leading-[52px] max-w-[318px] 2xl:max-w-[340px] mb-[32px]">
-                YVOO Scan<b className="text-black">Pro+</b>
+                <TypingEffect text="YVOO Scan" speed={100} delay={0} />
+                <b className="text-black">
+                  <TypingEffect text="Pro+" speed={100} delay={1.1} />
+                </b>
               </h1>
               <div className="flex flex-col gap-[42px] md:items-start">
                 <p className="font-[700] text-[18px] text-black 2xl:text-[24px] leading-[22px] 2xl:leading-[30px] max-w-[222px] md:max-w-[327px] 2xl:max-w-[340px]">

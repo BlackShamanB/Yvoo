@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
-//bg-bgFooter bg-no-repeat bg-contain
+import TypingEffect from "../TypingEffect";
 function Auditor() {
   return (
     <div className="relative grid w-full w-full bg-[#131D2A]">
@@ -92,7 +92,8 @@ function Auditor() {
         data-scroll
         data-scroll-speed="0.1">
             <h1 className="uppercase 2xl:mb-[30px] mb-[18px] text-[#06D7F9] font-machina font-[800] 2xl:text-[50px] md:text-[40px] text-[30px] 2xl:leading-[54px] md:leading-[44px] leading-[34px] 2xl:max-w-[unset] md:max-w-[504px] max-w-[unset]">
-              Join the Team of YVOO auditors
+            <TypingEffect text="Join the Team of" speed={100} delay={0} />
+            <TypingEffect text="YVOO auditors" speed={100} delay={1.6} />
             </h1>
             <div className="max-w-[683px] flex flex-col gap-[20px] font-[400] md:text-[16px] text-[14px] leading-[20px]">
               <p>

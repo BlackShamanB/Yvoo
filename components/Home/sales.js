@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-
+import TypingEffect from "../TypingEffect";
 function Sales({ handleModal }) {
   return (
     <div
@@ -30,10 +30,7 @@ function Sales({ handleModal }) {
           }
           className="relative grid grid-cols-1 2xl:grid-cols-2 bg-white md:py-0 md:flex-center flex-col h-fit 3xl:h-[1187px] 2xl:h-[1125px] md:h-[1422px] md:px-[0] px-[41px] md:overflow-visible overflow-hidden"
         >
-          <div
-            className="flex flex-wrap md:flex-nowrap items-center md:items-start md:flex-col 3xl:gap-[20px] 2xl:gap-[31px] md:gap-[20px] gap-[12px] 3xl:mt-[172px] 2xl:mt-[165px] md:mt-[153px] mt-[139px] 3xl:mb-[568px] 2xl:mb-[356px]"
-
-          >
+          <div className="flex flex-wrap md:flex-nowrap items-center md:items-start md:flex-col 3xl:gap-[20px] 2xl:gap-[31px] md:gap-[20px] gap-[12px] 3xl:mt-[172px] 2xl:mt-[165px] md:mt-[153px] mt-[139px] 3xl:mb-[568px] 2xl:mb-[356px]">
             <Image
               src="/icons/squares-2.png"
               width={96}
@@ -51,7 +48,8 @@ function Sales({ handleModal }) {
               className="absolute 2xl:top-[57%] 2xl:top-[53%] md:top-[39.5%] top-[23.9%] 3xl:left-[-22%] md:left-[-78%] left-[57%] mouse-parallax z-[1]"
             />
             <h1 className="uppercase 3xl:ml-[154px] 2xl:ml-[0] font-machina font-[800] text-[#00D1EF] 2xl:text-[50px] md:text-[40px] text-[30px] 2xl:leading-[54px] md:leading-[44px] leading-[34px] max-w-[318px] 2xl:max-w-[472px]">
-              YVOO Sales<b className="text-black">Pro+</b>
+              <TypingEffect text="YVOO Sales" speed={100} delay={0} />
+              <b className="text-black"><TypingEffect text="Pro+" speed={100} delay={1} /></b>
             </h1>
             <div className="flex flex-col md:gap-[18px] gap-[25px] 3xl:ml-[154px] 2xl:ml-[0]">
               <p className="font-[700] 2xl:text-[24px] md:text-[20px] text-[16px] text-black 2xl:leading-[30px] md:leading-[26px] leading-[20px] max-w-[327px] 2xl:max-w-[327px]">
@@ -70,7 +68,6 @@ function Sales({ handleModal }) {
               height={523}
               alt="yvoo-sales"
               className="2xl:absolute relative 2xl:left-[-92px] 2xl:bottom-[120px] 3xl:ml-[90px] 2xl:ml-[-22px] md:ml-[-62px] ml-[-41px] 2xl:mt-[24px] md:mt-[18px] mt-[24px] 3xl:min-w-[748px] 2xl:min-w-[660px] md:min-w-[538px] 2xl:max-w-[660px] md:max-w-[538px] max-w-[262px]"
-
             />
           </div>
           <div
@@ -89,7 +86,8 @@ function Sales({ handleModal }) {
               alt="yvoo-search"
               className="z-10 3xl:ml-[-15px] 2xl:ml-[-20px] md:ml-[-31px] md:max-w-[111px] max-w-[74px] 2xl:mt-[152px] md:mt-[-72px] mt-[-51px] 2xl:mb-[37px] mb-[32px]"
               data-scroll
-              data-scroll-speed="0.2"/>
+              data-scroll-speed="0.2"
+            />
             <div
               style={{
                 position: "relative",

@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-
+import TypingEffect from "../TypingEffect";
 function Search({ handleModal }) {
   return (
     <div
@@ -20,7 +20,6 @@ function Search({ handleModal }) {
             height={654}
             alt="yvoo-search"
             className="absolute 2xl:bottom-[0px] md:bottom-[unset] 2xl:top-[unset] md:top-[186px] top-[211px] 3xl:left-[0] 2xl:left-[-114px] md:left-[-61px] z-10 3xl:max-w-[900px] 2xl:max-w-[774px] md:max-w-[659px] max-w-[89%]"
-
             data-scroll
             data-scroll-speed="-0.01"
           />
@@ -48,7 +47,10 @@ function Search({ handleModal }) {
               data-scroll-speed="0.2"
             >
               <h1 className="uppercase font-machina font-[800] 2xl:text-[50px] md:text-[40px] text-[30px] 2xl:leading-[54px] md:leading-[44px] leading-[34px] max-w-[318px] 2xl:max-w-[438px] 3xl:ml-[145px] 2xl:ml-[0]">
-                YVOO Search<b className="text-black">Pro+</b>
+                <TypingEffect text="YVOO Search" speed={100} delay={0} />{" "}
+                <b className="text-black">
+                  <TypingEffect text="Pro+" speed={100} delay={1.1} />
+                </b>
               </h1>
               <div className="flex flex-col 2xl:gap-[42px] md:gap-[28px] gap-[24px] 2xl:max-w-[438px] 3xl:ml-[145px] 2xl:ml-[0]">
                 <p className="font-[700] text-black 2xl:text-[24px] md:text-[20px] text-[16px] 2xl:leading-[30px] md:leading-[26px] leading-[20px] 2xl:max-w-[260px] max-w-[293px]">

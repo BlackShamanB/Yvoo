@@ -1,26 +1,28 @@
 let sentences = null;
 // var words = null;
-var count = 0;
 var wordArray = [];
 var currentWord = 0;
-const initRotateSentences = () => {
-  if (count > 0) return;
-  sentences = document.querySelectorAll(".words");
-  // console.log(sentences)
-  sentences.forEach((el, id) => {
-    initRotateText(el, id);
-  });
+const initRotateSentences = (element) => {
+  // sentences = element.querySelectorAll(".words");
+  // sentences.forEach((el, id) => {
+  //   initRotateText(el, id);
+  // });
+  
+  // element.querySelectorAll(".words").forEach(el => {
+  //     console.log(el.classList)
+  //   el.classList.remove('words')
+  // })
 };
 
 const initRotateText = (sent, idSent) => {
-  console.log(sent);
+  // console.log(sent);
   let words = sent.getElementsByClassName("word");
   // words[currentWord].style.opacity = 1;
   for (var i = 0; i < words.length; i++) {
     // console.log(words[i].innerHTML)
     splitLetters(words[i], idSent);
   }
-  console.log(wordArray)
+  // console.log(wordArray)
   wordArray[idSent] = wordArray[idSent].flat();
   changeWord(idSent);
 };
@@ -41,10 +43,10 @@ const splitLetters = (word, indexWord) => {
     word.appendChild(letter);
     letters.push(letter);
   }
-  console.log(wordArray)
+  // console.log(wordArray)
   wordArray[indexWord] ??= []
   wordArray[indexWord].push(letters);
-  count++;
+  // count++;
 };
 
 const changeWord = (idSent) => {

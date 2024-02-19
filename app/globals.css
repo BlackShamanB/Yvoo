@@ -203,3 +203,29 @@ body {
 .pseudo-text-effect:hover::after {
   transform: translateY(0%);
 }
+
+/* rotateText */
+
+.typing-effect {
+  display: inline-block;
+  white-space: pre;
+  overflow: hidden;
+}
+
+.typing-char {
+  display: inline-block;
+  opacity: 0;
+  animation: appear 0.5s ease forwards;
+}
+
+@keyframes appear {
+  from {
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+

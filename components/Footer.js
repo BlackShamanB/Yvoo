@@ -9,7 +9,6 @@ import ModalRequest from "./ModalRequest";
 const Footer = () => {
   const [openModalRequest, setOpenModalRequest] = useState(false);
   const pageName = window.location.pathname;
-  console.log(pageName);
   const firstLinks = [
     { name: "Home", link: "/" },
     { name: "Solutions", link: "/solutions" },
