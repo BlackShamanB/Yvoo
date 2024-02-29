@@ -26,7 +26,7 @@ function Scan({ handleModal }) {
                         alt="yvoo-search"
                         className="relative 2xl:top-[-255px] top-[-40px] z-10 3xl:max-w-[900px] 2xl:max-w-[660px] md:max-w-[622px] max-w-[319px] 3xl:w-[900px] 2xl:w-[660px] md:w-[622px] 2xl:left-[74px] md:left-[-85px] left-[0]"
                         data-scroll
-                        data-scroll-speed="-0.15"
+                        data-scroll-speed="0.15"
                     />
                     <Image
                         src="/icons/squares-1.png"
@@ -44,7 +44,7 @@ function Scan({ handleModal }) {
                         alt="triangle"
                         className="2xl:block hidden absolute 3xl:top-[59%] 2xl:top-[40%] top-[19%] 3xl:left-[0%] 2xl:left-[-3%] left-[0%] z-[1] 3xl:max-w-[495px] 2xl:max-w-[523px] max-w-[221px] max-h-[196px]"
                         data-scroll
-                        data-scroll-speed="-0.1"
+                        data-scroll-speed="0.1"
                     />
                 </div>
             </div>

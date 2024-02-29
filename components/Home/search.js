@@ -10,7 +10,7 @@ function Search({ handleModal }) {
       <div
         className="3xl:max-w-[1516px] 2xl:max-w-[1116px] md:max-w-[598px] mx-[auto]"
         data-scroll
-        data-scroll-speed="-0.2"
+        data-scroll-speed="0.2"
       >
         <div className="relative grid grid-cols-1 2xl:grid-cols-2 w-full bg-no-repeat bg-bottom z-30">
           <Image
@@ -21,7 +21,7 @@ function Search({ handleModal }) {
             alt="yvoo-search"
             className="absolute 2xl:bottom-[0px] md:bottom-[unset] 2xl:top-[unset] md:top-[186px] top-[211px] 3xl:left-[0] 2xl:left-[-114px] md:left-[-61px] z-10 3xl:max-w-[900px] 2xl:max-w-[774px] md:max-w-[659px] max-w-[89%]"
             data-scroll
-            data-scroll-speed="-0.01"
+            data-scroll-speed="0.01"
           />
           <Image
             src="/icons/squares-1.png"
@@ -57,7 +57,7 @@ function Search({ handleModal }) {
                   Discover Quality Suppliers Effortlessly
                 </p>
 
-                <button className="filled_btn" onClick={handleModal}>
+                <button className="filled_btn btn_animated_green" onClick={handleModal}>
                   Request demo
                 </button>
               </div>

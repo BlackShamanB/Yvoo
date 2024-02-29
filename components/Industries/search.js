@@ -28,10 +28,10 @@ function Search({ handleModal }) {
             alt="yvoo-search"
             className="absolute 3xl:top-[-355px] 2xl:top-[-27.8%] md:top-[-186px] top-[-50%] 3xl:right-[-294px] 2xl:right-[-30%] right-[0] md:left-[unset] left-[12px] 3xl:max-w-[898px] 2xl:max-w-[660px] max-w-[336px]"
             data-scroll
-            data-scroll-speed="-0.1"
+            data-scroll-speed="0.1"
           />
           <h1 className="uppercase font-machina text-black font-[800] text-[30px] md:text-[40px] 2xl:text-[50px] leading-[34px] md:leading-[44px] 2xl:leading-[54px] z-[1]" data-scroll
-            data-scroll-speed="-0.1">
+            data-scroll-speed="0.1">
             Plant
             <br /> Engineering
             <br /> for Renewable

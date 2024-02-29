@@ -38,14 +38,16 @@ function Sales({ handleModal }) {
               alt="triangle"
               className="absolute 2xl:top-[82px] top-[83px] 3xl:left-[42%] 2xl:left-[39.4%] md:left-[65.6%] mouse-parallax md:block hidden"
               data-scroll
-              data-scroll-speed="-0.15"
+              data-scroll-speed="0.15"
             />
             <Image
               src="/icons/icon-line.svg"
               width={584}
               height={106}
               alt="triangle"
-              className="absolute 2xl:top-[57%] 2xl:top-[53%] md:top-[39.5%] top-[23.9%] 3xl:left-[-22%] md:left-[-78%] left-[57%] mouse-parallax z-[1]"
+              className="absolute 2xl:top-[57%] 2xl:top-[53%] md:top-[39.5%] top-[23.9%] 3xl:left-[-22%] 2xl:left-[-46%] md:left-[-78%] left-[57%] mouse-parallax z-[1]"
+              data-scroll
+              data-scroll-speed="0.05"
             />
             <h1 className="uppercase 3xl:ml-[154px] 2xl:ml-[0] font-machina font-[800] text-[#00D1EF] 2xl:text-[50px] md:text-[40px] text-[30px] 2xl:leading-[54px] md:leading-[44px] leading-[34px] max-w-[318px] 2xl:max-w-[472px]">
               <TypingEffect text="YVOO Sales" speed={100} delay={0} />
@@ -56,7 +58,7 @@ function Sales({ handleModal }) {
                 Unlock Your Supplier Potential and Maximize Your Business Growth{" "}
               </p>
               <button
-                className="filled_btn 2xl:mt-[24px] md:mt-[10px]"
+                className="filled_btn 2xl:mt-[24px] md:mt-[10px] btn_animated_blue"
                 onClick={handleModal}
               >
                 Request demo

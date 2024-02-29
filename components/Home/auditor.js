@@ -33,7 +33,7 @@ function Auditor() {
         className="md:block absolute 3xl:top-[643px] 2xl:top-[85.7%] md:top-[91%] top-[95.4%] 3xl:right-[17.5%] 2xl:right-[9.3%] md:right-[6%] right-[0%] 2xl:max-w-[unset] md:max-w-[220px] max-w-[147px] mouse-parallax"
         priority
         data-scroll
-        data-scroll-speed="-0.1"
+        data-scroll-speed="0.1"
       />
       <Image
         src="/images/bg-footer2xl.png"
@@ -126,7 +126,7 @@ function Auditor() {
               </p>
             </div>
             <Link href={"/auditors"}>
-              <button className="filled_btn_blue 2xl:mt-[48px] md:mt-[36px] mt-[24px] md:max-w-[223px] max-w-[136px]">
+              <button className="filled_btn_blue hover:text-[#fff] 2xl:mt-[48px] md:mt-[36px] mt-[24px] md:max-w-[223px] max-w-[136px] btn_animated_blue">
                 Apply now
               </button>
             </Link>

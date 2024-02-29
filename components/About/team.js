@@ -91,7 +91,7 @@ function Team() {
           />
           <div className="flex flex-col gap-4"
           data-scroll
-          data-scroll-speed="-0.15">
+          data-scroll-speed="0.15">
             <h1 className="max-w-[560px] font-[700] 2xl:text-[24px] text-[16px] 2xl:leading-[30px] leading-[20px] text-black 2xl:mb-[270px] mb-[104px]">
               Expertise Meets Innovation: Combining Procurement Know-How with
               Digital Transformation and AI

@@ -114,7 +114,7 @@ function Hero() {
           onSubmit={handleSubmit}
           className="pt-[7px]"
           data-scroll
-          data-scroll-speed="-0.05"
+          data-scroll-speed="0.05"
         >
           <div className="flex flex-col 2xl:gap-[42px] gap-[34px]">
             <div className="relative flex flex-col gap-3">
@@ -348,7 +348,7 @@ function Hero() {
             <button
               disabled={loading}
               type="submit"
-              className="filled_btn_primary hover:!text-black !text-[#06D7F9] 2xl:!text-[16px] !text-[12px] 2xl:!leading-[20px] !leading-[16px] md:!p-[18px_62px] !p-[8px_30px] !w-[max-content] 2xl:mt-[0] mt-[-10px]"
+              className="filled_btn_primary btn_animated_blue hover:!text-black !text-[#06D7F9] 2xl:!text-[16px] !text-[12px] 2xl:!leading-[20px] !leading-[16px] md:!p-[18px_62px] !p-[8px_30px] !w-[max-content] 2xl:mt-[0] mt-[-10px]"
             >
               REGISTER
             </button>

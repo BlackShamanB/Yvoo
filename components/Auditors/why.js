@@ -10,13 +10,13 @@ function Why() {
         alt="triangle"
         className="absolute 3xl:top-[11%] 2xl:top-[12.5%] md:top-[30.5%] top-[29%] 3xl:left-[81%] 2xl:left-[79.5%] md:left-[68.5%] left-[76%] md:max-w-[unset] max-w-[44px] mouse-parallax z-[1]"
         data-scroll
-        data-scroll-speed="-0.15"
+        data-scroll-speed="0.15"
       />
       <div className="relative flex pr-[41px] md:pr-[0] pl-[41px] md:pl-[85px] 2xl:pl-[162px] 3xl:pl-[202px] 3xl:pb-[583px] md:pt-[178px] pt-[98px] w-full bg-white 3xl:max-h-[875px] 2xl:max-h-[789px]">
         <h1
           className="w-full text-black font-machina font-[800] uppercase text-[30px] md:text-[40px] 2xl:text-[50px] leading-[34px] md:leading-[44px] 2xl:leading-[54px] z-[1]"
           data-scroll
-          data-scroll-speed="-0.2"
+          data-scroll-speed="0.2"
         >
           Why Become <br />
           an YVOO Agent?

@@ -17,7 +17,7 @@ function About() {
         <h1
           className="font-machina uppercase text-black text-[30px] md:text-[40px] 2xl:text-[50px] font-[800] leading-[34px] md:leading-[44px] 2xl:leading-[54px]"
           data-scroll
-          data-scroll-speed="-0.12"
+          data-scroll-speed="0.12"
         >
           About us
         </h1>

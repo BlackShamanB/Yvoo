@@ -5,14 +5,14 @@ function Support() {
         <h2
           className="font-[700] 2xl:text-[24px] text-[16px] 2xl:leading-[30px] leading-[20px]"
           data-scroll
-          data-scroll-speed="-0.1"
+          data-scroll-speed="0.1"
         >
           Contact Support for Further Assistance:
         </h2>
         <p
           className="font-[400] md:text-[16px] text-[14px] leading-[20px] md:mb-6"
           data-scroll
-          data-scroll-speed="-0.12"
+          data-scroll-speed="0.12"
         >
           If you have any questions or concerns regarding the safety and
           security of your data on YVOO SALESPRO+ , please don't hesitate to

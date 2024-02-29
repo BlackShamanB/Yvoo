@@ -55,14 +55,14 @@ function JobDescription() {
           <h1
             className="font-[700] text-[26px] md:text-[28px] 2xl:text-[32px] leading-[30px] md:leading-[32px] 2xl:leading-[36px] md:tracking-[-2px] md:mb-[0] mb-[12px]"
             data-scroll
-            data-scroll-speed="-0.1"
+            data-scroll-speed="0.1"
           >
             Skills Required
           </h1>
           <p
             className="md:mb-[0] mb-[20px]"
             data-scroll
-            data-scroll-speed="-0.12"
+            data-scroll-speed="0.12"
           >
             While past auditing experience and professional certification are
             beneficial, they are not mandatory. YVOO agents must possess strong
@@ -72,19 +72,19 @@ function JobDescription() {
           <p
             className="md:mb-[0] mb-[20px]"
             data-scroll
-            data-scroll-speed="-0.15"
+            data-scroll-speed="0.15"
           >
             Take the first step towards revolutionizing supplier audits with
             YVOO ScanPro+. Apply now to become an agent and start earning money
             in a flexible and rewarding way
           </p>
           <button
-            className="filled_btn_blue 2xl:mt-[26px] md:mt-[42px] mt-[40px] md:max-w-[223px] max-w-[136px]"
+            className="filled_btn_blue 2xl:mt-[26px] md:mt-[42px] mt-[40px] md:max-w-[223px] max-w-[136px] btn_animated_blue hover:text-[#fff]"
             onClick={() => {
               window.open("https://scanpro.yvoo.io", "_blank");
             }}
             data-scroll
-            data-scroll-speed="-0.17"
+            data-scroll-speed="0.17"
           >
             Apply now
           </button>

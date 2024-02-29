@@ -10,7 +10,7 @@ function Results({ handleModal }) {
         alt="triangle"
         className="absolute 3xl:top-[15%] 2xl:top-[10%] md:top-[32px] top-[-32px] 3xl:left-[21.5%] 2xl:left-[20.4%] md:left-[22.4%] left-[23.2%] md:max-w-[unset] max-w-[44px] mouse-parallax z-[1]"
         data-scroll
-        data-scroll-speed="-0.15"
+        data-scroll-speed="0.15"
       />
       <Image
         src="/icons/icon-line.svg"
@@ -52,7 +52,7 @@ function Results({ handleModal }) {
               Book a demo now and unlock the full potential of your procurement
               process.
             </p>
-            <button className="white_btn 2xl:mt-[43px] md:mt-[28px] mt-[24px] max-w-[159px]" onClick={handleModal}>
+            <button className="white_btn btn_animated_blue 2xl:mt-[43px] md:mt-[28px] mt-[24px] max-w-[159px]" onClick={handleModal}>
               Request Demo
             </button>
           </div>

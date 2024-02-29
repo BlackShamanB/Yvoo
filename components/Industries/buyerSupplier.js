@@ -107,7 +107,7 @@ function BuyerSupplier({ handleModal }) {
       onMouseEnter={handleMouseEnterSupplier}
       onMouseLeave={handleMouseLeaveSupplier}
       data-scroll
-      data-scroll-speed="-0.1"
+      data-scroll-speed="0.1"
     >
       <div className="flex-start flex-row-reverse gap-[80px] mx-auto">
         <div className="flex flex-col items-center 2xl:gap-[33px] gap-[0]">

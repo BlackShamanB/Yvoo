@@ -9,7 +9,7 @@ function GeneralInfo() {
         alt="ellipse"
         className="absolute 2xl:top-[-35.5%] top-[18%] 2xl:left-[0%] left-[-62%] z-[1] 3xl:max-w-[265px] 2xl:max-w-[212px] max-h-[276px] 2xl:block hidden"
         data-scroll
-        data-scroll-speed="-0.2"
+        data-scroll-speed="0.2"
       />
       <div className="font-[400] text-[16px] leading-[20px] flex-1 basis-[500px]"
           data-scroll

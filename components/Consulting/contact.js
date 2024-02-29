@@ -277,7 +277,7 @@ function Contact() {
             <button
               disabled={isLoading}
               type="submit"
-              className="filled_btn_primary md:!max-w-[190px] !max-w-[111px] md:!p-[18px_62px] !p-[8px_30px] !text-[#06D7F9] md:!text-[16px] !text-[12px] md:!leading-[20px] !leading-[16px] disabled:cursor-not-allowed"
+              className="filled_btn_primary btn_animated_blue hover:!text-[#000] md:!max-w-[190px] !max-w-[111px] md:!p-[18px_62px] !p-[8px_30px] !text-[#06D7F9] md:!text-[16px] !text-[12px] md:!leading-[20px] !leading-[16px] disabled:cursor-not-allowed"
             >
               SUBMIT
             </button>

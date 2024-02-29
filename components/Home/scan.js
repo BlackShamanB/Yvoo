@@ -125,7 +125,7 @@ function Scan({ handleModal }) {
               }}
               className="flex flex-wrap items-center md:items-start md:flex-nowrap md:flex-col gap-[24px] md:mt-[132px] 3xl:mb-[420px] 2xl:mb-[398px] 2xl:block hidden"
               data-scroll
-              data-scroll-speed="-0.1"
+              data-scroll-speed="0.1"
             >
               <h1 className="uppercase font-machina font-[800] text-[40px] text-white 2xl:text-[50px] leading-[30px] md:leading-[40px] 2xl:leading-[52px] max-w-[318px] 2xl:max-w-[340px] mb-[32px]">
                 <TypingEffect text="YVOO Scan" speed={100} delay={0} />
@@ -137,7 +137,7 @@ function Scan({ handleModal }) {
                 <p className="font-[700] text-[18px] text-black 2xl:text-[24px] leading-[22px] 2xl:leading-[30px] max-w-[222px] md:max-w-[327px] 2xl:max-w-[340px]">
                   Unleash Supplier Readiness for Unprecedented Audit Success{" "}
                 </p>
-                <button className="filled_btn" onClick={handleModal}>
+                <button className="filled_btn btn_animated_white" onClick={handleModal}>
                   Request demo
                 </button>
               </div>

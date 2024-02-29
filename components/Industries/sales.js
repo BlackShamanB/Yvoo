@@ -72,7 +72,7 @@ function Sales({ handleModal }) {
           alt="yvoo-search"
           className="relative z-10 3xl:max-w-[948px] 2xl:max-w-[708px] max-w-[319px] 3xl:w-[948px] 2xl:left-[0] md:left-[-85px] left-[0] 2xl:ml-[0] ml-[auto]"
           data-scroll
-          data-scroll-speed="-0.15"
+          data-scroll-speed="0.15"
         />
         <Image
           src="/icons/industries-icon.svg"
@@ -81,7 +81,7 @@ function Sales({ handleModal }) {
           alt="industries"
           className="hidden md:block absolute 3xl:top-[19%] top-[20%] 3xl:right-[13.3%] right-[14%] z-[11]"
           data-scroll
-          data-scroll-speed="-0.1"
+          data-scroll-speed="0.1"
         />
 
         <Image
@@ -91,7 +91,7 @@ function Sales({ handleModal }) {
           alt="triangle"
           className="3xl:block hidden absolute 2xl:top-[61%] 2xl:top-[0] md:top-[0] top-[23.9%] 3xl:right-[0] md:right-[0] right-[0] mouse-parallax z-[11] 3xl:max-w-[455px]"
           data-scroll
-          data-scroll-speed="-0.2"
+          data-scroll-speed="0.2"
         />
 
       </div>

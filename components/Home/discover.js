@@ -21,7 +21,7 @@ function Discover() {
         alt="triangle"
         className="absolute 2xl:top-[548px] md:top-[35.6%] top-[41.1%] 2xl:left-[11%] md:left-[13%] left-[6%] mouse-parallax md:max-w-[101px] max-w-[63px]"
         priority
-        data-scroll data-scroll-speed="-0.2"
+        data-scroll data-scroll-speed="0.2"
       />
       <Image
         src="/icons/arch-1.png"

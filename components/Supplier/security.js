@@ -29,7 +29,7 @@ function Security() {
 
           <div className="font-[400] md:text-[16px] text-[14px] leading-[20px] flex flex-col gap-[20px] flex-1 [&>p]:text-black pt-[7px] 3xl:max-w-[673px] max-w-[503px]"
           data-scroll
-          data-scroll-speed="-0.1">
+          data-scroll-speed="0.1">
             <p>
               At YVOO SALESPRO+ , we prioritize your safety and data security.
               We understand the importance of protecting your confidential
