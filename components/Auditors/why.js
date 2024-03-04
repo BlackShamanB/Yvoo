@@ -1,4 +1,5 @@
 import Image from "next/image";
+import MagnifyOnScroll from "../MagnifyOnScroll";
 
 function Why() {
   return (
@@ -61,12 +62,12 @@ function Why() {
             </li>
           </ul>
         </div>
-        <Image
+        <MagnifyOnScroll
           src="/images/forAuditors.png"
           alt="forAuditors"
           width={519}
           height={426}
-          className="relative object-contain 3xl:top-[135px] 2xl:top-[75px] md:top-[10px] top-[50px] left-[41px] md:left-[85px] 2xl:left-[35px] 3xl:left-[36px] 2xl:max-w-[389px] 3xl:max-w-[unset] md:max-w-[415px] max-w-[278px] 3xl:max-h-[unset] 2xl:max-h-[319px] md:max-h-[340px] max-h-[229px]"
+          classes="relative object-contain 3xl:top-[135px] 2xl:top-[75px] md:top-[10px] top-[50px] left-[41px] md:left-[85px] 2xl:left-[35px] 3xl:left-[36px] 2xl:max-w-[389px] 3xl:max-w-[unset] md:max-w-[415px] max-w-[278px] 3xl:max-h-[unset] 2xl:max-h-[319px] md:max-h-[340px] max-h-[229px]"
           data-scroll
           data-scroll-speed="0.15"
         />

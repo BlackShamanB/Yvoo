@@ -1,6 +1,7 @@
 import Image from "next/image";
 import React, { useState, useEffect, useRef } from "react";
 import TypingEffect from "../TypingEffect";
+import MagnifyOnScroll from "../MagnifyOnScroll";
 function Scan({ handleModal }) {
 
   return (
@@ -142,13 +143,13 @@ function Scan({ handleModal }) {
                 </button>
               </div>
             </div>
-            <Image
+            <MagnifyOnScroll
               style={{ zIndex: 0, transform: "translateZ(10px)" }}
               src="/images/auditSuccess.webp"
               width={875}
               height={493}
               alt="yvoo-search"
-              className="absolute 3xl:bottom-[-155px] 2xl:bottom-[-59px] bottom-[-40px] z-10 3xl:max-w-[875px] 2xl:max-w-[666px] md:max-w-[622px] max-w-[319px] 3xl:w-[875px] 2xl:w-[666px] md:w-[622px] 2xl:right-[unset] md:right-[-85px] right-[0]"
+              classes="absolute 3xl:bottom-[-155px] 2xl:bottom-[-59px] bottom-[-40px] z-10 3xl:max-w-[875px] 2xl:max-w-[666px] md:max-w-[622px] max-w-[319px] 3xl:w-[875px] 2xl:w-[666px] md:w-[622px] 2xl:right-[unset] md:right-[-85px] right-[0]"
             />
             <Image
               src="/icons/greenTriangle-2.png"

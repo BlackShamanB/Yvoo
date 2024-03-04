@@ -210,7 +210,7 @@ const Header = () => {
         </>
       )}
       <div className="flex-center gap-[36px] 2lg:ml-[0] ml-[auto]">
-        <button className="outlined_btn" onClick={handleModal}>
+        <button className="outlined_btn btn_animated_blue" onClick={handleModal}>
           Request demo
         </button>
       </div>

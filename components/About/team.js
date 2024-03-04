@@ -1,5 +1,6 @@
 "use client";
 import Image from "next/image";
+import MagnifyOnScroll from "../MagnifyOnScroll";
 function Team() {
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 w-full 3xl:pb-[120px] 2xl:pb-[79px] pb-[759px] bg-[#FFF] overflow-hidden">
@@ -25,11 +26,11 @@ function Team() {
           data-scroll-speed="0.2">
           <div className="absolute 2xl:border-[6px] border-[4px] border-mint w-[264px] 2xl:w-[403px] 3xl:w-[563px] h-[256px] 2xl:h-[391px] 3xl:h-[546px] z-[1] left-[14px] 2xl:left-[30px] top-[-31px] 2xl:top-[-38px] 3xl:top-[-47px]"></div>
           <div className="relative w-full max-w-[205px] 2xl:max-w-[318px] 3xl:max-w-[438px] h-[240px] 2xl:h-[402px] 3xl:h-[554px]">
-            <Image
+            <MagnifyOnScroll
               src="/images/member-ivo.png"
               alt="ivo-mobile"
               fill
-              className="object-contain hover:scale-[1.02]"
+              imgClasses="object-contain hover:scale-[1.02] relative w-full max-w-[205px] 2xl:max-w-[318px] 3xl:max-w-[438px] h-[240px] 2xl:h-[402px] 3xl:h-[554px]"
             />
           </div>
           <div className="col-span-2">
@@ -98,11 +99,12 @@ function Team() {
             </h1>
             <div className="grid grid-cols-1 2xl:grid-cols-1 2xl:gap-[50px] gap-[24px]">
               <div className="relative w-full max-w-[205px] 2xl:max-w-[318px] 3xl:max-w-[438px] h-[260px] 2xl:h-[402px] 3xl:h-[554px] bg-[#FFF]">
-                <Image
+                <MagnifyOnScroll
                   src="/images/member-dino.png"
                   alt="dino-mobile"
                   fill
                   className="object-contain	cover:scale-[1.02]"
+                  imgClasses="relative w-full max-w-[205px] 2xl:max-w-[318px] 3xl:max-w-[438px] h-[260px] 2xl:h-[402px] 3xl:h-[554px] bg-[#FFF]"
                 />
               </div>
               <div className="col-span-2">

@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import TypingEffect from "../TypingEffect";
+import MagnifyOnScroll from "../MagnifyOnScroll";
 function Auditor() {
   return (
     <div className="relative grid w-full w-full bg-[#131D2A]">
@@ -70,12 +71,12 @@ function Auditor() {
       >
         <div className="relative grid grid-cols-1 2xl:grid-cols-2 w-full h-auto md:pt-[0] pt-[101px]">
           <div className="w-full bg-right bg-no-repeat">
-            <Image
+            <MagnifyOnScroll
               src="/images/auditorBg3xl.webp"
               width={592}
               height={395}
               alt="yvoo-sales"
-              className="md:block relative 3xl:ml-[154px] md:ml-[0] ml-[0] 2xl:mt-[126px] md:mt-[120px] 3xl:w-[592px] 2xl:w-[546px] md:w-[476px] w-[221px]"
+              classes="md:block relative 3xl:ml-[154px] md:ml-[0] ml-[0] 2xl:mt-[126px] md:mt-[120px] 3xl:w-[592px] 2xl:w-[546px] md:w-[476px] w-[221px]"
             />
             <Image
               src="/icons/greenTriangle-3.png"

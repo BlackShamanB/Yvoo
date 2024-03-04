@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import TypingEffect from "../TypingEffect";
+import MagnifyOnScroll from "../MagnifyOnScroll";
 function Search({ handleModal }) {
   return (
     <div
@@ -13,16 +14,6 @@ function Search({ handleModal }) {
         data-scroll-speed="0.2"
       >
         <div className="relative grid grid-cols-1 2xl:grid-cols-2 w-full bg-no-repeat bg-bottom z-30">
-          <Image
-            style={{ zIndex: 0 }}
-            src="/images/discover.webp"
-            width={900}
-            height={654}
-            alt="yvoo-search"
-            className="absolute 2xl:bottom-[0px] md:bottom-[unset] 2xl:top-[unset] md:top-[186px] top-[211px] 3xl:left-[0] 2xl:left-[-114px] md:left-[-61px] z-10 3xl:max-w-[900px] 2xl:max-w-[774px] md:max-w-[659px] max-w-[89%]"
-            data-scroll
-            data-scroll-speed="0.01"
-          />
           <Image
             src="/icons/squares-1.png"
             width={80}
@@ -41,6 +32,17 @@ function Search({ handleModal }) {
             }}
             className="md:flex-center flex-col"
           >
+          <MagnifyOnScroll
+            style={{ zIndex: 0 }}
+            src="/images/discover.webp"
+            img-src="/images/discover.webp"
+            width={900}
+            height={654}
+            alt="yvoo-search"
+            classes="absolute min-w-[50px] 2xl:bottom-[0px] md:bottom-[unset] 2xl:top-[unset] md:top-[186px] top-[211px] 3xl:left-[0] 2xl:left-[-114px] md:left-[-61px] z-10 3xl:max-w-[900px] 2xl:max-w-[774px] md:max-w-[659px] max-w-[89%]"
+            // data-scroll
+            // data-scroll-speed="0.01"
+          />
             <div
               className="md:relative z-30 flex flex-wrap flex-col items-start 2xl:gap-[30px] md:gap-[20px] gap-[12px] 3xl:mt-[106px] 2xl:mt-[107px] md:mt-[115px] mt-[98px] 3xl:mb-[442px] 2xl:mb-[350px] 2xl:leading-[50px] md:px-[0] px-[41px]"
               data-scroll

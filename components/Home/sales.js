@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import TypingEffect from "../TypingEffect";
+import MagnifyOnScroll from "../MagnifyOnScroll";
 function Sales({ handleModal }) {
   return (
     <div
@@ -47,7 +48,7 @@ function Sales({ handleModal }) {
               alt="triangle"
               className="absolute 2xl:top-[57%] 2xl:top-[53%] md:top-[39.5%] top-[23.9%] 3xl:left-[-22%] 2xl:left-[-46%] md:left-[-78%] left-[57%] mouse-parallax z-[1]"
               data-scroll
-              data-scroll-speed="0.05"
+              data-scroll-speed="0.25"
             />
             <h1 className="uppercase 3xl:ml-[154px] 2xl:ml-[0] font-machina font-[800] text-[#00D1EF] 2xl:text-[50px] md:text-[40px] text-[30px] 2xl:leading-[54px] md:leading-[44px] leading-[34px] max-w-[318px] 2xl:max-w-[472px]">
               <TypingEffect text="YVOO Sales" speed={100} delay={0} />
@@ -64,12 +65,12 @@ function Sales({ handleModal }) {
                 Request demo
               </button>
             </div>
-            <Image
+            <MagnifyOnScroll
               src="/images/buisness-growth.webp"
               width={748}
               height={523}
               alt="yvoo-sales"
-              className="2xl:absolute relative 2xl:left-[-92px] 2xl:bottom-[120px] 3xl:ml-[90px] 2xl:ml-[-22px] md:ml-[-62px] ml-[-41px] 2xl:mt-[24px] md:mt-[18px] mt-[24px] 3xl:min-w-[748px] 2xl:min-w-[660px] md:min-w-[538px] 2xl:max-w-[660px] md:max-w-[538px] max-w-[262px]"
+              classes="2xl:absolute relative 2xl:left-[-92px] 2xl:bottom-[120px] 3xl:ml-[90px] 2xl:ml-[-22px] md:ml-[-62px] ml-[-41px] 2xl:mt-[24px] md:mt-[18px] mt-[24px] 3xl:min-w-[748px] 2xl:min-w-[660px] md:min-w-[538px] 2xl:max-w-[660px] md:max-w-[538px] max-w-[262px]"
             />
           </div>
           <div

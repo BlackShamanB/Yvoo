@@ -1,4 +1,5 @@
 import Image from "next/image";
+import MagnifyOnScroll from "../MagnifyOnScroll";
 
 function ExceptionalValue() {
   return (
@@ -13,13 +14,12 @@ function ExceptionalValue() {
         
           data-scroll
           data-scroll-speed="0.15"/>
-        <Image
+          <MagnifyOnScroll
           src="/images/consulting.webp"
           width={747}
           height={815}
           alt="yvoo-sales"
-          className="relative top-[-40px] md:top-[-60px] 2xl:top-[-133px] 3xl:top-[-131px] 3xl:max-w-[747px] 2xl:max-w-[546px] md:max-w-[598px] max-w-[278px] 3xl:max-h-[815px] 2xl:max-h-[596px] md:max-h-[653px] max-h-[303px]"
-
+          classes="relative top-[-40px] md:top-[-60px] 2xl:top-[-133px] 3xl:top-[-131px] 3xl:max-w-[747px] 2xl:max-w-[546px] md:max-w-[598px] max-w-[278px] 3xl:max-h-[815px] 2xl:max-h-[596px] md:max-h-[653px] max-h-[303px]"
           data-scroll
           data-scroll-speed="0.1"
         />

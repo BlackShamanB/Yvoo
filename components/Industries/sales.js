@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import MagnifyOnScroll from "../MagnifyOnScroll";
 
 function Sales({ handleModal }) {
   return (
@@ -65,7 +66,7 @@ function Sales({ handleModal }) {
       <div
         className="2xl:px-[11px] h-auto 2xl:pt-[273px]"
       >
-        <Image
+        <MagnifyOnScroll
           src="/images/automotiveCompanies.webp"
           width={948}
           height={613}

@@ -1,4 +1,5 @@
 import Image from "next/image";
+import MagnifyOnScroll from "../MagnifyOnScroll";
 
 function Results({ handleModal }) {
   return (
@@ -30,13 +31,13 @@ function Results({ handleModal }) {
       />
       <div className="3xl:max-w-[1516px] 2xl:max-w-[1116px] md:max-w-[598px] mx-[auto] is-inview grid grid-cols-1 2xl:grid-cols-2 w-full">
         <div className="px-[20px] md:px-[61px] 2xl:px-[50px] 3xl:px-[12px] 2xl:pt-[0] md:pt-[101px] 2xl:mb-[0] md:mb-[37px] mb-[0] w-full" data-scroll data-scroll-speed="0.5">
-          <Image
+          <MagnifyOnScroll
             // style={{ zIndex: 0, transform: "translateZ(10px)" }}
             src="/images/man3xl.webp"
             width={592}
             height={476}
             alt="yvoo-search"
-            className="relative md:ml-[0] ml-[49px] 3xl:top-[0px] 2xl:top-[130px] 3xl:left-[0] 2xl:left-[38px] z-10 3xl:max-w-[592px] 2xl:max-w-[432px] md:max-w-[415px] max-w-[250px] 3xl:w-[592px] 2xl:w-[666px] md:w-[415px] 2xl:float-right z-[0]"
+            classes="relative md:ml-[0] ml-[49px] 3xl:top-[0px] 2xl:top-[130px] 3xl:left-[0] 2xl:left-[38px] z-10 3xl:max-w-[592px] 2xl:max-w-[432px] md:max-w-[415px] max-w-[250px] 3xl:w-[592px] 2xl:w-[666px] md:w-[415px] 2xl:float-right z-[0]"
           />
         </div>
         <div className="3xl:pl-[84px] 2xl:pl-[54px] w-full bg-[#131D2A]" data-scroll data-scroll-speed="0.2">
