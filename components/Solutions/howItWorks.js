@@ -10,12 +10,12 @@ function HowItWorks() {
         alt="solution_triagle"
         className="absolute 3xl:block md:hidden block md:top-[35%] top-[42.7%] md:left-[33%] left-[62%] md:max-w-[unset] max-w-[67px]"
         data-scroll
-        data-scroll-speed="0.3"
+        data-scroll-speed="0.13"
       />
       <h2
         className="mb-[30px] 2xl:mb-[30px] 2xl:mb-[42px] text-black font-[700] 2xl:text-[32px] md:text-[28px] text-[26px] 2xl:leading-[36px] md:leading-[32px] leading-[30px]"
         data-scroll
-        data-scroll-speed="0.2"
+        data-scroll-speed="0.12"
       >
         Benefits that Await You:{" "}
       </h2>

@@ -11,7 +11,7 @@ function Search({ handleModal }) {
       <div
         className="3xl:max-w-[1516px] 2xl:max-w-[1116px] md:max-w-[598px] mx-[auto]"
         data-scroll
-        data-scroll-speed="0.2"
+        data-scroll-speed="0.12"
       >
         <div className="relative grid grid-cols-1 2xl:grid-cols-2 w-full bg-no-repeat bg-bottom z-30">
           <Image
@@ -68,7 +68,7 @@ function Search({ handleModal }) {
           <div
             className="md:px-[0] px-[41px] 3xl:pr-[0px] text-black z-30 md:mb-[120px] mb-[100px] 2xl:mb-0 md:mb-[120px] 2xl:mt-[96px] md:mt-[238px] mt-[113px] flex flex-col 2xl:gap-[20px] gap-[21px] font-[400] [&>p]:text-[14px] [&>p]:customxs:text-[16px] leading-[20px] 3xl:pl-[84px] 2xl:pl-[54px]"
             data-scroll
-            data-scroll-speed="0.6"
+            data-scroll-speed="0.16"
           >
             <Image
               style={{ zIndex: 0, transform: "translateZ(10px)" }}

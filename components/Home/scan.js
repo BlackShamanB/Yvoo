@@ -12,7 +12,7 @@ function Scan({ handleModal }) {
       <div
         className="3xl:max-w-[1516px] 2xl:max-w-[1116px] md:max-w-[598px] mx-[auto]"
         data-scroll
-        data-scroll-speed="0.3"
+        data-scroll-speed="0.13"
       >
         <div className="relative grid grid-cols-1 2xl:grid-cols-2 md:grid-cols-1">
           <div
@@ -54,7 +54,7 @@ function Scan({ handleModal }) {
               }}
               className="mb-[140px] md:mb-0 3xl:ml-[154px] 2xl:mt-[138px] md:mt-[0] max-w-[674px] flex flex-col 2xl:gap-[19px] gap-[20px] font-[400] leading-[20px] [&>p]:text-[14px] [&>p]:customxs:text-[16px] md:px-[0] px-[41px]"
               data-scroll
-              data-scroll-speed="0.5"
+              data-scroll-speed="0.15"
             >
               <Image
                 style={{ zIndex: 0, transform: "translateZ(10px)" }}
@@ -117,7 +117,7 @@ function Scan({ handleModal }) {
             }}
             className="3xl:pl-[84px] 2xl:pl-[54px] md:flex-center flex-col h-fit"
             data-scroll
-            data-scroll-speed="0.3"
+            data-scroll-speed="0.13"
           >
             <div
               style={{

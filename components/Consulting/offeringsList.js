@@ -9,7 +9,7 @@ function OfferingsList() {
         alt="triangle"
         className="absolute 3xl:top-[50%] 2xl:top-[46%] md:top-[74%] top-[82%] 3xl:right-[-5.5%] 2xl:right-[-15%] md:right-[0%] right-[0%] 2xl:max-w-[unset] md:max-w-[295px] max-w-[175px] mouse-parallax z-[1]"
         data-scroll
-        data-scroll-speed="0.35"
+        data-scroll-speed="0.15"
       />
       <div className="grid grid-cols-1 customxs:grid-cols-2 md2:grid-cols-4 3xl:gap-[52px] 2xl:gap-[28px] md:gap-[30px] md:gap-y-[60px] gap-[30px]">
         <div

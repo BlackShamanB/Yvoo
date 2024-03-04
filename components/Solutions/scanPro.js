@@ -27,7 +27,7 @@ function ScanPro() {
         alt="triangle"
         className="absolute 3xl:top-[-18%] 2xl:top-[-28%] md:top-[-56.9%] top-[-45%] 3xl:left-[78%] 2xl:left-[75%] md:left-[59%] left-[40%] md:max-w-[unset] max-w-[217px] mouse-parallax z-[1]"
         data-scroll
-        data-scroll-speed="0.3"
+        data-scroll-speed="0.13"
       />
       <Image
         src="/icons/ellipse.svg"
