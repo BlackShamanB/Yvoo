@@ -84,7 +84,7 @@ function Search({ handleModal }) {
             towards lower-carbon sources of energy
           </p>
           <button
-            className="filled_btn 3xl:mt-[30px] 2xl:mt-[27px] mt-[7px] md:!p-[18px_62px] p-[8px_30px] !border-2 !w-[max-content]"
+            className="filled_btn 3xl:mt-[30px] 2xl:mt-[27px] mt-[7px] md:!p-[18px_62px] p-[8px_30px] !border-2 !w-[max-content] btn_animated_black"
             onClick={handleModal}
             data-scroll
             data-scroll-speed="0.11"

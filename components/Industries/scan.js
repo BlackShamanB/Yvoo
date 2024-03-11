@@ -101,7 +101,7 @@ function Scan({ handleModal }) {
             audited suppliers, and reduce compliance risk
           </p>
           <button
-            className="filled_btn 2xl:mt-[24px] mt-[6px] !border-[#000000] !border-[2px] md:!p-[18px_60px] !p-[8px_30px] !w-[max-content] text-nowrap"
+            className="filled_btn 2xl:mt-[24px] mt-[6px] !border-[#000000] !border-[2px] md:!p-[18px_60px] !p-[8px_30px] !w-[max-content] text-nowrap btn_animated_black"
             onClick={handleModal}
             data-scroll
             data-scroll-speed="0.1"

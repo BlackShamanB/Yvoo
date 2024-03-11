@@ -3,7 +3,7 @@ import Image from "next/image";
 function Experience() {
   return (
     <div className="relative w-full flex-center 3xl:px-[204px] 2xl:px-[162px] md:px-[85px] px-[42px] py-[100px] md:py-[120px] 2xl:py-[121px] bg-[#131D2A]">
-      <div className="w-full" data-scroll data-scroll-speed="0.2">
+      <div className="w-full" data-scroll data-scroll-speed="0.1">
         <h1 className="2xl:text-[32px] md:text-[28px] text-[26px]  2xl:leading-[36px] md:leading-[32px] leading-[30px] font-[700] text-[#00D1EF] 3xl:mb-[43px] 2xl:mb-[46px] mb-[30px] 3xl:max-w-[none] md:max-w-[345px]">
           Experience the Difference:
         </h1>

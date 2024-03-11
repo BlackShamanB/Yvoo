@@ -27,6 +27,7 @@ function BuyerSupplier({ handleModal }) {
       onMouseEnter={handleMouseEnterBuyer}
       onMouseLeave={handleMouseLeaveBuyer}
       // style={{ background: isHoveredBuyer ? "blue" : "red" }}
+      style={{ background:  isHoveredSupplier ? "none" : "black" }}
     >
       <div className="flex-start gap-[34px] 2xl:mb-[20px] md:mb-[95px] mb-[48px] cursor-pointer mx-auto">
         <div className="flex flex-col 2xl:gap-[32px] md:gap-[22px] gap-[17px] text-center">
@@ -61,11 +62,11 @@ function BuyerSupplier({ handleModal }) {
             width={60}
             height={60}
             alt="left arrow"
-            className="relative 3xl:max-w-[unset] 2xl:max-w-[44px] md:max-w-[unset] max-w-[34px] 3xl:mt-[33px] 2xl:mt-[22px] md:ml-[0] ml-[14px]"
+            className="relative 3xl:max-w-[unset] 2xl:max-w-[44px] md:max-w-[unset] max-w-[34px] 3xl:mt-[33px] 2xl:mt-[22px] md:ml-[0] ml-[14px] 2xl:block hidden"
             onClick={() => {
               window.open("https://searchpro.yvoo.io", "_blank");
             }}
-            style={{ display: isHoveredSupplier ? "none" : "block" }}
+            style={{ display: isHoveredSupplier || window.innerWidth < 1440 ? "none" : "block" }}
           />
         </div>
       </div>
@@ -75,7 +76,7 @@ function BuyerSupplier({ handleModal }) {
           width={244}
           height={260}
           alt={isHoveredSupplier ? "supplier" : "buyer"}
-          className="relative 3xl:max-w-[unset] 2xl:max-w-[203px] md:max-w-[203px] max-w-[131px] 3xl:ml-[44px] 2xl:ml-[31px] md:ml-[26px]"
+          className="relative 3xl:max-w-[unset] 2xl:max-w-[203px] md:max-w-[203px] max-w-[131px] 3xl:ml-[44px] 2xl:ml-[31px] md:mx-[auto]"
           onClick={() => {
             window.open("https://searchpro.yvoo.io", "_blank");
           }}
@@ -93,23 +94,24 @@ function BuyerSupplier({ handleModal }) {
             width={108}
             height={108}
             alt="left arrow"
-            className="w-[60px] 2xl:ml-[31px] md:ml-[20px] ml-[-15px] 2xl:max-w-[44px] md:max-w-[unset] max-w-[34px] 3xl:mt-[33px] 2xl:mt-[22px]"
+            className="2xl:ml-[31px] md:ml-[20px] ml-[-15px] 3xl:max-w-[unset] 2xl:max-w-[44px] md:max-w-[unset] max-w-[34px] 3xl:mt-[33px] 2xl:mt-[22px] 2xl:block hidden"
             onClick={() => {
               window.open("https://searchpro.yvoo.io", "_blank");
             }}
-            style={{ display: isHoveredSupplier ? "block" : "none" }}
+            style={{ display: isHoveredSupplier && window.innerWidth >= 1440 ? "block" : "none" }}
           />
         </div>
       </div>
     </div>
     <div
-      className="py-[65px] md:py-[115px] 2xl:py-[235px] flex cursor-pointer 2xl:mt-[38px] mt-[0] 3xl:pr-[40px] 2xl:pr-[37px] 2xl:px-[0] text-center"
+      className="py-[65px] md:py-[115px] 2xl:py-[235px] flex cursor-pointer 3xl:mt-[65px] 2xl:mt-[58px] md:mt-[24px] mt-[12px] 3xl:pr-[40px] 2xl:pr-[37px] 2xl:px-[0] text-center"
       onMouseEnter={handleMouseEnterSupplier}
       onMouseLeave={handleMouseLeaveSupplier}
       data-scroll
       data-scroll-speed="0.1"
+      style={{ background:  isHoveredSupplier ? "black" : "none" }}
     >
-      <div className="flex-start flex-row-reverse gap-[80px] mx-auto">
+      <div className="flex-start gap-[34px] 2xl:mb-[20px] md:mb-[95px] mb-[48px] cursor-pointer mx-auto">
         <div className="flex flex-col items-center 2xl:gap-[33px] gap-[0]">
           <h1
             className="font-machina uppercase font-[800] text-[40px] md:text-[50px] 2xl:text-[60px] leading-[44px] md:leading-[54px] 2xl:leading-[64px] 2xl:mb-[0] md:mb-[22px] mb-[17px]"

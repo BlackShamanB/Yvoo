@@ -1,9 +1,30 @@
 import Image from "next/image";
 import Link from "next/link";
-import React from "react";
+import React, { useRef, useState, useEffect } from "react";
 import TypingEffect from "../TypingEffect";
 import MagnifyOnScroll from "../MagnifyOnScroll";
 function Auditor() {
+  const elementRef = useRef(null);
+  const [elementVisible, setelementVisible] = useState(false);
+
+  const handleScroll = () => {
+    if (elementRef.current) {
+      const { top, bottom } = elementRef.current.getBoundingClientRect();
+      if (!elementVisible) {
+        setelementVisible(
+          top < window.innerHeight && bottom >= 0 && !elementVisible
+        );
+      }
+    }
+  };
+
+  useEffect(() => {
+    handleScroll();
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
   return (
     <div className="relative grid w-full w-full bg-[#131D2A]">
       <Image
@@ -84,17 +105,29 @@ function Auditor() {
               height={139}
               alt="triangle"
               className="3xl:block 2xl:hidden block absolute 2xl:top-[454px] md:top-[50px] top-[63px] 2xl:left-[40%] md:left-[7%] left-[9%] mouse-parallax 2xl:max-w-[116px] md:max-w-[102px] max-w-[42px]"
-            
-        data-scroll
-        data-scroll-speed="0.2"/>
+              data-scroll
+              data-scroll-speed="0.2"
+            />
             {/* <div className="customxs:hidden absolute inset-0 bg-black opacity-40"></div> */}
           </div>
-          <div className="3xl:pl-[84px] 2xl:pl-[54px] w-full flex flex-col 2xl:pt-[120px] md:pt-[75px] pt-[47px] 2xl:pb-[75px] md:pb-[60px] pb-[40px]"
-        data-scroll
-        data-scroll-speed="0.1">
-            <h1 className="uppercase 2xl:mb-[30px] mb-[18px] text-[#06D7F9] font-machina font-[800] 2xl:text-[50px] md:text-[40px] text-[30px] 2xl:leading-[54px] md:leading-[44px] leading-[34px] 2xl:max-w-[unset] md:max-w-[504px] max-w-[unset]">
-            <TypingEffect text="Join the Team of" speed={100} delay={0} />
-            <TypingEffect text="YVOO auditors" speed={100} delay={1.6} />
+          <div
+            className="3xl:pl-[84px] 2xl:pl-[54px] w-full flex flex-col 2xl:pt-[120px] md:pt-[75px] pt-[47px] 2xl:pb-[75px] md:pb-[60px] pb-[40px]"
+            data-scroll
+            data-scroll-speed="0.1"
+          >
+            <h1
+              className=" relative uppercase 2xl:mb-[30px] mb-[18px] text-[#06D7F9] font-machina font-[800] 2xl:text-[50px] md:text-[40px] text-[30px] 2xl:leading-[54px] md:leading-[44px] leading-[34px] 2xl:max-w-[unset] md:max-w-[504px] max-w-[unset]"
+              ref={elementRef}
+              style={{
+                visibility: elementVisible ? "visible" : "hidden",
+                top: elementVisible ? "0" : "50px",
+                opacity: elementVisible ? "1" : "0",
+                transition: "linear 0.5s",
+              }}
+            >
+              {/* <TypingEffect text="Join the Team of" speed={100} delay={0} />
+            <TypingEffect text="YVOO auditors" speed={100} delay={1.6} /> */}
+              Join the Team of YVOO auditors
             </h1>
             <div className="max-w-[683px] flex flex-col gap-[20px] font-[400] md:text-[16px] text-[14px] leading-[20px]">
               <p>

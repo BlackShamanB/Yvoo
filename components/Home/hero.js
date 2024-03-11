@@ -9,6 +9,28 @@ import TypingEffect from "../TypingEffect";
 function Hero() {
   const [openModalRequest, setOpenModalRequest] = useState(false);
 
+  const elementRef = useRef(null);
+  const [elementVisible, setelementVisible] = useState(false);
+
+  const handleScroll = () => {
+    if (elementRef.current) {
+      const { top, bottom } = elementRef.current.getBoundingClientRect();
+      if (!elementVisible) {
+        setelementVisible(
+          top < window.innerHeight && bottom >= 0 && !elementVisible
+        );
+      }
+    }
+  };
+
+  useEffect(() => {
+    handleScroll();
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   const handleModal = () => {
     setOpenModalRequest((prev) => !prev);
   };
@@ -33,7 +55,7 @@ function Hero() {
         data-scroll-speed="0.3"
       >
         <div className="3xl:max-w-[1516px] 2xl:max-w-[1116px] md:max-w-[598px] 3xl:w-[1516px] 2xl:w-[1116px] mx-[auto] md:pl-[0] pl-[20px] md:pr-[0] pr-[20px] md:pt-[0] pt-[39px]">
-          <h1 className="uppercase font-machina 2xl:text-[50px] md:text-[40px] text-[30px] font-[800] 2xl:leading-[54px] md:leading-44px] leading-[34px] max-w-[880px] md:block hidden">
+          {/* <h1 className="uppercase font-machina 2xl:text-[50px] md:text-[40px] text-[30px] font-[800] 2xl:leading-[54px] md:leading-44px] leading-[34px] max-w-[880px] md:block hidden">
             <TypingEffect text="Welcome to YVOO the" speed={100} delay = {0}/>{" "}<br/>
             <TypingEffect text="Sourcer" speed={100} delay = {0}/>
             <b className="text-primary">
@@ -53,6 +75,19 @@ function Hero() {
             <TypingEffect text="Industrial B2B" speed={100} delay = {0} />{" "}<br/>
             <TypingEffect text="Supplier" speed={100} delay = {0} />
             <TypingEffect text="Platform" speed={100} delay = {0} />
+          </h1> */}
+          <h1
+            className="relative uppercase font-machina 2xl:text-[50px] md:text-[40px] text-[30px] font-[800] 2xl:leading-[54px] md:leading-44px] leading-[34px] max-w-[880px]"
+            ref={elementRef}
+            style={{
+              visibility: elementVisible ? "visible" : "hidden",
+              top: elementVisible ? "0" : "50px",
+              opacity: elementVisible ? "1" : "0",
+              transition: "linear 0.5s",
+            }}
+          >
+            Welcome to YVOO the Sourcer<b className="text-primary">Pro+</b> Your
+            Ultimate Industrial B2B Supplier Platform"
           </h1>
         </div>
         <div className="3xl:max-w-[1516px] 2xl:max-w-[1116px] md:max-w-[598px] 3xl:w-[1516px] 2xl:w-[1116px] md:w-[598px] md:mx-[auto] mx-[22px] 3xl:mt-[77px] 2xl:mt-[82px] md:mt-[52px] mt-[43px] flex items-center md:gap-[32px] gap-[15px]">

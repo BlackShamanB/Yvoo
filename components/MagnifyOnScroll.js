@@ -13,14 +13,11 @@ const MagnifyOnScroll = (imgSrc) => {
     if (imageContainerRef.current) {
       const { top, bottom, height } = imageContainerRef.current.getBoundingClientRect();
       const windowHeight = window.innerHeight;
-      console.log(bottom <= windowHeight)
       if (top >= 0 && bottom <= windowHeight) {
         setVisibilityPercentage(100);
       }
       else if (top < windowHeight && bottom > 0) {
-        console.log('tut')
         const visiblePercentage = (windowHeight - top) / height * 100;
-        console.log(visiblePercentage);
         setVisibilityPercentage(visiblePercentage);
       }
       else {
@@ -32,7 +29,6 @@ const MagnifyOnScroll = (imgSrc) => {
     checkVisibility();
     if (inView) {
       const distanceFromTop = imageContainerRef.current.getBoundingClientRect().top;
-      console.log(visibilityPercentage)
       const scale = visibilityPercentage / 100 > 1 ? 1 : visibilityPercentage / 100; // Изменение масштаба в зависимости от расстояния до верха
       imageRef.current.style.scale = `${scale}`;
     }

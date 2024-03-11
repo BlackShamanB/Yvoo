@@ -19,6 +19,8 @@ function Results({ handleModal }) {
         height={106}
         alt="triangle"
         className="absolute 3xl:top-[65%] 3xl:top-[53%] 2xl:top-[48%] md:top-[37.5%] top-[18%] 3xl:left-[-6.5%] 2xl:left-[-15%] md:left-[-45%] left-[-62%] mouse-parallax z-[1]"
+        data-scroll
+        data-scroll-speed="0.1"
       />
       <Image
         src="/icons/arch-1.png"
@@ -53,7 +55,7 @@ function Results({ handleModal }) {
               Book a demo now and unlock the full potential of your procurement
               process.
             </p>
-            <button className="white_btn btn_animated_blue 2xl:mt-[43px] md:mt-[28px] mt-[24px] max-w-[159px]" onClick={handleModal}>
+            <button className="white_btn btn_animated_white 2xl:mt-[43px] md:mt-[28px] mt-[24px] max-w-[159px]" onClick={handleModal}>
               Request Demo
             </button>
           </div>

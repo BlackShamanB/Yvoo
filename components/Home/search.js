@@ -2,7 +2,29 @@ import Image from "next/image";
 import Link from "next/link";
 import TypingEffect from "../TypingEffect";
 import MagnifyOnScroll from "../MagnifyOnScroll";
+import React, { useState, useEffect, useRef } from "react";
 function Search({ handleModal }) {
+  const elementRef = useRef(null);
+  const [elementVisible, setelementVisible] = useState(false);
+
+  const handleScroll = () => {
+    if (elementRef.current) {
+      const { top, bottom } = elementRef.current.getBoundingClientRect();
+      if (!elementVisible) {
+        setelementVisible(
+          top < window.innerHeight && bottom >= 0 && !elementVisible
+        );
+      }
+    }
+  };
+
+  useEffect(() => {
+    handleScroll();
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
   return (
     <div
       id="search"
@@ -32,34 +54,47 @@ function Search({ handleModal }) {
             }}
             className="md:flex-center flex-col"
           >
-          <MagnifyOnScroll
-            style={{ zIndex: 0 }}
-            src="/images/discover.webp"
-            img-src="/images/discover.webp"
-            width={900}
-            height={654}
-            alt="yvoo-search"
-            classes="absolute min-w-[50px] 2xl:bottom-[0px] md:bottom-[unset] 2xl:top-[unset] md:top-[186px] top-[211px] 3xl:left-[0] 2xl:left-[-114px] md:left-[-61px] z-10 3xl:max-w-[900px] 2xl:max-w-[774px] md:max-w-[659px] max-w-[89%]"
-            // data-scroll
-            // data-scroll-speed="0.01"
-          />
+            <MagnifyOnScroll
+              style={{ zIndex: 0 }}
+              src="/images/discover.webp"
+              img-src="/images/discover.webp"
+              width={900}
+              height={654}
+              alt="yvoo-search"
+              classes="absolute min-w-[50px] 2xl:bottom-[0px] md:bottom-[unset] 2xl:top-[unset] md:top-[186px] top-[211px] 3xl:left-[0] 2xl:left-[-114px] md:left-[-61px] z-10 3xl:max-w-[900px] 2xl:max-w-[774px] md:max-w-[659px] max-w-[89%]"
+              // data-scroll
+              // data-scroll-speed="0.01"
+            />
             <div
               className="md:relative z-30 flex flex-wrap flex-col items-start 2xl:gap-[30px] md:gap-[20px] gap-[12px] 3xl:mt-[106px] 2xl:mt-[107px] md:mt-[115px] mt-[98px] 3xl:mb-[442px] 2xl:mb-[350px] 2xl:leading-[50px] md:px-[0] px-[41px]"
               data-scroll
               data-scroll-speed="0.2"
             >
-              <h1 className="uppercase font-machina font-[800] 2xl:text-[50px] md:text-[40px] text-[30px] 2xl:leading-[54px] md:leading-[44px] leading-[34px] max-w-[318px] 2xl:max-w-[438px] 3xl:ml-[145px] 2xl:ml-[0]">
-                <TypingEffect text="YVOO Search" speed={100} delay={0} />{" "}
+              <h1
+                className="uppercase font-machina font-[800] 2xl:text-[50px] md:text-[40px] text-[30px] 2xl:leading-[54px] md:leading-[44px] leading-[34px] max-w-[318px] 2xl:max-w-[438px] 3xl:ml-[145px] 2xl:ml-[0]"
+                ref={elementRef}
+                style={{
+                  visibility: elementVisible ? "visible" : "hidden",
+                  top: elementVisible ? "0" : "50px",
+                  opacity: elementVisible ? "1" : "0",
+                  transition: "linear 0.5s",
+                }}
+              >
+                {/* <TypingEffect text="YVOO Search" speed={100} delay={0} />{" "}
                 <b className="text-black">
                   <TypingEffect text="Pro+" speed={100} delay={1.1} />
-                </b>
+                </b> */}
+                YVOO Search<b className="text-black">Pro+</b>
               </h1>
               <div className="flex flex-col 2xl:gap-[42px] md:gap-[28px] gap-[24px] 2xl:max-w-[438px] 3xl:ml-[145px] 2xl:ml-[0]">
                 <p className="font-[700] text-black 2xl:text-[24px] md:text-[20px] text-[16px] 2xl:leading-[30px] md:leading-[26px] leading-[20px] 2xl:max-w-[260px] max-w-[293px]">
                   Discover Quality Suppliers Effortlessly
                 </p>
 
-                <button className="filled_btn btn_animated_green" onClick={handleModal}>
+                <button
+                  className="filled_btn btn_animated_black"
+                  onClick={handleModal}
+                >
                   Request demo
                 </button>
               </div>

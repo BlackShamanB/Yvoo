@@ -55,7 +55,7 @@ function Sales({ handleModal }) {
             data-scroll-speed="0.08">
               Future-proof your supply chain and ensure procurement excellence
             </p>
-            <button className="filled_btn 2xl:mt-[27px] mt-[4px] md:!p-[18px_62px] !p-[8px_30px] !w-[max-content]" onClick={handleModal}
+            <button className="filled_btn 2xl:mt-[27px] mt-[4px] md:!p-[18px_62px] !p-[8px_30px] !w-[max-content] btn_animated_black" onClick={handleModal}
             data-scroll
             data-scroll-speed="0.06">
               Apply now

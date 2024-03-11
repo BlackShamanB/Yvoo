@@ -3,7 +3,27 @@ import React, { useState, useEffect, useRef } from "react";
 import TypingEffect from "../TypingEffect";
 import MagnifyOnScroll from "../MagnifyOnScroll";
 function Scan({ handleModal }) {
+  const elementRef = useRef(null);
+  const [elementVisible, setelementVisible] = useState(false);
 
+  const handleScroll = () => {
+    if (elementRef.current) {
+      const { top, bottom } = elementRef.current.getBoundingClientRect();
+      if (!elementVisible) {
+        setelementVisible(
+          top < window.innerHeight && bottom >= 0 && !elementVisible
+        );
+      }
+    }
+  };
+
+  useEffect(() => {
+    handleScroll();
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
   return (
     <div
       id="scan"
@@ -128,17 +148,30 @@ function Scan({ handleModal }) {
               data-scroll
               data-scroll-speed="0.1"
             >
-              <h1 className="uppercase font-machina font-[800] text-[40px] text-white 2xl:text-[50px] leading-[30px] md:leading-[40px] 2xl:leading-[52px] max-w-[318px] 2xl:max-w-[340px] mb-[32px]">
-                <TypingEffect text="YVOO Scan" speed={100} delay={0} />
+              <h1
+                className="uppercase font-machina font-[800] text-[40px] text-white 2xl:text-[50px] leading-[30px] md:leading-[40px] 2xl:leading-[52px] max-w-[318px] 2xl:max-w-[340px] mb-[32px]"
+                ref={elementRef}
+                style={{
+                  visibility: elementVisible ? "visible" : "hidden",
+                  top: elementVisible ? "0" : "50px",
+                  opacity: elementVisible ? "1" : "0",
+                  transition: "linear 0.5s",
+                }}
+              >
+                {/* <TypingEffect text="YVOO Scan" speed={100} delay={0} />
                 <b className="text-black">
                   <TypingEffect text="Pro+" speed={100} delay={1.1} />
-                </b>
+                </b> */}
+                YVOO Scan<b className="text-black">Pro+</b>
               </h1>
               <div className="flex flex-col gap-[42px] md:items-start">
                 <p className="font-[700] text-[18px] text-black 2xl:text-[24px] leading-[22px] 2xl:leading-[30px] max-w-[222px] md:max-w-[327px] 2xl:max-w-[340px]">
                   Unleash Supplier Readiness for Unprecedented Audit Success{" "}
                 </p>
-                <button className="filled_btn btn_animated_white" onClick={handleModal}>
+                <button
+                  className="filled_btn btn_animated_black"
+                  onClick={handleModal}
+                >
                   Request demo
                 </button>
               </div>

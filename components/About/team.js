@@ -3,7 +3,7 @@ import Image from "next/image";
 import MagnifyOnScroll from "../MagnifyOnScroll";
 function Team() {
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 w-full 3xl:pb-[120px] 2xl:pb-[79px] pb-[759px] bg-[#FFF] overflow-hidden">
+    <div className="grid grid-cols-1 md:grid-cols-2 w-full 3xl:pb-[120px] 2xl:pb-[79px] pb-[759px] bg-[#FFF]">
       <div className="relative pl-[41px] 2xl:pl-[162px] 3xl:pl-[202px] pr-[41px] 2xl:pr-[55px] 3xl:pr-[84px] py-[98px] 2xl:py-[252px] pb-[0] w-full bg-[#FFFFFF]">
         <Image
           src="/icons/about_rectangle.svg"
@@ -12,7 +12,7 @@ function Team() {
           alt="triangle"
           className="absolute 3xl:top-[4.4%] 2xl:top-[4.6%] top-[2.7%] 3xl:left-[58.6%] 2xl:left-[66.5%] left-[70%] z-[1] 2xl:max-w-[116px] max-w-[67px] max-h-[276px]"
           data-scroll
-          data-scroll-speed="0.3"
+          data-scroll-speed="0.2"
         />
         <h1 className="text-black font-machina font-[800] uppercase text-[30px] 2xl:text-[50px] leading-[34px] 2xl:leading-[54px] mb-[63px] 2xl:mb-[104px] 3xl:mb-[113px]"
           data-scroll

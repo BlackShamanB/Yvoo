@@ -6,7 +6,7 @@ function Hero() {
         className="3xl:max-w-[1516px] 2xl:max-w-[1116px] md:max-w-[598px] mx-[auto] relative grid grid-cols-1 2xl:grid-cols-2 w-full mb-[100px] md:mb-[120px] 2xl:mb-[254px]"
         priority
       >
-        <h1 className="3xl:max-w-none 2xl:max-w-[530px] font-machina font-[800] uppercase 2xl:text-[50px] md:text-[40px] text-[30px] 2xl:leading-[54px] md:leading-[44px] leading-[34px] flex-1 2xl:mb-[0] md:mb-[30px] mb-[63px]" data-scroll data-scroll-speed="0.3">
+        <h1 className="3xl:max-w-none 2xl:max-w-[530px] font-machina font-[800] uppercase 2xl:text-[50px] md:text-[40px] text-[30px] 2xl:leading-[54px] md:leading-[44px] leading-[34px] flex-1 2xl:mb-[0] md:mb-[30px] mb-[63px]" data-scroll data-scroll-speed="0.15">
         <div className="text-primary 2xl:mb-[115px] md:mb-[61px] mb-[62px] 2xl:text-[60px] md:text-[50px] text-[40px] 2xl:leading-[64px] md:leading-[54px] leading-[44px]">SOLUTIONS</div>
           Supercharge Your Sourcing Process with{" "}
           <b className="text-primary">YVOO Sourcer</b>Pro+

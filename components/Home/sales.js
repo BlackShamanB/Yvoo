@@ -2,35 +2,41 @@ import Image from "next/image";
 import Link from "next/link";
 import TypingEffect from "../TypingEffect";
 import MagnifyOnScroll from "../MagnifyOnScroll";
+import React, { useRef, useState, useEffect } from "react";
 function Sales({ handleModal }) {
+  const elementRef = useRef(null);
+  const [elementVisible, setelementVisible] = useState(false);
+
+  const handleScroll = () => {
+    if (elementRef.current) {
+      const { top, bottom } = elementRef.current.getBoundingClientRect();
+      if (!elementVisible) {
+        setelementVisible(
+          top < window.innerHeight && bottom >= 0 && !elementVisible
+        );
+      }
+    }
+  };
+
+  useEffect(() => {
+    handleScroll();
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
   return (
     <div
       id="sales"
-      // style={{ transformStyle: "preserve-3d" }}
       className="relative grid w-full w-full bg-white bg-local bg-contain bg-no-repeat bg-bottom z-29"
     >
-      {/* <Image
-        src="/icons/yvoo-sales-icon.svg"
-        width={124}
-        height={137}
-        alt="yvoo-sales"
-        className="absolute -top-[40px] right-[40%]" priority
-      /> */}
       <div
         className="3xl:max-w-[1516px] 2xl:max-w-[1116px] md:max-w-[598px] mx-[auto]"
         data-scroll
         data-scroll-speed="0.3"
         priority
       >
-        <div
-          style={
-            {
-              // position: "relative",
-              // transform: "translateZ(-1px)",
-            }
-          }
-          className="relative grid grid-cols-1 2xl:grid-cols-2 bg-white md:py-0 md:flex-center flex-col h-fit 3xl:h-[1187px] 2xl:h-[1125px] md:h-[1422px] md:px-[0] px-[41px] md:overflow-visible overflow-hidden"
-        >
+        <div className="relative grid grid-cols-1 2xl:grid-cols-2 bg-white md:py-0 md:flex-center flex-col h-fit 3xl:h-[1187px] 2xl:h-[1125px] md:h-[1422px] md:px-[0] px-[41px] md:overflow-visible overflow-hidden">
           <div className="flex flex-wrap md:flex-nowrap items-center md:items-start md:flex-col 3xl:gap-[20px] 2xl:gap-[31px] md:gap-[20px] gap-[12px] 3xl:mt-[172px] 2xl:mt-[165px] md:mt-[153px] mt-[139px] 3xl:mb-[568px] 2xl:mb-[356px]">
             <Image
               src="/icons/squares-2.png"
@@ -50,16 +56,28 @@ function Sales({ handleModal }) {
               data-scroll
               data-scroll-speed="0.25"
             />
-            <h1 className="uppercase 3xl:ml-[154px] 2xl:ml-[0] font-machina font-[800] text-[#00D1EF] 2xl:text-[50px] md:text-[40px] text-[30px] 2xl:leading-[54px] md:leading-[44px] leading-[34px] max-w-[318px] 2xl:max-w-[472px]">
-              <TypingEffect text="YVOO Sales" speed={100} delay={0} />
-              <b className="text-black"><TypingEffect text="Pro+" speed={100} delay={1} /></b>
+            <h1
+              className="relative uppercase 3xl:ml-[154px] 2xl:ml-[0] font-machina font-[800] text-[#00D1EF] 2xl:text-[50px] md:text-[40px] text-[30px] 2xl:leading-[54px] md:leading-[44px] leading-[34px] max-w-[318px] 2xl:max-w-[472px]"
+              ref={elementRef}
+              style={{
+                visibility: elementVisible ? "visible" : "hidden",
+                top: elementVisible ? "0" : "50px",
+                opacity: elementVisible ? "1" : "0",
+                transition: "linear 0.5s",
+              }}
+            >
+              {/* <TypingEffect text="YVOO Sales" speed={100} delay={0} /> */}
+              {/* <b className="text-black">
+                <TypingEffect text="Pro+" speed={100} delay={1} />
+              </b> */}
+              YVOO Sales<b className="text-black">Pro+</b>
             </h1>
             <div className="flex flex-col md:gap-[18px] gap-[25px] 3xl:ml-[154px] 2xl:ml-[0]">
               <p className="font-[700] 2xl:text-[24px] md:text-[20px] text-[16px] text-black 2xl:leading-[30px] md:leading-[26px] leading-[20px] max-w-[327px] 2xl:max-w-[327px]">
                 Unlock Your Supplier Potential and Maximize Your Business Growth{" "}
               </p>
               <button
-                className="filled_btn 2xl:mt-[24px] md:mt-[10px] btn_animated_blue"
+                className="filled_btn 2xl:mt-[24px] md:mt-[10px] btn_animated_black"
                 onClick={handleModal}
               >
                 Request demo

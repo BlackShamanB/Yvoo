@@ -11,7 +11,7 @@ function About() {
         className="absolute 3xl:top-[-11%] 2xl:top-[-12%] md:top-[-8.5%] top-[-3.5%] 3xl:left-[31.8%] 2xl:left-[48%] md:left-[58%] left-[54%] mouse-parallax md:max-w-[116px] max-w-[67px]"
         priority
         data-scroll
-        data-scroll-speed="0.3"
+        data-scroll-speed="0.13"
       />
       <div className="grid grid-cols-1 md:grid-cols-2 2xl:grid-cols-3 3xl:gap-[332px] 2xl:gap-[100px] md:gap-[57px] gap-[54px]">
         <h1
@@ -25,12 +25,12 @@ function About() {
         <div
           className="col-span-2 flex flex-col 2xl:gap-[23px] gap-[16px] pt-[8px] 3xl:pl-[0] 2xl:pl-[50px]"
           data-scroll
-          data-scroll-speed="0.3"
+          data-scroll-speed="0.13"
         >
           <p
             className="text-black font-[700] text-[16px] md:text-[20px] 2xl:text-[24px] leading-[20px] md:leading-[24px] 2xl:leading-[30px] max-w-[566px] md:max-w-none"
             data-scroll
-            data-scroll-speed="0.2"
+            data-scroll-speed="0.02"
           >
             At YVOO Technology, we take a data-driven approach to procurement
             consulting, leveraging cutting-edge analytics tools and techniques
@@ -39,7 +39,7 @@ function About() {
           <p
             className="text-black leading-[20px] md:text-[16px] text-[14px] font-[400]"
             data-scroll
-            data-scroll-speed="0.15"
+            data-scroll-speed="0.015"
           >
             Our team has extensive experience working with businesses across a
             range of industries, and we bring a wealth of knowledge and best
