@@ -76,7 +76,7 @@ function BuyerSupplier({ handleModal }) {
           width={244}
           height={260}
           alt={isHoveredSupplier ? "supplier" : "buyer"}
-          className="relative 3xl:max-w-[unset] 2xl:max-w-[203px] md:max-w-[203px] max-w-[131px] 3xl:ml-[44px] 2xl:ml-[31px] md:mx-[auto]"
+          className="relative 3xl:max-w-[unset] 2xl:max-w-[203px] md:max-w-[203px] max-w-[131px] 3xl:ml-[44px] 2xl:ml-[31px] mx-[auto]"
           onClick={() => {
             window.open("https://searchpro.yvoo.io", "_blank");
           }}
@@ -91,8 +91,8 @@ function BuyerSupplier({ handleModal }) {
         >
           <Image
             src="/icons/right-arrow.svg"
-            width={108}
-            height={108}
+            width={60}
+            height={60}
             alt="left arrow"
             className="2xl:ml-[31px] md:ml-[20px] ml-[-15px] 3xl:max-w-[unset] 2xl:max-w-[44px] md:max-w-[unset] max-w-[34px] 3xl:mt-[33px] 2xl:mt-[22px] 2xl:block hidden"
             onClick={() => {
@@ -104,7 +104,7 @@ function BuyerSupplier({ handleModal }) {
       </div>
     </div>
     <div
-      className="py-[65px] md:py-[115px] 2xl:py-[235px] flex cursor-pointer 3xl:mt-[65px] 2xl:mt-[58px] md:mt-[24px] mt-[12px] 3xl:pr-[40px] 2xl:pr-[37px] 2xl:px-[0] text-center"
+      className="py-[65px] md:py-[115px] 2xl:py-[235px] flex cursor-pointer 3xl:mt-[65px] 2xl:mt-[58px] md:mt-[24px] mt-[12px] 3xl:pr-[40px] 2xl:mr-[48px] 2xl:ml-[0] md:mx-[25px] mx-[11px] 2xl:pr-[37px] 2xl:px-[0] text-center"
       onMouseEnter={handleMouseEnterSupplier}
       onMouseLeave={handleMouseLeaveSupplier}
       data-scroll
