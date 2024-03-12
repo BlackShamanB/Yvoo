@@ -23,7 +23,7 @@ function SearchPro() {
           height={797}
           className="relative object-contain 3xl:hidden 2xl:block hidden top-[150px]"
         />
-        <div className="absolute w-275px text-[16px] leading-[20px] font-[500] py-[20px] pl-[30px] pr-[26px] bg-[#000] 3xl:top-[88px] 2xl:top-[137px] 3xl:right-[-20px] 2xl:right-[63px] uppercase rounded-t-[30px] rounded-r-[30px] 2xl:block hidden">
+        <div className="absolute w-275px text-[16px] leading-[20px] font-[500] py-[20px] pl-[30px] pr-[26px] bg-[#000] 3xl:top-[230px] 2xl:top-[279px] 3xl:right-[-20px] 2xl:right-[63px] uppercase rounded-t-[30px] rounded-r-[30px] 2xl:block hidden">
           watch instructions
           <Image
             src="/icons/watch-triangle.svg"

@@ -103,7 +103,7 @@ function Hero() {
             Have a sneak peek<br></br>at what we do
           </h2>
         </div>
-        <div className="grid sm:grid-cols-2 lg2:grid-cols-4 2xl:gap-[40px] gap-[20px] 2xl:mt-auto md:mt-[-58px] mt-[20px] 2xl:px-[0] md:px-[35px] px-[20px] font-inter">
+        <div className="grid sm:grid-cols-2 lg2:grid-cols-4 2xl:h-[200px] 2xl:gap-[40px] gap-[20px] 2xl:mt-auto md:mt-[-58px] mt-[20px] 2xl:px-[0] md:px-[35px] px-[20px] font-inter">
           <ReactScrollLink
             className="relative 2xl:top-[40px] md:top-[260px] top-[40px]"
             activeClass="active"

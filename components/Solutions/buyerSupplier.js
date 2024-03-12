@@ -103,7 +103,7 @@ function BuyerSupplier({ handleModal }) {
         </div>
       </div>
       <div
-        className="py-[95px] md:py-[133px] 2xl:py-[209px] flex cursor-pointer 3xl:mt-[54px] 2xl:mt-[58px] md:mt-[-20px] mt-[12px] 2xl:mr-[48px] md:mx-[25px] mx-[11px] 3xl:pr-[40px] 2xl:pr-[37px] 2xl:px-[0] text-center"
+        className="py-[95px] md:py-[133px] 2xl:py-[209px] flex cursor-pointer 3xl:mt-[54px] 2xl:mt-[58px] md:mt-[-20px] mt-[12px] 2xl:mr-[48px] 2xl:ml-[0] md:mx-[25px] mx-[11px] 3xl:pr-[40px] 2xl:pr-[37px] 2xl:px-[0] text-center"
         onMouseEnter={handleMouseEnterSupplier}
         onMouseLeave={handleMouseLeaveSupplier}
         data-scroll
