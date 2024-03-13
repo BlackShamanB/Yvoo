@@ -98,10 +98,10 @@ body {
 }
 
 .mint_btn {
-  @apply bg-transparent text-mint hover:bg-mint hover:text-black border-2 border-mint hover:scale-[1.03] md:h-[60px] h-[36px] uppercase font-[400] md:text-[16px] text-[12px] md:leading-[20px] leading-[16px] w-full max-w-[255px];
+  @apply bg-transparent text-mint hover:text-black border-2 border-mint hover:scale-[1.03] md:h-[60px] h-[36px] uppercase font-[400] md:text-[16px] text-[12px] md:leading-[20px] leading-[16px] w-full max-w-[255px];
 }
 .blue_btn {
-  @apply bg-transparent text-[#06D7F9] border-2 border-[#06D7F9] hover:scale-[1.03] md:h-[60px] h-[36px] uppercase font-[400] md:text-[16px] text-[12px] md:leading-[20px] leading-[16px] w-full max-w-[255px];
+  @apply bg-transparent text-[#06D7F9] hover:text-[#fff] border-2 border-[#06D7F9] hover:scale-[1.03] md:h-[60px] h-[36px] uppercase font-[400] md:text-[16px] text-[12px] md:leading-[20px] leading-[16px] w-full max-w-[255px];
 }
 
 .filled_btn_white {

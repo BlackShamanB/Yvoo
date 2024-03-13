@@ -41,7 +41,7 @@ function BuyerSupplier({ handleModal }) {
             We are your Uber for procurement.
           </h2>
           <button
-            className="filled_btn_primary !hover:bg-[#06D7F9] hover:!text-[black] !text-[#06D7F9] !border-[#06D7F9] 2xl:mt-[17px] mt-[9px] 2xl:ml-[92px] md:ml-[57px] mx-[auto] md:!max-w-[224px] !max-w-[max-content] md:!text-[16px] !text-[12px] md:!leading-[20px] !leading-[16px] md:!px-[30px] !px-[28px] md:!py-[18px] !py-[6px]"
+            className="filled_btn_primary btn_animated_blue hover:!text-[black] !text-[#06D7F9] !border-[#06D7F9] 2xl:mt-[17px] mt-[9px] 2xl:ml-[92px] md:ml-[57px] mx-[auto] md:!max-w-[224px] !max-w-[max-content] md:!text-[16px] !text-[12px] md:!leading-[20px] !leading-[16px] md:!px-[30px] !px-[28px] md:!py-[18px] !py-[6px]"
             onClick={handleModal}
           >
             View rates
@@ -123,7 +123,7 @@ function BuyerSupplier({ handleModal }) {
             Way to your excellence
           </h2>
           <button
-            className="mint_btn md:mt-[15px] mt-[8px] md:!max-w-[224px] !max-w-[136px] md:!py-[18px] !py-[8px] md:!text-[16px] !text-[12px] md:!leading-[20px] !leading-[16px] text-[#FFF]"
+            className="mint_btn btn_animated_green md:mt-[15px] mt-[8px] md:!max-w-[224px] !max-w-[136px] md:!py-[18px] !py-[8px] md:!text-[16px] !text-[12px] md:!leading-[20px] !leading-[16px] text-[#FFF]"
             onClick={handleModal}
           >
             View rates

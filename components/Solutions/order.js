@@ -8,7 +8,7 @@ function Order({ handleModal }) {
         Don't miss out on this game-changing solution. Book a demo today and
         experience a new level of efficiency and reliability.
       </p>
-      <button className="filled_btn md:!max-w-[275px] !max-w-[175px]" onClick={handleModal}
+      <button className="filled_btn btn_animated_black md:!max-w-[275px] !max-w-[175px]" onClick={handleModal}
         data-scroll
         data-scroll-speed="0.02">
         Order ScanPro+

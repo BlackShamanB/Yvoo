@@ -47,7 +47,7 @@ function SimpleSteps({ handleModal }) {
           Don't miss out on the future of supplier sourcing.
         </h2>
         <button
-          className="blue_btn !max-w-[403px] md:ml-[-32px]"
+          className="blue_btn btn_animated_blue !max-w-[403px] md:ml-[-32px]"
           onClick={handleModal}
           data-scroll
           data-scroll-speed="0.15"
