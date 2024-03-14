@@ -30,7 +30,7 @@ function OfferingsList() {
         <div
           className="w-full flex flex-col 3xl:gap-[24px] 2xl:gap-[54px] md:gap-[24px] gap-[16px]"
           data-scroll
-          data-scroll-speed="0.19"
+          data-scroll-speed="0.14"
         >
           <h1 className="font-[700] 2xl:text-[24px] md:text-[20px] text-[16px] 2xl:leading-[30px] md:leading-[26px] leading-[20px] text-white 3xl:max-w-[340px] 2xl:max-w-[256px] md:max-w-[284px] 3xl:max-w-[278px]">
             Supplier
@@ -59,7 +59,7 @@ function OfferingsList() {
         <div
           className="w-full flex flex-col md:gap-[24px] gap-[16px] md:flex hidden"
           data-scroll
-          data-scroll-speed="0.15"
+          data-scroll-speed="0.11"
         >
           <h1 className="font-[700] 2xl:text-[24px] md:text-[20px] text-[16px] 2xl:leading-[30px] md:leading-[26px] leading-[20px] text-white 3xl:max-w-[340px] 2xl:max-w-[256px] md:max-w-[284px] 3xl:max-w-[278px]">
             Procurement <br className="3xl:hidden 2xl:block hidden" /> process
