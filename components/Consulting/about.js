@@ -9,7 +9,7 @@ function About() {
         height={139}
         alt="triangle"
         className="absolute 3xl:top-[-11%] 2xl:top-[-12%] md:top-[-8.5%] top-[-3.5%] 3xl:left-[31.8%] 2xl:left-[48%] md:left-[58%] left-[54%] mouse-parallax md:max-w-[116px] max-w-[67px]"
-        priority
+        
         data-scroll
         data-scroll-speed="0.13"
       />

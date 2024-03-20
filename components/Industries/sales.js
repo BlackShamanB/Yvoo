@@ -1,12 +1,13 @@
 import Image from "next/image";
 import Link from "next/link";
 import MagnifyOnScroll from "../MagnifyOnScroll";
+import ImgLeftToRight from "../ImgLeftToRight"
 
 function Sales({ handleModal }) {
   return (
     <div
       id="sales"
-      className="relative grid grid-cols-1 md:grid-cols-2 w-full bg-white bg-local bg-contain bg-no-repeat bg-bottom z-40 2xl:pb-[0] pb-[100px]"
+      className="relative grid grid-cols-1 md:grid-cols-2 w-full bg-white bg-local bg-contain bg-no-repeat bg-bottom 2xl:pb-[0] pb-[100px]"
     >
       <div
         className="px-[41px] 2xl:px-[50px] bg-white pt-[95px] md:pt-[0] pb-[60px] md:pb-[0] md:flex-center flex-col h-fit md:h-[918px] 2xl:h-[1038px] 3xl:h-[1047px]"
@@ -85,12 +86,13 @@ function Sales({ handleModal }) {
           data-scroll-speed="0.1"
         />
 
-        <Image
+        <ImgLeftToRight
           src="/icons/icon-line.svg"
           width={584}
           height={106}
           alt="triangle"
-          className="3xl:block hidden absolute 2xl:top-[61%] 2xl:top-[0] md:top-[0] top-[23.9%] 3xl:right-[0] md:right-[0] right-[0] mouse-parallax z-[11] 3xl:max-w-[455px]"
+          classesImg="3xl:max-w-[455px]"
+          classesContainer="absolute overflow-hidden 3xl:left-[76%] left-[0] 3xl:block hidden absolute 2xl:top-[61%] 2xl:top-[0] md:top-[0] top-[23.9%] z-[11]"
           data-scroll
           data-scroll-speed="0.2"
         />

@@ -33,7 +33,7 @@ function Auditor() {
         height={275}
         alt="triangle"
         className="md:block absolute 3xl:top-[-193px] 2xl:top-[-139px] md:top-[-11.5%] top-[-9%] 3xl:right-[8.5%] 2xl:right-[131px] md:right-[7%] right-[6%] mouse-parallax 3xl:max-w-[316px] 2xl:max-w-[230px] md:max-w-[230px] max-w-[162px]"
-        priority
+        
         data-scroll
         data-scroll-speed="0.2"
       />
@@ -43,7 +43,7 @@ function Auditor() {
         height={140}
         alt="triangle"
         className="md:block absolute 2xl:top-[151px] md:top-[27.3%] top-[20.9%] 2xl:right-[0%] md:right-[3.7%] right-[2%] 2xl:max-w-[unset] md:max-w-[110px] max-w-[70px] mouse-parallax"
-        priority
+        
         data-scroll
         data-scroll-speed="0.4"
       />
@@ -53,40 +53,13 @@ function Auditor() {
         height={204}
         alt="triangle"
         className="md:block absolute 3xl:top-[643px] 2xl:top-[85.7%] md:top-[91%] top-[95.4%] 3xl:right-[17.5%] 2xl:right-[9.3%] md:right-[6%] right-[0%] 2xl:max-w-[unset] md:max-w-[220px] max-w-[147px] mouse-parallax"
-        priority
+        
         data-scroll
         data-scroll-speed="0.1"
       />
-      <Image
-        src="/images/bg-footer2xl.png"
-        width={905}
-        height={905}
-        alt="yvoo-sales"
-        style={{ mixBlendMode: "screen" }}
-        className="hidden 2xl:block 2xl:object-contain absolute 3xl:ml-[-109px] 2xl:ml-[-109px] 2xl:mt-[203px] h-[812px] z-1"
-        priority
-      />
-      <Image
-        src="/images/bg-footermd.png"
-        width={905}
-        height={905}
-        alt="yvoo-sales"
-        style={{ mixBlendMode: "screen" }}
-        className="2xl:hidden md:block hidden  absolute mt-[58px] h-[649px] w-[378px] z-1"
-        priority
-      />
-      <Image
-        src="/images/bg-footer.png"
-        width={905}
-        height={905}
-        alt="yvoo-sales"
-        style={{ mixBlendMode: "screen" }}
-        className="md:hidden block 2xl:object-contain md:block absolute 3xl:ml-[-109px] 2xl:ml-[-109px] 2xl:mt-[203px] h-[328px] w-[176px] mt-[65px] z-1"
-        priority
-      />
       <div
         className="3xl:max-w-[1516px] 2xl:max-w-[1116px] md:max-w-[598px] mx-[auto] md:px-[0] px-[41px]"
-        priority
+        
         data-scroll
         data-scroll-speed="0.3"
       >
@@ -167,6 +140,33 @@ function Auditor() {
           </div>
         </div>
       </div>
+      <Image
+        src="/images/bg-footer2xl.png"
+        width={905}
+        height={905}
+        alt="yvoo-sales"
+        style={{ mixBlendMode: "screen" }}
+        className="hidden 2xl:block 2xl:object-contain absolute 3xl:ml-[-109px] 2xl:ml-[-109px] 2xl:mt-[203px] h-[812px] z-1"
+        
+      />
+      <Image
+        src="/images/bg-footermd.png"
+        width={905}
+        height={905}
+        alt="yvoo-sales"
+        style={{ mixBlendMode: "screen" }}
+        className="2xl:hidden md:block hidden  absolute mt-[58px] h-[649px] w-[378px] z-1"
+        
+      />
+      <Image
+        src="/images/bg-footer.png"
+        width={905}
+        height={905}
+        alt="yvoo-sales"
+        style={{ mixBlendMode: "screen" }}
+        className="md:hidden block 2xl:object-contain md:block absolute 3xl:ml-[-109px] 2xl:ml-[-109px] 2xl:mt-[203px] h-[328px] w-[176px] mt-[65px] z-1"
+        
+      />
     </div>
   );
 }

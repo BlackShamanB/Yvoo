@@ -44,13 +44,11 @@ function Hero() {
           layout="fill"
           objectFit="cover"
           loading="eager"
-          priority
         />
       </div>
 
       <div
         className="z-10 w-full 2xl:max-w-[1516px] flex flex-col md:px-[0] px-"
-        priority
         data-scroll
         data-scroll-speed="0.3"
       >

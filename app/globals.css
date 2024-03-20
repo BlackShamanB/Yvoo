@@ -270,14 +270,14 @@ body {
 .btn_animated_black {
   cursor: pointer;
   box-shadow: inset 0 0 0 0 rgb(0, 0, 0);
-  -webkit-transition: ease-out 0.4s;
-  -moz-transition: ease-out 0.4s;
-  transition: ease-out 0.4s;
 }
 
 .btn_animated_black:hover {
   color: white;
   box-shadow: inset 400px 50px 0 0 rgb(0, 0, 0);
+  -webkit-transition: ease-out 0.4s;
+  -moz-transition: ease-out 0.4s;
+  transition: ease-out 0.4s;
 }
 
 .btn_animated_green {

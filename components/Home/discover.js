@@ -11,7 +11,7 @@ function Discover() {
         height={139}
         alt="triangle"
         className="absolute 2xl:top-[269px] md:top-[22%] top-[34%] 3xl:left-[15%] 2xl:left-[7%] md:left-[16%] left-[11%] mouse-parallax 2xl:max-w-[116px] max-w-[63px]"
-        priority
+        
         data-scroll data-scroll-speed="0.3"
       />
       <Image
@@ -20,7 +20,7 @@ function Discover() {
         height={113}
         alt="triangle"
         className="absolute 2xl:top-[548px] md:top-[35.6%] top-[41.1%] 2xl:left-[11%] md:left-[13%] left-[6%] mouse-parallax md:max-w-[101px] max-w-[63px]"
-        priority
+        
         data-scroll data-scroll-speed="0.2"
       />
       <Image
@@ -29,12 +29,12 @@ function Discover() {
         height={170}
         alt="triangle"
         className="absolute 2xl:top-[790px] md:top-[96.4%] top-[98.3%] 3xl:left-[40%] 2xl:left-[36.6%] md:left-[52.6%] left-[53%] mouse-parallax md:max-w-[180px] max-w-[127px] z-[1]"
-        priority
+        
         data-scroll data-scroll-speed="0.5"
       />
       <div
         className="3xl:max-w-[1516px] 2xl:max-w-[1116px] md:max-w-[598px] mx-[auto] relative grid grid-cols-1 2xl:grid-cols-2 w-full mb-[100px] 3xl:mt-[232px] 2xl:mt-[200px] md:mt-[400px] sm:mt-[262px] mt-[787px] 3xl:mb-[254px] 2xl:mb-[162px] md:mb-[115px]"
-        priority
+        
         data-scroll
         data-scroll-speed="0.3"
       >

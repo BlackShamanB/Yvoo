@@ -3,6 +3,8 @@ import Link from "next/link";
 import TypingEffect from "../TypingEffect";
 import MagnifyOnScroll from "../MagnifyOnScroll";
 import React, { useRef, useState, useEffect } from "react";
+import ImgLeftToRight from "../ImgLeftToRight"
+
 function Sales({ handleModal }) {
   const elementRef = useRef(null);
   const [elementVisible, setelementVisible] = useState(false);
@@ -34,7 +36,7 @@ function Sales({ handleModal }) {
         className="3xl:max-w-[1516px] 2xl:max-w-[1116px] md:max-w-[598px] mx-[auto]"
         data-scroll
         data-scroll-speed="0.3"
-        priority
+        
       >
         <div className="relative grid grid-cols-1 2xl:grid-cols-2 bg-white md:py-0 md:flex-center flex-col h-fit 3xl:h-[1187px] 2xl:h-[1125px] md:h-[1422px] md:px-[0] px-[41px] md:overflow-visible overflow-hidden">
           <div className="flex flex-wrap md:flex-nowrap items-center md:items-start md:flex-col 3xl:gap-[20px] 2xl:gap-[31px] md:gap-[20px] gap-[12px] 3xl:mt-[172px] 2xl:mt-[165px] md:mt-[153px] mt-[139px] 3xl:mb-[568px] 2xl:mb-[356px]">
@@ -47,12 +49,13 @@ function Sales({ handleModal }) {
               data-scroll
               data-scroll-speed="0.15"
             />
-            <Image
+            <ImgLeftToRight
               src="/icons/icon-line.svg"
               width={584}
               height={106}
-              alt="triangle"
-              className="absolute 2xl:top-[57%] 2xl:top-[53%] md:top-[39.5%] top-[23.9%] 3xl:left-[-22%] 2xl:left-[-46%] md:left-[-78%] left-[57%] mouse-parallax z-[1]"
+              alt="line"
+              classesImg="md:max-w-[584px] max-w-[360px] md:min-h-[206px] min-h-[127px]"
+              classesContainer="absolute overflow-hidden 2xl:top-[57%] 2xl:top-[53%] md:top-[39.5%] top-[23.9%] 3xl:left-[-22%] 2xl:left-[-46%] md:left-[-78%] left-[57%] z-[1]"
               data-scroll
               data-scroll-speed="0.25"
             />

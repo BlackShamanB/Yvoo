@@ -39,7 +39,7 @@ export default function Home() {
           height={139}
           alt="triangle"
           className="3xl:block 2xl:hidden absolute 2xl:top-[37.5%] top-[28%] 3xl:left-[34%] 2xl:left-[7%] md:left-[16%] left-[11%] mouse-parallax 2xl:max-w-[116px] max-w-[63px] z-[200]"
-          priority
+          
           data-scroll data-scroll-speed="0.16"
         />
           <h1 className="uppercase font-machina font-[800] text-[40px] md:text-[50px] 2xl:text-[60px] leading-[34px] md:leading-[54px] 2xl:leading-[64px]"

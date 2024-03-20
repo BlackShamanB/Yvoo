@@ -1,13 +1,15 @@
 import Image from "next/image";
+import ImgLeftToRight from "../ImgLeftToRight"
 function OfferingsList() {
   return (
     <div className="relative w-full px-[41px] md:px-[85px] 2xl:px-[162px] 3xl:px-[202px] py-[100px] md:py-[120px] 2xl:py-[49px] pb-[140px] md:pb-[180px] 2xl:pb-[271px] 3xl:pb-[320px] bg-black overflow-hidden">
-      <Image
+      <ImgLeftToRight
         src="/icons/icon-line.svg"
         width={584}
         height={106}
         alt="triangle"
-        className="absolute 3xl:top-[50%] 2xl:top-[46%] md:top-[74%] top-[82%] 3xl:right-[-5.5%] 2xl:right-[-15%] md:right-[0%] right-[0%] 2xl:max-w-[unset] md:max-w-[295px] max-w-[175px] mouse-parallax z-[1]"
+        classesImg="2xl:max-w-[unset] md:max-w-[295px] max-w-[175px]"
+        classesContainer="absolute overflow-hidden 3xl:top-[50%] 2xl:top-[46%] md:top-[74%] top-[82%] 3xl:left-[76%] 2xl:left-[71%] md:left-[47%] left-[47%] z-[1]"
         data-scroll
         data-scroll-speed="0.15"
       />

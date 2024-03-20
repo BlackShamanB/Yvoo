@@ -5,7 +5,7 @@ function Scan({ handleModal }) {
   return (
     <div
       id="scan"
-      className="relative grid grid-cols-1 md:grid-cols-2 w-full bg-[#06D7F9] z-30"
+      className="relative grid grid-cols-1 md:grid-cols-2 w-full bg-[#06D7F9]"
     >
       <Image
         src="/icons/greenTriangle.png"
@@ -51,7 +51,7 @@ function Scan({ handleModal }) {
           transform: "translateZ(-10px)",
           transformStyle: "preserve-3d",
         }}
-        className="pl-[41px] md:pl-[50px] pr-[12px] md:pr-[50px] py-[16px] md:py-0 md:flex-center flex-col h-[773px] 2xl:h-[914px] 3xl:h-[854px]"
+        className="pl-[41px] md:pl-[50px] pr-[12px] md:pr-[50px] py-[16px] md:py-0 md:flex-center flex-col min-h-[773px] 2xl:min-h-[914px] 3xl:min-h-[854px]"
       >
         <div className="mb-[140px] md:mb-0 md2:ml-[37px] md:mt-[134px] flex flex-col 3xl:gap-[24px] gap-[20px] text-black font-[400] leading-[20px] [&>p]:text-[14px] [&>p]:md:text-[16px] 3xl:max-w-[671px] max-w-[479px]">
           <h1

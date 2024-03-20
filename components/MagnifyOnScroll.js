@@ -13,8 +13,6 @@ const MagnifyOnScroll = (imgSrc) => {
     if (imageContainerRef.current) {
       const { top, bottom, height } = imageContainerRef.current.getBoundingClientRect();
       const windowHeight = window.innerHeight;
-      console.log(bottom)
-      console.log(windowHeight)
       if (top >= 0 && bottom <= windowHeight / 10) {
         setVisibilityPercentage(100);
       }
@@ -45,7 +43,7 @@ const MagnifyOnScroll = (imgSrc) => {
 
   return (
     <span ref={ref} className={imgSrc.classes}>
-      <div ref={imageContainerRef}>
+      <div ref={imageContainerRef} data-scroll data-scroll-speed={imgSrc['data-scroll-speed']}>
         <img ref={imageRef}
           className={imgSrc.imgClasses}
           src={imgSrc.src}
