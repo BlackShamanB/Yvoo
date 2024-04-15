@@ -37,9 +37,9 @@ function Hero() {
 
   return (
     <div className="relative w-full px-[20px] customsm:px-[50px] md:h-[820px] h-[547px] bg-[#414141] flex justify-center 3xl:pt-[163px] 2xl:pt-[156px] md:pt-[162px] pt-[38px] xl:pb-0 md:max-h-[1008px] max-h-[547px]">
-      <div className="absolute top-0 w-full customsm:px-[50px] h-[547px] md:h-[820px]">
+      <div className="absolute top-0 w-full customsm:px-[50px] h-[547px] md:h-[1826px] bg-black">
         <Image
-          src={"/images/homeBg.webp"}
+          src={"/images/HomeBg.webp"}
           alt="hero"
           layout="fill"
           objectFit="cover"
@@ -53,27 +53,6 @@ function Hero() {
         data-scroll-speed="0.3"
       >
         <div className="3xl:max-w-[1516px] 2xl:max-w-[1116px] md:max-w-[598px] 3xl:w-[1516px] 2xl:w-[1116px] mx-[auto] md:pl-[0] pl-[20px] md:pr-[0] pr-[20px] md:pt-[0] pt-[39px]">
-          {/* <h1 className="uppercase font-machina 2xl:text-[50px] md:text-[40px] text-[30px] font-[800] 2xl:leading-[54px] md:leading-44px] leading-[34px] max-w-[880px] md:block hidden">
-            <TypingEffect text="Welcome to YVOO the" speed={100} delay = {0}/>{" "}<br/>
-            <TypingEffect text="Sourcer" speed={100} delay = {0}/>
-            <b className="text-primary">
-              <TypingEffect text="Pro+" speed={100} delay = {0.7}/>
-            </b>{" "}
-            <TypingEffect text="Your Ultimate" speed={100}  delay = {1.1}/>{" "}<br/>
-            <TypingEffect text="Industrial B2B Supplier" speed={100} delay = {0} />{" "}<br/>
-            <TypingEffect text="Platform" speed={100} delay = {0} />
-          </h1>
-          <h1 className="uppercase font-machina 2xl:text-[50px] md:text-[40px] text-[30px] font-[800] 2xl:leading-[54px] md:leading-44px] leading-[34px] max-w-[880px] md:hidden block">
-            <TypingEffect text="Welcome to" speed={100} delay = {0}/>{" "}<br/>
-            <TypingEffect text="YVOO the" speed={100} delay = {0}/><br/>
-            <b className="text-primary">
-              <TypingEffect text="Sourcer Pro+" speed={100} delay = {0}/>
-            </b>{" "}
-            <TypingEffect text="Your Ultimate" speed={100}  delay = {1.1}/>{" "}<br/>
-            <TypingEffect text="Industrial B2B" speed={100} delay = {0} />{" "}<br/>
-            <TypingEffect text="Supplier" speed={100} delay = {0} />
-            <TypingEffect text="Platform" speed={100} delay = {0} />
-          </h1> */}
           <h1
             className="relative uppercase font-machina 2xl:text-[50px] md:text-[40px] text-[30px] font-[800] 2xl:leading-[54px] md:leading-44px] leading-[34px] max-w-[880px]"
             ref={elementRef}
@@ -84,8 +63,7 @@ function Hero() {
               transition: "linear 0.5s",
             }}
           >
-            Welcome to YVOO the Sourcer<b className="text-primary">Pro+</b> Your
-            Ultimate Industrial B2B Supplier Platform"
+            The AI Procurement Platform
           </h1>
         </div>
         <div className="3xl:max-w-[1516px] 2xl:max-w-[1116px] md:max-w-[598px] 3xl:w-[1516px] 2xl:w-[1116px] md:w-[598px] md:mx-[auto] mx-[22px] 3xl:mt-[77px] 2xl:mt-[82px] md:mt-[52px] mt-[43px] flex items-center md:gap-[32px] gap-[15px]">

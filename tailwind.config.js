@@ -28,6 +28,7 @@ module.exports = {
         mint: "#53D3AA",
       },
       backgroundImage: {
+        HomeBg: "url(../public/images/HomeBg.webp)",
         homeBg: "url(../public/images/homeBg.webp)",
         homeBg2xl: "url(../public/images/homeBg2xl.webp)",
         homeBgmd: "url(../public/images/homeBgmd.webp)",
@@ -105,6 +106,9 @@ module.exports = {
         solutionBgmd: "url(../public/images/solutionBgmd.webp)",
         solutionBg: "url(../public/images/solutionBg.webp)",
         // discoverConnectExcelsm: "url(../public/images/discover-connectexcel.webp)",
+
+        inneffectiveBg: "url(../public/icons/inneffective.svg)",
+        labelBg: "url(../public/icons/bgLabel.svg)",
       },
       screens: {
         xs: "361px",

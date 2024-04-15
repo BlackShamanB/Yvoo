@@ -36,15 +36,6 @@ function Search({ handleModal }) {
         data-scroll-speed="0.12"
       >
         <div className="relative grid grid-cols-1 2xl:grid-cols-2 w-full bg-no-repeat bg-bottom z-30">
-          <Image
-            src="/icons/squares-1.png"
-            width={80}
-            height={90}
-            alt="triangle"
-            className="absolute 2xl:top-[-59px] top-[-111%] 3xl:left-[22%] 2xl:left-[20.5%] left-[82%] mouse-parallax 2xl:block md:hidden block md:max-w-[none] max-w-[45px] transform md:scale-y-[1] scale-y-[-1]"
-            data-scroll
-            data-scroll-speed="0.1"
-          />
 
           <div
             style={{
