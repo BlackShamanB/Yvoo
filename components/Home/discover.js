@@ -4,7 +4,7 @@ import { Link as ReactScrollLink } from "react-scroll";
 
 function Discover() {
   return (
-    <div className="relative grid w-full flex justify-center 2xl:bg-discoverConnectExcel2xl md:bg-discoverConnectExcelmd bg-discoverConnectExcel bg-no-repeat 3xl:bg-contain 2xl:bg-auto bg-[size:100%] 3xl:bg-[position:0_0] 2xl:bg-[position:-240px_2px] md:bg-[position:0_0%] bg-[position:0_19%]">
+    <div className="relative grid w-full flex justify-center">
       <Image
         src="/icons/greenTriangle-1.png"
         width={116}
