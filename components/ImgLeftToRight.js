@@ -15,7 +15,6 @@ const MagnifyOnScroll = (imgSrc) => {
         setVisibilityPercentage(1000);
       } else if (top < windowHeight && bottom > 0) {
         const visiblePercentage = ((windowHeight - top) / height) * 200;
-        console.log(visiblePercentage);
         setVisibilityPercentage(visiblePercentage);
       } else {
         setVisibilityPercentage(100);

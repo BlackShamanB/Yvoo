@@ -50,7 +50,7 @@ function Expensive({ handleModal }) {
             width={116}
             height={139}
             alt="triangle"
-            className="absolute 2xl:top-[-40%] top-[-111%] 3xl:left-[85%] 2xl:left-[85%] left-[82%] mouse-parallax 2xl:block md:hidden block"
+            className="absolute 2xl:top-[-40%] top-[-111%] 3xl:left-[85%] 2xl:left-[85%] left-[82%] mouse-parallax 2xl:block md:hidden block md:max-w-[116px] max-w-[63px]"
             data-scroll
             data-scroll-speed="0.1"
           />
@@ -59,7 +59,7 @@ function Expensive({ handleModal }) {
             width={189}
             height={174}
             alt="triangle"
-            className="absolute 2xl:top-[55%] top-55%] 3xl:left-[-8%] 2xl:left-[-8%] left-[20%] mouse-parallax md:max-w-[180px] max-w-[127px] z-[1]"
+            className="absolute 2xl:top-[55%] top-[15%] 3xl:left-[-8%] 2xl:left-[-8%] left-[20%] mouse-parallax md:max-w-[180px] max-w-[127px] z-[1] md:block hidden"
             data-scroll
             data-scroll-speed="0.5"
           />
@@ -68,7 +68,7 @@ function Expensive({ handleModal }) {
             width={293}
             height={105}
             alt="triangle"
-            className="absolute z-[-1] top-[40%] left-[18%]"
+            className="absolute z-[-1] top-[40%] md:left-[18%] left-[5%]"
           />
           <div className="flex md:flex-center flex-col gap-[80px]">
             <div className="flex items-center 2xl:gap-[11px] gap-[8px]">
@@ -79,7 +79,7 @@ function Expensive({ handleModal }) {
                 of buyers rely on outdated methods for supplier search.
               </p>
             </div>
-            <div className="flex flex-col gap-[24px]">
+            <div className="flex flex-col gap-[24px] md:px-[0] px-[41px]">
               <div className="font-[400] text-[24px] leading-[30px]">
                 No effective way to make the sourcing decision without an
                 on-site supplier qualification:
@@ -138,14 +138,14 @@ function Expensive({ handleModal }) {
             </div>
           </div>
           <div
-            className="md:px-[0] px-[41px] 3xl:pr-[0px] text-black z-30 md:mb-[120px] mb-[100px] 2xl:mb-0 md:mb-[120px] flex flex-col 2xl:gap-[20px] gap-[21px] font-[400] [&>p]:text-[22px] [&>p]:customxs:text-[24px] leading-[30px] 3xl:pl-[84px] 2xl:pl-[54px]"
+            className="md:px-[0] px-[41px] 3xl:pr-[0px] text-black z-30 2xl:mt-[0] mt-[80px] md:mb-[120px] mb-[100px] 2xl:mb-0 md:mb-[120px] flex flex-col 2xl:gap-[20px] gap-[21px] font-[400] [&>p]:text-[22px] [&>p]:customxs:text-[24px] leading-[30px] 3xl:pl-[84px] 2xl:pl-[54px]"
             data-scroll
             data-scroll-speed="0.16"
           >
-            <h2 className="font-machina uppercase text-white font-[800] text-[50px] leading-[54px] mb-[52px]">
+            <h2 className="font-machina uppercase text-white font-[800] md:text-[50px] text-[24px] md:leading-[54px] leading-[30px] mb-[52px]">
               Expensive, Slow, Ineffective
             </h2>
-            <div className="flex font-[400] [&>p]:text-[22px] [&>p]:customxs:text-[24px] leading-[30px] gap-[57px] items-center mb-[55px]">
+            <div className="flex md:flex-row flex-col font-[400] [&>p]:text-[22px] [&>p]:customxs:text-[24px] leading-[30px] gap-[57px] items-center mb-[55px]">
               <div className="flex font-machina text-[#06D7F9] font-[800] text-[50px] leading-[54px] gap-[12px]">
                 <Image
                   src="/icons/arrow-to-right.svg"
@@ -156,9 +156,9 @@ function Expensive({ handleModal }) {
                 />
                 34W
               </div>
-              <p className="font-[800] text-white">Per supplier onboarding</p>
+              <p className="font-[800] text-white md:text-left text-center">Per supplier onboarding</p>
             </div>
-            <div className="flex font-[400] [&>p]:text-[22px] [&>p]:customxs:text-[24px] leading-[30px] gap-[53px] items-center mb-[23px]">
+            <div className="flex md:flex-row flex-col md:flex-row flex-col font-[400] [&>p]:text-[22px] [&>p]:customxs:text-[24px] leading-[30px] gap-[53px] items-center mb-[23px]">
               <Image
                 src="/icons/slow.svg"
                 width={182}
@@ -168,7 +168,7 @@ function Expensive({ handleModal }) {
               />
               <p className="font-[800] text-white">of Audits fail</p>
             </div>
-            <div className="flex font-[400] [&>p]:text-[22px] [&>p]:customxs:text-[24px] leading-[30px] gap-[53px] items-center">
+            <div className="flex md:flex-row flex-col font-[400] [&>p]:text-[22px] [&>p]:customxs:text-[24px] leading-[30px] gap-[41px] items-center">
               <div className="relative bg-blend-screen w-[197px] h-[202px] bg-inneffectiveBg bg-[#131D2A]"></div>
               <p className="font-[800] text-white">Costs per Supplier</p>
             </div>

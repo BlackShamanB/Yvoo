@@ -27,7 +27,7 @@ function Scan({ handleModal }) {
   return (
     <div
       id="scan"
-      className="relative grid w-full w-full bg-[#06D7F9] bg-local bg-contain 3xl:bg-[length:100%_975px] 2xl:bg-[length:100%_858px] bg-no-repeat bg-bottom z-30"
+      className="relative grid w-full w-full bg-[#06D7F9] bg-local bg-contain 3xl:bg-[length:100%_975px] 2xl:bg-[length:100%_858px] bg-no-repeat bg-bottom"
     >
       <div
         className="3xl:max-w-[1516px] 2xl:max-w-[1116px] md:max-w-[598px] mx-[auto]"

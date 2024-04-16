@@ -28,8 +28,18 @@ function Effective({ handleModal }) {
   return (
     <div
       id="situation"
-      className="relative grid w-full bg-local bg-contain bg-bottom absolute inset-0 bg-white min-h-[688px]"
+      className="relative grid w-full overflow-x-clip bg-local bg-contain bg-bottom absolute inset-0 bg-[#fff] min-h-[688px]"
     >
+    <ImgLeftToRight
+      src="/icons/icon-line.svg"
+      width={590}
+      height={106}
+      alt="line"
+      classesImg="md:max-w-[590px] max-w-[217px]"
+      classesContainer="absolute overflow-hidden md:max-w-[590px] 3xl:top-[42%] 2xl:top-[40%] md:top-[56.9%] top-[45%] 3xl:left-[78%] 2xl:left-[75%] md:left-[59%] left-[40%] z-[1]"
+      data-scroll
+      data-scroll-speed="0.13"
+    />
       <div
         className="3xl:max-w-[1516px] 2xl:max-w-[1116px] md:max-w-[598px] mx-[auto]"
         data-scroll
@@ -64,8 +74,8 @@ function Effective({ handleModal }) {
             data-scroll-speed="0.5"
           />
           <div className="flex md:flex-center flex-col gap-[80px] pt-[160px]">
-            <div className="flex flex-col gap-[24px]">
-              <div className="font-machina text-[#06D7F9] uppercase font-[800] text-[50px] leading-[54px]">
+            <div className="flex flex-col gap-[24px] md:px-[0] px-[41px]">
+              <div className="font-machina text-[#06D7F9] uppercase font-[800] md:text-[50px] text-[40px] md:leading-[54px] leading-[44px]">
                 an effective, fast, and cost-efficient AI-powered solution
               </div>
               <div className="flex flex-col gap-[20px] text-black">
@@ -145,7 +155,7 @@ function Effective({ handleModal }) {
             </div>
           </div>
           <div
-            className="md:px-[0] px-[41px] 3xl:pr-[0px] text-black z-30 md:mb-[120px] mb-[100px] 2xl:mb-0 md:mb-[120px] flex flex-col 2xl:gap-[20px] gap-[21px] font-[400] [&>p]:text-[22px] [&>p]:customxs:text-[24px] leading-[30px] 3xl:pl-[84px] 2xl:pl-[54px]"
+            className="md:px-[0] px-[41px] 3xl:pr-[0px] text-black z-30 2xl:mt-[0] mt-[80px] md:mb-[120px] mb-[100px] 2xl:mb-0 md:mb-[120px] flex flex-col 2xl:gap-[20px] gap-[21px] font-[400] [&>p]:text-[22px] [&>p]:customxs:text-[24px] leading-[30px] 3xl:pl-[84px] 2xl:pl-[54px]"
             data-scroll
             data-scroll-speed="0.16"
           >
@@ -160,17 +170,7 @@ function Effective({ handleModal }) {
           </div>
         </div>
       </div>
-            <ImgLeftToRight
-              src="/icons/icon-line.svg"
-              width={590}
-              height={106}
-              alt="line"
-              classesImg="md:max-w-[590px] max-w-[217px]"
-              classesContainer="absolute overflow-hidden md:max-w-[590px] 3xl:top-[42%] 2xl:top-[40%] md:top-[56.9%] top-[45%] 3xl:left-[78%] 2xl:left-[75%] md:left-[59%] left-[40%] z-[1]"
-              data-scroll
-              data-scroll-speed="0.13"
-            />
-      <div className="w-[100%] h-[86px] bg-labelBg"></div>
+      <div className="w-[100%] h-[86px] bg-labelBg 3xl:mt-[0] 2xl:mt-[50px]"></div>
     </div>
   );
 }
