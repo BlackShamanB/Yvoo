@@ -1,8 +1,8 @@
 function SimpleSteps({ handleModal }) {
   return (
-    <div className="w-full px-[22px] md:px-[85px] 2xl:px-[162px] 3xl:px-[202px] py-[98px] md:py-[95px] 2xl:py-[92px] 3xl:py-[95px]">
+    <div className="w-full px-[22px] md:px-[85px] 2xl:px-[162px] 3xl:px-[202px] py-[98px] md:py-[95px] 2xl:py-[92px] 3xl:py-[100px]">
       <h1
-        className="md:px-[0] px-[19px] mb-[40px] md:mb-[62px] 2xl:mb-[48px] text-[#06D7F9] font-machina font-[800] uppercase text-[30px] md:text-[40px] 2xl:text-[50px] leading-[34px] md:leading-[44px] 2xl:leading-[54px] max-w-full sm:max-w-[600px] md:max-w-[423px] 2xl:max-w-[529px]"
+        className="md:px-[0] px-[19px] mb-[40px] md:mb-[62px] 2xl:mb-[42px] text-[#06D7F9] font-machina font-[800] uppercase text-[30px] md:text-[40px] 2xl:text-[50px] leading-[34px] md:leading-[44px] 2xl:leading-[54px] max-w-full sm:max-w-[600px] md:max-w-[423px] 2xl:max-w-[529px]"
         data-scroll
         data-scroll-speed="0.1"
       >

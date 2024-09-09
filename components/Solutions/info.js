@@ -2,7 +2,7 @@ import Image from "next/image";
 
 function Info() {
   return (
-    <div className="relative grid grid-cols-1 2xl:grid-rows-2 2xl:grid-cols-2 w-full gap-x-[170px] 2xl:gap-x-[110px] 2xl:gap-y-[60px] gap-y-[30px] px-[41px] md:px-[85px] 2xl:px-[162px] 3xl:px-[202px] py-[100px] md:py-[120px] 2xl:py-[121px] 3xl:py-[120px] bg-[#F6F6F6]">
+    <div className="relative grid grid-cols-1 2xl:grid-rows-2 2xl:grid-cols-2 w-full gap-x-[170px] 2xl:gap-x-[170px] 2xl:gap-y-[60px] gap-y-[30px] px-[41px] md:px-[85px] 2xl:px-[162px] 3xl:px-[202px] py-[100px] md:py-[120px] 2xl:py-[121px] 3xl:py-[120px] bg-[#F6F6F6]">
       {/* <Image
         src="/icons/search-pro-icon.svg"
         width={127}

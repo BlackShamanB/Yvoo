@@ -4,7 +4,7 @@ import ImgLeftToRight from "../ImgLeftToRight"
 
 function Results({ handleModal }) {
   return (
-    <div className="relative grid w-full inset-0 bg-[#131D2A] -mt-[1px] 3xl:pt-[129px]">
+    <div className="relative grid w-full inset-0 bg-[#131D2A] -mt-[1px] 3xl:pt-[138px]">
       <Image
         src="/icons/squares-2.png"
         width={96}
@@ -45,19 +45,19 @@ function Results({ handleModal }) {
           />
         </div>
         <div className="3xl:pl-[84px] 2xl:pl-[54px] w-full bg-[#131D2A]" data-scroll data-scroll-speed="0.2">
-          <div className="3xl:mt-[37px] 3xl:mb-[37px] 2xl:mt-[167px] 2xl:mb-[81px] 2xl:pt-[0] pt-[58px] md:pr-[0] md:px-[0] px-[41px] flex flex-col">
+          <div className="3xl:mt-[44px] 3xl:mb-[37px] 2xl:mt-[167px] 2xl:mb-[81px] 2xl:pt-[0] pt-[58px] md:pr-[0] md:px-[0] px-[41px] flex flex-col">
             <h1 className="text-[#06D7F9] font-machina font-[800] uppercase 2xl:text-[50px] md:text-[40px] text-[30px] 2xl:leading-[54px] md:leading-[44px] leading-[34px] max-w-full md:max-w-[unset] 2xl:max-w-[650px]">
               Results that speak for themselves
             </h1>
-            <h1 className="font-[700] 2xl:text-[24px] md:text-[20px] text-[16px] 2xl:leading-[30px] md:leading-[26px] leading-[20px] text-white 2xl:mt-[31px] md:mt-[21px] mt-[15px]">
+            <h1 className="font-[700] 2xl:text-[24px] md:text-[20px] text-[16px] 2xl:leading-[30px] md:leading-[26px] leading-[20px] text-white 2xl:mt-[24px] md:mt-[21px] mt-[15px]">
               Don't settle for outdated practices. Embrace the future of
               sourcing with YVOO SourcerPro+
             </h1>
-            <p className="text-white font-[400] md:text-[16px] text-[14px] leading-[20px] 2xl:mt-[25px] md:mt-[16px] mt-[12px]">
+            <p className="text-white font-[400] md:text-[16px] text-[14px] leading-[20px] 2xl:mt-[24px] md:mt-[16px] mt-[12px]">
               Book a demo now and unlock the full potential of your procurement
               process.
             </p>
-            <button className="white_btn btn_animated_white 2xl:mt-[43px] md:mt-[28px] mt-[24px] max-w-[159px]" onClick={handleModal}>
+            <button className="white_btn btn_animated_white 2xl:mt-[42px] md:mt-[28px] mt-[24px] max-w-[159px]" onClick={handleModal}>
               Request Demo
             </button>
           </div>
