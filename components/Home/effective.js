@@ -30,18 +30,8 @@ function Effective({ handleModal }) {
       id="situation"
       className="relative grid w-full overflow-x-clip bg-local bg-contain bg-bottom absolute inset-0 bg-[#fff] min-h-[688px]"
     >
-    <ImgLeftToRight
-      src="/icons/icon-line.svg"
-      width={590}
-      height={106}
-      alt="line"
-      classesImg="md:max-w-[590px] max-w-[217px]"
-      classesContainer="absolute overflow-hidden md:max-w-[590px] 3xl:top-[42%] 2xl:top-[40%] md:top-[56.9%] top-[45%] 3xl:left-[78%] 2xl:left-[75%] md:left-[59%] left-[40%] z-[1]"
-      data-scroll
-      data-scroll-speed="0.13"
-    />
       <div
-        className="3xl:max-w-[1516px] 2xl:max-w-[1116px] md:max-w-[598px] mx-[auto]"
+        className="3xl:max-w-[1516px] 2xl:max-w-[1116px] md:max-w-[598px] mx-[auto] mb-[144px]"
         data-scroll
         data-scroll-speed="0.12"
       >
@@ -51,16 +41,7 @@ function Effective({ handleModal }) {
             width={101}
             height={113}
             alt="triangle"
-            className="absolute 2xl:top-[18%] top-[20%] 3xl:left-[-8%] 2xl:left-[-5%] left-[10%] mouse-parallax 2xl:block md:hidden block md:max-w-[none] max-w-[101px] transform"
-            data-scroll
-            data-scroll-speed="0.1"
-          />
-          <Image
-            src="/icons/greenTriangle-4.svg"
-            width={116}
-            height={139}
-            alt="triangle"
-            className="absolute 2xl:top-[-40%] top-[-111%] 3xl:left-[85%] 2xl:left-[85%] left-[82%] mouse-parallax 2xl:block md:hidden block"
+            className="absolute 2xl:top-[10%] top-[20%] 3xl:left-[2%] 2xl:left-[-5%] left-[10%] mouse-parallax 2xl:block md:hidden block md:max-w-[none] max-w-[101px] transform"
             data-scroll
             data-scroll-speed="0.1"
           />
@@ -69,14 +50,15 @@ function Effective({ handleModal }) {
             width={145}
             height={140}
             alt="triangle"
-            className="md:block absolute 2xl:top-[55%] top-55%] 3xl:left-[-12%] 2xl:left-[-8%] left-[20%] 2xl:max-w-[unset] md:max-w-[110px] max-w-[70px] mouse-parallax"
+            className="md:block absolute 2xl:top-[84%] top-[55%] 3xl:left-[-5%] 2xl:left-[-8%] left-[20%] 2xl:max-w-[unset] md:max-w-[110px] max-w-[70px] mouse-parallax"
             data-scroll
             data-scroll-speed="0.5"
           />
-          <div className="flex md:flex-center flex-col gap-[80px] pt-[160px]">
+          <div className="flex md:flex-center flex-col gap-[80px] pt-[210px] pl-[155px]">
             <div className="flex flex-col gap-[24px] md:px-[0] px-[41px]">
-              <div className="font-machina text-[#06D7F9] uppercase font-[800] md:text-[50px] text-[40px] md:leading-[54px] leading-[44px]">
-                an effective, fast, and cost-efficient AI-powered solution
+              <div className="font-[700] text-[30px] leading-[38px] text-[#000]">YVOO solve this problem</div>
+              <div className="font-machina text-[#06D7F9] uppercase font-[800] md:text-[50px] text-[40px] md:leading-[54px] leading-[44px] mb-[18px]">
+                Fast, Affordable, Effective
               </div>
               <div className="flex flex-col gap-[20px] text-black">
                 <div className="flex gap-[9px]">
@@ -87,7 +69,7 @@ function Effective({ handleModal }) {
                     alt="triangle"
                     className=""
                   />
-                  <div className="font-[400] text-[16px] leading-[20px]">
+                  <div className="font-[400] text-[24px] leading-[30px]">
                     Access to 6M suppliers
                   </div>
                 </div>
@@ -99,7 +81,7 @@ function Effective({ handleModal }) {
                     alt="triangle"
                     className=""
                   />
-                  <div className="font-[400] text-[16px] leading-[20px]">
+                  <div className="font-[400] text-[24px] leading-[30px]">
                     Global network of auditors (on-site)
                   </div>
                 </div>
@@ -111,7 +93,7 @@ function Effective({ handleModal }) {
                     alt="triangle"
                     className=""
                   />
-                  <div className="font-[400] text-[16px] leading-[20px]">
+                  <div className="font-[400] text-[24px] leading-[30px]">
                     10X Faster decision-making
                   </div>
                 </div>
@@ -123,7 +105,7 @@ function Effective({ handleModal }) {
                     alt="triangle"
                     className=""
                   />
-                  <div className="font-[400] text-[16px] leading-[20px]">
+                  <div className="font-[400] text-[24px] leading-[30px]">
                     Over 85% accuracy in matching search results
                   </div>
                 </div>
@@ -135,7 +117,7 @@ function Effective({ handleModal }) {
                     alt="triangle"
                     className=""
                   />
-                  <div className="font-[400] text-[16px] leading-[20px]">
+                  <div className="font-[400] text-[24px] leading-[30px]">
                     100% Audit success rate guaranteed
                   </div>
                 </div>
@@ -147,7 +129,7 @@ function Effective({ handleModal }) {
                     alt="triangle"
                     className=""
                   />
-                  <div className="font-[400] text-[16px] leading-[20px]">
+                  <div className="font-[400] text-[24px] leading-[30px]">
                     70% Reduction in supplier onboarding costs
                   </div>
                 </div>
@@ -170,7 +152,17 @@ function Effective({ handleModal }) {
           </div>
         </div>
       </div>
-      <div className="w-[100%] h-[86px] bg-labelBg 3xl:mt-[0] 2xl:mt-[50px]"></div>
+    <ImgLeftToRight
+      src="/icons/icon-line.svg"
+      width={590}
+      height={106}
+      alt="line"
+      classesImg="md:max-w-[519px] md:w-[519px] max-w-[217px]"
+      classesContainer="absolute overflow-hidden md:max-w-[519px] md:w-[519px] 3xl:top-[33%] 2xl:top-[40%] md:top-[56.9%] top-[45%] 3xl:left-[73%] 2xl:left-[75%] md:left-[59%] left-[40%] z-[30]"
+      data-scroll
+      data-scroll-speed="0.13"
+    />
+      <div className="w-[100%] h-[86px] bg-labelBg 3xl:mt-[0] 2xl:mt-[50px] running-image"></div>
     </div>
   );
 }

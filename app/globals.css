@@ -330,3 +330,16 @@ body {
   top: 0;
   background-color: #06D7F9;
 } */
+
+.running-image {
+  animation: run 60s linear infinite;
+}
+
+@keyframes run {
+  0% {
+    background-position: 100vw -1px;
+  }
+  100% {
+    background-position: -100vw -1px;
+  }
+}

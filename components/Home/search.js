@@ -28,8 +28,30 @@ function Search({ handleModal }) {
   return (
     <div
       id="search"
-      className="relative grid w-full bg-local bg-contain bg-bottom absolute inset-0 bg-mint"
+      className="relative grid w-full bg-local bg-contain bg-bottom absolute inset-0 bg-mint mt-[-5px]"
     >
+    <MagnifyOnScroll
+      style={{ zIndex: 0 }}
+      src="/images/discover.webp"
+      img-src="/images/discover.webp"
+      width={1004}
+      height={553}
+      alt="yvoo-search"
+      classes="absolute min-w-[50px] 2xl:bottom-[0px] md:bottom-[unset] 2xl:top-[unset] md:top-[186px] top-[211px] 3xl:left-[0] 2xl:left-[-114px] md:left-[-61px] z-10 3xl:max-w-[1004px] 2xl:max-w-[774px] md:max-w-[659px] max-w-[89%]"
+      // data-scroll
+      // data-scroll-speed="0.01"
+    />
+    <MagnifyOnScroll
+      style={{ zIndex: 0 }}
+      src="/images/phone_main_page.webp"
+      img-src="/images/phone_main_page.webp"
+      width={244}
+      height={499}
+      alt="yvoo-search"
+      classes="absolute min-w-[50px] 2xl:bottom-[172px] md:bottom-[unset] 2xl:top-[unset] md:top-[186px] top-[211px] 3xl:left-[761px] 2xl:left-[-114px] md:left-[-61px] z-10 3xl:max-w-[1004px] 2xl:max-w-[774px] md:max-w-[659px] max-w-[89%]"
+      // data-scroll
+      // data-scroll-speed="0.01"
+    />
       <div
         className="3xl:max-w-[1516px] 2xl:max-w-[1116px] md:max-w-[598px] mx-[auto]"
         data-scroll
@@ -45,24 +67,13 @@ function Search({ handleModal }) {
             }}
             className="md:flex-center flex-col"
           >
-            <MagnifyOnScroll
-              style={{ zIndex: 0 }}
-              src="/images/discover.webp"
-              img-src="/images/discover.webp"
-              width={900}
-              height={654}
-              alt="yvoo-search"
-              classes="absolute min-w-[50px] 2xl:bottom-[0px] md:bottom-[unset] 2xl:top-[unset] md:top-[186px] top-[211px] 3xl:left-[0] 2xl:left-[-114px] md:left-[-61px] z-10 3xl:max-w-[900px] 2xl:max-w-[774px] md:max-w-[659px] max-w-[89%]"
-              // data-scroll
-              // data-scroll-speed="0.01"
-            />
             <div
-              className="md:relative z-30 flex flex-wrap flex-col items-start 2xl:gap-[30px] md:gap-[20px] gap-[12px] 3xl:mt-[106px] 2xl:mt-[107px] md:mt-[115px] mt-[98px] 3xl:mb-[442px] 2xl:mb-[350px] 2xl:leading-[50px] md:px-[0] px-[41px]"
+              className="md:relative z-30 flex flex-wrap flex-col items-start 2xl:gap-[24px] md:gap-[20px] gap-[12px] 3xl:mt-[100px] 2xl:mt-[107px] md:mt-[115px] mt-[98px] 3xl:mb-[455px] 2xl:mb-[350px] 2xl:leading-[50px] md:px-[0] px-[41px]"
               data-scroll
               data-scroll-speed="0.2"
             >
               <h1
-                className="uppercase font-machina font-[800] 2xl:text-[50px] md:text-[40px] text-[30px] 2xl:leading-[54px] md:leading-[44px] leading-[34px] max-w-[318px] 2xl:max-w-[438px] 3xl:ml-[145px] 2xl:ml-[0]"
+                className="uppercase font-machina font-[800] 2xl:text-[50px] md:text-[40px] text-[30px] 2xl:leading-[54px] md:leading-[44px] leading-[34px] max-w-[318px] 2xl:max-w-[438px] 3xl:ml-[153px] 2xl:ml-[0]"
                 ref={elementRef}
                 style={{
                   visibility: elementVisible ? "visible" : "hidden",
@@ -77,7 +88,7 @@ function Search({ handleModal }) {
                 </b> */}
                 YVOO Search<b className="text-black">Pro+</b>
               </h1>
-              <div className="flex flex-col 2xl:gap-[42px] md:gap-[28px] gap-[24px] 2xl:max-w-[438px] 3xl:ml-[145px] 2xl:ml-[0]">
+              <div className="flex flex-col 2xl:gap-[42px] md:gap-[28px] gap-[24px] 2xl:max-w-[438px] 3xl:ml-[153px] 2xl:ml-[0]">
                 <p className="font-[700] text-black 2xl:text-[24px] md:text-[20px] text-[16px] 2xl:leading-[30px] md:leading-[26px] leading-[20px] 2xl:max-w-[260px] max-w-[293px]">
                   Discover Quality Suppliers Effortlessly
                 </p>
@@ -92,7 +103,7 @@ function Search({ handleModal }) {
             </div>
           </div>
           <div
-            className="md:px-[0] px-[41px] 3xl:pr-[0px] text-black z-30 md:mb-[120px] mb-[100px] 2xl:mb-0 md:mb-[120px] 2xl:mt-[96px] md:mt-[238px] mt-[113px] flex flex-col 2xl:gap-[20px] gap-[21px] font-[400] [&>p]:text-[14px] [&>p]:customxs:text-[16px] leading-[20px] 3xl:pl-[84px] 2xl:pl-[54px]"
+            className="md:px-[0] px-[41px] text-black z-30 md:mb-[120px] mb-[100px] 2xl:mb-0 md:mb-[120px] 2xl:mt-[232px] md:mt-[238px] mt-[113px] flex flex-col 2xl:gap-[20px] gap-[21px] font-[400] [&>p]:text-[14px] [&>p]:customxs:text-[16px] leading-[20px] 3xl:px-[86px] 2xl:pl-[54px]"
             data-scroll
             data-scroll-speed="0.16"
           >
@@ -105,17 +116,15 @@ function Search({ handleModal }) {
               className="z-10 2lg:max-w-[96px] md:max-w-[97px] max-w-[69px] mb-[8px]"
             />
             <p>
-              In today's fast-paced business world, finding reliable suppliers
-              can&nbsp;be a daunting and time&#8209;consuming task. Manual
-              searches and communication with suppliers worldwide
-              often&nbsp;result in wasted resources and unsuitable options.
-              However, there is a better way to&nbsp;streamline this process.
+              In today's fast-paced business world, finding reliable suppliers can be a 
+              daunting and time-consuming task. Manual searches and communication 
+              with suppliers worldwide often result in wasted resources and unsuitable 
+              options. However, there is a better way to streamline this process.
             </p>
             <p>
-              Introducing YVOO, an AI-powered platform designed to revolutionize
-              supplier sourcing. Say goodbye to the hassle and uncertainty of
-              traditional methods and embrace a more efficient and effective
-              solution.
+              Introducing YVOO, an AI-powered platform designed to revolutionize supplier 
+              sourcing. Say go===odbye to the hassle and uncertainty of traditional 
+              methods and embrace a more efficient and effective solution.
             </p>
             <p>
               Here's why you should book a demo today{" "}

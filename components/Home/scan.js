@@ -27,7 +27,7 @@ function Scan({ handleModal }) {
   return (
     <div
       id="scan"
-      className="relative grid w-full w-full bg-[#06D7F9] bg-local bg-contain 3xl:bg-[length:100%_975px] 2xl:bg-[length:100%_858px] bg-no-repeat bg-bottom"
+      className="relative grid w-full w-full bg-[#06D7F9] bg-local bg-contain 3xl:bg-[length:100%_975px] 2xl:bg-[length:100%_858px] bg-no-repeat bg-bottom z-[1]"
     >
       <div
         className="3xl:max-w-[1516px] 2xl:max-w-[1116px] md:max-w-[598px] mx-[auto]"
@@ -82,7 +82,7 @@ function Scan({ handleModal }) {
                 width={115}
                 height={108}
                 alt="yvoo-search"
-                className="md:max-w-[115px] max-w-[85px] z-10 3xl:ml-[-32px] 2xl:ml-[-33px] 3xl:mb-[7px] 2xl:mb-[4px] 2xl:relative absolute md:right-[0] right-[37px] 2xl:top-[0] md:top-[-62px] top-[-29px]"
+                className="md:max-w-[115px] max-w-[85px] z-10 3xl:ml-[-32px] 2xl:ml-[-33px] 3xl:mb-[22px] 2xl:mb-[4px] 2xl:relative absolute md:right-[0] right-[37px] 2xl:top-[0] md:top-[-62px] top-[-29px]"
               />
               <h2 className="text-black font-[700] 2xl:text-[24px] md:text-[20px] text-[16px] 2xl:leading-[30px] md:leading-[26px] leading-[20px] 3xl:mb-[21px] 2xl:mb-[22px] md:mb-[8px] mb-[-4px] md:pr-[150px] pr-[85px]">
                 Unlock Your Supplier Potential, Maximize Audit Success!
@@ -144,12 +144,12 @@ function Scan({ handleModal }) {
                 position: "relative",
                 transform: "translateZ(10px)",
               }}
-              className="flex flex-wrap items-center md:items-start md:flex-nowrap md:flex-col gap-[24px] md:mt-[132px] 3xl:mb-[420px] 2xl:mb-[398px] 2xl:block hidden"
+              className="flex flex-wrap items-center md:items-start md:flex-nowrap md:flex-col gap-[24px] md:mt-[135px] 3xl:mb-[420px] 2xl:mb-[398px] 2xl:block hidden"
               data-scroll
               data-scroll-speed="0.1"
             >
               <h1
-                className="uppercase font-machina font-[800] text-[40px] text-white 2xl:text-[50px] leading-[30px] md:leading-[40px] 2xl:leading-[52px] max-w-[318px] 2xl:max-w-[340px] mb-[32px]"
+                className="uppercase font-machina font-[800] text-[40px] text-white 2xl:text-[50px] leading-[30px] md:leading-[40px] 2xl:leading-[54px] max-w-[318px] 2xl:max-w-[340px] mb-[24px]"
                 ref={elementRef}
                 style={{
                   visibility: elementVisible ? "visible" : "hidden",

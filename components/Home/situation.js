@@ -50,7 +50,7 @@ function Situation({ handleModal }) {
             width={80}
             height={90}
             alt="triangle"
-            className="absolute 2xl:top-[-59px] top-[-111%] 3xl:left-[22%] 2xl:left-[20.5%] left-[82%] mouse-parallax 2xl:block md:hidden block md:max-w-[none] max-w-[45px] transform md:scale-y-[1] scale-y-[-1]"
+            className="absolute 2xl:top-[-152px] top-[-111%] 3xl:left-[20%] 2xl:left-[20.5%] left-[82%] mouse-parallax 2xl:block md:hidden block md:max-w-[none] max-w-[45px] transform md:scale-y-[1] scale-y-[-1]"
             data-scroll
             data-scroll-speed="0.1"
           />
@@ -73,7 +73,7 @@ function Situation({ handleModal }) {
             className="md:flex-center flex-col"
           ></div>
           <div
-            className="md:px-[0] px-[41px] 3xl:pr-[0px] text-black z-30 md:mb-[120px] mb-[100px] 2xl:mb-0 md:mb-[120px] 2xl:mt-[96px] md:mt-[438px] mt-[113px] flex flex-col 2xl:gap-[20px] gap-[21px] font-[400] [&>p]:text-[22px] [&>p]:customxs:text-[24px] leading-[30px] 3xl:pl-[84px] 2xl:pl-[54px]"
+            className="md:px-[0] px-[41px] 3xl:pr-[0px] text-black z-30 md:mb-[120px] mb-[100px] 2xl:mb-0 md:mb-[120px] 2xl:mt-[104px] md:mt-[438px] mt-[113px] flex flex-col 2xl:gap-[42px] gap-[21px] font-[400] [&>p]:text-[22px] [&>p]:customxs:text-[24px] leading-[30px] 3xl:pl-[84px] 2xl:pl-[54px]"
             data-scroll
             data-scroll-speed="0.16"
           >
@@ -83,15 +83,13 @@ function Situation({ handleModal }) {
               width={76}
               height={80}
               alt="yvoo-search"
-              className="z-10 max-w-[76px] mb-[8px]"
+              className="z-10 max-w-[76px]"
             />
-            <h2 className="font-[800] text-[50px] leading-[54px] mb-[22px]">
+            <h2 className="font-machina uppercase font-[800] text-[50px] leading-[54px]">
               The Situation
             </h2>
-            <p>
-              Current sourcing and procurement methods just aren't cutting it;
-              they're holding back business growth, competitiveness, innovation,
-              profitability, results, quality, ethics, and sustainability.
+            <p className="mb-[18px]">
+              Traditional Supplier Search <br /> Methods: A Hindrance to Growth, Competitiveness,<br /> and Innovation.
             </p>
             <p className="font-[800] text-white">We're here to change that!</p>
           </div>

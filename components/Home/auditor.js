@@ -70,7 +70,7 @@ function Auditor() {
               width={571}
               height={381}
               alt="yvoo-sales"
-              classes="md:block relative 3xl:ml-[154px] md:ml-[0] ml-[0] 2xl:mt-[126px] md:mt-[120px] 3xl:w-[592px] 2xl:w-[546px] md:w-[476px] w-[221px]"
+              classes="md:block relative 3xl:ml-[154px] md:ml-[0] ml-[0] 2xl:mt-[100px] md:mt-[120px] 3xl:w-[592px] 2xl:w-[546px] md:w-[476px] w-[221px]"
             />
             <Image
               src="/icons/greenTriangle-3.png"
@@ -84,12 +84,12 @@ function Auditor() {
             {/* <div className="customxs:hidden absolute inset-0 bg-black opacity-40"></div> */}
           </div>
           <div
-            className="3xl:pl-[84px] 2xl:pl-[54px] w-full flex flex-col 2xl:pt-[120px] md:pt-[75px] pt-[47px] 2xl:pb-[75px] md:pb-[60px] pb-[40px]"
+            className="3xl:pl-[84px] 2xl:pl-[54px] w-full flex flex-col 2xl:pt-[126px] md:pt-[75px] pt-[47px] 2xl:pb-[59px] md:pb-[60px] pb-[40px]"
             data-scroll
             data-scroll-speed="0.1"
           >
             <h1
-              className=" relative uppercase 2xl:mb-[30px] mb-[18px] text-[#06D7F9] font-machina font-[800] 2xl:text-[50px] md:text-[40px] text-[30px] 2xl:leading-[54px] md:leading-[44px] leading-[34px] 2xl:max-w-[unset] md:max-w-[504px] max-w-[unset]"
+              className=" relative uppercase 2xl:mb-[24px] mb-[18px] text-[#06D7F9] font-machina font-[800] 2xl:text-[50px] md:text-[40px] text-[30px] 2xl:leading-[54px] md:leading-[44px] leading-[34px] 2xl:max-w-[525px] md:max-w-[504px] max-w-[unset]"
               ref={elementRef}
               style={{
                 visibility: elementVisible ? "visible" : "hidden",
