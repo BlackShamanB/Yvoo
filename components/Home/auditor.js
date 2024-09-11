@@ -77,7 +77,7 @@ function Auditor() {
               width={546}
               height={364}
               alt="yvoo-sales"
-              classes="3xl:hidden 2xl:block relative 3xl:ml-[154px] md:ml-[0] ml-[0] 2xl:mt-[100px] md:mt-[120px] 3xl:w-[592px] 2xl:w-[546px] md:w-[476px] w-[221px]"
+              classes="block 3xl:hidden 2xl:block relative 3xl:ml-[154px] md:ml-[0] ml-[0] 2xl:mt-[100px] md:mt-[120px] 3xl:w-[592px] 2xl:w-[546px] md:w-[476px] w-[221px] 3xl:max-w-[592px] 2xl:max-w-[546px] md:max-w-[476px] max-w-[221px]"
             />
             <Image
               src="/icons/greenTriangle-3.png"
@@ -91,7 +91,7 @@ function Auditor() {
             {/* <div className="customxs:hidden absolute inset-0 bg-black opacity-40"></div> */}
           </div>
           <div
-            className="3xl:pl-[84px] 2xl:pl-[54px] w-full flex flex-col 2xl:pt-[126px] md:pt-[75px] pt-[47px] 2xl:pb-[59px] md:pb-[60px] pb-[40px]"
+            className="3xl:pl-[84px] 2xl:pl-[54px] w-full flex flex-col 2xl:pt-[126px] md:pt-[91px] pt-[47px] 2xl:pb-[59px] md:pb-[60px] pb-[40px]"
             data-scroll
             data-scroll-speed="0.1"
           >

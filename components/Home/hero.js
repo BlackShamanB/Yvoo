@@ -44,6 +44,15 @@ function Hero() {
           layout="fill"
           objectFit="cover"
           loading="eager"
+          className="2xl:block hidden"
+        />
+        <Image
+          src={"/images/HomeBgMd.webp"}
+          alt="hero"
+          layout="fill"
+          objectFit="cover"
+          loading="eager"
+          className="2xl:hidden md:block"
         />
       </div>
 
@@ -75,7 +84,7 @@ function Hero() {
             The AI Procurement Platform
           </h1>
         </div>
-        <div className="3xl:max-w-[1516px] 2xl:max-w-[1116px] md:max-w-[598px] 3xl:w-[1516px] 2xl:w-[1116px] md:w-[598px] md:mx-[auto] mx-[22px] 2xl:mt-[71px] md:mt-[52px] mt-[43px] flex items-center md:gap-[33px] gap-[15px]">
+        <div className="3xl:max-w-[1516px] 2xl:max-w-[1116px] md:max-w-[598px] 3xl:w-[1516px] 2xl:w-[1116px] md:w-[598px] md:mx-[auto] mx-[22px] 2xl:mt-[71px] md:mt-[40px] mt-[43px] flex items-center md:gap-[33px] gap-[15px]">
           <Image
             src="/icons/icon-play-btn.svg"
             width={68}
@@ -88,7 +97,7 @@ function Hero() {
             Have a sneak peek<br></br>at what we do
           </h2>
         </div>
-        <div className="grid sm:grid-cols-2 lg2:grid-cols-4 2xl:h-[200px] 2xl:gap-[40px] gap-[20px] 2xl:mt-auto md:mt-[-58px] mt-[20px] 2xl:px-[0] md:px-[35px] px-[20px] font-inter">
+        <div className="grid sm:grid-cols-2 lg2:grid-cols-4 2xl:h-[200px] 2xl:gap-[40px] gap-[20px] 2xl:mt-auto 2xl:mt-[-58px] md:mt-[22px] mt-[20px] 2xl:px-[0] md:px-[35px] px-[20px] font-inter">
           <ReactScrollLink
             className="relative 3xl:top-[64px] 2xl:top-[61px] md:top-[260px] top-[40px]"
             activeClass="active"

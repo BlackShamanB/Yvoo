@@ -28,12 +28,12 @@ function Discover() {
         width={189}
         height={174}
         alt="triangle"
-        className="absolute 2xl:top-[790px] md:top-[96.4%] top-[98.3%] 3xl:left-[60%] 2xl:left-[58.6%] md:left-[52.6%] left-[53%] mouse-parallax md:max-w-[180px] max-w-[127px] z-[1]"
+        className="absolute 2xl:top-[790px] md:top-[92.4%] top-[98.3%] 3xl:left-[60%] 2xl:left-[58.6%] md:left-[64.6%] left-[53%] mouse-parallax md:max-w-[180px] max-w-[127px] z-[1]"
         
         data-scroll data-scroll-speed="0.5"
       />
       <div
-        className="3xl:max-w-[1516px] 2xl:max-w-[1116px] md:max-w-[598px] mx-[auto] relative grid grid-cols-1 2xl:grid-cols-2 w-full mb-[100px] 3xl:mt-[232px] 2xl:mt-[200px] md:mt-[400px] sm:mt-[262px] mt-[787px] 3xl:mb-[391px] 2xl:mb-[424px] md:mb-[115px]"
+        className="3xl:max-w-[1516px] 2xl:max-w-[1116px] md:max-w-[598px] mx-[auto] relative grid grid-cols-1 2xl:grid-cols-2 w-full mb-[100px] 3xl:mt-[232px] 2xl:mt-[200px] md:mt-[400px] sm:mt-[262px] mt-[787px] 3xl:mb-[391px] 2xl:mb-[424px] md:mb-[154px] mb-[0]"
         
         data-scroll
         data-scroll-speed="0.3"
@@ -56,16 +56,16 @@ function Discover() {
         </div>
 
         <div
-          className="3xl:pr-[0] md:px-[0] px-[40px] 2xl:mt-[0] md:mt-[119px] mt-[106px] 3xl:pt-[114px] 2xl:pt-[110px] md:3xl:pl-[84px] 2xl:pl-[54px] my-auto flex flex-col font-[400] md:text-[30px] text-[22px] md:leading-[38px] leading-[28px] max-w-[660px] font-inter"
+          className="3xl:pr-[0] md:px-[0] px-[40px] 2xl:mt-[0] md:mt-[140px] mt-[106px] 3xl:pt-[114px] 2xl:pt-[110px] md:3xl:pl-[84px] 2xl:pl-[54px] my-auto flex flex-col font-[400] 2xl:text-[30px] md:text-[26px] text-[22px] 2xl:leading-[38px] md:leading-[32px] leading-[28px] max-w-[660px] font-inter"
           data-scroll
           data-scroll-speed="0.1"
         >
-          <h2 className="font-[700] md:text-[30px] text-[22px] md:leading-[38px] leading-[28px]">
+          <h2 className="font-[700] 2xl:text-[30px] md:text-[26px] text-[22px] 2xl:leading-[38px] md:leading-[32px] leading-[28px]">
             {" "}
             We're a global B2B platform, {" "}
           </h2>
-          <p className="mb-[60px] 3xl:pr-[100px]">offering on-the-ground expertise for worldwide supplier discovery and verification.</p>
-          <p className="text-[#06D7F9] text-[24px] leading-[30px] font-[700]">Think LinkedIn's power + Uber's user experience​​</p>
+          <p className="2xl:mb-[60px] mb-[40px] 3xl:pr-[100px]">offering on-the-ground expertise for worldwide supplier discovery and verification.</p>
+          <p className="text-[#06D7F9] 2xl:text-[24px] text-[20px] 2xl:leading-[30px] leading-[26px] font-[700]">Think LinkedIn's power + Uber's user experience​​</p>
         </div>
       </div>
     </div>

@@ -41,7 +41,7 @@ function Effective({ handleModal }) {
             width={101}
             height={113}
             alt="triangle"
-            className="absolute 2xl:top-[10%] top-[20%] 3xl:left-[2%] 2xl:left-[-5%] left-[10%] mouse-parallax 2xl:block md:hidden block md:max-w-[none] max-w-[101px] transform"
+            className="absolute 2xl:top-[10%] top-[55%] 3xl:left-[2%] 2xl:left-[-5%] left-[10%] mouse-parallax md:block block md:max-w-[none] max-w-[101px] transform"
             data-scroll
             data-scroll-speed="0.1"
           />
@@ -50,14 +50,14 @@ function Effective({ handleModal }) {
             width={145}
             height={140}
             alt="triangle"
-            className="md:block absolute 3xl:top-[84%] 2xl:top-[102%] top-[55%] 3xl:left-[-5%] 2xl:left-[-14%] left-[20%] 2xl:max-w-[unset] md:max-w-[110px] max-w-[70px] mouse-parallax"
+            className="2xl:block hidden absolute 3xl:top-[84%] 2xl:top-[102%] top-[55%] 3xl:left-[-5%] 2xl:left-[-14%] left-[20%] 2xl:max-w-[unset] md:max-w-[110px] max-w-[70px] mouse-parallax"
             data-scroll
             data-scroll-speed="0.5"
           />
-          <div className="flex md:flex-center flex-col gap-[80px] pt-[210px] 3xl:pl-[155px] 3xl:pr-[0] pr-[10px]">
-            <div className="flex flex-col gap-[24px] md:px-[0] px-[41px]">
-              <div className="font-[700] text-[30px] leading-[38px] text-[#000]">YVOO solve this problem</div>
-              <div className="font-machina text-[#06D7F9] uppercase font-[800] md:text-[50px] text-[40px] md:leading-[54px] leading-[44px] mb-[18px]">
+          <div className="flex md:flex-center flex-col gap-[80px] 2xl:pt-[210px] pt-[44px] 3xl:pl-[155px] 3xl:pr-[0] pr-[10px]">
+            <div className="flex flex-col 2xl:gap-[24px] gap-[16px] md:px-[0] px-[41px]">
+              <div className="font-[700] 2x:text-[30px] text-[26px] 2xl:leading-[38px] leading-[32px] text-[#000]">YVOO solve this problem</div>
+              <div className="font-machina text-[#06D7F9] uppercase font-[800] 2xl:text-[50px] text-[40px] 2xl:leading-[54px] leading-[44px] 2xl:mb-[18px] mb-[12px]">
                 Fast, Affordable, Effective
               </div>
               <div className="flex flex-col gap-[20px] text-black">
@@ -69,7 +69,7 @@ function Effective({ handleModal }) {
                     alt="triangle"
                     className=""
                   />
-                  <div className="font-[400] text-[24px] leading-[30px]">
+                  <div className="font-[400] 2xl:text-[24px] text-[20px] 2xl:leading-[30px] leading-[26px]">
                     Access to 6M suppliers
                   </div>
                 </div>
@@ -81,7 +81,7 @@ function Effective({ handleModal }) {
                     alt="triangle"
                     className=""
                   />
-                  <div className="font-[400] text-[24px] leading-[30px]">
+                  <div className="font-[400] 2xl:text-[24px] text-[20px] 2xl:leading-[30px] leading-[26px]">
                     Global network of auditors (on-site)
                   </div>
                 </div>
@@ -93,7 +93,7 @@ function Effective({ handleModal }) {
                     alt="triangle"
                     className=""
                   />
-                  <div className="font-[400] text-[24px] leading-[30px]">
+                  <div className="font-[400] 2xl:text-[24px] text-[20px] 2xl:leading-[30px] leading-[26px]">
                     10X Faster decision-making
                   </div>
                 </div>
@@ -105,7 +105,7 @@ function Effective({ handleModal }) {
                     alt="triangle"
                     className=""
                   />
-                  <div className="font-[400] text-[24px] leading-[30px]">
+                  <div className="font-[400] 2xl:text-[24px] text-[20px] 2xl:leading-[30px] leading-[26px]">
                     Over 85% accuracy in matching search results
                   </div>
                 </div>
@@ -117,7 +117,7 @@ function Effective({ handleModal }) {
                     alt="triangle"
                     className=""
                   />
-                  <div className="font-[400] text-[24px] leading-[30px]">
+                  <div className="font-[400] 2xl:text-[24px] text-[20px] 2xl:leading-[30px] leading-[26px]">
                     100% Audit success rate guaranteed
                   </div>
                 </div>
@@ -129,7 +129,7 @@ function Effective({ handleModal }) {
                     alt="triangle"
                     className=""
                   />
-                  <div className="font-[400] text-[24px] leading-[30px]">
+                  <div className="font-[400] 2xl:text-[24px] text-[20px] 2xl:leading-[30px] leading-[26px]">
                     70% Reduction in supplier onboarding costs
                   </div>
                 </div>
@@ -137,7 +137,7 @@ function Effective({ handleModal }) {
             </div>
           </div>
           <div
-            className="md:px-[0] px-[41px] 3xl:pr-[0px] text-black z-30 2xl:mt-[0] mt-[80px] md:mb-[120px] mb-[100px] 2xl:mb-0 md:mb-[120px] flex flex-col 2xl:gap-[20px] gap-[21px] font-[400] [&>p]:text-[22px] [&>p]:customxs:text-[24px] leading-[30px] 3xl:pl-[84px] 2xl:pl-[54px]"
+            className="md:px-[0] px-[41px] 3xl:pr-[0px] text-black z-30 2xl:mt-[0] md:mt-[-3px] mt-[80px] md:mb-[120px] mb-[100px] 2xl:mb-0 md:mb-[120px] flex flex-col 2xl:gap-[20px] gap-[21px] font-[400] [&>p]:text-[22px] [&>p]:customxs:text-[24px] leading-[30px] 3xl:pl-[84px] 2xl:pl-[54px] 2xl:order-[1] order-[-1]"
             data-scroll
             data-scroll-speed="0.16"
           >
@@ -158,11 +158,11 @@ function Effective({ handleModal }) {
       height={106}
       alt="line"
       classesImg="md:max-w-[519px] md:w-[519px] max-w-[217px]"
-      classesContainer="absolute overflow-hidden md:max-w-[519px] md:w-[519px] 3xl:top-[33%] 2xl:top-[40%] md:top-[56.9%] top-[45%] 3xl:left-[73%] 2xl:left-[75%] md:left-[59%] left-[40%] z-[30]"
+      classesContainer="absolute overflow-hidden md:max-w-[519px] md:w-[519px] 3xl:top-[33%] 2xl:top-[40%] md:top-[27%] top-[45%] 3xl:left-[73%] 2xl:left-[75%] md:left-[59%] left-[40%] z-[30]"
       data-scroll
       data-scroll-speed="0.13"
     />
-      <div className="w-[100%] h-[86px] bg-labelBg 3xl:mt-[0] 2xl:mt-[50px] running-image"></div>
+      <div className="w-[100%] 2xl:h-[86px] h-[46px] bg-labelBg 3xl:mt-[0] 2xl:mt-[50px] mt-[160px] running-image 2xl:bg-auto bg-[size:auto_100%]"></div>
     </div>
   );
 }

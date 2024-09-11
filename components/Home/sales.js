@@ -39,7 +39,7 @@ function Sales({ handleModal }) {
         
       >
         <div className="relative grid grid-cols-1 2xl:grid-cols-2 bg-white md:py-0 md:flex-center flex-col h-fit 3xl:h-[1187px] 2xl:h-[1125px] md:h-[1422px] md:px-[0] px-[41px] md:overflow-visible overflow-hidden">
-          <div className="flex flex-wrap md:flex-nowrap items-center md:items-start md:flex-col 3xl:gap-[20px] 2xl:gap-[24px] md:gap-[20px] gap-[12px] 2xl:mt-[172px] md:mt-[153px] mt-[139px] 3xl:mb-[568px] 2xl:mb-[356px]">
+          <div className="flex flex-wrap md:flex-nowrap items-center md:items-start md:flex-col 3xl:gap-[20px] 2xl:gap-[24px] md:gap-[16px] gap-[12px] 2xl:mt-[172px] md:mt-[160px] mt-[139px] 3xl:mb-[568px] 2xl:mb-[356px]">
             <Image
               src="/icons/squares-2.png"
               width={96}

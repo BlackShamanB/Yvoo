@@ -48,15 +48,20 @@ function Scan({ handleModal }) {
                 position: "relative",
                 transform: "translateZ(10px)",
               }}
-              className="flex flex-wrap md:items-start flex-col 2xl:gap-[24px] md:gap-[16px] 2xl:mt-[136px] md:mt-[115px] 2xl:mb-[420px] md:mb-[20px] md:px-[0] px-[41px] 2xl:hidden block"
+              className="flex flex-wrap md:items-start flex-col 2xl:gap-[24px] md:gap-[16px] 2xl:mt-[136px] md:mt-[120px] 2xl:mb-[420px] md:mb-[20px] md:px-[0] px-[41px] 2xl:hidden block"
             >
-              <h1 className="uppercase font-machina font-[800] text-white 2xl:text-[50px] md:text-[40px] text-[30px] md:leading-[44px] leading-[34px] 2xl:leading-[50px] max-w-[318px] 2xl:max-w-[340px] md:mb-[3px] mb-[15px]">
-                <span className="words">
-                  <div className="word">YVOO</div>
+              <h1 className="uppercase font-machina font-[800] text-white 2xl:text-[50px] md:text-[40px] text-[30px] md:leading-[44px] leading-[34px] 2xl:leading-[50px] max-w-[318px] 2xl:max-w-[340px] 2xl:mb-[3px] md:mb-[0] mb-[15px]"
+              ref={elementRef}
+              style={{
+                visibility: elementVisible ? "visible" : "hidden",
+                top: elementVisible ? "0" : "50px",
+                opacity: elementVisible ? "1" : "0",
+                transition: "linear 0.5s",
+              }}>
+                  YVOO
                   <br></br>
-                  <div className="word">Scan</div>
-                  <b className="text-black word">Pro+</b>
-                </span>
+                  Scan
+                  <b className="text-black">Pro+</b>
               </h1>
               <div className="flex flex-col 2xl:gap-[48px] md:gap-[28px] gap-[24px] md:items-start mb-[60px]">
                 <p className="font-[700] 2xl:text-[24px] md:text-[20px] text-[16px] text-black 2xl:leading-[26px] md:leading-[26px] leading-[20px] md:max-w-[327px] 2xl:max-w-[340px] md:max-w-[222px] 2xl:mb-[24px]">
