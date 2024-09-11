@@ -10,7 +10,7 @@ function Discover() {
         width={116}
         height={139}
         alt="triangle"
-        className="absolute 2xl:top-[207px] md:top-[22%] top-[34%] 3xl:left-[15%] 2xl:left-[7%] md:left-[16%] left-[11%] mouse-parallax 2xl:max-w-[116px] max-w-[63px]"
+        className="absolute 3xl:top-[20%] 2xl:top-[26%] md:top-[22%] top-[34%] 3xl:left-[15%] 2xl:left-[7%] md:left-[16%] left-[11%] mouse-parallax 2xl:max-w-[116px] max-w-[63px]"
         
         data-scroll data-scroll-speed="0.3"
       />
@@ -28,12 +28,12 @@ function Discover() {
         width={189}
         height={174}
         alt="triangle"
-        className="absolute 2xl:top-[790px] md:top-[96.4%] top-[98.3%] 3xl:left-[60%] 2xl:left-[36.6%] md:left-[52.6%] left-[53%] mouse-parallax md:max-w-[180px] max-w-[127px] z-[1]"
+        className="absolute 2xl:top-[790px] md:top-[96.4%] top-[98.3%] 3xl:left-[60%] 2xl:left-[58.6%] md:left-[52.6%] left-[53%] mouse-parallax md:max-w-[180px] max-w-[127px] z-[1]"
         
         data-scroll data-scroll-speed="0.5"
       />
       <div
-        className="3xl:max-w-[1516px] 2xl:max-w-[1116px] md:max-w-[598px] mx-[auto] relative grid grid-cols-1 2xl:grid-cols-2 w-full mb-[100px] 3xl:mt-[232px] 2xl:mt-[200px] md:mt-[400px] sm:mt-[262px] mt-[787px] 3xl:mb-[391px] 2xl:mb-[162px] md:mb-[115px]"
+        className="3xl:max-w-[1516px] 2xl:max-w-[1116px] md:max-w-[598px] mx-[auto] relative grid grid-cols-1 2xl:grid-cols-2 w-full mb-[100px] 3xl:mt-[232px] 2xl:mt-[200px] md:mt-[400px] sm:mt-[262px] mt-[787px] 3xl:mb-[391px] 2xl:mb-[424px] md:mb-[115px]"
         
         data-scroll
         data-scroll-speed="0.3"
@@ -56,7 +56,7 @@ function Discover() {
         </div>
 
         <div
-          className="3xl:pr-[0] md:px-[0] px-[40px] 2xl:mt-[0] md:mt-[119px] mt-[106px] 2xl:pt-[114px] md:3xl:pl-[84px] 2xl:pl-[54px] my-auto flex flex-col font-[400] md:text-[30px] text-[22px] md:leading-[38px] leading-[28px] max-w-[660px] font-inter"
+          className="3xl:pr-[0] md:px-[0] px-[40px] 2xl:mt-[0] md:mt-[119px] mt-[106px] 3xl:pt-[114px] 2xl:pt-[110px] md:3xl:pl-[84px] 2xl:pl-[54px] my-auto flex flex-col font-[400] md:text-[30px] text-[22px] md:leading-[38px] leading-[28px] max-w-[660px] font-inter"
           data-scroll
           data-scroll-speed="0.1"
         >
@@ -64,7 +64,7 @@ function Discover() {
             {" "}
             We're a global B2B platform, {" "}
           </h2>
-          <p className="mb-[60px] pr-[100px]">offering on-the-ground expertise for worldwide supplier discovery and verification.</p>
+          <p className="mb-[60px] 3xl:pr-[100px]">offering on-the-ground expertise for worldwide supplier discovery and verification.</p>
           <p className="text-[#06D7F9] text-[24px] leading-[30px] font-[700]">Think LinkedIn's power + Uber's user experience​​</p>
         </div>
       </div>

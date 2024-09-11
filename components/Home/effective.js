@@ -31,7 +31,7 @@ function Effective({ handleModal }) {
       className="relative grid w-full overflow-x-clip bg-local bg-contain bg-bottom absolute inset-0 bg-[#fff] min-h-[688px]"
     >
       <div
-        className="3xl:max-w-[1516px] 2xl:max-w-[1116px] md:max-w-[598px] mx-[auto] mb-[144px]"
+        className="3xl:max-w-[1516px] 2xl:max-w-[1116px] md:max-w-[598px] mx-[auto] 3xl:mb-[144px] 2xl:mb-[203px]"
         data-scroll
         data-scroll-speed="0.12"
       >
@@ -50,11 +50,11 @@ function Effective({ handleModal }) {
             width={145}
             height={140}
             alt="triangle"
-            className="md:block absolute 2xl:top-[84%] top-[55%] 3xl:left-[-5%] 2xl:left-[-8%] left-[20%] 2xl:max-w-[unset] md:max-w-[110px] max-w-[70px] mouse-parallax"
+            className="md:block absolute 3xl:top-[84%] 2xl:top-[102%] top-[55%] 3xl:left-[-5%] 2xl:left-[-14%] left-[20%] 2xl:max-w-[unset] md:max-w-[110px] max-w-[70px] mouse-parallax"
             data-scroll
             data-scroll-speed="0.5"
           />
-          <div className="flex md:flex-center flex-col gap-[80px] pt-[210px] pl-[155px]">
+          <div className="flex md:flex-center flex-col gap-[80px] pt-[210px] 3xl:pl-[155px] 3xl:pr-[0] pr-[10px]">
             <div className="flex flex-col gap-[24px] md:px-[0] px-[41px]">
               <div className="font-[700] text-[30px] leading-[38px] text-[#000]">YVOO solve this problem</div>
               <div className="font-machina text-[#06D7F9] uppercase font-[800] md:text-[50px] text-[40px] md:leading-[54px] leading-[44px] mb-[18px]">

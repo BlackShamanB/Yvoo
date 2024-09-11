@@ -34,7 +34,7 @@ function Expensive({ handleModal }) {
         className=""
         data-scroll
         data-scroll-speed="0.12"
-      ><h2 className="3xl:max-w-[1208px] 2xl:max-w-[1116px] md:max-w-[598px] mx-[auto] font-machina uppercase text-white font-[800] md:text-[50px] text-[24px] md:leading-[54px] leading-[30px] mb-[90px]">
+      ><h2 className="3xl:max-w-[1208px] 2xl:max-w-[1116px] md:max-w-[598px] mx-[auto] font-machina uppercase text-white font-[800] md:text-[50px] text-[24px] md:leading-[54px] leading-[30px] 3xl:mb-[90px] mb-[94px]">
       Its Expensive , Slow an Ineffective
     </h2>
         <div className="3xl:max-w-[1293px] 2xl:max-w-[1116px] md:max-w-[598px] mx-[auto] relative grid grid-cols-1 2xl:grid-cols-2 w-full bg-no-repeat bg-bottom z-30">
@@ -43,7 +43,7 @@ function Expensive({ handleModal }) {
             width={71}
             height={85}
             alt="triangle"
-            className="absolute 2xl:top-[-35px] top-[-111%] 3xl:left-[45%] 2xl:left-[30%] left-[82%] mouse-parallax 2xl:block md:hidden block md:max-w-[none] max-w-[45px] transform md:scale-y-[1] scale-y-[-1]"
+            className="absolute 2xl:top-[-35px] top-[-111%] 2xl:left-[45%] left-[82%] mouse-parallax 2xl:block md:hidden block md:max-w-[none] max-w-[45px] transform md:scale-y-[1] scale-y-[-1]"
             data-scroll
             data-scroll-speed="0.1"
           />
@@ -61,7 +61,7 @@ function Expensive({ handleModal }) {
             width={189}
             height={174}
             alt="triangle"
-            className="absolute 2xl:top-[74%] top-[15%] 3xl:left-[-8%] 2xl:left-[-8%] left-[20%] mouse-parallax md:max-w-[180px] max-w-[127px] z-[1] md:block hidden"
+            className="absolute 3xl:top-[74%] 2xl:top-[84%] top-[15%] 3xl:left-[-8%] 2xl:left-[-10%] left-[20%] mouse-parallax md:max-w-[180px] max-w-[127px] z-[1] md:block hidden"
             data-scroll
             data-scroll-speed="0.5"
           />
@@ -70,9 +70,9 @@ function Expensive({ handleModal }) {
             width={293}
             height={105}
             alt="triangle"
-            className="absolute z-[-1] top-[53%] md:left-[25%] left-[5%]"
+            className="absolute z-[-1] 3xl:top-[53%] 2xl:top-[58%] 3xl:left-[25%] 2xl:left-[21%] left-[5%]"
           />
-          <div className="flex md:flex-center flex-col gap-[80px] pl-[43px]">
+          <div className="flex md:flex-center flex-col gap-[80px] 3xl:pl-[43px]">
             <div className="flex items-center 2xl:gap-[11px] gap-[8px]">
               <p className="font-machina text-[#06D7F9] font-[800] 2xl:text-[50px] text-[30px] 2xl:leading-[50px] leading-[34px] md:ml-[0] ml-[19px]">
                 90%
@@ -82,7 +82,7 @@ function Expensive({ handleModal }) {
               </p>
             </div>
             <div className="flex flex-col gap-[24px] md:px-[0] px-[41px]">
-              <div className="font-[400] text-[24px] leading-[30px]">
+              <div className="font-[400] text-[24px] leading-[30px] 3xl:pr-[0] pr-[100px]">
                 No effective way to make the sourcing decision without an
                 on-site supplier qualification:
               </div>
@@ -140,7 +140,7 @@ function Expensive({ handleModal }) {
             </div>
           </div>
           <div
-            className="md:px-[0] px-[41px] 3xl:pr-[0px] text-black z-30 2xl:mt-[0] mt-[80px] md:mb-[120px] mb-[100px] 2xl:mb-0 md:mb-[120px] flex flex-col 2xl:gap-[43px] gap-[21px] font-[400] [&>p]:text-[22px] [&>p]:customxs:text-[24px] leading-[30px] 3xl:pl-[88px] 2xl:pl-[54px]"
+            className="md:px-[0] px-[41px] 3xl:pr-[0px] text-black z-30 3xl:mt-[0] 2xl:mt-[-10px] mt-[80px] md:mb-[120px] mb-[100px] 2xl:mb-0 md:mb-[120px] flex flex-col 2xl:gap-[43px] gap-[21px] font-[400] [&>p]:text-[22px] [&>p]:customxs:text-[24px] leading-[30px] 3xl:pl-[88px] 2xl:pl-[54px]"
             data-scroll
             data-scroll-speed="0.16"
           >

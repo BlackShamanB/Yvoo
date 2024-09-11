@@ -36,7 +36,7 @@ function Hero() {
   };
 
   return (
-    <div className="relative w-full px-[20px] customsm:px-[50px] md:h-[820px] h-[547px] bg-[#414141] flex justify-center 3xl:pt-[163px] 2xl:pt-[156px] md:pt-[162px] pt-[38px] xl:pb-0 md:max-h-[1008px] max-h-[547px]">
+    <div className="relative w-full px-[20px] customsm:px-[50px] md:h-[820px] h-[547px] bg-[#414141] flex justify-center 3xl:pt-[163px] 2xl:pt-[162px] md:pt-[162px] pt-[38px] xl:pb-0 md:max-h-[1008px] max-h-[547px]">
       <div className="absolute top-0 w-full customsm:px-[50px] h-[547px] md:h-[1826px] bg-black">
         <Image
           src={"/images/HomeBg.webp"}
@@ -47,6 +47,15 @@ function Hero() {
         />
       </div>
 
+      <Image
+        src="/icons/greenTriangle-4.svg"
+        width={159}
+        height={190}
+        alt="triangle"
+        className="absolute 2xl:top-[321px] md:top-[22%] top-[34%] 3xl:left-[50.5%] 2xl:left-[53%] md:left-[16%] left-[11%] mouse-parallax 2xl:max-w-[159px] max-w-[63px]"
+        
+        data-scroll data-scroll-speed="0.3"
+      />
       <div
         className="z-10 w-full 2xl:max-w-[1516px] flex flex-col md:px-[0] px-"
         data-scroll
@@ -66,7 +75,7 @@ function Hero() {
             The AI Procurement Platform
           </h1>
         </div>
-        <div className="3xl:max-w-[1516px] 2xl:max-w-[1116px] md:max-w-[598px] 3xl:w-[1516px] 2xl:w-[1116px] md:w-[598px] md:mx-[auto] mx-[22px] 3xl:mt-[71px] 2xl:mt-[82px] md:mt-[52px] mt-[43px] flex items-center md:gap-[32px] gap-[15px]">
+        <div className="3xl:max-w-[1516px] 2xl:max-w-[1116px] md:max-w-[598px] 3xl:w-[1516px] 2xl:w-[1116px] md:w-[598px] md:mx-[auto] mx-[22px] 2xl:mt-[71px] md:mt-[52px] mt-[43px] flex items-center md:gap-[33px] gap-[15px]">
           <Image
             src="/icons/icon-play-btn.svg"
             width={68}
@@ -81,7 +90,7 @@ function Hero() {
         </div>
         <div className="grid sm:grid-cols-2 lg2:grid-cols-4 2xl:h-[200px] 2xl:gap-[40px] gap-[20px] 2xl:mt-auto md:mt-[-58px] mt-[20px] 2xl:px-[0] md:px-[35px] px-[20px] font-inter">
           <ReactScrollLink
-            className="relative 2xl:top-[64px] md:top-[260px] top-[40px]"
+            className="relative 3xl:top-[64px] 2xl:top-[61px] md:top-[260px] top-[40px]"
             activeClass="active"
             to="search"
             spy={true}
@@ -99,7 +108,7 @@ function Hero() {
             </div>
           </ReactScrollLink>
           <ReactScrollLink
-            className="relative 2xl:top-[64px] md:top-[260px] top-[40px]"
+            className="relative 3xl:top-[64px] 2xl:top-[61px] md:top-[260px] top-[40px]"
             activeClass="active"
             to="scan"
             spy={true}
@@ -117,7 +126,7 @@ function Hero() {
             </div>
           </ReactScrollLink>
           <ReactScrollLink
-            className="relative 2xl:top-[64px] md:top-[260px] top-[40px]"
+            className="relative 3xl:top-[64px] 2xl:top-[61px] md:top-[260px] top-[40px]"
             activeClass="active"
             to="sales"
             spy={true}
@@ -137,7 +146,7 @@ function Hero() {
           </ReactScrollLink>
           <Link
             href={"/auditors"}
-            className="relative 2xl:top-[64px] md:top-[260px] top-[40px]"
+            className="relative 3xl:top-[64px] 2xl:top-[61px] md:top-[260px] top-[40px]"
           >
             <div
               className="min-h-[163px] 2xl:max-h-[179px] md:max-h-[200px] max-h-[172px] 2xl:h-[179px] md:h-[200px] h-[172px] flex-1 3xl:px-[30px] px-[30px] 3xl:pt-[30px] pt-[30px] pb-[18px] bg-[#131D2A] basis-[300px] cursor-pointer hoverLink"

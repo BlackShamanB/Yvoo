@@ -28,7 +28,7 @@ function Search({ handleModal }) {
   return (
     <div
       id="search"
-      className="relative grid w-full bg-local bg-contain bg-bottom absolute inset-0 bg-mint mt-[-5px]"
+      className="relative grid w-full bg-local bg-contain bg-bottom absolute inset-0 bg-mint 3xl:mt-[-4px] mt-[-12px]"
     >
     <MagnifyOnScroll
       style={{ zIndex: 0 }}
@@ -48,7 +48,7 @@ function Search({ handleModal }) {
       width={244}
       height={499}
       alt="yvoo-search"
-      classes="absolute min-w-[50px] 2xl:bottom-[172px] md:bottom-[unset] 2xl:top-[unset] md:top-[186px] top-[211px] 3xl:left-[761px] 2xl:left-[-114px] md:left-[-61px] z-10 3xl:max-w-[1004px] 2xl:max-w-[774px] md:max-w-[659px] max-w-[89%]"
+      classes="absolute min-w-[50px] 3xl:bottom-[172px] 2xl:bottom-[200px] md:bottom-[unset] 2xl:top-[unset] md:top-[186px] top-[211px] 3xl:left-[761px] 2xl:left-[36%] md:left-[-61px] z-10 3xl:max-w-[1004px] 2xl:max-w-[774px] md:max-w-[659px] max-w-[89%]"
       // data-scroll
       // data-scroll-speed="0.01"
     />
@@ -68,7 +68,7 @@ function Search({ handleModal }) {
             className="md:flex-center flex-col"
           >
             <div
-              className="md:relative z-30 flex flex-wrap flex-col items-start 2xl:gap-[24px] md:gap-[20px] gap-[12px] 3xl:mt-[100px] 2xl:mt-[107px] md:mt-[115px] mt-[98px] 3xl:mb-[455px] 2xl:mb-[350px] 2xl:leading-[50px] md:px-[0] px-[41px]"
+              className="md:relative z-30 flex flex-wrap flex-col items-start 2xl:gap-[24px] md:gap-[20px] gap-[12px] 2xl:mt-[100px] md:mt-[115px] mt-[98px] 3xl:mb-[455px] 2xl:mb-[454px] 2xl:leading-[50px] md:px-[0] px-[41px]"
               data-scroll
               data-scroll-speed="0.2"
             >

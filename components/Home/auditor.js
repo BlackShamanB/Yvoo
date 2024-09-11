@@ -66,11 +66,18 @@ function Auditor() {
         <div className="relative grid grid-cols-1 2xl:grid-cols-2 w-full h-auto md:pt-[0] pt-[101px]">
           <div className="w-full bg-right bg-no-repeat">
             <MagnifyOnScroll
-              src="/images/auditorPhoto.webp"
+              src="/images/auditorPhoto3xl.webp"
               width={571}
               height={381}
               alt="yvoo-sales"
-              classes="md:block relative 3xl:ml-[154px] md:ml-[0] ml-[0] 2xl:mt-[100px] md:mt-[120px] 3xl:w-[592px] 2xl:w-[546px] md:w-[476px] w-[221px]"
+              classes="3xl:block hidden relative 3xl:ml-[154px] md:ml-[0] ml-[0] 2xl:mt-[100px] md:mt-[120px] 3xl:w-[592px] 2xl:w-[546px] md:w-[476px] w-[221px]"
+            />
+            <MagnifyOnScroll
+              src="/images/auditorPhoto2xl.webp"
+              width={546}
+              height={364}
+              alt="yvoo-sales"
+              classes="3xl:hidden 2xl:block relative 3xl:ml-[154px] md:ml-[0] ml-[0] 2xl:mt-[100px] md:mt-[120px] 3xl:w-[592px] 2xl:w-[546px] md:w-[476px] w-[221px]"
             />
             <Image
               src="/icons/greenTriangle-3.png"

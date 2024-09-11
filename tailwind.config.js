@@ -109,6 +109,8 @@ module.exports = {
 
         inneffectiveBg: "url(../public/icons/inneffective.svg)",
         labelBg: "url(../public/icons/bgLabel.svg)",
+        auditorPhoto3xl: "url(../public/images/auditorPhoto3xl.webp)",
+        auditorPhoto2xl: "url(../public/images/auditorPhoto2xl.webp)",
       },
       screens: {
         xs: "361px",
