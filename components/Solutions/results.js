@@ -41,15 +41,15 @@ function Results({ handleModal }) {
             width={592}
             height={476}
             alt="yvoo-search"
-            classes="relative md:ml-[0] ml-[49px] 3xl:top-[0px] 2xl:top-[130px] 3xl:left-[0] 2xl:left-[38px] z-10 3xl:max-w-[592px] 2xl:max-w-[432px] md:max-w-[415px] max-w-[250px] 3xl:w-[592px] 2xl:w-[666px] md:w-[415px] [&>div>img]:3xl:h-[476px] 2xl:float-right z-[0]"
+            classes="relative md:ml-[0] ml-[49px] 3xl:top-[0px] 2xl:top-[130px] md:top-[0] top-[-25px] 3xl:left-[0] 2xl:left-[38px] md:left-[unset] left-[49px] z-10 3xl:max-w-[592px] 2xl:max-w-[432px] md:max-w-[415px] max-w-[250px] 3xl:w-[592px] 2xl:w-[666px] md:w-[415px] [&>div>img]:2xl:h-[476px] [&>div>img]:md:h-[unset] [&>div>img]:h-[201px] 2xl:float-right z-[0]"
           />
         </div>
         <div className="3xl:pl-[84px] 2xl:pl-[54px] w-full bg-[#131D2A]" data-scroll data-scroll-speed="0.2">
-          <div className="3xl:mt-[44px] 3xl:mb-[37px] 2xl:mt-[167px] 2xl:mb-[81px] 2xl:pt-[0] pt-[58px] md:pr-[0] md:px-[0] px-[41px] flex flex-col">
+          <div className="3xl:mt-[44px] 3xl:mb-[37px] 2xl:mt-[167px] 2xl:mb-[81px] 2xl:pt-[0] md:pt-[58px] pt-[36px] md:pr-[0] md:px-[0] px-[41px] flex flex-col">
             <h1 className="text-[#06D7F9] font-machina font-[800] uppercase 2xl:text-[50px] md:text-[40px] text-[30px] 2xl:leading-[54px] md:leading-[44px] leading-[34px] max-w-full md:max-w-[unset] 2xl:max-w-[650px]">
               Results that speak for themselves
             </h1>
-            <h1 className="font-[700] 2xl:text-[24px] md:text-[20px] text-[16px] 2xl:leading-[30px] md:leading-[26px] leading-[20px] text-white 2xl:mt-[24px] md:mt-[21px] mt-[15px]">
+            <h1 className="font-[700] 2xl:text-[24px] md:text-[20px] text-[16px] 2xl:leading-[30px] md:leading-[26px] leading-[20px] text-white 2xl:mt-[24px] md:mt-[21px] mt-[12px]">
               Don't settle for outdated practices. Embrace the future of
               sourcing with YVOO SourcerPro+
             </h1>
