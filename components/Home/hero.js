@@ -36,7 +36,7 @@ function Hero() {
   };
 
   return (
-    <div className="relative w-full px-[20px] customsm:px-[50px] md:h-[820px] h-[547px] bg-[#414141] flex justify-center 3xl:pt-[163px] 2xl:pt-[162px] md:pt-[162px] pt-[38px] xl:pb-0 md:max-h-[1008px] max-h-[547px]">
+    <div className="relative w-full px-[20px] customsm:px-[50px] md:h-[820px] h-[547px] bg-[#414141] flex justify-center 3xl:pt-[163px] 2xl:pt-[162px] md:pt-[162px] pt-[80px] xl:pb-0 md:max-h-[1008px] max-h-[547px]">
       <div className="absolute top-0 w-full customsm:px-[50px] h-[547px] md:h-[1826px] bg-black">
         <Image
           src={"/images/HomeBg.webp"}
@@ -52,7 +52,15 @@ function Hero() {
           layout="fill"
           objectFit="cover"
           loading="eager"
-          className="2xl:hidden md:block"
+          className="2xl:hidden md:block hidden"
+        />
+        <Image
+          src={"/images/HomeBgXs.webp"}
+          alt="hero"
+          layout="fill"
+          objectFit="cover"
+          loading="eager"
+          className="md:hidden block !h-auto"
         />
       </div>
 
@@ -61,7 +69,7 @@ function Hero() {
         width={159}
         height={190}
         alt="triangle"
-        className="absolute 2xl:top-[321px] md:top-[22%] top-[34%] 3xl:left-[50.5%] 2xl:left-[53%] md:left-[16%] left-[11%] mouse-parallax 2xl:max-w-[159px] max-w-[63px]"
+        className="absolute 2xl:block hidden 2xl:top-[321px] md:top-[22%] top-[34%] 3xl:left-[50.5%] 2xl:left-[53%] md:left-[16%] left-[11%] mouse-parallax 2xl:max-w-[159px] max-w-[63px]"
         
         data-scroll data-scroll-speed="0.3"
       />
@@ -70,7 +78,7 @@ function Hero() {
         data-scroll
         data-scroll-speed="0.3"
       >
-        <div className="3xl:max-w-[1516px] 2xl:max-w-[1116px] md:max-w-[598px] 3xl:w-[1516px] 2xl:w-[1116px] mx-[auto] md:pl-[0] pl-[20px] md:pr-[0] pr-[20px] md:pt-[0] pt-[39px]">
+        <div className="3xl:max-w-[1516px] 2xl:max-w-[1116px] md:max-w-[598px] 3xl:w-[1516px] 2xl:w-[1116px] mx-[auto] md:pl-[0] pl-[20px] md:pr-[0] pr-[20px]">
           <h1
             className="relative uppercase font-machina 2xl:text-[60px] md:text-[50px] text-[30px] font-[800] 2xl:leading-[64px] md:leading-[54px] leading-[34px] max-w-[880px]"
             ref={elementRef}
@@ -84,7 +92,7 @@ function Hero() {
             The AI Procurement Platform
           </h1>
         </div>
-        <div className="3xl:max-w-[1516px] 2xl:max-w-[1116px] md:max-w-[598px] 3xl:w-[1516px] 2xl:w-[1116px] md:w-[598px] md:mx-[auto] mx-[22px] 2xl:mt-[71px] md:mt-[40px] mt-[43px] flex items-center md:gap-[33px] gap-[15px]">
+        <div className="3xl:max-w-[1516px] 2xl:max-w-[1116px] md:max-w-[598px] 3xl:w-[1516px] 2xl:w-[1116px] md:w-[598px] md:mx-[auto] mx-[22px] 2xl:mt-[71px] md:mt-[40px] mt-[30px] flex items-center md:gap-[33px] gap-[15px]">
           <Image
             src="/icons/icon-play-btn.svg"
             width={68}
@@ -97,7 +105,7 @@ function Hero() {
             Have a sneak peek<br></br>at what we do
           </h2>
         </div>
-        <div className="grid sm:grid-cols-2 lg2:grid-cols-4 2xl:h-[200px] 2xl:gap-[40px] gap-[20px] 2xl:mt-auto 2xl:mt-[-58px] md:mt-[22px] mt-[20px] 2xl:px-[0] md:px-[35px] px-[20px] font-inter">
+        <div className="grid sm:grid-cols-2 lg2:grid-cols-4 2xl:h-[200px] 2xl:gap-[40px] gap-[20px] 2xl:mt-auto 2xl:mt-[-58px] md:mt-[22px] mt-[140px] 2xl:px-[0] md:px-[35px] px-[20px] font-inter">
           <ReactScrollLink
             className="relative 3xl:top-[64px] 2xl:top-[61px] md:top-[260px] top-[40px]"
             activeClass="active"

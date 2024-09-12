@@ -37,7 +37,7 @@ function Situation({ handleModal }) {
         width={875}
         height={551}
         alt="yvoo-search"
-        classes="absolute z-[0] min-w-[50px] 3xl:top-[-110px] 2xl:top-[-179px] md:top-[-110px] top-[211px] 3xl:left-[0] 2xl:left-[-108px] md:left-[0px] z-10 3xl:max-w-[900px] 2xl:max-w-[774px] md:max-w-[561px] max-w-[89%]"
+        classes="absolute z-[0] min-w-[50px] 3xl:top-[-110px] 2xl:top-[-179px] md:top-[-110px] top-[-60px] 3xl:left-[0] 2xl:left-[-108px] md:left-[0px] z-10 3xl:max-w-[900px] 2xl:max-w-[774px] md:max-w-[561px] max-w-[291px]"
       />
       <div
         className="3xl:max-w-[1516px] 2xl:max-w-[1116px] md:max-w-[598px] w-[100%] mx-[auto]"
@@ -50,7 +50,7 @@ function Situation({ handleModal }) {
             width={80}
             height={90}
             alt="triangle"
-            className="absolute 2xl:top-[-152px] top-[-111%] 3xl:left-[20%] 2xl:left-[22.5%] left-[82%] mouse-parallax 2xl:block md:hidden block md:max-w-[none] max-w-[45px] transform md:scale-y-[1] scale-y-[-1]"
+            className="absolute 2xl:top-[-152px] top-[-71%] top-[-111%] 3xl:left-[20%] 2xl:left-[22.5%] left-[82%] mouse-parallax 2xl:block md:hidden block md:max-w-[none] max-w-[45px] transform md:scale-y-[1] scale-y-[-1] 2xl:block md:hidden block md:rotate-[0] rotate-[180deg]"
             data-scroll
             data-scroll-speed="0.1"
           />
@@ -73,7 +73,7 @@ function Situation({ handleModal }) {
             className="md:flex-center flex-col"
           ></div>
           <div
-            className="md:px-[0] px-[41px] 3xl:pr-[0px] text-black z-30 2xl:mb-[120px] md:mb-[160px] mb-[100px] 2xl:mb-0 md:mb-[120px] 2xl:mt-[104px] md:mt-[324px] mt-[113px] flex flex-col 3xl:gap-[42px] 2xl:gap-[0] gap-[24px] font-[400] [&>p]:text-[22px] [&>p]:customxs:text-[24px] leading-[30px] 3xl:pl-[84px] 2xl:pl-[54px]"
+            className="md:px-[0] px-[41px] 3xl:pr-[0px] text-black z-30 2xl:mb-[120px] md:mb-[160px] mb-[100px] 2xl:mb-0 md:mb-[120px] 2xl:mt-[104px] md:mt-[324px] mt-[184px] flex flex-col 3xl:gap-[42px] 2xl:gap-[0] md:gap-[24px] gap-[20px] font-[400] [&>p]:text-[20px] [&>p]:md:text-[24px] md:leading-[30px] leading-[26px] 3xl:pl-[84px] 2xl:pl-[54px]"
             data-scroll
             data-scroll-speed="0.16"
           >
@@ -83,12 +83,12 @@ function Situation({ handleModal }) {
               width={76}
               height={80}
               alt="yvoo-search"
-              className="z-10 max-w-[76px] 3xl:mb-[0] 2xl:mb-[42px] md:mb-[18px]"
+              className="z-10 max-w-[76px] 3xl:mb-[0] 2xl:mb-[42px] md:mb-[18px] mb-[22px]"
             />
-            <h2 className="font-machina uppercase font-[800] 2xl:text-[50px] text-[40px] 2xl:leading-[54px] leading-[44px] 3xl:mb-[0] 2xl:mb-[42px] md:mb-[4px]">
+            <h2 className="font-machina uppercase font-[800] 2xl:text-[50px] md:text-[40px] text-[30px] 2xl:leading-[54px] md:leading-[44px] leading-[34px] 3xl:mb-[0] 2xl:mb-[42px] mb-[4px]">
               The Situation
             </h2>
-            <p className="3xl:mb-[18px] 2xl:mb-[30px] 2xl:pr-[0] pr-[100px]">
+            <p className="3xl:mb-[18px] 2xl:mb-[30px] 2xl:pr-[0] md:pr-[100px]">
               Traditional Supplier Search <br /> Methods: A Hindrance to Growth, Competitiveness,<br /> and Innovation.
             </p>
             <p className="font-[700] text-white">We're here to change that!</p>

@@ -18,12 +18,12 @@ export default function Home() {
 
   useEffect(() => {
     
-    import('locomotive-scroll').then((locomotiveModule) => {
-      const LocomotiveScroll = locomotiveModule.default;
-      new LocomotiveScroll({
-        el: containerRef.current,
-      });
-    });
+    // import('locomotive-scroll').then((locomotiveModule) => {
+    //   const LocomotiveScroll = locomotiveModule.default;
+    //   new LocomotiveScroll({
+    //     el: containerRef.current,
+    //   });
+    // });
 
   }, []);
   const handleModal = () => {

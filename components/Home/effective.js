@@ -41,7 +41,7 @@ function Effective({ handleModal }) {
             width={101}
             height={113}
             alt="triangle"
-            className="absolute 2xl:top-[10%] top-[55%] 3xl:left-[2%] 2xl:left-[-5%] left-[10%] mouse-parallax md:block block md:max-w-[none] max-w-[101px] transform"
+            className="absolute 2xl:top-[10%] md:top-[55%] top-[37%] 3xl:left-[2%] 2xl:left-[-5%] md:left-[10%] left-[19%] mouse-parallax md:block block md:max-w-[none] max-w-[57px] transform"
             data-scroll
             data-scroll-speed="0.1"
           />
@@ -54,14 +54,14 @@ function Effective({ handleModal }) {
             data-scroll
             data-scroll-speed="0.5"
           />
-          <div className="flex md:flex-center flex-col gap-[80px] 2xl:pt-[210px] pt-[44px] 3xl:pl-[155px] 3xl:pr-[0] pr-[10px]">
-            <div className="flex flex-col 2xl:gap-[24px] gap-[16px] md:px-[0] px-[41px]">
-              <div className="font-[700] 2x:text-[30px] text-[26px] 2xl:leading-[38px] leading-[32px] text-[#000]">YVOO solve this problem</div>
-              <div className="font-machina text-[#06D7F9] uppercase font-[800] 2xl:text-[50px] text-[40px] 2xl:leading-[54px] leading-[44px] 2xl:mb-[18px] mb-[12px]">
+          <div className="flex md:flex-center flex-col gap-[80px] 2xl:pt-[210px] md:pt-[44px] 3xl:pl-[155px] 3xl:pr-[0] md:pr-[10px]">
+            <div className="flex flex-col 2xl:gap-[24px] md:gap-[16px] gap-[12px] md:px-[0] px-[41px]">
+              <div className="font-[700] 2x:text-[30px] md:text-[26px] text-[22px] 2xl:leading-[38px] md:leading-[32px] leading-[28px] text-[#000]">YVOO solve this problem</div>
+              <div className="font-machina text-[#06D7F9] uppercase font-[800] 2xl:text-[50px] md:text-[40px] text-[30px] 2xl:leading-[54px] md:leading-[44px] leading-[34px] 2xl:mb-[18px] md:mb-[12px] mb-[8px]">
                 Fast, Affordable, Effective
               </div>
               <div className="flex flex-col gap-[20px] text-black">
-                <div className="flex gap-[9px]">
+                <div className="flex gap-[9px] items-start	">
                   <Image
                     src="/icons/check.svg"
                     width={20}
@@ -69,11 +69,11 @@ function Effective({ handleModal }) {
                     alt="triangle"
                     className=""
                   />
-                  <div className="font-[400] 2xl:text-[24px] text-[20px] 2xl:leading-[30px] leading-[26px]">
+                  <div className="font-[400] 2xl:text-[24px] md:text-[20px] text-[14px] 2xl:leading-[30px] md:leading-[26px] leading-[20px]">
                     Access to 6M suppliers
                   </div>
                 </div>
-                <div className="flex gap-[9px]">
+                <div className="flex gap-[9px] items-start	">
                   <Image
                     src="/icons/check.svg"
                     width={20}
@@ -81,11 +81,11 @@ function Effective({ handleModal }) {
                     alt="triangle"
                     className=""
                   />
-                  <div className="font-[400] 2xl:text-[24px] text-[20px] 2xl:leading-[30px] leading-[26px]">
+                  <div className="font-[400] 2xl:text-[24px] md:text-[20px] text-[16px] 2xl:leading-[30px] md:leading-[26px] leading-[20px] md:pr-[0] pr-[30px]">
                     Global network of auditors (on-site)
                   </div>
                 </div>
-                <div className="flex gap-[9px]">
+                <div className="flex gap-[9px] items-start	">
                   <Image
                     src="/icons/check.svg"
                     width={20}
@@ -93,11 +93,11 @@ function Effective({ handleModal }) {
                     alt="triangle"
                     className=""
                   />
-                  <div className="font-[400] 2xl:text-[24px] text-[20px] 2xl:leading-[30px] leading-[26px]">
+                  <div className="font-[400] 2xl:text-[24px] md:text-[20px] text-[16px] 2xl:leading-[30px] md:leading-[26px] leading-[20px]">
                     10X Faster decision-making
                   </div>
                 </div>
-                <div className="flex gap-[9px]">
+                <div className="flex gap-[9px] items-start	">
                   <Image
                     src="/icons/check.svg"
                     width={20}
@@ -105,11 +105,11 @@ function Effective({ handleModal }) {
                     alt="triangle"
                     className=""
                   />
-                  <div className="font-[400] 2xl:text-[24px] text-[20px] 2xl:leading-[30px] leading-[26px]">
+                  <div className="font-[400] 2xl:text-[24px] md:text-[20px] text-[16px] 2xl:leading-[30px] md:leading-[26px] leading-[20px]">
                     Over 85% accuracy in matching search results
                   </div>
                 </div>
-                <div className="flex gap-[9px]">
+                <div className="flex gap-[9px] items-start	">
                   <Image
                     src="/icons/check.svg"
                     width={20}
@@ -117,11 +117,11 @@ function Effective({ handleModal }) {
                     alt="triangle"
                     className=""
                   />
-                  <div className="font-[400] 2xl:text-[24px] text-[20px] 2xl:leading-[30px] leading-[26px]">
+                  <div className="font-[400] 2xl:text-[24px] md:text-[20px] text-[16px] 2xl:leading-[30px] md:leading-[26px] leading-[20px]">
                     100% Audit success rate guaranteed
                   </div>
                 </div>
-                <div className="flex gap-[9px]">
+                <div className="flex gap-[9px] items-start	">
                   <Image
                     src="/icons/check.svg"
                     width={20}
@@ -129,7 +129,7 @@ function Effective({ handleModal }) {
                     alt="triangle"
                     className=""
                   />
-                  <div className="font-[400] 2xl:text-[24px] text-[20px] 2xl:leading-[30px] leading-[26px]">
+                  <div className="font-[400] 2xl:text-[24px] md:text-[20px] text-[16px] 2xl:leading-[30px] md:leading-[26px] leading-[20px]">
                     70% Reduction in supplier onboarding costs
                   </div>
                 </div>
@@ -137,7 +137,7 @@ function Effective({ handleModal }) {
             </div>
           </div>
           <div
-            className="md:px-[0] px-[41px] 3xl:pr-[0px] text-black z-30 2xl:mt-[0] md:mt-[-3px] mt-[80px] md:mb-[120px] mb-[100px] 2xl:mb-0 md:mb-[120px] flex flex-col 2xl:gap-[20px] gap-[21px] font-[400] [&>p]:text-[22px] [&>p]:customxs:text-[24px] leading-[30px] 3xl:pl-[84px] 2xl:pl-[54px] 2xl:order-[1] order-[-1]"
+            className="md:px-[0] px-[41px] 3xl:pr-[0px] text-black z-30 2xl:mt-[0] md:mt-[-3px] mt-[-2px] md:mb-[120px] mb-[80px] 2xl:mb-0 md:mb-[120px] flex flex-col 2xl:gap-[20px] gap-[21px] font-[400] [&>p]:text-[22px] [&>p]:customxs:text-[24px] leading-[30px] 3xl:pl-[84px] 2xl:pl-[54px] 2xl:order-[1] order-[-1]"
             data-scroll
             data-scroll-speed="0.16"
           >
@@ -147,7 +147,7 @@ function Effective({ handleModal }) {
               width={673}
               height={832}
               alt="yvoo-search"
-              classes="min-w-[50px] 2xl:top-[0] md:top-[186px] top-[211px] 3xl:left-[0] 2xl:left-[-114px] md:left-[-61px] z-10 3xl:max-w-[673px] 2xl:max-w-[673px] md:max-w-[673px] max-w-[89%]"
+              classes="min-w-[50px] 2xl:top-[0] md:top-[186px] top-[211px] 3xl:left-[0] 2xl:left-[-114px] md:left-[-61px] z-10 3xl:max-w-[673px] 2xl:max-w-[673px] md:max-w-[673px] max-w-[278px] md:mx-[0] mx-[auto]"
             />
           </div>
         </div>
@@ -158,11 +158,11 @@ function Effective({ handleModal }) {
       height={106}
       alt="line"
       classesImg="md:max-w-[519px] md:w-[519px] max-w-[217px]"
-      classesContainer="absolute overflow-hidden md:max-w-[519px] md:w-[519px] 3xl:top-[33%] 2xl:top-[40%] md:top-[27%] top-[45%] 3xl:left-[73%] 2xl:left-[75%] md:left-[59%] left-[40%] z-[30]"
+      classesContainer="absolute overflow-hidden md:max-w-[519px] md:w-[519px] 3xl:top-[33%] 2xl:top-[40%] md:top-[27%] top-[45%] 3xl:left-[73%] 2xl:left-[75%] md:left-[59%] left-[40%] z-[30] md:block hidden"
       data-scroll
       data-scroll-speed="0.13"
     />
-      <div className="w-[100%] 2xl:h-[86px] h-[46px] bg-labelBg 3xl:mt-[0] 2xl:mt-[50px] mt-[160px] running-image 2xl:bg-auto bg-[size:auto_100%]"></div>
+      <div className="w-[100%] 2xl:h-[86px] md:h-[46px] h-[34px] bg-labelBg 3xl:mt-[0] 2xl:mt-[50px] md:mt-[160px] mt-[92px] running-image 2xl:bg-auto bg-[size:auto_100%]"></div>
     </div>
   );
 }
