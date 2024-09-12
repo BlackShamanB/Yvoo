@@ -63,6 +63,15 @@ function Hero() {
           className="md:hidden block !h-auto"
         />
       </div>
+      <Image
+        src="/icons/crosses-1.svg"
+        width={101}
+        height={113}
+        alt="triangle"
+        className="absolute 2xl:top-[33%] md:top-[35.6%] top-[62%] 2xl:left-[68%] md:left-[13%] left-[6%] mouse-parallax md:max-w-[101px] max-w-[63px] rotate-[180deg]"
+        
+        data-scroll data-scroll-speed="0.2"
+      />
 
       <Image
         src="/icons/greenTriangle-4.svg"

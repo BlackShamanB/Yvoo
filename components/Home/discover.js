@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { Link as ReactScrollLink } from "react-scroll";
+import ImgLeftToRight from "../ImgLeftToRight";
 
 function Discover() {
   return (
@@ -31,6 +32,16 @@ function Discover() {
         className="absolute 2xl:top-[790px] md:top-[92.4%] top-[98.3%] 3xl:left-[60%] 2xl:left-[58.6%] md:left-[64.6%] left-[53%] mouse-parallax md:max-w-[180px] max-w-[127px] z-[1] md:block hidden"
         
         data-scroll data-scroll-speed="0.5"
+      />
+      <ImgLeftToRight
+        src="/icons/line-blue.svg"
+        width={590}
+        height={106}
+        alt="line"
+        classesImg="md:max-w-[519px] md:w-[519px] max-w-[217px]"
+        classesContainer="absolute overflow-hidden md:max-w-[519px] md:w-[519px] 3xl:top-[11%] 2xl:top-[11%] md:top-[27%] top-[45%] 3xl:left-[73%] 2xl:left-[75%] md:left-[59%] left-[40%] z-[30] 2xl:block hidden"
+        data-scroll
+        data-scroll-speed="0.13"
       />
       <div
         className="3xl:max-w-[1516px] 2xl:max-w-[1116px] md:max-w-[598px] mx-[auto] relative grid grid-cols-1 2xl:grid-cols-2 w-full mb-[100px] 3xl:mt-[232px] 2xl:mt-[200px] md:mt-[400px] sm:mt-[262px] mt-[787px] 3xl:mb-[391px] 2xl:mb-[424px] md:mb-[154px] mb-[0]"

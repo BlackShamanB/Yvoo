@@ -3,6 +3,7 @@ import Link from "next/link";
 import TypingEffect from "../TypingEffect";
 import MagnifyOnScroll from "../MagnifyOnScroll";
 import React, { useState, useEffect, useRef } from "react";
+import ImgLeftToRight from "../ImgLeftToRight";
 function Situation({ handleModal }) {
   const elementRef = useRef(null);
   const [elementVisible, setelementVisible] = useState(false);
@@ -50,7 +51,7 @@ function Situation({ handleModal }) {
             width={80}
             height={90}
             alt="triangle"
-            className="absolute 2xl:top-[-152px] top-[-71%] top-[-111%] 3xl:left-[20%] 2xl:left-[22.5%] left-[82%] mouse-parallax 2xl:block md:hidden block md:max-w-[none] max-w-[45px] transform md:scale-y-[1] scale-y-[-1] 2xl:block md:hidden block md:rotate-[0] rotate-[180deg]"
+            className="absolute 2xl:top-[-152px] top-[-71%] top-[-111%] 3xl:left-[24%] 2xl:left-[22.5%] left-[82%] mouse-parallax 2xl:block md:hidden block md:max-w-[none] max-w-[45px] transform md:scale-y-[1] scale-y-[-1] 2xl:block md:hidden block md:rotate-[0] rotate-[180deg]"
             data-scroll
             data-scroll-speed="0.1"
           />
@@ -60,9 +61,19 @@ function Situation({ handleModal }) {
             width={101}
             height={113}
             alt="triangle"
-            className="absolute 2xl:top-[87%] md:top-[35.6%] top-[41%] 2xl:left-[35%] md:left-[13%] left-[6%] mouse-parallax md:max-w-[101px] max-w-[63px] 2xl:block hidden"
+            className="absolute 3xl:top-[67%] 2xl:top-[43%] md:top-[35.6%] top-[41%] 3xl:left-[35%] 2xl:left-[33%] md:left-[13%] left-[6%] mouse-parallax md:max-w-[101px] max-w-[63px] 2xl:block hidden"
             data-scroll
             data-scroll-speed="0.2"
+          />
+          <ImgLeftToRight
+            src="/icons/line-white.svg"
+            width={590}
+            height={106}
+            alt="line"
+            classesImg="md:max-w-[519px] md:w-[519px] max-w-[217px]"
+            classesContainer="absolute overflow-hidden md:max-w-[519px] md:w-[519px] 3xl:top-[44%] 3xl:left-[-18%] z-[30] 3xl:block hidden"
+            data-scroll
+            data-scroll-speed="0.13"
           />
           <div
             style={{

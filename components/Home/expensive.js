@@ -34,7 +34,7 @@ function Expensive({ handleModal }) {
         className=""
         data-scroll
         data-scroll-speed="0.12"
-      ><h2 className="3xl:max-w-[1208px] 2xl:max-w-[1116px] md:max-w-[598px] max-w-[calc(100vw-82px)] mx-[auto] font-machina uppercase text-white font-[800] 2xl:text-[50px] md:text-[40px] text-[30px] 2xl:leading-[54px] md:leading-[44px] leading-[34px] 3xl:mb-[90px] md:mb-[60px] mb-[30px]">
+      ><h2 className="3xl:max-w-[1208px] 2xl:max-w-[1116px] md:max-w-[598px] max-w-[calc(100vw-82px)] mx-[auto] font-machina uppercase text-white font-[800] 2xl:text-[50px] md:text-[40px] text-[30px] 2xl:leading-[54px] md:leading-[44px] leading-[34px] 3xl:mb-[90px] 2xl:mb-[95px] md:mb-[60px] mb-[30px]">
       Its Expensive , Slow an Ineffective
     </h2>
         <div className="3xl:max-w-[1293px] 2xl:max-w-[1116px] md:max-w-[720px] mx-[auto] relative grid grid-cols-1 2xl:grid-cols-2 w-full bg-no-repeat bg-bottom z-30">
@@ -43,7 +43,7 @@ function Expensive({ handleModal }) {
             width={71}
             height={85}
             alt="triangle"
-            className="absolute 2xl:top-[-35px] md:top-[-5%] top-[-3%] 2xl:left-[45%] 2xl:left-[82%] md:left-[81%] left-[79%]  mouse-parallax 2xl:block block md:max-w-[none] max-w-[36px] transform"
+            className="absolute 2xl:top-[-35px] md:top-[-5%] top-[-3%] 3xl:left-[45%] 2xl:left-[45%] md:left-[81%] left-[79%]  mouse-parallax 2xl:block block md:max-w-[none] max-w-[36px] transform"
             data-scroll
             data-scroll-speed="0.1"
           />
@@ -52,7 +52,7 @@ function Expensive({ handleModal }) {
             width={116}
             height={139}
             alt="triangle"
-            className="absolute 2xl:top-[-71%] top-[-44%] 3xl:left-[90%] 2xl:left-[85%] left-[61%] mouse-parallax 2xl:block block md:max-w-[116px] max-w-[63px] md:block hidden"
+            className="absolute 3xl:top-[-71%] 2xl:top-[-65%] top-[-44%] 3xl:left-[90%] 2xl:left-[92%] left-[61%] mouse-parallax 2xl:block block md:max-w-[116px] max-w-[63px] md:block hidden"
             data-scroll
             data-scroll-speed="0.1"
           />

@@ -41,7 +41,7 @@ function Effective({ handleModal }) {
             width={101}
             height={113}
             alt="triangle"
-            className="absolute 2xl:top-[10%] md:top-[55%] top-[37%] 3xl:left-[2%] 2xl:left-[-5%] md:left-[10%] left-[19%] mouse-parallax md:block block md:max-w-[none] max-w-[57px] transform"
+            className="absolute 3xl:top-[10%] 2xl:top-[11%] md:top-[55%] top-[37%] 3xl:left-[2%] 2xl:left-[-11%] md:left-[10%] left-[19%] mouse-parallax md:block block md:max-w-[none] max-w-[57px] transform"
             data-scroll
             data-scroll-speed="0.1"
           />
@@ -56,7 +56,7 @@ function Effective({ handleModal }) {
           />
           <div className="flex md:flex-center flex-col gap-[80px] 2xl:pt-[210px] md:pt-[44px] 3xl:pl-[155px] 3xl:pr-[0] md:pr-[10px]">
             <div className="flex flex-col 2xl:gap-[24px] md:gap-[16px] gap-[12px] md:px-[0] px-[41px]">
-              <div className="font-[700] 2x:text-[30px] md:text-[26px] text-[22px] 2xl:leading-[38px] md:leading-[32px] leading-[28px] text-[#000]">YVOO solve this problem</div>
+              <div className="font-[700] 2xl:text-[30px] md:text-[26px] text-[22px] 2xl:leading-[38px] md:leading-[32px] leading-[28px] text-[#000]">YVOO solve this problem</div>
               <div className="font-machina text-[#06D7F9] uppercase font-[800] 2xl:text-[50px] md:text-[40px] text-[30px] 2xl:leading-[54px] md:leading-[44px] leading-[34px] 2xl:mb-[18px] md:mb-[12px] mb-[8px]">
                 Fast, Affordable, Effective
               </div>

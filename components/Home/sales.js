@@ -55,7 +55,7 @@ function Sales({ handleModal }) {
               height={106}
               alt="line"
               classesImg="md:max-w-[584px] max-w-[360px] md:min-h-[206px] min-h-[127px]"
-              classesContainer="absolute overflow-hidden 2xl:top-[57%] 2xl:top-[53%] md:top-[39.5%] top-[23.9%] 3xl:left-[-22%] 2xl:left-[-46%] md:left-[-78%] left-[57%] z-[1]"
+              classesContainer="absolute overflow-hidden 3xl:top-[55%] 2xl:top-[53%] md:top-[39.5%] top-[23.9%] 3xl:left-[-22%] 2xl:left-[-46%] md:left-[-78%] left-[57%] z-[1]"
               data-scroll
               data-scroll-speed="0.25"
             />
