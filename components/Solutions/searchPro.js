@@ -13,7 +13,7 @@ function SearchPro() {
           // fill
           width={746}
           height={797}
-          className="relative object-contain 3xl:block 2xl:hidden hidden"
+          className="relative object-contain 3xl:mt-[113px] 3xl:block 2xl:hidden hidden"
         />
         <Image
           src="/images/phone_2xl.png"
@@ -23,7 +23,7 @@ function SearchPro() {
           height={797}
           className="relative object-contain 3xl:hidden 2xl:block hidden top-[150px]"
         />
-        <div className="absolute w-275px text-[16px] leading-[20px] font-[500] py-[20px] pl-[30px] pr-[26px] bg-[#000] 3xl:top-[138px] 2xl:top-[279px] 3xl:right-[1px] 2xl:right-[63px] uppercase rounded-t-[30px] rounded-r-[30px] 2xl:block hidden">
+        <div className="absolute w-275px text-[16px] leading-[20px] font-[500] py-[20px] pl-[30px] pr-[26px] bg-[#000] 3xl:top-[241px] 2xl:top-[279px] 3xl:right-[1px] 2xl:right-[63px] uppercase rounded-t-[30px] rounded-r-[30px] 2xl:block hidden">
           watch instructions
           <Image
             src="/icons/watch-triangle.svg"
@@ -35,8 +35,8 @@ function SearchPro() {
           />
         </div>
       </div>
-      <div className="[&>*]:text-black w-full 3xl:max-w-[735px] 2xl:max-w-[598px] md:max-w-[unset] 3xl:pt-[100px] 2xl:pt-[94px] 3xl:pl-[63px] 3xl:pr-[0] 2xl:pr-[114px]" data-scroll data-scroll-speed="0.125">
-        <h1 className="2xl:mb-[24px] md:mb-[21px] mb-[15px] max-w-[514px] font-machina font-[800] uppercase text-[30px] md:text-[40px] 2xl:text-[50px] leading-[34px] md:leading-[44px] 2xl:leading-[50px] 3xl:ml-[0] 2xl:ml-[-19px]">
+      <div className="[&>*]:text-black w-full 3xl:max-w-[735px] 2xl:max-w-[598px] md:max-w-[unset] 3xl:pt-[100px] 2xl:pt-[94px] pt-[120px] 3xl:pl-[63px] 3xl:pr-[0] 2xl:pr-[114px]" data-scroll data-scroll-speed="0.125">
+        <h1 className="2xl:mb-[24px] md:mb-[16px] mb-[15px] max-w-[514px] font-machina font-[800] uppercase text-[30px] md:text-[40px] 2xl:text-[50px] leading-[34px] md:leading-[44px] 2xl:leading-[50px] 3xl:ml-[0] 2xl:ml-[-19px]">
           YVOO <br></br><b className="text-white font-[800]">Search</b>
           Pro+
         </h1>
