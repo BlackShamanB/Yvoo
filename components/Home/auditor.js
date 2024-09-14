@@ -26,7 +26,7 @@ function Auditor() {
     };
   }, []);
   return (
-    <div className="relative grid w-full w-full bg-[#131D2A]">
+    <div className="relative grid w-full w-full bg-[transparent]">
       <Image
         src="/icons/arch-2.png"
         width={316}
@@ -152,8 +152,8 @@ function Auditor() {
         width={905}
         height={905}
         alt="yvoo-sales"
-        style={{ mixBlendMode: "screen" }}
-        className="hidden 2xl:block 2xl:object-contain absolute 3xl:ml-[-109px] 2xl:ml-[-109px] 2xl:mt-[203px] h-[812px] z-1"
+        // style={{ mixBlendMode: "screen" }}
+        className="hidden 2xl:block 2xl:object-contain absolute 3xl:ml-[-109px] 2xl:ml-[-109px] 2xl:mt-[203px] h-[812px] z-[-1]"
         
       />
       <Image

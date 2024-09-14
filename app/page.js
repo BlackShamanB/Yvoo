@@ -31,7 +31,7 @@ export default function Home() {
   };
 
   return (
-    <main className="w-full" ref={containerRef} data-scroll-container>
+    <main className="w-full md:pt-[86px] pt-[58px]" ref={containerRef} data-scroll-container>
       <Hero />
       <Discover />
       <Situation></Situation>

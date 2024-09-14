@@ -41,7 +41,7 @@ function Results({ handleModal }) {
             width={592}
             height={476}
             alt="yvoo-search"
-            classes="relative md:ml-[0] ml-[49px] 3xl:top-[0px] 2xl:top-[130px] md:top-[0] top-[-25px] 3xl:left-[0] 2xl:left-[38px] md:left-[unset] left-[49px] z-10 3xl:max-w-[592px] 2xl:max-w-[432px] md:max-w-[415px] max-w-[250px] 3xl:w-[592px] 2xl:w-[666px] md:w-[415px] [&>div>img]:2xl:h-[476px] [&>div>img]:md:h-[unset] [&>div>img]:h-[201px] 2xl:float-right z-[0]"
+            classes="relative md:ml-[0] ml-[49px] 3xl:top-[0px] 2xl:top-[130px] md:top-[0] top-[-25px] 3xl:left-[0] 2xl:left-[38px] md:left-[unset] left-[49px] z-10 3xl:max-w-[592px] 2xl:max-w-[432px] md:max-w-[415px] max-w-[250px] 3xl:w-[592px] 2xl:w-[666px] md:w-[415px] [&>div>img]:3xl:h-[476px] [&>div>img]:2xl:h-[auto] [&>div>img]:md:h-[unset] [&>div>img]:h-[201px] 2xl:float-right z-[0]"
           />
         </div>
         <div className="3xl:pl-[84px] 2xl:pl-[54px] w-full bg-[#131D2A]" data-scroll data-scroll-speed="0.2">
