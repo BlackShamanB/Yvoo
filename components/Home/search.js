@@ -123,7 +123,7 @@ function Search({ handleModal }) {
             </p>
             <p>
               Introducing YVOO, an AI-powered platform designed to revolutionize supplier 
-              sourcing. Say go===odbye to the hassle and uncertainty of traditional 
+              sourcing. Say goodbye to the hassle and uncertainty of traditional 
               methods and embrace a more efficient and effective solution.
             </p>
             <p>

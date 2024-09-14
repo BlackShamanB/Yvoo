@@ -64,7 +64,7 @@ const Header = () => {
   ];
 
   return (
-    <div className="fixed z-[1000] w-full flex lg2:justify-between items-center md:pt-[21px] md:pb-[21px] lg2:pl-[48px] md:pl-[24px] pl-[4px] lg2:pr-[48px] md:pr-[24px] pr-[12px] items-center md:h-[86px] h-[58px] font-medium bg-[black]">
+    <div className="fixed z-[1000] 3xl:max-w-[1920px] w-full flex lg2:justify-between items-center md:pt-[21px] md:pb-[21px] lg2:pl-[48px] md:pl-[24px] pl-[4px] lg2:pr-[48px] md:pr-[24px] pr-[12px] items-center md:h-[86px] h-[58px] font-medium bg-[black]">
       <div className="lg2:hidden 2xl:mr-[32px] md:mr-[33px]">
         <Image
           onClick={toggleMenu}
