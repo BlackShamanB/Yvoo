@@ -100,7 +100,7 @@ function Sales({ handleModal }) {
               transform: "translateZ(-10px)",
               transformStyle: "preserve-3d",
             }}
-            className="bg-white md:py-0 md:flex-center flex-col h-auto md:h-[918px] 2xl:h-[1187px] 3xl:pl-[84px] 2xl:pl-[54px]"
+            className="bg-white md:py-0 md:flex-center flex-col h-auto md:h-[auto] 2xl:h-[auto] 3xl:pl-[84px] 2xl:pl-[54px]"
           >
             <Image
               style={{ zIndex: 0, transform: "translateZ(10px)" }}

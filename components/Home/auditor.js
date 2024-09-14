@@ -162,7 +162,7 @@ function Auditor() {
         height={905}
         alt="yvoo-sales"
         style={{ mixBlendMode: "screen" }}
-        className="2xl:hidden md:block hidden  absolute mt-[58px] h-[649px] w-[378px] z-1"
+        className="2xl:hidden md:block hidden  absolute mt-[58px] h-[649px] w-[378px] z-[-1]"
         
       />
       <Image
