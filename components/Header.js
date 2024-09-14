@@ -3,6 +3,7 @@
 import { useState, useRef, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { useData } from '@/components/DataContext';
 
 import ModalRequest from "./ModalRequest";
 
@@ -42,7 +43,15 @@ const Header = () => {
 
   const handleLinkClick = (link) => {
     setActiveLink(link); // Обновляем состояние при клике на ссылку
+    setData(link);
   };
+  const { setData } = useData();
+
+  useEffect(() => {
+    // Пример данных, которые вы хотите передать
+    const headerData = { message: 'Hello from Header' };
+    setData(headerData);
+  }, [setData]);
 
   // let pathName = window.location.pathname
 

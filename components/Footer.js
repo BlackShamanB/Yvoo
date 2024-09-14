@@ -3,6 +3,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
+import { useData } from '@/components/DataContext';
 
 import ModalRequest from "./ModalRequest";
 
@@ -23,11 +24,12 @@ const Footer = () => {
   const handleModal = () => {
     setOpenModalRequest((prev) => !prev);
   };
+  const { data } = useData();
 
   return (
     <footer
       className="bg-[#131D2A] text-white -mt-[1px] lg:pl-[100px] 3xl:pr-[54px] 2xl:pr-[49px] md:pr-[85px] 2xl:pt-[93px] pt-[60px] 2xl:pb-[92px] pb-[111px] md:pl-[85px] flex 2xl:items-center 2xl:justify-centerr md:flex-between flex-wrap 2xl:gap-[135px] gap-[60px] flex-col 2xl:flex-row px-[41px]"
-      style={{ background: pageName == "/blog" || pageName == "/" ? "transparent" : "" }}
+      style={{ background: data == "/blog" || data == "/" ? "transparent" : "" }}
     >
       <Image src="/logo.svg" width={122} height={36} alt="logo" />
       <div className="flex-1 md:flex-center md:justify-between gap-8 flex-wrap">

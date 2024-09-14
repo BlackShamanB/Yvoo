@@ -6,6 +6,7 @@ import GoogleAnalytics from "@/components/GoogleAnalytics";
 import CookieBanner from "@/components/CookieBanner";
 // import LocomotiveScroll from "../node_modules/locomotive-scroll";
 // import LocomotiveScroll from "locomotive-scroll";
+import { DataProvider } from '@/components/DataContext';
 
 export const viewport = {
   themeColor: "#06D6F8",
@@ -134,10 +135,12 @@ export default function RootLayout({ children }) {
     >
       <GoogleAnalytics GA_MEASUREMENT_ID="G-BSDEV77RFE" />
       <body data-scroll-container>
-        <Header />
-        {children}
-        <CookieBanner />
-        <Footer />
+        <DataProvider>  
+          <Header />
+          {children}
+          <CookieBanner />
+          <Footer />
+        </DataProvider>
       </body>
     </html>
   );
