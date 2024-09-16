@@ -171,7 +171,7 @@ function Auditor() {
         height={905}
         alt="yvoo-sales"
         style={{ mixBlendMode: "screen" }}
-        className="md:hidden block 2xl:object-contain md:block absolute 3xl:ml-[-109px] 2xl:ml-[-109px] 2xl:mt-[203px] h-[328px] w-[176px] mt-[65px] z-1"
+        className="md:hidden block 2xl:object-contain md:block absolute 3xl:ml-[-109px] 2xl:ml-[-109px] 2xl:mt-[203px] h-[328px] w-[176px] mt-[65px] z-[-1]"
         
       />
     </div>
