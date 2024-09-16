@@ -7,13 +7,13 @@ function Scan({ handleModal }) {
       id="scan"
       className="relative grid grid-cols-1 md:grid-cols-2 w-full bg-[#06D7F9]"
     >
-      <Image
+      {/* <Image
         src="/icons/greenTriangle.png"
         width={146}
         height={166}
         alt="triangle"
         className="hidden md:block absolute -top-[54px] md2:left-[18%] 2xl:left-[20%]"
-      />
+      /> */}
       <div className="px-[0px] md:px-[50px] md:py-[55px] md:py-0 md:flex-center flex-col h-[181px] md:h-[714px] 2xl:h-[914px] 3xl:h-[854px]">
         <div className="flex flex-col justify-center md:items-end md:flex-nowrap md:flex-col gap-[24px] 2xl:ml-[182px] md:mt-[128px] md:mb-[420px] md2:mr-[36px]">
           <MagnifyOnScroll

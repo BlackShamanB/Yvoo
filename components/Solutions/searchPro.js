@@ -66,14 +66,14 @@ function SearchPro() {
           options in a matter of seconds.
         </p>
       </div>
-      <div className="relative w-full md:ml-[10px] md:min-w-[623px] min-w-[345px] 2xl:hidden block">
+      <div className="relative w-full md:min-w-[623px] min-w-[unset] 2xl:hidden block">
         <Image
-          src="/images/phone_md.png"
+          src="/images/phone_xs.png"
           alt="mobile"
           // fill
           width={746}
           height={797}
-          className="object-contain md:hidden block ml-[-17px]"
+          className="object-contain md:hidden block"
         />
         <Image
           src="/images/phone_md.png"
@@ -83,17 +83,6 @@ function SearchPro() {
           height={797}
           className="object-contain 2xl:hidden md:block hidden"
         />
-        <div className="absolute w-275px md:text-[16px] text-[12px] md:leading-[20px] leading-[16px] font-[500] md:py-[20px] py-[13px] md:pl-[30px] pl-[20px] md:pr-[26px] pr-[17px] bg-[#000] uppercase rounded-t-[30px] rounded-r-[30px] block md:top-[87px] top-[12px] md:left-[325px] left-[107px]">
-          watch instructions
-          <Image
-            src="/icons/watch-triangle.svg"
-            alt="mobile"
-            // fill
-            width={18}
-            height={18}
-            className="object-contain inline-block md:ml-[18px] ml-[13px] md:w-[unset] md:h-[unset] w-[12px] h-[18px]"
-          />
-        </div>
       </div>
     </div>
   );

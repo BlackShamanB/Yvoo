@@ -148,7 +148,7 @@ function Auditor() {
         </div>
       </div>
       <Image
-        src="/images/bg-footer2xl.png"
+        src="/images/bg-footer2xl-1.png"
         width={905}
         height={905}
         alt="yvoo-sales"
@@ -157,7 +157,7 @@ function Auditor() {
         
       />
       <Image
-        src="/images/bg-footermd.png"
+        src="/images/bg-footermd-1.png"
         width={905}
         height={905}
         alt="yvoo-sales"
@@ -166,7 +166,7 @@ function Auditor() {
         
       />
       <Image
-        src="/images/bg-footer.png"
+        src="/images/bg-footer-1.png"
         width={905}
         height={905}
         alt="yvoo-sales"
