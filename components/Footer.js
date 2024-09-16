@@ -25,7 +25,7 @@ const Footer = () => {
     setOpenModalRequest((prev) => !prev);
   };
   const { data } = useData();
-
+  console.log(data)
   return (
     <footer
       className="bg-[#131D2A] text-white -mt-[1px] lg:pl-[100px] 3xl:pr-[54px] 2xl:pr-[49px] md:pr-[85px] 2xl:pt-[93px] pt-[60px] 2xl:pb-[92px] pb-[111px] md:pl-[85px] flex 2xl:items-center 2xl:justify-centerr md:flex-between flex-wrap 2xl:gap-[135px] gap-[60px] flex-col 2xl:flex-row px-[41px]"

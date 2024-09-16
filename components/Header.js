@@ -48,9 +48,7 @@ const Header = () => {
   const { setData } = useData();
 
   useEffect(() => {
-    // Пример данных, которые вы хотите передать
-    const headerData = { message: 'Hello from Header' };
-    setData(headerData);
+    setData(window.location.pathname);
   }, [setData]);
 
   // let pathName = window.location.pathname
