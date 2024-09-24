@@ -35,7 +35,7 @@ export default function Home() {
       <Hero />
       <Discover />
       <Situation></Situation>
-      <Expensive></Expensive>
+      {/* <Expensive></Expensive> */}
       <Effective></Effective>
       <Search handleModal={handleModal} />
       <Scan handleModal={handleModal} />

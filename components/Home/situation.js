@@ -97,10 +97,60 @@ function Situation({ handleModal }) {
               className="z-10 max-w-[76px] 3xl:mb-[0] 2xl:mb-[42px] md:mb-[18px] mb-[22px]"
             />
             <h2 className="font-machina uppercase font-[800] 2xl:text-[50px] md:text-[40px] text-[30px] 2xl:leading-[54px] md:leading-[44px] leading-[34px] 3xl:mb-[0] 2xl:mb-[42px] mb-[4px]">
-              The Situation
+              The Roadblock
             </h2>
+            <p className="!font-[700] !2xl:text-[30px] !md:text-[26px] !text-[30px] !2xl:leading-[22px] !md:leading-[32px] !leading-[28px]">Traditional on-site supplier audits are more than just slow and costly:</p>
             <p className="3xl:mb-[18px] 2xl:mb-[30px] 2xl:pr-[0] md:pr-[100px]">
-              Traditional Supplier Search <br /> Methods: A Hindrance to Growth, Competitiveness,<br /> and Innovation.
+            <div className="flex flex-col gap-[20px] text-black">
+                <div className="flex gap-[9px] items-start	">
+                  <Image
+                    src="/icons/checkWhite.svg"
+                    width={20}
+                    height={20}
+                    alt="triangle"
+                    className=""
+                  />
+                  <div className="font-[400] 2xl:text-[24px] md:text-[20px] text-[14px] 2xl:leading-[30px] md:leading-[26px] leading-[20px]">
+                    The limit your ability to scale
+                  </div>
+                </div>
+                <div className="flex gap-[9px] items-start	">
+                  <Image
+                    src="/icons/checkWhite.svg"
+                    width={20}
+                    height={20}
+                    alt="triangle"
+                    className=""
+                  />
+                  <div className="font-[400] 2xl:text-[24px] md:text-[20px] text-[16px] 2xl:leading-[30px] md:leading-[26px] leading-[20px] md:pr-[0] pr-[30px]">
+                    Delays your response to disruptions
+                  </div>
+                </div>
+                <div className="flex gap-[9px] items-start	">
+                  <Image
+                    src="/icons/checkWhite.svg"
+                    width={20}
+                    height={20}
+                    alt="triangle"
+                    className=""
+                  />
+                  <div className="font-[400] 2xl:text-[24px] md:text-[20px] text-[16px] 2xl:leading-[30px] md:leading-[26px] leading-[20px]">
+                    Weakens your competitive position
+                  </div>
+                </div>
+                <div className="flex gap-[9px] items-start	">
+                  <Image
+                    src="/icons/checkWhite.svg"
+                    width={20}
+                    height={20}
+                    alt="triangle"
+                    className=""
+                  />
+                  <div className="font-[400] 2xl:text-[24px] md:text-[20px] text-[16px] 2xl:leading-[30px] md:leading-[26px] leading-[20px]">
+                    Creates operational inefficiencies
+                  </div>
+                </div>
+              </div>
             </p>
             <p className="font-[700] text-white">We're here to change that!</p>
           </div>

@@ -71,12 +71,13 @@ function Discover() {
           data-scroll
           data-scroll-speed="0.1"
         >
-          <h2 className="font-[700] 2xl:text-[30px] md:text-[26px] text-[22px] 2xl:leading-[38px] md:leading-[32px] leading-[28px]">
+          <h2 className="font-[700] 3xl:text-[34px] 2xl:text-[30px] md:text-[26px] text-[22px] 2xl:leading-[38px] md:leading-[32px] leading-[28px] 2xl:mb-[42px] mb-[40px]">
             {" "}
-            We're a global B2B platform, {" "}
+            We’re Redefining 
+            Supplier Audits Globally {" "}
           </h2>
-          <p className="2xl:mb-[60px] mb-[40px] 3xl:pr-[100px]">offering on-the-ground expertise for worldwide supplier discovery and verification.</p>
-          <p className="text-[#06D7F9] 2xl:text-[24px] md:text-[20px] text-[16px] 2xl:leading-[30px] md:leading-[26px] leading-[20px] font-[700]">Think LinkedIn's power + Uber's user experience​​</p>
+          <p className="2xl:mb-[42px] mb-[40px] 3xl:pr-[100px]">Unmatched on-the-ground expertise for supplier verification, anywhere in the world. Powered by advanced AI, our platform connects you with local auditors to ensure precise, efficient results.</p>
+          <p className="text-[#06D7F9] 2xl:text-[30px] 2xl:text-[26px] md:text-[20px] text-[16px] 2xl:leading-[38px] md:leading-[26px] leading-[20px] font-[700]">Think LinkedIn's power + Uber's user experience​​​​</p>
         </div>
       </div>
     </div>

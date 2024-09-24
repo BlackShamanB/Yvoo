@@ -89,7 +89,7 @@ function Hero() {
       >
         <div className="3xl:max-w-[1516px] 2xl:max-w-[1116px] md:max-w-[598px] 3xl:w-[1516px] 2xl:w-[1116px] mx-[auto] md:pl-[0] pl-[20px] md:pr-[0] pr-[20px]">
           <h1
-            className="relative uppercase font-machina 2xl:text-[60px] md:text-[50px] text-[30px] font-[800] 2xl:leading-[64px] md:leading-[54px] leading-[34px] max-w-[880px]"
+            className="relative uppercase font-machina 2xl:text-[60px] md:text-[50px] text-[30px] font-[800] 2xl:leading-[64px] md:leading-[54px] leading-[34px] max-w-[830px]"
             ref={elementRef}
             style={{
               visibility: elementVisible ? "visible" : "hidden",
@@ -98,10 +98,10 @@ function Hero() {
               transition: "linear 0.5s",
             }}
           >
-            The AI Procurement Platform
+            The Most Advanced Supplier On-Site Audit Solution
           </h1>
         </div>
-        <div className="3xl:max-w-[1516px] 2xl:max-w-[1116px] md:max-w-[598px] 3xl:w-[1516px] 2xl:w-[1116px] md:w-[598px] md:mx-[auto] mx-[22px] 2xl:mt-[71px] md:mt-[40px] mt-[30px] flex items-center md:gap-[33px] gap-[15px]">
+        {/* <div className="3xl:max-w-[1516px] 2xl:max-w-[1116px] md:max-w-[598px] 3xl:w-[1516px] 2xl:w-[1116px] md:w-[598px] md:mx-[auto] mx-[22px] 2xl:mt-[71px] md:mt-[40px] mt-[30px] flex items-center md:gap-[33px] gap-[15px]">
           <Image
             src="/icons/icon-play-btn.svg"
             width={68}
@@ -113,7 +113,7 @@ function Hero() {
           <h2 className="font-[400] md:text-[18px] text-[16px] md:leading-[22px] leading-[20px]">
             Have a sneak peek<br></br>at what we do
           </h2>
-        </div>
+        </div> */}
         <div className="grid sm:grid-cols-2 lg2:grid-cols-4 2xl:h-[200px] 2xl:gap-[40px] gap-[20px] 2xl:mt-auto 2xl:mt-[-58px] md:mt-[22px] mt-[140px] 2xl:px-[0] md:px-[35px] px-[20px] font-inter">
           <ReactScrollLink
             className="relative 3xl:top-[64px] 2xl:top-[61px] md:top-[260px] top-[40px]"
@@ -124,11 +124,11 @@ function Hero() {
             offset={0}
             duration={500}
           >
-            <div className="2xl:max-h-[179px] md:max-h-[200px] max-h-[172px] 2xl:h-[179px] md:h-[200px] h-[172px] flex-1 3xl:px-[30px] px-[30px] 3xl:pt-[30px] pt-[30px] pb-[18px] bg-[#53D3AA] basis-[300px] cursor-pointer hoverLink">
+            <div className="2xl:max-h-[179px] md:max-h-[200px] max-h-[172px] 2xl:h-[179px] md:h-[200px] h-[172px] flex-1 3xl:px-[30px] px-[30px] 3xl:pt-[30px] pt-[30px] pb-[18px] border-t-[5px] border-mint basis-[300px] cursor-pointer hoverLink">
               <h2 className="mb-[4px] uppercase font-machina md:text-[24px] text-[20px] md:leading-[26px] leading-[24px] font-[800] max-w-[172px]">
-                YVOO Search<b className="text-black">Pro+</b>
+                YVOO Search<b className="text-mint">Pro+</b>
               </h2>
-              <p className="text-black font-[700] md:text-[17px] text-[16px] max-w-[240px] md:leading-[21px] leading-[20px]">
+              <p className="text-[#E5E5E5] font-[700] md:text-[17px] text-[16px] max-w-[240px] md:leading-[21px] leading-[20px]">
                 Discover Quality <br></br>Suppliers Effortlessly
               </p>
             </div>
@@ -142,11 +142,11 @@ function Hero() {
             offset={0}
             duration={500}
           >
-            <div className="2xl:max-h-[179px] md:max-h-[200px] max-h-[172px] 2xl:h-[179px] md:h-[200px] h-[172px] flex-1 3xl:px-[30px] px-[30px] 3xl:pt-[30px] pt-[30px] pb-[18px] bg-[#06D7F9] basis-[300px] cursor-pointer hoverLink">
+            <div className="2xl:max-h-[179px] md:max-h-[200px] max-h-[172px] 2xl:h-[179px] md:h-[200px] h-[172px] flex-1 3xl:px-[30px] px-[30px] 3xl:pt-[30px] pt-[30px] pb-[18px] border-t-[5px] border-[#06D7F9] basis-[300px] cursor-pointer hoverLink">
               <h2 className="mb-[4px] uppercase font-machina md:text-[24px] text-[20px] md:leading-[26px] leading-[24px] font-[800] max-w-[172px]">
-                YVOO Scan<b className="text-black">Pro+</b>
+                YVOO Scan<b className="text-blue">Pro+</b>
               </h2>
-              <p className="text-black font-[700] md:text-[17px] text-[16px] max-w-[240px] md:leading-[21px] leading-[20px]">
+              <p className="text-[#E5E5E5] font-[700] md:text-[17px] text-[16px] max-w-[240px] md:leading-[21px] leading-[20px]">
                 Unleash Supplier Readiness for Unprecedented Audit Success
               </p>
             </div>
@@ -160,14 +160,15 @@ function Hero() {
             offset={0}
             duration={500}
           >
-            <div className="2xl:max-h-[179px] md:max-h-[200px] max-h-[172px] 2xl:h-[179px] md:h-[200px] h-[172px] flex-1 3xl:px-[30px] px-[30px] 3xl:pt-[30px] pt-[30px] pb-[18px] bg-[#FFFFFF] basis-[300px] cursor-pointer hoverLink">
+            <div className="2xl:max-h-[179px] md:max-h-[200px] max-h-[172px] 2xl:h-[179px] md:h-[200px] h-[172px] flex-1 3xl:px-[30px] px-[30px] 3xl:pt-[30px] pt-[30px] pb-[18px] basis-[300px] cursor-pointer hoverLink">
               <h2 className="mb-[4px] uppercase font-machina md:text-[24px] text-[20px] md:leading-[26px] leading-[24px] font-[800] max-w-[172px] text-[#06D7F9]">
-                YVOO Sales<b className="text-black">Pro+</b>
+                YVOO Sales<b className="text-[#E5E5E5]">Pro+</b>
               </h2>
-              <p className="text-black font-[700] md:text-[17px] text-[16px] max-w-[240px] md:leading-[21px] leading-[20px]">
+              <p className="text-[#E5E5E5] font-[700] md:text-[17px] text-[16px] max-w-[240px] md:leading-[21px] leading-[20px]">
                 Unlock Your Supplier Potential and Maximize <br></br>Your
                 Business Growth
               </p>
+              <div className="absolute w-[100%] h-[5px] bg-[#FFFFFF] top-[0] left-[0] hoverLinkBg"></div>
             </div>
           </ReactScrollLink>
           <Link
@@ -175,7 +176,7 @@ function Hero() {
             className="relative 3xl:top-[64px] 2xl:top-[61px] md:top-[260px] top-[40px]"
           >
             <div
-              className="min-h-[163px] 2xl:max-h-[179px] md:max-h-[200px] max-h-[172px] 2xl:h-[179px] md:h-[200px] h-[172px] flex-1 3xl:px-[30px] px-[30px] 3xl:pt-[30px] pt-[30px] pb-[18px] bg-[#131D2A] basis-[300px] cursor-pointer hoverLink"
+              className="min-h-[163px] 2xl:max-h-[179px] md:max-h-[200px] max-h-[172px] 2xl:h-[179px] md:h-[200px] h-[172px] flex-1 3xl:px-[30px] px-[30px] 3xl:pt-[30px] pt-[30px] pb-[18px] border-t-[5px] border-[#29394F] basis-[300px] cursor-pointer hoverLink"
               onClick={() => {
                 window.open("https://scanpro.yvoo.io/register", "_blank");
               }}
