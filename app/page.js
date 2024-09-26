@@ -37,8 +37,8 @@ export default function Home() {
       <Situation></Situation>
       {/* <Expensive></Expensive> */}
       <Effective></Effective>
-      <Search handleModal={handleModal} />
       <Scan handleModal={handleModal} />
+      <Search handleModal={handleModal} />
       <Sales handleModal={handleModal} />
       <Auditor />
       <ModalRequest onClose={handleModal} visible={openModalRequest} />

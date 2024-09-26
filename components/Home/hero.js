@@ -118,7 +118,7 @@ function Hero() {
           <ReactScrollLink
             className="relative 3xl:top-[64px] 2xl:top-[61px] md:top-[260px] top-[40px]"
             activeClass="active"
-            to="search"
+            to="scan"
             spy={true}
             smooth={true}
             offset={0}
@@ -126,17 +126,17 @@ function Hero() {
           >
             <div className="2xl:max-h-[179px] md:max-h-[200px] max-h-[172px] 2xl:h-[179px] md:h-[200px] h-[172px] flex-1 3xl:px-[30px] px-[30px] 3xl:pt-[30px] pt-[30px] pb-[18px] border-t-[5px] border-mint basis-[300px] cursor-pointer hoverLink">
               <h2 className="mb-[4px] uppercase font-machina md:text-[24px] text-[20px] md:leading-[26px] leading-[24px] font-[800] max-w-[172px]">
-                YVOO Search<b className="text-mint">Pro+</b>
+                YVOO Scan<b className="text-mint">Pro+</b>
               </h2>
               <p className="text-[#E5E5E5] font-[700] md:text-[17px] text-[16px] max-w-[240px] md:leading-[21px] leading-[20px]">
-                Discover Quality <br></br>Suppliers Effortlessly
+                Unleash Supplier Readiness for Unprecedented Audit Success
               </p>
             </div>
           </ReactScrollLink>
           <ReactScrollLink
             className="relative 3xl:top-[64px] 2xl:top-[61px] md:top-[260px] top-[40px]"
             activeClass="active"
-            to="scan"
+            to="search"
             spy={true}
             smooth={true}
             offset={0}
@@ -144,10 +144,10 @@ function Hero() {
           >
             <div className="2xl:max-h-[179px] md:max-h-[200px] max-h-[172px] 2xl:h-[179px] md:h-[200px] h-[172px] flex-1 3xl:px-[30px] px-[30px] 3xl:pt-[30px] pt-[30px] pb-[18px] border-t-[5px] border-[#06D7F9] basis-[300px] cursor-pointer hoverLink">
               <h2 className="mb-[4px] uppercase font-machina md:text-[24px] text-[20px] md:leading-[26px] leading-[24px] font-[800] max-w-[172px]">
-                YVOO Scan<b className="text-blue">Pro+</b>
+                YVOO Search<b className="text-blue">Pro+</b>
               </h2>
               <p className="text-[#E5E5E5] font-[700] md:text-[17px] text-[16px] max-w-[240px] md:leading-[21px] leading-[20px]">
-                Unleash Supplier Readiness for Unprecedented Audit Success
+                Database of qualified suppliers
               </p>
             </div>
           </ReactScrollLink>
@@ -160,7 +160,7 @@ function Hero() {
             offset={0}
             duration={500}
           >
-            <div className="2xl:max-h-[179px] md:max-h-[200px] max-h-[172px] 2xl:h-[179px] md:h-[200px] h-[172px] flex-1 3xl:px-[30px] px-[30px] 3xl:pt-[30px] pt-[30px] pb-[18px] basis-[300px] cursor-pointer hoverLink">
+            <div className="2xl:max-h-[179px] md:max-h-[200px] max-h-[172px] 2xl:h-[179px] md:h-[200px] h-[172px] flex-1 3xl:px-[30px] px-[30px] 3xl:pt-[30px] pt-[30px] pb-[18px] basis-[300px] border-t-[5px] border-[#FFFFFF] cursor-pointer hoverLink">
               <h2 className="mb-[4px] uppercase font-machina md:text-[24px] text-[20px] md:leading-[26px] leading-[24px] font-[800] max-w-[172px] text-[#06D7F9]">
                 YVOO Sales<b className="text-[#E5E5E5]">Pro+</b>
               </h2>
@@ -168,7 +168,7 @@ function Hero() {
                 Unlock Your Supplier Potential and Maximize <br></br>Your
                 Business Growth
               </p>
-              <div className="absolute w-[100%] h-[5px] bg-[#FFFFFF] top-[0] left-[0] hoverLinkBg"></div>
+              {/* <div className="absolute w-[100%] h-[5px] bg-[#FFFFFF] top-[0] left-[0] hoverLinkBg"></div> */}
             </div>
           </ReactScrollLink>
           <Link

@@ -56,10 +56,14 @@ function Effective({ handleModal }) {
           />
           <div className="flex md:flex-center flex-col gap-[80px] 2xl:pt-[210px] md:pt-[44px] 3xl:pl-[155px] 3xl:pr-[0] md:pr-[10px]">
             <div className="flex flex-col 2xl:gap-[24px] md:gap-[16px] gap-[12px] md:px-[0] px-[41px]">
-              <div className="font-[700] 2xl:text-[30px] md:text-[26px] text-[22px] 2xl:leading-[38px] md:leading-[32px] leading-[28px] text-[#000]">YVOO solve this problem</div>
               <div className="font-machina text-[#06D7F9] uppercase font-[800] 2xl:text-[50px] md:text-[40px] text-[30px] 2xl:leading-[54px] md:leading-[44px] leading-[34px] 2xl:mb-[18px] md:mb-[12px] mb-[8px]">
-                Fast, Affordable, Effective
+                YVOO: The Future <br />
+                of Supplier Audits
               </div>
+              <div className="font-[700] 2xl:text-[30px] md:text-[26px] text-[22px] 2xl:leading-[38px] md:leading-[32px] leading-[28px] text-[#000] 2xl:mb-[18px] md:mb-[12px] mb-[8px]">Transform your supplier audits
+                with AI-driven efficiency, speed,
+                and cost savings</div>
+
               <div className="flex flex-col gap-[20px] text-black">
                 <div className="flex gap-[9px] items-start	">
                   <Image
@@ -70,7 +74,7 @@ function Effective({ handleModal }) {
                     className=""
                   />
                   <div className="font-[400] 2xl:text-[24px] md:text-[20px] text-[14px] 2xl:leading-[30px] md:leading-[26px] leading-[20px]">
-                    Access to 6M suppliers
+                    <p className="font-[600]">1-Click Audits:</p> Instantly schedule and track audits with certified auditors available on demand worldwide
                   </div>
                 </div>
                 <div className="flex gap-[9px] items-start	">
@@ -82,7 +86,33 @@ function Effective({ handleModal }) {
                     className=""
                   />
                   <div className="font-[400] 2xl:text-[24px] md:text-[20px] text-[16px] 2xl:leading-[30px] md:leading-[26px] leading-[20px] md:pr-[0] pr-[30px]">
-                    Global network of auditors (on-site)
+                    <p className="font-[600]">80% Faster Audits:</p> Complete supplier audits in days, not months
+                  </div>
+                </div>
+                <div className="flex gap-[9px] items-start	">
+                  <Image
+                    src="/icons/check.svg"
+                    width={20}
+                    height={20}
+                    alt="triangle"
+                    className=""
+                  />
+                  <div className="font-[400] 2xl:text-[24px] md:text-[20px] text-[16px] 2xl:leading-[30px] md:leading-[26px] leading-[20px] 2xl:mb-[22px] md:mb-[12px]">
+                    <p className="font-[600]">Cost Efficiency:</p> Reduce audit costs by up to 70%
+                  </div>
+                </div>
+                <div className="font-[700] text-[30px] leading-[38px] 2xl:mb-[22px] md:mb-[12px]">Key Features</div>
+                <div className="flex gap-[9px] items-start	">
+                  <Image
+                    src="/icons/check.svg"
+                    width={20}
+                    height={20}
+                    alt="triangle"
+                    className=""
+                  />
+                  <div className="font-[400] 2xl:text-[24px] md:text-[20px] text-[16px] 2xl:leading-[30px] md:leading-[26px] leading-[20px]">
+                    <p className="font-[600]">Instant, Real-Time Results:</p>
+                    Get immediate updates throughout the audit process
                   </div>
                 </div>
                 <div className="flex gap-[9px] items-start	">
@@ -94,7 +124,7 @@ function Effective({ handleModal }) {
                     className=""
                   />
                   <div className="font-[400] 2xl:text-[24px] md:text-[20px] text-[16px] 2xl:leading-[30px] md:leading-[26px] leading-[20px]">
-                    10X Faster decision-making
+                    <p className="font-[600]">AI-Powered Accuracy:</p> Ensure compliance with the highest industry standards
                   </div>
                 </div>
                 <div className="flex gap-[9px] items-start	">
@@ -106,31 +136,7 @@ function Effective({ handleModal }) {
                     className=""
                   />
                   <div className="font-[400] 2xl:text-[24px] md:text-[20px] text-[16px] 2xl:leading-[30px] md:leading-[26px] leading-[20px]">
-                    Over 85% accuracy in matching search results
-                  </div>
-                </div>
-                <div className="flex gap-[9px] items-start	">
-                  <Image
-                    src="/icons/check.svg"
-                    width={20}
-                    height={20}
-                    alt="triangle"
-                    className=""
-                  />
-                  <div className="font-[400] 2xl:text-[24px] md:text-[20px] text-[16px] 2xl:leading-[30px] md:leading-[26px] leading-[20px]">
-                    100% Audit success rate guaranteed
-                  </div>
-                </div>
-                <div className="flex gap-[9px] items-start	">
-                  <Image
-                    src="/icons/check.svg"
-                    width={20}
-                    height={20}
-                    alt="triangle"
-                    className=""
-                  />
-                  <div className="font-[400] 2xl:text-[24px] md:text-[20px] text-[16px] 2xl:leading-[30px] md:leading-[26px] leading-[20px]">
-                    70% Reduction in supplier onboarding costs
+                    <p className="font-[600]">Seamless Integration:</p> Easily connect with your existing ERP systems for a smooth workflow
                   </div>
                 </div>
               </div>
@@ -147,21 +153,22 @@ function Effective({ handleModal }) {
               width={673}
               height={832}
               alt="yvoo-search"
-              classes="min-w-[50px] 2xl:top-[0] md:top-[186px] top-[211px] 3xl:left-[0] 2xl:left-[-114px] md:left-[-61px] z-10 3xl:max-w-[673px] 2xl:max-w-[673px] md:max-w-[673px] max-w-[278px] md:mx-[0] mx-[auto]"
+              imgClasses="3xl:w-[100%]"
+              classes="min-w-[50px] 2xl:top-[0] md:top-[186px] top-[211px] 3xl:left-[0] 2xl:left-[-114px] md:left-[-61px] z-10 3xl:max-w-[827px] 3xl:min-w-[827px] 2xl:max-w-[673px] md:max-w-[673px] max-w-[278px] md:mx-[0] mx-[auto]"
             />
           </div>
         </div>
       </div>
-    <ImgLeftToRight
-      src="/icons/icon-line.svg"
-      width={590}
-      height={106}
-      alt="line"
-      classesImg="md:max-w-[519px] md:w-[519px] max-w-[217px]"
-      classesContainer="absolute overflow-hidden md:max-w-[519px] md:w-[519px] 3xl:top-[33%] 2xl:top-[40%] md:top-[27%] top-[45%] 3xl:left-[73%] 2xl:left-[75%] md:left-[59%] left-[40%] z-[30] md:block hidden"
-      data-scroll
-      data-scroll-speed="0.13"
-    />
+      <ImgLeftToRight
+        src="/icons/icon-line.svg"
+        width={590}
+        height={106}
+        alt="line"
+        classesImg="md:max-w-[519px] md:w-[519px] max-w-[217px]"
+        classesContainer="absolute overflow-hidden md:max-w-[519px] md:w-[519px] 3xl:top-[33%] 2xl:top-[40%] md:top-[27%] top-[45%] 3xl:left-[73%] 2xl:left-[75%] md:left-[59%] left-[40%] z-[30] md:block hidden"
+        data-scroll
+        data-scroll-speed="0.13"
+      />
       <div className="w-[100%] 2xl:h-[86px] md:h-[46px] h-[34px] bg-labelBg 3xl:mt-[0] 2xl:mt-[50px] md:mt-[160px] mt-[92px] running-image 2xl:bg-auto bg-[size:auto_100%]"></div>
     </div>
   );

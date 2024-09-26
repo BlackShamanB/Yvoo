@@ -125,18 +125,18 @@ body {
   /* @apply 2xl:max-h-[199px] md:max-h-[220px] max-h-[192px] 2xl:h-[199px] md:h-[220px] h-[192px]; */
   /* animation: linkHover 1s; */
 }
-/* .hoverLink.bg-\[\#53D3AA\]:hover::before {
+.hoverLink.border-mint:hover::before {
   background-color: #53D3AA;
 }
-.hoverLink.bg-\[\#06D7F9\]:hover::before {
+.hoverLink.border-\[\#06D7F9\]:hover::before {
   background-color: #06D7F9;
 }
-.hoverLink.bg-\[\#FFFFFF\]:hover::before {
+.hoverLink.border-\[\#FFFFFF\]:hover::before {
   background-color: #FFFFFF;
 }
-.hoverLink.bg-\[\#131D2A\]:hover::before {
-  background-color: #131D2A;
-} */
+.hoverLink.border-\[\#29394F\]:hover::before {
+  background-color: #29394F;
+}
  
  /* .hoverLink:hover .hoverLinkBg {
   height: 100%;
@@ -145,20 +145,24 @@ body {
   transition: all 0.5s ease-in;
  } */
 
-/* .hoverLink:hover::before { */
-  /* transition: 1s linear; */
-  /* animation: linkHover 0.5s forwards;
+.hoverLink:hover::before { 
+  transition: 1s linear;
+   animation: linkHover 0.5s forwards;
   content: '';
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 90%; */
-  /* background-color: #f0f0f0; */
-  /* transform: scale(1.2); */
-  /* transform-origin: top left; */
+  width: 100%;  
+  height: 5px;
+  /* background-color: #f0f0f0;
+  /* transform: scale(1.2);
+  /* transform-origin: top left; 
   /* z-index: -1; */
-/* } */
+}
+.hoverLink:hover::before {
+  transition: 1s linear;
+  animation: linkHover 0.5s forwards;
+}
 
 
 @keyframes linkHover {
@@ -283,7 +287,7 @@ body {
 
 .btn_animated_black:hover {
   color: white;
-  box-shadow: inset 400px 50px 0 0 rgb(0, 0, 0);
+  box-shadow: inset 500px 50px 0 0 rgb(0, 0, 0);
   -webkit-transition: ease-out 0.4s;
   -moz-transition: ease-out 0.4s;
   transition: ease-out 0.4s;

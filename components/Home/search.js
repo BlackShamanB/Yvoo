@@ -28,30 +28,30 @@ function Search({ handleModal }) {
   return (
     <div
       id="search"
-      className="relative grid w-full bg-local bg-contain bg-bottom absolute inset-0 bg-mint 3xl:mt-[-4px] 2xl:mt-[-12px] md:mt-[-5px] mt-[-2px]"
+      className="relative grid w-full bg-local bg-contain bg-bottom absolute inset-0 bg-[#06D7F9] z-[1]"
     >
-    <MagnifyOnScroll
-      style={{ zIndex: 0 }}
-      src="/images/discover.webp"
-      img-src="/images/discover.webp"
-      width={1004}
-      height={553}
-      alt="yvoo-search"
-      classes="absolute min-w-[50px] 2xl:bottom-[0px] md:bottom-[unset] 2xl:top-[unset] md:top-[423px] top-[337px] 3xl:left-[0] 2xl:left-[-114px] md:left-[0] z-10 3xl:max-w-[1004px] 2xl:max-w-[774px] md:max-w-[683px] max-w-[89%]"
+      <MagnifyOnScroll
+        style={{ zIndex: 0 }}
+        src="/images/discover.webp"
+        img-src="/images/discover.webp"
+        width={1004}
+        height={553}
+        alt="yvoo-search"
+        classes="absolute min-w-[50px] 2xl:bottom-[0px] md:bottom-[unset] 2xl:top-[unset] md:top-[423px] top-[337px] 3xl:left-[0] 2xl:left-[-114px] md:left-[0] 3xl:max-w-[1004px] 2xl:max-w-[774px] md:max-w-[683px] max-w-[89%]"
       // data-scroll
       // data-scroll-speed="0.01"
-    />
-    <MagnifyOnScroll
-      style={{ zIndex: 0 }}
-      src="/images/phone_main_page.webp"
-      img-src="/images/phone_main_page.webp"
-      width={244}
-      height={499}
-      alt="yvoo-search"
-      classes="absolute min-w-[50px] 3xl:bottom-[172px] 2xl:bottom-[200px] md:bottom-[unset] 2xl:top-[unset] md:top-[159px] top-[211px] 3xl:left-[761px] 2xl:left-[36%] md:left-[67%] left-[64%] z-10 3xl:max-w-[1004px] 2xl:max-w-[774px] md:max-w-[232px] max-w-[117px]"
+      />
+      <MagnifyOnScroll
+        style={{ zIndex: 0 }}
+        src="/images/phone_main_page.webp"
+        img-src="/images/phone_main_page.webp"
+        width={244}
+        height={499}
+        alt="yvoo-search"
+        classes="absolute min-w-[50px] 3xl:bottom-[172px] 2xl:bottom-[200px] md:bottom-[unset] 2xl:top-[unset] md:top-[159px] top-[211px] 3xl:left-[761px] 2xl:left-[36%] md:left-[67%] left-[64%] z-10 3xl:max-w-[1004px] 2xl:max-w-[774px] md:max-w-[232px] max-w-[117px]"
       // data-scroll
       // data-scroll-speed="0.01"
-    />
+      />
       <div
         className="3xl:max-w-[1516px] 2xl:max-w-[1116px] md:max-w-[585px] mx-[auto]"
         data-scroll
@@ -88,16 +88,16 @@ function Search({ handleModal }) {
                 </b> */}
                 YVOO Search<b className="text-black">Pro+</b>
               </h1>
-              <div className="flex flex-col 2xl:gap-[42px] md:gap-[28px] gap-[24px] 2xl:max-w-[438px] 3xl:ml-[153px] 2xl:ml-[0]">
-                <p className="font-[700] text-black 2xl:text-[24px] md:text-[20px] text-[16px] 2xl:leading-[30px] md:leading-[26px] leading-[20px] 2xl:max-w-[260px] max-w-[293px]">
-                  Discover Quality Suppliers Effortlessly
+              <div className="flex flex-col 2xl:gap-[42px] md:gap-[28px] gap-[24px] 3xl:ml-[153px] 2xl:ml-[0]">
+                <p className="font-[700] text-black 2xl:text-[24px] md:text-[20px] text-[16px] 2xl:leading-[30px] md:leading-[26px] leading-[20px] 2xl:max-w-[345px] max-w-[293px]">
+                  Discover how SearchPro+ works hand-in-hand with ScanPro+ to streamline your supplier search
                 </p>
 
                 <button
-                  className="filled_btn btn_animated_black"
+                  className="filled_btn btn_animated_black !max-w-[unset]"
                   onClick={handleModal}
                 >
-                  Request demo
+                  Learn More About SearchPro+
                 </button>
               </div>
             </div>
@@ -113,39 +113,16 @@ function Search({ handleModal }) {
               width={97}
               height={112}
               alt="yvoo-search"
-              className="z-10 2lg:max-w-[96px] md:max-w-[97px] max-w-[69px] mb-[8px]"
+              className="z-10 2lg:max-w-[96px] md:max-w-[97px] max-w-[69px] 2xl:mb-[150px] mb-[12px]"
             />
+            <div className="font-[700] text-[18px] text-black 2xl:text-[24px] leading-[22px] 2xl:leading-[30px] mb-[4px]">
+              Enhance Your Audit Process with Seamless Supplier Discovery through SearchPro+ Database
+            </div>
             <p>
-              In today's fast-paced business world, finding reliable suppliers can be a 
-              daunting and time-consuming task. Manual searches and communication 
-              with suppliers worldwide often result in wasted resources and unsuitable 
-              options. However, there is a better way to streamline this process.
+            Complementing ScanPro+, YVOO’s SearchPro+ allows you to effortlessly discover new suppliers and manage your supplier (SRM). 
             </p>
             <p>
-              Introducing YVOO, an AI-powered platform designed to revolutionize supplier 
-              sourcing. Say goodbye to the hassle and uncertainty of traditional 
-              methods and embrace a more efficient and effective solution.
-            </p>
-            <p>
-              Here's why you should book a demo today{" "}
-              <Link
-                href="/solutions/#searchpro"
-                className="cursor-pointer underline"
-              >
-                Services
-              </Link>
-            </p>
-            <p>
-              Join YVOO Today and Revolutionize Your{" "}
-              <span
-                className="underline"
-                onClick={() => {
-                  window.open("https://searchpro.yvoo.io/login", "_blank");
-                }}
-              >
-                Procurement Process
-              </span>
-              .
+            With access to a database of <b>ISO 9001 or IATF 16949</b> audited suppliers, advanced search filters, and real-time AI assistance, sourcing the right suppliers has never been easier.
             </p>
           </div>
         </div>

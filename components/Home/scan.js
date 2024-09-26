@@ -27,7 +27,7 @@ function Scan({ handleModal }) {
   return (
     <div
       id="scan"
-      className="relative grid w-full w-full bg-[#06D7F9] bg-local bg-contain 3xl:bg-[length:100%_975px] 2xl:bg-[length:100%_858px] bg-no-repeat bg-bottom z-[1]"
+      className="relative grid w-full w-full bg-mint 3xl:mt-[-4px] 2xl:mt-[-12px] md:mt-[-5px] mt-[-2px] bg-local bg-contain 3xl:bg-[length:100%_975px] 2xl:bg-[length:100%_858px] bg-no-repeat bg-bottom"
     >
       <div
         className="3xl:max-w-[1516px] 2xl:max-w-[1116px] md:max-w-[598px] mx-[auto]"
@@ -51,17 +51,17 @@ function Scan({ handleModal }) {
               className="flex flex-wrap md:items-start flex-col 2xl:gap-[24px] md:gap-[16px] 2xl:mt-[136px] md:mt-[120px] 2xl:mb-[420px] md:mb-[20px] md:px-[0] px-[41px] 2xl:hidden block"
             >
               <h1 className="uppercase font-machina font-[800] text-white 2xl:text-[50px] md:text-[40px] text-[30px] md:leading-[44px] leading-[34px] 2xl:leading-[50px] max-w-[318px] 2xl:max-w-[340px] 2xl:mb-[3px] md:mb-[0] mb-[15px]"
-              ref={elementRef}
-              style={{
-                visibility: elementVisible ? "visible" : "hidden",
-                top: elementVisible ? "0" : "50px",
-                opacity: elementVisible ? "1" : "0",
-                transition: "linear 0.5s",
-              }}>
-                  YVOO
-                  <br></br>
-                  Scan
-                  <b className="text-black">Pro+</b>
+                ref={elementRef}
+                style={{
+                  visibility: elementVisible ? "visible" : "hidden",
+                  top: elementVisible ? "0" : "50px",
+                  opacity: elementVisible ? "1" : "0",
+                  transition: "linear 0.5s",
+                }}>
+                YVOO
+                <br></br>
+                Scan
+                <b className="text-black">Pro+</b>
               </h1>
               <div className="flex flex-col 2xl:gap-[48px] md:gap-[28px] gap-[24px] md:items-start mb-[60px]">
                 <p className="font-[700] 2xl:text-[24px] md:text-[20px] text-[16px] text-black 2xl:leading-[26px] md:leading-[26px] leading-[20px] md:max-w-[327px] 2xl:max-w-[340px] md:max-w-[222px] 2xl:mb-[24px]">
@@ -89,49 +89,52 @@ function Scan({ handleModal }) {
                 alt="yvoo-search"
                 className="md:max-w-[115px] max-w-[85px] z-10 3xl:ml-[-32px] 2xl:ml-[-33px] 3xl:mb-[22px] 2xl:mb-[4px] 2xl:relative absolute md:right-[0] right-[37px] 2xl:top-[0] md:top-[-62px] top-[-29px]"
               />
-              <h2 className="text-black font-[700] 2xl:text-[24px] md:text-[20px] text-[16px] 2xl:leading-[30px] md:leading-[26px] leading-[20px] 3xl:mb-[21px] 2xl:mb-[22px] md:mb-[8px] mb-[-4px] md:pr-[150px] pr-[85px]">
-                Unlock Your Supplier Potential, Maximize Audit Success!
+              <h2 className="text-black font-[700] 2xl:text-[24px] md:text-[20px] text-[16px] 2xl:leading-[30px] md:leading-[26px] leading-[20px] 3xl:mb-[21px] 2xl:mb-[22px] md:mb-[8px] mb-[-4px]">
+                Unlock Seamless, Precision Audits with ScanPro+
               </h2>
               <p>
-                Predictive Readiness Assessment: Our Supplier Readiness Checks
-                go beyond surface-level information. We assess suppliers based
-                on comprehensive data analysis and on-site evaluations conducted
-                by our YVOO agents. This holistic approach enables us to predict
-                their audit success rate with remarkable accuracy.
+                Our <span className="font-[600]">Comprehensive Supplier Assessment</span> goes beyond the basics, combining data analysis with on-site evaluations to provide precise insights into supplier potential.
               </p>
-              <p>
-                Unmatched Audit Success: With YVOO's supplier assessments, you
-                can confidently move forward with suppliers who have undergone
-                thorough on-site evaluations. Achieve an exceptional audit
-                success rate and minimize risks in your supply chain.
-                (‘ScanPro+” page”)
-              </p>
-              <p>
-                Bottom Slogan: Experience the Efficiency of our Supplier Search,
-                the Precision of our Predictive Assessments, and the Confidence
-                of{" "}
-                <span
-                  className="underline cursor-pointer"
-                  onClick={() => {
-                    window.open("https://scanpro.yvoo.io", "_blank");
-                  }}
-                >
-                  Unmatched Audit Success
-                </span>
-                .
-              </p>
-              <p>
-                Join YVOO Today and Revolutionize{" "}
-                <span
-                  className="cursor-pointer underline"
-                  onClick={() => {
-                    window.open("https://searchpro.yvoo.io/login", "_blank");
-                  }}
-                >
-                  Your Procurement Process
-                </span>
-                .
-              </p>
+              <div className="font-[700] 2xl:text-[30px] md:text-[26px] text-[22px] 2xl:leading-[38px] md:leading-[32px] leading-[28px] text-[#000] 2xl:mb-[18px] md:mb-[12px] mb-[8px]">The Strengh of YVOO's ScanPro+</div>
+
+              <div className="flex flex-col gap-[20px] text-black">
+                <div className="flex gap-[9px] items-start	">
+                  <Image
+                    src="/icons/checkWhite.svg"
+                    width={20}
+                    height={20}
+                    alt="triangle"
+                    className=""
+                  />
+                  <div className="font-[400] 2xl:text-[24px] md:text-[20px] text-[16px] 2xl:leading-[30px] md:leading-[26px] leading-[20px]">
+                    <p className="font-[600]">Accurate Assessments:</p> Rely on comprehensive evaluations to work confidently with suppliers who meet stringent standards
+                  </div>
+                </div>
+                <div className="flex gap-[9px] items-start	">
+                  <Image
+                    src="/icons/checkWhite.svg"
+                    width={20}
+                    height={20}
+                    alt="triangle"
+                    className=""
+                  />
+                  <div className="font-[400] 2xl:text-[24px] md:text-[20px] text-[16px] 2xl:leading-[30px] md:leading-[26px] leading-[20px]">
+                    <p className="font-[600]">Minimize Risks:</p> Ensure only suppliers that meet your quality and compliance standards are approved
+                  </div>
+                </div>
+                <div className="flex gap-[9px] items-start	">
+                  <Image
+                    src="/icons/checkWhite.svg"
+                    width={20}
+                    height={20}
+                    alt="triangle"
+                    className=""
+                  />
+                  <div className="font-[400] 2xl:text-[24px] md:text-[20px] text-[16px] 2xl:leading-[30px] md:leading-[26px] leading-[20px]">
+                    <p className="font-[600]">Full Visibility:</p> Gain real-time, data-driven insights to make informed procurement decisions
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
           <div
@@ -169,10 +172,11 @@ function Scan({ handleModal }) {
                 </b> */}
                 YVOO Scan<b className="text-black">Pro+</b>
               </h1>
-              <div className="flex flex-col gap-[42px] md:items-start">
+              <div className="flex flex-col gap-[24px] md:items-start">
                 <p className="font-[700] text-[18px] text-black 2xl:text-[24px] leading-[22px] 2xl:leading-[30px] max-w-[222px] md:max-w-[327px] 2xl:max-w-[340px]">
-                  Unleash Supplier Readiness for Unprecedented Audit Success{" "}
+                  Ready to get started?{" "}
                 </p>
+                <p className="font-[400] text-black text-[16px] leading-[20px] mb-[18px]">Experience the speed and precision of on-demand audits</p>
                 <button
                   className="filled_btn btn_animated_black"
                   onClick={handleModal}
