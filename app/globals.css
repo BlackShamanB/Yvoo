@@ -45,6 +45,21 @@ body {
     background-size: 100% 304px;
   }
 }
+.text-\[\#FFC527\] {
+  color: #FFC527;
+}
+.text-\[\#949CAF\] {
+  color: #949CAF;
+}
+.border-\[\#FFC527\] {
+  border-color: #FFC527;
+}
+.border-\[\#949CAF\] {
+  border-color: #949CAF;
+}
+.custom-shadow {
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.25);
+}
 
 .z--1 {
   z-index: -1;

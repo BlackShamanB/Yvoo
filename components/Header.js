@@ -3,7 +3,7 @@
 import { useState, useRef, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { useData } from '@/components/DataContext';
+import { useData } from "@/components/DataContext";
 
 import ModalRequest from "./ModalRequest";
 
@@ -16,18 +16,26 @@ const Header = () => {
   const [active, setActive] = useState(false);
   const [openModalRequest, setOpenModalRequest] = useState(false);
   const [activeLink, setActiveLink] = useState("/");
-  
+
   const refY = useRef(null);
   const refV = useRef(null);
   const refG = useRef(null);
   const refO = useRef(null);
   const refEl = useRef(null);
   useEffect(() => {
-    refY.current.classList.add('typing-char')
-    setTimeout(() => {refV.current.classList.add('typing-char')}, 100)
-    setTimeout(() => {refG.current.classList.add('typing-char')}, 200)
-    setTimeout(() => {refO.current.classList.add('typing-char')}, 300)
-    setTimeout(() => {refEl.current.classList.add('typing-char')}, 400)
+    refY.current.classList.add("typing-char");
+    setTimeout(() => {
+      refV.current.classList.add("typing-char");
+    }, 100);
+    setTimeout(() => {
+      refG.current.classList.add("typing-char");
+    }, 200);
+    setTimeout(() => {
+      refO.current.classList.add("typing-char");
+    }, 300);
+    setTimeout(() => {
+      refEl.current.classList.add("typing-char");
+    }, 400);
   });
   const toggleMenu = () => {
     setActive(!active);
@@ -60,13 +68,14 @@ const Header = () => {
   // }
 
   const links = [
-    { name: "Home", link: "/" },
+    // { name: "Home", link: "/" },
     { name: "Solutions", link: "/solutions" },
-    { name: "About us", link: "/about" },
+    // { name: "About us", link: "/about" },
     { name: "For auditors", link: "/auditors" },
-    { name: "Consulting", link: "/consulting" },
+    { name: "For supplier", link: "/supplier" },
+    // { name: "Consulting", link: "/consulting" },
     { name: "Blog", link: "/blog" },
-    { name: "Supplier", link: "/supplier" },
+    // { name: "Supplier", link: "/supplier" },
     { name: "Industries", link: "/industries" },
   ];
 
@@ -85,7 +94,7 @@ const Header = () => {
       <Link href={"/"} className="pt-[10px] typing-effect">
         <div>
           <Image
-          ref={refY}
+            ref={refY}
             src="/icons/logo_y.svg"
             width={23}
             height={25}
@@ -93,7 +102,7 @@ const Header = () => {
             className="relative inline -top-[4px] cursor-pointer md:max-w-[118px] max-w-[78px] logo-char"
           />
           <Image
-          ref={refV}
+            ref={refV}
             src="/icons/logo_v.svg"
             width={27}
             height={25}
@@ -101,7 +110,7 @@ const Header = () => {
             className="relative inline -top-[4px] cursor-pointermd:max-w-[118px] max-w-[78px] logo-char"
           />
           <Image
-          ref={refG}
+            ref={refG}
             src="/icons/logo_g.svg"
             width={26}
             height={34}
@@ -109,7 +118,7 @@ const Header = () => {
             className="relative inline -top-[9px] cursor-pointer md:max-w-[118px] max-w-[78px] ml-[2px] logo-char"
           />
           <Image
-          ref={refO}
+            ref={refO}
             src="/icons/logo_o.svg"
             width={26}
             height={25}
@@ -117,7 +126,7 @@ const Header = () => {
             className="relative inline -top-[4px] cursor-pointer md:max-w-[118px] max-w-[78px] logo-char"
           />
           <Image
-          ref={refEl}
+            ref={refEl}
             src="/icons/logo_el.svg"
             width={11}
             height={16}
@@ -217,8 +226,12 @@ const Header = () => {
         </>
       )}
       <div className="flex-center gap-[36px] 2lg:ml-[0] ml-[auto]">
-        <button className="outlined_btn btn_animated_blue" onClick={handleModal}>
-          Request demo
+        <button
+          // className="outlined_btn btn_animated_blue"
+          className="text-black text-[16px] leading-[20px] font-[500] p-[12px_24px] rounded-[22px] bg-blue"
+          onClick={handleModal}
+        >
+          Book Demo
         </button>
       </div>
       <ModalRequest onClose={handleModal} visible={openModalRequest} />

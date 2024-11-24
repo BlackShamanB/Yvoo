@@ -3,180 +3,233 @@ import Link from "next/link";
 import TypingEffect from "../TypingEffect";
 import MagnifyOnScroll from "../MagnifyOnScroll";
 import React, { useRef, useState, useEffect } from "react";
-import ImgLeftToRight from "../ImgLeftToRight"
+import ImgLeftToRight from "../ImgLeftToRight";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation, Pagination } from "swiper/modules";
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
 
 function Sales({ handleModal }) {
-  const elementRef = useRef(null);
-  const [elementVisible, setelementVisible] = useState(false);
+  const overlayContent = [
+    <div
+      key="0"
+      className="absolute top-[252px] -right-[45px] flex flex-col gap-[9px] justify-start"
+    >
+      <div className="text-white text-[24px] leading-[30px] font-[700]">
+        <div className="flex flex-row items-center gap-[13px] rounded-[30px] bg-mint p-[12px_30px_12px_24px]">
+          <Image
+            src="/icons/map1-click.svg"
+            width={26}
+            height={36}
+            alt="map1-click"
+            className=""
+          />
+          <div className="text-[24px] leading-[30px] font-[600]">1-Click</div>
+        </div>
+      </div>
+      <div className="w-[24px] h-[24px] bg-mint rounded-[50%] ml-[9px]"></div>
+    </div>,
+    <div key="1" className="top-0 left-0">
+      <div className="absolute bg-white rounded-[26px] flex flex-row gap-[20px] items-center p-[14px_20px] w-[404px] top-[54px] left-[50%] transfotm -translate-x-1/2">
+        <Image
+          src="/icons/Search.svg"
+          width={24}
+          height={24}
+          alt="Search"
+          className=""
+        />
+        <div className="text-black text-[16px] leading-[20px] font-[500]">
+          Auditors
+        </div>
+      </div>
+      <Image
+        src="/icons/map_balloon.svg"
+        width={48}
+        height={60}
+        alt="map_balloon"
+        className="absolute top-[212px] left-[69px]"
+      />
+      <Image
+        src="/icons/map_balloon.svg"
+        width={32}
+        height={40}
+        alt="map_balloon"
+        className="absolute top-[395px] left-[132px]"
+      />
+      <Image
+        src="/icons/map_balloon.svg"
+        width={32}
+        height={40}
+        alt="map_balloon"
+        className="absolute top-[275px] left-[361px]"
+      />
+      <div className="absolute top-[133px] left-[427px]">
+        <Image
+          src="/icons/map_balloon.svg"
+          width={95}
+          height={119}
+          alt="map_balloon"
+          className=""
+        />
+        <Image
+          src="/icons/map_ballon_check.svg"
+          width={37}
+          height={37}
+          alt="map_balloon"
+          className="absolute top-[0] left-[91px]"
+        />
+      </div>
+      <Image
+        src="/icons/map_balloon.svg"
+        width={48}
+        height={60}
+        alt="map_balloon"
+        className="absolute top-[248px] left-[537px]"
+      />
+      <Image
+        src="/icons/map_balloon.svg"
+        width={32}
+        height={40}
+        alt="map_balloon"
+        className="absolute top-[272px] left-[673px]"
+      />
+    </div>,
+    <div key="2" className="absolute -top-[30px] -left-[50px]">
+      <Image
+        src="/icons/map_chat.svg"
+        width={572}
+        height={690}
+        alt="map_balloon"
+        className=""
+      />
+    </div>,
+    <div
+      key="3"
+      className="absolute -top-[37px] left-[50%] transfotm -translate-x-1/2"
+    >
+      <Image
+        src="/icons/map_pad.svg"
+        width={534}
+        height={705}
+        alt="map_pad"
+        className="max-w-[unset]"
+      />
+    </div>,
+  ];
 
-  const handleScroll = () => {
-    if (elementRef.current) {
-      const { top, bottom } = elementRef.current.getBoundingClientRect();
-      if (!elementVisible) {
-        setelementVisible(
-          top < window.innerHeight && bottom >= 0 && !elementVisible
-        );
-      }
-    }
+  const [currentSlide, setCurrentSlide] = useState(0);
+
+  const handleSlideChange = (swiper) => {
+    console.log(swiper.realIndex)
+    setCurrentSlide(swiper.realIndex);
   };
 
-  useEffect(() => {
-    handleScroll();
-    window.addEventListener("scroll", handleScroll);
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
+  const items = [
+    {
+      id: 1,
+      header: "Place an Audit Request with 1 Click",
+      content:
+        "Easily schedule a supplier audit through YVOO's platform or integrate it with your ERP system. With just a click, you can request an audit, making the process hassle-free.",
+    },
+    {
+      id: 2,
+      header: "Auto-Dispatch to Local Auditors",
+      content:
+        "YVOO automatically assigns certified auditors from our global network to your supplier location. Geo-locator technology ensures local expertise, ensuring accurate results.",
+    },
+    {
+      id: 3,
+      header: "Monitor Audits in Real-Time",
+      content:
+        "Stay updated with real-time tracking of your audit process. Communicate directly with auditors for transparency and receive notifications for key audit milestones.",
+    },
+    {
+      id: 4,
+      header: "Receive Comprehensive Reports",
+      content:
+        "Get detailed audit reports with data-driven insights, photos, and compliance documentation. Reports provide all the information needed for confident decisions.",
+    },
+  ];
+  const renderItems = items.map((item) => (
+    <SwiperSlide key={item.id} className="mt-[96px]">
+      <div className="flex flex-row gap-[20px]">
+        <div className="text-white text-[120px] leading-[120px] font-[800]">
+          0{item.id}
+        </div>
+        <div className="flex flex-col gap-[20px]">
+          <div className="text-black text-[24px] leading-[30px] font-[700]">
+            {item.header}
+          </div>
+          <div className="text-black text-[20px] leading-[30px] font-[400]">
+            {item.content}
+          </div>
+        </div>
+      </div>
+    </SwiperSlide>
+  ));
   return (
     <div
       id="sales"
-      className="relative grid w-full w-full bg-white bg-local bg-contain bg-no-repeat bg-bottom"
+      className="relative w-full flex flex-col justify-center bg-blue pl-[169px] pr-[202px] pb-[144px]"
     >
-      <div
-        className="3xl:max-w-[1516px] 2xl:max-w-[1116px] md:max-w-[598px] mx-[auto]"
-        data-scroll
-        data-scroll-speed="0.3"
-
-      >
-        <div className="relative grid grid-cols-1 2xl:grid-cols-2 bg-white md:py-0 md:flex-center flex-col h-fit 3xl:h-[1187px] 2xl:h-[1125px] md:h-[1422px] md:px-[0] px-[41px] md:overflow-visible overflow-hidden">
-          <div className="flex flex-wrap md:flex-nowrap items-center md:items-start md:flex-col 3xl:gap-[20px] 2xl:gap-[24px] md:gap-[16px] gap-[12px] 2xl:mt-[172px] md:mt-[160px] mt-[139px] 3xl:mb-[568px] 2xl:mb-[356px]">
-            <Image
-              src="/icons/squares-2.png"
-              width={96}
-              height={106}
-              alt="triangle"
-              className="absolute 2xl:top-[82px] top-[83px] 3xl:left-[42%] 2xl:left-[39.4%] md:left-[65.6%] mouse-parallax md:block hidden"
-              data-scroll
-              data-scroll-speed="0.15"
-            />
-            <ImgLeftToRight
-              src="/icons/icon-line.svg"
-              width={584}
-              height={106}
-              alt="line"
-              classesImg="md:max-w-[584px] max-w-[360px] md:min-h-[206px] min-h-[127px]"
-              classesContainer="absolute overflow-hidden 3xl:top-[55%] 2xl:top-[53%] md:top-[39.5%] top-[23.9%] 3xl:left-[-22%] 2xl:left-[-46%] md:left-[-78%] left-[57%] z-[1]"
-              data-scroll
-              data-scroll-speed="0.25"
-            />
-            <h1
-              className="relative uppercase 3xl:ml-[154px] 2xl:ml-[0] font-machina font-[800] text-[#00D1EF] 2xl:text-[50px] md:text-[40px] text-[30px] 2xl:leading-[54px] md:leading-[44px] leading-[34px] max-w-[318px] 2xl:max-w-[472px]"
-              ref={elementRef}
-              style={{
-                visibility: elementVisible ? "visible" : "hidden",
-                top: elementVisible ? "0" : "50px",
-                opacity: elementVisible ? "1" : "0",
-                transition: "linear 0.5s",
-              }}
-            >
-              {/* <TypingEffect text="YVOO Sales" speed={100} delay={0} /> */}
-              {/* <b className="text-black">
-                <TypingEffect text="Pro+" speed={100} delay={1} />
-              </b> */}
-              YVOO Sales<b className="text-black">Pro+</b>
-            </h1>
-            <div className="flex flex-col md:gap-[18px] gap-[25px] 3xl:ml-[154px] 2xl:ml-[0]">
-              <p className="font-[700] 2xl:text-[24px] md:text-[20px] text-[16px] text-black 2xl:leading-[30px] md:leading-[26px] leading-[20px] max-w-[327px] 2xl:max-w-[327px]">
-                Grow Your Network and Sales with YVOO SalesPro+{" "}
-              </p>
-              <button
-                className="filled_btn 2xl:mt-[24px] md:mt-[10px] btn_animated_black !max-w-[unset] md:px-[64px] px-[32px]"
-                onClick={handleModal}
-              >
-                Register Now and Connect with Buyers
-              </button>
-              <p className="text-black 2xl:text-[24px] md:text-[20px] text-[16px] 2xl:leading-[30px] md:leading-[27px] leading-[20px]">Boost your sales with YVOO SalesPro+</p>
+      <div className="relative 3xl:max-w-[1516px] 2xl:max-w-[100%] md:max-w-[598px] relative grid grid-cols-[743px_1fr] justify-center pt-[170px] gap-[133px]">
+        <div className="relative">
+          <Image
+            src="/icons/Map2.svg"
+            width={743}
+            height={656}
+            alt="triangle"
+            className=""
+          />
+          {overlayContent[currentSlide]}
+        </div>
+        <div className="w-full text-black block">
+          <div className="w-full">
+            <div className="text-white text-[40px] leading-[48px] font-[800] mt-[60px]">
+              How does YVOO Work
             </div>
-            <MagnifyOnScroll
-              src="/images/buisness-growth.webp"
-              width={748}
-              height={523}
-              alt="yvoo-sales"
-              classes="2xl:absolute relative 2xl:left-[-92px] 2xl:bottom-[120px] 3xl:ml-[90px] 2xl:ml-[-22px] md:ml-[-62px] ml-[-41px] 2xl:mt-[24px] md:mt-[18px] mt-[24px] 3xl:min-w-[748px] 2xl:min-w-[660px] md:min-w-[538px] 2xl:max-w-[660px] md:max-w-[538px] max-w-[262px]"
-            />
-          </div>
-          <div
-            style={{
-              position: "relative",
-              transform: "translateZ(-10px)",
-              transformStyle: "preserve-3d",
-            }}
-            className="bg-white md:py-0 md:flex-center flex-col h-auto md:h-[auto] 2xl:h-[auto] 3xl:pl-[84px] 2xl:pl-[54px]"
-          >
-            <Image
-              style={{ zIndex: 0, transform: "translateZ(10px)" }}
-              src="/icons/brain-3.svg"
-              width={111}
-              height={120}
-              alt="yvoo-search"
-              className="z-10 3xl:ml-[-15px] 2xl:ml-[-20px] md:ml-[-31px] md:max-w-[111px] max-w-[74px] 2xl:mt-[152px] md:mt-[-72px] mt-[-51px] 2xl:mb-[37px] mb-[32px]"
-              data-scroll
-              data-scroll-speed="0.2"
-            />
-            <div
-              style={{
-                position: "relative",
-                transform: "translateZ(10px)",
+            <Swiper
+              spaceBetween={0}
+              slidesPerView={1}
+              onSlideChange={handleSlideChange}
+              onSwiper={(swiper) => console.log(swiper)}
+              loop={true} // Закольцованный слайдер
+              navigation={{
+                nextEl: ".button-next",
+                prevEl: ".button-prev",
               }}
-              className="text-black md:mb-0 mb-[100px] 2xl:mt-[0] max-w-[674px] flex flex-col 3xl:gap-4 2xl:gap-[17px] md:gap-[20px] gap-[19px] font-[400] leading-[20px] [&>p]:text-[14px] [&>p]:md:text-[16px]"
-              data-scroll
-              data-scroll-speed="0.4"
+              modules={[Navigation, Pagination]}
+              className="max-w-[673px] mb-[100px]"
             >
-              <div className="font-[700] 2xl:text-[24px] md:text-[20px] text-[16px] text-black 2xl:leading-[30px] md:leading-[26px] leading-[20px] mb-[40px]">
-                YVOO SalesPro+ helps suppliers connect with global buyers, grow their networks, and boost visibility. {" "}
-              </div>
-
-              <div className="font-[700] text-[30px] leading-[38px] 2xl:mb-[22px] md:mb-[12px]">Benefits for Suppliers:</div>
-              <div className="flex gap-[9px] items-start	">
-                <Image
-                  src="/icons/check.svg"
-                  width={20}
-                  height={20}
-                  alt="triangle"
-                  className=""
-                />
-                <div className="font-[400] 2xl:text-[24px] md:text-[20px] text-[16px] 2xl:leading-[30px] md:leading-[26px] leading-[20px]">
-                  <p className="font-[600]">Global Reach: </p>
-                  Connect with buyers worldwide
+              {renderItems}
+            </Swiper>
+            <div className="flex flex-row gap-[60px] justify-end">
+              <div className="button-prev">
+                <div className="flex items-center gap-[31px]">
+                  <div className="text-white text-[24px] leading-[30px] font-[700] ml-2">
+                    0{currentSlide === 0 ? items.length : currentSlide}
+                  </div>
+                  <Image
+                    src="/icons/map_arrow.svg" // Замените на путь к вашей стрелке
+                    width={71}
+                    height={18}
+                    alt="prev"
+                    className="rotate-[180deg]"
+                  />
                 </div>
               </div>
-              <div className="flex gap-[9px] items-start	">
-                <Image
-                  src="/icons/check.svg"
-                  width={20}
-                  height={20}
-                  alt="triangle"
-                  className=""
-                />
-                <div className="font-[400] 2xl:text-[24px] md:text-[20px] text-[16px] 2xl:leading-[30px] md:leading-[26px] leading-[20px]">
-                  <p className="font-[600]">Business Growth: </p>
-                  Expand your network with trusted partners
-                </div>
-              </div>
-              <div className="flex gap-[9px] items-start	">
-                <Image
-                  src="/icons/check.svg"
-                  width={20}
-                  height={20}
-                  alt="triangle"
-                  className=""
-                />
-                <div className="font-[400] 2xl:text-[24px] md:text-[20px] text-[16px] 2xl:leading-[30px] md:leading-[26px] leading-[20px]">
-                  <p className="font-[600]">Enhanced Visibility: </p>
-                  Increase exposure to new opportunities
-                </div>
-              </div>
-              <div className="flex gap-[9px] items-start	">
-                <Image
-                  src="/icons/check.svg"
-                  width={20}
-                  height={20}
-                  alt="triangle"
-                  className=""
-                />
-                <div className="font-[400] 2xl:text-[24px] md:text-[20px] text-[16px] 2xl:leading-[30px] md:leading-[26px] leading-[20px]">
-                  <p className="font-[600]">Efficiency: </p>
-                  Save time and streamline your sales process
+              <div className="button-next">
+                <div className="flex items-center gap-[31px]">
+                  <Image
+                    src="/icons/map_arrow.svg" // Замените на путь к вашей стрелке
+                    width={71}
+                    height={18}
+                    alt="next"
+                  />
+                  <div className="text-white text-[24px] leading-[30px] font-[700] mr-2">
+                    0{currentSlide === items.length - 1 ? 1 : currentSlide + 2}
+                  </div>
                 </div>
               </div>
             </div>

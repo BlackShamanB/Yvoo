@@ -34,12 +34,12 @@ const MagnifyOnScroll = (imgSrc) => {
     }
   };
 
-  useEffect(() => {
-    window.addEventListener("scroll", handleScroll);
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, [inView, visibilityPercentage]);
+  // useEffect(() => {
+  //   window.addEventListener("scroll", handleScroll);
+  //   return () => {
+  //     window.removeEventListener("scroll", handleScroll);
+  //   };
+  // }, [inView, visibilityPercentage]);
 
   return (
     <span ref={ref} className={imgSrc.classes}>

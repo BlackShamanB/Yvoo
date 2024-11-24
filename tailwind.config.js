@@ -27,6 +27,8 @@ module.exports = {
         primaryOrange: "#FF490F",
         mint: "#53D3AA",
         blue: "#06D7F9",
+        green: '#2ECC71',
+        yellow: '#FFC527',
       },
       backgroundImage: {
         HomeBg: "url(../public/images/HomeBg.webp)",

@@ -18,12 +18,12 @@ export default function Home() {
 
   useEffect(() => {
     
-    import('locomotive-scroll').then((locomotiveModule) => {
-      const LocomotiveScroll = locomotiveModule.default;
-      new LocomotiveScroll({
-        el: containerRef.current,
-      });
-    });
+    // import('locomotive-scroll').then((locomotiveModule) => {
+    //   const LocomotiveScroll = locomotiveModule.default;
+    //   new LocomotiveScroll({
+    //     el: containerRef.current,
+    //   });
+    // });
 
   }, []);
   const handleModal = () => {
@@ -31,17 +31,17 @@ export default function Home() {
   };
 
   return (
-    <main className="w-full md:pt-[86px] pt-[58px]" ref={containerRef} data-scroll-container>
-      <Hero />
+    <main className="w-full md:pt-[86px] pt-[58px]" ref={containerRef}>
+      <Hero handleModal={handleModal}/>
       <Discover />
       <Situation></Situation>
-      {/* <Expensive></Expensive> */}
       <Effective></Effective>
       <Scan handleModal={handleModal} />
-      <Search handleModal={handleModal} />
-      <Sales handleModal={handleModal} />
+      <Expensive></Expensive>
+      {/* <Search handleModal={handleModal} /> */}
+      <Sales/>
       <Auditor />
-      <ModalRequest onClose={handleModal} visible={openModalRequest} />
+      {/* <ModalRequest onClose={handleModal} visible={openModalRequest} /> */}
     </main>
   );
 }

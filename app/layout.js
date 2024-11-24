@@ -130,7 +130,7 @@ export default function RootLayout({ children }) {
   return (
     <html
       lang="en"
-      className={`${neueMachina.variable} ${helveticaNeue.variable} ${inter.variable} font-inter`}
+      className={`font-inter ${neueMachina.variable} ${helveticaNeue.variable} ${inter.variable} `}
       suppressHydrationWarning
     >
       <GoogleAnalytics GA_MEASUREMENT_ID="G-BSDEV77RFE" />
