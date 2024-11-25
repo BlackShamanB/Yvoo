@@ -227,7 +227,7 @@ function Effective({ handleModal }) {
           </div>
           <div className="relative self-center text-center">
             <div className="absolute top-[370px] left-[153px] z-[3]">
-              <div className="bg-white rounded-[30px] p-[36px_30px_26px] custom-shadow mb-[20px]">
+              <div className="relative bg-white rounded-[30px] p-[36px_30px_26px] custom-shadow mb-[20px]">
                 <div className="text-[12px] leading-[16px] font-[400] text-[#898989] mb-[8px]">2024.24.10</div>
                 <div className="text-[16px] leading-[20px] font-[400] text-black mb-[33px]">What type of product or service<br/> are you looking for?</div>
                 <div className="flex flex-row justify-between">
@@ -242,7 +242,7 @@ function Effective({ handleModal }) {
                   className="absolute top-[15px] right-[15px]"
                 />
               </div>
-              <div className="bg-white rounded-[30px] p-[36px_30px_26px] custom-shadow">
+              <div className="relative bg-white rounded-[30px] p-[36px_30px_26px] custom-shadow">
                 <div className="text-[12px] leading-[16px] font-[400] text-[#898989] mb-[8px]">2024.24.10</div>
                 <div className="text-[16px] leading-[20px] font-[400] text-black mb-[33px]">What type of product or service<br/> are you looking for?</div>
                 <div className="flex flex-row justify-between">
