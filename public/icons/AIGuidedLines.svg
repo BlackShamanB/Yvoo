@@ -1,0 +1,34 @@
+<svg width="1087" height="761" viewBox="0 0 1087 761" fill="white" xmlns="http://www.w3.org/2000/svg">
+  <line x1="545" y1="1" x2="545" y2="344" stroke="white" stroke-width="2" stroke-linecap="round" stroke-dasharray="2 10"/>
+  <line x1="545" y1="536" x2="545" y2="760" stroke="white" stroke-width="2" stroke-linecap="round" stroke-dasharray="2 10"/>
+  <line x1="7" y1="439" x2="7" y2="337" stroke="white" stroke-width="2" stroke-linecap="round" stroke-dasharray="2 10"/>
+  <line x1="448" y1="439" x2="7" y2="439" stroke="white" stroke-width="2" stroke-linecap="round" stroke-dasharray="2 10"/>
+  <line x1="1080" y1="439" x2="1080" y2="233" stroke="white" stroke-width="2" stroke-linecap="round" stroke-dasharray="2 10"/>
+  <line x1="640" y1="439" x2="1080" y2="439" stroke="white" stroke-width="2" stroke-linecap="round" stroke-dasharray="2 10"/>
+
+  <!-- Анимация кружка 1 -->
+  <circle cx="545" cy="1" r="7" fill="#06D7F9">
+    <animate attributeName="cy" from="1" to="439" dur="2s" begin="0s; anim19.end" fill="freeze" id="anim11" />
+    <animate attributeName="cx" from="545" to="7" dur="2s" begin="anim11.end" fill="freeze" id="anim12" />
+    <animate attributeName="cy" from="439" to="337" dur="1s" begin="anim12.end" fill="freeze" id="anim13" />
+    <animate attributeName="cy" from="337" to="439" dur="1s" begin="anim13.end" fill="freeze" id="anim14" />
+    <animate attributeName="cx" from="7" to="545" dur="2s" begin="anim14.end" fill="freeze" id="anim15" />
+    <animate attributeName="cy" from="439" to="760" dur="2s" begin="anim15.end" fill="freeze" id="anim16" />
+    <animate attributeName="opacity" from="1" to="0" dur="0.5s" begin="anim16.end" fill="freeze" id="anim17" />
+    <animate attributeName="cy" from="760" to="1" dur="0.5s" begin="anim17.end" fill="freeze" id="anim18" />
+    <animate attributeName="opacity" from="0" to="1" dur="0.5s" begin="anim18.end" fill="freeze" id="anim19" />
+  </circle>
+
+  <!-- Анимация кружка 2 -->
+  <circle cx="545" cy="1" r="7" fill="#06D7F9">
+    <animate attributeName="cy" from="1" to="439" dur="2s" begin="0s; anim29.end" fill="freeze" id="anim21" />
+    <animate attributeName="cx" from="545" to="1080" dur="2s" begin="anim21.end" fill="freeze" id="anim22" />
+    <animate attributeName="cy" from="439" to="233" dur="1s" begin="anim22.end" fill="freeze" id="anim23" />
+    <animate attributeName="cy" from="233" to="439" dur="1s" begin="anim23.end" fill="freeze" id="anim24" />
+    <animate attributeName="cx" from="1080" to="545" dur="2s" begin="anim24.end" fill="freeze" id="anim25" />
+    <animate attributeName="cy" from="439" to="760" dur="2s" begin="anim25.end" fill="freeze" id="anim26" />
+    <animate attributeName="opacity" from="1" to="0" dur="0.5s" begin="anim26.end" fill="freeze" id="anim27" />
+    <animate attributeName="cy" from="760" to="1" dur="0.5s" begin="anim27.end" fill="freeze" id="anim28" />
+    <animate attributeName="opacity" from="0" to="1" dur="0.5s" begin="anim28.end" fill="freeze" id="anim29" />
+  </circle>
+</svg>

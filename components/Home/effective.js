@@ -187,11 +187,11 @@ function Effective({ handleModal }) {
         </div>
         <div className="text-center relative w-full flex items-center justify-center">
           <Image
-            src="/icons/Line_1.svg"
-            width={449}
-            height={104}
+            src="/icons/AIGuidedLines.svg"
+            width={1087}
+            height={761}
             alt="triangle"
-            className="absolute right-[calc(50%_+_87px)] -top-[25px]"
+            className="absolute -mt-[124px]"
           />
           <Image
             src="/icons/CentralAIHub.svg"
@@ -199,20 +199,6 @@ function Effective({ handleModal }) {
             height={174}
             alt="triangle"
             className=""
-          />
-          <Image
-            src="/icons/Line_7.svg"
-            width={14}
-            height={345}
-            alt="triangle"
-            className="absolute bottom-[180px]"
-          />
-          <Image
-            src="/icons/Line_8.svg"
-            width={448}
-            height={208}
-            alt="triangle"
-            className="absolute left-[calc(50%_+_87px)] -top-[126px]"
           />
         </div>
         <div className="flex flex-col">
@@ -222,7 +208,7 @@ function Effective({ handleModal }) {
               width={2}
               height={345}
               alt="triangle"
-              className=""
+              className="opacity-0"
             />
           </div>
           <div className="relative self-center text-center">

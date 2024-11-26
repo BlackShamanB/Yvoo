@@ -1,0 +1,39 @@
+<svg width="1087" height="761" viewBox="0 0 1087 761" fill="black" xmlns="http://www.w3.org/2000/svg">
+<line x1="545" y1="1" x2="545" y2="344" stroke="black" stroke-width="2" stroke-linecap="round" stroke-dasharray="2 10"/>
+<line x1="545" y1="536" x2="545" y2="760" stroke="black" stroke-width="2" stroke-linecap="round" stroke-dasharray="2 10"/>
+<line x1="7" y1="439" x2="7" y2="337" stroke="black" stroke-width="2" stroke-linecap="round" stroke-dasharray="2 10"/>
+<line x1="448" y1="439" x2="7" y2="439" stroke="black" stroke-width="2" stroke-linecap="round" stroke-dasharray="2 10"/>
+<line x1="1080" y1="439" x2="1080" y2="233" stroke="black" stroke-width="2" stroke-linecap="round" stroke-dasharray="2 10"/>
+<line x1="640" y1="439" x2="1080" y2="439" stroke="black" stroke-width="2" stroke-linecap="round" stroke-dasharray="2 10"/>
+  <!-- Анимация кружка -->
+  <circle cx="0" cy="1" r="7" fill="#06D7F9">
+    <animateMotion repeatCount="1" dur="5s" keyTimes="0; 0.1; 0.2; 0.3; 0.5; 0.8; 1" keyPoints="0; 0.1; 0.2; 0.3; 0.5; 0.8; 1">
+      <mpath href="#path1"/>
+    </animateMotion>
+  </circle>
+  <circle cx="0" cy="1" r="7" fill="#06D7F9">
+    <animateMotion repeatCount="1" dur="5s" keyTimes="0; 0.1; 0.2; 0.3; 0.5; 0.8; 1" keyPoints="0; 0.1; 0.2; 0.3; 0.5; 0.8; 1">
+      <mpath href="#path2"/>
+    </animateMotion>
+  </circle>
+
+  <!-- Путь для анимации -->
+  <path id="path1" d="
+  M545 1 
+  L545 439 
+  L7 439 
+  T7 337
+  T7 439
+  L545 439 
+  L545 760" fill="none" stroke="none"/>
+  
+  <path id="path2" d="
+  M545 1 
+  L545 439 
+  L1080 439 
+  T1080 233
+  T1080 439
+  L545 439 
+  L545 760" fill="none" stroke="none"/>
+
+</svg>

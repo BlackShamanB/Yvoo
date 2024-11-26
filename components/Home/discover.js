@@ -13,9 +13,9 @@ function Discover() {
     { id: 5, src: "/images/6.png", alt: "6" },
   ];
   const renderItems = items.map((item) => (
-    <SwiperSlide key={item.id} className="!w-[166px]">
+    <SwiperSlide key={item.id} className="relative 3xl:!w-[166px]">
       <Image
-        className="!relative max-w-[166px]"
+        className="!relative 3xl:max-w-[166px]"
         src={item.src}
         alt={item.alt}
         layout="fill"
@@ -25,17 +25,29 @@ function Discover() {
 
   return (
     <div className="relative w-full flex justify-center bg-white">
-      <div className="3xl:max-w-[1516px] 2xl:max-w-[1116px] md:max-w-[598px] mx-[auto] relative flex flex-row items-center gap-[148px] w-full py-[54px]">
-        <div className="text-[16px] leading-[24px] font-[400] text-black max-w-[155px] uppercase">
+      <div className="relative 3xl:max-w-[1516px] 2xl:max-w-[1116px] md:max-w-[598px] mx-[auto] overflow-hidden relative flex flex-row items-center gap-[148px] w-full py-[54px]">
+        <div className="text-[16px] leading-[24px] font-[400] text-black min-w-[155px] max-w-[155px] uppercase">
           Trusted by<br/> industry leading companies
         </div>
-        <div className="w-full max-w-[1162px] text-black block">
+        <div className="relative w-full max-w-[1162px] text-black block">
           <Swiper
             spaceBetween={80}
             slidesPerView={'auto'}
             onSlideChange={() => console.log("slide change")}
             onSwiper={(swiper) => console.log(swiper)}
-            className="max-w-[100%]"
+            className="max-w-[100%] w-full"
+            breakpoints={{
+              640: {
+                slidesPerView: 2,
+                spaceBetween: 20,
+              },
+              1440: {
+                slidesPerView: 1,
+              },
+              1920: {
+                slidesPerView: 5,
+              },
+            }}
           >
             {renderItems}
           </Swiper>
