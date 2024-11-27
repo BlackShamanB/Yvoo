@@ -411,12 +411,28 @@ body {
   transform: translateY(20px);
   animation-duration: 1s;
   animation-fill-mode: forwards;
+  animation: float 5s infinite;
+}
+.card-2 {
+  animation-delay: 0.5s !important;
+}
+.card {
 }
 
-.card.fade-in {
-  animation-name: fadeInUp;
-}
-
-.card.fade-out {
+/* .card {
   animation-name: fadeOutUp;
+} */
+@keyframes float {
+    0% {
+        transform: translateY(0);
+        opacity: 0;
+    }
+    50% {
+        transform: translateY(-100px);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(-200px);
+        opacity: 0;
+    }
 }

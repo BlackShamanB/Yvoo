@@ -221,15 +221,13 @@ function Effective({ handleModal }) {
               width={2}
               height={345}
               alt="triangle"
-              className="opacity-0 3xl:max-height-[auto] max-height-[145px]"
+              className="opacity-0 3xl:max-h-[unset] max-h-[145px]"
             />
           </div>
           <div className="relative self-center text-center">
             <div className="absolute top-[370px] left-[153px] z-[3]">
               <div
-                className={`relative bg-white rounded-[30px] p-[36px_30px_26px] custom-shadow mb-[20px] card ${
-                  currentCard === 0 && animationPhase === "fade-in" ? "fade-in" : "fade-out"
-                }`}
+                className={`relative bg-white rounded-[30px] p-[36px_30px_26px] custom-shadow mb-[20px] card`}
               >
                 <div className="text-[12px] leading-[16px] font-[400] text-[#898989] mb-[8px]">
                   2024.24.10
@@ -255,9 +253,7 @@ function Effective({ handleModal }) {
                 />
               </div>
               <div
-                className={`relative bg-white rounded-[30px] p-[36px_30px_26px] custom-shadow card ${
-                  currentCard === 0 && animationPhase === "fade-in" ? "fade-in" : "fade-out"
-                }`}
+                className={`relative bg-white rounded-[30px] p-[36px_30px_26px] custom-shadow card card-2`}
                 // style={{ animationDelay: "0.5s" }}
               >
                 <div className="text-[12px] leading-[16px] font-[400] text-[#898989] mb-[8px]">
