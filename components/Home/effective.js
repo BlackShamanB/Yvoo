@@ -25,6 +25,19 @@ function Effective({ handleModal }) {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
+
+  const [currentCard, setCurrentCard] = useState(0);
+  const [animationPhase, setAnimationPhase] = useState("fade-in");
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setAnimationPhase((prevPhase) => (prevPhase === "fade-in" ? "fade-out" : "fade-in"));
+      setCurrentCard((prevCard) => (prevCard === 0 ? 1 : 0));
+    }, 3000); // Интервал между анимациями
+
+    return () => clearInterval(interval);
+  }, []);
+  
   return (
     <div className="relative w-full flex justify-center bg-black">
       <div className="3xl:max-w-[1516px] 2xl:max-w-[1116px] md:max-w-[598px] mx-[auto] relative flex flex-col items-center w-full pt-[240px]">
@@ -122,8 +135,8 @@ function Effective({ handleModal }) {
         <div className="text-[40px] leading-[58px] font-[400] text-white mb-[154px]">
           Audits with Global Reach
         </div>
-        <div className="grid grid-cols-3 gap-[83px] mb-[25px]">
-          <div className="flex flex-row gap-[25px] border-blue border-[2px] rounded-[30px] p-[42px_30px] mt-[206px] h-[max-content]">
+        <div className="grid grid-cols-3 3xl:gap-[83px] gap-[50px] 3xl:mb-[25px] mb-[6px]">
+          <div className="flex flex-row gap-[25px] border-blue border-[2px] rounded-[30px] p-[42px_30px] 3xl:mt-[206px] mt-[72px] h-[max-content]">
             <div>
               <Image
                 src="/icons/AIGeneratedAuditFramework.svg"
@@ -134,7 +147,7 @@ function Effective({ handleModal }) {
               />
             </div>
             <div>
-              <div className="text-[30px] leading-[38px] font-[700] text-blue mb-[24px]">
+              <div className="3xl:text-[30px] text-[28px] 3xl:leading-[38px] leading-[36px] font-[700] text-blue mb-[24px]">
                 AI-Generated <br /> Audit Framework <br />& Auditor <br />
                 Guidance
               </div>
@@ -155,7 +168,7 @@ function Effective({ handleModal }) {
               />
             </div>
             <div>
-              <div className="text-[30px] leading-[38px] font-[700] text-blue mb-[24px]">
+              <div className="3xl:text-[30px] text-[28px] 3xl:leading-[38px] leading-[36px] font-[700] text-blue mb-[24px]">
                 1-Click Audit Request
               </div>
               <div className="text-[20px] leading-[28px] font-[300] text-white">
@@ -163,7 +176,7 @@ function Effective({ handleModal }) {
               </div>
             </div>
           </div>
-          <div className="flex flex-row gap-[25px] border-blue border-[2px] rounded-[30px] p-[42px_30px] mt-[206px] h-[max-content]">
+          <div className="flex flex-row gap-[25px] border-blue border-[2px] rounded-[30px] p-[42px_30px] 3xl:mt-[206px] mt-[138px] h-[max-content]">
             <div>
               <Image
                 src="/icons/AuditorAssignment.svg"
@@ -174,7 +187,7 @@ function Effective({ handleModal }) {
               />
             </div>
             <div>
-              <div className="text-[30px] leading-[38px] font-[700] text-blue mb-[24px]">
+              <div className="3xl:text-[30px] text-[28px] 3xl:leading-[38px] leading-[36px] font-[700] text-blue mb-[24px]">
                 Auditor <br />
                 Assignment
               </div>
@@ -191,7 +204,7 @@ function Effective({ handleModal }) {
             width={1087}
             height={761}
             alt="triangle"
-            className="absolute -mt-[124px]"
+            className="absolute 3xl:mt-[-124px] mt-[-90px] 3xl:max-w-[100%] 2xl:max-w-[800px]"
           />
           <Image
             src="/icons/CentralAIHub.svg"
@@ -208,17 +221,30 @@ function Effective({ handleModal }) {
               width={2}
               height={345}
               alt="triangle"
-              className="opacity-0"
+              className="opacity-0 3xl:max-height-[auto] max-height-[145px]"
             />
           </div>
           <div className="relative self-center text-center">
             <div className="absolute top-[370px] left-[153px] z-[3]">
-              <div className="relative bg-white rounded-[30px] p-[36px_30px_26px] custom-shadow mb-[20px]">
-                <div className="text-[12px] leading-[16px] font-[400] text-[#898989] mb-[8px]">2024.24.10</div>
-                <div className="text-[16px] leading-[20px] font-[400] text-black mb-[33px]">What type of product or service<br/> are you looking for?</div>
+              <div
+                className={`relative bg-white rounded-[30px] p-[36px_30px_26px] custom-shadow mb-[20px] card ${
+                  currentCard === 0 && animationPhase === "fade-in" ? "fade-in" : "fade-out"
+                }`}
+              >
+                <div className="text-[12px] leading-[16px] font-[400] text-[#898989] mb-[8px]">
+                  2024.24.10
+                </div>
+                <div className="text-[16px] leading-[20px] font-[400] text-black mb-[33px]">
+                  What type of product or service
+                  <br /> are you looking for?
+                </div>
                 <div className="flex flex-row justify-between">
-                  <div className="text-[12px] leading-[16px] font-[400] text-blue uppercase">more info</div>
-                  <div className="text-[12px] leading-[16px] font-[400] text-[#898989]">Today 12:30</div>
+                  <div className="text-[12px] leading-[16px] font-[400] text-blue uppercase">
+                    more info
+                  </div>
+                  <div className="text-[12px] leading-[16px] font-[400] text-[#898989]">
+                    Today 12:30
+                  </div>
                 </div>
                 <Image
                   src="/icons/Notification.svg"
@@ -228,12 +254,26 @@ function Effective({ handleModal }) {
                   className="absolute top-[15px] right-[15px]"
                 />
               </div>
-              <div className="relative bg-white rounded-[30px] p-[36px_30px_26px] custom-shadow">
-                <div className="text-[12px] leading-[16px] font-[400] text-[#898989] mb-[8px]">2024.24.10</div>
-                <div className="text-[16px] leading-[20px] font-[400] text-black mb-[33px]">What type of product or service<br/> are you looking for?</div>
+              <div
+                className={`relative bg-white rounded-[30px] p-[36px_30px_26px] custom-shadow card ${
+                  currentCard === 0 && animationPhase === "fade-in" ? "fade-in" : "fade-out"
+                }`}
+                // style={{ animationDelay: "0.5s" }}
+              >
+                <div className="text-[12px] leading-[16px] font-[400] text-[#898989] mb-[8px]">
+                  2024.24.10
+                </div>
+                <div className="text-[16px] leading-[20px] font-[400] text-black mb-[33px]">
+                  What type of product or service
+                  <br /> are you looking for?
+                </div>
                 <div className="flex flex-row justify-between">
-                  <div className="text-[12px] leading-[16px] font-[400] text-blue uppercase">more info</div>
-                  <div className="text-[12px] leading-[16px] font-[400] text-[#898989]">Today 12:30</div>
+                  <div className="text-[12px] leading-[16px] font-[400] text-blue uppercase">
+                    more info
+                  </div>
+                  <div className="text-[12px] leading-[16px] font-[400] text-[#898989]">
+                    Today 12:30
+                  </div>
                 </div>
                 <Image
                   src="/icons/Notification.svg"

@@ -371,3 +371,52 @@ body {
     background-position: -100vw -1px;
   }
 }
+
+.swiper-button-prev::after, .swiper-button-next::after {
+  content: none !important;
+  display: none;
+}
+
+.swiper-button-prev {
+  transform: scaleX(-1);
+}
+
+.swiper-button-disabled {
+  visibility: hidden;
+}
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeOutUp {
+  from {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  to {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+}
+
+.card {
+  opacity: 0;
+  transform: translateY(20px);
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+
+.card.fade-in {
+  animation-name: fadeInUp;
+}
+
+.card.fade-out {
+  animation-name: fadeOutUp;
+}

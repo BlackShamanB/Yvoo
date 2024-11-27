@@ -173,7 +173,7 @@ function Sales({ handleModal }) {
       id="sales"
       className="relative w-full flex flex-col justify-center bg-blue pl-[169px] pr-[202px] pb-[144px]"
     >
-      <div className="relative 3xl:max-w-[1516px] 2xl:max-w-[100%] md:max-w-[598px] relative grid grid-cols-[743px_1fr] justify-center pt-[170px] gap-[133px]">
+      <div className="relative 3xl:max-w-[1516px] 2xl:max-w-[100%] md:max-w-[598px] relative grid 3xl:grid-cols-[743px_1fr] grid-cols-2 justify-center pt-[170px] gap-[133px]">
         <div className="relative">
           <Image
             src="/icons/Map2.svg"
@@ -207,7 +207,7 @@ function Sales({ handleModal }) {
             <div className="flex flex-row gap-[60px] justify-end">
               <div className="button-prev">
                 <div className="flex items-center gap-[31px]">
-                  <div className="text-white text-[24px] leading-[30px] font-[700] ml-2">
+                  <div className="text-white text-[24px] leading-[30px] font-[700] ml-2 min-w-[32px] w-[32px]">
                     0{currentSlide === 0 ? items.length : currentSlide}
                   </div>
                   <Image
@@ -227,7 +227,7 @@ function Sales({ handleModal }) {
                     height={18}
                     alt="next"
                   />
-                  <div className="text-white text-[24px] leading-[30px] font-[700] mr-2">
+                  <div className="text-white text-[24px] leading-[30px] font-[700] mr-2 min-w-[32px] w-[32px]">
                     0{currentSlide === items.length - 1 ? 1 : currentSlide + 2}
                   </div>
                 </div>
