@@ -7,6 +7,7 @@ import Link from "next/link";
 import EmbedVideo from "../EmbedVideo";
 import TypingEffect from "../TypingEffect";
 import ModalRequest from "@/components/ModalRequest";
+import LoadOnLoad from '@/components/LoadOnLoad';
 function Hero() {
   const [openModalRequest, setOpenModalRequest] = useState(false);
 
@@ -78,18 +79,19 @@ function Hero() {
         data-scroll
         data-scroll-speed="0.3"
       >
+      <LoadOnLoad>
         <div className="3xl:max-w-[1516px] 2xl:max-w-[1116px] md:max-w-[598px] 3xl:w-[1516px] 2xl:w-[1116px] mx-[auto] md:pl-[0] pl-[20px] md:pr-[0] pr-[20px] pb-[126px]">
           <h1
             className="relative font-inter 2xl:text-[60px] md:text-[50px] text-[30px] font-[700] 2xl:leading-[68px] md:leading-[54px] leading-[34px] max-w-[830px] mb-[42px]"
             ref={elementRef}
-            style={{
-              visibility: elementVisible ? "visible" : "hidden",
-              top: elementVisible ? "0" : "50px",
-              opacity: elementVisible ? "1" : "0",
-              transition: "linear 0.5s",
-            }}
+            // style={{
+            //   visibility: elementVisible ? "visible" : "hidden",
+            //   top: elementVisible ? "0" : "50px",
+            //   opacity: elementVisible ? "1" : "0",
+            //   transition: "linear 0.5s",
+            // }}
           >
-            AI-Powered On-Site Supplier Verification ScanPro+
+            AI-Powered On-Site Supplier Verification <span className="text-green">Scan</span>Pro+
           </h1>
           <div className="text-[24px] leading-[30px] font-[700] mb-[42px]">
             Achieve audit excellence: scale resources, cut costs by 70%,<br/> and
@@ -109,6 +111,7 @@ function Hero() {
             1.471
           </div>
         </div>
+        </LoadOnLoad>
         {/* <div className="3xl:max-w-[1516px] 2xl:max-w-[1116px] md:max-w-[598px] 3xl:w-[1516px] 2xl:w-[1116px] md:w-[598px] md:mx-[auto] mx-[22px] 2xl:mt-[71px] md:mt-[40px] mt-[30px] flex items-center md:gap-[33px] gap-[15px]">
           <Image
             src="/icons/icon-play-btn.svg"

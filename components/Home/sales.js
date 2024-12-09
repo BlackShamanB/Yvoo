@@ -9,6 +9,29 @@ import { Navigation, Pagination } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
+import { EffectFade } from 'swiper/modules';
+import { CSSTransition, TransitionGroup } from 'react-transition-group';
+import 'swiper/css/effect-fade';
+
+
+const TypingAnimation = ({ text }) => {
+  const [displayText, setDisplayText] = useState('');
+  const [index, setIndex] = useState(0);
+
+  useEffect(() => {
+    setTimeout(1000)
+    if (index < text.length) {
+      const timeout = setTimeout(() => {
+        setDisplayText((prevText) => prevText + text[index]);
+        setIndex((prevIndex) => prevIndex + 1);
+      }, 100); // Задержка между появлением букв
+
+      return () => clearTimeout(timeout);
+    }
+  }, [index, text]);
+
+  return <span>{displayText}</span>;
+};
 
 function Sales({ handleModal }) {
   const overlayContent = [
@@ -17,7 +40,7 @@ function Sales({ handleModal }) {
       className="absolute top-[252px] -right-[45px] flex flex-col gap-[9px] justify-start"
     >
       <div className="text-white text-[24px] leading-[30px] font-[700]">
-        <div className="flex flex-row items-center gap-[13px] rounded-[30px] bg-mint p-[12px_30px_12px_24px]">
+        <div className="map1-click-animate flex flex-row items-center gap-[13px] rounded-[30px] bg-mint p-[12px_30px_12px_24px]">
           <Image
             src="/icons/map1-click.svg"
             width={26}
@@ -28,10 +51,10 @@ function Sales({ handleModal }) {
           <div className="text-[24px] leading-[30px] font-[600]">1-Click</div>
         </div>
       </div>
-      <div className="w-[24px] h-[24px] bg-mint rounded-[50%] ml-[9px]"></div>
+      <div className="map1-dot-animate w-[24px] h-[24px] bg-mint rounded-[50%] ml-[9px]"></div>
     </div>,
     <div key="1" className="top-0 left-0">
-      <div className="absolute bg-white rounded-[26px] flex flex-row gap-[20px] items-center p-[14px_20px] w-[404px] top-[54px] left-[50%] transfotm -translate-x-1/2">
+      <div className="text-black text-[16px] leading-[20px] font-[500] absolute bg-white rounded-[26px] select-none cursor-default flex flex-row gap-[20px] items-center p-[14px_20px] w-[404px] top-[54px] left-[50%] transfotm -translate-x-1/2">
         <Image
           src="/icons/Search.svg"
           width={24}
@@ -39,30 +62,28 @@ function Sales({ handleModal }) {
           alt="Search"
           className=""
         />
-        <div className="text-black text-[16px] leading-[20px] font-[500]">
-          Auditors
-        </div>
+        <TypingAnimation text="Auditors" />
       </div>
       <Image
         src="/icons/map_balloon.svg"
         width={48}
         height={60}
         alt="map_balloon"
-        className="absolute top-[212px] left-[69px]"
+        className="absolute top-[212px] max-w-[48px] max-h-[60px] left-[69px] baloonMap-animate"
       />
       <Image
         src="/icons/map_balloon.svg"
         width={32}
         height={40}
         alt="map_balloon"
-        className="absolute top-[395px] left-[132px]"
+        className="absolute top-[395px] max-w-[32px] max-h-[40px] left-[132px] baloonMap-animate"
       />
       <Image
         src="/icons/map_balloon.svg"
         width={32}
         height={40}
         alt="map_balloon"
-        className="absolute top-[275px] left-[361px]"
+        className="absolute top-[275px] max-w-[32px] max-h-[40px] left-[361px] baloonMap-animate"
       />
       <div className="absolute top-[133px] left-[427px]">
         <Image
@@ -70,14 +91,14 @@ function Sales({ handleModal }) {
           width={95}
           height={119}
           alt="map_balloon"
-          className=""
+          className="max-w-[95px] max-h-[119px] baloonMap-animate"
         />
         <Image
           src="/icons/map_ballon_check.svg"
           width={37}
           height={37}
           alt="map_balloon"
-          className="absolute top-[0] left-[91px]"
+          className="absolute top-[0] left-[91px] max-w-[37px] max-h-[37px] baloonMap-animate"
         />
       </div>
       <Image
@@ -85,14 +106,14 @@ function Sales({ handleModal }) {
         width={48}
         height={60}
         alt="map_balloon"
-        className="absolute top-[248px] left-[537px]"
+        className="absolute top-[248px] left-[537px] max-w-[48px] max-h-[60px] baloonMap-animate"
       />
       <Image
         src="/icons/map_balloon.svg"
         width={32}
         height={40}
         alt="map_balloon"
-        className="absolute top-[272px] left-[673px]"
+        className="absolute top-[272px] left-[673px] max-w-[32px] max-h-[40px] baloonMap-animate"
       />
     </div>,
     <div key="2" className="absolute -top-[30px] -left-[50px]">
@@ -151,22 +172,28 @@ function Sales({ handleModal }) {
         "Get detailed audit reports with data-driven insights, photos, and compliance documentation. Reports provide all the information needed for confident decisions.",
     },
   ];
-  const renderItems = items.map((item) => (
-    <SwiperSlide key={item.id} className="mt-[96px]">
-      <div className="flex flex-row gap-[20px]">
-        <div className="text-white text-[120px] leading-[120px] font-[800]">
-          0{item.id}
-        </div>
-        <div className="flex flex-col gap-[20px]">
-          <div className="text-black text-[24px] leading-[30px] font-[700]">
-            {item.header}
+  const renderItems = items.map((item, index) => (
+    // <CSSTransition
+    //   key={index + 1}
+    //   timeout={500}
+    //   classNames="slide"
+    // >
+      <SwiperSlide key={item.id} className="mt-[96px] bg-blue">
+        <div className="flex flex-row gap-[20px]">
+          <div className="text-white text-[120px] leading-[120px] font-[800]">
+            0{item.id}
           </div>
-          <div className="text-black text-[20px] leading-[30px] font-[400]">
-            {item.content}
+          <div className="flex flex-col gap-[20px]">
+            <div className="text-black text-[24px] leading-[30px] font-[700]">
+              {item.header}
+            </div>
+            <div className="text-black text-[20px] leading-[30px] font-[400]">
+              {item.content}
+            </div>
           </div>
         </div>
-      </div>
-    </SwiperSlide>
+      </SwiperSlide>
+    // </CSSTransition>
   ));
   return (
     <div
@@ -201,8 +228,11 @@ function Sales({ handleModal }) {
               }}
               modules={[Navigation, Pagination]}
               className="max-w-[673px] mb-[100px]"
+              // effect="fade"
             >
+            {/* <TransitionGroup> */}
               {renderItems}
+              {/* </TransitionGroup> */}
             </Swiper>
             <div className="flex flex-row gap-[60px] justify-end">
               <div className="button-prev">

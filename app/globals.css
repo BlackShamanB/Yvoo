@@ -436,3 +436,106 @@ body {
         opacity: 0;
     }
 }
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in-up {
+  animation: fadeInUp 0.5s ease-out;
+}
+
+.border-box {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  border: 2px solid black;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.moving-circle {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background-color: #06D7F9;
+  border-radius: 50%;
+  animation: moveAround 15s linear infinite;
+}
+
+@keyframes moveAround {
+  0% {
+    top: -5px;
+    left: -5px;
+  }
+  40% {
+    top: -5px;
+    left: calc(100% - 5px);
+  }
+  50% {
+    top: calc(100% - 5px);
+    left: calc(100% - 5px);
+  }
+  90% {
+    top: calc(100% - 5px);
+    left: -5px;
+  }
+  100% {
+    top: -5px;
+    left: -5px;
+  }
+}
+.map1-click-animate {
+  clip-path: circle(0% at calc(2.6143790849673203%) calc(95%));
+  animation: reveal 2s forwards;
+  animation-delay: 0.2s;
+}
+.map1-dot-animate {
+  clip-path: circle(0% at calc(2.6143790849673203%) calc(95%));
+  animation: reveal 1s forwards;
+}
+@keyframes reveal {
+  to {
+    clip-path: circle(150% at calc(2.6143790849673203%) calc(95%))
+  }
+}
+.baloonMap-animate {
+  width: 0;
+  height: 0;
+  animation: zoom 0.7s forwards;
+  animation-delay: 1s;
+}
+@keyframes zoom {
+  0% {
+    width: 0;
+    height: 0;
+  }
+  100% {
+    width: 100px;
+    height: 100px;
+  }
+}
+/* .swiper-slide {
+  transform: translate3d(0px, 0px, 0px) !important;
+}
+.swiper-slide-prev {
+  opacity: 0;
+  transform: translate3d(0px, 300px, 0px) !important;
+}
+
+.swiper-slide-active {
+  opacity: 1;
+  transform: translate3d(0px, 0px, 0px) !important;
+}
+
+.swiper-slide-next {
+  opacity: 0;
+  transform: translate3d(0px, -300px, 0px) !important;
+} */

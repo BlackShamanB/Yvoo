@@ -82,6 +82,7 @@ function Discover() {
               },
               1920: {
                 slidesPerView: 5,
+                spaceBetween: 80,
               },
             }}
           >

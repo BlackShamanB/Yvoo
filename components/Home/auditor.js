@@ -53,7 +53,7 @@ function Auditor() {
           </div>
         </div>
         <div className="relative grid grid-cols-2 gap-[80px] mb-[150px]">
-          <Image
+          {/* <Image
             src="/icons/Connection1.svg"
             width={65}
             height={344}
@@ -66,7 +66,10 @@ function Auditor() {
             height={342}
             alt="Connection2"
             className="absolute top-[50%] right-[-73px] transform -translate-y-[50%]"
-          />
+          /> */}
+          <div className="absolute w-[calc(100%_+_146px)] h-[344px] border-black border-dashed border-2 top-[131px] -left-[73px]">
+            <div class="moving-circle"></div>
+          </div>
           <div className="relative flex flex-row p-[40px_40px_70px] rounded-[30px] bg-blue gap-[30px]">
             <div>
               <Image
