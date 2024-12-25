@@ -198,9 +198,9 @@ function Sales({ handleModal }) {
   return (
     <div
       id="sales"
-      className="relative w-full flex flex-col justify-center bg-blue pl-[169px] pr-[202px] pb-[144px]"
+      className="relative w-full flex flex-col justify-center bg-blue 2xl:pl-[169px] 2xl:pr-[202px] px-[20px] pb-[144px]"
     >
-      <div className="relative 3xl:max-w-[1516px] 2xl:max-w-[100%] md:max-w-[598px] relative grid 3xl:grid-cols-[743px_1fr] grid-cols-2 justify-center pt-[170px] gap-[133px]">
+      <div className="relative 3xl:max-w-[1516px] 2xl:max-w-[100%] md:max-w-[598px] relative grid 3xl:grid-cols-[743px_1fr] 2xl:grid-cols-2 2xl:justify-center pt-[170px] gap-[133px]">
         <div className="relative">
           <Image
             src="/icons/Map2.svg"

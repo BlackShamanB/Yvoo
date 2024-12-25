@@ -43,7 +43,7 @@ function Auditor() {
         data-scroll-speed="0.5"
       />
       <div className="absolute w-full bg-black h-[403px] bottom-0"></div>
-      <div className="relative 3xl:max-w-[1516px] 2xl:max-w-[1116px] md:max-w-[598px] mx-[auto] relative justify-center pt-[200px] gap-[133px]">
+      <div className="relative 3xl:max-w-[1516px] 2xl:max-w-[1116px] md:max-w-[728px] mx-[auto] relative justify-center pt-[200px] gap-[133px]">
         <div className="flex flex-col justify-center mb-[150px] text-center">
           <div className="text-blue text-[50px] leading-[58px] font-[700]">
             YVOO
@@ -52,7 +52,7 @@ function Auditor() {
             Connects seamlessly with your System
           </div>
         </div>
-        <div className="relative grid grid-cols-2 gap-[80px] mb-[150px]">
+        <div className="relative grid grid-cols-2 gap-[20px] mb-[150px]">
           {/* <Image
             src="/icons/Connection1.svg"
             width={65}
@@ -67,10 +67,10 @@ function Auditor() {
             alt="Connection2"
             className="absolute top-[50%] right-[-73px] transform -translate-y-[50%]"
           /> */}
-          <div className="absolute w-[calc(100%_+_146px)] h-[344px] border-black border-dashed border-2 top-[131px] -left-[73px]">
+          <div className="absolute 2xl:w-[calc(100%_+_146px)] w-[calc(100%_+_20px)] h-[344px] border-black border-dashed border-2 2xl:top-[131px] top-[320px] -2xl:left-[73px] -left-[10px]">
             <div class="moving-circle"></div>
           </div>
-          <div className="relative flex flex-row p-[40px_40px_70px] rounded-[30px] bg-blue gap-[30px]">
+          <div className="relative flex flex-row 2xl:p-[40px_40px_70px] p-[20px_20px_35px] rounded-[30px] bg-blue gap-[30px]">
             <div>
               <Image
                 src="/icons/1-ClickAuditRequest.svg"
@@ -91,7 +91,7 @@ function Auditor() {
               </div>
             </div>
           </div>
-          <div className="relative flex flex-row p-[40px_40px_70px] rounded-[30px] bg-blue gap-[30px]">
+          <div className="relative flex flex-row 2xl:p-[40px_40px_70px] p-[20px_20px_35px] rounded-[30px] bg-blue gap-[30px]">
             <div>
               <Image
                 src="/icons/YVOOAPI.svg"
@@ -111,7 +111,7 @@ function Auditor() {
               </div>
             </div>
           </div>
-          <div className="relative flex flex-row p-[40px_40px_70px] rounded-[30px] bg-blue gap-[30px]">
+          <div className="relative flex flex-row 2xl:p-[40px_40px_70px] p-[20px_20px_35px] rounded-[30px] bg-blue gap-[30px]">
             <div>
               <Image
                 src="/icons/RealTimeMonitoring.svg"
@@ -132,7 +132,7 @@ function Auditor() {
               </div>
             </div>
           </div>
-          <div className="relative flex flex-row p-[40px_40px_70px] rounded-[30px] bg-blue gap-[30px]">
+          <div className="relative flex flex-row 2xl:p-[40px_40px_70px] p-[20px_20px_35px] rounded-[30px] bg-blue gap-[30px]">
             <div>
               <Image
                 src="/icons/1-ClickAuditRequest.svg"

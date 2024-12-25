@@ -78,7 +78,7 @@ function Scan({ handleModal }) {
       check: "/icons/checkGrey.svg",
       color: "[#949CAF]",
       title: "Compliance Standards",
-      content: DOMPurify.sanitize("Ensuring ethical sourcing<br/> and regulatory compliance"),
+      content: DOMPurify.sanitize("Ensuring ethical sourcing and regulatory compliance"),
       items: [
         { title: "RoHS", description: "Restriction of Hazardous Substances" },
         {

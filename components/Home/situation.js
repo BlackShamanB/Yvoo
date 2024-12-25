@@ -29,7 +29,7 @@ function Situation({ handleModal }) {
   return (
     <div
       id="situation"
-      className="relative max-w-[1920px] w-full grid grid-cols-[1fr_1fr] gap[170px] justify-center bg-local bg-contain bg-bottom inset-0 bg-[#06D7F9] py-[160px]"
+      className="relative max-w-[1920px] w-full grid grid-cols-[1fr_1fr] 2xl:gap-[170px] gap-[30px] justify-center bg-local bg-contain bg-bottom inset-0 bg-[#06D7F9] py-[160px]"
     >
       <MagnifyOnScroll
         style={{ zIndex: 0 }}
@@ -55,7 +55,7 @@ function Situation({ handleModal }) {
           data-scroll-speed="0.2"
         />
         <div
-          className="md:px-[0] px-[41px] 3xl:pr-[0px] text-black z-30 flex flex-col 3xl:gap-[38px] 2xl:gap-[0] md:gap-[24px] gap-[20px] font-[400] [&>p]:text-[20px] [&>p]:md:text-[24px] md:leading-[30px] leading-[26px] 3xl:pl-[85px] 2xl:pl-[54px] max-w-[673px]"
+          className="md:px-[0] px-[41px] 3xl:pr-[0px] text-black z-30 flex flex-col 3xl:gap-[38px] 2xl:gap-[0] md:gap-[24px] gap-[20px] font-[400] [&>p]:text-[20px] [&>p]:md:text-[24px] md:leading-[30px] leading-[26px] max-w-[673px]"
           data-scroll
           data-scroll-speed="0.16"
         >

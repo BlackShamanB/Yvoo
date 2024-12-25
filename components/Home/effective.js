@@ -40,7 +40,7 @@ function Effective({ handleModal }) {
   
   return (
     <div className="relative w-full flex justify-center bg-black">
-      <div className="3xl:max-w-[1516px] 2xl:max-w-[1116px] md:max-w-[598px] mx-[auto] relative flex flex-col items-center w-full pt-[240px]">
+      <div className="3xl:max-w-[1516px] 2xl:max-w-[1116px] md:max-w-[748px] mx-[auto] relative flex flex-col items-center w-full pt-[240px]">
         <div className="flex flex-col max-w-[900px] text-center mb-[216px]">
           <div className="text-[50px] leading-[58px] font-[700] text-blue mb-[42px]">
             About Us
@@ -59,7 +59,7 @@ function Effective({ handleModal }) {
             results.
           </div>
         </div>
-        <div className="grid grid-cols-3 flex-nowrap gap-[116px] mb-[76px]">
+        <div className="grid grid-cols-3 flex-nowrap 2xl:gap-[116px] gap-[40px] mb-[76px]">
           <div className="flex flex-col">
             <div>
               <Image
@@ -136,7 +136,7 @@ function Effective({ handleModal }) {
           Audits with Global Reach
         </div>
         <div className="grid grid-cols-3 3xl:gap-[83px] gap-[50px] 3xl:mb-[25px] mb-[6px]">
-          <div className="flex flex-row gap-[25px] border-blue border-[2px] rounded-[30px] p-[42px_30px] 3xl:mt-[206px] mt-[72px] h-[max-content]">
+          <div className="flex 2xl:flex-row flex-col gap-[25px] border-blue border-[2px] rounded-[30px] 2xl:p-[42px_30px] p-[21px_15px] 3xl:mt-[206px] mt-[72px] h-[max-content]">
             <div>
               <Image
                 src="/icons/AIGeneratedAuditFramework.svg"
@@ -157,7 +157,7 @@ function Effective({ handleModal }) {
               </div>
             </div>
           </div>
-          <div className="flex flex-row gap-[25px] border-blue border-[2px] rounded-[30px] p-[42px_30px] h-[max-content]">
+          <div className="flex 2xl:flex-row flex-col gap-[25px] border-blue border-[2px] rounded-[30px] 2xl:p-[42px_30px] p-[21px_15px] h-[max-content]">
             <div>
               <Image
                 src="/icons/ClickAuditRequest.svg"
@@ -176,7 +176,7 @@ function Effective({ handleModal }) {
               </div>
             </div>
           </div>
-          <div className="flex flex-row gap-[25px] border-blue border-[2px] rounded-[30px] p-[42px_30px] 3xl:mt-[206px] mt-[138px] h-[max-content]">
+          <div className="flex 2xl:flex-row flex-col gap-[25px] border-blue border-[2px] rounded-[30px] 2xl:p-[42px_30px] p-[21px_15px] 3xl:mt-[206px] mt-[138px] h-[max-content]">
             <div>
               <Image
                 src="/icons/AuditorAssignment.svg"
@@ -204,7 +204,7 @@ function Effective({ handleModal }) {
             width={1087}
             height={761}
             alt="triangle"
-            className="absolute 3xl:mt-[-124px] mt-[-90px] 3xl:max-w-[100%] 2xl:max-w-[800px]"
+            className="absolute 3xl:mt-[-124px] mt-[-90px] 3xl:max-w-[100%] 2xl:max-w-[800px] max-w-[708px]"
           />
           <Image
             src="/icons/CentralAIHub.svg"

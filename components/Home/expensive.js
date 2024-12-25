@@ -27,7 +27,7 @@ function Expensive({ handleModal }) {
   }, []);
   return (
     <div className="relative w-full flex flex-col justify-center bg-white">
-      <div className="3xl:max-w-[1516px] 2xl:max-w-[1116px] md:max-w-[598px] mx-[auto] relative flex flex-col justify-center pt-[140px] pb-[86px]">
+      <div className="3xl:max-w-[1516px] 2xl:max-w-[1116px] md:max-w-[748px] mx-[auto] relative flex flex-col justify-center pt-[140px] pb-[86px]">
         <div className="text-blue text-[50px] leading-[58px] font-[700] text-center mb-[16px]">
           Why YVOO?
         </div>
@@ -37,10 +37,10 @@ function Expensive({ handleModal }) {
             width={1183}
             height={132}
             alt="triangle"
-            className="mx-[auto]"
+            className="mx-[auto] 2xl:max-w-[unset] max-w-[588px]"
           />
         </div>
-        <div className="grid grid-cols-4 gap-[59px]">
+        <div className="grid grid-cols-4 2xl:gap-[59px] gap-[20px]">
           <div className="flex flex-col gap-[20px]">
             <div className="justify-items-center">
               <Image
