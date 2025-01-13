@@ -107,7 +107,7 @@ function Scan({ handleModal }) {
   }, []);
   return (
     <div className="relative w-full flex flex-col justify-center bg-white">
-      <div className="3xl:max-w-[1516px] 2xl:max-w-[1116px] md:max-w-[598px] mx-[auto] relative grid grid-cols-2 gap-x-[60px] gap-y-[120px] w-full pt-[200px] mb-[180px]">
+      <div className="3xl:max-w-[1516px] 2xl:max-w-[1116px] md:max-w-[598px] mx-[auto] relative grid md:grid-cols-2 grid-cols-1 gap-x-[60px] gap-y-[120px] w-full pt-[200px] mb-[180px]">
         {data.map((item, index) => (
           <SafetyStandards
             image={item.image}

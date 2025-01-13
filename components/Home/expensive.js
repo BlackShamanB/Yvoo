@@ -37,10 +37,10 @@ function Expensive({ handleModal }) {
             width={1183}
             height={132}
             alt="triangle"
-            className="mx-[auto] 2xl:max-w-[unset] max-w-[588px]"
+            className="mx-[auto] 2xl:max-w-[unset] max-w-[588px] md:block hidden"
           />
         </div>
-        <div className="grid grid-cols-4 2xl:gap-[59px] gap-[20px]">
+        <div className="grid md:grid-cols-4 grid-cols-1 2xl:gap-[59px] gap-[20px] md:px-0 px-[41px]">
           <div className="flex flex-col gap-[20px]">
             <div className="justify-items-center">
               <Image

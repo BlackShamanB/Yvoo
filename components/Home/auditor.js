@@ -43,16 +43,16 @@ function Auditor() {
         data-scroll-speed="0.5"
       />
       <div className="absolute w-full bg-black h-[403px] bottom-0"></div>
-      <div className="relative 3xl:max-w-[1516px] 2xl:max-w-[1116px] md:max-w-[728px] mx-[auto] relative justify-center pt-[200px] gap-[133px]">
+      <div className="relative 3xl:max-w-[1516px] 2xl:max-w-[1116px] md:max-w-[728px] max-w-[100%] mx-[auto] relative justify-center pt-[200px] gap-[133px] md:px-0 px-[12px]">
         <div className="flex flex-col justify-center mb-[150px] text-center">
-          <div className="text-blue text-[50px] leading-[58px] font-[700]">
+          <div className="text-blue md:text-[50px] text-[30px] md:leading-[58px] leading-[38px] font-[700]">
             YVOO
           </div>
-          <div className="text-black text-[40px] leading-[58px] font-[400]">
+          <div className="text-black md:text-[40px] text-[28px] md:leading-[58px] leading-[38px] font-[400]">
             Connects seamlessly with your System
           </div>
         </div>
-        <div className="relative grid grid-cols-2 gap-[20px] mb-[150px]">
+        <div className="relative grid md:grid-cols-2 grid-cols-1 gap-[20px] mb-[150px] md:px-0">
           {/* <Image
             src="/icons/Connection1.svg"
             width={65}
@@ -81,7 +81,7 @@ function Auditor() {
               />
             </div>
             <div className="flex flex-col gap-[20px]">
-              <div className="text-white text-[34px] leading-[42px] font-[700]">
+              <div className="text-white md:text-[34px] text-[24px] md:leading-[42px] leading-[32px] font-[700]">
                 1-Click Audit Request
               </div>
               <div className="text-black text-[20px] leading-[30px] font-[400]">
@@ -102,7 +102,7 @@ function Auditor() {
               />
             </div>
             <div className="flex flex-col gap-[20px]">
-              <div className="text-white text-[34px] leading-[42px] font-[700]">
+              <div className="text-white md:text-[34px] text-[24px] md:leading-[42px] leading-[32px] font-[700]">
                 YVOO API
               </div>
               <div className="text-black text-[20px] leading-[30px] font-[400]">
@@ -122,7 +122,7 @@ function Auditor() {
               />
             </div>
             <div className="flex flex-col gap-[20px]">
-              <div className="text-white text-[34px] leading-[42px] font-[700]">
+              <div className="text-white md:text-[34px] text-[24px] md:leading-[42px] leading-[32px] font-[700]">
                 Real-Time Monitoring
               </div>
               <div className="text-black text-[20px] leading-[30px] font-[400]">
@@ -143,7 +143,7 @@ function Auditor() {
               />
             </div>
             <div className="flex flex-col gap-[20px]">
-              <div className="text-white text-[34px] leading-[42px] font-[700]">
+              <div className="text-white md:text-[34px] text-[24px] md:leading-[42px] leading-[32px] font-[700]">
                 YVOO App
               </div>
               <div className="text-black text-[20px] leading-[30px] font-[400]">
@@ -154,7 +154,7 @@ function Auditor() {
             </div>
           </div>
         </div>
-        <div className="flex flex-col gap-[42px] rounded-[30px] p-[80px_154px] bg-mint items-center justify-center mb-[80px]">
+        <div className="flex flex-col gap-[42px] rounded-[30px] md:p-[80px_154px] p-[60px_29px] bg-mint items-center justify-center mb-[80px]">
           <div className="text-white text-[24px] leading-[30px] font-[700]">
             Trusted by Industry Leaders: YVOO Delivers Unmatched Audit Success
           </div>

@@ -48,12 +48,12 @@ function Effective({ handleModal }) {
         height={106}
         alt="line"
         classesImg="3xl:max-w-[584px] 2xl:max-w-[458px] md:max-w-[320px] max-w-[142px] w-[100%]"
-        classesContainer="absolute overflow-hidden 3xl:max-w-[584px] 2xl:max-w-[458px] md:max-w-[320px] max-w-[142px] 3xl:top-[70px] 2xl:top-[60px] md:top-[-1.5%] top-[-1%] right-[0px] z-[1]"
+        classesContainer="absolute overflow-hidden 3xl:max-w-[584px] 2xl:max-w-[458px] md:max-w-[320px] max-w-[142px] 3xl:top-[70px] top-[60px] right-[0px] z-[1]"
         data-scroll
         data-scroll-speed="0.5"
       />
-      <div className="3xl:max-w-[1516px] 2xl:max-w-[1116px] md:max-w-[748px] mx-[auto] relative flex flex-col items-center w-full pt-[240px]">
-        <div className="flex flex-col max-w-[900px] text-center mb-[216px]">
+      <div className="3xl:max-w-[1516px] 2xl:max-w-[1116px] md:max-w-[748px] mx-[auto] relative flex flex-col items-center w-full pt-[240px] md:px-[0] px-[41px]">
+        <div className="flex flex-col max-w-[900px] text-center mb-[216px] md:px-0 px-[41px]">
           <div className="text-[50px] leading-[58px] font-[700] text-blue mb-[42px]">
             About Us
           </div>
@@ -71,7 +71,7 @@ function Effective({ handleModal }) {
             results.
           </div>
         </div>
-        <div className="grid grid-cols-3 flex-nowrap 2xl:gap-[116px] gap-[40px] mb-[76px]">
+        <div className="grid md:grid-cols-3 grid-cols-1 flex-nowrap 2xl:gap-[116px] gap-[40px] mb-[76px]">
           <div className="flex flex-col">
             <div>
               <Image
@@ -147,7 +147,7 @@ function Effective({ handleModal }) {
         {/* <div className="text-[40px] leading-[58px] font-[400] text-white mb-[154px]">
           Audits with Global Reach
         </div> */}
-        <div className="grid grid-cols-3 3xl:gap-[83px] gap-[50px] 3xl:mb-[25px] mb-[6px]">
+        <div className="grid md:grid-cols-3 grid-cols-1 3xl:gap-[83px] gap-[50px] 3xl:mb-[25px] mb-[6px]">
           <div className="flex 2xl:flex-row flex-col gap-[25px] border-blue border-[2px] rounded-[30px] 2xl:p-[42px_30px] p-[21px_15px] 3xl:mt-[206px] mt-[72px] h-[max-content]">
             <div>
               <Image
@@ -216,7 +216,7 @@ function Effective({ handleModal }) {
             width={1087}
             height={761}
             alt="triangle"
-            className="absolute 3xl:mt-[-124px] mt-[-90px] 3xl:max-w-[100%] 2xl:max-w-[800px] max-w-[708px]"
+            className="absolute 3xl:mt-[-124px] mt-[-90px] 3xl:max-w-[100%] 2xl:max-w-[800px] max-w-[708px] md:block hidden"
           />
           <Image
             src="/icons/CentralAIHub.svg"

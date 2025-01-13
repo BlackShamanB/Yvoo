@@ -29,7 +29,7 @@ function Situation({ handleModal }) {
   return (
     <div
       id="situation"
-      className="relative max-w-[1920px] w-full grid grid-cols-[1fr_1fr] 2xl:gap-[170px] gap-[30px] justify-center bg-local bg-contain bg-bottom inset-0 bg-[#06D7F9] py-[160px]"
+      className="relative max-w-[1920px] w-full grid md:grid-cols-[1fr_1fr] grid-cols-1 2xl:gap-[170px] gap-[30px] justify-center bg-local bg-contain bg-bottom inset-0 bg-[#06D7F9] py-[160px]"
     >
       <MagnifyOnScroll
         style={{ zIndex: 0 }}

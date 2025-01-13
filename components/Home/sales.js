@@ -179,15 +179,15 @@ function Sales({ handleModal }) {
     //   classNames="slide"
     // >
       <SwiperSlide key={item.id} className="mt-[96px] bg-blue">
-        <div className="flex flex-row gap-[20px]">
-          <div className="text-white text-[120px] leading-[120px] font-[800]">
+        <div className="flex md:flex-row flex-col gap-[20px]">
+          <div className="text-white md:text-[120px] text-[60px] md:leading-[120px] leading-[60px] font-[800]">
             0{item.id}
           </div>
           <div className="flex flex-col gap-[20px]">
-            <div className="text-black text-[24px] leading-[30px] font-[700]">
+            <div className="text-black md:text-[24px] text-[18px] md:leading-[30px] leading-[26px] font-[700]">
               {item.header}
             </div>
-            <div className="text-black text-[20px] leading-[30px] font-[400]">
+            <div className="text-black md:text-[20px] text-[16px] md:leading-[30px] leading-[22px] font-[400]">
               {item.content}
             </div>
           </div>
@@ -200,20 +200,20 @@ function Sales({ handleModal }) {
       id="sales"
       className="relative w-full flex flex-col justify-center bg-blue 2xl:pl-[169px] 2xl:pr-[202px] px-[20px] pb-[144px]"
     >
-      <div className="relative 3xl:max-w-[1516px] 2xl:max-w-[100%] md:max-w-[598px] relative grid 3xl:grid-cols-[743px_1fr] 2xl:grid-cols-2 2xl:justify-center pt-[170px] gap-[133px]">
+      <div className="relative 3xl:max-w-[1516px] 2xl:max-w-[100%] max-w-[100%] relative grid 3xl:grid-cols-[743px_1fr] 2xl:grid-cols-2 2xl:justify-center pt-[170px] gap-[133px]">
         <div className="relative">
           <Image
             src="/icons/Map2.svg"
             width={743}
             height={656}
             alt="triangle"
-            className=""
+            className="2xl:max-w-[100%] max-w-[100%]"
           />
           {overlayContent[currentSlide]}
         </div>
         <div className="w-full text-black block">
           <div className="w-full">
-            <div className="text-white text-[40px] leading-[48px] font-[800] mt-[60px]">
+            <div className="text-white md:text-[40px] text-[28px] md:leading-[48px] leading-[34px] font-[800] mt-[60px]">
               How does YVOO Work
             </div>
             <Swiper
@@ -227,7 +227,7 @@ function Sales({ handleModal }) {
                 prevEl: ".button-prev",
               }}
               modules={[Navigation, Pagination]}
-              className="max-w-[673px] mb-[100px]"
+              className="md:max-w-[673px] max-w-[320px] mb-[100px]"
               // effect="fade"
             >
             {/* <TransitionGroup> */}
