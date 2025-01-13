@@ -33,7 +33,7 @@ export default function Home() {
   return (
     <main className="w-full md:pt-[86px] pt-[58px]" ref={containerRef}>
       <Hero handleModal={handleModal}/>
-      <Discover />
+      {/* <Discover /> */}
       <Situation></Situation>
       <Effective></Effective>
       <Scan handleModal={handleModal} />

@@ -31,15 +31,27 @@ function Effective({ handleModal }) {
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setAnimationPhase((prevPhase) => (prevPhase === "fade-in" ? "fade-out" : "fade-in"));
+      setAnimationPhase((prevPhase) =>
+        prevPhase === "fade-in" ? "fade-out" : "fade-in"
+      );
       setCurrentCard((prevCard) => (prevCard === 0 ? 1 : 0));
     }, 3000); // Интервал между анимациями
 
     return () => clearInterval(interval);
   }, []);
-  
+
   return (
     <div className="relative w-full flex justify-center bg-black">
+      <ImgLeftToRight
+        src="/icons/line-blue.svg"
+        width={584}
+        height={106}
+        alt="line"
+        classesImg="3xl:max-w-[584px] 2xl:max-w-[458px] md:max-w-[320px] max-w-[142px] w-[100%]"
+        classesContainer="absolute overflow-hidden 3xl:max-w-[584px] 2xl:max-w-[458px] md:max-w-[320px] max-w-[142px] 3xl:top-[70px] 2xl:top-[60px] md:top-[-1.5%] top-[-1%] right-[0px] z-[1]"
+        data-scroll
+        data-scroll-speed="0.5"
+      />
       <div className="3xl:max-w-[1516px] 2xl:max-w-[1116px] md:max-w-[748px] mx-[auto] relative flex flex-col items-center w-full pt-[240px]">
         <div className="flex flex-col max-w-[900px] text-center mb-[216px]">
           <div className="text-[50px] leading-[58px] font-[700] text-blue mb-[42px]">
@@ -129,12 +141,12 @@ function Effective({ handleModal }) {
           YVOO ScanPro+ eliminates traditional audit roadblocks, improvement in
           all metrics
         </div>
-        <div className="text-[50px] leading-[58px] font-[700] text-blue">
-          AI-Guided
+        <div className="text-[50px] leading-[58px] font-[700] text-white mb-[160px]">
+          AI-guided audits with global reach
         </div>
-        <div className="text-[40px] leading-[58px] font-[400] text-white mb-[154px]">
+        {/* <div className="text-[40px] leading-[58px] font-[400] text-white mb-[154px]">
           Audits with Global Reach
-        </div>
+        </div> */}
         <div className="grid grid-cols-3 3xl:gap-[83px] gap-[50px] 3xl:mb-[25px] mb-[6px]">
           <div className="flex 2xl:flex-row flex-col gap-[25px] border-blue border-[2px] rounded-[30px] 2xl:p-[42px_30px] p-[21px_15px] 3xl:mt-[206px] mt-[72px] h-[max-content]">
             <div>
@@ -227,14 +239,13 @@ function Effective({ handleModal }) {
           <div className="relative self-center text-center">
             <div className="absolute top-[370px] left-[153px] z-[3]">
               <div
-                className={`relative bg-white rounded-[30px] p-[36px_30px_26px] custom-shadow mb-[20px] card`}
+                className={`relative bg-white rounded-[30px] p-[36px_30px_26px] custom-shadow mb-[20px] card text-left`}
               >
                 <div className="text-[12px] leading-[16px] font-[400] text-[#898989] mb-[8px]">
                   2024.24.10
                 </div>
                 <div className="text-[16px] leading-[20px] font-[400] text-black mb-[33px]">
-                  What type of product or service
-                  <br /> are you looking for?
+                  Your supplier audit is scheduled on the..
                 </div>
                 <div className="flex flex-row justify-between">
                   <div className="text-[12px] leading-[16px] font-[400] text-blue uppercase">
@@ -253,15 +264,14 @@ function Effective({ handleModal }) {
                 />
               </div>
               <div
-                className={`relative bg-white rounded-[30px] p-[36px_30px_26px] custom-shadow card card-2`}
+                className={`relative bg-white rounded-[30px] p-[36px_30px_26px] custom-shadow card card-2 text-left`}
                 // style={{ animationDelay: "0.5s" }}
               >
                 <div className="text-[12px] leading-[16px] font-[400] text-[#898989] mb-[8px]">
                   2024.24.10
                 </div>
                 <div className="text-[16px] leading-[20px] font-[400] text-black mb-[33px]">
-                  What type of product or service
-                  <br /> are you looking for?
+                  The audit report is released.
                 </div>
                 <div className="flex flex-row justify-between">
                   <div className="text-[12px] leading-[16px] font-[400] text-blue uppercase">

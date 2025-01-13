@@ -126,15 +126,6 @@ function Expensive({ handleModal }) {
             </div>
           </div>
         </div>
-        <div className="justify-items-center z-[1]">
-          <Image
-            src="/images/woman.webp"
-            width={778}
-            height={514}
-            alt="woman"
-            className="relative top-[206px]"
-          />
-        </div>
       </div>
     </div>
   );

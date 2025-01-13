@@ -67,7 +67,7 @@ function Auditor() {
             alt="Connection2"
             className="absolute top-[50%] right-[-73px] transform -translate-y-[50%]"
           /> */}
-          <div className="absolute 2xl:w-[calc(100%_+_146px)] w-[calc(100%_+_20px)] h-[344px] border-black border-dashed border-2 2xl:top-[131px] top-[320px] -2xl:left-[73px] -left-[10px]">
+          <div className="absolute 2xl:w-[calc(100%_+_146px)] w-[calc(100%_+_20px)] h-[344px] border-black border-dashed border-2 2xl:top-[131px] top-[320px] 2xl:-left-[73px] -left-[10px]">
             <div class="moving-circle"></div>
           </div>
           <div className="relative flex flex-row 2xl:p-[40px_40px_70px] p-[20px_20px_35px] rounded-[30px] bg-blue gap-[30px]">

@@ -33,8 +33,8 @@ function Situation({ handleModal }) {
     >
       <MagnifyOnScroll
         style={{ zIndex: 0 }}
-        src="/images/situation.webp"
-        img-src="/images/situation.webp"
+        src="/images/situation-image.webp"
+        img-src="/images/situation-image.webp"
         width={875}
         height={593}
         alt="yvoo-search"

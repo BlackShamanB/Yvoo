@@ -38,7 +38,7 @@ function Hero() {
   };
 
   return (
-    <div className="relative w-full px-[20px] customsm:px-[50px] bg-[#414141] flex justify-center 3xl:pt-[162px] 2xl:pt-[162px] md:pt-[162px] pt-[80px] xl:pb-0 md:max-h-[1008px] max-h-[547px]">
+    <div className="relative w-full px-[20px] customsm:px-[50px] bg-[#414141] flex justify-center 3xl:pt-[162px] 2xl:pt-[162px] md:pt-[162px] pt-[80px] xl:pb-0 md:max-h-[1008px]">
       <div className="absolute top-0 w-full h-[100%] bg-black">
         <Image
           src={"/images/HomeBackground.webp"}
@@ -91,7 +91,7 @@ function Hero() {
             //   transition: "linear 0.5s",
             // }}
           >
-            AI-Powered On-Site Supplier Verification <span className="text-green">Scan</span>Pro+
+            AI-Powered On-Site Supplier Evaluation <span className="text-green">Scan</span>Pro+
           </h1>
           <div className="text-[24px] leading-[30px] font-[700] mb-[42px]">
             Achieve audit excellence: scale resources, cut costs by 70%,<br/> and
