@@ -27,11 +27,11 @@ function Expensive({ handleModal }) {
   }, []);
   return (
     <div className="relative w-full flex flex-col justify-center bg-white">
-      <div className="3xl:max-w-[1516px] 2xl:max-w-[1116px] md:max-w-[748px] mx-[auto] relative flex flex-col justify-center pt-[140px] pb-[86px]">
-        <div className="text-blue text-[50px] leading-[58px] font-[700] text-center mb-[16px]">
+      <div className="3xl:max-w-[1516px] 2xl:max-w-[1116px] md:max-w-[748px] mx-[auto] relative flex flex-col justify-center md:pt-[140px] pt-[100px] md:pb-[300px] pb-[160px]">
+        <div className="text-blue md:text-[50px] text-[30px] md:leading-[58px] leading-[38px] font-[700] text-center md:mb-[16px] mb-[3px]">
           Why YVOO?
         </div>
-        <div className="text-center mb-[40px]">
+        <div className="text-center md:mb-[40px] mb-[5px]">
           <Image
             src="/icons/Connection.svg"
             width={1183}
@@ -39,8 +39,15 @@ function Expensive({ handleModal }) {
             alt="triangle"
             className="mx-[auto] 2xl:max-w-[unset] max-w-[588px] md:block hidden"
           />
+          <Image
+            src="/icons/Line-expensive.svg"
+            width={2}
+            height={66}
+            alt="line"
+            className="mx-auto md:hidden block"
+          />
         </div>
-        <div className="grid md:grid-cols-4 grid-cols-1 2xl:gap-[59px] gap-[20px] md:px-0 px-[41px]">
+        <div className="grid md:grid-cols-4 grid-cols-1 2xl:gap-[59px] gap-[50px] md:px-0 px-[41px]">
           <div className="flex flex-col gap-[20px]">
             <div className="justify-items-center">
               <Image
@@ -52,11 +59,11 @@ function Expensive({ handleModal }) {
               />
             </div>
             <div>
-              <div className="text-black text-[24px] leading-[30px] font-[600]">
+              <div className="text-black md:text-[24px] text-[18px] md:leading-[30px] leading-[26px] font-[600]">
                 Instant Global Audit Access
               </div>
               <br />
-              <div className="text-black text-[24px] leading-[30px] font-[400]">
+              <div className="text-black md:text-[24px] text-[16px] md:leading-[30px] leading-[22px] font-[400]">
                 YVOO provides one-click access to certified auditors, ensuring
                 you can book audits anytime, anywhere.
               </div>
@@ -73,11 +80,11 @@ function Expensive({ handleModal }) {
               />
             </div>
             <div>
-              <div className="text-black text-[24px] leading-[30px] font-[600]">
+              <div className="text-black md:text-[24px] text-[18px] md:leading-[30px] leading-[26px] font-[600]">
                 AI-Driven Objectivity
               </div>
               <br />
-              <div className="text-black text-[24px] leading-[30px] font-[400]">
+              <div className="text-black md:text-[24px] text-[16px] md:leading-[30px] leading-[22px] font-[400]">
                 Our AI-guided audits deliver unmatched objectivity and precision
                 in supplier assessments.
               </div>
@@ -94,11 +101,11 @@ function Expensive({ handleModal }) {
               />
             </div>
             <div>
-              <div className="text-black text-[24px] leading-[30px] font-[600]">
+              <div className="text-black md:text-[24px] text-[18px] md:leading-[30px] leading-[26px] font-[600]">
                 Real-Time Audit Tracking
               </div>
               <br />
-              <div className="text-black text-[24px] leading-[30px] font-[400]">
+              <div className="text-black md:text-[24px] text-[16px] md:leading-[30px] leading-[22px] font-[400]">
                 Track your audit progress live, and communicate with auditors in
                 real-time for greater transparency.
               </div>
@@ -115,11 +122,11 @@ function Expensive({ handleModal }) {
               />
             </div>
             <div>
-              <div className="text-black text-[24px] leading-[30px] font-[600]">
+              <div className="text-black md:text-[24px] text-[18px] md:leading-[30px] leading-[26px] font-[600]">
                 Cost-Efficient and Scalable
               </div>
               <br />
-              <div className="text-black text-[24px] leading-[30px] font-[400]">
+              <div className="text-black md:text-[24px] text-[16px] md:leading-[30px] leading-[22px] font-[400]">
                 Save up to 70% on audit costs while accelerating timelines by
                 80%, scaling easily to your needs.
               </div>

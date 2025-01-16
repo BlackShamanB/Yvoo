@@ -23,7 +23,7 @@ function Scan({ handleModal }) {
       image: "/icons/ManufacturingStandards.svg",
       check: "icons/check.svg",
       color: "blue",
-      title: "Safety Standards",
+      title: "Manufacturing Standards",
       content: "Maintaining the safety and well-being of workers and products",
       items: [
         { title: "ISO 9001", description: "Quality Management Systems" },
@@ -107,7 +107,7 @@ function Scan({ handleModal }) {
   }, []);
   return (
     <div className="relative w-full flex flex-col justify-center bg-white">
-      <div className="3xl:max-w-[1516px] 2xl:max-w-[1116px] md:max-w-[598px] mx-[auto] relative grid md:grid-cols-2 grid-cols-1 gap-x-[60px] gap-y-[120px] w-full pt-[200px] mb-[180px]">
+      <div className="3xl:max-w-[1516px] 2xl:max-w-[1116px] md:max-w-[598px] mx-[auto] relative grid md:grid-cols-2 grid-cols-1 gap-x-[60px] md:gap-y-[120px] gap-y-[60px] w-full md:pt-[200px] pt-[80px] md:mb-[180px] mb-[80px] md:px-[0] px-[41px]">
         {data.map((item, index) => (
           <SafetyStandards
             image={item.image}
@@ -120,8 +120,8 @@ function Scan({ handleModal }) {
           />
         ))}
       </div>
-      <div className="flex justify-center mb-[200px]">
-        <div className="text-black bg-blue rounded-[30px] p-[20px_34px] text-[16px] leading-[20px] font-[500] uppercase">
+      <div className="flex justify-center md:mb-[200px] md:px-[0] px-[12px]">
+        <div className="text-black bg-blue rounded-[30px] md:p-[20px_34px] p-[16px_18px] md:text-[16px] text-[12px] md:leading-[20px] leading-[16px] font-[500] uppercase">
           Need Compliance? Book a Consultation Now
         </div>
       </div>

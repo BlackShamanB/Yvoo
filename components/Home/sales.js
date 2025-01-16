@@ -37,21 +37,21 @@ function Sales({ handleModal }) {
   const overlayContent = [
     <div
       key="0"
-      className="absolute top-[252px] -right-[45px] flex flex-col gap-[9px] justify-start"
+      className="absolute md:top-[252px] top-[41px] md:-right-[45px] right-[24px] flex flex-col gap-[9px] justify-start"
     >
       <div className="text-white text-[24px] leading-[30px] font-[700]">
-        <div className="map1-click-animate flex flex-row items-center gap-[13px] rounded-[30px] bg-mint p-[12px_30px_12px_24px]">
+        <div className="map1-click-animate flex flex-row items-center md:gap-[13px] gap-[8px] rounded-[30px] bg-mint md:p-[12px_30px_12px_24px] p-[12px_20px]">
           <Image
             src="/icons/map1-click.svg"
             width={26}
             height={36}
             alt="map1-click"
-            className=""
+            className="md:max-w-[26px] max-w-[23px] md:max-h-[36px] max-h-[32px]"
           />
-          <div className="text-[24px] leading-[30px] font-[600]">1-Click</div>
+          <div className="md:text-[24px] text-[18px] md:leading-[30px] leading-[26px] font-[600]">1-Click</div>
         </div>
       </div>
-      <div className="map1-dot-animate w-[24px] h-[24px] bg-mint rounded-[50%] ml-[9px]"></div>
+      <div className="map1-dot-animate md:w-[24px] w-[11px] md:h-[24px] h-[11px] bg-mint rounded-[50%] md:ml-[9px] ml-[34px]"></div>
     </div>,
     <div key="1" className="top-0 left-0">
       <div className="text-black text-[16px] leading-[20px] font-[500] absolute bg-white rounded-[26px] select-none cursor-default flex flex-row gap-[20px] items-center p-[14px_20px] w-[404px] top-[54px] left-[50%] transfotm -translate-x-1/2">
@@ -178,7 +178,7 @@ function Sales({ handleModal }) {
     //   timeout={500}
     //   classNames="slide"
     // >
-      <SwiperSlide key={item.id} className="mt-[96px] bg-blue">
+      <SwiperSlide key={item.id} className="md:mt-[96px] mt-[28px] bg-blue">
         <div className="flex md:flex-row flex-col gap-[20px]">
           <div className="text-white md:text-[120px] text-[60px] md:leading-[120px] leading-[60px] font-[800]">
             0{item.id}
@@ -198,9 +198,9 @@ function Sales({ handleModal }) {
   return (
     <div
       id="sales"
-      className="relative w-full flex flex-col justify-center bg-blue 2xl:pl-[169px] 2xl:pr-[202px] px-[20px] pb-[144px]"
+      className="relative w-full flex flex-col justify-center bg-blue 2xl:pl-[169px] 2xl:pr-[202px] md:px-[20px] px-[12px] md:pb-[144px] pb-[72px]"
     >
-      <div className="relative 3xl:max-w-[1516px] 2xl:max-w-[100%] max-w-[100%] relative grid 3xl:grid-cols-[743px_1fr] 2xl:grid-cols-2 2xl:justify-center pt-[170px] gap-[133px]">
+      <div className="relative 3xl:max-w-[1516px] 2xl:max-w-[100%] max-w-[100%] relative grid 3xl:grid-cols-[743px_1fr] 2xl:grid-cols-2 2xl:justify-center md:pt-[170px] pt-[130px] md:gap-[133px] gap-[40px]">
         <div className="relative">
           <Image
             src="/icons/Map2.svg"
@@ -213,7 +213,7 @@ function Sales({ handleModal }) {
         </div>
         <div className="w-full text-black block">
           <div className="w-full">
-            <div className="text-white md:text-[40px] text-[28px] md:leading-[48px] leading-[34px] font-[800] mt-[60px]">
+            <div className="text-white md:text-[40px] text-[28px] md:leading-[48px] leading-[34px] font-[800] md:mt-[60px] md:px-[0] px-[29px]">
               How does YVOO Work
             </div>
             <Swiper
@@ -227,7 +227,7 @@ function Sales({ handleModal }) {
                 prevEl: ".button-prev",
               }}
               modules={[Navigation, Pagination]}
-              className="md:max-w-[673px] max-w-[320px] mb-[100px]"
+              className="md:max-w-[673px] max-w-[278px] mb-[100px]"
               // effect="fade"
             >
             {/* <TransitionGroup> */}

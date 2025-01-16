@@ -31,7 +31,7 @@ export default function Home() {
   };
 
   return (
-    <main className="w-full md:pt-[86px] pt-[58px]" ref={containerRef}>
+    <main className="w-full" ref={containerRef}>
       <Hero handleModal={handleModal}/>
       {/* <Discover /> */}
       <Situation></Situation>

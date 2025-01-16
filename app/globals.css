@@ -418,7 +418,14 @@ body {
 }
 .card {
 }
+.load-on-load {
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
 
+.load-on-load.fade-in-up {
+  opacity: 1;
+}
 /* .card {
   animation-name: fadeOutUp;
 } */

@@ -16,6 +16,7 @@ const Header = () => {
   const [active, setActive] = useState(false);
   const [openModalRequest, setOpenModalRequest] = useState(false);
   const [activeLink, setActiveLink] = useState("/");
+  const [isSolutionsHovered, setIsSolutionsHovered] = useState(false);
 
   const refY = useRef(null);
   const refV = useRef(null);
@@ -79,8 +80,15 @@ const Header = () => {
     { name: "Industries", link: "/industries" },
   ];
 
+  const solutionsSubmenu = [
+    { name: "1-Click Audit", link: "/" },
+    { name: "360° Supplier Score", link: "/" },
+    { name: "Supplier Database", link: "/" },
+    { name: "Consulting", link: "/" },
+  ];
+
   return (
-    <div className="fixed z-[1000] 3xl:max-w-[1920px] w-full flex lg2:justify-between items-center md:pt-[21px] md:pb-[21px] lg2:pl-[48px] md:pl-[24px] pl-[4px] lg2:pr-[48px] md:pr-[24px] pr-[12px] items-center md:h-[86px] h-[58px] font-medium bg-[black]">
+    <div className="sticky top-[0] z-[1000] 3xl:max-w-[1920px] w-full flex lg2:justify-between items-center md:pt-[21px] md:pb-[21px] lg2:pl-[48px] md:pl-[24px] pl-[4px] lg2:pr-[48px] md:pr-[24px] pr-[12px] items-center md:h-[86px] h-[58px] font-medium bg-[black]">
       <div className="lg2:hidden 2xl:mr-[32px] md:mr-[33px]">
         <Image
           onClick={toggleMenu}
@@ -138,13 +146,19 @@ const Header = () => {
 
       {!active && (
         <ul
+          // onMouseEnter={() => setIsSolutionsHovered(link.name === "Solutions")}
+          onMouseLeave={() => setIsSolutionsHovered(false)}
           className={`lg2:flex items-center gap-[30px] p-6 3xl:ml-[396px] 2xl:ml-[158px] ml-[0] font-inter ${
             active ? "block" : "hidden"
           }`}
         >
           {links.map((link) => {
             return (
-              <div key={link.name} className="relative inline-block text-white">
+              <div 
+                key={link.name} 
+                className="relative inline-block text-white"
+                onMouseEnter={() => setIsSolutionsHovered(link.name === "Solutions")}
+              >
                 <Link href={link.link} legacyBehavior>
                   <a
                     onClick={() => {
@@ -165,6 +179,20 @@ const Header = () => {
                     ></span>
                   </a>
                 </Link>
+                {link.name === "Solutions" && isSolutionsHovered && (
+                  <div className="absolute -left-[10px] p-[20px] gap-[20px] flex flex-col mt-2 w-48 bg-[#EAEEF9] rounded-[10px]  z-10">
+                    {solutionsSubmenu.map((subItem) => (
+                      <Link key={subItem.name} href={subItem.link} legacyBehavior
+                        onMouseEnter={() => setIsSolutionsHovered(true)}
+                        onMouseLeave={() => setIsSolutionsHovered(false)}
+                      >
+                        <a className="block text-sm text-black font-[500] hover:text-green" href={subItem.link}>
+                          {subItem.name}
+                        </a>
+                      </Link>
+                    ))}
+                  </div>
+                )}
               </div>
             );
           })}
@@ -228,7 +256,7 @@ const Header = () => {
       <div className="flex-center gap-[36px] 2lg:ml-[0] ml-[auto]">
         <button
           // className="outlined_btn btn_animated_blue"
-          className="text-black text-[16px] leading-[20px] font-[500] p-[12px_24px] rounded-[22px] bg-blue"
+          className="text-black md:text-[16px] text-[12px] md:leading-[20px] leading-[16px] font-[500] md:p-[12px_24px] p-[8px_12px] md:rounded-[22px] rounded-[16px] bg-blue"
           onClick={handleModal}
         >
           Book Demo

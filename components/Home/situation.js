@@ -29,7 +29,7 @@ function Situation({ handleModal }) {
   return (
     <div
       id="situation"
-      className="relative max-w-[1920px] w-full grid md:grid-cols-[1fr_1fr] grid-cols-1 2xl:gap-[170px] gap-[30px] justify-center bg-local bg-contain bg-bottom inset-0 bg-[#06D7F9] py-[160px]"
+      className="relative max-w-[1920px] w-full grid md:grid-cols-[1fr_1fr] grid-cols-1 2xl:gap-[170px] gap-[44px] justify-center bg-local bg-contain bg-bottom inset-0 bg-[#06D7F9] md:py-[160px] py-[60px]"
     >
       <MagnifyOnScroll
         style={{ zIndex: 0 }}
@@ -39,6 +39,15 @@ function Situation({ handleModal }) {
         height={593}
         alt="yvoo-search"
         classes="z-[0] min-w-[50px] 3xl:left-[0] 2xl:left-[-108px] md:left-[0px] z-10 3xl:max-w-[900px] 2xl:max-w-[774px] md:max-w-[561px] max-w-[291px]"
+      />
+      <Image
+        src="/icons/crosses-1.svg"
+        width={101}
+        height={113}
+        alt="triangle"
+        className="absolute md:hidden block top-[237px] right-[69px] mouse-parallax md:max-w-[101px] max-w-[63px]"
+        data-scroll
+        data-scroll-speed="0.2"
       />
       <div
         className="3xl:max-w-[1516px] 2xl:max-w-[1116px] md:max-w-[598px] w-[100%] mx-[auto]"
@@ -55,7 +64,7 @@ function Situation({ handleModal }) {
           data-scroll-speed="0.2"
         />
         <div
-          className="md:px-[0] px-[41px] 3xl:pr-[0px] text-black z-30 flex flex-col 3xl:gap-[38px] 2xl:gap-[0] md:gap-[24px] gap-[20px] font-[400] [&>p]:text-[20px] [&>p]:md:text-[24px] md:leading-[30px] leading-[26px] max-w-[673px]"
+          className="md:px-[0] px-[41px] 3xl:pr-[0px] text-black z-30 flex flex-col 3xl:gap-[38px] 2xl:gap-[0] md:gap-[24px] gap-[20px] font-[400] [&>p]:text-[20px] [&>p]:md:text-[24px] md:leading-[30px] leading-[28px] max-w-[673px]"
           data-scroll
           data-scroll-speed="0.16"
         >
@@ -65,12 +74,12 @@ function Situation({ handleModal }) {
             width={76}
             height={80}
             alt="yvoo-search"
-            className="z-10 max-w-[76px] 3xl:mb-[0] 2xl:mb-[42px] md:mb-[18px] mb-[22px]"
+            className="z-10 max-w-[76px] 3xl:mb-[0] 2xl:mb-[42px] md:mb-[18px] mb-[10px]"
           />
-          <h2 className="font-inter font-[800] 2xl:text-[50px] md:text-[40px] text-[30px] 2xl:leading-[58px] md:leading-[44px] leading-[34px] 3xl:mb-[6px] 2xl:mb-[42px] mb-[4px]">
+          <h2 className="font-inter font-[800] 2xl:text-[50px] md:text-[40px] text-[30px] 2xl:leading-[58px] md:leading-[44px] leading-[38px] 3xl:mb-[6px] 2xl:mb-[42px] mb-[12px]">
             The Roadblock
           </h2>
-          <p className="!font-[700] !2xl:text-[30px] !md:text-[26px] !text-[30px] !2xl:leading-[38px] !md:leading-[32px] !leading-[38px] mb-[6px]">
+          <p className="!font-[700] !2xl:text-[30px] !md:text-[26px] !text-[20px] !2xl:leading-[38px] !md:leading-[32px] !leading-[28px] mb-[12px]">
             Traditional on-site supplier audits are more than just slow and
             costly:
           </p>
@@ -84,7 +93,7 @@ function Situation({ handleModal }) {
                   alt="triangle"
                   className=""
                 />
-                <div className="font-[400] 2xl:text-[24px] md:text-[20px] text-[14px] 2xl:leading-[30px] md:leading-[26px] leading-[20px]">
+                <div className="font-[400] 2xl:text-[24px] md:text-[20px] text-[18px] 2xl:leading-[30px] md:leading-[26px] leading-[26px]">
                   The limit your ability to scale
                 </div>
               </div>
@@ -96,7 +105,7 @@ function Situation({ handleModal }) {
                   alt="triangle"
                   className=""
                 />
-                <div className="font-[400] 2xl:text-[24px] md:text-[20px] text-[16px] 2xl:leading-[30px] md:leading-[26px] leading-[20px] md:pr-[0] pr-[30px]">
+                <div className="font-[400] 2xl:text-[24px] md:text-[20px] text-[18px] 2xl:leading-[30px] md:leading-[26px] leading-[26px] md:pr-[0] pr-[30px]">
                   Delays your response to disruptions
                 </div>
               </div>
@@ -108,7 +117,7 @@ function Situation({ handleModal }) {
                   alt="triangle"
                   className=""
                 />
-                <div className="font-[400] 2xl:text-[24px] md:text-[20px] text-[16px] 2xl:leading-[30px] md:leading-[26px] leading-[20px]">
+                <div className="font-[400] 2xl:text-[24px] md:text-[20px] text-[18px] 2xl:leading-[30px] md:leading-[26px] leading-[26px]">
                   Weakens your competitive position
                 </div>
               </div>
@@ -120,13 +129,15 @@ function Situation({ handleModal }) {
                   alt="triangle"
                   className=""
                 />
-                <div className="font-[400] 2xl:text-[24px] md:text-[20px] text-[16px] 2xl:leading-[30px] md:leading-[26px] leading-[20px]">
+                <div className="font-[400] 2xl:text-[24px] md:text-[20px] text-[18px] 2xl:leading-[30px] md:leading-[26px] leading-[26px]">
                   Creates operational inefficiencies
                 </div>
               </div>
             </div>
           </p>
-          <p className="font-[700] text-white uppercase">We're here to change that!</p>
+          <p className="font-[700] text-white uppercase">
+            We're here to change that!
+          </p>
         </div>
       </div>
     </div>
