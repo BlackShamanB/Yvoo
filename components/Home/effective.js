@@ -315,7 +315,7 @@ function Effective({ handleModal }) {
                 />
               </div>
               <div
-                className={`relative bg-white md:rounded-[30px] rounded-[12px] md:p-[36px_30px_26px] p-[16px_6px_12px_12px] custom-shadow card card-2 text-left md-max-w-[unset] max-w-[134px]`}
+                className={`relative bg-white md:rounded-[30px] rounded-[12px] md:p-[36px_30px_26px] p-[16px_6px_12px_12px] custom-shadow card card-2 text-left md:max-w-[unset] max-w-[134px]`}
                 // style={{ animationDelay: "0.5s" }}
               >
                 <div className="md:text-[12px] text-[8px] md:leading-[16px] leading-[12px] font-[400] text-[#898989] mb-[8px]">
