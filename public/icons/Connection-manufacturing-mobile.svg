@@ -1,0 +1,14 @@
+<svg width="225" height="1262" viewBox="0 0 225 1262" fill="none" xmlns="http://www.w3.org/2000/svg">
+<line x1="3" y1="7.40332" x2="223" y2="7.40332" stroke="black" stroke-width="2" stroke-linecap="round" stroke-dasharray="2 10"/>
+<line x1="223.709" y1="8" x2="223.709" y2="1254" stroke="black" stroke-width="2" stroke-linecap="round" stroke-dasharray="2 10"/>
+<line x1="3" y1="8" x2="3" y2="1254" stroke="black" stroke-width="2" stroke-linecap="round" stroke-dasharray="2 10"/>
+<line x1="3" y1="1254" x2="223" y2="1254" stroke="black" stroke-width="2" stroke-linecap="round" stroke-dasharray="2 10"/>
+
+
+<circle cx="51" cy="7" r="7" fill="#06D7F9">
+    <animate attributeName="cx" from="3" to="223" dur="2s" begin="0s; anim14.end" fill="freeze" id="anim11" />
+    <animate attributeName="cy" from="7.40332" to="1254" dur="7s" begin="anim11.end" fill="freeze" id="anim12" />
+    <animate attributeName="cx" from="223" to="3" dur="2s" begin="anim12.end" fill="freeze" id="anim13" />
+    <animate attributeName="cy" from="1254" to="7.40332" dur="7s" begin="anim13.end" fill="freeze" id="anim14" />
+</circle>
+</svg>
