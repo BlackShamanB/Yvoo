@@ -3,7 +3,8 @@ import React, { useState, useEffect, useRef } from "react";
 import TypingEffect from "../TypingEffect";
 import MagnifyOnScroll from "../MagnifyOnScroll";
 import SafetyStandards from "../SafetyStandards";
-import DOMPurify from 'dompurify';
+import DOMPurify from "dompurify";
+import LoadOnLoad from "../LoadOnLoad";
 function Scan({ handleModal }) {
   const elementRef = useRef(null);
   const [elementVisible, setelementVisible] = useState(false);
@@ -78,7 +79,9 @@ function Scan({ handleModal }) {
       check: "/icons/checkGrey.svg",
       color: "[#949CAF]",
       title: "Compliance Standards",
-      content: DOMPurify.sanitize("Ensuring ethical sourcing and regulatory compliance"),
+      content: DOMPurify.sanitize(
+        "Ensuring ethical sourcing and regulatory compliance"
+      ),
       items: [
         { title: "RoHS", description: "Restriction of Hazardous Substances" },
         {
@@ -106,26 +109,28 @@ function Scan({ handleModal }) {
     };
   }, []);
   return (
-    <div className="relative w-full flex flex-col justify-center bg-white">
-      <div className="3xl:max-w-[1516px] 2xl:max-w-[1116px] md:max-w-[598px] mx-[auto] relative grid md:grid-cols-2 grid-cols-1 gap-x-[60px] md:gap-y-[120px] gap-y-[60px] w-full md:pt-[200px] pt-[80px] md:mb-[180px] mb-[80px] md:px-[0] px-[41px]">
-        {data.map((item, index) => (
-          <SafetyStandards
-            image={item.image}
-            check={item.check}
-            key={index}
-            color={item.color}
-            title={item.title}
-            content={item.content}
-            items={item.items}
-          />
-        ))}
-      </div>
-      <div className="flex justify-center md:mb-[200px] md:px-[0] px-[12px]">
-        <div className="text-black bg-blue rounded-[30px] md:p-[20px_34px] p-[16px_18px] md:text-[16px] text-[12px] md:leading-[20px] leading-[16px] font-[500] uppercase">
-          Need Compliance? Book a Consultation Now
+    <LoadOnLoad>
+      <div className="relative w-full flex flex-col justify-center bg-white">
+        <div className="3xl:max-w-[1516px] 2xl:max-w-[1116px] md:max-w-[598px] mx-[auto] relative grid md:grid-cols-2 grid-cols-1 gap-x-[60px] md:gap-y-[120px] gap-y-[60px] w-full md:pt-[200px] pt-[80px] md:mb-[180px] mb-[80px] md:px-[0] px-[41px]">
+          {data.map((item, index) => (
+            <SafetyStandards
+              image={item.image}
+              check={item.check}
+              key={index}
+              color={item.color}
+              title={item.title}
+              content={item.content}
+              items={item.items}
+            />
+          ))}
+        </div>
+        <div className="flex justify-center md:mb-[200px] md:px-[0] px-[12px]">
+          <div className="text-black bg-blue rounded-[30px] md:p-[20px_34px] p-[16px_18px] md:text-[16px] text-[12px] md:leading-[20px] leading-[16px] font-[500] uppercase">
+            Need Compliance? Book a Consultation Now
+          </div>
         </div>
       </div>
-    </div>
+    </LoadOnLoad>
   );
 }
 

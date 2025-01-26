@@ -1,0 +1,42 @@
+import React, { useState, useEffect } from 'react';
+
+const ScrollComponent = () => {
+  const [scrollPosition, setScrollPosition] = useState(0);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const position = window.pageYOffset;
+      setScrollPosition(position);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    // Очистка события при размонтировании компонента
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
+  // Вычисляем размер компонента в зависимости от положения прокрутки
+  const size = Math.min(100, scrollPosition / 10); // Пример: размер от 0 до 100px
+
+  return (
+    <span
+      className={imgSrc.classesContainer}
+      data-scroll
+      data-scroll-speed={imgSrc["data-scroll-speed"]}
+    >
+      <img
+        ref={imageRef}
+        className={imgSrc.classesImg}
+        style={{
+          width: `${size}px`,
+        }}
+        src={imgSrc.src}
+        alt={imgSrc.alt}
+      />
+    </span>
+  );
+};
+
+export default ScrollComponent;

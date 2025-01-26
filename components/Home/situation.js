@@ -4,6 +4,7 @@ import TypingEffect from "../TypingEffect";
 import MagnifyOnScroll from "../MagnifyOnScroll";
 import React, { useState, useEffect, useRef } from "react";
 import ImgLeftToRight from "../ImgLeftToRight";
+import LoadOnLoad from "../LoadOnLoad";
 function Situation({ handleModal }) {
   const elementRef = useRef(null);
   const [elementVisible, setelementVisible] = useState(false);
@@ -63,6 +64,7 @@ function Situation({ handleModal }) {
           data-scroll
           data-scroll-speed="0.2"
         />
+      <LoadOnLoad>
         <div
           className="md:px-[0] px-[41px] 3xl:pr-[0px] text-black z-30 flex flex-col 3xl:gap-[38px] 2xl:gap-[0] md:gap-[24px] gap-[20px] font-[400] [&>p]:text-[20px] [&>p]:md:text-[24px] md:leading-[30px] leading-[28px] max-w-[673px]"
           data-scroll
@@ -139,6 +141,7 @@ function Situation({ handleModal }) {
             We're here to change that!
           </p>
         </div>
+        </LoadOnLoad>
       </div>
     </div>
   );

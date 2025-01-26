@@ -84,12 +84,6 @@ function Hero() {
           <h1
             className="relative font-inter 2xl:text-[60px] md:text-[50px] text-[30px] font-[700] 2xl:leading-[68px] md:leading-[54px] leading-[34px] max-w-[830px] md:mb-[42px] mb-[20px]"
             ref={elementRef}
-            // style={{
-            //   visibility: elementVisible ? "visible" : "hidden",
-            //   top: elementVisible ? "0" : "50px",
-            //   opacity: elementVisible ? "1" : "0",
-            //   transition: "linear 0.5s",
-            // }}
           >
             AI-Powered On-Site Supplier Evaluation <span className="text-green">Scan</span>Pro+
           </h1>
@@ -112,21 +106,7 @@ function Hero() {
           </div>
         </div>
         </LoadOnLoad>
-        {/* <div className="3xl:max-w-[1516px] 2xl:max-w-[1116px] md:max-w-[598px] 3xl:w-[1516px] 2xl:w-[1116px] md:w-[598px] md:mx-[auto] mx-[22px] 2xl:mt-[71px] md:mt-[40px] mt-[30px] flex items-center md:gap-[33px] gap-[15px]">
-          <Image
-            src="/icons/icon-play-btn.svg"
-            width={68}
-            height={68}
-            alt="play"
-            className="cursor-pointer hover:scale-[1.04] md:max-w-[68px] max-w-[48px] cursor-pointer hover:scale-[1.02]"
-            onClick={handleModal}
-          />
-          <h2 className="font-[400] md:text-[18px] text-[16px] md:leading-[22px] leading-[20px]">
-            Have a sneak peek<br></br>at what we do
-          </h2>
-        </div> */}
       </div>
-      {/* <EmbedVideo onClose={handleModal} visible={openModalRequest} /> */}
       <ModalRequest onClose={handleModal} visible={openModalRequest} />
     </div>
   );

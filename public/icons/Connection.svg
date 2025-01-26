@@ -1,10 +1,47 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg fill="none" viewBox="0 0 1184 222" xmlns="http://www.w3.org/2000/svg">
-<line x1="1" x2="1182" y1="156" y2="156" stroke="#000" stroke-dasharray="2 10" stroke-linecap="round" stroke-width="2"/>
-<line x1="1183" x2="1183" y1="157" y2="221" stroke="#000" stroke-dasharray="2 10" stroke-linecap="round" stroke-width="2"/>
-<line x1="789" x2="789" y1="157" y2="221" stroke="#000" stroke-dasharray="2 10" stroke-linecap="round" stroke-width="2"/>
-<line x1="592" x2="592" y1="1" y2="155" stroke="#000" stroke-dasharray="2 10" stroke-linecap="round" stroke-width="2"/>
-<circle cx="592" cy="116" r="7" fill="#06D7F9"/>
-<line x1="395" x2="395" y1="157" y2="221" stroke="#000" stroke-dasharray="2 10" stroke-linecap="round" stroke-width="2"/>
-<line x1="1" x2="1" y1="157" y2="221" stroke="#000" stroke-dasharray="2 10" stroke-linecap="round" stroke-width="2"/>
+<svg fill="none" viewBox="0 0 1198 236" xmlns="http://www.w3.org/2000/svg">
+<line x1="8" x2="1189" y1="163" y2="163" stroke="#000" stroke-dasharray="2 10" stroke-linecap="round" stroke-width="2"/>
+<line x1="1190" x2="1190" y1="164" y2="228" stroke="#000" stroke-dasharray="2 10" stroke-linecap="round" stroke-width="2"/>
+<line x1="796" x2="796" y1="164" y2="228" stroke="#000" stroke-dasharray="2 10" stroke-linecap="round" stroke-width="2"/>
+<line x1="599" x2="599" y1="8" y2="162" stroke="#000" stroke-dasharray="2 10" stroke-linecap="round" stroke-width="2"/>
+
+<line x1="395" x2="395" y1="164" y2="228" stroke="#000" stroke-dasharray="2 10" stroke-linecap="round" stroke-width="2"/>
+<line x1="8" x2="8" y1="164" y2="228" stroke="#000" stroke-dasharray="2 10" stroke-linecap="round" stroke-width="2"/>
+
+<circle cx="599" cy="8" r="7" fill="#06D7F9">
+    <animate attributeName="cy" from="8" to="162" dur="2s" begin="0s; anim17.end" fill="freeze" id="anim11" />
+    <animate attributeName="cx" from="599" to="7" dur="2s" begin="anim11.end" fill="freeze" id="anim12" />
+    <animate attributeName="cy" from="162" to="228" dur="1s" begin="anim12.end" fill="freeze" id="anim13" />
+    <animate attributeName="opacity" from="1" to="0" dur="0.5s" begin="anim13.end" fill="freeze" id="anim14" />
+    <animate attributeName="cx" from="7" to="599" dur="0.5s" begin="anim14.end" fill="freeze" id="anim15" />
+    <animate attributeName="cy" from="228" to="8" dur="0.5s" begin="anim15.end" fill="freeze" id="anim16" />
+    <animate attributeName="opacity" from="0" to="1" dur="0.5s" begin="anim16.end" fill="freeze" id="anim17" />
+</circle>
+<circle cx="599" cy="8" r="7" fill="#06D7F9">
+    <animate attributeName="cy" from="8" to="162" dur="2s" begin="0s; anim27.end" fill="freeze" id="anim21" />
+    <animate attributeName="cx" from="599" to="395" dur="2s" begin="anim21.end" fill="freeze" id="anim22" />
+    <animate attributeName="cy" from="162" to="228" dur="1s" begin="anim22.end" fill="freeze" id="anim23" />
+    <animate attributeName="opacity" from="1" to="0" dur="0.5s" begin="anim23.end" fill="freeze" id="anim24" />
+    <animate attributeName="cx" from="395" to="599" dur="0.5s" begin="anim24.end" fill="freeze" id="anim25" />
+    <animate attributeName="cy" from="228" to="8" dur="0.5s" begin="anim25.end" fill="freeze" id="anim26" />
+    <animate attributeName="opacity" from="0" to="1" dur="0.5s" begin="anim26.end" fill="freeze" id="anim27" />
+</circle>
+<circle cx="599" cy="8" r="7" fill="#06D7F9">
+    <animate attributeName="cy" from="8" to="162" dur="2s" begin="0s; anim37.end" fill="freeze" id="anim31" />
+    <animate attributeName="cx" from="599" to="796" dur="2s" begin="anim31.end" fill="freeze" id="anim32" />
+    <animate attributeName="cy" from="162" to="228" dur="1s" begin="anim32.end" fill="freeze" id="anim33" />
+    <animate attributeName="opacity" from="1" to="0" dur="0.5s" begin="anim33.end" fill="freeze" id="anim34" />
+    <animate attributeName="cx" from="796" to="599" dur="0.5s" begin="anim34.end" fill="freeze" id="anim35" />
+    <animate attributeName="cy" from="228" to="8" dur="0.5s" begin="anim35.end" fill="freeze" id="anim36" />
+    <animate attributeName="opacity" from="0" to="1" dur="0.5s" begin="anim36.end" fill="freeze" id="anim37" />
+</circle>
+<circle cx="599" cy="8" r="7" fill="#06D7F9">
+    <animate attributeName="cy" from="8" to="162" dur="2s" begin="0s; anim47.end" fill="freeze" id="anim41" />
+    <animate attributeName="cx" from="599" to="1190" dur="2s" begin="anim41.end" fill="freeze" id="anim42" />
+    <animate attributeName="cy" from="162" to="228" dur="1s" begin="anim42.end" fill="freeze" id="anim43" />
+    <animate attributeName="opacity" from="1" to="0" dur="0.5s" begin="anim43.end" fill="freeze" id="anim44" />
+    <animate attributeName="cx" from="1190" to="599" dur="0.5s" begin="anim44.end" fill="freeze" id="anim45" />
+    <animate attributeName="cy" from="228" to="8" dur="0.5s" begin="anim45.end" fill="freeze" id="anim46" />
+    <animate attributeName="opacity" from="0" to="1" dur="0.5s" begin="anim46.end" fill="freeze" id="anim47" />
+</circle>
 </svg>

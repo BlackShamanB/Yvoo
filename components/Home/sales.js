@@ -9,17 +9,17 @@ import { Navigation, Pagination } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
-import { EffectFade } from 'swiper/modules';
-import { CSSTransition, TransitionGroup } from 'react-transition-group';
-import 'swiper/css/effect-fade';
-
+import { EffectFade } from "swiper/modules";
+import { CSSTransition, TransitionGroup } from "react-transition-group";
+import "swiper/css/effect-fade";
+import LoadOnLoad from "../LoadOnLoad";
 
 const TypingAnimation = ({ text }) => {
-  const [displayText, setDisplayText] = useState('');
+  const [displayText, setDisplayText] = useState("");
   const [index, setIndex] = useState(0);
 
   useEffect(() => {
-    setTimeout(1000)
+    setTimeout(1000);
     if (index < text.length) {
       const timeout = setTimeout(() => {
         setDisplayText((prevText) => prevText + text[index]);
@@ -48,7 +48,9 @@ function Sales({ handleModal }) {
             alt="map1-click"
             className="md:max-w-[26px] max-w-[23px] md:max-h-[36px] max-h-[32px]"
           />
-          <div className="md:text-[24px] text-[18px] md:leading-[30px] leading-[26px] font-[600]">1-Click</div>
+          <div className="md:text-[24px] text-[18px] md:leading-[30px] leading-[26px] font-[600]">
+            1-Click
+          </div>
         </div>
       </div>
       <div className="map1-dot-animate md:w-[24px] w-[11px] md:h-[24px] h-[11px] bg-mint rounded-[50%] md:ml-[9px] ml-[34px]"></div>
@@ -142,7 +144,7 @@ function Sales({ handleModal }) {
   const [currentSlide, setCurrentSlide] = useState(0);
 
   const handleSlideChange = (swiper) => {
-    console.log(swiper.realIndex)
+    console.log(swiper.realIndex);
     setCurrentSlide(swiper.realIndex);
   };
 
@@ -178,21 +180,21 @@ function Sales({ handleModal }) {
     //   timeout={500}
     //   classNames="slide"
     // >
-      <SwiperSlide key={item.id} className="md:mt-[96px] mt-[28px] bg-blue">
-        <div className="flex md:flex-row flex-col gap-[20px]">
-          <div className="text-white md:text-[120px] text-[60px] md:leading-[120px] leading-[60px] font-[800]">
-            0{item.id}
+    <SwiperSlide key={item.id} className="md:mt-[96px] mt-[28px] bg-blue">
+      <div className="flex md:flex-row flex-col gap-[20px]">
+        <div className="text-white md:text-[120px] text-[60px] md:leading-[120px] leading-[60px] font-[800]">
+          0{item.id}
+        </div>
+        <div className="flex flex-col gap-[20px]">
+          <div className="text-black md:text-[24px] text-[18px] md:leading-[30px] leading-[26px] font-[700]">
+            {item.header}
           </div>
-          <div className="flex flex-col gap-[20px]">
-            <div className="text-black md:text-[24px] text-[18px] md:leading-[30px] leading-[26px] font-[700]">
-              {item.header}
-            </div>
-            <div className="text-black md:text-[20px] text-[16px] md:leading-[30px] leading-[22px] font-[400]">
-              {item.content}
-            </div>
+          <div className="text-black md:text-[20px] text-[16px] md:leading-[30px] leading-[22px] font-[400]">
+            {item.content}
           </div>
         </div>
-      </SwiperSlide>
+      </div>
+    </SwiperSlide>
     // </CSSTransition>
   ));
   return (
@@ -200,72 +202,75 @@ function Sales({ handleModal }) {
       id="sales"
       className="relative w-full flex flex-col justify-center bg-blue 2xl:pl-[169px] 2xl:pr-[202px] md:px-[20px] px-[12px] md:pb-[144px] pb-[72px]"
     >
-      <div className="relative 3xl:max-w-[1516px] 2xl:max-w-[100%] max-w-[100%] relative grid 3xl:grid-cols-[743px_1fr] 2xl:grid-cols-2 2xl:justify-center md:pt-[170px] pt-[130px] md:gap-[133px] gap-[40px]">
-        <div className="relative">
-          <Image
-            src="/icons/Map2.svg"
-            width={743}
-            height={656}
-            alt="triangle"
-            className="2xl:max-w-[100%] max-w-[100%]"
-          />
-          {overlayContent[currentSlide]}
-        </div>
-        <div className="w-full text-black block">
-          <div className="w-full">
-            <div className="text-white md:text-[40px] text-[28px] md:leading-[48px] leading-[34px] font-[800] md:mt-[60px] md:px-[0] px-[29px]">
-              How does YVOO Work
-            </div>
-            <Swiper
-              spaceBetween={0}
-              slidesPerView={1}
-              onSlideChange={handleSlideChange}
-              onSwiper={(swiper) => console.log(swiper)}
-              loop={true} // Закольцованный слайдер
-              navigation={{
-                nextEl: ".button-next",
-                prevEl: ".button-prev",
-              }}
-              modules={[Navigation, Pagination]}
-              className="md:max-w-[673px] max-w-[278px] mb-[100px]"
-              // effect="fade"
-            >
-            {/* <TransitionGroup> */}
-              {renderItems}
-              {/* </TransitionGroup> */}
-            </Swiper>
-            <div className="flex flex-row gap-[60px] justify-end">
-              <div className="button-prev">
-                <div className="flex items-center gap-[31px]">
-                  <div className="text-white text-[24px] leading-[30px] font-[700] ml-2 min-w-[32px] w-[32px]">
-                    0{currentSlide === 0 ? items.length : currentSlide}
-                  </div>
-                  <Image
-                    src="/icons/map_arrow.svg" // Замените на путь к вашей стрелке
-                    width={71}
-                    height={18}
-                    alt="prev"
-                    className="rotate-[180deg]"
-                  />
-                </div>
+      <LoadOnLoad>
+        <div className="relative 3xl:max-w-[1516px] 2xl:max-w-[100%] max-w-[100%] relative grid 3xl:grid-cols-[743px_1fr] 2xl:grid-cols-2 2xl:justify-center md:pt-[170px] pt-[130px] md:gap-[133px] gap-[40px]">
+          <div className="relative">
+            <Image
+              src="/icons/Map2.svg"
+              width={743}
+              height={656}
+              alt="triangle"
+              className="2xl:max-w-[100%] max-w-[100%]"
+            />
+            {overlayContent[currentSlide]}
+          </div>
+          <div className="w-full text-black block">
+            <div className="w-full">
+              <div className="text-white md:text-[40px] text-[28px] md:leading-[48px] leading-[34px] font-[800] md:mt-[60px] md:px-[0] px-[29px]">
+                How does YVOO Work
               </div>
-              <div className="button-next">
-                <div className="flex items-center gap-[31px]">
-                  <Image
-                    src="/icons/map_arrow.svg" // Замените на путь к вашей стрелке
-                    width={71}
-                    height={18}
-                    alt="next"
-                  />
-                  <div className="text-white text-[24px] leading-[30px] font-[700] mr-2 min-w-[32px] w-[32px]">
-                    0{currentSlide === items.length - 1 ? 1 : currentSlide + 2}
+              <Swiper
+                spaceBetween={0}
+                slidesPerView={1}
+                onSlideChange={handleSlideChange}
+                onSwiper={(swiper) => console.log(swiper)}
+                loop={true} // Закольцованный слайдер
+                navigation={{
+                  nextEl: ".button-next",
+                  prevEl: ".button-prev",
+                }}
+                modules={[Navigation, Pagination]}
+                className="md:max-w-[673px] max-w-[278px] mb-[100px]"
+                // effect="fade"
+              >
+                {/* <TransitionGroup> */}
+                {renderItems}
+                {/* </TransitionGroup> */}
+              </Swiper>
+              <div className="flex flex-row gap-[60px] justify-end">
+                <div className="button-prev">
+                  <div className="flex items-center gap-[31px]">
+                    <div className="text-white text-[24px] leading-[30px] font-[700] ml-2 min-w-[32px] w-[32px]">
+                      0{currentSlide === 0 ? items.length : currentSlide}
+                    </div>
+                    <Image
+                      src="/icons/map_arrow.svg" // Замените на путь к вашей стрелке
+                      width={71}
+                      height={18}
+                      alt="prev"
+                      className="rotate-[180deg]"
+                    />
+                  </div>
+                </div>
+                <div className="button-next">
+                  <div className="flex items-center gap-[31px]">
+                    <Image
+                      src="/icons/map_arrow.svg" // Замените на путь к вашей стрелке
+                      width={71}
+                      height={18}
+                      alt="next"
+                    />
+                    <div className="text-white text-[24px] leading-[30px] font-[700] mr-2 min-w-[32px] w-[32px]">
+                      0
+                      {currentSlide === items.length - 1 ? 1 : currentSlide + 2}
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
+      </LoadOnLoad>
     </div>
   );
 }

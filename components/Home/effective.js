@@ -2,6 +2,7 @@ import Image from "next/image";
 import MagnifyOnScroll from "../MagnifyOnScroll";
 import React, { useState, useEffect, useRef } from "react";
 import ImgLeftToRight from "../ImgLeftToRight";
+import LoadOnLoad from "../LoadOnLoad";
 
 function Effective({ handleModal }) {
   const elementRef = useRef(null);
@@ -47,11 +48,12 @@ function Effective({ handleModal }) {
         width={584}
         height={106}
         alt="line"
-        classesImg="3xl:max-w-[584px] 2xl:max-w-[458px] md:max-w-[320px] max-w-[142px] w-[100%]"
-        classesContainer="absolute overflow-hidden 3xl:max-w-[584px] 2xl:max-w-[458px] md:max-w-[320px] max-w-[142px] 3xl:top-[70px] top-[60px] right-[0px] z-[1]"
+        classesImg="ImgLeftToRight 3xl:max-w-[584px] 2xl:max-w-[458px] md:max-w-[320px] max-w-[142px] w-[100%]"
+        classesContainer="absolute overflow-hidden 3xl:max-w-[584px] 2xl:max-w-[458px] md:max-w-[320px] max-w-[142px] 3xl:top-[70px] top-[60px] right-[0px] z-[1] min-h-[152px]"
         data-scroll
         data-scroll-speed="0.5"
       />
+      <LoadOnLoad>
       <div className="3xl:max-w-[1516px] 2xl:max-w-[1116px] md:max-w-[1000px] mx-[auto] relative flex flex-col items-center w-full md:pt-[240px] pt-[120px]">
         <div className="flex flex-col max-w-[900px] text-center md:mb-[216px] mb-[80px] md:px-0 px-[41px]">
           <div className="md:text-[50px] text-[30px] md:leading-[58px] leading-[38px] font-[700] text-blue md:mb-[42px] mb-[32px]">
@@ -288,7 +290,7 @@ function Effective({ handleModal }) {
           <div className="relative self-center text-center">
             <div className="absolute md:top-[370px] top-[157px] md:left-[153px] md:right-[unset] right-[-14px] z-[3]">
               <div
-                className={`relative bg-white md:rounded-[30px] rounded-[12px] md:p-[36px_30px_26px] p-[16px_6px_12px_12px] custom-shadow mb-[20px] card text-left md-max-w-[unset] max-w-[134px]`}
+                className={`relative bg-white md:rounded-[30px] rounded-[12px] md:p-[36px_30px_26px] p-[16px_6px_12px_12px] custom-shadow mb-[20px] card text-left md:max-w-[unset] max-w-[134px]`}
               >
                 <div className="md:text-[12px] text-[8px] md:leading-[16px] leading-[12px] font-[400] text-[#898989] mb-[8px]">
                   2024.24.10
@@ -375,6 +377,7 @@ function Effective({ handleModal }) {
             />
         </div>
       </div>
+      </LoadOnLoad>
     </div>
   );
 }
