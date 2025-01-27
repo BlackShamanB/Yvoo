@@ -56,7 +56,7 @@ function Sales({ handleModal }) {
       <div className="map1-dot-animate md:w-[24px] w-[11px] md:h-[24px] h-[11px] bg-mint rounded-[50%] md:ml-[9px] ml-[34px]"></div>
     </div>,
     <div key="1" className="top-0 left-0">
-      <div className="text-black text-[16px] leading-[20px] font-[500] absolute bg-white rounded-[26px] select-none cursor-default flex flex-row gap-[20px] items-center p-[14px_20px] w-[404px] top-[54px] left-[50%] transfotm -translate-x-1/2">
+      <div className="text-black text-[16px] leading-[20px] font-[500] absolute bg-white rounded-[26px] select-none cursor-default flex flex-row gap-[20px] items-center md:p-[14px_20px] p-[12px_20px] md:w-[404px] w-[100%] md:max-w-[404px] max-w-[278px] md:top-[54px] top-[20px] left-[50%] transfotm -translate-x-1/2">
         <Image
           src="/icons/Search.svg"
           width={24}
@@ -71,36 +71,36 @@ function Sales({ handleModal }) {
         width={48}
         height={60}
         alt="map_balloon"
-        className="absolute top-[212px] max-w-[48px] max-h-[60px] left-[69px] baloonMap-animate"
+        className="absolute md:top-[212px] top-[103px] md:max-w-[48px] max-w-[23px] md:max-h-[60px] max-h-[29px] md:left-[69px] left-[30px] transform -md:translate-x-[0] -translate-x-[50%] baloonMap-animate"
       />
       <Image
         src="/icons/map_balloon.svg"
         width={32}
         height={40}
         alt="map_balloon"
-        className="absolute top-[395px] max-w-[32px] max-h-[40px] left-[132px] baloonMap-animate"
+        className="absolute md:top-[395px] top-[186px] md:max-w-[32px] max-w-[16px] md:max-h-[40px] max-h-[19px] md:left-[132px] left-[65px] -md:translate-x-[0] -translate-x-[50%] baloonMap-animate"
       />
       <Image
         src="/icons/map_balloon.svg"
         width={32}
         height={40}
         alt="map_balloon"
-        className="absolute top-[275px] max-w-[32px] max-h-[40px] left-[361px] baloonMap-animate"
+        className="absolute md:top-[275px] top-[141px] md:max-w-[32px] max-w-[17px] md:max-h-[40px] max-h-[20px] md:left-[361px] left-[167px] -md:translate-x-[0] -translate-x-[50%] baloonMap-animate"
       />
-      <div className="absolute top-[133px] left-[427px]">
+      <div className="absolute md:top-[133px] top-[80px] md:left-[427px] left-[calc(50%)] -md:translate-x-[0] -translate-x-[50%]">
         <Image
           src="/icons/map_balloon.svg"
           width={95}
           height={119}
           alt="map_balloon"
-          className="max-w-[95px] max-h-[119px] baloonMap-animate"
+          className="md:max-w-[95px] max-w-[40px] md:max-h-[119px] max-h-[49px] baloonMap-animate"
         />
         <Image
           src="/icons/map_ballon_check.svg"
           width={37}
           height={37}
           alt="map_balloon"
-          className="absolute top-[0] left-[91px] max-w-[37px] max-h-[37px] baloonMap-animate"
+          className="absolute top-[0] md:left-[91px] md:max-w-[37px] max-w-[16px] md:max-h-[37px] max-h-[16px] baloonMap-animate"
         />
       </div>
       <Image
@@ -108,17 +108,20 @@ function Sales({ handleModal }) {
         width={48}
         height={60}
         alt="map_balloon"
-        className="absolute top-[248px] left-[537px] max-w-[48px] max-h-[60px] baloonMap-animate"
+        className="absolute md:top-[248px] top-[122px] md:left-[537px] right-[69px] md:max-w-[48px] max-w-[23px] md:max-h-[60px] max-h-[27px] -md:translate-x-[0] -translate-x-[50%] baloonMap-animate"
       />
       <Image
         src="/icons/map_balloon.svg"
         width={32}
         height={40}
         alt="map_balloon"
-        className="absolute top-[272px] left-[673px] max-w-[32px] max-h-[40px] baloonMap-animate"
+        className="absolute md:top-[272px] top-[139px] md:left-[673px] right-[26px] md:max-w-[32px] max-w-[17px] md:max-h-[40px] max-h-[20px] -md:translate-x-[0] -translate-x-[50%] baloonMap-animate"
       />
     </div>,
-    <div key="2" className="absolute -top-[30px] -left-[50px]">
+    <div
+      key="2"
+      className="absolute md:top-[-30px] top-[-10px] md:left-[-50px] left-[29px] md:max-w-[572px] max-w-[262px]"
+    >
       <Image
         src="/icons/map_chat.svg"
         width={572}
@@ -129,14 +132,14 @@ function Sales({ handleModal }) {
     </div>,
     <div
       key="3"
-      className="absolute -top-[37px] left-[50%] transfotm -translate-x-1/2"
+      className="absolute md:top-[-37px] top-[-10px] left-[50%] transfotm -translate-x-1/2 md:max-w-[534px] max-w-[239px] md:w-[100%] w-[239px]"
     >
       <Image
         src="/icons/map_pad.svg"
         width={534}
         height={705}
         alt="map_pad"
-        className="max-w-[unset]"
+        className="md:max-w-[unset] max-w-[100%]"
       />
     </div>,
   ];
@@ -204,6 +207,9 @@ function Sales({ handleModal }) {
     >
       <LoadOnLoad>
         <div className="relative 3xl:max-w-[1516px] 2xl:max-w-[100%] max-w-[100%] relative grid 3xl:grid-cols-[743px_1fr] 2xl:grid-cols-2 2xl:justify-center md:pt-[170px] pt-[130px] md:gap-[133px] gap-[40px]">
+          <div className="md:hidden block text-white md:text-[40px] text-[28px] md:leading-[48px] leading-[34px] font-[800] md:mt-[60px] md:px-[0] px-[29px]">
+            How does YVOO Work
+          </div>
           <div className="relative">
             <Image
               src="/icons/Map2.svg"
@@ -216,7 +222,7 @@ function Sales({ handleModal }) {
           </div>
           <div className="w-full text-black block">
             <div className="w-full">
-              <div className="text-white md:text-[40px] text-[28px] md:leading-[48px] leading-[34px] font-[800] md:mt-[60px] md:px-[0] px-[29px]">
+              <div className="md:block hidden text-white md:text-[40px] text-[28px] md:leading-[48px] leading-[34px] font-[800] md:mt-[60px] md:px-[0] px-[29px]">
                 How does YVOO Work
               </div>
               <Swiper

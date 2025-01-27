@@ -41,15 +41,15 @@ function Expensive({ handleModal }) {
               alt="triangle"
               className="mx-[auto] 2xl:max-w-[unset] max-w-[588px] md:block hidden"
             />
+          </div>
+          <div className="grid md:grid-cols-4 grid-cols-1 2xl:gap-[59px] gap-[30px] md:px-0 px-[41px]">
             <Image
               src="/icons/Line-expensive.svg"
               width={2}
               height={66}
               alt="line"
-              className="mx-auto md:hidden block"
+              className="mx-auto mt-[30px] md:hidden block"
             />
-          </div>
-          <div className="grid md:grid-cols-4 grid-cols-1 2xl:gap-[59px] gap-[50px] md:px-0 px-[41px]">
             <div className="flex flex-col gap-[20px]">
               <div className="justify-items-center">
                 <Image
@@ -71,6 +71,13 @@ function Expensive({ handleModal }) {
                 </div>
               </div>
             </div>
+                <Image
+                  src="/icons/Line-expensive-2.svg"
+                  width={2}
+                  height={66}
+                  alt="line"
+                  className="mx-auto md:hidden block"
+                />
             <div className="flex flex-col gap-[20px]">
               <div className="justify-items-center">
                 <Image
@@ -92,6 +99,13 @@ function Expensive({ handleModal }) {
                 </div>
               </div>
             </div>
+            <Image
+              src="/icons/Line-expensive-2.svg"
+              width={2}
+              height={66}
+              alt="line"
+              className="mx-auto md:hidden block"
+            />
             <div className="flex flex-col gap-[20px]">
               <div className="justify-items-center">
                 <Image
@@ -113,6 +127,13 @@ function Expensive({ handleModal }) {
                 </div>
               </div>
             </div>
+            <Image
+              src="/icons/Line-expensive-2.svg"
+              width={2}
+              height={66}
+              alt="line"
+              className="mx-auto md:hidden block"
+            />
             <div className="flex flex-col gap-[20px]">
               <div className="justify-items-center">
                 <Image
