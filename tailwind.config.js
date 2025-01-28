@@ -129,6 +129,9 @@ module.exports = {
         "3xl": "1920px" 
         // => @media (min-width: 1440px) { ... }
       },
+      boxShadow: {
+        'custom': '0 8px 15px #23252D4D',
+      },
     },
   },
   plugins: [],

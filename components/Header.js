@@ -84,7 +84,7 @@ const Header = () => {
     { name: "1-Click Audit", link: "/" },
     { name: "360° Supplier Score", link: "/" },
     { name: "Supplier Database", link: "/" },
-    { name: "Consulting", link: "/" },
+    { name: "Consulting", link: "/consulting" },
   ];
 
   return (

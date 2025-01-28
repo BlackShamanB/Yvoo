@@ -37,10 +37,10 @@ function Sales({ handleModal }) {
   const overlayContent = [
     <div
       key="0"
-      className="absolute md:top-[252px] top-[41px] md:-right-[45px] right-[24px] flex flex-col gap-[9px] justify-start"
+      className="absolute md:top-[252px] top-[41px] -translate-x-[50%] 2xl:left-[calc(92%)] md2:left-[calc(50%_+_330px)] md:left-[calc(50%_+_250px)] left-[calc(50%_+_68px)] flex flex-col gap-[9px] justify-start"
     >
       <div className="text-white text-[24px] leading-[30px] font-[700]">
-        <div className="map1-click-animate flex flex-row items-center md:gap-[13px] gap-[8px] rounded-[30px] bg-mint md:p-[12px_30px_12px_24px] p-[12px_20px]">
+        <div className="map1-click-animate flex flex-row items-center md:gap-[13px] gap-[8px] rounded-[30px] bg-green shadow-custom md:p-[12px_30px_12px_24px] p-[12px_20px]">
           <Image
             src="/icons/map1-click.svg"
             width={26}
@@ -48,12 +48,12 @@ function Sales({ handleModal }) {
             alt="map1-click"
             className="md:max-w-[26px] max-w-[23px] md:max-h-[36px] max-h-[32px]"
           />
-          <div className="md:text-[24px] text-[18px] md:leading-[30px] leading-[26px] font-[600]">
+          <div className="md:text-[24px] text-[18px] text-nowrap md:leading-[30px] leading-[26px] font-[600]">
             1-Click
           </div>
         </div>
       </div>
-      <div className="map1-dot-animate md:w-[24px] w-[11px] md:h-[24px] h-[11px] bg-mint rounded-[50%] md:ml-[9px] ml-[34px]"></div>
+      <div className="map1-dot-animate md:w-[24px] w-[11px] md:h-[24px] h-[11px] bg-green rounded-[50%] md:ml-[9px] ml-[34px]"></div>
     </div>,
     <div key="1" className="top-0 left-0">
       <div className="text-black text-[16px] leading-[20px] font-[500] absolute bg-white rounded-[26px] select-none cursor-default flex flex-row gap-[20px] items-center md:p-[14px_20px] p-[12px_20px] md:w-[404px] w-[100%] md:max-w-[404px] max-w-[278px] md:top-[54px] top-[20px] left-[50%] transfotm -translate-x-1/2">
@@ -100,7 +100,7 @@ function Sales({ handleModal }) {
           width={37}
           height={37}
           alt="map_balloon"
-          className="absolute top-[0] md:left-[91px] md:max-w-[37px] max-w-[16px] md:max-h-[37px] max-h-[16px] baloonMap-animate"
+          className="absolute top-[0] md:left-[91px] left-[36px] md:max-w-[37px] max-w-[16px] md:max-h-[37px] max-h-[16px] baloonMap-animate"
         />
       </div>
       <Image
@@ -210,7 +210,7 @@ function Sales({ handleModal }) {
           <div className="md:hidden block text-white md:text-[40px] text-[28px] md:leading-[48px] leading-[34px] font-[800] md:mt-[60px] md:px-[0] px-[29px]">
             How does YVOO Work
           </div>
-          <div className="relative">
+          <div className="relative flex justify-center">
             <Image
               src="/icons/Map2.svg"
               width={743}
@@ -222,7 +222,7 @@ function Sales({ handleModal }) {
           </div>
           <div className="w-full text-black block">
             <div className="w-full">
-              <div className="md:block hidden text-white md:text-[40px] text-[28px] md:leading-[48px] leading-[34px] font-[800] md:mt-[60px] md:px-[0] px-[29px]">
+              <div className="md:block hidden md:max-w-[673px] max-w-[278px] mx-[auto] text-white md:text-[40px] text-[28px] md:leading-[48px] leading-[34px] font-[800] md:mt-[60px] md:px-[0] px-[29px]">
                 How does YVOO Work
               </div>
               <Swiper
@@ -236,17 +236,17 @@ function Sales({ handleModal }) {
                   prevEl: ".button-prev",
                 }}
                 modules={[Navigation, Pagination]}
-                className="md:max-w-[673px] max-w-[278px] mb-[100px]"
+                className="md:max-w-[673px] max-w-[278px] md2:mb-[100px] mb-[36px]"
                 // effect="fade"
               >
                 {/* <TransitionGroup> */}
                 {renderItems}
                 {/* </TransitionGroup> */}
               </Swiper>
-              <div className="flex flex-row gap-[60px] justify-end">
+              <div className="flex flex-row gap-[60px] md2:justify-end justify-center">
                 <div className="button-prev">
-                  <div className="flex items-center gap-[31px]">
-                    <div className="text-white text-[24px] leading-[30px] font-[700] ml-2 min-w-[32px] w-[32px]">
+                  <div className="flex items-center md2:gap-[31px] gap-[21px]">
+                    <div className="text-white md2:text-[24px] text-[18px] md2:leading-[30px] leading-[26px] 2md:font-[700] font-[600] ml-2 min-w-[32px] w-[32px]">
                       0{currentSlide === 0 ? items.length : currentSlide}
                     </div>
                     <Image
@@ -254,19 +254,20 @@ function Sales({ handleModal }) {
                       width={71}
                       height={18}
                       alt="prev"
-                      className="rotate-[180deg]"
+                      className="rotate-[180deg] md2:max-w-[unset] max-w-[58px]"
                     />
                   </div>
                 </div>
                 <div className="button-next">
-                  <div className="flex items-center gap-[31px]">
+                  <div className="flex items-center md2:gap-[31px] gap-[21px]">
                     <Image
                       src="/icons/map_arrow.svg" // Замените на путь к вашей стрелке
                       width={71}
                       height={18}
                       alt="next"
+                      className="md2:max-w-[unset] max-w-[58px]"
                     />
-                    <div className="text-white text-[24px] leading-[30px] font-[700] mr-2 min-w-[32px] w-[32px]">
+                    <div className="text-white md2:text-[24px] text-[18px] md2:leading-[30px] leading-[26px] 2md:font-[700] font-[600] mr-2 min-w-[32px] w-[32px]">
                       0
                       {currentSlide === items.length - 1 ? 1 : currentSlide + 2}
                     </div>

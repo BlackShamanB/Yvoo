@@ -111,7 +111,7 @@ function Scan({ handleModal }) {
   return (
     <LoadOnLoad>
       <div className="relative w-full flex flex-col justify-center bg-white">
-        <div className="3xl:max-w-[1516px] 2xl:max-w-[1116px] md:max-w-[598px] mx-[auto] relative grid md:grid-cols-2 grid-cols-1 gap-x-[60px] md:gap-y-[120px] gap-y-[60px] w-full md:pt-[200px] pt-[80px] md:mb-[180px] mb-[80px] md:px-[0] px-[41px]">
+        <div className="3xl:max-w-[1516px] 2xl:max-w-[1116px] md2:max-w-[598px] mx-[auto] relative grid md2:grid-cols-2 grid-cols-1 gap-x-[60px] md2:gap-y-[120px] gap-y-[60px] w-full md2:pt-[200px] pt-[80px] md2:mb-[180px] mb-[80px] md2:px-[0] px-[41px]">
           {data.map((item, index) => (
             <SafetyStandards
               image={item.image}
@@ -124,8 +124,8 @@ function Scan({ handleModal }) {
             />
           ))}
         </div>
-        <div className="flex justify-center md:mb-[200px] md:px-[0] px-[12px]">
-          <div className="text-black bg-blue rounded-[30px] md:p-[20px_34px] p-[16px_18px] md:text-[16px] text-[12px] md:leading-[20px] leading-[16px] font-[500] uppercase">
+        <div className="flex justify-center md2:mb-[200px] md2:px-[0] px-[12px]">
+          <div className="text-black bg-blue rounded-[30px] md2:p-[20px_34px] p-[16px_18px] md2:text-[16px] text-[12px] md2:leading-[20px] leading-[16px] font-[500] uppercase">
             Need Compliance? Book a Consultation Now
           </div>
         </div>
