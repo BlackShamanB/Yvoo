@@ -13,7 +13,7 @@ import { EffectFade } from "swiper/modules";
 import { CSSTransition, TransitionGroup } from "react-transition-group";
 import "swiper/css/effect-fade";
 import LoadOnLoad from "../LoadOnLoad";
-
+import Slider from "../Slider";
 const TypingAnimation = ({ text }) => {
   const [displayText, setDisplayText] = useState("");
   const [index, setIndex] = useState(0);
@@ -157,7 +157,7 @@ function Sales({ handleModal }) {
     console.log(swiper.realIndex);
     setCurrentSlide(swiper.realIndex);
   };
-
+  
   const items = [
     {
       id: 1,
@@ -190,23 +190,42 @@ function Sales({ handleModal }) {
     //   timeout={500}
     //   classNames="slide"
     // >
-    <SwiperSlide key={item.id} className="md:mt-[96px] mt-[28px] bg-blue">
+    <div key={item.id} className="bg-blue custom-slide">
       <div className="flex md:flex-row flex-col gap-[20px]">
-        <div className="text-white md:text-[120px] text-[60px] md:leading-[120px] leading-[60px] font-[800]">
+        <div className="slide-title text-white md:text-[120px] text-[60px] md:leading-[120px] leading-[60px] font-[800]">
           0{item.id}
         </div>
-        <div className="flex flex-col gap-[20px]">
-          <div className="text-black md:text-[24px] text-[18px] md:leading-[30px] leading-[26px] font-[700]">
+        <div className="slide-content flex flex-col gap-[20px]">
+          <div className="slide-content-title text-black md:text-[24px] text-[18px] md:leading-[30px] leading-[26px] font-[700]">
             {item.header}
           </div>
-          <div className="text-black md:text-[20px] text-[16px] md:leading-[30px] leading-[22px] font-[400]">
+          <div className="slide-content-body text-black md:text-[20px] text-[16px] md:leading-[30px] leading-[22px] font-[400]">
             {item.content}
           </div>
         </div>
       </div>
-    </SwiperSlide>
+    </div>
     // </CSSTransition>
   ));
+
+
+  // const swiperRef = useRef(null);
+
+  // useEffect(() => {
+  //   const swiper = swiperRef.current.swiper;
+  //   swiper.on('slideChangeTransitionStart', () => {
+  //     const activeSlide = swiper.slides[swiper.activeIndex];
+  //     activeSlide.style.transition = 'transform 0.5s ease-in-out';
+  //     activeSlide.style.transform = 'translateY(-100%)';
+  //   });
+
+  //   swiper.on('slideChangeTransitionEnd', () => {
+  //     const activeSlide = swiper.slides[swiper.activeIndex];
+  //     activeSlide.style.transition = 'none';
+  //     activeSlide.style.transform = 'translateY(0)';
+  //   });
+  // }, []);
+
   return (
     <div
       id="sales"
@@ -227,30 +246,36 @@ function Sales({ handleModal }) {
             />
             {overlayContent[currentSlide]}
           </div>
-          <div className="w-full text-black block">
+          <div className="w-full text-black block md2:px-[0] px-[29px] 3xl:max-w-[1516px] 2xl:max-w-[1116px] md:max-w-[728px] max-w-[100%] mx-[auto]">
             <div className="w-full">
-              <div className="md:block hidden md:max-w-[673px] max-w-[278px] mx-[auto] text-white md:text-[40px] text-[28px] md:leading-[48px] leading-[34px] font-[800] md:mt-[60px] md:px-[0] px-[29px]">
+              <div className="md:block hidden md:max-w-[673px] max-w-[278px] mx-[auto] text-white md:text-[40px] text-[28px] md:leading-[48px] leading-[34px] font-[800] md:mt-[60px] md:px-[0] px-[29px] mb-[48px]">
                 How does YVOO Work
               </div>
-              <Swiper
+              
+            <Slider slides={renderItems} 
+            currentSlide={currentSlide}
+            setCurrentSlide={setCurrentSlide}/>
+              {/* <Swiper
+                // ref={swiperRef}
+                effect={'fade'}
+                fadeEffect={{ crossFade: true }} // Настройки для эффекта fade
                 spaceBetween={0}
                 slidesPerView={1}
                 onSlideChange={handleSlideChange}
                 onSwiper={(swiper) => console.log(swiper)}
                 loop={true} // Закольцованный слайдер
+                direction={'vertical'}
                 navigation={{
                   nextEl: ".button-next",
                   prevEl: ".button-prev",
                 }}
-                modules={[Navigation, Pagination]}
-                className="md:max-w-[673px] max-w-[278px] md2:mb-[100px] mb-[36px]"
+                modules={[Navigation, Pagination, EffectFade]}
+                className="mySwiper md:max-w-[673px] max-w-[278px] md2:mb-[100px] mb-[36px] md:mt-[96px] mt-[28px] max-h-[170px]"
                 // effect="fade"
               >
-                {/* <TransitionGroup> */}
                 {renderItems}
-                {/* </TransitionGroup> */}
-              </Swiper>
-              <div className="flex flex-row gap-[60px] md2:justify-end justify-center">
+              </Swiper> */}
+              {/* <div className="flex flex-row gap-[60px] md2:justify-end justify-center">
                 <div className="button-prev">
                   <div className="flex items-center md2:gap-[31px] gap-[21px]">
                     <div className="text-white md2:text-[24px] text-[18px] md2:leading-[30px] leading-[26px] 2md:font-[700] font-[600] ml-2 min-w-[32px] w-[32px]">
@@ -280,7 +305,7 @@ function Sales({ handleModal }) {
                     </div>
                   </div>
                 </div>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>

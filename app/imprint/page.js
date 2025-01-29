@@ -37,7 +37,7 @@ export default function Solutions() {
 
   return (
     <main
-      className="w-full px-[41px] md2:py-[162px] py-[120px] bg-white"
+      className="w-full md2:px-[202px] px-[41px] md2:py-[162px] py-[120px] bg-white"
       ref={containerRef}
       data-scroll-container
     >
