@@ -120,27 +120,34 @@ function Sales({ handleModal }) {
     </div>,
     <div
       key="2"
-      className="absolute md:top-[-30px] top-[-10px] md:left-[-50px] left-[29px] md:max-w-[572px] max-w-[262px]"
+      className="absolute md:top-[-30px] top-[-10px] md:max-w-[572px] max-w-[262px]"
     >
-      <Image
+      {/* <Image
         src="/icons/map_chat.svg"
         width={572}
         height={690}
         alt="map_balloon"
         className=""
-      />
+      /> */}
+      <object type="image/svg+xml" data="/icons/map_chat.svg" width={572} className="md:max-w-[572px] max-w-[262px] md:max-h-[690px] max-h-[316px]"
+        height={690}>
+        Ваш браузер не поддерживает SVG
+      </object>
     </div>,
     <div
       key="3"
       className="absolute md:top-[-37px] top-[-10px] left-[50%] transfotm -translate-x-1/2 md:max-w-[534px] max-w-[239px] md:w-[100%] w-[239px]"
     >
-      <Image
+      {/* <Image
         src="/icons/map_pad.svg"
         width={534}
         height={705}
         alt="map_pad"
         className="md:max-w-[unset] max-w-[100%]"
-      />
+      /> */}
+      <object type="image/svg+xml" data="/icons/map_pad.svg" width={534} height={705} className="md:max-w-[534px] max-w-[230px] md:max-h-[705px] max-h-[307px]">
+        Ваш браузер не поддерживает SVG
+      </object>
     </div>,
   ];
 

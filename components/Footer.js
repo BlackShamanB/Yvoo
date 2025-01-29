@@ -32,7 +32,7 @@ const Footer = () => {
     { name: "Terms of Service", link: "/" },
     { name: "Privacy Policy", link: "/" },
     { name: "Data Processing Agreement", link: "/" },
-    { name: "Imprint", link: "/" },
+    { name: "Imprint", link: "/imprint" },
   ];
 
   const handleModal = () => {
@@ -59,7 +59,7 @@ const Footer = () => {
                     className="text-whte text-[20px] leading-[26px] font-[400] relative inline-block text-white pseudo-text-effect cursor-pointer"
                     data-after={link.name}
                   >
-                    <a className="group">
+                    <a className="group" href={link.link}>
                       {link.name}
                       {/* <span className="absolute w-full h-1 bg-white bottom-0 left-0 transform scale-x-0 transition-transform origin-bottom-right duration-350 ease-out group-hover:origin-bottom-left group-hover:scale-x-100"></span> */}
                     </a>
@@ -77,7 +77,7 @@ const Footer = () => {
                     className="text-whte text-[16px] leading-[20px] font-[400] opacity-[50%] relative inline-block pseudo-text-effect cursor-pointer"
                     data-after={link.name}
                   >
-                    <a className="group">
+                    <a className="group" href={link.link}>
                       {link.name}
                       {/* <span className="absolute w-full h-1 bg-white bottom-0 left-0 transform scale-x-0 transition-transform origin-bottom-right duration-350 ease-out group-hover:origin-bottom-left group-hover:scale-x-100"></span> */}
                     </a>
