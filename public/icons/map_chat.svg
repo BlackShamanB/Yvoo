@@ -22,9 +22,12 @@
         </radialGradient>
         <filter id="eO1ngyYk4zI53-filter" x="-150%" y="-150%" width="400%" height="400%">
             <feGaussianBlur id="eO1ngyYk4zI53-filter-drop-shadow-0-blur" in="SourceAlpha"
-                stdDeviation="8,8" />
+                stdDeviation="8" />
+            <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0" />
             <feOffset id="eO1ngyYk4zI53-filter-drop-shadow-0-offset" dx="0" dy="4" result="tmp" />
             <feFlood id="eO1ngyYk4zI53-filter-drop-shadow-0-flood" flood-color="#000" />
+            <feColorMatrix in="eO1ngyYk4zI53-filter-drop-shadow-0-flood" type="matrix"
+                values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
             <feComposite id="eO1ngyYk4zI53-filter-drop-shadow-0-composite" operator="in" in2="tmp" />
             <feMerge id="eO1ngyYk4zI53-filter-drop-shadow-0-merge" result="result">
                 <feMergeNode id="eO1ngyYk4zI53-filter-drop-shadow-0-merge-node-1" />
