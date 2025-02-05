@@ -57,6 +57,12 @@ body {
 .border-\[\#949CAF\] {
   border-color: #949CAF;
 }
+.text-\[\#10AD9B\] {
+  color: #10AD9B;
+}
+.border-\[\#10AD9B\] {
+  border-color: #10AD9B;
+}
 .custom-shadow {
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.25);
 }

@@ -1,7 +1,7 @@
 <svg width="10" height="40" viewBox="0 0 10 40" fill="none" xmlns="http://www.w3.org/2000/svg">
 <line x1="5" y1="1" x2="5" y2="39" stroke="black" stroke-width="2" stroke-linecap="round" stroke-dasharray="2 12"/>
 <circle cx="5" cy="-6" r="5" fill="#06D7F9">
-    <animate attributeName="cy" from="-6" to="45" dur="2s" begin="2s; anim4.end" fill="freeze" id="anim1" />
+    <animate attributeName="cy" from="-6" to="45" dur="2s" begin="4s; anim4.end" fill="freeze" id="anim1" />
     <animate attributeName="opacity" from="1" to="0" dur="0.5s" begin="anim1.end" fill="freeze" id="anim2" />
     <animate attributeName="cy" from="45" to="-6" dur="7s" begin="anim2.end" fill="freeze" id="anim3" />
     <animate attributeName="opacity" from="0" to="1" dur="0.5s" begin="anim3.end" fill="freeze" id="anim4" />

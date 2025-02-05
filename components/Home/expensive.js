@@ -29,8 +29,8 @@ function Expensive({ handleModal }) {
   return (
     <div className="relative w-full flex flex-col justify-center bg-white">
       <LoadOnLoad>
-        <div className="3xl:max-w-[1516px] 2xl:max-w-[1116px] md2:max-w-[748px] mx-[auto] relative flex flex-col justify-center md2:pt-[140px] pt-[100px] md2:pb-[300px] pb-[160px]">
-          <div className="text-blue md2:text-[50px] text-[30px] md2:leading-[58px] leading-[38px] font-[700] text-center md2:mb-[16px] mb-[3px]">
+        <div className="3xl:max-w-[1516px] 2xl:max-w-[1116px] md2:max-w-[748px] mx-[auto] relative flex flex-col justify-center md2:pt-[140px] pt-[100px] md2:pb-[300px] pb-[100px]">
+          <div className="text-blue md2:text-[50px] text-[30px] md2:leading-[58px] leading-[38px] font-[700] text-center md2:mb-[16px] mb-[135px]">
             Why YVOO?
           </div>
           <div className="text-center md2:mb-[40px] mb-[5px]">
@@ -42,15 +42,8 @@ function Expensive({ handleModal }) {
               className="mx-[auto] 2xl:max-w-[unset] max-w-[588px] md2:block hidden"
             />
           </div>
-          <div className="grid md2:grid-cols-4 grid-cols-1 2xl:gap-[59px] gap-[30px] md2:px-0 px-[41px]">
-            <Image
-              src="/icons/Line-expensive.svg"
-              width={2}
-              height={66}
-              alt="line"
-              className="mx-auto mt-[30px] md2:hidden block"
-            />
-            <div className="flex flex-col gap-[20px]">
+          <div className="relative grid md2:grid-cols-4 grid-cols-1 2xl:gap-[59px] gap-[30px] md2:px-0 px-[41px]">
+            <div className="z-[1] bg-white flex flex-col gap-[20px] md2:mb-[0] mb-[40px] md2:pt-[0] pt-[20px] md2:pb-[0] pb-[30px]">
               <div className="justify-items-center">
                 <Image
                   src="/icons/GlobalAudit.svg"
@@ -71,14 +64,7 @@ function Expensive({ handleModal }) {
                 </div>
               </div>
             </div>
-                <Image
-                  src="/icons/Line-expensive-2.svg"
-                  width={2}
-                  height={66}
-                  alt="line"
-                  className="mx-auto md2:hidden block"
-                />
-            <div className="flex flex-col gap-[20px]">
+            <div className="z-[1] bg-white flex flex-col gap-[20px] md2:mb-[0] mb-[40px] md2:pt-[0] pt-[30px] md2:pb-[0] pb-[30px]">
               <div className="justify-items-center">
                 <Image
                   src="/icons/AIDrivenObjectivity.svg"
@@ -99,14 +85,7 @@ function Expensive({ handleModal }) {
                 </div>
               </div>
             </div>
-            <Image
-              src="/icons/Line-expensive-2.svg"
-              width={2}
-              height={66}
-              alt="line"
-              className="mx-auto md2:hidden block"
-            />
-            <div className="flex flex-col gap-[20px]">
+            <div className="z-[1] bg-white flex flex-col gap-[20px] md2:mb-[0] mb-[40px] md2:pt-[0] pt-[30px] md2:pb-[0] pb-[30px]">
               <div className="justify-items-center">
                 <Image
                   src="/icons/RealTimeAuditTracking.svg"
@@ -127,14 +106,7 @@ function Expensive({ handleModal }) {
                 </div>
               </div>
             </div>
-            <Image
-              src="/icons/Line-expensive-2.svg"
-              width={2}
-              height={66}
-              alt="line"
-              className="mx-auto md2:hidden block"
-            />
-            <div className="flex flex-col gap-[20px]">
+            <div className="z-[1] bg-white flex flex-col gap-[20px] md2:pt-[0] pt-[30px]">
               <div className="justify-items-center">
                 <Image
                   src="/icons/CostEfficientandScalable.svg"
@@ -155,6 +127,13 @@ function Expensive({ handleModal }) {
                 </div>
               </div>
             </div>
+            <Image
+              src="/icons/Line-expensive.svg"
+              width={10}
+              height={66}
+              alt="line"
+              className="absolute h-[100%] md2:hidden block w-[100%] -mt-[135px]"
+            />
           </div>
         </div>
       </LoadOnLoad>

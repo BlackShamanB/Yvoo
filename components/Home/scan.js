@@ -61,7 +61,7 @@ function Scan({ handleModal }) {
     {
       image: "/icons/SafetyStandards.svg",
       check: "/icons/checkYellow.svg",
-      color: "[#FFC527]",
+      color: "[#10AD9B]",
       title: "Safety Standards",
       content: "Maintaining the safety and well-being of workers and products",
       items: [

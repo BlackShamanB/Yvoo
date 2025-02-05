@@ -156,30 +156,16 @@ function Effective({ handleModal }) {
         {/* <div className="text-[40px] leading-[58px] font-[400] text-white mb-[154px]">
           Audits with Global Reach
         </div> */}
-        <div className="grid md2:grid-cols-3 grid-cols-1 3xl:gap-[83px] md2:gap-[50px] gap-[0px] 3xl:mb-[25px] mb-[0] md2:px-[0] px-[41px]">
-          <div className="md2:hidden flex flex-col justify-center text-center items-center mb-[3px]">
-            <Image
-              src="/icons/line-effective-1.svg"
-              width={2}
-              height={58}
-              alt="triangle"
-              className="mx-auto"
-            />
+        <div className="relative grid md2:grid-cols-3 grid-cols-1 3xl:gap-[83px] md2:gap-[50px] gap-[0px] 3xl:mb-[25px] mb-[0] md2:px-[0] px-[41px]">
+          <div className="md2:hidden z-[1] bg-black flex flex-col justify-center text-center items-center md2:mb-[3px] mb-[64px]">
             <Image
               src="/icons/CentralAIHub.svg"
               width={106}
               height={106}
               alt="triangle"
             />
-            <Image
-              src="/icons/line-effective-1.svg"
-              width={2}
-              height={58}
-              alt="triangle"
-              className="mx-auto"
-            />
           </div>
-          <div className="flex flex-row md2:gap-[25px] gap-[8px] border-blue border-[2px] rounded-[30px] 2xl:p-[42px_30px] p-[30px_20px_30px_17px] 3xl:mt-[206px] md2:mt-[72px] h-[max-content] mb-[7px]">
+          <div className="flex z-[1] bg-black flex-row md2:gap-[25px] gap-[8px] border-blue border-[2px] rounded-[30px] 2xl:p-[42px_30px] p-[30px_20px_30px_17px] 3xl:mt-[206px] md2:mt-[72px] h-[max-content] md2:mb-[7px] mb-[72px]">
             <div>
               <Image
                 src="/icons/AIGeneratedAuditFramework.svg"
@@ -202,16 +188,7 @@ function Effective({ handleModal }) {
               </div>
             </div>
           </div>
-          <div className="md2:hidden flex flex-col justify-center text-center items-center mb-[7px]">
-            <Image
-              src="/icons/line-effective-1.svg"
-              width={2}
-              height={58}
-              alt="triangle"
-              className="mx-auto"
-            />
-          </div>
-          <div className="flex flex-row md2:gap-[25px] gap-[8px] border-blue border-[2px] rounded-[30px] 2xl:p-[42px_30px] p-[30px_20px_30px_30px] h-[max-content] md2:order-[0] md2:mb-[0] mb-[8px] -order-1">
+          <div className="flex z-[1] bg-black flex-row md2:gap-[25px] gap-[8px] border-blue border-[2px] rounded-[30px] 2xl:p-[42px_30px] p-[30px_20px_30px_30px] h-[max-content] md2:order-[0] md2:mb-[0] mb-[72px] -order-1">
             <div>
               <Image
                 src="/icons/ClickAuditRequest.svg"
@@ -230,7 +207,7 @@ function Effective({ handleModal }) {
               </div>
             </div>
           </div>
-          <div className="flex flex-row md2:gap-[25px] gap-[8px] border-blue border-[2px] rounded-[30px] 2xl:p-[42px_30px] p-[30px_20px_30px_17px] 3xl:mt-[206px] md2:mt-[138px] h-[max-content] md2:mb-[0] mb-[5px]">
+          <div className="flex flex-row z-[1] bg-black md2:gap-[25px] gap-[8px] border-blue border-[2px] rounded-[30px] 2xl:p-[42px_30px] p-[30px_20px_30px_17px] 3xl:mt-[206px] md2:mt-[138px] h-[max-content] md2:mb-[0] mb-[72px]">
             <div>
               <Image
                 src="/icons/AuditorAssignment.svg"
@@ -251,15 +228,10 @@ function Effective({ handleModal }) {
               </div>
             </div>
           </div>
-          <div className="md2:hidden flex flex-col justify-center text-center items-center mb-[3px]">
-            <Image
-              src="/icons/line-effective-2.svg"
-              width={2}
-              height={58}
-              alt="triangle"
-              className="mx-auto"
-            />
-          </div>
+          <object type="image/svg+xml" data="/icons/bg-line-effective-mobile.svg" width={10} className="absolute h-[100%] md2:hidden block w-[100%]"
+            height={105}>
+            Ваш браузер не поддерживает SVG
+          </object>
         </div>
         <div className="text-center relative w-full flex items-center justify-center md2:flex hidden">
           <Image

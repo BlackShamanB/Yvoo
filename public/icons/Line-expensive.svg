@@ -1,3 +1,7 @@
-<svg width="2" height="66" viewBox="0 0 2 66" fill="none" xmlns="http://www.w3.org/2000/svg">
-<line x1="1" y1="1" x2="0.999997" y2="65" stroke="black" stroke-width="2" stroke-linecap="round" stroke-dasharray="2 10"/>
+<svg width="10" height="847" viewBox="0 0 10 847" fill="none" xmlns="http://www.w3.org/2000/svg">
+<line x1="5" y1="1" x2="5" y2="846" stroke="black" stroke-width="2" stroke-linecap="round" stroke-dasharray="2 10"/>
+<circle cx="5" cy="6" r="5" fill="#06D7F9">
+    <animate attributeName="cy" from="1" to="842" dur="6s" begin="0s; anim2.end" fill="freeze" id="anim1" />
+    <animate attributeName="cy" from="842" to="1" dur="6s" begin="anim1.end" fill="freeze" id="anim2" />
+</circle>
 </svg>
