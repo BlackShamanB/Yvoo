@@ -2,7 +2,7 @@ function SimpleSteps({ handleModal }) {
   return (
     <div className="w-full px-[22px] md:px-[85px] 2xl:px-[162px] 3xl:px-[202px] py-[98px] md:py-[95px] 2xl:py-[92px] 3xl:py-[100px]">
       <h1
-        className="md:px-[0] px-[19px] mb-[40px] md:mb-[62px] 2xl:mb-[42px] text-[#06D7F9] font-machina font-[800] uppercase text-[30px] md:text-[40px] 2xl:text-[50px] leading-[34px] md:leading-[44px] 2xl:leading-[54px] max-w-full sm:max-w-[600px] md:max-w-[423px] 2xl:max-w-[529px]"
+        className="md:px-[0] px-[19px] mb-[40px] md:mb-[62px] 2xl:mb-[42px] text-[#06D7F9] font-inter font-[800] uppercase text-[30px] md:text-[40px] 2xl:text-[50px] leading-[34px] md:leading-[44px] 2xl:leading-[54px] max-w-full sm:max-w-[600px] md:max-w-[423px] 2xl:max-w-[529px]"
         data-scroll
         data-scroll-speed="0.1"
       >
@@ -14,7 +14,7 @@ function SimpleSteps({ handleModal }) {
         data-scroll-speed="0.15"
       >
         <div className="flex-1 flex 2xl:gap-6 md:gap-[17px] gap-[12px] basis-[320px]">
-          <h1 className="text-primary font-machina font-[800] uppercase text-[30px] md:text-[40px] 2xl:text-[50px] leading-[34px] md:leading-[44px] 2xl:leading-[54px]">
+          <h1 className="text-primary font-inter font-[800] uppercase text-[30px] md:text-[40px] 2xl:text-[50px] leading-[34px] md:leading-[44px] 2xl:leading-[54px]">
             1
           </h1>
           <p className="font-[400] text-[14px] md:text-[16px] leading-[20px] mb-6 md:max-w-[unset] 2xl:max-w-[619px] 2xl:pt-[0] pt-[5px]">
@@ -27,7 +27,7 @@ function SimpleSteps({ handleModal }) {
           </p>
         </div>
         <div className="flex-1 flex 2xl:gap-6 md:gap-[12px] gap-[8px] basis-[320px]">
-          <h1 className="text-primary font-machina font-[800] uppercase text-[30px] md:text-[40px] 2xl:text-[50px] leading-[34px] md:leading-[44px] 2xl:leading-[50px]">
+          <h1 className="text-primary font-inter font-[800] uppercase text-[30px] md:text-[40px] 2xl:text-[50px] leading-[34px] md:leading-[44px] 2xl:leading-[50px]">
             2
           </h1>
           <p className="font-[400] text-[14px] md:text-[16px] leading-[20px] mb-6 md:max-w-[unset] 2xl:max-w-[619px] 2xl:pt-[0] pt-[5px]">

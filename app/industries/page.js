@@ -42,7 +42,7 @@ export default function Home() {
           
           data-scroll data-scroll-speed="0.16"
         />
-          <h1 className="uppercase font-machina font-[800] text-[40px] md:text-[50px] 2xl:text-[60px] leading-[34px] md:leading-[54px] 2xl:leading-[64px]"
+          <h1 className="uppercase font-inter font-[800] text-[40px] md:text-[50px] 2xl:text-[60px] leading-[34px] md:leading-[54px] 2xl:leading-[64px]"
           data-scroll data-scroll-speed="0.15">
             Industries
           </h1>

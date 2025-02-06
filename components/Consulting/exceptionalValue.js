@@ -26,7 +26,7 @@ function ExceptionalValue() {
       </div>
       <div className="px-[20px] w-full bg-white flex">
         <div className="ml-[21px] md:ml-[65px] 2xl:ml-[35px] 3xl:ml-[65px] my-[18px] md:mt-[-4px] 2xl:mt-[174px] 3xl:mt-[231px] mb-[100px] md:mb-[120px] 2xl:mb-[182px] 3xl:mb-[231px] flex flex-col 2xl:gap-[31px] md:gap-[21px] gap-[18px]">
-          <h1 className="break-all text-[#06D7F9] font-machina font-[800] uppercase text-[30px] md:text-[40px] 2xl:text-[50px] leading-[34px] md:leading-[44px] 2xl:leading-[54px]"
+          <h1 className="break-all text-[#06D7F9] font-inter font-[800] uppercase text-[30px] md:text-[40px] 2xl:text-[50px] leading-[34px] md:leading-[44px] 2xl:leading-[54px]"
         data-scroll
         data-scroll-speed="0.14">
             Exceptional <br />

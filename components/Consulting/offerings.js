@@ -2,7 +2,7 @@ function Offerings() {
   return (
     <div className="grid grid-cols-1 2xl:grid-cols-3 w-full bg-black">
       <div className="px-[41px] md:px-[85px] 2xl:px-[162px] 3xl:px-[202px] py-[98px] md:py-[135px] 2xl:py-[190px] md:pb-[65px] pb-[62px] w-full flex items-center">
-        <h1 className="text-white font-machina font-[800] uppercase text-[30px] md:text-[40px] 2xl:text-[50px] font-[800] leading-[34px] md:leading-[44px] 2xl:leading-[54px]"
+        <h1 className="text-white font-inter font-[800] uppercase text-[30px] md:text-[40px] 2xl:text-[50px] font-[800] leading-[34px] md:leading-[44px] 2xl:leading-[54px]"
         data-scroll
         data-scroll-speed="0.15">
           Our <br />

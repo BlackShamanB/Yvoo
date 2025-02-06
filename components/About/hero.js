@@ -3,7 +3,7 @@ function Hero() {
     <div className="w-full px-[41px] 3xl:px-[202px] 2xl:px-[162px] py-[39px] 2xl:pt-[118px] 3xl:pb-[198px] 2xl:pb-[138px] pb-[100px] 3xl:bg-aboutBg3xl 2xl:bg-aboutBg2xl bg-aboutBg bg-no-repeat bg-right-top">
       <div className="py-[36px] 2xl:mb-[53px] mb-[29px]">
         <h1
-          className="text-[#00D1EF] uppercase font-machina font-[800] text-[40px] 2xl:text-[60px] leading-[44px] 2xl:leading-[60px]"
+          className="text-[#00D1EF] uppercase font-inter font-[800] text-[40px] 2xl:text-[60px] leading-[44px] 2xl:leading-[60px]"
           data-scroll
           data-scroll-speed="0.1"
         >

@@ -15,7 +15,7 @@ function Why() {
       />
       <div className="relative flex pr-[41px] md:pr-[0] pl-[41px] md:pl-[85px] 2xl:pl-[162px] 3xl:pl-[202px] 3xl:pb-[583px] md:pt-[178px] pt-[98px] w-full bg-white 3xl:max-h-[875px] 2xl:max-h-[789px]">
         <h1
-          className="w-full text-black font-machina font-[800] uppercase text-[30px] md:text-[40px] 2xl:text-[50px] leading-[34px] md:leading-[44px] 2xl:leading-[54px] z-[1]"
+          className="w-full text-black font-inter font-[800] uppercase text-[30px] md:text-[40px] 2xl:text-[50px] leading-[34px] md:leading-[44px] 2xl:leading-[54px] z-[1]"
           data-scroll
           data-scroll-speed="0.2"
         >

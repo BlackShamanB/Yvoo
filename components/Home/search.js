@@ -73,7 +73,7 @@ function Search({ handleModal }) {
               data-scroll-speed="0.2"
             >
               <h1
-                className="uppercase font-machina font-[800] 2xl:text-[50px] md:text-[40px] text-[30px] 2xl:leading-[54px] md:leading-[44px] leading-[34px] max-w-[318px] 2xl:max-w-[438px] 3xl:ml-[153px] 2xl:ml-[0]"
+                className="uppercase font-inter font-[800] 2xl:text-[50px] md:text-[40px] text-[30px] 2xl:leading-[54px] md:leading-[44px] leading-[34px] max-w-[318px] 2xl:max-w-[438px] 3xl:ml-[153px] 2xl:ml-[0]"
                 ref={elementRef}
                 style={{
                   visibility: elementVisible ? "visible" : "hidden",

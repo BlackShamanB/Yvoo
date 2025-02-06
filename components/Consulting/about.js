@@ -15,7 +15,7 @@ function About() {
       />
       <div className="grid grid-cols-1 md:grid-cols-2 2xl:grid-cols-3 3xl:gap-[332px] 2xl:gap-[100px] md:gap-[57px] gap-[54px]">
         <h1
-          className="font-machina uppercase text-black text-[30px] md:text-[40px] 2xl:text-[50px] font-[800] leading-[34px] md:leading-[44px] 2xl:leading-[54px]"
+          className="font-inter uppercase text-black text-[30px] md:text-[40px] 2xl:text-[50px] font-[800] leading-[34px] md:leading-[44px] 2xl:leading-[54px]"
           data-scroll
           data-scroll-speed="0.12"
         >

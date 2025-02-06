@@ -6,7 +6,7 @@ function Hero() {
       {/* <div className="absolute inset-0 bg-black opacity-50"></div> */}
       <div className="w-full 3xl:max-w-[1514px] 2xl:max-w-[1116px] md:max-w-[598px] flex flex-col justify-start relative z-10">
         <div className="flex flex-col 2xl:gap-[55px] md:gap-[44px] gap-[26px]">
-          <h1 className="uppercase font-machina text-[30px] md:text-[40px] 2xl:text-[50px] font-[800] leading-[34px] md:leading-[44px] 2xl:leading-[54px] max-w-[598px] xl:max-w-[880px]"
+          <h1 className="uppercase font-inter text-[30px] md:text-[40px] 2xl:text-[50px] font-[800] leading-[34px] md:leading-[44px] 2xl:leading-[54px] max-w-[598px] xl:max-w-[880px]"
         data-scroll
         data-scroll-speed="0.15">
             Welcome to

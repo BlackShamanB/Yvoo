@@ -8,7 +8,7 @@ function Hero() {
       <div className="w-full 3xl:max-w-[1516px] 2xl:max-w-[1116px] relative z-10">
         <div className="w-fit flex flex-col 2xl:gap-[58px] md:gap-[43px] gap-[29px] 2xl:h-full justify-between justify-start 3xl:max-w-[unset] md:max-w-[432px]">
           <h1
-            className="uppercase font-machina text-[#06D7F9] text-[40px] md:text-[50px] 2xl:text-[60px] font-[800] leading-[44px] md:leading-[54px] 2xl:leading-[64px]"
+            className="uppercase font-inter text-[#06D7F9] text-[40px] md:text-[50px] 2xl:text-[60px] font-[800] leading-[44px] md:leading-[54px] 2xl:leading-[64px]"
             data-scroll
             data-scroll-speed="0.1"
           >

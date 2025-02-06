@@ -127,7 +127,7 @@ function Contact() {
   return (
     <div className="flex flex-col gap-[70px] md:gap-[100px] 2xl:gap-[104px] 3xl:gap-[133px] w-full px-[41px] md:px-[85px] 2xl:px-[162px] 3xl:px-[202px] pt-[98px] md:pt-[154px] 2xl:pt-[212px] pb-[98px] md:pb-[143px] 2xl:pb-[172px] bg-[#131D2A]">
       <div className="flex 2xl:flex-row flex-col 3xl:gap-[277px] 2xl:gap-[117px] md:gap-[58px] gap-[54px]">
-        <h1 className="font-machina uppercase text-[#06D7F9] font-[800] text-[30px] md:text-[50px] leading-[34px] md:leading-[54px] text-nowrap"
+        <h1 className="font-inter uppercase text-[#06D7F9] font-[800] text-[30px] md:text-[50px] leading-[34px] md:leading-[54px] text-nowrap"
         data-scroll
         data-scroll-speed="0.15">
           Contact us

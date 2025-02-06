@@ -71,7 +71,7 @@ function HowItWorks() {
         </div>
       </div>
       <h1
-        className="text-black mb-[14px] md:mb-[21px] 2xl:mb-[30px] max-w-[300px] font-machina font-[800] uppercase text-[30px] md:text-[40px] 2xl:text-[50px] leading-[34px] md:leading-[44px] 2xl:leading-[54px]"
+        className="text-black mb-[14px] md:mb-[21px] 2xl:mb-[30px] max-w-[300px] font-inter font-[800] uppercase text-[30px] md:text-[40px] 2xl:text-[50px] leading-[34px] md:leading-[44px] 2xl:leading-[54px]"
         data-scroll
         data-scroll-speed="0.2"
       >
@@ -92,7 +92,7 @@ function HowItWorks() {
         </div>
         <div className="border border-[#53D3AA] border-solid md:mt-[-8px] md:mb-[10px] 2xl:hidden block"></div>
         <div className="[&>*]:text-black flex flex-col 3xl:gap-[14px] md:gap-[19px] gap-[10px] md2:max-w-[306px] 2xl:max-w-[400px] 3xl:mt-[-60px] 2xl:mt-[-62px]">
-          <h1 className="!text-[#53D3AA] font-machina font-[800] uppercase text-[30px] md:text-[40px] leading-[34px] md:leading-[36px] md:leading-[40px]">
+          <h1 className="!text-[#53D3AA] font-inter font-[800] uppercase text-[30px] md:text-[40px] leading-[34px] md:leading-[36px] md:leading-[40px]">
             STEP 1
           </h1>
           <p className="font-[400] text-[14px] md:text-[16px] leading-[20px] 2xl:mb-6 md:mb-[12px]">
@@ -101,7 +101,7 @@ function HowItWorks() {
           </p>
         </div>
         <div className="[&>*]:text-black flex flex-col 3xl:gap-[14px] md:gap-[19px] gap-[10px] md2:max-w-[306px] 2xl:max-w-[400px] 3xl:mt-[-60px] 2xl:mt-[-62px]">
-          <h1 className="!text-[#53D3AA] font-machina font-[800] uppercase text-[30px] md:text-[40px] leading-[34px] md:leading-[36px] md:leading-[40px]">
+          <h1 className="!text-[#53D3AA] font-inter font-[800] uppercase text-[30px] md:text-[40px] leading-[34px] md:leading-[36px] md:leading-[40px]">
             STEP 2
           </h1>
           <p className="font-[400] text-[14px] md:text-[16px] leading-[20px] 2xl:mb-6 md:mb-[12px]">
@@ -122,7 +122,7 @@ function HowItWorks() {
         data-scroll-speed="0.12"
       >
         <div className="[&>*]:text-black flex flex-col 3xl:gap-[14px] md:gap-[19px] gap-[10px] md2:max-w-[306px] 2xl:max-w-[400px]">
-          <h1 className="!text-[#53D3AA] font-machina font-[800] uppercase text-[30px] md:text-[40px] leading-[34px] leading-[36px] md:leading-[40px]">
+          <h1 className="!text-[#53D3AA] font-inter font-[800] uppercase text-[30px] md:text-[40px] leading-[34px] leading-[36px] md:leading-[40px]">
             STEP 3
           </h1>
           <p className="font-[400] text-[14px] md:text-[16px] leading-[20px] 2xl:mb-6 md:mb-[12px]">
@@ -132,7 +132,7 @@ function HowItWorks() {
           </p>
         </div>
         <div className="[&>*]:text-black flex flex-col 3xl:gap-[14px] md:gap-[19px] gap-[10px] md2:max-w-[306px] 2xl:max-w-[400px]">
-          <h1 className="!text-[#53D3AA] font-machina font-[800] uppercase text-[30px] md:text-[40px] leading-[34px] leading-[36px] md:leading-[40px]">
+          <h1 className="!text-[#53D3AA] font-inter font-[800] uppercase text-[30px] md:text-[40px] leading-[34px] leading-[36px] md:leading-[40px]">
             STEP 4
           </h1>
           <p className="font-[400] text-[14px] md:text-[16px] leading-[20px] 2xl:mb-6 md:mb-[12px]">
@@ -142,7 +142,7 @@ function HowItWorks() {
           </p>
         </div>
         <div className="[&>*]:text-black flex flex-col 3xl:gap-[14px] md:gap-[19px] gap-[10px] md2:max-w-[306px] 2xl:max-w-[400px]">
-          <h1 className="!text-[#53D3AA] font-machina font-[800] uppercase text-[30px] md:text-[40px] leading-[34px] md:leading-[40px]">
+          <h1 className="!text-[#53D3AA] font-inter font-[800] uppercase text-[30px] md:text-[40px] leading-[34px] md:leading-[40px]">
             STEP 5
           </h1>
           <p className="font-[400] text-[14px] md:text-[16px] leading-[20px] 2xl:mb-6 md:mb-[12px]">

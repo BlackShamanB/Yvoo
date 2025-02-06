@@ -36,7 +36,7 @@ function SearchPro() {
         </div>
       </div>
       <div className="[&>*]:text-black w-full 3xl:max-w-[735px] 2xl:max-w-[598px] md:max-w-[unset] 3xl:pt-[100px] 2xl:pt-[94px] pt-[100px] 3xl:pl-[63px] 3xl:pr-[0] 2xl:pr-[114px]" data-scroll data-scroll-speed="0.125">
-        <h1 className="2xl:mb-[24px] md:mb-[16px] mb-[12px] max-w-[514px] font-machina font-[800] uppercase text-[30px] md:text-[40px] 2xl:text-[50px] leading-[34px] md:leading-[44px] 2xl:leading-[50px] 3xl:ml-[0] 2xl:ml-[-19px]">
+        <h1 className="2xl:mb-[24px] md:mb-[16px] mb-[12px] max-w-[514px] font-inter font-[800] uppercase text-[30px] md:text-[40px] 2xl:text-[50px] leading-[34px] md:leading-[44px] 2xl:leading-[50px] 3xl:ml-[0] 2xl:ml-[-19px]">
           YVOO <br></br><b className="text-white font-[800]">Search</b>
           Pro+
         </h1>

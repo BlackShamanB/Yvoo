@@ -31,7 +31,7 @@ function BuyerSupplier({ handleModal }) {
         <div className="flex-start gap-[34px] 2xl:mb-[20px] md:mb-[95px] mb-[48px] cursor-pointer mx-auto">
           <div className="flex flex-col 2xl:gap-[32px] md:gap-[22px] gap-[17px] text-center">
             <h1
-              className="font-machina text-[#FFF] uppercase font-[800] text-[40px] md:text-[50px] 2xl:text-[60px] leading-[44px] md:leading-[54px] 2xl:leading-[64px]"
+              className="font-inter text-[#FFF] uppercase font-[800] text-[40px] md:text-[50px] 2xl:text-[60px] leading-[44px] md:leading-[54px] 2xl:leading-[64px]"
               style={{ color: isHoveredBuyer ? "#06D7F9" : "#FFF" }}
             >
               Buyer
@@ -113,7 +113,7 @@ function BuyerSupplier({ handleModal }) {
         <div className="flex-start flex-row-reverse gap-[80px] mx-auto">
           <div className="flex flex-col items-center 2xl:gap-[33px] gap-[0]">
             <h1
-              className="font-machina uppercase font-[800] text-[40px] md:text-[50px] 2xl:text-[60px] leading-[44px] md:leading-[54px] 2xl:leading-[64px] 2xl:mb-[0] md:mb-[22px] mb-[17px]"
+              className="font-inter uppercase font-[800] text-[40px] md:text-[50px] 2xl:text-[60px] leading-[44px] md:leading-[54px] 2xl:leading-[64px] 2xl:mb-[0] md:mb-[22px] mb-[17px]"
               style={{ color: isHoveredSupplier ? "#53D3AA" : "#FFF" }}
             >
               Supplier

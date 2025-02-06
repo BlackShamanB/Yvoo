@@ -10,7 +10,7 @@ function Security() {
               data-scroll-speed="0.1"
             ></div>
             <h1
-              className="font-machina uppercase text-black font-[700] text-[30px] md:text-[40px] 2xl:text-[50px] leading-[34px] md:leading-[44px] 2xl:leading-[54px] z-[1] 2xl:mt-[0] mt-[78px]"
+              className="font-inter uppercase text-black font-[700] text-[30px] md:text-[40px] 2xl:text-[50px] leading-[34px] md:leading-[44px] 2xl:leading-[54px] z-[1] 2xl:mt-[0] mt-[78px]"
               data-scroll
               data-scroll-speed="0.15"
             >

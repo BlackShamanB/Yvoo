@@ -3,7 +3,7 @@ function Potential() {
     <div className="flex flex-col gap-[80px] 2xl:gap-[165px] w-full px-[41px] 2xl:px-[162px] 3xl:px-[202px] pt-[98px] 2xl:pt-[156px] pb-[54px] md:pb-[139px] 2xl:pb-[137px] bg-white">
       <div className="grid grid-cols-1 md:grid-cols-2 3xl:gap-[170px] 2xl:gap-[110px] gap-[55px]">
         <h1
-          className="font-machina uppercase text-[#06D7F9] font-[800] text-[30px] md:text-[30px] 2xl:text-[50px] leading-[34px] md:leading-[44px] 2xl:leading-[54px]"
+          className="font-inter uppercase text-[#06D7F9] font-[800] text-[30px] md:text-[30px] 2xl:text-[50px] leading-[34px] md:leading-[44px] 2xl:leading-[54px]"
           data-scroll
           data-scroll-speed="0.1"
         >

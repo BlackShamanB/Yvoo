@@ -36,7 +36,7 @@ function ScanPro() {
         data-scroll
         data-scroll-speed="0.15"
       >
-        <h1 className="2xl:mb-[31px] md:mb-[21px] mb-[15px] max-w-[214px] font-machina font-[800] uppercase text-[30px] md:text-[40px] 2xl:text-[50px] leading-[34px] md:leading-[44px] 2xl:leading-[50px]">
+        <h1 className="2xl:mb-[31px] md:mb-[21px] mb-[15px] max-w-[214px] font-inter font-[800] uppercase text-[30px] md:text-[40px] 2xl:text-[50px] leading-[34px] md:leading-[44px] 2xl:leading-[50px]">
           YVOO <b className="text-[#53D3AA] font-[800]">Scan</b>
           Pro+
         </h1>

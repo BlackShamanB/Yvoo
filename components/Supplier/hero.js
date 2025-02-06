@@ -94,7 +94,7 @@ function Hero() {
       <div className="grid grid-cols-1 sm:grid-cols-2 w-full 3xl:gap-[169px] 2xl:gap-[109px] gap-[103px]">
         <div className="flex flex-col 2xl:gap-[55px] gap-[26px] break-words">
           <h1
-            className="uppercase font-machina text-[30px] md:text-[30px] 2xl:text-[50px] leading-[34px] md:leading-[44px] 2xl:leading-[54px] font-[800] max-w-[530px]"
+            className="uppercase font-inter text-[30px] md:text-[30px] 2xl:text-[50px] leading-[34px] md:leading-[44px] 2xl:leading-[54px] font-[800] max-w-[530px]"
             data-scroll
             data-scroll-speed="0.1"
           >

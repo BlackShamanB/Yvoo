@@ -260,7 +260,7 @@ function Effective({ handleModal }) {
             />
           </div>
           <div className="relative self-center text-center">
-            <div className="absolute md2:top-[370px] top-[157px] md2:left-[153px] md2:right-[unset] right-[-14px] z-[3]">
+            <div className="absolute md2:top-[370px] top-[157px] md2:left-[153px] md2:right-[unset] right-[-14px] z-[11]">
               <div
                 className={`relative bg-white md2:rounded-[30px] rounded-[12px] md2:p-[36px_30px_26px] p-[16px_6px_12px_12px] custom-shadow mb-[20px] card text-left md2:max-w-[unset] max-w-[134px]`}
               >

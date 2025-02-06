@@ -52,7 +52,7 @@ const Post = ({ post }) => {
   return (
     <div className="bg-white flex justify-center md:pt-[74px] pt-[58px] md:pb-[164px] pb-[120px]">
       <div className="3xl:max-w-[1207px] 2xl:max-w-[888px] md:max-w-[720px] md:mx-[20px] md:px-[0] px-[12px]">
-        <h1 className="text-black 2xl:text-[50px] md:text-[40px] text-[30px] 2xl:leading-[54px] md:leading-[44px] leading-[34px] font-[800] 2xl:mb-[50px] md:mb-[40px] mb-[24px] uppercase font-machina">
+        <h1 className="text-black 2xl:text-[50px] md:text-[40px] text-[30px] 2xl:leading-[54px] md:leading-[44px] leading-[34px] font-[800] 2xl:mb-[50px] md:mb-[40px] mb-[24px] uppercase font-inter">
           {title}
         </h1>
         <div className="flex items-center md:mb-[26px] mb-[29px] md:flex-nowrap flex-wrap">

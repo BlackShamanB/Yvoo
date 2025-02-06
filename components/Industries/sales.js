@@ -13,7 +13,7 @@ function Sales({ handleModal }) {
         className="px-[41px] 2xl:px-[50px] bg-white pt-[95px] md:pt-[0] pb-[60px] md:pb-[0] md:flex-center flex-col h-fit md:h-[918px] 2xl:h-[1038px] 3xl:h-[1047px]"
       >
         <div className="flex flex-wrap md:flex-nowrap md:flex-col 2xl:gap-[30px] gap-[22px] 2xl:ml-[112px] 3xl:ml-[152px] md:mt-[184px] md:mb-[568px] 3xl:max-w-[unset] max-w-[503px]">
-          <h1 className="uppercase font-machina font-[800] text-black text-[30px] md:text-[40px] 2xl:text-[50px] leading-[34px] md:leading-[44px] 2xl:leading-[54px] max-w-[318px] 2xl:max-w-[472px]"
+          <h1 className="uppercase font-inter font-[800] text-black text-[30px] md:text-[40px] 2xl:text-[50px] leading-[34px] md:leading-[44px] 2xl:leading-[54px] max-w-[318px] 2xl:max-w-[472px]"
             data-scroll
             data-scroll-speed="0.18">
             Automotive

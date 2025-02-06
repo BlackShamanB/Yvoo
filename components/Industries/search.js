@@ -33,7 +33,7 @@ function Search({ handleModal }) {
             data-scroll-speed="0.1"
           />
           </div>
-          <h1 className="uppercase font-machina text-black font-[800] text-[30px] md:text-[40px] 2xl:text-[50px] leading-[34px] md:leading-[44px] 2xl:leading-[54px] z-[1]" data-scroll
+          <h1 className="uppercase font-inter text-black font-[800] text-[30px] md:text-[40px] 2xl:text-[50px] leading-[34px] md:leading-[44px] 2xl:leading-[54px] z-[1]" data-scroll
             data-scroll-speed="0.1">
             Plant
             <br /> Engineering

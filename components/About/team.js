@@ -14,7 +14,7 @@ function Team() {
           data-scroll
           data-scroll-speed="0.2"
         />
-        <h1 className="text-black font-machina font-[800] uppercase text-[30px] 2xl:text-[50px] leading-[34px] 2xl:leading-[54px] mb-[63px] 2xl:mb-[104px] 3xl:mb-[113px]"
+        <h1 className="text-black font-inter font-[800] uppercase text-[30px] 2xl:text-[50px] leading-[34px] 2xl:leading-[54px] mb-[63px] 2xl:mb-[104px] 3xl:mb-[113px]"
           data-scroll
           data-scroll-speed="0.15">
           Our <br />

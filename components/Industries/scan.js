@@ -55,7 +55,7 @@ function Scan({ handleModal }) {
       >
         <div className="mb-[140px] md:mb-0 md2:ml-[37px] md:mt-[134px] flex flex-col 3xl:gap-[24px] gap-[20px] text-black font-[400] leading-[20px] [&>p]:text-[14px] [&>p]:md:text-[16px] 3xl:max-w-[671px] max-w-[479px]">
           <h1
-            className="break-all uppercase font-machina font-[800] text-black text-[30px] md:text-[40px] 2xl:text-[50px] leading-[34px] md:leading-[44px] 2xl:leading-[54px] 3xl:mb-[9px] 2xl:mb-[11px] mb-[0px]"
+            className="break-all uppercase font-inter font-[800] text-black text-[30px] md:text-[40px] 2xl:text-[50px] leading-[34px] md:leading-[44px] 2xl:leading-[54px] 3xl:mb-[9px] 2xl:mb-[11px] mb-[0px]"
             data-scroll
             data-scroll-speed="0.18"
           >
