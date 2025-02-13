@@ -17,6 +17,17 @@ export default function Home() {
   const containerRef = useRef(null);
 
   useEffect(() => {
+    const script = document.createElement('script');
+    script.src = 'https://interfaces.zapier.com/assets/web-components/zapier-interfaces/zapier-interfaces.esm.js';
+    script.async = true;
+    script.type = 'module';
+    document.body.appendChild(script);
+
+    return () => {
+      document.body.removeChild(script);
+    };
+  }, []);
+  useEffect(() => {
     
     // import('locomotive-scroll').then((locomotiveModule) => {
     //   const LocomotiveScroll = locomotiveModule.default;
@@ -42,6 +53,11 @@ export default function Home() {
       <Sales/>
       <Auditor />
       {/* <ModalRequest onClose={handleModal} visible={openModalRequest} /> */}
+      <div
+        dangerouslySetInnerHTML={{
+          __html: `<zapier-interfaces-chatbot-embed is-popup='true' chatbot-id='cm71oln5c0015bl9p6hf3z30g'></zapier-interfaces-chatbot-embed>`,
+        }}
+      />
     </main>
   );
 }
