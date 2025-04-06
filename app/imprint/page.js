@@ -48,7 +48,7 @@ export default function Solutions() {
         <div className="md2:text-[30px] text-[20px] md2:leading-[38px] leading-[28px] font-[400] mb-[60px]">
           (Legal Disclosure)
         </div>
-        <div className="md2:text-[24px] text-[16px] md2:leading-[40px] leading-[28px] font-[400] mb-[60px]">
+        <div className="md2:text-[20px] text-[16px] md2:leading-[40px] leading-[28px] font-[400] mb-[60px]">
           YVOO Technologies d.o.o.
           <br />
           Ulica Vjekoslava Novotnija 12, 10000 Zagreb, Croatia
@@ -84,7 +84,7 @@ export default function Solutions() {
           .
         </div>
         <div className="md2:text-[30px] text-[20px] md2:leading-[38px] leading-[28px] font-[700] mb-[20px]">Contact</div>
-        <div className="md2:text-[24px] text-[16px] md2:leading-[40px] leading-[28px] font-[400]">
+        <div className="md2:text-[20px] text-[16px] md2:leading-[40px] leading-[28px] font-[400]">
           For all inquiries regarding Information Security, please contact our
           Information Security
           <br />
