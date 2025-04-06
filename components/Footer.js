@@ -29,8 +29,8 @@ const Footer = () => {
     { name: "Industries", link: "/industries" },
   ];
   const secondLinks = [
-    { name: "Terms of Service", link: "/" },
-    { name: "Privacy Policy", link: "/" },
+    { name: "Terms of Service", link: "/terms-of-service" },
+    { name: "Privacy Policy", link: "/privacy-policy" },
     { name: "Data Processing Agreement", link: "/" },
     { name: "Imprint", link: "/imprint" },
   ];

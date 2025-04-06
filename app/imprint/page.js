@@ -104,12 +104,14 @@ export default function Solutions() {
           © Copyright YVOO Technologies d.o.o.
           <br />
           <br />
-          The content of this website may not be copied, distributed, modified,
-          or made available to third parties for commercial purposes without our
-          explicit written permission. It is forbidden to integrate, link, or
-          display this website or its content via a hyperlink in a partial
-          window (frame). It is forbidden to change or remove copyright notices,
-          brand names, or other content information.
+          <div class="md2:leading-[28px]">
+            The content of this website may not be copied, distributed, modified,
+            or made available to third parties for commercial purposes without our
+            explicit written permission. It is forbidden to integrate, link, or
+            display this website or its content via a hyperlink in a partial
+            window (frame). It is forbidden to change or remove copyright notices,
+            brand names, or other content information.
+          </div>
         </div>
       </div>
       <ModalRequest onClose={handleModal} visible={openModalRequest} />
