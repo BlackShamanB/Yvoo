@@ -45,7 +45,7 @@ export default function Solutions() {
         <div className="md2:text-[50px] text-[30px] md2:leading-[58px] leading-[38px] font-[700] text-blue md2:mb-[60px] mb-[40px]">
           TERMS OF USE
         </div>
-        <div className="md2:px-[154px]">
+        <div className="lg2:px-[154px]">
           <div className="md2:text-[24px] text-[20px] md2:leading-[30px] leading-[28px] font-[700] mb-[28px]">
             1. RECITALS
           </div>
