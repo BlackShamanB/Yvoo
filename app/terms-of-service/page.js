@@ -43,10 +43,13 @@ export default function Solutions() {
     >
       <div className="flex flex-col overflow-hidden text-black">
         <div className="md2:text-[50px] text-[30px] md2:leading-[58px] leading-[38px] font-[700] text-blue md2:mb-[60px] mb-[40px]">
-          TERMS OF USE
+        Terms of Service
         </div>
         <div className="lg2:px-[154px]">
           <div className="md2:text-[24px] text-[20px] md2:leading-[30px] leading-[28px] font-[700] mb-[28px]">
+            TERMS OF USE
+            <br/>
+            <br/>
             1. RECITALS
           </div>
           <div className="md2:text-[20px] text-[16px] md2:leading-[28px] leading-[22px] font-[400]">
@@ -81,7 +84,7 @@ export default function Solutions() {
           </div>
           <br />
           <div className="md2:text-[20px] text-[16px] md2:leading-[28px] leading-[22px] font-[700]">
-            Scope of Application
+            Definitions
           </div>
           <br />
           <div className="md2:text-[20px] text-[16px] md2:leading-[28px] leading-[22px] font-[400]">
