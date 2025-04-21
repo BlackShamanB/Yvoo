@@ -3,11 +3,11 @@
 // import { useState } from "react";
 
 import ModalRequest from "@/components/ModalRequest";
-import Experience from "@/components/360_supplier_score/experience";
-import Hero from "@/components/360_supplier_score/hero";
-import Results from "@/components/360_supplier_score/evaluationReportBreakdown";
-import SearchPro from "@/components/360_supplier_score/findSuppliers";
-import Stats from "@/components/360_supplier_score/visualEvidence ";
+import Experience from "@/components/supplier_discovery_with_matchory/experience";
+import Hero from "@/components/supplier_discovery_with_matchory/hero";
+import Results from "@/components/supplier_discovery_with_matchory/evaluationReportBreakdown";
+import SearchPro from "@/components/supplier_discovery_with_matchory/findSuppliers";
+import Stats from "@/components/supplier_discovery_with_matchory/visualEvidence ";
 import React, { useState, useEffect, useRef } from "react";
 
 export default function supplier_score() {

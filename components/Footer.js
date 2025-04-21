@@ -44,7 +44,7 @@ const Footer = () => {
     <footer
       className="bg-[#131D2A] text-white -mt-[1px] lg:pl-[100px] 3xl:pr-[48px] 2xl:pr-[49px] md:pr-[85px] pt-[60px] 2xl:pb-[92px] pb-[111px] md:pl-[85px] flex 2xl:items-start 2xl:justify-between md:flex-between flex-wrap 2xl:gap-[135px] gap-[60px] flex-col 2xl:flex-row px-[41px]"
       style={{
-        background: data == "/blog" || data == "/" || data == "/360_supplier_score" ? "transparent" : "",
+        background: data == "/blog" || data == "/" || data == "/supplier_discovery_with_matchory" ? "transparent" : "",
       }}
     >
       <Image src="/logo.svg" width={122} height={36} alt="logo" />

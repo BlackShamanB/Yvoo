@@ -3,7 +3,7 @@ function Hero() {
     setOpenModalRequest((prev) => !prev);
   };
   return (
-    <div className="relative w-full md:px-[20px] px-[41px] customsm:px-[50px] 3xl:bg-bg_360_supplier_score md:bg-solutionBgmd bg-solutionBg bg-no-repeat md:bg-contain bg-[size:100%] md:bg-[position:0_0] bg-[position:0_0%] flex justify-center 3xl:pt-[120px] md:pt-[162px] pt-[80px] xl:pb-0 md:max-h-[1008px] min-h-[820px]">
+    <div className="relative w-full md:px-[20px] px-[41px] customsm:px-[50px] 3xl:bg-bg_supplier_discovery_with_matchory md:bg-solutionBgmd bg-solutionBg bg-no-repeat md:bg-contain bg-[size:100%] md:bg-[position:0_0] bg-[position:0_0%] flex justify-center 3xl:pt-[120px] md:pt-[162px] pt-[80px] xl:pb-0 md:max-h-[1008px] min-h-[820px]">
       <div className="3xl:max-w-[1516px] 2xl:max-w-[1116px] md:max-w-[598px] mx-[auto] relative w-full">
         <h1
           className="3xl:max-w-[732px] 2xl:max-w-[530px] font-inter font-[800] 2xl:text-[50px] md:text-[40px] text-[30px] 2xl:leading-[54px] md:leading-[44px] leading-[34px] flex-1 2xl:mb-[42px] md:mb-[26px] mb-[60px]"
