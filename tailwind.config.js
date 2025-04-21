@@ -95,7 +95,8 @@ module.exports = {
         solution2Bg2xl: "url(../public/images/solution2Bg2xl.webp)",
         solution2Bgmd: "url(../public/images/solution2Bgmd.png)",
         solution2Bg: "url(../public/images/solution2Bg.png)",
-
+        evaluationReportBreakdownBG: "url(../public/icons/EvaluationReportBreakdownBG.svg)",
+        
         blogBg3xl: "url(../public/images/blogBg3xl.webp)",
         blogBg2xl: "url(../public/images/blogBg2xl.webp)",
         blogBgmd: "url(../public/images/blogBgmd.webp)",
@@ -114,6 +115,8 @@ module.exports = {
         labelBg: "url(../public/icons/bgLabel.svg)",
         auditorPhoto3xl: "url(../public/images/auditorPhoto3xl.webp)",
         auditorPhoto2xl: "url(../public/images/auditorPhoto2xl.webp)",
+
+        bg_360_supplier_score: "url(../public/images/bg_360_supplier_score.webp)",
       },
       screens: {
         xs: "361px",
