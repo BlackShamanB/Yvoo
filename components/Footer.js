@@ -47,7 +47,7 @@ const Footer = () => {
         background: data == "/blog" || data == "/" || data == "/supplier_discovery_with_matchory" ? "transparent" : "",
       }}
     >
-      <Image src="/logo.svg" width={122} height={36} alt="logo" />
+      <Image src="/icons/Logo_new.svg" width={130} height={42} alt="logo" />
       {/* <div className="flex-1 md:flex-center md:justify-between gap-8 flex-wrap"> */}
         {/* <div className="flex 2xl:gap-[84px] md:gap-[113px] gap-[102px] flex-wrap"> */}
           <ul className="flex flex-col gap-3 leading-[20px]">

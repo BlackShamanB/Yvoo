@@ -220,9 +220,9 @@ const Header = () => {
             <div className="flex-between">
               <Link href={"/"}>
                 <Image
-                  src="/logo.svg"
-                  width={118}
-                  height={34}
+                  src="/icons/Logo_new.svg"
+                  width={130}
+                  height={42}
                   alt="logo"
                   className="cursor-pointer"
                 />

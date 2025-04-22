@@ -50,9 +50,9 @@ const Post = ({ post }) => {
   }
 
   return (
-    <div className="bg-white flex justify-center md:pt-[74px] pt-[58px] md:pb-[164px] pb-[120px]">
+    <div className="bg-white flex justify-center md:pt-[80px] pt-[60px] md:pb-[180px] pb-[120px]">
       <div className="3xl:max-w-[1207px] 2xl:max-w-[888px] md:max-w-[720px] md:mx-[20px] md:px-[0] px-[12px]">
-        <h1 className="text-black 2xl:text-[50px] md:text-[40px] text-[30px] 2xl:leading-[54px] md:leading-[44px] leading-[34px] font-[800] 2xl:mb-[50px] md:mb-[40px] mb-[24px] uppercase font-inter">
+        <h1 className="text-black 2xl:text-[50px] md:text-[40px] text-[30px] 2xl:leading-[58px] md:leading-[44px] leading-[34px] font-[700] 2xl:mb-[48px] md:mb-[40px] mb-[38px] font-inter">
           {title}
         </h1>
         <div className="flex items-center md:mb-[26px] mb-[29px] md:flex-nowrap flex-wrap">
@@ -112,7 +112,7 @@ const Post = ({ post }) => {
         </div>
         <div className="flex justify-center mt-[60px]">
           <Link href={"/blog"}>
-            <div className="md:p-[16px_32px_16px_42px] p-[8px_52px_8px_53px] flex-center md:gap-[20px] gap-[16px] border-[2px] border-black md:text-[16px] text-[12px] md:leading-[24px] leading-[px] font-[500] uppercase text-black bg-white hover:text-black hover:scale-[1.02]">
+            <div className="rounded-[30px] md:p-[16px_32px] p-[14px_32px] flex-center md:gap-[20px] gap-[10px] border-[2px] border-black md:text-[16px] text-[12px] md:leading-[20px] leading-[16px] font-[500] uppercase text-black bg-white hover:text-black hover:scale-[1.02]">
               <Image
                 src={"/icons/goBack.svg"}
                 alt="back arrow"
