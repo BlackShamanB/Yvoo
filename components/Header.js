@@ -24,6 +24,8 @@ const Header = () => {
   const refO = useRef(null);
   const refEl = useRef(null);
   useEffect(() => {
+    if(!refY.current) return
+
     refY.current.classList.add("typing-char");
     setTimeout(() => {
       refV.current.classList.add("typing-char");
@@ -96,10 +98,20 @@ const Header = () => {
           width={44}
           height={34}
           alt="menu"
-          className="cursor-pointer min-w-[26px] max-w-[34px] h-[34px]"
+          className="cursor-pointer min-w-[26px] max-w-[34px] h-[34px] mr-[7px]"
         />
       </div>
-      <Link href={"/"} className="pt-[10px] typing-effect">
+      <Link href={"/"}>
+        <Image
+          onClick={toggleMenu}
+          src="/icons/Logo_new.svg"
+          width={130}
+          height={42}
+          alt="menu"
+          className="cursor-pointer md:max-w-[130px] max-w-[80px] md:max-w-[42px] max-w-[26px]"
+        />
+      </Link>
+      {/* <Link href={"/"} className="pt-[10px] typing-effect">
         <div>
           <Image
             ref={refY}
@@ -142,7 +154,7 @@ const Header = () => {
             className="relative inline -top-[4px] cursor-pointer md:max-w-[118px] max-w-[78px] top-[-9px] ml-[4px] logo-char"
           />
         </div>
-      </Link>
+      </Link> */}
 
       {!active && (
         <ul
@@ -256,11 +268,11 @@ const Header = () => {
       <div className="flex-center gap-[36px] 2lg:ml-[0] ml-[auto]">
         <button
           // className="outlined_btn btn_animated_blue"
-          className="text-black md:text-[16px] text-[12px] md:leading-[20px] leading-[16px] font-[500] md:p-[12px_24px] p-[8px_12px] md:rounded-[22px] rounded-[16px] bg-blue"
+          className="uppercase text-black md:text-[16px] text-[12px] md:leading-[20px] leading-[16px] font-[500] md:p-[12px_34px] p-[8px_12px] md:rounded-[22px] rounded-[16px] bg-blue"
           onClick={handleModal}
         >
           Book Demo
-        </button>
+        </button> 
       </div>
       <ModalRequest onClose={handleModal} visible={openModalRequest} />
     </div>
