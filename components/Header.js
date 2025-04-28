@@ -108,7 +108,7 @@ const Header = () => {
           width={130}
           height={42}
           alt="menu"
-          className="cursor-pointer md:max-w-[130px] max-w-[80px] md:max-w-[42px] max-w-[26px]"
+          className="cursor-pointer md:max-w-[130px] max-w-[80px] md:max-h-[42px] max-h-[26px]"
         />
       </Link>
       {/* <Link href={"/"} className="pt-[10px] typing-effect">

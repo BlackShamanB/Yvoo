@@ -23,12 +23,19 @@ const Footer = () => {
   const firstLinks = [
     // { name: "Home", link: "/" },
     { name: "Solutions", link: "/solutions" },
-    { name: "For auditors", link: "/auditors" },
-    { name: "For Supplier", link: "/about" },
-    { name: "Blog", link: "/blog" },
-    { name: "Industries", link: "/industries" },
+    { name: "1-Click Audit", link: "/" },
+    { name: "360° Supplier Score ", link: "/supplier_discovery_with_matchory" },
+    { name: "Supplier Discovery\n with Matchory", link: "/" },
+    { name: "Consulting", link: "/consulting" },
   ];
   const secondLinks = [
+    { name: "Pricing", link: "/pricing" },
+    { name: "For Auditors", link: "/auditors" },
+    { name: "For Supplier", link: "/supplier" },
+    { name: "Blog", link: "/blog" },
+    { name: "Industries", link: "/industries" },
+  ]
+  const threeLinks = [
     { name: "Terms of Service", link: "/terms-of-service" },
     { name: "Privacy Policy", link: "/privacy-policy" },
     { name: "Data Processing Agreement", link: "/" },
@@ -39,7 +46,6 @@ const Footer = () => {
     setOpenModalRequest((prev) => !prev);
   };
   const { data } = useData();
-  console.log(data);
   return (
     <footer
       className="bg-[#131D2A] text-white -mt-[1px] lg:pl-[100px] 3xl:pr-[48px] 2xl:pr-[49px] md:pr-[85px] pt-[60px] 2xl:pb-[92px] pb-[111px] md:pl-[85px] flex 2xl:items-start 2xl:justify-between md:flex-between flex-wrap 2xl:gap-[135px] gap-[60px] flex-col 2xl:flex-row px-[41px]"
@@ -50,7 +56,8 @@ const Footer = () => {
       <Image src="/icons/Logo_new.svg" width={130} height={42} alt="logo" />
       {/* <div className="flex-1 md:flex-center md:justify-between gap-8 flex-wrap"> */}
         {/* <div className="flex 2xl:gap-[84px] md:gap-[113px] gap-[102px] flex-wrap"> */}
-          <ul className="flex flex-col gap-3 leading-[20px]">
+        <div className="flex flex-row gap-[24px]">
+          <ul className="flex flex-col gap-3 leading-[20px] max-w-[284px]">
             {firstLinks.map((link) => {
               return (
                 <Link href={link.link} legacyBehavior>
@@ -70,6 +77,25 @@ const Footer = () => {
           </ul>
           <ul className="flex flex-col gap-3 leading-[20px]">
             {secondLinks.map((link) => {
+              return (
+                <Link href={link.link} legacyBehavior>
+                  <div
+                    key={link.link}
+                    className="text-whte text-[20px] leading-[26px] font-[400] relative inline-block text-white pseudo-text-effect cursor-pointer"
+                    data-after={link.name}
+                  >
+                    <a className="group" href={link.link}>
+                      {link.name}
+                      {/* <span className="absolute w-full h-1 bg-white bottom-0 left-0 transform scale-x-0 transition-transform origin-bottom-right duration-350 ease-out group-hover:origin-bottom-left group-hover:scale-x-100"></span> */}
+                    </a>
+                  </div>
+                </Link>
+              );
+            })}
+          </ul>
+          </div>
+          <ul className="flex flex-col gap-3 leading-[20px]">
+            {threeLinks.map((link) => {
               return (
                 <Link href={link.link} legacyBehavior>
                   <div
