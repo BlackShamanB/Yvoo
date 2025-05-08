@@ -146,9 +146,9 @@ function Results({ handleModal }) {
           <div className="font-[700] text-[24px] leading-[30px]">
             Key Performance Categories 
           </div>
-          <div className="flex flex-col gap-[30px]">
+          <div className="flex flex-col gap-[12px] min-h-[872px]">
             {items.map((item, index) => (
-              <div key={index} className="rounded-[30px] overflow-hidden">
+              <div key={index} className="rounded-[30px] overflow-hidden max-w-[673px]">
                 {/* Заголовок аккордеона */}
                 <div
                   className={`flex flex-col pl-[40px] pt-[30px] cursor-pointer nowrap ${
@@ -195,7 +195,7 @@ function Results({ handleModal }) {
                           : "0 41px 0 34px",
                     }}
                   >
-                    <div className="flex flex-col gap-[30px] mr-[73px]">
+                    <div className="flex flex-col gap-[30px]">
                       <div className="flex flex-col gap-[20px]">
                         {item.content.map((contentItem, contentIndex) => (
                           <div
