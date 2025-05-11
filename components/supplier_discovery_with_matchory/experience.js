@@ -5,7 +5,7 @@ function Experience() {
     setOpenModalRequest((prev) => !prev);
   };
   return (
-    <div className="relative w-full flex-center 3xl:px-[202px] 2xl:px-[162px] md:px-[85px] px-[42px] pt-[100px] md:pt-[120px] 2xl:pt-[183px] pb-[100px] md:pb-[120px] 2xl:pb-[240px] bg-black">
+    <div className="relative w-full flex-center 3xl:px-[202px] 2xl:px-[162px] md:px-[85px] px-[42px] pt-[100px] md:pt-[120px] 2xl:pt-[183px] pb-[120px] 2xl:pb-[240px] bg-black">
       <div className="w-full" data-scroll data-scroll-speed="0.1">
         <div className="font-[400] text-[14px] md:text-[16px] leading-[20px] [&>p]:2xl:max-w-[306px] [&>p]:2xl:max-w-[400px] gap-[30px] 2xl:gap-[38px] 3xl:gap-[97px] grid 2xl:grid-cols-2 grid-cols-1">
           <div className="flex flex-col">
@@ -22,7 +22,7 @@ function Experience() {
               />
             </div>
           </div>
-          <div className="flex flex-col gap-[42px] 2xl:pl-[37px]">
+          <div className="flex flex-col md:gap-[42px] gap-[32px] 2xl:pl-[37px]">
             <div className="text-blue font-[700] 2xl:text-[40px] text-[26px] 2xl:leading-[48px] leading-[34px]">
               A structured, AI-driven supplier profile to ensure full
               transparency and risk assessment.
@@ -45,11 +45,11 @@ function Experience() {
                   className="2xl:mr-[5px] mr-[9px]"
                 />
                 <div className="md:block flex md:flex-row flex-col">
-                  <span className="text-blue font-[600] 2xl:text-[24px] text-[18px] 2xl:leading-[30px] leading-[26px] ">
+                  <span className="text-blue font-[600] md:text-[24px] text-[18px] md:leading-[30px] leading-[30px] ">
                     Supplier Name & Sector
                   </span>
-                  <span className="font-[400] 2xl:text-[18px] md:text-[20px] text-[18px] 2xl:leading-[30px] md:leading-[26px] leading-[26px]">
-                  &nbsp;&nbsp;
+                  <span className="font-[400] md:text-[18px] text-[14px] md:leading-[30px] leading-[20px] md:mt-[0] mt-[-1px]">
+                  <span className="md:inline hidden">&nbsp;&nbsp;</span>
                     Identify industry positioning
                   </span>
                 </div>
@@ -63,11 +63,11 @@ function Experience() {
                   className="2xl:mr-[5px] mr-[9px]"
                 />
                 <div className="md:block flex md:flex-row flex-col">
-                  <span className="text-blue font-[600] 2xl:text-[24px] text-[18px] 2xl:leading-[30px] leading-[26px] ">
+                  <span className="text-blue font-[600] md:text-[24px] text-[18px] md:leading-[30px] leading-[30px] ">
                     Approval Rating
                   </span>
-                  <span className="font-[400] 2xl:text-[18px] md:text-[20px] text-[18px] 2xl:leading-[30px] md:leading-[26px] leading-[26px]">
-                  &nbsp;&nbsp;
+                  <span className="font-[400] md:text-[18px] text-[14px] md:leading-[30px] leading-[20px] md:mt-[0] mt-[-1px]">
+                  <span className="md:inline hidden">&nbsp;&nbsp;</span>
                     Verified compliance & risk assessment
                   </span>
                 </div>
@@ -81,11 +81,11 @@ function Experience() {
                   className="2xl:mr-[5px] mr-[9px]"
                 />
                 <div className="md:block flex md:flex-row flex-col">
-                  <span className="text-blue font-[600] 2xl:text-[24px] text-[18px] 2xl:leading-[30px] leading-[26px] ">
+                  <span className="text-blue font-[600] md:text-[24px] text-[18px] md:leading-[30px] leading-[30px] ">
                     Manufacturing Capabilities
                   </span>
-                  <span className="font-[400] 2xl:text-[18px] md:text-[20px] text-[18px] 2xl:leading-[30px] md:leading-[26px] leading-[26px]">
-                  &nbsp;&nbsp;
+                  <span className="font-[400] md:text-[18px] text-[14px] md:leading-[30px] leading-[20px] md:mt-[0] mt-[-1px]">
+                  <span className="md:inline hidden">&nbsp;&nbsp;</span>
                     Key production insights
                   </span>
                 </div>
@@ -99,11 +99,11 @@ function Experience() {
                   className="2xl:mr-[5px] mr-[9px]"
                 />
                 <div className="md:block flex md:flex-row flex-col">
-                  <span className="text-blue font-[600] 2xl:text-[24px] text-[18px] 2xl:leading-[30px] leading-[26px] ">
+                  <span className="text-blue font-[600] md:text-[24px] text-[18px] md:leading-[30px] leading-[30px] ">
                     Client References
                   </span>
-                  <span className="font-[400] 2xl:text-[18px] md:text-[20px] text-[18px] 2xl:leading-[30px] md:leading-[26px] leading-[26px]">
-                  &nbsp;&nbsp;
+                  <span className="font-[400] md:text-[18px] text-[14px] md:leading-[30px] leading-[20px] md:mt-[0] mt-[-1px]">
+                  <span className="md:inline hidden">&nbsp;&nbsp;</span>
                     Past projects and credibility check
                   </span>
                 </div>
@@ -117,11 +117,11 @@ function Experience() {
                   className="2xl:mr-[5px] mr-[9px]"
                 />
                 <div className="md:block flex md:flex-row flex-col">
-                  <span className="text-blue font-[600] 2xl:text-[24px] text-[18px] 2xl:leading-[30px] leading-[26px] ">
+                  <span className="text-blue font-[600] md:text-[24px] text-[18px] md:leading-[30px] leading-[30px] ">
                     Factory Images & Videos
                   </span>
-                  <span className="font-[400] 2xl:text-[18px] md:text-[20px] text-[18px] 2xl:leading-[30px] md:leading-[26px] leading-[26px]">
-                  &nbsp;&nbsp;
+                  <span className="font-[400] md:text-[18px] text-[14px] md:leading-[30px] leading-[20px] md:mt-[0] mt-[-1px]">
+                  <span className="md:inline hidden">&nbsp;&nbsp;</span>
                     Real on-site verification evidence
                   </span>
                 </div>
@@ -135,19 +135,19 @@ function Experience() {
                   className="2xl:mr-[5px] mr-[9px]"
                 />
                 <div className="md:block flex md:flex-row flex-col">
-                  <span className="text-blue font-[600] 2xl:text-[24px] text-[18px] 2xl:leading-[30px] leading-[26px] ">
+                  <span className="text-blue font-[600] md:text-[24px] text-[18px] md:leading-[30px] leading-[30px] ">
                     Direct Actions
                   </span>
-                  <span className="font-[400] 2xl:text-[18px] md:text-[20px] text-[18px] 2xl:leading-[30px] md:leading-[26px] leading-[26px]">
-                  &nbsp;&nbsp;
+                  <span className="font-[400] md:text-[18px] text-[14px] md:leading-[30px] leading-[20px] md:mt-[0] mt-[-1px]">
+                  <span className="md:inline hidden">&nbsp;&nbsp;</span>
                     Send RFQ & Order Audit Instantly
                   </span>
                 </div>
               </div>
             </div>
-            <div className="flex flex-row gap-[30px]">
+            <div className="flex flex-row md:gap-[30px] gap-[14px]">
               <div
-                className="text-black text-[16px] leading-[20px] font-[500] w-[max-content] p-[20px_64px] bg-blue rounded-[30px] uppercase"
+                className="text-black md:text-[16px] text-[12px] md:leading-[20px] leading-[16px] font-[500] w-[max-content] md:p-[20px_64px] p-[16px_34px] bg-blue rounded-[30px] uppercase whitespace-nowrap content-center"
                 onClick={handleModal}
               >
                 Book a demo
@@ -158,7 +158,7 @@ function Experience() {
                   width={16}
                   height={16}
                 ></Image>
-                <div>Schedule On-Site Evaluation</div>
+                <div className="md:max-w-[unset] max-w-[111px] md:text-[16px] text-[12px] md:leading-[20px] leading-[16px]">Schedule On&#8209;Site Evaluation</div>
               </div>
             </div>
           </div>

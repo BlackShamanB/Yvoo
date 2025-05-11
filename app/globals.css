@@ -640,3 +640,12 @@ body {
   transition-delay: 100ms;
   opacity: 0;
 }
+.padding-akkordeon {
+  padding: 30px 41px 42px 34px;
+}
+@media (max-width: 767px) {
+.padding-akkordeon {
+  padding: 20px 17px 30px 34px;
+}
+  
+}

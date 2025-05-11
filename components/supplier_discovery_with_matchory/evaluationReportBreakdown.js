@@ -120,38 +120,40 @@ function Results({ handleModal }) {
       if (!ref) return;
 
       if (activeIndex === index) {
-        console.log(ref.getBoundingClientRect());
         ref.style.height = `max-content`;
         ref.style.opacity = "1";
-        ref.style.padding = "30px 41px 42px 34px";
+        ref.style.paddingTop = "";
+        ref.style.paddingBottom = "";
+        ref.classList.add("padding-akkordeon");
       } else {
         ref.style.height = "0";
         ref.style.opacity = "0";
-        // ref.style.padding = "0";
+        ref.style.paddingTop = "0";
+        ref.style.paddingBottom = "0";
       }
     });
   }, [activeIndex]);
   return (
-    <div className="relative grid w-full bg-white text-black inset-0 3xl:pt-[240px] pb-[351px] min-h-[1679px] bg-evaluationReportBreakdownBG bg-no-repeat bg-size-[1018px_1099px] bg-[bottom_right]">
+    <div className="relative grid w-full bg-white text-black inset-0 md:px-[0] px-[41px] 3xl:pt-[240px] pt-[80px] md:pb-[351px] pb-[200px] min-h-[1679px] bg-evaluationReportBreakdownBG bg-no-repeat md:bg-size-[1018px_1099px] bg-contain md:bg-[bottom_right] bg-[0_140px]">
       <div className="3xl:max-w-[1516px] 2xl:max-w-[1116px] md:max-w-[598px] mx-[auto] is-inview grid grid-cols-1 2xl:grid-cols-2 w-full">
-        <div className="flex flex-col gap-[42px]">
-          <div className="text-blue font-[700] text-[50px] leading-[58px]">
+        <div className="flex flex-col md:gap-[42px] gap-[32px]">
+          <div className="text-blue font-[700] md:text-[50px] text-[30px] md:leading-[58px] leading-[38px]">
             Evaluation Report Breakdown
           </div>
-          <div className="font-[400] text-[20px] leading-[28px]">
+          <div className="font-[400] md:text-[20px] text-[16px] md:leading-[28px] leading-[22px]">
             How <span className="font-[700]">YVOO ScanPro+</span> evaluates
             suppliers using a structured,
             <br /> AI-powered audit.
           </div>
-          <div className="font-[700] text-[24px] leading-[30px]">
+          <div className="font-[700] md:text-[24px] text-[18px] md:leading-[30px] leading-[26px]">
             Key Performance Categories 
           </div>
-          <div className="flex flex-col gap-[12px] min-h-[872px]">
+          <div className="flex flex-col gap-[12px] md:min-h-[872px]">
             {items.map((item, index) => (
               <div key={index} className="rounded-[30px] overflow-hidden max-w-[673px]">
                 {/* Заголовок аккордеона */}
                 <div
-                  className={`flex flex-col pl-[40px] pt-[30px] cursor-pointer nowrap ${
+                  className={`flex flex-col md:pl-[40px] pl-[17px] md:pt-[30px] pt-[20px] cursor-pointer nowrap ${
                     activeIndex === index ? "bg-[#86F6FC]" : ""
                   }`}
                   onClick={() => toggleAccordion(index)}
@@ -176,7 +178,7 @@ function Results({ handleModal }) {
                     <div
                       className={`font-[${
                         activeIndex === index ? "700" : "500"
-                      }] text-[30px] leading-[38px] whitespace-pre-line`}
+                      }] md:text-[30px] text-[20px] md:leading-[38px] leading-[28px] md:pr-[0] pr-[17px] whitespace-pre-line`}
                     >
                       {item.title}
                     </div>
@@ -185,18 +187,14 @@ function Results({ handleModal }) {
                   {/* Контент аккордеона */}
                   <div
                     ref={(el) => (contentRefs.current[index] = el)}
-                    className="overflow-hidden transition-all duration-300 ease-in-out"
+                    className={`overflow-hidden transition-all duration-300 ease-in-out padding-akkordeon`}
                     style={{
                       height: activeIndex === index ? "auto" : "0",
                       opacity: activeIndex === index ? "1" : "0",
-                      padding:
-                        activeIndex === index
-                          ? "30px 41px 42px 34px"
-                          : "0 41px 0 34px",
                     }}
                   >
                     <div className="flex flex-col gap-[30px]">
-                      <div className="flex flex-col gap-[20px]">
+                      <div className="flex flex-col md:gap-[20px] gap-[12px]">
                         {item.content.map((contentItem, contentIndex) => (
                           <div
                             key={contentIndex}
@@ -210,10 +208,10 @@ function Results({ handleModal }) {
                               className="mr-[10px]"
                             />
                             <div className="flex flex-col">
-                              <div className="font-[600] text-[16px] leading-[20px]">
+                              <div className="font-[600] md:text-[16px] text-[14px] leading-[20px]">
                                 {contentItem.title}
                               </div>
-                              <div className="font-[400] 2xl:text-[16px] md:text-[20px] text-[18px] 2xl:leading-[20px] md:leading-[26px] leading-[26px]">
+                              <div className="font-[400] md:text-[16px] text-[14px] leading-[20px]">
                                 {contentItem.desc}
                               </div>
                             </div>
@@ -227,20 +225,20 @@ function Results({ handleModal }) {
             ))}
           </div>
         </div>
-        <div>
+        <div className="md:order-1 -order-1 md:mb-[0] mb-[110px]">
           <Image
             src="/icons/G2.svg"
             width={438}
             height={438}
             alt="triangle"
-            className="ml-[auto]"
+            className="md:max-w-[unset] max-w-[167px] ml-[auto]"
           />
           <Image
             src="/icons/G1.svg"
             width={552}
             height={386}
             alt="triangle"
-            className="mr-[10px]"
+            className="md:max-w-[unset] max-w-[211px] mr-[10px]"
           />
         </div>
       </div>
