@@ -1,40 +1,64 @@
 function SimpleSteps({ handleModal }) {
   return (
-    <div className="w-full px-[22px] md:px-[85px] 2xl:px-[162px] 3xl:px-[202px] py-[98px] md:py-[95px] 2xl:py-[92px] 3xl:py-[100px]">
+    <div className="w-full px-[22px] md:px-[85px] 2xl:px-[162px] 3xl:px-[202px] 2xl:pt-[230px] md:py-[95px] py-[98px] 2xl:pb-[220px]">
       <h1
-        className="md:px-[0] px-[19px] mb-[40px] md:mb-[62px] 2xl:mb-[42px] text-[#06D7F9] font-inter font-[800] uppercase text-[30px] md:text-[40px] 2xl:text-[50px] leading-[34px] md:leading-[44px] 2xl:leading-[54px] max-w-full sm:max-w-[600px] md:max-w-[423px] 2xl:max-w-[529px]"
+        className="md:px-[0] px-[19px] mb-[40px] md:mb-[62px] 2xl:mb-[60px] text-[#06D7F9] font-inter font-[700] text-[30px] md:text-[40px] leading-[34px] md:leading-[48px] max-w-full"
         data-scroll
         data-scroll-speed="0.1"
       >
-        Two Simple Steps&nbsp;to Success:
+        Two Simple Steps&nbsp;<span className="text-white">to Success:</span>
       </h1>
       <div
-        className="grid grid-cols-1 2xl:grid-cols-2 3xl:gap-[162px] 2xl:gap-[100px] mb-[117px] md:mb-[157px] 2xl:mb-[78px] 3xl:mb-[118px] md:px-[0] px-[19px]"
+        className="grid grid-cols-1 2xl:grid-cols-2 3xl:gap-[170px] 2xl:gap-[100px] mb-[120px] md:mb-[157px] 2xl:mb-[78px] 3xl:mb-[118px] md:px-[0] px-[19px]"
         data-scroll
         data-scroll-speed="0.15"
       >
-        <div className="flex-1 flex 2xl:gap-6 md:gap-[17px] gap-[12px] basis-[320px]">
-          <h1 className="text-primary font-inter font-[800] uppercase text-[30px] md:text-[40px] 2xl:text-[50px] leading-[34px] md:leading-[44px] 2xl:leading-[54px]">
+        <div className="flex-1 flex 2xl:gap-[29px] md:gap-[17px] gap-[12px] basis-[320px]">
+          <h1 className="text-primary font-inter font-[800] uppercase text-[30px] md:text-[40px] 2xl:text-[50px] leading-[34px] md:leading-[44px] 2xl:leading-[58px]">
             1
           </h1>
-          <p className="font-[400] text-[14px] md:text-[16px] leading-[20px] mb-6 md:max-w-[unset] 2xl:max-w-[619px] 2xl:pt-[0] pt-[5px]">
-            YVOO SearchPro+'s user-friendly interface makes supplier sourcing a
-            breeze. Begin by interacting with our AI-powered chatbot, which will
-            guide you through articulating your requirements. In a matter of
-            seconds, it will present you with a comprehensive list of potential
-            suppliers. Then, leverage our advanced analysis tools to compare and
-            benchmark supplier data, simplifying your evaluation process.
+          <p className="font-[400] text-[14px] md:text-[16px] leading-[20px] md:max-w-[unset] 2xl:max-w-[619px] 2xl:pt-[0] pt-[5px]">
+            <span className="font-[700] text-blue">
+              Matchory’s AI-powered platform
+            </span>{" "}
+            simplifies supplier sourcing with an{" "}
+            <span className="font-[700] text-blue">
+              intelligent chat-guided process
+            </span>
+            . Define your sourcing requirements through an interactive AI-driven
+            chat, which instantly analyzes your needs and scans its{" "}
+            <span className="font-[700] text-blue">
+              structured global database
+            </span>{" "}
+            to generate a{" "}
+            <span className="font-[700] text-blue">
+              curated list of the best-matching suppliers
+            </span>
+            . Use advanced analytics to compare, benchmark, and filter suppliers
+            based on{" "}
+            <span className="font-[700] text-blue">
+              certifications, compliance, and industry-specific criteria
+            </span>
+            —all in seconds.
           </p>
         </div>
         <div className="flex-1 flex 2xl:gap-6 md:gap-[12px] gap-[8px] basis-[320px]">
-          <h1 className="text-primary font-inter font-[800] uppercase text-[30px] md:text-[40px] 2xl:text-[50px] leading-[34px] md:leading-[44px] 2xl:leading-[50px]">
+          <h1 className="text-primary font-inter font-[800] uppercase text-[30px] md:text-[40px] 2xl:text-[50px] leading-[34px] md:leading-[44px] 2xl:leading-[58px]">
             2
           </h1>
-          <p className="font-[400] text-[14px] md:text-[16px] leading-[20px] mb-6 md:max-w-[unset] 2xl:max-w-[619px] 2xl:pt-[0] pt-[5px]">
-            With YVOO SearchPro+, finding quality suppliers has never been
-            easier. Book a demo today and unlock the power of our AI-driven
-            platform. Enhance your supply chain resilience, drive innovation,
-            and maintain a flexible supply base effortlessly.
+          <p className="font-[400] text-[14px] md:text-[16px] leading-[20px] md:max-w-[unset] 2xl:max-w-[619px] 2xl:pt-[0] pt-[5px]">
+            With <span className="font-[700] text-blue">Matchory</span>, finding
+            and qualifying high-quality suppliers has never been easier. Book a
+            demo today and experience{" "}
+            <span className="font-[700] text-blue">
+              AI-driven supplier discovery
+            </span>{" "}
+            that enhances supply chain resilience, accelerates sourcing, and
+            ensures a{" "}
+            <span className="font-[700] text-blue">
+              flexible, risk-free supplier base
+            </span>
+            .
           </p>
         </div>
       </div>
@@ -47,7 +71,7 @@ function SimpleSteps({ handleModal }) {
           Don't miss out on the future of supplier sourcing.
         </h2>
         <button
-          className="blue_btn btn_animated_blue !max-w-[403px] md:ml-[-32px]"
+          className="rounded-[30px] blue_btn btn_animated_blue !max-w-[403px] md:ml-[-32px]"
           onClick={handleModal}
           data-scroll
           data-scroll-speed="0.15"

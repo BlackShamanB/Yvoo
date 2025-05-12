@@ -37,7 +37,7 @@ export default function Solutions() {
   }, []);
 
   return (
-    <main className="w-full md:pt-[86px] pt-[58px]" ref={containerRef} data-scroll-container>
+    <main className="w-full" ref={containerRef} data-scroll-container>
       <div className="flex flex-col overflow-hidden">
         <Hero />
         <Experience />
@@ -46,8 +46,8 @@ export default function Solutions() {
         <SearchPro />
         <Info />
         <SimpleSteps handleModal={handleModal} />
-        <ScanPro />
-        <HowItWorks />
+        {/* <ScanPro /> */}
+        {/* <HowItWorks /> */}
         <Order handleModal={handleModal} />
         <BuyerSupplier/>
       </div>
