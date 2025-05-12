@@ -1,6 +1,6 @@
 function SimpleSteps({ handleModal }) {
   return (
-    <div className="w-full px-[22px] md:px-[85px] 2xl:px-[162px] 3xl:px-[202px] 2xl:pt-[230px] md:py-[95px] py-[98px] 2xl:pb-[220px]">
+    <div className="w-full px-[22px] md:px-[85px] 2xl:px-[162px] 3xl:px-[202px] 2xl:pt-[230px] md:py-[95px] py-[98px] 2xl:pb-[220px] bg-solutionThreeBg bg-no-repeat bg-[position:calc(100vw-356px-284px)_-139px]">
       <h1
         className="md:px-[0] px-[19px] mb-[40px] md:mb-[62px] 2xl:mb-[60px] text-[#06D7F9] font-inter font-[700] text-[30px] md:text-[40px] leading-[34px] md:leading-[48px] max-w-full"
         data-scroll

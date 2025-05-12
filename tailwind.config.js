@@ -96,6 +96,8 @@ module.exports = {
         solution2Bgmd: "url(../public/images/solution2Bgmd.png)",
         solution2Bg: "url(../public/images/solution2Bg.png)",
         evaluationReportBreakdownBG: "url(../public/icons/EvaluationReportBreakdownBG.svg)",
+        solutionTwoBg: "url(../public/icons/bg-solution-2.svg)",
+        solutionThreeBg: "url(../public/icons/bg-solution-3.svg)",
         
         blogBg3xl: "url(../public/images/blogBg3xl.webp)",
         blogBg2xl: "url(../public/images/blogBg2xl.webp)",
