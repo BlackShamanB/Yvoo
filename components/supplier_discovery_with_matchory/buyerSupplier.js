@@ -21,7 +21,7 @@ function BuyerSupplier({ handleModal }) {
   return (
     <div className="relative grid grid-cols-1 2xl:grid-cols-2 w-full bg-[#131D2A] md:pb-[69px] pb-[37px]">
       <div
-        className="2xl:pr-[13px] 3xl:pl-[0] 2xl:px-[0] px-[0] py-[95px] md:py-[133px] 2xl:py-[209px] flex 2xl:ml-[48px] 2xl:mr-[0] md:mx-[25px] mx-[11px] 3xl:mt-[54px] 2xl:mt-[58px] md:mt-[24px] mt-[12px] text-center"
+        className="2xl:pr-[13px] 3xl:pl-[0] 2xl:px-[0] px-[0] py-[95px] md:py-[133px] 2xl:py-[209px] flex 2xl:ml-[48px] 2xl:mr-[0] md:mx-[25px] mx-[11px] 3xl:mt-[54px] 2xl:mt-[58px] md:mt-[24px] mt-[12px] text-center rounded-[30px]"
         data-scroll
         data-scroll-speed="0.1"
         onMouseEnter={handleMouseEnterBuyer}
@@ -103,7 +103,7 @@ function BuyerSupplier({ handleModal }) {
         </div>
       </div>
       <div
-        className="py-[95px] md:py-[133px] 2xl:py-[209px] flex cursor-pointer 3xl:mt-[54px] 2xl:mt-[58px] md:mt-[-20px] mt-[12px] 2xl:mr-[48px] 2xl:ml-[0] md:mx-[25px] mx-[11px] 3xl:pr-[40px] 2xl:pr-[37px] 2xl:px-[0] text-center"
+        className="py-[95px] md:py-[133px] 2xl:py-[209px] flex cursor-pointer 3xl:mt-[54px] 2xl:mt-[58px] md:mt-[-20px] mt-[12px] 2xl:mr-[48px] 2xl:ml-[0] md:mx-[25px] mx-[11px] 3xl:pr-[40px] 2xl:pr-[37px] 2xl:px-[0] text-center rounded-[30px]"
         onMouseEnter={handleMouseEnterSupplier}
         onMouseLeave={handleMouseLeaveSupplier}
         data-scroll

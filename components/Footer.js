@@ -48,22 +48,22 @@ const Footer = () => {
   const { data } = useData();
   return (
     <footer
-      className="bg-[#131D2A] text-white -mt-[1px] lg:pl-[100px] 3xl:pr-[48px] 2xl:pr-[49px] md:pr-[85px] pt-[60px] 2xl:pb-[92px] pb-[111px] md:pl-[85px] flex 2xl:items-start 2xl:justify-between md:flex-between flex-wrap 2xl:gap-[135px] gap-[60px] flex-col 2xl:flex-row px-[41px]"
+      className="bg-[#131D2A] text-white -mt-[1px] lg:pl-[100px] 3xl:pr-[48px] 2xl:pr-[49px] md:pr-[85px] pt-[60px] 2xl:pb-[92px] pb-[111px] md:pl-[85px] flex 2xl:items-start 2xl:justify-between md:flex-between flex-wrap 2xl:gap-[135px] gap-[30px] flex-col 2xl:flex-row px-[41px]"
       style={{
         background: data == "/blog" || data == "/" || data == "/supplier_discovery_with_matchory" ? "transparent" : "",
       }}
     >
-      <Image src="/icons/Logo_new.svg" width={130} height={42} alt="logo" />
+      <Image src="/icons/Logo_new.svg" width={130} height={42} alt="logo" className="md:mb-[0] mb-[24px]"/>
       {/* <div className="flex-1 md:flex-center md:justify-between gap-8 flex-wrap"> */}
         {/* <div className="flex 2xl:gap-[84px] md:gap-[113px] gap-[102px] flex-wrap"> */}
-        <div className="flex flex-row gap-[24px]">
-          <ul className="flex flex-col gap-3 leading-[20px] max-w-[284px]">
+        <div className="flex flex-row md:gap-[24px] gap-[8px]">
+          <ul className="flex flex-col gap-3 leading-[20px] md:max-w-[284px] max-w-[148px]">
             {firstLinks.map((link) => {
               return (
                 <Link href={link.link} legacyBehavior>
                   <div
                     key={link.link}
-                    className="text-whte text-[20px] leading-[26px] font-[400] relative inline-block text-white pseudo-text-effect cursor-pointer"
+                    className="text-whte md:text-[20px] text-[14px] md:leading-[26px] leading-[18px] font-[400] relative inline-block text-white pseudo-text-effect cursor-pointer"
                     data-after={link.name}
                   >
                     <a className="group" href={link.link}>
@@ -81,7 +81,7 @@ const Footer = () => {
                 <Link href={link.link} legacyBehavior>
                   <div
                     key={link.link}
-                    className="text-whte text-[20px] leading-[26px] font-[400] relative inline-block text-white pseudo-text-effect cursor-pointer"
+                    className="text-whte md:text-[20px] text-[14px] md:leading-[26px] leading-[18px] font-[400] relative inline-block text-white pseudo-text-effect cursor-pointer"
                     data-after={link.name}
                   >
                     <a className="group" href={link.link}>
@@ -94,13 +94,13 @@ const Footer = () => {
             })}
           </ul>
           </div>
-          <ul className="flex flex-col gap-3 leading-[20px]">
+          <ul className="flex flex-col gap-[12px] leading-[20px] md:order-0 order-1">
             {threeLinks.map((link) => {
               return (
                 <Link href={link.link} legacyBehavior>
                   <div
                     key={link.link}
-                    className="text-whte text-[16px] leading-[20px] font-[400] opacity-[50%] relative inline-block pseudo-text-effect cursor-pointer"
+                    className="text-whte md:text-[16px] text-[14px] md:leading-[20px] leading-[18px] font-[400] opacity-[50%] relative inline-block pseudo-text-effect cursor-pointer"
                     data-after={link.name}
                   >
                     <a className="group" href={link.link}>
@@ -111,7 +111,7 @@ const Footer = () => {
                 </Link>
               );
             })}
-            <div className="text-whte text-[16px] leading-[20px] font-[400] opacity-[50%] mt-[42px]">© 2021 YVOO LTD  |  All Rights Reserved</div>
+            <div className="text-whte md:text-[16px] text-[14px] md:leading-[20px] leading-[18px] font-[400] opacity-[50%] md:mt-[42px] md:mb-[0] mb-[18px] md:order-0 -order-1">© 2021 YVOO LTD  |  All Rights Reserved</div>
           </ul>
           {/* <ul className="flex flex-col uppercase text-[#53D3AA] hidden 2xl:block ml-[36px]">
             watch instructions
@@ -138,7 +138,7 @@ const Footer = () => {
         />
         <h2 className="font-normal text-primary">Request demo</h2>
       </div> */}
-      <div className="flex flex-1 md:flex-center justify-between gap-8 flex-wrap 2xl:hidden 2xl:mt-[0] md:mt-[-12px] mt-[-11px]">
+      {/* <div className="flex flex-1 md:flex-center justify-between gap-8 flex-wrap 2xl:hidden 2xl:mt-[0] md:mt-[-12px] mt-[-11px]">
         <ul className="flex md:flex-center items-center gap-3 uppercase text-[#53D3AA] block 2xl:hidden md:md-[0] mb-[-12px]">
           watch instructions
           <Image
@@ -148,7 +148,7 @@ const Footer = () => {
             alt="logo"
             className="inline"
           />
-        </ul>
+        </ul> */}
         {/* <div
           className="flex items-center gap-[10px] cursor-pointer block 2xl:hidden 2xl:mb-[20px] md:mb-[-20px] mb-[20px]"
           onClick={handleModal}
@@ -162,13 +162,13 @@ const Footer = () => {
           />
           <h2 className="font-normal text-primary">Request demo</h2>
         </div> */}
-      </div>
+      {/* </div> */}
       <button
         // className="outlined_btn btn_animated_blue"
-        className="text-black text-[16px] leading-[20px] font-[500] p-[20px_64px] rounded-[30px] bg-blue"
+        className="uppercase text-black md:text-[16px] text-[12px] md:leading-[20px] leading-[16px] font-[500] md:p-[20px_64px] p-[16px_34px] rounded-[30px] bg-blue max-w-[max-content]"
         onClick={handleModal}
       >
-        Book Demo
+        Book a Demo
       </button>
       <ModalRequest onClose={handleModal} visible={openModalRequest} />
     </footer>

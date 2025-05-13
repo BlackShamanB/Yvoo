@@ -19,31 +19,31 @@ function BuyerSupplier({ handleModal }) {
     setIsHoveredSupplier(false);
   };
   return (
-    <div className="relative grid grid-cols-1 2xl:grid-cols-2 w-full bg-[#131D2A] md:pb-[69px] pb-[37px]">
+    <div className="relative grid grid-cols-1 2xl:grid-cols-2 w-full bg-[#131D2A] md:pb-[69px] pb-[86px]">
       <div
-        className="2xl:pr-[13px] 3xl:pl-[0] 2xl:px-[0] px-[0] py-[95px] md:py-[133px] 2xl:py-[209px] flex 2xl:ml-[48px] 2xl:mr-[0] md:mx-[25px] mx-[11px] 3xl:mt-[54px] 2xl:mt-[58px] md:mt-[24px] mt-[12px] text-center"
+        className="2xl:pr-[13px] 3xl:pl-[0] 2xl:px-[0] px-[0] py-[100px] md:py-[133px] 2xl:py-[209px] flex 2xl:ml-[48px] 2xl:mr-[0] md:mx-[25px] mx-[11px] 3xl:mt-[54px] 2xl:mt-[58px] md:mt-[24px] mt-[12px] text-center rounded-[30px]"
         data-scroll
         data-scroll-speed="0.1"
         onMouseEnter={handleMouseEnterBuyer}
         onMouseLeave={handleMouseLeaveBuyer}
         style={{ background:  isHoveredSupplier ? "none" : "black" }}
       >
-        <div className="flex-start gap-[34px] 2xl:mb-[20px] md:mb-[95px] mb-[48px] cursor-pointer mx-auto">
-          <div className="flex flex-col 2xl:gap-[32px] md:gap-[22px] gap-[17px] text-center">
+        <div className="flex-start gap-[34px] 2xl:mb-[20px] md:mb-[95px] mb-[14px] cursor-pointer mx-auto">
+          <div className="flex flex-col 2xl:gap-[32px] md:gap-[22px] gap-[12px] text-center">
             <h1
               className="font-inter text-[#FFF] uppercase font-[800] text-[40px] md:text-[50px] 2xl:text-[60px] leading-[44px] md:leading-[54px] 2xl:leading-[64px]"
               style={{ color: isHoveredBuyer ? "#06D7F9" : "#FFF" }}
             >
               Buyer
             </h1>
-            <h2 className="font-[700] text-[16px] md:text-[20px] 2xl:text-[24px] leading-[20px] md:leading-[26px] 2xl:leading-[30px]">
+            <h2 className="font-[700] text-[18px] md:text-[20px] 2xl:text-[24px] leading-[26px] 2xl:leading-[30px]">
               We are your Uber for procurement.
             </h2>
             <button
-              className="filled_btn_primary btn_animated_blue rounded-[30px] hover:!text-[black] !text-[#06D7F9] !border-[#06D7F9] 2xl:mt-[17px] mt-[9px] 2xl:ml-[92px] md:ml-[57px] mx-[auto] md:!max-w-[224px] !max-w-[max-content] md:!text-[16px] !text-[12px] md:!leading-[20px] !leading-[16px] md:!px-[30px] !px-[28px] md:!py-[18px] !py-[6px]"
+              className="filled_btn_primary btn_animated_blue rounded-[30px] hover:!text-[black] !text-[#06D7F9] !border-[#06D7F9] 2xl:mt-[17px] mt-[20px] 2xl:ml-[92px] md:ml-[57px] mx-[auto] md:!max-w-[224px] !max-w-[max-content] md:!text-[16px] !text-[12px] md:!leading-[20px] !leading-[16px] md:!px-[62px] !px-[32px] md:!py-[18px] !py-[14px]"
               onClick={handleModal}
             >
-              View rates
+              Book a demo
             </button>
           </div>
         </div>
@@ -103,7 +103,7 @@ function BuyerSupplier({ handleModal }) {
         </div>
       </div>
       <div
-        className="py-[95px] md:py-[133px] 2xl:py-[209px] flex cursor-pointer 3xl:mt-[54px] 2xl:mt-[58px] md:mt-[-20px] mt-[12px] 2xl:mr-[48px] 2xl:ml-[0] md:mx-[25px] mx-[11px] 3xl:pr-[40px] 2xl:pr-[37px] 2xl:px-[0] text-center"
+        className="pt-[95px] pb-[0] md:py-[133px] 2xl:py-[209px] flex cursor-pointer 3xl:mt-[54px] 2xl:mt-[58px] md:mt-[-20px] mt-[-25px] 2xl:mr-[48px] 2xl:ml-[0] md:mx-[25px] mx-[11px] 3xl:pr-[40px] 2xl:pr-[37px] 2xl:px-[0] text-center rounded-[30px]"
         onMouseEnter={handleMouseEnterSupplier}
         onMouseLeave={handleMouseLeaveSupplier}
         data-scroll
@@ -113,19 +113,19 @@ function BuyerSupplier({ handleModal }) {
         <div className="flex-start flex-row-reverse gap-[80px] mx-auto">
           <div className="flex flex-col items-center 2xl:gap-[33px] gap-[0]">
             <h1
-              className="font-inter uppercase font-[800] text-[40px] md:text-[50px] 2xl:text-[60px] leading-[44px] md:leading-[54px] 2xl:leading-[64px] 2xl:mb-[0] md:mb-[22px] mb-[17px]"
+              className="font-inter uppercase font-[800] text-[40px] md:text-[50px] 2xl:text-[60px] leading-[44px] md:leading-[54px] 2xl:leading-[64px] 2xl:mb-[0] md:mb-[22px] mb-[12px]"
               style={{ color: isHoveredSupplier ? "#53D3AA" : "#FFF" }}
             >
               Supplier
             </h1>
-            <h2 className="font-[700] 2xl:text-[24px] md:text-[20px] text-[16px] 2xl:leading-[30px] md:leading-[26px] leading-[20px] 2xl:mb-[0] mb-[15px]">
+            <h2 className="font-[700] text-[18px] md:text-[20px] 2xl:text-[24px] leading-[26px] 2xl:leading-[30px]">
               Way to your excellence
             </h2>
             <button
-              className="mint_btn btn_animated_green md:mt-[15px] rounded-[30px] mt-[8px] md:!max-w-[224px] !max-w-[136px] md:!py-[18px] !py-[8px] md:!text-[16px] !text-[12px] md:!leading-[20px] !leading-[16px] text-[#FFF]"
+              className="mint_btn btn_animated_green md:mt-[15px] mt-[32px] rounded-[30px] md:!max-w-[224px] !max-w-[max-content] md:!px-[62px] !px-[32px] md:!py-[18px] !h-[auto] !py-[14px] md:!text-[16px] !text-[12px] md:!leading-[20px] !leading-[16px] text-[#FFF]"
               onClick={handleModal}
             >
-              View rates
+              Book a demo
             </button>
           </div>
         </div>

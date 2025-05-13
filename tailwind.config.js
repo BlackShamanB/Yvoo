@@ -96,6 +96,7 @@ module.exports = {
         solution2Bgmd: "url(../public/images/solution2Bgmd.png)",
         solution2Bg: "url(../public/images/solution2Bg.png)",
         evaluationReportBreakdownBG: "url(../public/icons/EvaluationReportBreakdownBG.svg)",
+        solutionTwoBgMd: "url(../public/icons/bg-solution-2Md.svg)",
         solutionTwoBg: "url(../public/icons/bg-solution-2.svg)",
         solutionThreeBg: "url(../public/icons/bg-solution-3.svg)",
         
@@ -111,7 +112,8 @@ module.exports = {
         solutionBg3xl: "url(../public/images/solutionBg3xl.webp)",
         solutionBgmd: "url(../public/images/solutionBgmd.webp)",
         solutionBg: "url(../public/images/solutionBg.webp)",
-        solutionBG: "url(../public/images/SolutionBG.webp)",
+        solutionBgMd: "url(../public/images/SolutionBgMd.webp)",
+        solutionBG: "url(../public/images/solutionBG.webp)",
         // discoverConnectExcelsm: "url(../public/images/discover-connectexcel.webp)",
 
         inneffectiveBg: "url(../public/icons/inneffective.svg)",

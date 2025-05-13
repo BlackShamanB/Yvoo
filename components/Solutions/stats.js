@@ -2,29 +2,29 @@ import Image from "next/image";
 
 function Stats() {
   return (
-    <div className="w-full flex-center flex-col px-[20px] md:px-[0] 2xl:px-[181px] 3xl:px-[202px] pb-[100px] md:pb-[119px] 2xl:pb-[240px] pt-[108px] md:pt-[148px] 2xl:pt-[68px] 3xl:pt-[180px] bg-[#131D2A] -mt-[1px]">
-      <div className="grid grid-cols-1 md:grid-cols-[173px_172px_173px] 2xl:grid-cols-3 2xl:gap-[61px] md:gap-[40px] gap-[40px] mb-[50px] md:mb-[62px] 2xl:mb-[65px] md:justify-items-start justify-items-center" data-scroll data-scroll-speed="0.13">
-        <div className="[&>p]:text-[#06D7F9] flex 2xl:gap-[20px] gap-[8px] 2xl:flex-wrap 2xl:flex-row md:flex-col flex-row content-center">
-          <p className="font-inter font-[800] 2xl:text-[50px] md:text-[40px] text-[30px] 2xl:leading-[60px] md:leading-[44px] leading-[34px]">
+    <div className="w-full flex-center flex-col px-[41px] md:px-[0] 2xl:px-[181px] 3xl:px-[202px] pb-[120px] md:pb-[119px] 2xl:pb-[240px] pt-[120px] md:pt-[140px] 3xl:pt-[180px] bg-[#131D2A]">
+      <div className="grid grid-cols-1 md:grid-cols-[173px_172px_173px] 2xl:grid-cols-3 md:gap-[61px] gap-[32px] mb-[80px] md:mb-[65px] justify-items-start w-full" data-scroll data-scroll-speed="0.13">
+        <div className="[&>p]:text-[#06D7F9] flex md:gap-[20px] gap-[4px] md:flex-wrap md:flex-row flex-col content-center">
+          <p className="font-inter font-[800] text-[50px] leading-[58px]">
             10X
           </p>
           <p className="font-[700] md:text-[16px] text-[14px] leading-[20px] 2xl:max-w-[200px] max-w-[unset] 2xl:mt-[0] content-center">
-            Faster <br className="2xl:block hidden" /> Sourcing <br className="2xl:hidden block" /> Decisions
+            Faster <br className="2xl:block hidden" /> Sourcing Decisions
           </p>
         </div>
-        <div className="[&>p]:text-[#06D7F9] flex 2xl:gap-[20px] gap-[8px] 2xl:flex-wrap 2xl:flex-row md:flex-col flex-row content-center">
-          <p className="font-inter font-[800] 2xl:text-[50px] md:text-[40px]  text-[30px] 2xl:leading-[60px] md:leading-[44px] leading-[34px] 2xl:ml-[0] md:ml-[-17px]">
+        <div className="[&>p]:text-[#06D7F9] flex 2xl:gap-[20px] gap-[4px] 2xl:flex-wrap 2xl:flex-row flex-col content-center">
+          <p className="font-inter font-[800] text-[50px] leading-[58px] 2xl:ml-[0] md:ml-[-17px]">
             100%
           </p>
-          <p className="font-[700] md:text-[16px] text-[14px] leading-[20px] 2xl:max-w-[140px] max-w-[121px] 2xl:mt-[0] content-center">
+          <p className="font-[700] md:text-[16px] text-[14px] leading-[20px] 2xl:max-w-[140px] 2xl:mt-[0] content-center">
             Audit<br className="2xl:block hidden"></br> Success Rate
           </p>
         </div>
-        <div className="[&>p]:text-[#06D7F9] flex 2xl:gap-[20px] gap-[8px] 2xl:flex-wrap 2xl:flex-row md:flex-col flex-row content-center md:max-w-[unset] max-w-[232px]">
-          <p className="font-inter font-[800] 2xl:text-[50px] md:text-[40px]  text-[30px] 2xl:leading-[60px] md:leading-[44px] leading-[34px]">
+        <div className="[&>p]:text-[#06D7F9] flex 2xl:gap-[20px] gap-[4px] 2xl:flex-wrap 2xl:flex-row flex-col content-center">
+          <p className="font-inter font-[800] text-[50px] leading-[58px]">
             70%
           </p>
-          <p className="font-[700] md:text-[16px] text-[14px] leading-[20px] 2xl:max-w-[177px] md:max-w-[unset] max-w-[278px] content-center">
+          <p className="font-[700] md:text-[16px] text-[14px] leading-[20px] 2xl:max-w-[177px] content-center">
             Reduction in Supplier Qualification Costs
           </p>
         </div>
