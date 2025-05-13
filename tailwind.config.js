@@ -111,6 +111,7 @@ module.exports = {
         solutionBg3xl: "url(../public/images/solutionBg3xl.webp)",
         solutionBgmd: "url(../public/images/solutionBgmd.webp)",
         solutionBg: "url(../public/images/solutionBg.webp)",
+        solutionBG: "url(../public/images/SolutionBG.webp)",
         // discoverConnectExcelsm: "url(../public/images/discover-connectexcel.webp)",
 
         inneffectiveBg: "url(../public/icons/inneffective.svg)",

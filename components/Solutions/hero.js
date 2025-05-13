@@ -2,7 +2,7 @@ import Image from "next/image";
 function Hero() {
   return (
     // <div className="relative grid w-full flex justify-center 3xl:bg-solutionBg3xl md:bg-solutionBgmd bg-solutionBg bg-no-repeat md:bg-contain bg-[size:100%] md:bg-[position:0_0] bg-[position:0_23%]">
-    <div className="relative w-full md:px-[20px] px-[41px] customsm:px-[50px] md:h-[820px] md:height-[unset] height-[874px] 3xl:bg-solutionBg3xl md:bg-solutionBgmd bg-solutionBg bg-no-repeat md:bg-contain bg-[size:100%] md:bg-[position:0_0] bg-[position:0_0%] flex justify-center 2xl:pt-[120px] md:pt-[162px] pt-[80px] xl:pb-0 md:max-h-[1008px]">
+    <div className="relative w-full md:px-[20px] px-[41px] customsm:px-[50px] md:h-[820px] md:height-[unset] height-[874px] 3xl:bg-solutionBG md:bg-solutionBG bg-solutionBg bg-no-repeat md:bg-contain bg-[size:100%] md:bg-[position:0_0] bg-[position:0_0%] flex justify-center 2xl:pt-[120px] md:pt-[162px] pt-[80px] xl:pb-0 md:max-h-[1008px]">
       <div className="3xl:max-w-[1516px] 2xl:max-w-[1116px] md:max-w-[598px] mx-[auto] relative grid grid-cols-1 2xl:grid-cols-2 w-full mb-[100px] md:mb-[120px] 2xl:mb-[254px]">
         <h1
           className="3xl:max-w-[726px] 2xl:max-w-[530px] font-inter font-[700] md:text-[60px] text-[30px] md:leading-[68px] leading-[34px] flex-1 2xl:mb-[0] md:mb-[26px] mb-[60px]"
