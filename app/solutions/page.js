@@ -27,12 +27,12 @@ export default function Solutions() {
     // initParallax();
     // initRotateSentences();
     
-    // import('locomotive-scroll').then((locomotiveModule) => {
-    //   const LocomotiveScroll = locomotiveModule.default;
-    //   new LocomotiveScroll({
-    //     el: containerRef.current,
-    //   });
-    // });
+    import('locomotive-scroll').then((locomotiveModule) => {
+      const LocomotiveScroll = locomotiveModule.default;
+      new LocomotiveScroll({
+        el: containerRef.current,
+      });
+    });
 
   }, []);
 

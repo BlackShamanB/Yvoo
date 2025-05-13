@@ -18,7 +18,7 @@ export default function ForAuditors() {
     });
   }, []);
   return (
-    <main className="w-full md:pt-[86px] pt-[58px]" ref={containerRef} data-scroll-container>
+    <main className="w-full md:pt-[0] pt-[58px]" ref={containerRef} data-scroll-container>
       <div className="flex flex-col">
         <Hero />
         <Why />

@@ -78,10 +78,10 @@ function JobDescription() {
           >
             Take the first step towards revolutionizing supplier audits with
             YVOO ScanPro+. Apply now to become an agent and start earning money
-            in a flexible and rewarding way
+            in a flexible and rewarding way.
           </p>
           <button
-            className="filled_btn_blue 2xl:mt-[26px] md:mt-[42px] mt-[40px] md:max-w-[223px] max-w-[136px] btn_animated_blue hover:text-[#fff]"
+            className="rounded-[30px] blue_btn btn_animated_blue md:mt-[42px] mt-[0px] !max-w-[max-content] md:!p-[18px_62px] !p-[14px_32px] !h-[auto]"
             onClick={() => {
               window.open("https://scanpro.yvoo.io", "_blank");
             }}
