@@ -10,7 +10,7 @@ const MagnifyOnScroll = (imgSrc) => {
       ([entry]) => {
         if (entry.isIntersecting) {
           const visiblePercentage = Math.max(0, (entry.intersectionRatio - 0.25) / 0.75);
-          const newWidth = visiblePercentage * 25; // Максимальная ширина 25%
+          const newWidth = visiblePercentage * 40;
           setWidth(newWidth);
         } else {
           setWidth(0);

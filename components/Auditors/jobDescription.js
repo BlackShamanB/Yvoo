@@ -3,14 +3,14 @@ import Image from "next/image";
 import ImgLeftToRight from "../ImgLeftToRight"
 function JobDescription() {
   return (
-    <div className="relative w-full px-[41px] md:px-[85px] 2xl:px-[162px] 3xl:px-[202px] pt-[140px] md:pt-[228px] 2xl:pt-[258px] 3xl:pt-[256px] 3xl:pb-[185px] 2xl:pb-[178px] md:pb-[132px] pb-[65px] bg-[#131D2A]">
+    <div className="relative w-full px-[41px] md:px-[85px] 2xl:px-[162px] 3xl:px-[202px] pt-[140px] md:pt-[228px] 2xl:pt-[258px] 3xl:pt-[256px] 3xl:pb-[185px] 2xl:pb-[178px] md:pb-[132px] pb-[80px] bg-[#131D2A]">
       <ImgLeftToRight
         src="/icons/icon-line.svg"
         width={584}
         height={106}
         alt="line"
         classesImg="3xl:max-w-[unset] 2xl:max-w-[458px] md:max-w-[320px] max-w-[142px]"
-        classesContainer="absolute overflow-hidden 3xl:top-[2%] 2xl:top-[0%] md:top-[-1.5%] top-[-1%] 3xl:left-[33.5%] 2xl:left-[35%] md:left-[0%] left-[-62%] z-[1]"
+        classesContainer="absolute overflow-hidden 3xl:top-[2%] 2xl:top-[0%] md:top-[-1.5%] top-[-1%] 3xl:left-[33.5%] 2xl:left-[35%] left-[0%] z-[1]"
         data-scroll
         data-scroll-speed="0.5"
       />
@@ -72,7 +72,7 @@ function JobDescription() {
             performance against various criteria.
           </p>
           <p
-            className="md:mb-[0] mb-[20px]"
+            className="md:mb-[0] mb-[32px]"
             data-scroll
             data-scroll-speed="0.15"
           >
