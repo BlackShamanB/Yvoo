@@ -81,7 +81,7 @@ function JobDescription() {
             in a flexible and rewarding way.
           </p>
           <button
-            className="rounded-[30px] blue_btn btn_animated_blue md:mt-[42px] mt-[0px] !max-w-[max-content] md:!p-[18px_62px] !p-[14px_32px] !h-[auto]"
+            className="rounded-[30px] blue_btn btn_animated_blue md:mt-[26px] mt-[0px] !max-w-[max-content] md:!p-[18px_62px] !p-[14px_32px] !h-[auto]"
             onClick={() => {
               window.open("https://scanpro.yvoo.io", "_blank");
             }}

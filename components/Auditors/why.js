@@ -4,18 +4,9 @@ import MagnifyOnScroll from "../MagnifyOnScroll";
 function Why() {
   return (
     <div className="relative grid grid-cols-1 2xl:grid-cols-2 w-full 3xl:max-h-[875px] 2xl:max-h-[789px] z-[1]">
-      <Image
-        src="/icons/squares-2.png"
-        width={96}
-        height={106}
-        alt="triangle"
-        className="absolute 3xl:top-[11%] 2xl:top-[12.5%] md:top-[30.5%] top-[29%] 3xl:left-[81%] 2xl:left-[79.5%] md:left-[68.5%] left-[76%] md:max-w-[unset] max-w-[44px] mouse-parallax z-[1]"
-        data-scroll
-        data-scroll-speed="0.15"
-      />
-      <div className="relative flex pr-[41px] md:pr-[0] pl-[41px] md:pl-[85px] 2xl:pl-[162px] 3xl:pl-[202px] 3xl:pb-[583px] md:pt-[178px] pt-[98px] w-full bg-white 3xl:max-h-[875px] 2xl:max-h-[789px]">
+      <div className="relative flex pr-[41px] md:pr-[0] pl-[41px] md:pl-[85px] 2xl:pl-[162px] 3xl:pl-[202px] 3xl:pb-[583px] md:pt-[184px] pt-[98px] w-full bg-white 3xl:max-h-[875px] 2xl:max-h-[789px]">
         <h1
-          className="w-full text-black font-inter font-[800] uppercase text-[30px] md:text-[40px] 2xl:text-[50px] leading-[34px] md:leading-[44px] 2xl:leading-[54px] z-[1]"
+          className="w-full text-black font-inter font-[700] md:text-[50px] text-[30px] md:leading-[58px] leading-[34px] z-[1]"
           data-scroll
           data-scroll-speed="0.2"
         >
@@ -67,7 +58,7 @@ function Why() {
           alt="forAuditors"
           width={519}
           height={426}
-          classes="relative object-contain 3xl:top-[135px] 2xl:top-[75px] md:top-[10px] top-[50px] left-[41px] md:left-[85px] 2xl:left-[35px] 3xl:left-[36px] 2xl:max-w-[389px] 3xl:max-w-[unset] md:max-w-[415px] max-w-[278px] 3xl:max-h-[unset] 2xl:max-h-[319px] md:max-h-[340px] max-h-[229px]"
+          classes="relative object-contain 3xl:top-[135px] 2xl:top-[75px] md:top-[10px] top-[50px] left-[41px] md:left-[85px] 2xl:left-[35px] 3xl:left-[36px] 2xl:max-w-[389px] 3xl:max-w-[max-content] md:max-w-[415px] max-w-[278px] 3xl:max-h-[unset] 2xl:max-h-[319px] md:max-h-[340px] max-h-[229px]"
           data-scroll
           data-scroll-speed="0.15"
         />

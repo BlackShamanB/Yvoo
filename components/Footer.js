@@ -48,7 +48,7 @@ const Footer = () => {
   const { data } = useData();
   return (
     <footer
-      className="bg-[#131D2A] text-white -mt-[1px] lg:pl-[100px] 3xl:pr-[48px] 2xl:pr-[49px] md:pr-[85px] pt-[60px] 2xl:pb-[92px] pb-[111px] md:pl-[85px] flex 2xl:items-start 2xl:justify-between md:flex-between flex-wrap 2xl:gap-[135px] gap-[30px] flex-col 2xl:flex-row px-[41px]"
+      className="bg-[#131D2A] text-white -mt-[1px] lg:pl-[100px] 3xl:pr-[48px] 2xl:pr-[49px] md:pr-[85px] pt-[60px] 2xl:pb-[92px] pb-[111px] md:pl-[85px] flex 2xl:items-start flex-wrap md:gap-[127px] gap-[30px] flex-col 2xl:flex-row px-[41px]"
       style={{
         background: data == "/blog" || data == "/" || data == "/supplier_discovery_with_matchory" ? "transparent" : "",
       }}
@@ -94,7 +94,7 @@ const Footer = () => {
             })}
           </ul>
           </div>
-          <ul className="flex flex-col gap-[12px] leading-[20px] md:order-0 order-1">
+          <ul className="flex flex-col gap-[12px] leading-[20px] md:order-[unset] order-1 md:ml-[auto]">
             {threeLinks.map((link) => {
               return (
                 <Link href={link.link} legacyBehavior>
@@ -111,7 +111,7 @@ const Footer = () => {
                 </Link>
               );
             })}
-            <div className="text-whte md:text-[16px] text-[14px] md:leading-[20px] leading-[18px] font-[400] opacity-[50%] md:mt-[42px] md:mb-[0] mb-[18px] md:order-0 -order-1">© 2021 YVOO LTD  |  All Rights Reserved</div>
+            <div className="text-whte md:text-[16px] text-[14px] md:leading-[20px] leading-[18px] font-[400] opacity-[50%] md:mt-[42px] md:mb-[0] mb-[18px] md:order-[unset] -order-1">© 2021 YVOO LTD  |  All Rights Reserved</div>
           </ul>
           {/* <ul className="flex flex-col uppercase text-[#53D3AA] hidden 2xl:block ml-[36px]">
             watch instructions
