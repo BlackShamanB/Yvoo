@@ -21,7 +21,7 @@ function Search({ handleModal }) {
         />
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 w-full 2xl:gap-[171px] gap-[60px] md:px-[0] px-[29px]">
-        <div className="relative md:py-[55px] md:py-0 h-fit md:flex-center flex-col">
+        <div className="relative h-fit md:flex-center flex-col">
           <div className="flex flex-wrap md:flex-nowrap md:flex-col gap-[24px]">
             <h1
               className="font-inter text-black font-[700] 2xl:text-[50px] md:text-[40px] text-[30px] 2xl:leading-[58px] md:leading-[44px] leading-[34px] z-[1]"
@@ -36,7 +36,7 @@ function Search({ handleModal }) {
               width={101}
               height={113}
               alt="triangle"
-              className="3xl:block 2xl:hidden absolute 3xl:top-[52%] 2xl:top-[61%] top-[61%] 3xl:left-[10%] md:left-[76%] left-[76%] mouse-parallax md:max-w-[101px] max-w-[63px]"
+              className="3xl:block 2xl:hidden absolute 3xl:top-[94%] 2xl:top-[61%] top-[83%] 3xl:left-[-16%] md:left-[76%] left-[83%] mouse-parallax md:max-w-[101px] max-w-[63px]"
               data-scroll
               data-scroll-speed="0.15"
             />

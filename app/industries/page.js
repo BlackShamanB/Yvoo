@@ -19,14 +19,14 @@ export default function Home() {
 
   const containerRef = useRef(null);
   useEffect(() => {
-    // initParallax();
-    // initRotateSentences();
-    // import("locomotive-scroll").then((locomotiveModule) => {
-    //   const LocomotiveScroll = locomotiveModule.default;
-    //   new LocomotiveScroll({
-    //     el: containerRef.current,
-    //   });
-    // });
+    initParallax();
+    initRotateSentences();
+    import("locomotive-scroll").then((locomotiveModule) => {
+      const LocomotiveScroll = locomotiveModule.default;
+      new LocomotiveScroll({
+        el: containerRef.current,
+      });
+    });
   }, []);
 
   return (
