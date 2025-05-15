@@ -10,12 +10,12 @@ export default function ForAuditors() {
     // initParallax();
     // initRotateSentences();
 
-    // import("locomotive-scroll").then((locomotiveModule) => {
-    //   const LocomotiveScroll = locomotiveModule.default;
-    //   new LocomotiveScroll({
-    //     el: containerRef.current,
-    //   });
-    // });
+    import("locomotive-scroll").then((locomotiveModule) => {
+      const LocomotiveScroll = locomotiveModule.default;
+      new LocomotiveScroll({
+        el: containerRef.current,
+      });
+    });
   }, []);
   return (
     <main className="w-full" ref={containerRef} data-scroll-container>
