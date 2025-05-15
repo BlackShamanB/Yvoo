@@ -1,7 +1,7 @@
 function Potential() {
   return (
-    <div className="flex flex-col md:gap-[180px] gap-[80px] w-full px-[41px] 2xl:px-[162px] 3xl:px-[201px] md:pt-[180px] pt-[98px] md:pb-[136px] pb-[54px] bg-white">
-      <div className="grid grid-cols-1 md:grid-cols-2 3xl:gap-[170px] 2xl:gap-[110px] gap-[55px]">
+    <div className="flex flex-col md:gap-[180px] gap-[80px] w-full px-[41px] 2xl:px-[162px] 3xl:px-[201px] md:pt-[180px] pt-[100px] md:pb-[136px] pb-[54px] bg-white">
+      <div className="grid grid-cols-1 md:grid-cols-2 3xl:gap-[170px] 2xl:gap-[110px] gap-[42px]">
         <h1
           className="font-inter text-[#06D7F9] font-[700] md:text-[50px] text-[30px] md:leading-[58px] leading-[34px]"
           data-scroll
@@ -17,7 +17,7 @@ function Potential() {
           data-scroll
           data-scroll-speed="0.2"
         >
-          <p className="text-black font-[700] md:text-[24px] text-[16px] md:leading-[30px] leading-[20px]">
+          <p className="text-black font-[700] md:text-[24px] text-[18px] md:leading-[30px] leading-[26px]">
             At YVOO SALESPRO+, we understand the challenges suppliers face in
             finding new opportunities, expanding their network, and increasing
             their visibility in the market. That's why we've built a platform

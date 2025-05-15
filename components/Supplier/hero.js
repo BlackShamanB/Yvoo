@@ -90,9 +90,9 @@ function Hero() {
   }, [serverError]);
 
   return (
-    <div className="supplier-bg-size px-[40px] 2xl:px-[162px] 3xl:px-[202px] w-full bg-left-top bg-cover bg-[length:100%_712px] md:bg-supplierBg3xl bg-supplierBg bg-no-repeat flex justify-center md:pt-[120px] pt-[78px] pb-[100px] md:pb-[144px] 2xl:pb-[152px]">
-      <div className="grid grid-cols-1 sm:grid-cols-2 w-full 3xl:gap-[169px] 2xl:gap-[109px] gap-[103px]">
-        <div className="flex flex-col md:gap-[12px] gap-[26px] break-words">
+    <div className="supplier-bg-size px-[40px] 2xl:px-[162px] 3xl:px-[202px] w-full bg-left-top bg-cover bg-[length:100%_712px] md:bg-supplierBg3xl bg-supplierBg bg-no-repeat flex justify-center md:pt-[120px] pt-[82px] pb-[100px] md:pb-[144px] 2xl:pb-[152px]">
+      <div className="grid grid-cols-1 sm:grid-cols-2 w-full md:gap-[169px] gap-[136px]">
+        <div className="flex flex-col gap-[12px] break-words">
           <h1
             className="font-inter text-[#06D7F9] md:text-[24px] text-[18px] font-[700] md:leading-[30px] leading-[26px]"
             data-scroll
@@ -101,7 +101,7 @@ function Hero() {
             For Supplier
           </h1>
           <div
-            className="font-inter md:text-[60px] text-[30px] md:leading-[68px] leading-[34px] font-[700] mb-[30px]"
+            className="font-inter md:text-[60px] text-[30px] md:leading-[68px] leading-[34px] font-[700] md:mb-[30px] mb-[8px]"
             data-scroll
             data-scroll-speed="0.1"
           >
@@ -110,7 +110,7 @@ function Hero() {
             YVOO Sales<span className="text-[#06D7F9]">Pro+</span>
           </div>
           <div
-            className="font-[700] md:text-[24px] text-[16px] md:leading-[30px] leading-[20px]"
+            className="font-[700] md:text-[24px] text-[18px] md:leading-[30px] leading-[26px] whitespace-nowrap"
             data-scroll
             data-scroll-speed="0.15"
           >
@@ -119,7 +119,7 @@ function Hero() {
         </div>
         <form
           onSubmit={handleSubmit}
-          className="mt-[43px]"
+          className="md:mt-[43px]"
           data-scroll
           data-scroll-speed="0.05"
         >
@@ -355,7 +355,7 @@ function Hero() {
             <button
               disabled={loading}
               type="submit"
-              className="rounded-[30px] filled_btn_primary btn_animated_blue hover:!text-black !text-[#06D7F9] 2xl:!text-[16px] !text-[12px] 2xl:!leading-[20px] !leading-[16px] md:!p-[18px_62px] !p-[8px_30px] !w-[max-content] 2xl:mt-[0] mt-[-10px]"
+              className="rounded-[30px] filled_btn_primary btn_animated_blue hover:!text-black !text-[#06D7F9] 2xl:!text-[16px] !text-[12px] 2xl:!leading-[20px] !leading-[16px] md:!p-[18px_62px] !p-[14px_32px] !w-[max-content] md:mt-[0] mt-[-2px]"
             >
               REGISTER
             </button>

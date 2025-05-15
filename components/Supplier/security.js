@@ -2,15 +2,15 @@ function Security() {
   return (
     <div className="px-[41px] 2xl:px-[162px] 3xl:px-[202px] w-full md:bg-white md:pt-[120px] pt-[46px] pb-[54px] md:pb-[0px] bg-[white]">
       <div className="w-full pb-[0px] md:pb-[116px] 3xl:pb-[195px]">
-        <div className="flex flex-wrap md:flex-nowrap 3xl:gap-[97px] 2xl:gap-[67px] gap-[173px]">
-          <div className="relative flex flex-col md:gap-[42px] gap-[26px] flex-1">
+        <div className="flex flex-wrap md:flex-nowrap 3xl:gap-[97px] 2xl:gap-[67px] gap-[192px]">
+          <div className="relative flex flex-col md:gap-[42px] gap-[20px] flex-1">
             <div
-              className="absolute bg-[#06D7F9] 3xl:w-[594px] 2xl:w-[393px] w-[262px] 2xl:h-[680px] h-[400px] 2xl:top-[-120px] 2xl:right-[0] right-[-41px] z-[0]"
+              className="absolute bg-[#06D7F9] 3xl:w-[594px] 2xl:w-[393px] w-[262px] 2xl:h-[680px] h-[418px] 2xl:top-[-120px] 2xl:right-[0] right-[-41px] z-[0]"
               data-scroll
               data-scroll-speed="0.1"
             ></div>
             <h1
-              className="font-inter text-black font-[700] md:text-[50px] text-[30px] md:leading-[58px] leading-[34px] z-[1] 2xl:mt-[0] mt-[78px]"
+              className="font-inter text-black font-[700] md:text-[50px] text-[30px] md:leading-[58px] leading-[34px] z-[1] 2xl:mt-[0] mt-[80px]"
               data-scroll
               data-scroll-speed="0.15"
             >
@@ -19,7 +19,7 @@ function Security() {
               Our
               <br className="3xl:block hidden" /> Top Priority.
             </h1>
-            <p className="3xl:max-w-[585px] max-w-[432px] text-black font-[700] 2xl:text-[24px] md:text-[20px] text-[16px] 2xl:leading-[30px] md:leading-[26px] leading-[20px] z-[1]"
+            <p className="3xl:max-w-[585px] max-w-[432px] text-black font-[700] 2xl:text-[24px] md:text-[20px] text-[18px] 2xl:leading-[30px] leading-[26px] z-[1]"
           data-scroll
           data-scroll-speed="0.2">
               Discover the Safe and Secure Way to Connect with Potential
