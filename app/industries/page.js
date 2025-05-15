@@ -34,7 +34,7 @@ export default function Home() {
       <div className="flex flex-col">
         <div className="bg-no-repeat md:bg-right-bottom bg-left-top bg-cover md:bg-contain 3xl:bg-industriesBg3xl md:bg-industriesBg2xl bg-industriesBg px-[40px] customxs:px-[50px] 2xl:px-[162px] 3xl:px-[202px] pt-[80px] 2xl:pt-[154px] 3xl:pt-[162px] pb-[270px] 2xl:pb-[562px] 3xl:pb-[550px]">
           <h1
-            className="font-inter font-[700] md:text-[60px] text-[40px] md:leading-[68px] leading-[34px]"
+            className="font-inter font-[700] md:text-[60px] text-[30px] md:leading-[68px] leading-[34px]"
             data-scroll
             data-scroll-speed="0.15"
           >

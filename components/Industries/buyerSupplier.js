@@ -19,9 +19,9 @@ function BuyerSupplier({ handleModal }) {
     setIsHoveredSupplier(false);
   };
   return (
-    <div className="relative grid grid-cols-1 2xl:grid-cols-2 w-full bg-[#131D2A] pt-[57px] md:pb-[54px] pb-[86px]">
+    <div className="relative grid grid-cols-1 2xl:grid-cols-2 w-full bg-[#131D2A] md:pt-[57px] pt-[12px] md:pb-[54px]">
       <div
-        className="md:pt-[221px]  md:pb-[238px] flex 2xl:ml-[48px] 2xl:mr-[0] md:mx-[25px] mx-[11px] text-center rounded-[30px] pr-[11px]"
+        className="md:pt-[221px] pt-[100px] md:pb-[238px] pb-[114px] flex 2xl:ml-[48px] 2xl:mr-[0] md:mx-[25px] mx-[11px] text-center rounded-[30px] md:pr-[11px]"
         data-scroll
         data-scroll-speed="0.1"
         onMouseEnter={handleMouseEnterBuyer}
@@ -36,7 +36,7 @@ function BuyerSupplier({ handleModal }) {
             >
               Buyer
             </h1>
-            <h2 className="font-[700] text-[18px] md:text-[20px] 2xl:text-[24px] leading-[26px] 2xl:leading-[30px] mb-[24px]">
+            <h2 className="font-[700] text-[18px] md:text-[20px] 2xl:text-[24px] leading-[26px] 2xl:leading-[30px] md:mb-[24px] mb-[20px]">
               We are your Uber for procurement.
             </h2>
             <button
@@ -103,7 +103,7 @@ function BuyerSupplier({ handleModal }) {
         </div>
       </div>
       <div
-        className="md:pt-[221px]  md:pb-[238px] flex cursor-pointer 2xl:ml-[0] md:mx-[25px] mx-[11px] text-center rounded-[30px]"
+        className="md:pt-[221px] pt-[100px] md:pb-[238px] pb-[114px] flex cursor-pointer 2xl:ml-[0] md:mx-[25px] mx-[11px] text-center rounded-[30px] md:mt-[0] mt-[-29px]"
         onMouseEnter={handleMouseEnterSupplier} 
         onMouseLeave={handleMouseLeaveSupplier}
         data-scroll
@@ -118,7 +118,7 @@ function BuyerSupplier({ handleModal }) {
             >
               Supplier
             </h1>
-            <h2 className="font-[700] text-[18px] md:text-[20px] 2xl:text-[24px] leading-[26px] 2xl:leading-[30px] mb-[24px]">
+            <h2 className="font-[700] text-[18px] md:text-[20px] 2xl:text-[24px] leading-[26px] 2xl:leading-[30px] md:mb-[24px] mb-[32px]">
               Way to your excellence
             </h2>
             <button

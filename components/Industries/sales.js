@@ -7,19 +7,19 @@ function Sales({ handleModal }) {
   return (
     <div
       id="sales"
-      className="relative grid grid-cols-1 md:grid-cols-2 w-full bg-white bg-local bg-contain bg-no-repeat bg-bottom pt-[180px] 2xl:pb-[160px] pb-[100px]"
+      className="relative grid grid-cols-1 md:grid-cols-2 w-full bg-white bg-local bg-contain bg-no-repeat bg-bottom md:pt-[180px] pt-[100px] md:pb-[160px] pb-[80px]"
     >
       <div
         className="px-[41px] 2xl:px-[50px] bg-white md:flex-center flex-col h-fit"
       >
-        <div className="flex flex-wrap md:flex-nowrap md:flex-col 2xl:gap-[24px] gap-[22px] 2xl:ml-[112px] 3xl:ml-[152px] 3xl:max-w-[unset] max-w-[503px]">
+        <div className="flex flex-wrap md:flex-nowrap md:flex-col md:gap-[24px] gap-[16px] 2xl:ml-[112px] 3xl:ml-[152px] 3xl:max-w-[unset] max-w-[503px]">
           <h1 className="font-inter font-[700] text-black text-[30px] md:text-[40px] 2xl:text-[50px] leading-[34px] md:leading-[44px] 2xl:leading-[58px]"
             data-scroll
             data-scroll-speed="0.18">
             Automotive Companies
           </h1>
           <div className="flex flex-col gap-[24px]">
-            <p className="font-[700] text-black 2xl:text-[24px] md:text-[20px] text-[16px] 2xl:leading-[30px] md:leading-[26px] leading-[20px] mb-[24px]"
+            <p className="font-[700] text-black 2xl:text-[24px] md:text-[20px] text-[16px] 2xl:leading-[30px] leading-[26px] md:mb-[24px] mb-[22px]"
             data-scroll
             data-scroll-speed="0.16">
               Increase quality, innovation, and flexibility
@@ -55,7 +55,7 @@ function Sales({ handleModal }) {
             data-scroll-speed="0.08">
               Future-proof your supply chain and ensure procurement excellence
             </p>
-            <button className="rounded-[30px] !border-blue filled_btn 2xl:mt-[27px] mt-[4px] md:!p-[18px_62px] !p-[8px_30px] !w-[max-content] btn_animated_blue" onClick={handleModal}
+            <button className="md:block hidden rounded-[30px] !border-blue filled_btn 2xl:mt-[27px] mt-[4px] md:!p-[18px_62px] !p-[8px_30px] !w-[max-content] btn_animated_blue" onClick={handleModal}
             data-scroll
             data-scroll-speed="0.06">
               Apply now
@@ -64,14 +64,14 @@ function Sales({ handleModal }) {
         </div>
       </div>
       <div
-        className="2xl:pl-[12px] h-auto pt-[93px]"
+        className="2xl:pl-[12px] h-auto md:pt-[93px] pt-[60px]"
       >
         <MagnifyOnScroll
           src="/images/automotiveCompanies.webp"
           width={948}
           height={613}
           alt="yvoo-search"
-          className="relative z-10 3xl:max-w-[948px] 2xl:max-w-[708px] max-w-[319px] 3xl:w-[948px] 2xl:left-[0] md:left-[-85px] left-[0] 2xl:ml-[0] ml-[auto]"
+          classes="block relative z-10 3xl:max-w-[948px] 2xl:max-w-[708px] max-w-[319px] 3xl:w-[948px] 2xl:left-[0] md:left-[-85px] left-[0] 2xl:ml-[0] ml-[auto]"
           data-scroll
           data-scroll-speed="0.15"
         />

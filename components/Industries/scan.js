@@ -42,9 +42,9 @@ function Scan({ handleModal }) {
           transform: "translateZ(-10px)",
           transformStyle: "preserve-3d",
         }}
-        className="pl-[41px] md:pl-[50px] pr-[12px] md:pr-[50px] py-[16px] md:py-0 md:flex-center flex-col min-h-[773px] 2xl:min-h-[914px] 3xl:min-h-[854px]"
+        className="pl-[41px] md:pl-[50px] pr-[12px] md:pr-[50px] pt-[20px] pb-[100px] md:py-0 md:flex-center flex-col"
       >
-        <div className="pb-[180px] mb-[140px] md:mb-0 md2:ml-[23px] md:mt-[180px] flex flex-col 3xl:gap-[24px] gap-[20px] text-black font-[400] leading-[20px] [&>p]:text-[14px] [&>p]:md:text-[16px] 3xl:max-w-[671px] max-w-[479px]">
+        <div className="md:pb-[180px] md2:ml-[23px] md:mt-[180px] flex flex-col md:gap-[24px] gap-[16px] text-black font-[400] leading-[20px] [&>p]:text-[14px] [&>p]:md:text-[16px] 3xl:max-w-[671px] max-w-[479px]">
           <h1
             className="break-all font-inter font-[700] text-black 2xl:text-[50px] md:text-[40px] text-[30px] 2xl:leading-[58px] md:leading-[44px] leading-[34px]"
             data-scroll
@@ -52,15 +52,15 @@ function Scan({ handleModal }) {
           >
             Manufacturing
           </h1>
-          <div className="flex flex-col gap-[24px] 3xl:mb-[24px] 2xl:mb-[28px]">
-            <p className="font-[700] text-[16px] text-black 2xl:text-[24px] md:text-[20px] text-[16px] leading-[20px] md:leading-[24px] 2xl:leading-[30px] max-w-[281px] md:max-w-[382px]"
+          <div className="flex flex-col gap-[24px] 3xl:mb-[24px] 2xl:mb-[28px] mb-[22px]">
+            <p className="font-[700] text-[16px] text-black 2xl:text-[24px] md:text-[20px] text-[18px] leading-[26px] 2xl:leading-[30px] max-w-[281px] md:max-w-[382px]"
             data-scroll
             data-scroll-speed="0.17">
               Cut your Supplier Evaluation Costs by up to 70%{" "}
             </p>
           </div>
           <p
-            className="2xl:pr-[0] pr-[29px] mb-[-5px]"
+            className="2xl:pr-[0] pr-[29px] md:mb-[-5px] mb-[5px] "
             data-scroll
             data-scroll-speed="0.16"
           >
@@ -72,7 +72,7 @@ function Scan({ handleModal }) {
             costly, especially with increasing fuel prices.
           </p>
           <p
-            className="3xl:pr-[0] 2xl:pr-[5px] pr-[29px] 3xl:mb-[0] mb-[5px]"
+            className="3xl:pr-[0] 2xl:pr-[5px] pr-[29px] 3xl:mb-[0] md:mb-[5px] mb-[8px]"
             data-scroll
             data-scroll-speed="0.14"
           >
@@ -92,7 +92,7 @@ function Scan({ handleModal }) {
             audited suppliers, and reduce compliance risk
           </p>
           <button
-            className="rounded-[30px] !border-white !text-white !hover:text-black filled_btn btn_animated_white 2xl:mt-[24px] mt-[6px] !border-[#000000] !border-[2px] md:!p-[18px_60px] !p-[8px_30px] !w-[max-content] text-nowrap btn_animated_black"
+            className="md:block hidden rounded-[30px] !border-white !text-white !hover:text-black filled_btn btn_animated_white 2xl:mt-[24px] mt-[6px] !border-[#000000] !border-[2px] md:!p-[18px_60px] !p-[8px_30px] !w-[max-content] text-nowrap btn_animated_black"
             onClick={handleModal}
             data-scroll
             data-scroll-speed="0.1"

@@ -6,7 +6,7 @@ function Search({ handleModal }) {
   return (
     <div
       id="search"
-      className="relative pt-[288px] pb-[240px] px-[202px] bg-mint"
+      className="relative md:pt-[288px] pt-[145px] md:pb-[240px] pb-[140px] md:px-[202px] px-[12px] bg-mint"
     >
       <div className="relative">
         <MagnifyOnScroll
@@ -15,21 +15,20 @@ function Search({ handleModal }) {
           width={746}
           height={543}
           alt="yvoo-search"
-          classes="absolute 2xl:left-[154px] 2xl:top-[-714px] 3xl:max-w-[898px] 2xl:max-w-[660px] max-w-[336px]"
+          classes="absolute 2xl:left-[154px] 2xl:top-[-714px] top-[-285px] 3xl:max-w-[898px] 2xl:max-w-[660px] max-w-[336px]"
           data-scroll
           data-scroll-speed="0.1"
         />
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-2 w-full 2xl:gap-[171px]">
-        <div className="relative py-[55px] md:py-0 h-fit md:flex-center flex-col">
-          <div className="flex px-[41px] 2xl:px-[0] flex-wrap md:flex-nowrap md:flex-col gap-[24px]">
+      <div className="grid grid-cols-1 md:grid-cols-2 w-full 2xl:gap-[171px] gap-[60px] md:px-[0] px-[29px]">
+        <div className="relative md:py-[55px] md:py-0 h-fit md:flex-center flex-col">
+          <div className="flex flex-wrap md:flex-nowrap md:flex-col gap-[24px]">
             <h1
               className="font-inter text-black font-[700] 2xl:text-[50px] md:text-[40px] text-[30px] 2xl:leading-[58px] md:leading-[44px] leading-[34px] z-[1]"
               data-scroll
               data-scroll-speed="0.1"
             >
-              Plant Engineering for
-              <br /> Renewable Hydrogen
+              Plant Engineering for Renewable Hydrogen
               <br /> Production
             </h1>
             <Image
@@ -44,9 +43,9 @@ function Search({ handleModal }) {
           </div>
         </div>
         <div className="relative md:flex-center flex-col">
-          <div className="pt-[5px] max-w-[503px] 3xl:max-w-[672px] flex flex-col 2xl:gap-[20px] gap-[16px] font-[400] leading-[20px] [&>p]:text-[14px] [&>p]:md:text-[16px] text-black">
+          <div className="md:pt-[5px] max-w-[503px] 3xl:max-w-[672px] flex flex-col 2xl:gap-[20px] gap-[16px] font-[400] leading-[20px] [&>p]:text-[14px] [&>p]:md:text-[16px] text-black">
             <p
-              className="font-[700] 2xl:!text-[24px] md:!text-[20px] !text-[16px] 2xl:!leading-[30px] !md:leading-[26px] !leading-[20px] 2xl:mb-[4px] mb-[0]"
+              className="font-[700] 2xl:!text-[24px] md:!text-[20px] !text-[18px] 2xl:!leading-[30px] !leading-[26px] 2xl:mb-[4px] mb-[0]"
               data-scroll
               data-scroll-speed="0.15"
             >
@@ -81,7 +80,7 @@ function Search({ handleModal }) {
               towards lower-carbon sources of energy
             </p>
             <button
-              className="rounded-[30px] !border-white !text-white !hover:text-black filled_btn btn_animated_white 3xl:mt-[28px] 2xl:mt-[27px] mt-[7px] md:!p-[18px_62px] p-[8px_30px] !border-2 !w-[max-content]"
+              className="rounded-[30px] !border-white !text-white !hover:text-black filled_btn btn_animated_white 3xl:mt-[28px] 2xl:mt-[27px] mt-[16px] md:!p-[18px_62px] p-[14px_32px] !border-2 !w-[max-content] !h-[max-content]"
               onClick={handleModal}
               data-scroll
               data-scroll-speed="0.15"
