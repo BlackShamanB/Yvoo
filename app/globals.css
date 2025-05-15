@@ -335,7 +335,7 @@ body {
 }
 
 .btn_animated_white:hover {
-  color: #000;
+  color: #000 !important;
   box-shadow: inset 400px 50px 0 0 #fff;
 }
 .btn_animated_blue {

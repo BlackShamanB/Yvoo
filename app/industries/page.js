@@ -21,29 +21,23 @@ export default function Home() {
   useEffect(() => {
     // initParallax();
     // initRotateSentences();
-
-    import("locomotive-scroll").then((locomotiveModule) => {
-      const LocomotiveScroll = locomotiveModule.default;
-      new LocomotiveScroll({
-        el: containerRef.current,
-      });
-    });
+    // import("locomotive-scroll").then((locomotiveModule) => {
+    //   const LocomotiveScroll = locomotiveModule.default;
+    //   new LocomotiveScroll({
+    //     el: containerRef.current,
+    //   });
+    // });
   }, []);
 
   return (
-    <main className="w-full md:pt-[86px] pt-[58px]" ref={containerRef} data-scroll-container>
+    <main className="w-full" ref={containerRef} data-scroll-container>
       <div className="flex flex-col">
-        <div className="bg-no-repeat md:bg-right-bottom bg-left-top bg-cover md:bg-contain 3xl:bg-industriesBg3xl md:bg-industriesBg2xl bg-industriesBg px-[40px] customxs:px-[50px] 2xl:px-[162px] 3xl:px-[202px] pt-[80px] 2xl:pt-[154px] 3xl:pt-[156px] pb-[270px] 2xl:pb-[562px] 3xl:pb-[560px]">      <Image
-          src="/icons/greenTriangle-1.png"
-          width={116}
-          height={139}
-          alt="triangle"
-          className="3xl:block 2xl:hidden absolute 2xl:top-[37.5%] top-[28%] 3xl:left-[34%] 2xl:left-[7%] md:left-[16%] left-[11%] mouse-parallax 2xl:max-w-[116px] max-w-[63px] z-[200]"
-          
-          data-scroll data-scroll-speed="0.16"
-        />
-          <h1 className="uppercase font-inter font-[800] text-[40px] md:text-[50px] 2xl:text-[60px] leading-[34px] md:leading-[54px] 2xl:leading-[64px]"
-          data-scroll data-scroll-speed="0.15">
+        <div className="bg-no-repeat md:bg-right-bottom bg-left-top bg-cover md:bg-contain 3xl:bg-industriesBg3xl md:bg-industriesBg2xl bg-industriesBg px-[40px] customxs:px-[50px] 2xl:px-[162px] 3xl:px-[202px] pt-[80px] 2xl:pt-[154px] 3xl:pt-[162px] pb-[270px] 2xl:pb-[562px] 3xl:pb-[550px]">
+          <h1
+            className="font-inter font-[700] md:text-[60px] text-[40px] md:leading-[68px] leading-[34px]"
+            data-scroll
+            data-scroll-speed="0.15"
+          >
             Industries
           </h1>
         </div>

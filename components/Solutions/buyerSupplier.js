@@ -40,7 +40,7 @@ function BuyerSupplier({ handleModal }) {
               We are your Uber for procurement.
             </h2>
             <button
-              className="filled_btn_primary btn_animated_blue rounded-[30px] hover:!text-[black] !text-[#06D7F9] !border-[#06D7F9] 2xl:mt-[17px] mt-[20px] 2xl:ml-[92px] md:ml-[57px] mx-[auto] md:!max-w-[224px] !max-w-[max-content] md:!text-[16px] !text-[12px] md:!leading-[20px] !leading-[16px] md:!px-[62px] !px-[32px] md:!py-[18px] !py-[14px]"
+              className="whitespace-nowrap filled_btn_primary btn_animated_blue rounded-[30px] hover:!text-[black] !text-[#06D7F9] !border-[#06D7F9] 2xl:mt-[17px] mt-[20px] 2xl:ml-[92px] md:ml-[57px] mx-[auto] md:!max-w-[224px] !max-w-[max-content] md:!text-[16px] !text-[12px] md:!leading-[20px] !leading-[16px] md:!px-[62px] !px-[32px] md:!py-[18px] !py-[14px]"
               onClick={handleModal}
             >
               Book a demo
@@ -122,7 +122,7 @@ function BuyerSupplier({ handleModal }) {
               Way to your excellence
             </h2>
             <button
-              className="mint_btn btn_animated_green md:mt-[15px] mt-[32px] rounded-[30px] md:!max-w-[224px] !max-w-[max-content] md:!px-[62px] !px-[32px] md:!py-[18px] !h-[auto] !py-[14px] md:!text-[16px] !text-[12px] md:!leading-[20px] !leading-[16px] text-[#FFF]"
+              className="whitespace-nowrap mint_btn btn_animated_green md:mt-[15px] mt-[32px] rounded-[30px] md:!max-w-[224px] !max-w-[max-content] md:!px-[62px] !px-[32px] md:!py-[18px] !h-[auto] !py-[14px] md:!text-[16px] !text-[12px] md:!leading-[20px] !leading-[16px] text-[#FFF]"
               onClick={handleModal}
             >
               Book a demo
