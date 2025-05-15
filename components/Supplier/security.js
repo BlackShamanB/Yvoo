@@ -1,16 +1,16 @@
 function Security() {
   return (
-    <div className="px-[41px] 2xl:px-[162px] 3xl:px-[202px] w-full md:bg-white pt-[46px] md:pt-[66px] 2xl:pt-[113px] pb-[54px] md:pb-[0px] bg-[white]">
+    <div className="px-[41px] 2xl:px-[162px] 3xl:px-[202px] w-full md:bg-white md:pt-[120px] pt-[46px] pb-[54px] md:pb-[0px] bg-[white]">
       <div className="w-full pb-[0px] md:pb-[116px] 3xl:pb-[195px]">
         <div className="flex flex-wrap md:flex-nowrap 3xl:gap-[97px] 2xl:gap-[67px] gap-[173px]">
-          <div className="relative flex flex-col gap-[26px] md:gap-[55px] flex-1">
+          <div className="relative flex flex-col md:gap-[42px] gap-[26px] flex-1">
             <div
-              className="absolute bg-[#06D7F9] 3xl:w-[594px] 2xl:w-[393px] w-[262px] 2xl:h-[680px] h-[400px] 2xl:top-[-114px] 2xl:right-[0] right-[-41px] z-[0]"
+              className="absolute bg-[#06D7F9] 3xl:w-[594px] 2xl:w-[393px] w-[262px] 2xl:h-[680px] h-[400px] 2xl:top-[-120px] 2xl:right-[0] right-[-41px] z-[0]"
               data-scroll
               data-scroll-speed="0.1"
             ></div>
             <h1
-              className="font-inter uppercase text-black font-[700] text-[30px] md:text-[40px] 2xl:text-[50px] leading-[34px] md:leading-[44px] 2xl:leading-[54px] z-[1] 2xl:mt-[0] mt-[78px]"
+              className="font-inter text-black font-[700] md:text-[50px] text-[30px] md:leading-[58px] leading-[34px] z-[1] 2xl:mt-[0] mt-[78px]"
               data-scroll
               data-scroll-speed="0.15"
             >
@@ -27,7 +27,7 @@ function Security() {
             </p>
           </div>
 
-          <div className="font-[400] md:text-[16px] text-[14px] leading-[20px] flex flex-col gap-[20px] flex-1 [&>p]:text-black pt-[7px] 3xl:max-w-[673px] max-w-[503px]"
+          <div className="font-[400] md:text-[16px] text-[14px] leading-[20px] flex flex-col gap-[20px] flex-1 [&>p]:text-black 3xl:max-w-[673px] max-w-[503px]"
           data-scroll
           data-scroll-speed="0.1">
             <p>

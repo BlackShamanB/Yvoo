@@ -14,17 +14,17 @@ export default function Supplier() {
     // initParallax();
     // initRotateSentences();
     
-    import('locomotive-scroll').then((locomotiveModule) => {
-      const LocomotiveScroll = locomotiveModule.default;
-      new LocomotiveScroll({
-        el: containerRef.current,
-      });
-    });
+    // import('locomotive-scroll').then((locomotiveModule) => {
+    //   const LocomotiveScroll = locomotiveModule.default;
+    //   new LocomotiveScroll({
+    //     el: containerRef.current,
+    //   });
+    // });
 
   }, []);
   return (
-    <main className="w-full md:pt-[86px] pt-[58px]" ref={containerRef} data-scroll-container>
-      <div className="flex flex-col">
+    <main className="w-full" ref={containerRef} data-scroll-container>
+      <div className="flex flex-col bg-[#131D2A]">
         <Hero />
         <Potential />
         <Security />
