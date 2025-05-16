@@ -19,8 +19,8 @@ export default function Home() {
 
   const containerRef = useRef(null);
   useEffect(() => {
-    initParallax();
-    initRotateSentences();
+    // initParallax();
+    // initRotateSentences();
     import("locomotive-scroll").then((locomotiveModule) => {
       const LocomotiveScroll = locomotiveModule.default;
       new LocomotiveScroll({
