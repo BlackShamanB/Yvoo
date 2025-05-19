@@ -46,10 +46,10 @@ export default function Home() {
       <Hero handleModal={handleModal}/>
       {/* <Discover /> */}
       <Situation></Situation>
+      <Search handleModal={handleModal} />
       <Effective></Effective>
       <Scan handleModal={handleModal} />
       <Expensive></Expensive>
-      {/* <Search handleModal={handleModal} /> */}
       <Sales/>
       <Auditor />
       {/* <ModalRequest onClose={handleModal} visible={openModalRequest} /> */}

@@ -38,7 +38,7 @@ function Hero() {
   };
 
   return (
-    <div className="relative w-full px-[20px] customsm:px-[50px] bg-[#414141] flex justify-center 3xl:pt-[162px] 2xl:pt-[162px] md:pt-[162px] pt-[80px] xl:pb-0 md:max-h-[1008px]">
+    <div className="relative w-full px-[20px] customsm:px-[50px] bg-[#414141] flex justify-center 3xl:pt-[162px] 2xl:pt-[162px] md:pt-[162px] pt-[80px] xl:pb-0">
       <div className="absolute top-0 w-full h-[100%] bg-black">
         <Image
           src={"/images/HomeBackground.webp"}
@@ -80,12 +80,12 @@ function Hero() {
         data-scroll-speed="0.3"
       >
         <LoadOnLoad>
-          <div className="3xl:max-w-[1516px] 2xl:max-w-[1116px] md:max-w-[598px] 3xl:w-[1516px] 2xl:w-[1116px] mx-[auto] md:pl-[0] pl-[20px] md:pr-[0] pr-[20px] pb-[126px]">
+          <div className="3xl:max-w-[1516px] 2xl:max-w-[1116px] md:max-w-[598px] 3xl:w-[1516px] 2xl:w-[1116px] mx-[auto] md:pl-[0] pl-[20px] md:pr-[0] pr-[20px] pb-[236px]">
             <h1
               className="relative font-inter 2xl:text-[60px] md:text-[50px] text-[30px] font-[700] 2xl:leading-[68px] md:leading-[54px] leading-[34px] max-w-[830px] md:mb-[42px] mb-[20px]"
               ref={elementRef}
             >
-              Ground Truth Supplier Superintelligence{" "}
+              <span className="text-green">Ground Truth:</span> Supplier Superintelligence{" "}
             </h1>
             <div className="md:text-[24px] text-[18px] md:leading-[30px] leading-[26px] font-[700] md:mb-[60px] mb-[20px] max-w-[746px]">
               Industry-first on-demand booking of on-site supplier evaluations -
@@ -96,12 +96,12 @@ function Hero() {
               strategic intelligence.
             </div>
             <div
-              className="text-black text-[16px] leading-[20px] font-[500] w-[max-content] p-[20px_64px] bg-blue rounded-[30px] md:mb-[60px] mb-[32px] uppercase"
+              className="text-black text-[16px] leading-[20px] font-[500] w-[max-content] p-[20px_64px] bg-blue rounded-[30px] md:mb-[20px] mb-[32px] uppercase"
               onClick={handleModal}
             >
               Exclusive Opportunity for New Clients!
             </div>
-            <div className="font-[400] text-[20px] leading-[28px]">
+            <div className="font-[400] text-[20px] leading-[28px] mb-[60px] max-w-[746px]">
               Benefit from a 50% introductory discount on your first YVOO supplier evaluation
             </div>
             <div className="flex items-center mb-[8px]">
@@ -110,7 +110,7 @@ function Hero() {
                 Supplier audited by YVOO
               </div>
             </div>
-            <div className="text-green text-[24px] leading-[30px] font-[400]">
+            <div className="text-green text-[24px] leading-[30px] font-[400] ml-[20px]">
               1.471
             </div>
           </div>
