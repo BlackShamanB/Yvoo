@@ -11,6 +11,7 @@
   "dependencies": {
     "@builder.io/partytown": "^0.8.1",
     "@portabletext/react": "^3.0.7",
+    "@rive-app/react-canvas": "^4.20.1",
     "@sanity/client": "^6.4.12",
     "@sanity/image-url": "^1.0.2",
     "@studio-freight/lenis": "^1.0.33",
@@ -21,6 +22,7 @@
     "encoding": "^0.1.13",
     "groq": "^3.16.7",
     "locomotive-scroll": "^5.0.0-beta.11",
+    "lottie-react": "^2.4.1",
     "next": "^14.0.4",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",

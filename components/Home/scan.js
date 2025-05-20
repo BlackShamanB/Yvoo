@@ -110,7 +110,7 @@ function Scan({ handleModal }) {
   }, []);
   return (
     <LoadOnLoad>
-      <div className="relative w-full flex flex-col justify-center bg-white">
+      <div className="relative w-full flex flex-col justify-center bg-white -mt-[96px]">
         <div className="3xl:max-w-[1516px] 2xl:max-w-[1116px] md2:max-w-[598px] mx-[auto] relative grid md2:grid-cols-2 grid-cols-1 gap-x-[60px] md2:gap-y-[120px] gap-y-[60px] w-full md2:pt-[200px] pt-[80px] md2:mb-[180px] mb-[80px] md2:px-[0] px-[41px]">
           {data.map((item, index) => (
             <SafetyStandards

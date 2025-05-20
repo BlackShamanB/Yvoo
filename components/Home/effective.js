@@ -3,10 +3,23 @@ import MagnifyOnScroll from "../MagnifyOnScroll";
 import React, { useState, useEffect, useRef } from "react";
 import ImgLeftToRight from "../ImgLeftToRight";
 import LoadOnLoad from "../LoadOnLoad";
+import Lottie from "lottie-react";
+// import animationData from '@/public/animationJSON/Artboard1.json'
+import animationData from "@/public/animation/Flow_1.json";
+// import animationDataMap from "@/public/animation/map.json";
+// import animationDataMap from "@/public/animation/map.riv";
+import { useRive } from "@rive-app/react-canvas";
 
 function Effective({ handleModal }) {
   const elementRef = useRef(null);
   const [elementVisible, setelementVisible] = useState(false);
+
+  const { RiveComponent } = useRive({
+    src: "/animation/23.riv", // Путь от public/
+  stateMachines: ["State Machine 1"], // Если используется
+    autoplay: true,
+  });
+
 
   const handleScroll = () => {
     if (elementRef.current) {
@@ -29,7 +42,7 @@ function Effective({ handleModal }) {
 
   const [currentCard, setCurrentCard] = useState(0);
   const [animationPhase, setAnimationPhase] = useState("fade-in");
-
+  console.log(animationData);
   useEffect(() => {
     const interval = setInterval(() => {
       setAnimationPhase((prevPhase) =>
@@ -175,7 +188,7 @@ function Effective({ handleModal }) {
           <div className="mb-[164px] whitespace-nowrap rounded-[30px] filled_btn_primary btn_animated_blue hover:!text-black !text-[#06D7F9] 2xl:!text-[16px] !text-[12px] 2xl:!leading-[20px] !leading-[16px] md:!p-[18px_32px] !p-[14px_32px] !w-[max-content] !max-w-[max-content]">
             Find Your Auditor Now
           </div>
-          <div className="relative grid md2:grid-cols-3 grid-cols-1 3xl:gap-[83px] md2:gap-[50px] gap-[0px] 3xl:mb-[25px] mb-[0] md2:px-[0] px-[41px]">
+          <div className="relative grid md2:grid-cols-3 grid-cols-1 3xl:gap-[83px] md2:gap-[50px] gap-[0px] md2:px-[0] px-[41px]">
             <div className="md2:hidden z-[1] bg-black flex flex-col justify-center text-center items-center md2:mb-[3px] mb-[64px]">
               <Image
                 src="/icons/CentralAIHub.svg"
@@ -184,7 +197,7 @@ function Effective({ handleModal }) {
                 alt="triangle"
               />
             </div>
-            <div className="flex z-[1] bg-black flex-row md2:gap-[23px] gap-[8px] border-blue border-[2px] rounded-[30px] 2xl:p-[42px_30px] p-[30px_20px_30px_17px] 3xl:mt-[206px] md2:mt-[72px] h-[max-content] md2:mb-[7px] mb-[72px]">
+            <div className="flex z-[1] bg-black flex-row md2:gap-[23px] gap-[8px] border-blue border-[2px] rounded-[30px] 2xl:p-[40px_28px] p-[30px_20px_30px_17px] 3xl:mt-[92px] md2:mt-[72px] h-[max-content] md2:mb-[7px] mb-[72px]">
               <div>
                 <Image
                   src="/icons/AIGeneratedAuditFramework.svg"
@@ -201,13 +214,13 @@ function Effective({ handleModal }) {
                   <br className="md2:block hidden" />
                   Guidance
                 </div>
-                <div className="md2:text-[20px] text-[16px] md2:leading-[28px] leading-[22px] font-[300] text-white">
+                <div className="md2:text-[20px] text-[                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      6px] md2:leading-[28px] leading-[22px] font-[300] text-white">
                   AI builds a customized audit framework and guidance, covering
                   every necessary aspect objectively
                 </div>
               </div>
             </div>
-            <div className="flex z-[1] bg-black flex-row md2:gap-[23px] gap-[8px] border-blue border-[2px] rounded-[30px] 2xl:p-[42px_30px] p-[30px_20px_30px_30px] h-[max-content] md2:order-[0] md2:mb-[0] mb-[72px] -order-1">
+            <div className="flex z-[1] bg-black flex-row md2:gap-[23px] gap-[8px] border-blue border-[2px] rounded-[30px] 2xl:p-[40px_28px] p-[30px_20px_30px_30px] h-[max-content] md2:order-[0] md2:mb-[0] mb-[72px] -order-1">
               <div>
                 <Image
                   src="/icons/ClickAuditRequest.svg"
@@ -219,14 +232,15 @@ function Effective({ handleModal }) {
               </div>
               <div>
                 <div className="3xl:text-[30px] md2:text-[28px] text-[18px] 3xl:leading-[38px] md2:leading-[36px] leading-[26px] font-[700] text-blue md2:mb-[24px] mb-[12px]">
-                  1-Click<br/> Audit Request
+                  1-Click
+                  <br /> Audit Request
                 </div>
                 <div className="md2:text-[20px] text-[16px] md2:leading-[28px] leading-[22px] font-[300] text-white">
                   Instant audit request tailored to your compliance needs
                 </div>
               </div>
             </div>
-            <div className="flex flex-row z-[1] bg-black md2:gap-[23px] gap-[8px] border-blue border-[2px] rounded-[30px] 2xl:p-[42px_30px] p-[30px_20px_30px_17px] 3xl:mt-[206px] md2:mt-[138px] h-[max-content] md2:mb-[0] mb-[72px]">
+            <div className="flex flex-row z-[1] bg-black md2:gap-[23px] gap-[8px] border-blue border-[2px] rounded-[30px] 2xl:p-[40px_28px] p-[30px_20px_30px_17px] 3xl:mt-[197px] md2:mt-[138px] h-[max-content] md2:mb-[0] mb-[72px]">
               <div>
                 <Image
                   src="/icons/AuditorAssignment.svg"
@@ -257,110 +271,12 @@ function Effective({ handleModal }) {
               Ваш браузер не поддерживает SVG
             </object>
           </div>
-          <div className="text-center relative w-full flex items-center justify-center md2:flex hidden">
-            <Image
-              src="/icons/AIGuidedLines.svg"
-              width={1087}
-              height={761}
-              alt="triangle"
-              className="absolute 3xl:mt-[-124px] mt-[-90px] 3xl:max-w-[100%] 2xl:max-w-[800px] max-w-[708px] md2:block hidden"
-            />
-            <Image
-              src="/icons/CentralAIHub.svg"
-              width={174}
-              height={174}
-              alt="triangle"
-              className=""
-            />
-          </div>
-          <div className="flex flex-col md2:px-[0] px-[19px] z-[1]">
-            <div className="self-center md2:block hidden">
-              <Image
-                src="/icons/Line_9.svg"
-                width={2}
-                height={345}
-                alt="triangle"
-                className="opacity-0 3xl:max-h-[unset] max-h-[145px]"
-              />
+          <div className="relative w-full -mt-[218px]">
+            <div className="relative">
+
+            <div style={{ width: "1516px", height: "2020px" }} className="left-[0] -top-[244px]">
+      <RiveComponent />
             </div>
-            <div className="relative self-center text-center">
-              <div className="absolute md2:top-[370px] top-[157px] md2:left-[153px] md2:right-[unset] right-[-14px] z-[11]">
-                <div
-                  className={`relative bg-white md2:rounded-[30px] rounded-[12px] md2:p-[36px_30px_26px] p-[16px_6px_12px_12px] custom-shadow mb-[20px] card text-left md2:max-w-[unset] max-w-[134px]`}
-                >
-                  <div className="md2:text-[12px] text-[8px] md2:leading-[16px] leading-[12px] font-[400] text-[#898989] mb-[8px]">
-                    2024.24.10
-                  </div>
-                  <div className="md2:text-[16px] text-[8px] md2:leading-[20px] leading-[12px] font-[400] text-black md2:mb-[33px] mb-[16px]">
-                    Your supplier audit is scheduled on the..
-                  </div>
-                  <div className="flex flex-row justify-between">
-                    <div className="md2:text-[12px] text-[8px] md2:leading-[16px] leading-[12px] font-[400] text-blue uppercase">
-                      more info
-                    </div>
-                    <div className="md2:text-[12px] text-[8px] md2:leading-[16px] leading-[12px] font-[400] text-[#898989]">
-                      Today 12:30
-                    </div>
-                  </div>
-                  <Image
-                    src="/icons/Notification.svg"
-                    width={34}
-                    height={34}
-                    alt="Notification"
-                    className="absolute top-[15px] right-[15px] md2:max-w-[34] max-w-[14px]"
-                  />
-                </div>
-                <div
-                  className={`relative bg-white md2:rounded-[30px] rounded-[12px] md2:p-[36px_30px_26px] p-[16px_6px_12px_12px] custom-shadow card card-2 text-left md2:max-w-[unset] max-w-[134px]`}
-                  // style={{ animationDelay: "0.5s" }}
-                >
-                  <div className="md2:text-[12px] text-[8px] md2:leading-[16px] leading-[12px] font-[400] text-[#898989] mb-[8px]">
-                    2024.24.10
-                  </div>
-                  <div className="md2:text-[16px] text-[8px] md2:leading-[20px] leading-[12px] font-[400] text-black md2:mb-[33px] mb-[16px]">
-                    The audit report is released.
-                  </div>
-                  <div className="flex flex-row justify-between">
-                    <div className="md2:text-[12px] text-[8px] md2:leading-[16px] leading-[12px] font-[400] text-blue uppercase">
-                      more info
-                    </div>
-                    <div className="md2:text-[12px] text-[8px] md2:leading-[16px] leading-[12px] font-[400] text-[#898989]">
-                      Today 12:30
-                    </div>
-                  </div>
-                  <Image
-                    src="/icons/Notification.svg"
-                    width={34}
-                    height={34}
-                    alt="Notification"
-                    className="absolute top-[15px] right-[15px] md2:max-w-[34] max-w-[14px]"
-                  />
-                </div>
-              </div>
-              <Image
-                src="/icons/IPad_1.svg"
-                width={771}
-                height={1014}
-                alt="triangle"
-                className="relative justify-self-center z-[2] md2:block hidden"
-              />
-              <div className="absolute z-[10] top-[14px] right-[28px] md2:hidden md2:text-[12px] text-[8px] md2:leading-[16px] leading-[12px] block p-[8px_12px] bg-blue text-black rounded-[16px] max-w-[max-content]">
-                book a demo
-              </div>
-              <Image
-                src="/icons/IPad_1-mobile.svg"
-                width={322}
-                height={422}
-                alt="triangle"
-                className="relative justify-self-center md2:hidden block"
-              />
-              <Image
-                src="/icons/Map.svg"
-                width={1516}
-                height={722}
-                alt="triangle"
-                className="relative md2:block hidden md2:-mt-[269px]"
-              />
             </div>
           </div>
           <div className="max-h-[232px] overflow-hidden md2:hidden block md2:-mt-[269px] -mt-[112px] ">
