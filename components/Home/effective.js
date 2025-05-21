@@ -252,7 +252,7 @@ function Effective({ handleModal }) {
             </div>
               <div
                 style={{ width: "auto", height: "1683px" }}
-                className="relative left-[0] -top-[686px] -mx-[177px]"
+                className="md:hidden block relative left-[0] -top-[686px] -mx-[177px]"
               >
             <MobileMap />
             </div>

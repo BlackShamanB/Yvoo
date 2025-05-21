@@ -11,7 +11,7 @@ import Expensive from "@/components/Home/expensive";
 import Effective from "@/components/Home/effective";
 import ModalRequest from "@/components/ModalRequest";
 import React, { useState, useEffect, useRef } from "react";
-
+import RunningText from "@/components/RunningText";
 export default function Home() {
   const [openModalRequest, setOpenModalRequest] = useState(false);
   const containerRef = useRef(null);
@@ -42,7 +42,8 @@ export default function Home() {
   };
 
   return (
-    <main className="w-full" ref={containerRef}>
+    <main className="relative w-full" ref={containerRef}>
+      <RunningText textRef="YVOO announces EUR 6 million financing round: The round is led by Capmont, while existing investors such as Earlybird-X participating again. *"/>
       <Hero handleModal={handleModal}/>
       {/* <Discover /> */}
       <Situation></Situation>

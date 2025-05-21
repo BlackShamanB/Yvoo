@@ -73,7 +73,7 @@ const Header = () => {
   const links = [
     // { name: "Home", link: "/" },
     { name: "Solutions", link: "/solutions" },
-    // { name: "About us", link: "/about" },
+    { name: "Pricing", link: "/pricing" },
     { name: "For auditors", link: "/auditors" },
     { name: "For supplier", link: "/supplier" },
     // { name: "Consulting", link: "/consulting" },
