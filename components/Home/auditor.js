@@ -46,7 +46,7 @@ function Auditor() {
       <div className="absolute w-full bg-black h-[403px] bottom-0"></div>
       <div className="relative 3xl:max-w-[1516px] 2xl:max-w-[1116px] md:max-w-[728px] max-w-[100%] mx-[auto] relative justify-center md:pt-[200px] pt-[120px] gap-[133px] md:px-0 px-[12px]">
         <div className="flex flex-col justify-center mb-[150px] text-center">
-          <div className="text-blue md:text-[50px] text-[30px] md:leading-[58px] leading-[38px] font-[700]">
+          <div className="text-blue md:text-[50px] text-[30px] md:leading-[58px] leading-[38px] font-[700] mb-[6px]">
             YVOO
           </div>
           <div className="text-black md:text-[40px] text-[28px] md:leading-[58px] leading-[38px] font-[400]">
@@ -55,20 +55,6 @@ function Auditor() {
         </div>
         <LoadOnLoad>
           <div className="relative grid md:grid-cols-2 grid-cols-1 md:gap-[80px] gap-[40px] md:mb-[150px] mb-[98px] md:px-0">
-            {/* <Image
-            src="/icons/Connection1.svg"
-            width={65}
-            height={344}
-            alt="Connection1"
-            className="absolute top-[50%] left-[-65px] transform -translate-y-[50%]"
-          />
-          <Image
-            src="/icons/Connection2.svg"
-            width={871}
-            height={342}
-            alt="Connection2"
-            className="absolute top-[50%] right-[-73px] transform -translate-y-[50%]"
-          /> */}
             <div className="absolute 2xl:w-[calc(100%_+_146px)] md:w-[calc(100%_+_20px)] w-[calc(100%_-_57px)] 3xl:h-[344px] md:h-[600px] h-[calc(100%_+_110px)] 2xl:top-[131px] md:top-[320px] -top-[55px] 2xl:-left-[73px] md:-left-[10px] md:ml-[unset] md:translate-x-[0] -translate-x-[50%] left-[50%]">
               <Image
                 src="/icons/Connection-manufacturing.svg"
@@ -85,7 +71,7 @@ function Auditor() {
               className="relative md:hidden block h-[1255px] max-h-[100%] md:ml-[unset] -translate-x-[50%] left-[50%] min-w-[100%]"
             />
             </div>
-            <div className="relative flex flex-row 2xl:p-[40px_40px_70px] p-[28px_29px] rounded-[30px] bg-blue md:gap-[30px] gap-[10px]">
+            <div className="relative flex flex-row 2xl:p-[40px] p-[28px_29px] rounded-[30px] bg-blue md:gap-[30px] gap-[10px] h-[262px]">
               <div className="flex items-center">
                 <Image
                   src="/icons/1-ClickAuditRequest.svg"
@@ -106,7 +92,7 @@ function Auditor() {
                 </div>
               </div>
             </div>
-            <div className="relative flex flex-row 2xl:p-[40px_40px_70px] p-[28px_29px] rounded-[30px] bg-blue md:gap-[30px] gap-[10px]">
+            <div className="relative flex flex-row 2xl:p-[40px] p-[28px_29px] rounded-[30px] bg-blue md:gap-[30px] gap-[10px] h-[262px]">
               <div className="flex items-center">
                 <Image
                   src="/icons/YVOOAPI.svg"
@@ -126,7 +112,7 @@ function Auditor() {
                 </div>
               </div>
             </div>
-            <div className="relative flex flex-row 2xl:p-[40px_40px_70px] p-[28px_29px] rounded-[30px] bg-blue md:gap-[30px] gap-[10px]">
+            <div className="relative flex flex-row 2xl:p-[40px] p-[28px_29px] rounded-[30px] bg-blue md:gap-[30px] gap-[10px] h-[262px]">
               <div className="flex items-center">
                 <Image
                   src="/icons/RealTimeMonitoring.svg"
@@ -147,13 +133,13 @@ function Auditor() {
                 </div>
               </div>
             </div>
-            <div className="relative flex flex-row 2xl:p-[40px_40px_70px] p-[28px_29px] rounded-[30px] bg-blue md:gap-[30px] gap-[10px]">
+            <div className="relative flex flex-row 2xl:p-[40px] p-[28px_29px] rounded-[30px] bg-blue md:gap-[30px] gap-[10px] h-[262px]">
               <div className="flex items-center">
                 <Image
-                  src="/icons/1-ClickAuditRequest.svg"
+                  src="/icons/YVOOApp.svg"
                   width={103}
                   height={100}
-                  alt="ClickAuditRequest"
+                  alt="YVOOApp"
                   className="md:min-w-[103px] md:max-w-[103px] max-w-[78px]"
                 />
               </div>
@@ -171,24 +157,18 @@ function Auditor() {
           </div>
         </LoadOnLoad>
         <LoadOnLoad>
-          <div className="flex flex-col md:gap-[42px] gap-[20px] rounded-[30px] md:p-[80px_154px] p-[60px_29px] bg-mint items-center justify-center mb-[80px]">
+          <div className="flex flex-col text-center md:gap-[42px] gap-[20px] rounded-[30px] md:p-[80px_154px] p-[60px_29px] bg-mint items-center justify-center mb-[80px]">
             <div className="text-white md:text-[24px] text-[18px] md:leading-[30px] leading-[26px] font-[700]">
               Trusted by Industry Leaders: YVOO Delivers Unmatched Audit Success
             </div>
-            <div className="text-black md:text-[20px] text-[16px] md:leading-[30px] leading-[22px] font-[400]">
-              Global industry leaders rely on YVOO to streamline supplier
-              audits, reduce costs, and ensure compliance with industry
-              standards. By combining the power of AI with our network of
-              certified auditors, we deliver unparalleled audit
-              quality—on-demand and at scale.
+            <div className="text-black md:text-[20px] text-[16px] md:leading-[30px] leading-[22px] font-[400] mb-[30px]">
+              Global industry leaders rely on YVOO to streamline supplier audits, reduce costs, and ensure compliance with industry standards. By combining the power of AI with our network of certified auditors, we deliver unparalleled audit quality-on-demand and at scale.
               <br />
               <br />
               Want to see why our clients choose YVOO for their audit needs?
-              Check out our case studies and learn how we help businesses
-              maintain procurement excellence.
             </div>
             <div className="text-black md:text-[16px] text-[12px] md:leading-[20px] leading-[16px] font-[500] rounded-[30px] bg-white p-[20px_64px] w-[max-content] cursor-pointer uppercase">
-              See YVOO in Action
+              Industries YVOO covers
             </div>
           </div>
         </LoadOnLoad>
