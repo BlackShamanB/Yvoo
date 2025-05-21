@@ -25,7 +25,7 @@ function Scan({ handleModal }) {
       check: "icons/check.svg",
       color: "blue",
       title: "Manufacturing Standards",
-      content: "Maintaining the safety and well-being of workers and products",
+      content: "Ensuring global quality and precision in production",
       items: [
         { title: "ISO 9001", description: "Quality Management Systems" },
         {
@@ -42,7 +42,7 @@ function Scan({ handleModal }) {
       image: "/icons/SustainabilityStandards.svg",
       check: "icons/checkMint.svg",
       color: "mint",
-      title: "Environmental Standards",
+      title: "Sustainability Standards",
       content: "Ensuring environmental sustainability and compliance",
       items: [
         { title: "ISO 14001", description: "Environmental Management Systems" },
@@ -79,8 +79,10 @@ function Scan({ handleModal }) {
       check: "/icons/checkGrey.svg",
       color: "[#949CAF]",
       title: "Compliance Standards",
-      content: DOMPurify.sanitize(
-        "Ensuring ethical sourcing and regulatory compliance"
+      content: (
+        <>
+          Ensuring ethical sourcing<br />and regulatory compliance
+        </>
       ),
       items: [
         { title: "RoHS", description: "Restriction of Hazardous Substances" },
@@ -111,7 +113,7 @@ function Scan({ handleModal }) {
   return (
     <LoadOnLoad>
       <div className="relative w-full flex flex-col justify-center bg-white -mt-[96px]">
-        <div className="3xl:max-w-[1516px] 2xl:max-w-[1116px] md2:max-w-[598px] mx-[auto] relative grid md2:grid-cols-2 grid-cols-1 gap-x-[60px] md2:gap-y-[120px] gap-y-[60px] w-full md2:pt-[200px] pt-[80px] md2:mb-[180px] mb-[80px] md2:px-[0] px-[41px]">
+        <div className="3xl:max-w-[1516px] 2xl:max-w-[1116px] md2:max-w-[598px] mx-[auto] relative grid md2:grid-cols-2 grid-cols-1 gap-x-[60px] md2:gap-y-[140px] gap-y-[60px] w-full md2:pt-[200px] pt-[80px] md2:mb-[180px] mb-[80px] md2:px-[0] px-[41px]">
           {data.map((item, index) => (
             <SafetyStandards
               image={item.image}
@@ -124,7 +126,7 @@ function Scan({ handleModal }) {
             />
           ))}
         </div>
-        <div className="flex justify-center md2:mb-[200px] md2:px-[0] px-[12px]">
+        <div className="flex justify-center md2:mb-[180px] md2:px-[0] px-[12px]">
           <div className="text-black bg-blue rounded-[30px] md2:p-[20px_34px] p-[16px_18px] md2:text-[16px] text-[12px] md2:leading-[20px] leading-[16px] font-[500] uppercase">
             Need Compliance? Book a Consultation Now
           </div>

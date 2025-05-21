@@ -9,7 +9,7 @@ const SafetyStandards = ({ image, check, color, title, content, items }) => {
   };
 
   return (
-    <div className={`flex md:flex-row flex-col md:gap-[30px] gap-[15px] border-t-[6px] border-${color} pt-[40px]`}>
+    <div className={`flex md:flex-row flex-col md:gap-[30px] gap-[15px] border-t-[6px] border-${color} pt-[40px] pr-[40px]`}>
       <div>
         <Image
           src={`${image}`}
@@ -21,17 +21,16 @@ const SafetyStandards = ({ image, check, color, title, content, items }) => {
       </div>
       <div className="flex flex-col md:gap-[50px] gap-[30px]">
         <div className="">
-          <div className={`md:text-[34px] text-[24px] md:leading-[42px] leading-[32px] font-[700] text-${color}`}>
+          <div className={`md:text-[34px] text-[24px] md:leading-[42px] leading-[32px] font-[700] text-${color} mb-[36px]`}>
             {title}
           </div>
-          <br />
           <div className="md:text-[24px] text-[18px] md:leading-[30px] leading-[26px] font-[400] text-black">
             {content}
           </div>
         </div>
         <div className={`flex flex-col gap-[20px] collapse-block ${isCollapsed ? 'hidden' : ''}`}>
           {items.map((item, index) => (
-            <div key={index} className="flex flex-row md:gap-[20px] gap-[9px]">
+            <div key={index} className="flex flex-row gap-[9px]">
               <div>
                 <Image
                   src={check}

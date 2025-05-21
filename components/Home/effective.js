@@ -3,11 +3,6 @@ import MagnifyOnScroll from "../MagnifyOnScroll";
 import React, { useState, useEffect, useRef } from "react";
 import ImgLeftToRight from "../ImgLeftToRight";
 import LoadOnLoad from "../LoadOnLoad";
-import Lottie from "lottie-react";
-// import animationData from '@/public/animationJSON/Artboard1.json'
-import animationData from "@/public/animation/Flow_1.json";
-// import animationDataMap from "@/public/animation/map.json";
-// import animationDataMap from "@/public/animation/map.riv";
 import { useRive } from "@rive-app/react-canvas";
 
 function Effective({ handleModal }) {
@@ -16,7 +11,7 @@ function Effective({ handleModal }) {
 
   const { RiveComponent } = useRive({
     src: "/animation/23.riv", // Путь от public/
-  stateMachines: ["State Machine 1"], // Если используется
+    stateMachines: ["State Machine 1"], // Если используется
     autoplay: true,
   });
 
@@ -42,7 +37,7 @@ function Effective({ handleModal }) {
 
   const [currentCard, setCurrentCard] = useState(0);
   const [animationPhase, setAnimationPhase] = useState("fade-in");
-  console.log(animationData);
+
   useEffect(() => {
     const interval = setInterval(() => {
       setAnimationPhase((prevPhase) =>
@@ -273,10 +268,12 @@ function Effective({ handleModal }) {
           </div>
           <div className="relative w-full -mt-[218px]">
             <div className="relative">
-
-            <div style={{ width: "1516px", height: "2020px" }} className="left-[0] -top-[244px]">
-      <RiveComponent />
-            </div>
+              <div
+                style={{ width: "100%", height: "2020px" }}
+                className="left-[0] -top-[244px]"
+              >
+                <RiveComponent />
+              </div>
             </div>
           </div>
           <div className="max-h-[232px] overflow-hidden md2:hidden block md2:-mt-[269px] -mt-[112px] ">

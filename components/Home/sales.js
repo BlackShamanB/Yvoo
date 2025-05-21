@@ -191,7 +191,7 @@ function Sales({ handleModal }) {
     //   classNames="slide"
     // >
     <div key={item.id} className="bg-blue custom-slide">
-      <div className="flex md:flex-row flex-col gap-[20px]">
+      <div className="flex md:flex-row flex-col gap-[41px]">
         <div className="slide-title text-white md:text-[120px] text-[60px] md:leading-[120px] leading-[60px] font-[800]">
           0{item.id}
         </div>
@@ -232,7 +232,7 @@ function Sales({ handleModal }) {
       className="relative w-full flex flex-col justify-center bg-blue 2xl:pl-[169px] 2xl:pr-[202px] md:px-[20px] px-[12px] md:pb-[144px] pb-[80px]"
     >
       <LoadOnLoad>
-        <div className="relative 3xl:max-w-[1516px] 2xl:max-w-[100%] max-w-[100%] relative grid 3xl:grid-cols-[743px_1fr] 2xl:grid-cols-2 2xl:justify-center md:pt-[170px] pt-[80px] md:gap-[133px] gap-[40px]">
+        <div className="relative 2xl:max-w-[100%] max-w-[100%] relative grid 3xl:grid-cols-[743px_1fr] 2xl:grid-cols-2 2xl:justify-center md:pt-[170px] pt-[80px] md:gap-[133px] gap-[40px]">
           <div className="md:hidden block text-white md:text-[40px] text-[28px] md:leading-[48px] leading-[34px] font-[800] md:mt-[60px] md:px-[0] px-[29px]">
             How does YVOO Work
           </div>
@@ -248,7 +248,7 @@ function Sales({ handleModal }) {
           </div>
           <div className="w-full text-black block md2:px-[0] px-[29px] 3xl:max-w-[1516px] 2xl:max-w-[1116px] md:max-w-[728px] max-w-[100%] mx-[auto]">
             <div className="w-full">
-              <div className="md:block hidden md:max-w-[673px] max-w-[278px] mx-[auto] text-white md:text-[40px] text-[28px] md:leading-[48px] leading-[34px] font-[800] md:mt-[60px] md:px-[0] px-[29px] mb-[48px]">
+              <div className="md:block hidden md:max-w-[673px] max-w-[278px] mx-[auto] text-white md:text-[40px] text-[28px] md:leading-[48px] leading-[34px] font-[800] md:mt-[96px] md:px-[0] px-[29px] mb-[48px]">
                 How does YVOO Work
               </div>
               

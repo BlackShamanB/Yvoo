@@ -29,11 +29,11 @@ function Expensive({ handleModal }) {
   return (
     <div className="relative w-full flex flex-col justify-center bg-white">
       <LoadOnLoad>
-        <div className="3xl:max-w-[1516px] 2xl:max-w-[1116px] md2:max-w-[748px] mx-[auto] relative flex flex-col justify-center md2:pt-[140px] pt-[100px] md2:pb-[300px] pb-[100px]">
+        <div className="3xl:max-w-[1516px] 2xl:max-w-[1116px] md2:max-w-[748px] mx-[auto] relative flex flex-col justify-center md2:pt-[46px] pt-[100px] md2:pb-[300px] pb-[100px]">
           <div className="text-blue md2:text-[50px] text-[30px] md2:leading-[58px] leading-[38px] font-[700] text-center md2:mb-[16px] mb-[135px]">
             Why YVOO?
           </div>
-          <div className="text-center md2:mb-[40px] mb-[5px]">
+          <div className="text-center md2:mb-[33px] mb-[5px]">
             <Image
               src="/icons/Connection.svg"
               width={1183}
@@ -53,12 +53,12 @@ function Expensive({ handleModal }) {
                   className=""
                 />
               </div>
-              <div>
+              <div className="leading-[30px]">
                 <div className="text-black md2:text-[24px] text-[18px] md2:leading-[30px] leading-[26px] font-[600]">
                   Instant Global Audit Access
                 </div>
                 <br />
-                <div className="text-black md2:text-[24px] text-[16px] md2:leading-[30px] leading-[22px] font-[400]">
+                <div className="text-black md2:text-[20px] text-[16px] md2:leading-[30px] leading-[22px] font-[400]">
                   YVOO provides one-click access to certified auditors, ensuring
                   you can book audits anytime, anywhere.
                 </div>
@@ -74,12 +74,12 @@ function Expensive({ handleModal }) {
                   className=""
                 />
               </div>
-              <div>
+              <div className="leading-[30px]">
                 <div className="text-black md2:text-[24px] text-[18px] md2:leading-[30px] leading-[26px] font-[600]">
                   AI-Driven Objectivity
                 </div>
                 <br />
-                <div className="text-black md2:text-[24px] text-[16px] md2:leading-[30px] leading-[22px] font-[400]">
+                <div className="text-black md2:text-[20px] text-[16px] md2:leading-[30px] leading-[22px] font-[400]">
                   Our AI-guided audits deliver unmatched objectivity and
                   precision in supplier assessments.
                 </div>
@@ -95,12 +95,12 @@ function Expensive({ handleModal }) {
                   className=""
                 />
               </div>
-              <div>
+              <div className="leading-[30px]">
                 <div className="text-black md2:text-[24px] text-[18px] md2:leading-[30px] leading-[26px] font-[600]">
-                  Real-Time Audit Tracking
+                  Real-Time Tracking
                 </div>
                 <br />
-                <div className="text-black md2:text-[24px] text-[16px] md2:leading-[30px] leading-[22px] font-[400]">
+                <div className="text-black md2:text-[20px] text-[16px] md2:leading-[30px] leading-[22px] font-[400]">
                   Track your audit progress live, and communicate with auditors
                   in real-time for greater transparency.
                 </div>
@@ -116,12 +116,12 @@ function Expensive({ handleModal }) {
                   className=""
                 />
               </div>
-              <div>
+              <div className="leading-[30px]">
                 <div className="text-black md2:text-[24px] text-[18px] md2:leading-[30px] leading-[26px] font-[600]">
                   Cost-Efficient and Scalable
                 </div>
                 <br />
-                <div className="text-black md2:text-[24px] text-[16px] md2:leading-[30px] leading-[22px] font-[400]">
+                <div className="text-black md2:text-[20px] text-[16px] md2:leading-[30px] leading-[22px] font-[400]">
                   Save up to 70% on audit costs while accelerating timelines by
                   80%, scaling easily to your needs.
                 </div>
