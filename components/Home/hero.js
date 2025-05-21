@@ -38,7 +38,7 @@ function Hero() {
   };
 
   return (
-    <div className="relative w-full px-[20px] customsm:px-[50px] bg-[#414141] flex justify-center 3xl:pt-[162px] 2xl:pt-[162px] md:pt-[162px] pt-[80px] xl:pb-0">
+    <div className="relative w-full md:px-[20px] px-[41px] customsm:px-[50px] bg-[#414141] flex justify-center md:pt-[162px] pt-[120px] xl:pb-0">
       <div className="absolute top-0 w-full h-[100%] bg-black">
         <Image
           src={"/images/HomeBackground.webp"}
@@ -75,19 +75,19 @@ function Hero() {
         data-scroll-speed="0.2"
       />
       <div
-        className="z-10 w-full 2xl:max-w-[1516px] flex flex-col md:px-[0] px-"
+        className="z-10 w-full 2xl:max-w-[1516px] flex flex-col"
         data-scroll
         data-scroll-speed="0.3"
       >
         <LoadOnLoad>
-          <div className="3xl:max-w-[1516px] 2xl:max-w-[1116px] md:max-w-[598px] 3xl:w-[1516px] 2xl:w-[1116px] mx-[auto] md:pl-[0] pl-[20px] md:pr-[0] pr-[20px] pb-[236px]">
+          <div className="3xl:max-w-[1516px] 2xl:max-w-[1116px] md:max-w-[598px] 3xl:w-[1516px] 2xl:w-[1116px] mx-[auto] md:pl-[0] md:pb-[236px] pb-[142px]">
             <h1
-              className="relative font-inter 2xl:text-[60px] md:text-[50px] text-[30px] font-[700] 2xl:leading-[68px] md:leading-[54px] leading-[34px] max-w-[830px] md:mb-[42px] mb-[20px]"
+              className="relative font-inter 2xl:text-[60px] md:text-[50px] text-[30px] font-[700] 2xl:leading-[68px] md:leading-[54px] leading-[34px] max-w-[830px] md:mb-[42px] mb-[24px]"
               ref={elementRef}
             >
               <span className="text-green">Ground Truth:</span> Supplier Superintelligence{" "}
             </h1>
-            <div className="md:text-[24px] text-[18px] md:leading-[30px] leading-[26px] font-[700] md:mb-[60px] mb-[20px] max-w-[746px]">
+            <div className="md:text-[24px] text-[18px] md:leading-[30px] leading-[26px] font-[700] md:mb-[60px] mb-[24px] max-w-[746px]">
               Industry-first on-demand booking of on-site supplier evaluations -
               delivered by qualified local experts, structured and enhanced
               through AI-powered guidance and intelligent analysis.<br/>AI
@@ -96,17 +96,17 @@ function Hero() {
               strategic intelligence.
             </div>
             <div
-              className="text-black text-[16px] leading-[20px] font-[500] w-[max-content] p-[20px_64px] bg-blue rounded-[30px] md:mb-[20px] mb-[32px] uppercase"
+              className="text-black md:text-[16px] text-[12px] md:leading-[20px] leading-[16px] font-[500] w-[max-content] md:p-[20px_64px] p-[16px_20px] bg-blue rounded-[30px] md:mb-[20px] mb-[12px] uppercase"
               onClick={handleModal}
             >
               Exclusive Opportunity for New Clients!
             </div>
-            <div className="font-[400] text-[20px] leading-[28px] mb-[60px] max-w-[746px]">
+            <div className="font-[400] md:text-[20px] text-[16px] md:leading-[28px] leading-[22px] md:mb-[60px] mb-[24px] max-w-[746px]">
               Benefit from a 50% introductory discount on your first YVOO supplier evaluation
             </div>
-            <div className="flex items-center mb-[8px]">
+            <div className="flex items-center md:mb-[8px] mb-[10px]">
               <div className="bg-green w-[12px] h-[12px] rounded-[50%] mr-[8px]"></div>
-              <div className="text-white text-[16px] leading-[20px] font-[500]">
+              <div className="text-white md:text-[16px] text-[14px] md:leading-[20px] leading-[18px] font-[500]">
                 Supplier audited by YVOO
               </div>
             </div>

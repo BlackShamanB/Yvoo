@@ -9,9 +9,14 @@ function Effective({ handleModal }) {
   const elementRef = useRef(null);
   const [elementVisible, setelementVisible] = useState(false);
 
-  const { RiveComponent } = useRive({
-    src: "/animation/23.riv", // Путь от public/
-    stateMachines: ["State Machine 1"], // Если используется
+  const { RiveComponent: Map } = useRive({
+    src: "/animation/23.riv",
+    stateMachines: ["State Machine 1"],
+    autoplay: true,
+  });
+  const { RiveComponent: MobileMap } = useRive({
+    src: "/animation/mapMobile.riv",
+    stateMachines: ["State Machine 1"],
     autoplay: true,
   });
 
@@ -62,7 +67,7 @@ function Effective({ handleModal }) {
         data-scroll-speed="0.5"
       />
       <LoadOnLoad>
-        <div className="3xl:max-w-[1516px] 2xl:max-w-[1116px] md2:max-w-[1000px] mx-[auto] relative flex flex-col items-center w-full md2:pt-[241px] pt-[120px]">
+        <div className="3xl:max-w-[1516px] 2xl:max-w-[1116px] md2:max-w-[1000px] mx-[auto] relative flex flex-col items-center w-full md:pt-[241px] pt-[174px]">
           <div className="flex flex-col max-w-[900px] text-center md2:mb-[216px] mb-[80px] md2:px-0 px-[41px]">
             <div className="md2:text-[50px] text-[30px] md2:leading-[58px] leading-[38px] font-[700] text-blue md2:mb-[42px] mb-[32px]">
               About Us
@@ -70,7 +75,7 @@ function Effective({ handleModal }) {
             <div className="md2:text-[40px] text-[28px] leading-[46px] font-[700] text-white">
               We’re
             </div>
-            <div className="md2:text-[30px] text-[20px] md2:leading-[38px] leading-[28px] font-[700] text-white mb-[38px]">
+            <div className="md2:text-[30px] text-[20px] md2:leading-[38px] leading-[28px] font-[700] text-white md:mb-[38px] mb-[28px] md:mt-[0] -mt-[6px]">
               Redefining Supplier Audits Globally
             </div>
             <div className="md2:text-[30px] text-[20px] md2:leading-[38px] leading-[28px] font-[300] text-white">
@@ -79,7 +84,7 @@ function Effective({ handleModal }) {
               results.
             </div>
           </div>
-          <div className="grid md2:grid-cols-3 grid-cols-1 flex-nowrap 2xl:gap-[116px] gap-[40px] md2:mb-[76px] mb-[80px] md2:px-[0] px-[41px]">
+          <div className="grid md2:grid-cols-3 grid-cols-1 flex-nowrap 2xl:gap-[116px] gap-[80px] md2:mb-[76px] mb-[80px] md2:px-[0] px-[41px]">
             <div className="flex flex-col">
               <div>
                 <Image
@@ -91,10 +96,9 @@ function Effective({ handleModal }) {
                 />
               </div>
               <div className="border-l-[1px] border-blue pl-[26px] h-[100%]">
-                <div className="md2:text-[30px] text-[20px] md2:leading-[38px] leading-[28px] font-[700] text-white">
+                <div className="md2:text-[30px] text-[20px] md2:leading-[38px] leading-[28px] font-[700] text-white md:mb-[24px] mb-[20px]">
                   Cost-Efficient and Scalable
                 </div>
-                <br />
                 <div className="md2:text-[20px] text-[16px] md2:leading-[28px] leading-[22px] font-[300] text-white">
                   Save up to <span className="text-blue font-[700]">70%</span>{" "}
                   on audit costs while accelerating timelines by{" "}
@@ -114,10 +118,9 @@ function Effective({ handleModal }) {
                 />
               </div>
               <div className="border-l-[1px] border-blue pl-[26px] h-[100%]">
-                <div className="md2:text-[30px] text-[20px] md2:leading-[38px] leading-[28px] font-[700] text-white">
+                <div className="md2:text-[30px] text-[20px] md2:leading-[38px] leading-[28px] font-[700] text-white md:mb-[24px] mb-[20px]">
                   Instant Global Audit
                 </div>
-                <br />
                 <div className="md2:text-[20px] text-[16px] md2:leading-[28px] leading-[22px] font-[300] text-white">
                   YVOO provides{" "}
                   <span className="text-blue font-[700]">1-click</span> access
@@ -137,10 +140,9 @@ function Effective({ handleModal }) {
                 />
               </div>
               <div className="border-l-[1px] border-blue pl-[26px] h-[100%]">
-                <div className="md2:text-[30px] text-[20px] md2:leading-[38px] leading-[28px] font-[700] text-white">
+                <div className="md2:text-[30px] text-[20px] md2:leading-[38px] leading-[28px] font-[700] text-white md:mb-[24px] mb-[20px]">
                   AI-Driven compliance
                 </div>
-                <br />
                 <div className="md2:text-[20px] text-[16px] md2:leading-[28px] leading-[22px] font-[300] text-white">
                   <span className="text-blue font-[700]">
                     AI-Generated Audit framework & guidance
@@ -152,46 +154,38 @@ function Effective({ handleModal }) {
               </div>
             </div>
           </div>
-          <div className="md2:text-[34px] text-[24px] md2:leading-[42px] leading-[32px] font-[700] text-blue md:mb-[276px] mb-[140px] text-center md2:px-[0] px-[41px]">
+          <div className="md2:text-[34px] text-[24px] md2:leading-[42px] leading-[32px] font-[700] text-blue md:mb-[276px] mb-[100px] text-center md2:px-[0] px-[41px]">
             YVOO ScanPro+ eliminates traditional audit roadblocks, improvement
             in all metrics
           </div>
-          <div className="md2:text-[50px] text-[30px] md2:leading-[58px] leading-[38px] font-[700] text-white md:mb-[120px] mb-[94px] text-center md2:px-[0] px-[41px]">
+          <div className="md2:text-[50px] text-[30px] md2:leading-[58px] leading-[34px] font-[700] text-white md:mb-[120px] mb-[60px] text-center md2:px-[0] px-[41px]">
             Tap into Our Global Network of
             <br /> Certified Auditors –{" "}
             <span className="text-blue">On-Demand</span> &{" "}
             <span className="text-blue">AI-Powered</span>
           </div>
-          <div className="flex flex-row gap-[60px] mb-[130px]">
+          <div className="flex md:flex-row flex-col md:gap-[60px] gap-[40px] md:mb-[130px] mb-[60px]">
             <div className="flex flex-col gap-[4px]">
-              <div className="font-[500] text-[16px] leading-[20px] text-blue">
+              <div className="font-[500] md:text-[16px] text-[14px] md:leading-[20px] leading-[18px] text-blue">
                 Certified Auditors
               </div>
-              <div className="font-[700] text-[80px] leading-[88px]">
+              <div className="font-[700] md:text-[80px] text-[40px] md:leading-[88px] leading-[44px]">
                 2.000+
               </div>
             </div>
-            <div className="flex flex-col gap-[4px]">
-              <div className="font-[500] text-[16px] leading-[20px] text-blue">
+            <div className="flex flex-col md:gap-[4px] gap-[6px]">
+              <div className="font-[500] text-[14px] md:leading-[20px] leading-[18px] text-blue">
                 Coverage{" "}
               </div>
-              <div className="font-[700] text-[80px] leading-[88px]">
+              <div className="font-[700] md:text-[80px] text-[40px] md:leading-[88px] leading-[44px]">
                 90+ countries{" "}
               </div>
             </div>
           </div>
-          <div className="mb-[164px] whitespace-nowrap rounded-[30px] filled_btn_primary btn_animated_blue hover:!text-black !text-[#06D7F9] 2xl:!text-[16px] !text-[12px] 2xl:!leading-[20px] !leading-[16px] md:!p-[18px_32px] !p-[14px_32px] !w-[max-content] !max-w-[max-content]">
+          <div className="md:mb-[164px] mb-[80px] whitespace-nowrap rounded-[30px] filled_btn_primary btn_animated_blue hover:!text-black !text-[#06D7F9] 2xl:!text-[16px] !text-[12px] 2xl:!leading-[20px] !leading-[16px] md:!p-[18px_32px] !p-[14px_18px] !w-[max-content] !max-w-[max-content]">
             Find Your Auditor Now
           </div>
-          <div className="relative grid md2:grid-cols-3 grid-cols-1 3xl:gap-[83px] md2:gap-[50px] gap-[0px] md2:px-[0] px-[41px]">
-            <div className="md2:hidden z-[1] bg-black flex flex-col justify-center text-center items-center md2:mb-[3px] mb-[64px]">
-              <Image
-                src="/icons/CentralAIHub.svg"
-                width={106}
-                height={106}
-                alt="triangle"
-              />
-            </div>
+          <div className="relative grid md2:grid-cols-3 grid-cols-1 3xl:gap-[83px] md2:gap-[50px] gap-[0px] md2:px-[0] px-[41px] overflow-hidden md:mb-[0] -mb-[514px]">
             <div className="flex z-[1] bg-black flex-row md2:gap-[23px] gap-[8px] border-blue border-[2px] rounded-[30px] 2xl:p-[40px_28px] p-[30px_20px_30px_17px] 3xl:mt-[92px] md2:mt-[72px] h-[max-content] md2:mb-[7px] mb-[72px]">
               <div>
                 <Image
@@ -215,7 +209,7 @@ function Effective({ handleModal }) {
                 </div>
               </div>
             </div>
-            <div className="flex z-[1] bg-black flex-row md2:gap-[23px] gap-[8px] border-blue border-[2px] rounded-[30px] 2xl:p-[40px_28px] p-[30px_20px_30px_30px] h-[max-content] md2:order-[0] md2:mb-[0] mb-[72px] -order-1">
+            <div className="flex z-[1] bg-black flex-row md2:gap-[23px] gap-[8px] border-blue border-[2px] rounded-[30px] 2xl:p-[40px_28px] p-[28px_18px_28px_28px] h-[max-content] md2:order-[0] md2:mb-[0] mb-[72px] -order-1">
               <div>
                 <Image
                   src="/icons/ClickAuditRequest.svg"
@@ -256,34 +250,22 @@ function Effective({ handleModal }) {
                 </div>
               </div>
             </div>
-            <object
-              type="image/svg+xml"
-              data="/icons/bg-line-effective-mobile.svg"
-              width={10}
-              className="absolute h-[100%] md2:hidden block w-[100%]"
-              height={105}
-            >
-              Ваш браузер не поддерживает SVG
-            </object>
+              <div
+                style={{ width: "auto", height: "1683px" }}
+                className="relative left-[0] -top-[686px] -mx-[177px]"
+              >
+            <MobileMap />
+            </div>
           </div>
-          <div className="relative w-full -mt-[218px]">
+          <div className="relative w-full -mt-[218px] md:block hidden">
             <div className="relative">
               <div
                 style={{ width: "100%", height: "2020px" }}
                 className="left-[0] -top-[244px]"
               >
-                <RiveComponent />
+                <Map />
               </div>
             </div>
-          </div>
-          <div className="max-h-[232px] overflow-hidden md2:hidden block md2:-mt-[269px] -mt-[112px] ">
-            <Image
-              src="/icons/Map-mobile.svg"
-              width={360}
-              height={232}
-              alt="triangle"
-              className="relative"
-            />
           </div>
         </div>
       </LoadOnLoad>

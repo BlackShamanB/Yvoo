@@ -71,7 +71,7 @@ function Auditor() {
               className="relative md:hidden block h-[1255px] max-h-[100%] md:ml-[unset] -translate-x-[50%] left-[50%] min-w-[100%]"
             />
             </div>
-            <div className="relative flex flex-row 2xl:p-[40px] p-[28px_29px] rounded-[30px] bg-blue md:gap-[30px] gap-[10px] h-[262px]">
+            <div className="relative flex flex-row 2xl:p-[40px] p-[28px_29px] rounded-[30px] bg-blue md:gap-[30px] gap-[10px] md:h-[262px]">
               <div className="flex items-center">
                 <Image
                   src="/icons/1-ClickAuditRequest.svg"
@@ -92,7 +92,7 @@ function Auditor() {
                 </div>
               </div>
             </div>
-            <div className="relative flex flex-row 2xl:p-[40px] p-[28px_29px] rounded-[30px] bg-blue md:gap-[30px] gap-[10px] h-[262px]">
+            <div className="relative flex flex-row 2xl:p-[40px] p-[28px_29px] rounded-[30px] bg-blue md:gap-[30px] gap-[10px] md:h-[262px]">
               <div className="flex items-center">
                 <Image
                   src="/icons/YVOOAPI.svg"
@@ -112,7 +112,7 @@ function Auditor() {
                 </div>
               </div>
             </div>
-            <div className="relative flex flex-row 2xl:p-[40px] p-[28px_29px] rounded-[30px] bg-blue md:gap-[30px] gap-[10px] h-[262px]">
+            <div className="relative flex flex-row 2xl:p-[40px] p-[28px_29px] rounded-[30px] bg-blue md:gap-[30px] gap-[10px] md:h-[262px]">
               <div className="flex items-center">
                 <Image
                   src="/icons/RealTimeMonitoring.svg"
@@ -133,7 +133,7 @@ function Auditor() {
                 </div>
               </div>
             </div>
-            <div className="relative flex flex-row 2xl:p-[40px] p-[28px_29px] rounded-[30px] bg-blue md:gap-[30px] gap-[10px] h-[262px]">
+            <div className="relative flex flex-row 2xl:p-[40px] p-[28px_29px] rounded-[30px] bg-blue md:gap-[30px] gap-[10px] md:h-[262px]">
               <div className="flex items-center">
                 <Image
                   src="/icons/YVOOApp.svg"
@@ -167,8 +167,11 @@ function Auditor() {
               <br />
               Want to see why our clients choose YVOO for their audit needs?
             </div>
-            <div className="text-black md:text-[16px] text-[12px] md:leading-[20px] leading-[16px] font-[500] rounded-[30px] bg-white p-[20px_64px] w-[max-content] cursor-pointer uppercase">
+            <div className="md:block hidden text-black md:text-[16px] text-[12px] md:leading-[20px] leading-[16px] font-[500] rounded-[30px] bg-white p-[20px_64px] w-[max-content] cursor-pointer uppercase">
               Industries YVOO covers
+            </div>
+            <div className="md:hidden block text-black md:text-[16px] text-[12px] md:leading-[20px] leading-[16px] font-[500] rounded-[30px] bg-white p-[16px_34px] w-[max-content] cursor-pointer uppercase">
+              See YVOO in Action
             </div>
           </div>
         </LoadOnLoad>

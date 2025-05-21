@@ -9,19 +9,19 @@ const SafetyStandards = ({ image, check, color, title, content, items }) => {
   };
 
   return (
-    <div className={`flex md:flex-row flex-col md:gap-[30px] gap-[15px] border-t-[6px] border-${color} pt-[40px] pr-[40px]`}>
+    <div className={`flex md:flex-row flex-col md:gap-[30px] gap-[15px] border-t-[6px] border-${color} md:pt-[40px] pt-[20px] pr-[40px]`}>
       <div>
         <Image
           src={`${image}`}
           width={100}
           height={100}
           alt="triangle"
-          className="md:max-w-[100px] max-w-[70px]"
+          className="md:max-w-[100px] max-w-[78px]"
         />
       </div>
       <div className="flex flex-col md:gap-[50px] gap-[30px]">
         <div className="">
-          <div className={`md:text-[34px] text-[24px] md:leading-[42px] leading-[32px] font-[700] text-${color} mb-[36px]`}>
+          <div className={`md:text-[34px] text-[24px] md:leading-[42px] leading-[32px] font-[700] text-${color} md:mb-[36px] mb-[26px]`}>
             {title}
           </div>
           <div className="md:text-[24px] text-[18px] md:leading-[30px] leading-[26px] font-[400] text-black">

@@ -1,8 +1,8 @@
 <svg width="225" height="1262" viewBox="0 0 225 1262" fill="none" xmlns="http://www.w3.org/2000/svg">
-<line x1="3" y1="7.40332" x2="223" y2="7.40332" stroke="black" stroke-width="2" stroke-linecap="round" stroke-dasharray="2 10"/>
-<line x1="223.709" y1="8" x2="223.709" y2="1254" stroke="black" stroke-width="2" stroke-linecap="round" stroke-dasharray="2 10"/>
-<line x1="3" y1="8" x2="3" y2="1254" stroke="black" stroke-width="2" stroke-linecap="round" stroke-dasharray="2 10"/>
-<line x1="3" y1="1254" x2="223" y2="1254" stroke="black" stroke-width="2" stroke-linecap="round" stroke-dasharray="2 10"/>
+<line x1="3" y1="7.40332" x2="223" y2="7.40332" stroke="#949CAF" stroke-width="2" stroke-linecap="round" stroke-dasharray="2 10"/>
+<line x1="223.709" y1="8" x2="223.709" y2="1254" stroke="#949CAF" stroke-width="2" stroke-linecap="round" stroke-dasharray="2 10"/>
+<line x1="3" y1="8" x2="3" y2="1254" stroke="#949CAF" stroke-width="2" stroke-linecap="round" stroke-dasharray="2 10"/>
+<line x1="3" y1="1254" x2="223" y2="1254" stroke="#949CAF" stroke-width="2" stroke-linecap="round" stroke-dasharray="2 10"/>
 
 
 <circle cx="51" cy="7" r="7" fill="#06D7F9">
