@@ -1,3 +1,4 @@
+"use client";
 import Header from "@/components/Header";
 import localFont from "next/font/local";
 import "./globals.css";
@@ -7,31 +8,32 @@ import CookieBanner from "@/components/CookieBanner";
 // import LocomotiveScroll from "../node_modules/locomotive-scroll";
 // import LocomotiveScroll from "locomotive-scroll";
 import { DataProvider } from '@/components/DataContext';
-
+import { usePathname } from 'next/navigation'
+import RunningText from "@/components/RunningText";
 export const viewport = {
   themeColor: "#06D6F8",
 };
 
-export async function generateMetadata({ params }) {
-  const siteURL = "https://yvoo.io";
+// export async function generateMetadata({ params }) {
+//   const siteURL = "https://yvoo.io";
 
-  return {
-    title: `Yvoo Technologies`,
-    description: `Ultimate Industrial B2B Supplier Platform`,
-    alternates: {
-      canonical: `${siteURL}`,
-    },
-    openGraph: {
-      title: `Yvoo Technologies`,
-      description: `Ultimate Industrial B2B Supplier Platform`,
-      url: siteURL,
-      siteName: "Yvoo Technologies",
-      locale: "en_US",
-      type: "website",
-    },
-    themeColor: "#06D6F8",
-  };
-}
+//   return {
+//     title: `Yvoo Technologies`,
+//     description: `Ultimate Industrial B2B Supplier Platform`,
+//     alternates: {
+//       canonical: `${siteURL}`,
+//     },
+//     openGraph: {
+//       title: `Yvoo Technologies`,
+//       description: `Ultimate Industrial B2B Supplier Platform`,
+//       url: siteURL,
+//       siteName: "Yvoo Technologies",
+//       locale: "en_US",
+//       type: "website",
+//     },
+//     themeColor: "#06D6F8",
+//   };
+// }
 
 // export const metadata = {
 //   title: "Yvoo Technologies",
@@ -118,6 +120,8 @@ const inter = localFont({
 
 
 export default function RootLayout({ children }) {
+  const pathname = usePathname(); // ← Используйте usePathname вместо useLocation
+  const isHomePage = pathname === '/';
   // useEffect(() => {
   //   // const locomotiveScroll = new LocomotiveScroll();
   //   // locomotiveScroll.start();
@@ -136,7 +140,8 @@ export default function RootLayout({ children }) {
       <GoogleAnalytics GA_MEASUREMENT_ID="G-BSDEV77RFE" />
       <body data-scroll-container>
         <DataProvider>  
-          <Header />
+          {isHomePage && <RunningText textRef="YVOO announces EUR 6 million financing round: The round is led by Capmont, while existing investors such as Earlybird-X participating again. *"/>}
+          <Header classes={isHomePage ? 'md:top-[60px] top-[42px]': ''} />
           {children}
           <CookieBanner />
           <Footer />
