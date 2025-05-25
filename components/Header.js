@@ -72,7 +72,7 @@ const Header = () => {
 
   const links = [
     // { name: "Home", link: "/" },
-    { name: "Solutions", link: "/solutions" },
+    { name: "Solutions", link: "#" },
     { name: "Pricing", link: "/pricing" },
     { name: "For auditors", link: "/auditors" },
     { name: "For supplier", link: "/supplier" },
@@ -85,7 +85,7 @@ const Header = () => {
   const solutionsSubmenu = [
     { name: "1-Click Audit", link: "/" },
     { name: "360° Supplier Score", link: "/supplier_score" },
-    { name: "Supplier Discovery with Matchory", link: "/" },
+    { name: "Supplier Discovery with Matchory", link: "/solutions" },
     { name: "Consulting", link: "/consulting" },
   ];
 

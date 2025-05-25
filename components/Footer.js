@@ -22,10 +22,10 @@ const Footer = () => {
   // ];
   const firstLinks = [
     // { name: "Home", link: "/" },
-    { name: "Solutions", link: "/solutions" },
+    { name: "Solutions", link: "/#" },
     { name: "1-Click Audit", link: "/" },
     { name: "360° Supplier Score ", link: "/supplier_score" },
-    { name: "Supplier Discovery\n with Matchory", link: "/" },
+    { name: "Supplier Discovery\n with Matchory", link: "/solutions" },
     { name: "Consulting", link: "/consulting" },
   ];
   const secondLinks = [
