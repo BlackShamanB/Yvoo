@@ -48,7 +48,7 @@ const Slider = ({ slides, currentSlide, setCurrentSlide }) => {
 
       <div className="absolute bottom-[0] right-[0] md:left-[unset] left-[1px] flex flex-row gap-[60px] md2:justify-end justify-center">
         <div className="button-prev" onClick={goToPrevious}>
-          <div className="flex items-center md2:gap-[31px] gap-[21px]">
+          <div className="flex items-center">
             <div className="text-white md2:text-[24px] text-[18px] md2:leading-[30px] leading-[26px] 2md:font-[700] font-[600] ml-2 min-w-[32px] w-[32px]">
               0{currentSlide === 0 ? slides.length : currentSlide}
             </div>
@@ -57,18 +57,18 @@ const Slider = ({ slides, currentSlide, setCurrentSlide }) => {
               width={71}
               height={18}
               alt="prev"
-              className="rotate-[180deg] md2:max-w-[unset] max-w-[58px]"
+              className="cursor-pointer rotate-[180deg] md2:max-w-[unset] max-w-[58px] md2:ml-[31px] hover:mr-[3px] hover:md2:ml-[28px] ml-[21px] hover:ml-[18px] transition-all duration-300"
             />
           </div>
         </div>
         <div className="button-next" onClick={goToNext}>
-          <div className="flex items-center md2:gap-[31px] gap-[21px]">
+          <div className="flex items-center">
             <Image
               src="/icons/map_arrow.svg"
               width={71}
               height={18}
               alt="next"
-              className="md2:max-w-[unset] max-w-[58px]"
+              className="cursor-pointer md2:max-w-[unset] max-w-[58px] md2:mr-[31px] hover:ml-[3px] hover:md2:mr-[28px] mr-[21px] hover:mr-[18px] transition-all duration-300"
             />
             <div className="text-white md2:text-[24px] text-[18px] md2:leading-[30px] leading-[26px] 2md:font-[700] font-[600] mr-2 min-w-[32px] w-[32px]">
               0{currentSlide === slides.length - 1 ? 1 : currentSlide + 2}

@@ -3,6 +3,7 @@ import Link from "next/link";
 import TypingEffect from "../TypingEffect";
 import MagnifyOnScroll from "../MagnifyOnScroll";
 import React, { useState, useEffect, useRef } from "react";
+import LoadOnLoad from "../LoadOnLoad";
 function Search({ handleModal }) {
   const elementRef = useRef(null);
   const [elementVisible, setelementVisible] = useState(false);
@@ -46,6 +47,7 @@ function Search({ handleModal }) {
               className="md:max-w-[unset] max-w-[60px]"
             />
           </div>
+        <LoadOnLoad>
           <div className="text-blue font-[700] md:text-[30px] text-[20px] md:leading-[38px] leading-[28px]">
             You gain instant access to global audit capacity
           </div>
@@ -54,6 +56,7 @@ function Search({ handleModal }) {
             With YVOO’s certified global auditor network, you can scale fast,
             without delay.
           </div>
+          </LoadOnLoad>
         </div>
         <div className="flex flex-col md:gap-[24px] gap-[16px] md:p-[40px_40px_96px] p-[28px]  rounded-[30px] bg-[#131D2A]">
           <div>
@@ -65,6 +68,7 @@ function Search({ handleModal }) {
               className="md:max-w-[unset] max-w-[60px]"
             />
           </div>
+        <LoadOnLoad>
           <div className="text-blue font-[700] md:text-[30px] text-[20px] md:leading-[38px] leading-[28px]">
             You ensure consistent audit quality, every time{" "}
           </div>
@@ -73,6 +77,7 @@ function Search({ handleModal }) {
             auditor step by step, ensuring consistent, high-quality results -
             wherever they are.
           </div>
+          </LoadOnLoad>
         </div>
         <div className="flex flex-col md:gap-[24px] gap-[16px] md:p-[40px_40px_96px] p-[28px]  rounded-[30px] bg-[#131D2A]">
           <div>
@@ -84,6 +89,7 @@ function Search({ handleModal }) {
               className="md:max-w-[unset] max-w-[60px]"
             />
           </div>
+        <LoadOnLoad>
           <div className="text-blue font-[700] md:text-[30px] text-[20px] md:leading-[38px] leading-[28px]">
             You get real-time insight into supplier risk{" "}
           </div>
@@ -91,6 +97,7 @@ function Search({ handleModal }) {
             Stop guessing. Our dashboards show you exactly where the gaps and
             risks are - across every audit, instantly.
           </div>
+          </LoadOnLoad>
         </div>
         <div className="flex flex-col md:gap-[24px] gap-[16px] md:p-[40px_40px_96px] p-[28px]  rounded-[30px] bg-[#131D2A]">
           <div>
@@ -102,6 +109,7 @@ function Search({ handleModal }) {
               className="md:max-w-[unset] max-w-[60px]"
             />
           </div>
+        <LoadOnLoad>
           <div className="text-blue font-[700] md:text-[30px] text-[20px] md:leading-[38px] leading-[28px]">
             You eliminate email chaos and version confusion{" "}
           </div>
@@ -109,6 +117,7 @@ function Search({ handleModal }) {
             All your audit data, documents, and actions live in one secure
             platform - easy to access, easy to manage.
           </div>
+          </LoadOnLoad>
         </div>
         <div className="flex flex-col md:gap-[24px] gap-[16px] md:p-[40px_40px_96px] p-[28px]  rounded-[30px] bg-[#131D2A]">
           <div>
@@ -120,6 +129,7 @@ function Search({ handleModal }) {
               className="md:max-w-[unset] max-w-[60px]"
             />
           </div>
+        <LoadOnLoad>
           <div className="text-blue font-[700] md:text-[30px] text-[20px] md:leading-[38px] leading-[28px]">
             You stay in control with flexible checklists{" "}
           </div>
@@ -127,6 +137,7 @@ function Search({ handleModal }) {
             Use your own audit templates or industry standards - YVOO adapts to
             your process, not the other way around.
           </div>
+          </LoadOnLoad>
         </div>
         <div className="flex flex-col md:gap-[24px] gap-[16px] md:p-[40px_40px_96px] p-[28px]  rounded-[30px] bg-[#131D2A]">
           <div>
@@ -138,6 +149,7 @@ function Search({ handleModal }) {
               className="md:max-w-[unset] max-w-[60px]"
             />
           </div>
+        <LoadOnLoad>
           <div className="text-blue font-[700] md:text-[30px] text-[20px] md:leading-[38px] leading-[28px]">
             You turn findings into action, automatically{" "}
           </div>
@@ -145,6 +157,7 @@ function Search({ handleModal }) {
             No more flagged issues with no follow-up. YVOO links findings to
             root causes and corrective actions - and tracks them to closure.
           </div>
+          </LoadOnLoad>
         </div>
       </div>
     </div>

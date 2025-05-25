@@ -79,7 +79,7 @@ const RunningText = () => {
             zIndex: 2
           }}
         >
-          {isRunning ? '⏸' : '▶'}
+          {isRunning ? <>&#10074;&#10074;</> : '▶'}
         </button>
       </div>
     </div>
