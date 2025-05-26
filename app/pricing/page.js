@@ -3,6 +3,7 @@ import Hero from "@/components/Pricing/hero";
 import JobDescription from "@/components/Pricing/jobDescription";
 import Pricing from "@/components/Pricing/priceing";
 import Services from "@/components/Pricing/services";
+import AnnualLicense from "@/components/Pricing/annualLicense";
 import React, { useEffect, useRef } from "react";
 
 export default function ForPricing() {
@@ -24,6 +25,7 @@ export default function ForPricing() {
         <Hero />
         <Pricing />
         <Services />
+        <AnnualLicense />
         <JobDescription />
       </div>
     </main>

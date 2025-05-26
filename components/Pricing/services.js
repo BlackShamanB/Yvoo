@@ -6,8 +6,6 @@ function Services() {
     setOpenModalRequest((prev) => !prev);
   };
   const dataBlocksOne = {
-    title: "Моя таблица",
-    columns: ["Колонка 1", "Колонка 2", "Цена", "Изображение"],
     rows: [
       {
         title: "Visual Inspection",
@@ -80,7 +78,7 @@ function Services() {
     isCurrency: [false, false, false, false, true],
   };
   return (
-    <div className="relative px-[202px] md:pb-[220px] w-full bg-white">
+    <div className="relative px-[202px] md:pb-[120px] w-full bg-white">
       <h1
         className="mb-[42px] w-full text-black font-inter font-[700] md:text-[40px] text-[30px] md:leading-[48px] leading-[34px] z-[1]"
         data-scroll
