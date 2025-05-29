@@ -125,6 +125,9 @@ module.exports = {
         PricingBgMd: "url(../public/images/PricingBg.webp)",
 
         bg_supplier_discovery_with_matchory: "url(../public/images/bg_360_supplier_score.webp)",
+
+        pricingBgMd: "url(../public/icons/PricingDesctopBg.svg)",
+        pricingBg: "url(../public/icons/PricingMobileBg.svg)",
       },
       screens: {
         xs: "361px",

@@ -1,95 +1,77 @@
 "use client";
 import Image from "next/image";
-import ImgLeftToRight from "../ImgLeftToRight"
+import ImgLeftToRight from "../ImgLeftToRight";
 function JobDescription() {
+  const handleModal = () => {
+    setOpenModalRequest((prev) => !prev);
+  };
   return (
-    <div className="relative w-full px-[41px] md:px-[85px] 2xl:px-[162px] 3xl:px-[202px] pt-[140px] md:pt-[228px] 2xl:pt-[258px] 3xl:pt-[256px] 3xl:pb-[185px] 2xl:pb-[178px] md:pb-[132px] pb-[80px] bg-[#131D2A]">
-      <ImgLeftToRight
-        src="/icons/icon-line.svg"
-        width={584}
-        height={106}
-        alt="line"
-        classesImg="3xl:max-w-[unset] 2xl:max-w-[458px] md:max-w-[320px] max-w-[142px]"
-        classesContainer="absolute overflow-hidden 3xl:top-[2%] 2xl:top-[0%] md:top-[-1.5%] top-[-1%] 3xl:left-[33.5%] 2xl:left-[35%] left-[0%] z-[1]"
-        data-scroll
-        data-scroll-speed="0.5"
-      />
-      <div className="flex flex-wrap 2xl:flex-nowrap 3xl:gap-[170px] 2xl:gap-[110px] md:gap-[62px] gap-[60px]">
-        <div className="font-[400] text-[14px] md:text-[16px] flex flex-col 2xl:gap-[22px] md:gap-[18px] flex-1 basis-[500px] [&>p]:font-[400] [&>p]:text-[14px] md:[&>p]:text-[16px] [&>p]:leading-[20px] 3xl:max-w-[673px] 2xl:max-w-[503px]">
-          <h1
-            className="font-[700] text-[26px] md:text-[28px] 2xl:text-[32px] leading-[30px] md:leading-[32px] 2xl:leading-[36px] md:tracking-[-2px] md:mb-[0] mb-[12px]"
-            data-scroll
-            data-scroll-speed="0.18"
-          >
-            Job Description
-          </h1>
-          <p
-            className="md:mb-[0] mb-[20px]"
-            data-scroll
-            data-scroll-speed="0.15"
-          >
-            As a YVOO agent, you'll play a crucial role in ensuring that
-            companies' external suppliers meet their quality standards. Your
-            responsibilities will include planning and scheduling evaluations,
-            assessing the capabilities and legitimacy of potential suppliers,
-            and producing detailed reports outlining their strengths and
-            weaknesses.
-          </p>
-          <p
-            className="md:mb-[0] mb-[20px]"
-            data-scroll
-            data-scroll-speed="0.12"
-          >
-            During on-site audits conducted at the supplier's manufacturing
-            locations, you'll closely examine processes, engage with personnel,
-            and analyze work instructions, quality plans, and statistical
-            process control records. The aim is to determine if a new supplier
-            qualifies as an approved vendor or verify that current suppliers
-            meet regulatory and other requirements.
-          </p>
-          <p data-scroll data-scroll-speed="0.1">
-            Our user-friendly ScanPro+ app will guide you through the entire
-            process, making evaluations smooth and effortless.
-          </p>
+    <div className="relative w-full bg-white md:bg-pricingBgMd bg-pricingBg bg-no-repeat bg-right-top mb-[417px]">
+      <div className="grid grid-cols-2">
+        <div className="relative flex flex-col gap-[60px]">
+          <div className="justify-items-center">
+            <Image
+              src="/images/Pricing1.webp"
+              width={673}
+              height={688}
+              className="ml-[116px]"
+            ></Image>
+          </div>
+          <div>
+            <Image src="/images/Pricing2.webp" width={719} height={346}></Image>
+          </div>
+          <div className="pb-[295px]">
+            <Image
+              src="/images/Pricing3.webp"
+              width={592}
+              height={592}
+              className="absolute left-[37%]"
+            ></Image>
+          </div>
         </div>
-
-        <div className="font-[400] text-[14px] md:text-[16px] leading-[20px] flex flex-col 2xl:gap-[22px] md:gap-[18px] flex-1 basis-[500px] 2xl:max-w-[unset] max-w-[503px]">
-          <h1
-            className="font-[700] text-[26px] md:text-[28px] 2xl:text-[32px] leading-[30px] md:leading-[32px] 2xl:leading-[36px] md:tracking-[-2px] md:mb-[0] mb-[12px]"
-            data-scroll
-            data-scroll-speed="0.1"
-          >
-            Skills Required
-          </h1>
-          <p
-            className="md:mb-[0] mb-[20px]"
-            data-scroll
-            data-scroll-speed="0.12"
-          >
-            While past auditing experience and professional certification are
-            beneficial, they are not mandatory. YVOO agents must possess strong
-            analytical abilities and be capable of assessing supplier
-            performance against various criteria.
-          </p>
-          <p
-            className="md:mb-[0] mb-[32px]"
-            data-scroll
-            data-scroll-speed="0.15"
-          >
-            Take the first step towards revolutionizing supplier audits with
-            YVOO ScanPro+. Apply now to become an agent and start earning money
-            in a flexible and rewarding way.
-          </p>
-          <button
-            className="rounded-[30px] blue_btn btn_animated_blue md:mt-[26px] mt-[0px] !max-w-[max-content] md:!p-[18px_62px] !p-[14px_32px] !h-[auto]"
-            onClick={() => {
-              window.open("https://scanpro.yvoo.io", "_blank");
-            }}
-            data-scroll
-            data-scroll-speed="0.17"
-          >
-            Apply now
-          </button>
+        <div className="flex flex-col gap-[42px] text-black justify-center pl-[85px] pr-[202px]">
+          {" "}
+          <div>
+            <div className="text-black md:text-[40px] text-[28px] md:leading-[48px] leading-[34px] font-[700]">
+              Global audits. Local expertise. Built around your needs.
+              <br />
+              <br />
+            </div>
+            <div className="font-[300] text-[24px] leading-[30px]">
+              Whether you're onboarding a new supplier, ensuring compliance, or
+              auditing across multiple sites - YVOO helps you stay in control.
+            </div>
+            <div className="font-[300] text-[24px] leading-[30px]">
+              Our certified auditors,smart audit framework, and flexible
+              on-siteservices make it easy to scale supplier assurance
+              worldwide.
+            </div>
+          </div>
+          <div>
+            <div className="font-[500] text-[30px] leading-[38px]">
+              Not sure what fits best?
+              <br />
+              <br />
+            </div>
+            <div className="font-[300] text-[24px] leading-[30px]">
+              We’ll help definethe right scope - from one-time auditsto complete
+              inspection programs.
+            </div>
+          </div>
+          <div className="flex flex-row md:gap-[30px] gap-[14px]">
+            <div
+              className="text-black md:text-[16px] text-[12px] md:leading-[20px] leading-[16px] font-[500] w-[max-content] md:p-[20px_64px] p-[16px_34px] bg-blue rounded-[30px] uppercase whitespace-nowrap"
+              onClick={handleModal}
+            >
+              talk to our team
+            </div>
+            <div className="flex flex-row items-center gap-[8px]">
+              <Image src="/icons/blue_arrow.svg" width={16} height={16}></Image>
+              <div className="text-black md:text-[16px] text-[12px] md:leading-[20px] leading-[16px] min-w-[100px]">
+                Get Your Verified Supplier Report
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>

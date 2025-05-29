@@ -644,6 +644,13 @@ body {
 .padding-akkordeon {
   padding: 30px 41px 42px 34px;
 }
+.grid-cols-\[0\.68fr_repeat\(3\,_1fr\)\] {
+  grid-template-columns: 0.66fr 0.71fr 1.53fr 0.66fr;
+}
+.gridTemplateLicense {
+  grid-template-columns: 0.66fr 0.71fr 1.53fr 0.66fr;
+  
+}
 @media (max-width: 767px) {
 .padding-akkordeon {
   padding: 20px 17px 30px 34px;

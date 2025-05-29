@@ -37,6 +37,7 @@ Customer support`,
     isCurrency: [false, false, false, true],
     bgColor: "green",
     gridCols: 4,
+    gridTemplateLicense: true
   };
   return (
     <div className="relative px-[202px] md:pb-[160px] w-full bg-white">

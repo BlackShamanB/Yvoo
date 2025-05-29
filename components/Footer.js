@@ -50,7 +50,7 @@ const Footer = () => {
     <footer
       className="bg-[#131D2A] text-white -mt-[1px] lg:pl-[100px] 3xl:pr-[48px] 2xl:pr-[49px] md:pr-[85px] pt-[60px] 2xl:pb-[92px] pb-[111px] md:pl-[85px] flex 2xl:items-start flex-wrap md:gap-[127px] gap-[30px] flex-col 2xl:flex-row px-[41px]"
       style={{
-        background: data == "/blog" || data == "/" || data == "/supplier_score" ? "transparent" : "",
+        background: ["/blog", "/supplier_score", "/", "/pricing"].includes(data) ? "transparent" : "",
       }}
     >
       <Image src="/icons/Logo_new.svg" width={130} height={42} alt="logo" className="md:mb-[0] mb-[24px]"/>
