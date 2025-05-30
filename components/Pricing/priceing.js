@@ -97,7 +97,7 @@ function Pricing() {
     },
   ];
   return (
-    <div className="relative px-[202px] md:pb-[220px] md:pt-[160px] pt-[100px] w-full bg-white">
+    <div className="relative md:px-[202px] md:pb-[220px] md:pt-[160px] pt-[100px] w-full bg-white">
       <h1
         className="mb-[42px] w-full text-black font-inter font-[700] md:text-[40px] text-[30px] md:leading-[48px] leading-[34px] z-[1]"
         data-scroll
@@ -106,7 +106,7 @@ function Pricing() {
         YVOO Audit Pricing
       </h1>
       <div className="flex flex-col gap-[40px] mb-[42px]">
-        <div className="grid grid-cols-4 gap-[40px] bg-[#F6F8F9] rounded-[10px] items-center p-[40px_20px]">
+        <div className="grid md:grid-cols-4 grid-cols-1 gap-[40px] bg-[#F6F8F9] rounded-[10px] items-center p-[40px_20px]">
           <div className="text-black font-[700] text-[24px] leading-[30px]">
             Feature
           </div>
@@ -149,7 +149,7 @@ function Pricing() {
         ))}
       </div>
 
-      <div className={`grid grid-cols-4 gap-[40px]`}>
+      <div className={`grid md:grid-cols-4 grid-cols-1 gap-[40px]`}>
         <div></div>
         <div>
           <div

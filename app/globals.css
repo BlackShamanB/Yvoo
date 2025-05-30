@@ -656,4 +656,8 @@ body {
   padding: 20px 17px 30px 34px;
 }
   
+.gridTemplateLicense {
+  grid-template-columns: 1fr;
+  
+}
 }

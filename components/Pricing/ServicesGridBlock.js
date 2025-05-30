@@ -18,7 +18,7 @@ const GridBlock = ({
   return (
     <div>
       <div
-        className={`grid grid-cols-${gridCols} gap-[40px] bg-${bgColor} p-[55px_20px] rounded-[10px] mb-[40px] ${gridTemplateLicense ? 'gridTemplateLicense' : ''}`}
+        className={`grid md:grid-cols-${gridCols} grid-cols-1 gap-[40px] bg-${bgColor} p-[55px_20px] rounded-[10px] mb-[40px] ${gridTemplateLicense ? 'gridTemplateLicense' : ''}`}
       >
         <div className={`text-black font-[700] text-[24px] leading-[30px]`}>
           {headerName}
@@ -34,7 +34,7 @@ const GridBlock = ({
       </div>
       {rows.map((row, rowIndex) => (
         <div
-          className={`grid grid-cols-${gridCols} gap-[40px] mb-[40px] ${containerClassName}  ${gridTemplateLicense ? 'gridTemplateLicense' : ''}`}
+          className={`grid md:grid-cols-${gridCols} grid-cols-1 gap-[40px] mb-[40px] ${containerClassName}  ${gridTemplateLicense ? 'gridTemplateLicense' : ''}`}
         >
           <>
             {/* Заголовок строки (первый столбец) */}

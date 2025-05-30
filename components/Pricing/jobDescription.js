@@ -7,14 +7,14 @@ function JobDescription() {
   };
   return (
     <div className="relative w-full bg-white md:bg-pricingBgMd bg-pricingBg bg-no-repeat bg-right-top mb-[417px]">
-      <div className="grid grid-cols-2">
+      <div className="grid md:grid-cols-2 grid-cols-1">
         <div className="relative flex flex-col gap-[60px]">
           <div className="justify-items-center">
             <Image
               src="/images/Pricing1.webp"
               width={673}
               height={688}
-              className="ml-[116px]"
+              className="md:ml-[116px]"
             ></Image>
           </div>
           <div>
@@ -25,11 +25,11 @@ function JobDescription() {
               src="/images/Pricing3.webp"
               width={592}
               height={592}
-              className="absolute left-[37%]"
+              className="md:absolute md:left-[37%]"
             ></Image>
           </div>
         </div>
-        <div className="flex flex-col gap-[42px] text-black justify-center pl-[85px] pr-[202px]">
+        <div className="flex flex-col gap-[42px] text-black justify-center md:pl-[85px] md:pr-[202px]">
           {" "}
           <div>
             <div className="text-black md:text-[40px] text-[28px] md:leading-[48px] leading-[34px] font-[700]">

@@ -40,7 +40,7 @@ Customer support`,
     gridTemplateLicense: true
   };
   return (
-    <div className="relative px-[202px] md:pb-[160px] w-full bg-white">
+    <div className="relative md:px-[202px] md:pb-[160px] w-full bg-white">
       <div
         className="mb-[24px] w-full text-blue font-inter font-[700] md:text-[50px] text-[30px] md:leading-[58px] leading-[34px] z-[1] max-w-[746px]"
         data-scroll
