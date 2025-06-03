@@ -39,7 +39,7 @@ const RunningText = () => {
   };
 
   return (
-    <div className="z-[999] 3xl:max-w-[1920px] w-full fixed">
+    <div className="z-[999] left-[0] w-full fixed">
       <div
         ref={containerRef}
         className="bg-[#06D7F9] text-black font-[500] md:text-[16px] text-[14px] md:leading-[20px] leading-[18px] md:p-[20px_48px] p-[12px]"
@@ -76,7 +76,8 @@ const RunningText = () => {
             borderRadius: '4px',
             cursor: 'pointer',
             fontSize: '14px',
-            zIndex: 2
+            zIndex: 2,
+            minWidth: '84px'
           }}
         >
           {isRunning ? <>&#10074;&#10074;</> : '▶'}
