@@ -122,7 +122,8 @@ module.exports = {
         auditorPhoto3xl: "url(../public/images/auditorPhoto3xl.webp)",
         auditorPhoto2xl: "url(../public/images/auditorPhoto2xl.webp)",
 
-        PricingBgMd: "url(../public/images/PricingBg.webp)",
+        PricingBgMd: "url(../public/images/PricingBgMd.webp)",
+        PricingBg: "url(../public/images/PricingBg.webp)",
 
         bg_supplier_discovery_with_matchory: "url(../public/images/bg_360_supplier_score.webp)",
 

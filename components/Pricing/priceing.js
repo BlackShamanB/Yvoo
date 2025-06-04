@@ -1,6 +1,7 @@
 import Image from "next/image";
 import MagnifyOnScroll from "../MagnifyOnScroll";
 import GridBlock from "./GridBlock";
+import AuditTable from "./AuditTable";
 function Pricing() {
   const handleModal = () => {
     setOpenModalRequest((prev) => !prev);
@@ -96,60 +97,70 @@ function Pricing() {
       containerClassName: "p-[0_20px_0px]",
     },
   ];
+
+  const auditItems = [
+    {
+      icon: "/icons/Standart.svg",
+      alt: "Standart",
+      blueText: "Standard",
+      blackText: "Supplier Audit",
+    },
+    {
+      icon: "/icons/Castom.svg",
+      alt: "Castom",
+      blueText: "Customized",
+      blackText: "Compliance Audit",
+    },
+    {
+      icon: "/icons/Full.svg",
+      alt: "Full",
+      blueText: "Full",
+      blackText: "Supply Chain Audit",
+    },
+  ];
   return (
-    <div className="relative md:px-[202px] md:pb-[220px] md:pt-[160px] pt-[100px] w-full bg-white">
+    <div className="relative md:px-[202px] px-[12px] md:pb-[220px] md:pt-[160px] pt-[80px] w-full bg-white">
       <h1
-        className="mb-[42px] w-full text-black font-inter font-[700] md:text-[40px] text-[30px] md:leading-[48px] leading-[34px] z-[1]"
+        className="mb-[42px] w-full text-black font-inter font-[700] md:text-[40px] text-[26px] md:leading-[48px] leading-[34px] z-[1] md:px-[0] px-[29px]"
         data-scroll
         data-scroll-speed="0.2"
       >
         YVOO Audit Pricing
       </h1>
       <div className="flex flex-col gap-[40px] mb-[42px]">
-        <div className="grid md:grid-cols-4 grid-cols-1 gap-[40px] bg-[#F6F8F9] rounded-[10px] items-center p-[40px_20px]">
+        <div className="md:grid hidden md:grid-cols-4 grid-cols-1 gap-[40px] bg-[#F6F8F9] rounded-[10px] items-center p-[40px_20px]">
           <div className="text-black font-[700] text-[24px] leading-[30px]">
             Feature
           </div>
-          <div className="flex flex-row gap-[20px] items-center font-[700] text-[24px] leading-[30px]">
-            <Image
-              src={"/icons/Standart.svg"}
-              alt="Standart"
-              width="60"
-              height="60"
-            ></Image>
-            <div className="text-black">
-              <div className="text-blue">Standard</div> Supplier Audit
-            </div>
-          </div>
-          <div className="flex flex-row gap-[20px] items-center font-[700] text-[24px] leading-[30px]">
-            <Image
-              src={"/icons/Castom.svg"}
-              alt="Castom"
-              width="60"
-              height="60"
-            ></Image>
-            <div className="text-black">
-              <div className="text-blue">Customized</div> Compliance Audit
-            </div>
-          </div>
-          <div className="flex flex-row gap-[20px] items-center font-[700] text-[24px] leading-[30px]">
-            <Image
-              src={"/icons/Full.svg"}
-              alt="Full"
-              width="60"
-              height="60"
-            ></Image>
-            <div className="text-black">
-              <div className="text-blue">Full</div> Supply Chain Audit
-            </div>
+      {auditItems.map((item, index) => (
+        <div
+          key={index}
+          className="flex flex-row gap-[20px] items-center font-[700] text-[24px] leading-[30px]"
+        >
+          <Image
+            src={item.icon}
+            alt={item.alt}
+            width="60"
+            height="60"
+          />
+          <div className="text-black">
+            <div className="text-blue">{item.blueText}</div>
+            {item.blackText}
           </div>
         </div>
-        {dataBlocks.map((block, index) => (
-          <GridBlock key={index} {...block} />
-        ))}
+      ))}
+        </div>
+        <div className="md:flex flex-col hidden gap-[40px]">
+          {dataBlocks.map((block, index) => (
+            <GridBlock key={index} {...block} />
+          ))}
+        </div>
+        <div className="md:hidden block">
+          <AuditTable auditItems={auditItems} dataBlocks={dataBlocks} />
+        </div>
       </div>
 
-      <div className={`grid md:grid-cols-4 grid-cols-1 gap-[40px]`}>
+      <div className={`md:grid hidden md:grid-cols-4 grid-cols-1 gap-[40px]`}>
         <div></div>
         <div>
           <div

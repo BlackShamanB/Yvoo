@@ -6,54 +6,54 @@ function JobDescription() {
     setOpenModalRequest((prev) => !prev);
   };
   return (
-    <div className="relative w-full bg-white md:bg-pricingBgMd bg-pricingBg bg-no-repeat bg-right-top mb-[417px]">
+    <div className="relative w-full bg-white md:bg-pricingBgMd bg-pricingBg bg-no-repeat md:bg-right-top bg-left-center md:mb-[417px]">
       <div className="grid md:grid-cols-2 grid-cols-1">
-        <div className="relative flex flex-col gap-[60px]">
+        <div className="relative flex flex-col md:gap-[60px] gap-[30px] md:px-[0] px-[41px]">
           <div className="justify-items-center">
             <Image
               src="/images/Pricing1.webp"
               width={673}
               height={688}
-              className="md:ml-[116px]"
+              className="md:ml-[116px] ml-auto md:max-w-[unset] max-w-[90%]"
             ></Image>
           </div>
           <div>
-            <Image src="/images/Pricing2.webp" width={719} height={346}></Image>
+            <Image src="/images/Pricing2.webp" width={719} height={346} className="md:ml-[unset] ml-[-41px]"></Image>
           </div>
-          <div className="pb-[295px]">
+          <div className="md:pb-[295px] pb-[75px]">
             <Image
               src="/images/Pricing3.webp"
               width={592}
               height={592}
-              className="md:absolute md:left-[37%]"
+              className="md:absolute md:left-[37%] ml-[41px]"
             ></Image>
           </div>
         </div>
-        <div className="flex flex-col gap-[42px] text-black justify-center md:pl-[85px] md:pr-[202px]">
+        <div className="flex flex-col gap-[42px] text-black justify-center md:pl-[85px] md:pr-[202px] px-[41px] md:pb-[0] pb-[100px]">
           {" "}
           <div>
-            <div className="text-black md:text-[40px] text-[28px] md:leading-[48px] leading-[34px] font-[700]">
-              Global audits. Local expertise. Built around your needs.
+            <div className="text-black md:text-[40px] text-[26px] md:leading-[48px] leading-[34px] font-[700]">
+              Global audits. Local expertise. <br/> Built around your needs.
               <br />
               <br />
             </div>
-            <div className="font-[300] text-[24px] leading-[30px]">
+            <div className="font-[300] md:text-[24px] text-[18px] md:leading-[30px] leading-[26px]">
               Whether you're onboarding a new supplier, ensuring compliance, or
               auditing across multiple sites - YVOO helps you stay in control.
             </div>
-            <div className="font-[300] text-[24px] leading-[30px]">
+            <div className="font-[300] md:text-[24px] text-[18px] md:leading-[30px] leading-[26px]">
               Our certified auditors,smart audit framework, and flexible
               on-siteservices make it easy to scale supplier assurance
               worldwide.
             </div>
           </div>
           <div>
-            <div className="font-[500] text-[30px] leading-[38px]">
+            <div className="font-[500] md:text-[30px] text-[20px] md:leading-[38px] leading-[28px]">
               Not sure what fits best?
               <br />
               <br />
             </div>
-            <div className="font-[300] text-[24px] leading-[30px]">
+            <div className="font-[300] md:text-[24px] text-[18px] md:leading-[30px] leading-[26px]">
               We’ll help definethe right scope - from one-time auditsto complete
               inspection programs.
             </div>
@@ -67,8 +67,8 @@ function JobDescription() {
             </div>
             <div className="flex flex-row items-center gap-[8px]">
               <Image src="/icons/blue_arrow.svg" width={16} height={16}></Image>
-              <div className="text-black md:text-[16px] text-[12px] md:leading-[20px] leading-[16px] min-w-[100px]">
-                Get Your Verified Supplier Report
+              <div className="text-black md:text-[16px] text-[12px] md:leading-[20px] leading-[16px] md:min-w-[100px]">
+                Request a custom offer
               </div>
             </div>
           </div>

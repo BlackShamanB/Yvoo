@@ -151,7 +151,6 @@ function Results({ handleModal }) {
           <div className="flex flex-col gap-[12px] md:min-h-[872px]">
             {items.map((item, index) => (
               <div key={index} className="rounded-[30px] overflow-hidden max-w-[673px]">
-                {/* Заголовок аккордеона */}
                 <div
                   className={`flex flex-col md:pl-[40px] pl-[17px] md:pt-[30px] pt-[20px] cursor-pointer nowrap ${
                     activeIndex === index ? "bg-[#86F6FC]" : ""
@@ -184,7 +183,6 @@ function Results({ handleModal }) {
                     </div>
                   </div>
 
-                  {/* Контент аккордеона */}
                   <div
                     ref={(el) => (contentRefs.current[index] = el)}
                     className={`overflow-hidden transition-all duration-300 ease-in-out padding-akkordeon`}

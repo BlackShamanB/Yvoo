@@ -78,30 +78,30 @@ function Services() {
     isCurrency: [false, false, false, false, true],
   };
   return (
-    <div className="relative md:px-[202px] md:pb-[120px] w-full bg-white">
+    <div className="relative md:px-[202px] px-[41px] md:pb-[120px] pb-[60px] w-full bg-white">
       <h1
-        className="mb-[42px] w-full text-black font-inter font-[700] md:text-[40px] text-[30px] md:leading-[48px] leading-[34px] z-[1]"
+        className="mb-[42px] w-full text-black font-inter font-[700] md:text-[40px] text-[26px] md:leading-[48px] leading-[34px] z-[1]"
         data-scroll
         data-scroll-speed="0.2"
       >
         YVOO Inspection Services Tables
       </h1>
-      <div className="text-black font-[700] text-[30px] leading-[38px] mb-[42px]">
+      <div className="text-black font-[700] md:text-[30px] text-[18px] md:leading-[38px] leading-[26px] md:mb-[42px] mb-[20px]">
         1. {"  "}During Production
       </div>
-      <div className="flex flex-col gap-[40px] mb-[2px]">
+      <div className="flex flex-col gap-[40px] md:mb-[2px] md-[32px]">
         <ServicesGridBlock {...dataBlocksOne} />
       </div>
-      <div className="text-black font-[700] text-[30px] leading-[38px] mb-[42px]">
+      <div className="text-black font-[700] md:text-[30px] text-[18px] md:leading-[38px] leading-[26px] md:mb-[42px] mb-[20px]">
         2. {"  "}Before Shipment
       </div>
-      <div className="flex flex-col gap-[40px] mb-[2px]">
+      <div className="flex flex-col gap-[40px] md:mb-[2px] md-[32px]">
         <ServicesGridBlock {...dataBlocksTwo} />
       </div>
-      <div className="text-black font-[700] text-[30px] leading-[38px] mb-[42px]">
+      <div className="text-black font-[700] md:text-[30px] text-[18px] md:leading-[38px] leading-[26px] md:mb-[42px] mb-[20px]">
         3. {"  "}Documentation & Compliance
       </div>
-      <div className="flex flex-col gap-[40px] mb-[2px]">
+      <div className="flex flex-col gap-[40px] md:mb-[2px] md-[32px]">
         <ServicesGridBlock {...dataBlocksThree} />
       </div>
     </div>

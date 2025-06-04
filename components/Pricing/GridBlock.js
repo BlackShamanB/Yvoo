@@ -13,7 +13,8 @@ const GridBlock = ({
   const contentType = type === "text" && isCurrency ? "price" : type;
 
   return (
-    <div className={`grid md:grid-cols-4 grid-cols-1 gap-[40px] ${containerClassName}`}>
+    <div>
+    <div className={`md:grid hidden md:grid-cols-4 grid-cols-1 gap-[40px] ${containerClassName}`}>
       <div className="text-blue font-[700] text-[20px] leading-[28px]">
         {title}
       </div>
@@ -52,6 +53,8 @@ const GridBlock = ({
           )}
         </div>
       ))}
+    </div>
+    
     </div>
   );
 };

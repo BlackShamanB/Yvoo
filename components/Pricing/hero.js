@@ -1,6 +1,6 @@
 function Hero() {
   return (
-    <div className="relative pl-[41px] pr-[35px] md:px-[85px] 2xl:px-[162px] 3xl:px-[201px] w-full bg-center bg-cover bg-forAuditorsBg md:bg-PricingBgMd bg-no-repeat flex justify-center pt-[82px] md:pt-[120px] pb-[86px] md:pb-[352px]">
+    <div className="relative pl-[41px] pr-[35px] md:px-[85px] 2xl:px-[162px] 3xl:px-[201px] w-full bg-center bg-cover bg-PricingBg md:bg-PricingBgMd bg-no-repeat flex justify-center pt-[82px] md:pt-[120px] pb-[643px] md:pb-[352px]">
       <div className="w-full 3xl:max-w-[1516px] 2xl:max-w-[1116px] relative z-10">
         <div className="w-fit flex flex-col gap-[12px] 2xl:h-full justify-between justify-start 3xl:max-w-[unset] md:max-w-[432px]">
           <h1
@@ -17,8 +17,8 @@ function Hero() {
               data-scroll-speed="0.12"
             >
               Transparent Pricing.
-              <br className="md:block hidden" /> Global Delivery.
-              <br className="md:block hidden" /> Certified Quality.
+              <br/> Global Delivery.
+              <br/> Certified Quality.
             </h2>
             <div
               className="font-[700] md:text-[24px] text-[18px] md:leading-[30px] leading-[26px] flex flex-col gap-[20px] max-w-[747px]"
