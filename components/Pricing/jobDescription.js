@@ -1,6 +1,7 @@
 "use client";
 import Image from "next/image";
 import ImgLeftToRight from "../ImgLeftToRight";
+import MagnifyOnScroll from "../MagnifyOnScroll";
 function JobDescription() {
   const handleModal = () => {
     setOpenModalRequest((prev) => !prev);
@@ -9,31 +10,36 @@ function JobDescription() {
     <div className="relative w-full bg-white md:bg-pricingBgMd bg-pricingBg bg-no-repeat md:bg-right-top bg-left-center md:mb-[417px]">
       <div className="grid md:grid-cols-2 grid-cols-1">
         <div className="relative flex flex-col md:gap-[60px] gap-[30px] md:px-[0] px-[41px]">
-          <div className="justify-items-center">
-            <Image
+          <div className="justify-items-center">            
+            <MagnifyOnScroll
               src="/images/Pricing1.webp"
               width={673}
               height={688}
-              className="md:ml-[116px] ml-auto md:max-w-[unset] max-w-[90%]"
-            ></Image>
+              imgClasses="md:ml-[116px] ml-auto md:max-w-[unset] max-w-[90%]"
+            ></MagnifyOnScroll>
           </div>
           <div>
-            <Image src="/images/Pricing2.webp" width={719} height={346} className="md:ml-[unset] ml-[-41px]"></Image>
+            <MagnifyOnScroll
+              src="/images/Pricing2.webp"
+              width={719}
+              height={346}
+              imgClasses="md:ml-[unset] ml-[-41px]"
+            ></MagnifyOnScroll>
           </div>
           <div className="md:pb-[295px] pb-[75px]">
-            <Image
+            <MagnifyOnScroll
               src="/images/Pricing3.webp"
               width={592}
               height={592}
-              className="md:absolute md:left-[37%] ml-[41px]"
-            ></Image>
+              imgClasses="md:absolute md:left-[37%] ml-[41px] abcd"
+            ></MagnifyOnScroll>
           </div>
         </div>
         <div className="flex flex-col gap-[42px] text-black justify-center md:pl-[85px] md:pr-[202px] px-[41px] md:pb-[0] pb-[100px]">
           {" "}
           <div>
             <div className="text-black md:text-[40px] text-[26px] md:leading-[48px] leading-[34px] font-[700]">
-              Global audits. Local expertise. <br/> Built around your needs.
+              Global audits. Local expertise. <br /> Built around your needs.
               <br />
               <br />
             </div>
