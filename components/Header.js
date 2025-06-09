@@ -24,7 +24,7 @@ const Header = (props) => {
   const refO = useRef(null);
   const refEl = useRef(null);
   useEffect(() => {
-    if(!refY.current) return
+    if (!refY.current) return;
 
     refY.current.classList.add("typing-char");
     setTimeout(() => {
@@ -88,18 +88,53 @@ const Header = (props) => {
     { name: "Supplier Discovery with Matchory", link: "/solutions" },
     { name: "Consulting", link: "/consulting" },
   ];
+  const linksMobile = [
+    { name: "Solutions", link: "#" },
+    { name: "1-Click Audit", link: "/" },
+    { name: "360° Supplier Score", link: "/supplier_score" },
+    { name: "Supplier Discovery with Matchory", link: "/solutions" },
+    { name: "Consulting", link: "/consulting" },
+  ];
+  const linksMobileTwo = [
+    { name: "Pricing", link: "/pricing" },
+    { name: "For auditors", link: "/auditors" },
+    { name: "For supplier", link: "/supplier" },
+    { name: "Blog", link: "/blog" },
+    { name: "Industries", link: "/industries" },
+  ];
+  const threeLinks = [
+    { name: "Terms of Service", link: "/terms-of-service" },
+    { name: "Privacy Policy", link: "/privacy-policy" },
+    { name: "Data Processing Agreement", link: "/" },
+    { name: "Imprint", link: "/imprint" },
+  ];
+  useEffect(() => {
+    if (active) {
+      document.body.style.overflow = "hidden";
+      document.body.style.touchAction = "none";
+    } else {
+      document.body.style.overflow = "";
+      document.body.style.touchAction = "";
+    }
 
+    return () => {
+      document.body.style.overflow = "";
+      document.body.style.touchAction = "";
+    };
+  }, [active]);
   return (
-    <div className={`${props.classes} sticky top-[0] z-[1000] 3xl:max-w-[1920px] w-full flex lg2:justify-between items-center md:pt-[21px] md:pb-[21px] lg2:pl-[48px] md:pl-[24px] pl-[4px] lg2:pr-[48px] md:pr-[24px] pr-[12px] items-center md:h-[86px] h-[58px] font-medium bg-[black]`}>
-      <div className="lg2:hidden 2xl:mr-[32px] md:mr-[33px]">
-        <Image
-          onClick={toggleMenu}
-          src="/icons/hamburger.svg"
-          width={44}
-          height={34}
-          alt="menu"
-          className="cursor-pointer min-w-[26px] max-w-[34px] h-[34px] mr-[7px]"
-        />
+    <div
+      className={`${props.classes} sticky top-[0] z-[1000] 3xl:max-w-[1920px] w-full flex lg2:justify-between items-center md:pt-[21px] md:pb-[21px] lg2:pl-[48px] md:pl-[24px] pl-[12px] lg2:pr-[48px] md:pr-[24px] pr-[12px] items-center md:h-[86px] h-[58px] font-medium bg-[black]`}
+    >
+      <div
+        className={`lg2:hidden 2xl:mr-[32px] md:mr-[33px] hamburgerIcon ${
+          active ? "active" : ""
+        }`}
+        onClick={toggleMenu}
+      >
+        <span></span>
+        <span></span>
+        <span></span>
       </div>
       <Link href={"/"}>
         <Image
@@ -166,10 +201,12 @@ const Header = (props) => {
         >
           {links.map((link) => {
             return (
-              <div 
-                key={link.name} 
+              <div
+                key={link.name}
                 className="relative inline-block text-white"
-                onMouseEnter={() => setIsSolutionsHovered(link.name === "Solutions")}
+                onMouseEnter={() =>
+                  setIsSolutionsHovered(link.name === "Solutions")
+                }
               >
                 <Link href={link.link} legacyBehavior>
                   <a
@@ -194,11 +231,17 @@ const Header = (props) => {
                 {link.name === "Solutions" && isSolutionsHovered && (
                   <div className="absolute -left-[10px] p-[20px] gap-[20px] flex flex-col mt-2 w-48 bg-[#EAEEF9] rounded-[10px]  z-10">
                     {solutionsSubmenu.map((subItem) => (
-                      <Link key={subItem.name} href={subItem.link} legacyBehavior
+                      <Link
+                        key={subItem.name}
+                        href={subItem.link}
+                        legacyBehavior
                         onMouseEnter={() => setIsSolutionsHovered(true)}
                         onMouseLeave={() => setIsSolutionsHovered(false)}
                       >
-                        <a className="block text-sm text-black font-[500] hover:text-green" href={subItem.link}>
+                        <a
+                          className="block text-sm text-black font-[500] hover:text-green"
+                          href={subItem.link}
+                        >
                           {subItem.name}
                         </a>
                       </Link>
@@ -210,61 +253,67 @@ const Header = (props) => {
           })}
         </ul>
       )}
-      {active && (
-        <>
-          <ul
-            className={
-              "z-[1000] text-[32px] leading-[36px] font-[600] flex flex-col fixed inset-0 right-0 bg-black gap-8 p-8 lg2:hidden text-white"
-            }
-          >
-            <div className="flex-between">
-              <Link href={"/"}>
-                <Image
-                  src="/icons/Logo_new.svg"
-                  width={130}
-                  height={42}
-                  alt="logo"
-                  className="cursor-pointer"
-                />
+      <>
+        <ul
+          className={`mobile-menu ${
+            active ? "open" : ""
+          } text-[26px] leading-[34px] font-[600] flex flex-col gap-[12px] p-[60px_41px] lg2:hidden text-white`}
+        >
+          {linksMobile.map((link) => {
+            return (
+              <li key={link.name} className="relative max-w-[max-content]">
+                <Link
+                  href={link.link}
+                  onClick={closeMenu}
+                  className="group block max-w-[max-content]"
+                >
+                  <div className="relative z-[1] max-w-[max-content]">
+                    {link.name}
+                  </div>
+                  <span className="absolute z-[0] bottom-[6px] w-full h-1 bg-[#2ECC71] bottom-0 left-0 transform scale-x-0 transition-transform origin-bottom-right duration-350 ease-out group-hover:origin-bottom-left group-hover:scale-x-100"></span>
+                </Link>
+              </li>
+            );
+          })}
+          <div className="mb-[18px]"></div>
+          {linksMobileTwo.map((link) => {
+            return (
+              <li key={link.name} className="relative max-w-[max-content]">
+                <Link
+                  href={link.link}
+                  onClick={closeMenu}
+                  className="group block max-w-[max-content]"
+                >
+                  <div className="relative z-[1] max-w-[max-content]">
+                    {link.name}
+                  </div>
+                  <span className="absolute z-[0] bottom-[6px] w-full h-1 bg-[#2ECC71] bottom-0 left-0 transform scale-x-0 transition-transform origin-bottom-right duration-350 ease-out group-hover:origin-bottom-left group-hover:scale-x-100"></span>
+                </Link>
+              </li>
+            );
+          })}
+          <div className="mb-[36px]"></div>
+          <div className="text-whte md:text-[16px] text-[14px] md:leading-[20px] leading-[18px] font-[400] opacity-[50%] md:mt-[42px] md:mb-[0] mb-[18px] md:order-[unset]">
+            © 2021 YVOO LTD | All Rights Reserved
+          </div>
+          {threeLinks.map((link) => {
+            return (
+              <Link href={link.link} legacyBehavior>
+                <div
+                  key={link.link}
+                  className="text-whte md:text-[16px] text-[14px] md:leading-[20px] leading-[18px] font-[400] opacity-[50%] relative inline-block cursor-pointer"
+                  data-after={link.name}
+                >
+                  <a className="group" href={link.link}>
+                    {link.name}
+                    {/* <span className="absolute w-full h-1 bg-white bottom-0 left-0 transform scale-x-0 transition-transform origin-bottom-right duration-350 ease-out group-hover:origin-bottom-left group-hover:scale-x-100"></span> */}
+                  </a>
+                </div>
               </Link>
-              <Image
-                onClick={toggleMenu}
-                src="/icons/close.svg"
-                width={30}
-                height={30}
-                alt="close"
-                className="cursor-pointer absolute right-12"
-              />
-            </div>
-            {links.map((link) => {
-              return (
-                <li key={link.name} className="relative max-w-[max-content]">
-                  <Link
-                    href={link.link}
-                    onClick={closeMenu}
-                    className="group block max-w-[max-content]"
-                  >
-                    <div className="relative z-[1] max-w-[max-content]">
-                      {link.name}
-                    </div>
-                    <span className="absolute z-[0] bottom-[6px] w-full h-1 bg-[#2ECC71] bottom-0 left-0 transform scale-x-0 transition-transform origin-bottom-right duration-350 ease-out group-hover:origin-bottom-left group-hover:scale-x-100"></span>
-                  </Link>
-                </li>
-              );
-            })}
-            <li className="flex flex-row items-center gap-3 uppercase text-[#53D3AA] text-[16px] mt-[auto]">
-              watch instructions
-              <Image
-                src="/icons/watch_instructions.svg"
-                width={48}
-                height={48}
-                alt="logo"
-                className="inline"
-              />
-            </li>
-          </ul>
-        </>
-      )}
+            );
+          })}
+        </ul>
+      </>
       <div className="flex-center gap-[36px] 2lg:ml-[0] ml-[auto]">
         <button
           // className="outlined_btn btn_animated_blue"
@@ -272,7 +321,7 @@ const Header = (props) => {
           onClick={handleModal}
         >
           Book Demo
-        </button> 
+        </button>
       </div>
       <ModalRequest onClose={handleModal} visible={openModalRequest} />
     </div>
