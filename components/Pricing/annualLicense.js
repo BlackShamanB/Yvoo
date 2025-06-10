@@ -2,6 +2,9 @@ import Image from "next/image";
 import MagnifyOnScroll from "../MagnifyOnScroll";
 import ServicesGridBlock from "./ServicesGridBlock";
 function AnnualLicense() {
+  const handleModal = () => {
+    setOpenModalRequest((prev) => !prev);
+  };
   const dataBlocks = {
     headerName: "Plan",
     headerTitles: ["Users", "Features", "Price/Year"],
@@ -35,7 +38,7 @@ Customer support`,
     ],
     type: ["text", "text", "price"],
     isCurrency: [false, false, false, true],
-    bgColor: "green",
+    bgColor: "mint",
     gridCols: 4,
     gridTemplateLicense: true,
     plan: true
@@ -56,6 +59,14 @@ Customer support`,
       </div>
       <div className="flex flex-col gap-[40px] mb-[2px]">
         <ServicesGridBlock {...dataBlocks} />
+      </div>
+      <div className="text-center justify-items-center md:block hidden">
+        <div
+          className="max-w-[349px] text-center w-full text-black md:text-[16px] text-[12px] md:leading-[20px] leading-[16px] font-[500] w-[max-content] md:p-[20px] p-[16px_34px] bg-mint rounded-[30px] uppercase whitespace-nowrap content-center"
+          onClick={handleModal}
+        >
+          Order
+        </div>
       </div>
     </div>
   );

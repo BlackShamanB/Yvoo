@@ -78,7 +78,7 @@ function Services() {
     isCurrency: [false, false, false, false, true],
   };
   return (
-    <div className="relative md:px-[202px] px-[41px] md:pb-[120px] pb-[60px] w-full bg-white">
+    <div className="relative md:px-[202px] px-[41px] md:pb-[160px] pb-[60px] w-full bg-white">
       <h1
         className="mb-[42px] w-full text-black font-inter font-[700] md:text-[40px] text-[26px] md:leading-[48px] leading-[34px] z-[1]"
         data-scroll
@@ -92,17 +92,41 @@ function Services() {
       <div className="flex flex-col gap-[40px] md:mb-[2px] md-[32px]">
         <ServicesGridBlock {...dataBlocksOne} />
       </div>
+      <div className="mb-[42px] text-center justify-items-center md:block hidden">
+        <div
+          className="max-w-[349px] text-center w-full text-black md:text-[16px] text-[12px] md:leading-[20px] leading-[16px] font-[500] w-[max-content] md:p-[20px] p-[16px_34px] bg-blue rounded-[30px] uppercase whitespace-nowrap content-center"
+          onClick={handleModal}
+        >
+          Order
+        </div>
+      </div>
       <div className="text-black font-[700] md:text-[30px] text-[18px] md:leading-[38px] leading-[26px] md:mb-[42px] mb-[20px]">
         2. {"  "}Before Shipment
       </div>
       <div className="flex flex-col gap-[40px] md:mb-[2px] md-[32px]">
         <ServicesGridBlock {...dataBlocksTwo} />
       </div>
+      <div className="mb-[42px] text-center justify-items-center md:block hidden">
+        <div
+          className="max-w-[349px] text-center w-full text-black md:text-[16px] text-[12px] md:leading-[20px] leading-[16px] font-[500] w-[max-content] md:p-[20px] p-[16px_34px] bg-blue rounded-[30px] uppercase whitespace-nowrap content-center"
+          onClick={handleModal}
+        >
+          Order
+        </div>
+      </div>
       <div className="text-black font-[700] md:text-[30px] text-[18px] md:leading-[38px] leading-[26px] md:mb-[42px] mb-[20px]">
         3. {"  "}Documentation & Compliance
       </div>
       <div className="flex flex-col gap-[40px] md:mb-[2px] md-[32px]">
         <ServicesGridBlock {...dataBlocksThree} />
+      </div>
+      <div className="text-center justify-items-center md:block hidden">
+        <div
+          className="max-w-[349px] text-center w-full text-black md:text-[16px] text-[12px] md:leading-[20px] leading-[16px] font-[500] w-[max-content] md:p-[20px] p-[16px_34px] bg-blue rounded-[30px] uppercase whitespace-nowrap content-center"
+          onClick={handleModal}
+        >
+          Order
+        </div>
       </div>
     </div>
   );

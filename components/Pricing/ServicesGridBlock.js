@@ -16,6 +16,9 @@ const GridBlock = ({
   gridTemplateLicense = false,
   plan = false,
 }) => {
+  const handleModal = () => {
+    setOpenModalRequest((prev) => !prev);
+  };
   return (
     <div>
       <div className="md:block hidden">
@@ -75,13 +78,15 @@ const GridBlock = ({
             <div
               key={`row-${rowIndex}`}
               className={`grid md:grid-cols-${gridCols} grid-cols-1 gap-[20px] mb-[20px] overflow-hidden ${
-                !isLastRow ? containerClassName : "p-[0_0px_18px]  md:border-b-[2px] border-[2px] md:rounded-[0] rounded-[30px] border-[#EEF1F4]"
+                !isLastRow
+                  ? containerClassName
+                  : "p-[0_0px_18px]  md:border-b-[2px] border-[2px] md:rounded-[0] rounded-[30px] border-[#EEF1F4]"
               } ${gridTemplateLicense ? "gridTemplateLicense" : ""}`}
             >
               <div
                 className={`text-white font-[700] text-[18px] leading-[26px] p-[30px_16px] bg-${bgColor}`}
               >
-                {row.title} {" "} { plan ? 'Plan' : ''}
+                {row.title} {plan ? "Plan" : ""}
               </div>
 
               {row.items.map((item, colIndex) => (
@@ -109,6 +114,14 @@ const GridBlock = ({
                 ></div>
                 <span className="text-[#949CAF]">{currencySymbol}</span>{" "}
                 {row.price}
+              </div>
+              <div className="text-center justify-items-center px-[20px] mt-[20px]">
+                <div
+                  className={`max-w-[349px] text-center w-full text-black text-[16px] leading-[20px] font-[500] w-[max-content] md:p-[20px] p-[20px_34px] bg-${bgColor} rounded-[30px] uppercase whitespace-nowrap content-center`}
+                  onClick={handleModal}
+                >
+                  Order
+                </div>
               </div>
             </div>
           );

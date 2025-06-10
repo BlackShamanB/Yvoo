@@ -35,7 +35,7 @@ function JobDescription() {
             ></MagnifyOnScroll>
           </div>
         </div>
-        <div className="flex flex-col gap-[42px] text-black justify-center md:pl-[85px] md:pr-[202px] px-[41px] md:pb-[0] pb-[100px]">
+        <div className="flex flex-col gap-[42px] text-black justify-center md:pl-[85px] md:pr-[202px] px-[41px] md:pb-[0] pb-[80px]">
           {" "}
           <div>
             <div className="text-black md:text-[40px] text-[26px] md:leading-[48px] leading-[34px] font-[700]">
